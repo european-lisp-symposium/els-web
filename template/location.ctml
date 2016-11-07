@@ -1,0 +1,22 @@
+<span class="location vcard">
+  <c:when test="photo"><img class="photo" alt="photo" lquery="(attr :src photo)"></img></c:when>
+  <a class="fn url" lquery="(text name) (attr :href website)">Frank Ly. Example</span>
+  <c:when test="email"><span class="email" lquery="(text email)"></span></c:when>
+  <c:when test="telephone"><span class="tel" lquery="(text telephone)"></span></c:when>
+  <c:when test="organization"><span class="org" lquery="(text organization)"></span></c:when>
+  <c:when test="category"><span class="category" lquery="(text category)"></span></c:when>
+  <c:when test="role"><span class="role" lquery="(text role)"></span></c:when>
+  <c:when test="address">
+    <c:using value="address">
+      <span class="adr">
+        <c:when test="po-box"><span class="post-office-box" lquery="(text po-box)"></span></c:when>
+        <c:when test="extended"><span class="extended-address" lquery="(text extended)"></span></c:when>
+        <c:when test="street"><span class="street-address" lquery="(text street)"></span></c:when>
+        <c:when test="city"><span class="locality" lquery="(text city)"></span></c:when>
+        <c:when test="region"><span class="region" lquery="(text region)"></span></c:when>
+        <c:when test="post-code"><span class="postal-code" lquery="(text post-code)"></span></c:when>
+        <c:when test="country"><span class="country-name" lquery="(text country)"></span></c:when>
+      </span>
+    </c:using>
+  </c:when>
+</span>

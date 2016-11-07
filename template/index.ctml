@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8"/>
+    <title>European Lisp Symposium</title>
+    <link rel="stylesheet" type="text/css" href="els.css"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="description" content="Homepage for the European Lisp Symposium"/>
+    <meta name="robots" content="index, follow"/>
+  </head>
+  <body>
+    <header>
+      <h1>European Lisp Symposium</h1>
+      <nav class="main">
+        <a href="#about">About</a>
+        <a href="#current">Current Symposium</a>
+        <c:when test="registration-open">
+          <a href="#registration">Registration</a>
+        </c:when>
+        <a href="#programme">Programme</a>
+        <a href="#scope">Scope</a>
+        <a href="#proceedings">Proceedings</a>
+        <a href="http://lists.lrde.epita.fr/listinfo/elsconf" rel="external">Mailing List</a>
+      </nav>
+      <nav class="editions" iterate="editions">
+        <a href="#" lquery='(text *) (attr :href (format NIL "/editions/~a/" *))'>20XX</a>
+      </nav>
+    </header>
+    <main>
+      <article id="about">
+        <h2>About</h2>
+        <p lquery="(text about)">
+          
+        </p>
+      </article>
+
+      <article id="scope">
+        <h2>Scope</h2>
+      </article>
+      
+      <article id="current">
+        <h2></h2>
+
+        <section id="highlights">
+          <h3>Highlights</h3>
+        </section>
+
+        <section id="location">
+          <h3>Location</h3>
+        </section>
+
+        <section id="organization">
+          <h3>Organization</h3>
+        </section>
+
+        <c:when test="registration-open">
+          <c:splice lquery="(template :registration)" />
+        </c:when>
+
+        <section id="programme">
+          <h3>Programme</h3>
+        </section>
+      </article>
+
+      <section id="proceedings">
+        <h2>Proceedings</h2>
+        <ul iterate="editions">
+          <li><a href="#" lquery='(text *) (attr :href (format NIL "/ELS~a.pdf" *))'>20XX</a></li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      Authored by
+      <c:using value="author">
+        <c:splice lquery="(template :person)" />
+      </c:using>
+      last updated on
+      <time lquery="(time (get-universal-time))" class="published updated">1000.00.00</time>
+    </footer>
+  </body>
+</html>
