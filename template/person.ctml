@@ -1,0 +1,35 @@
+<span class="person vcard">
+  <c:when test="photo"><img class="photo" alt="photo" lquery="(attr :src photo)"></img></c:when>
+  <span class="fn" lquery="(text full-name)">Frank Ly. Example</span>
+  <c:when test="name">
+    <c:using value="name">
+      <span class="n">
+        <c:when test="honorific-prefix"><span class="honorific-prefix" lquery="(text honorific-prefix)"></span></c:when>
+        <c:when test="family-name"><span class="family-name" lquery="(text family-name)"></span></c:when>
+        <c:when test="given-name"><span class="given-name" lquery="(text given-name)"></span></c:when>
+        <c:when test="additional-name"><span class="additional-name" lquery="(text additional-name)"></span></c:when>
+        <c:when test="honorific-suffix"><span class="honorific-suffix" lquery="(text honorific-suffix)"></span></c:when>
+      </span>
+    </c:using>
+  </c:when>
+  <c:when test="nickname"><span class="nickname" lquery="(text nickname)"></span></c:when>
+  <c:when test="email"><span class="email" lquery="(text email)"></span></c:when>
+  <c:when test="website"><a class="url" lquery="(attr :href website) (text website)"></a></c:when>
+  <c:when test="telephone"><span class="tel" lquery="(text telephone)"></span></c:when>
+  <c:when test="organization"><span class="org" lquery="(text organization)"></span></c:when>
+  <c:when test="category"><span class="category" lquery="(text category)"></span></c:when>
+  <c:when test="role"><span class="role" lquery="(text role)"></span></c:when>
+  <c:when test="address">
+    <c:using value="address">
+      <span class="adr">
+        <c:when test="po-box"><span class="post-office-box" lquery="(text po-box)"></span></c:when>
+        <c:when test="extended"><span class="extended-address" lquery="(text extended)"></span></c:when>
+        <c:when test="street"><span class="street-address" lquery="(text street)"></span></c:when>
+        <c:when test="city"><span class="locality" lquery="(text city)"></span></c:when>
+        <c:when test="region"><span class="region" lquery="(text region)"></span></c:when>
+        <c:when test="post-code"><span class="postal-code" lquery="(text post-code)"></span></c:when>
+        <c:when test="country"><span class="country-name" lquery="(text country)"></span></c:when>
+      </span>
+    </c:using>
+  </c:when>
+</span>
