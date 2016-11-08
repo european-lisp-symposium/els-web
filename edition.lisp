@@ -9,8 +9,10 @@
 (defvar *edition*)
 
 (defun edition (edition)
-  (or (gethash (princ-to-string edition) *editions*)
-      (error "No such edition ~s." edition)))
+  (let ((edition (gethash (princ-to-string edition) *editions* :nothing)))
+    (if (eql edition :nothing)
+        (error "No such edition ~s." edition)
+        edition)))
 
 (defun (setf edition) (data edition)
   (setf (gethash (princ-to-string edition) *editions*)
@@ -24,21 +26,63 @@
         collect k))
 
 (defmacro in-edition (name)
-  `(defparameter *edition* ,(princ-to-string name)))
+  (let ((name (princ-to-string name)))
+    `(eval-when (:compile-toplevel :load-toplevel :execute)
+       (defparameter *edition* ,name)
+       (setf (edition ,name) ())
+       (local-time:enable-read-macros))))
 
-(defun set-type (type identifier data)
-  (let ((type-data (getp type (edition *edition*))))
-    (cond (type-data
-           (setf (getp type-data identifier) data))
-          (T
-           (setf (edition *edition*)
-                 (list* type (list identifier data)
-                        (edition *edition*)))))))
+(defun record (data comparison-fields &optional (edition *edition*))
+  (dolist (field comparison-fields)
+    (unless (getp data field)
+      (error "Cannot enter~%  ~s~%into the database as it is missing the identifying field ~s."
+             data field)))
+  (flet ((match-fields (entry)
+           (loop for field in comparison-fields
+                 always (equalp (getp entry field)
+                                (getp data field)))))
+    (let ((database (edition edition)))
+      (setf database (remove-if #'match-fields database))
+      (setf database (cons data database))
+      (setf (edition edition) database))))
 
 (defmacro define-person (name &rest args)
-  (let ((full-name (if (listp name) (getf name :full-name) name))
+  (let ((full-name (if (listp name)
+                       (or (getf name :full-name)
+                           (format NIL "~a ~a"
+                                   (getf name :given-name)
+                                   (getf name :family-name)))
+                       name))
         (name (if (listp name) name ())))
-    `(set-type :person ,full-name
-               '(:full-name ,full-name
-                 ,@(when name `(:name ,name))
-                 ,@args))))
+    `(record '(:record-type :person
+               :full-name ,full-name
+               ,@(when name `(:name ,name))
+               ,@args)
+             '(:record-type :full-name))))
+
+(defmacro define-location (name &rest args)
+  `(record '(:record-type :location
+             :name ,name
+             ,@args)
+           '(:record-type :name)))
+
+(defmacro define-text (name text)
+  `(record '(:record-type :text
+             :name ,name
+             :text ,text)
+           '(:record-type :name)))
+
+(defmacro define-programme-entry (time &rest args)
+  `(record '(:record-type :programme-entry
+             :time ,time
+             ,@args)
+           '(:record-type :time)))
+
+(defmacro define-programme-day (base-time &body forms)
+  `(progn
+     ,@(loop for (time args) on forms by #'cddr
+             collect `(define-programme-entry ,(local-time:adjust-timestamp base-time
+                                                 (set :hour (local-time:timestamp-hour time))
+                                                 (set :minute (local-time:timestamp-minute time))
+                                                 (set :sec (local-time:timestamp-second time)))
+                        ,@args))))

@@ -5,15 +5,15 @@
     <c:using value="name">
       <span class="n">
         <c:when test="honorific-prefix"><span class="honorific-prefix" lquery="(text honorific-prefix)"></span></c:when>
-        <c:when test="family-name"><span class="family-name" lquery="(text family-name)"></span></c:when>
         <c:when test="given-name"><span class="given-name" lquery="(text given-name)"></span></c:when>
         <c:when test="additional-name"><span class="additional-name" lquery="(text additional-name)"></span></c:when>
+        <c:when test="family-name"><span class="family-name" lquery="(text family-name)"></span></c:when>
         <c:when test="honorific-suffix"><span class="honorific-suffix" lquery="(text honorific-suffix)"></span></c:when>
       </span>
     </c:using>
   </c:when>
   <c:when test="nickname"><span class="nickname" lquery="(text nickname)"></span></c:when>
-  <c:when test="email"><span class="email" lquery="(text email)"></span></c:when>
+  <c:when test="email"><span class="email" lquery="(email email)"></span></c:when>
   <c:when test="website"><a class="url" lquery="(attr :href website) (text website)"></a></c:when>
   <c:when test="telephone"><span class="tel" lquery="(text telephone)"></span></c:when>
   <c:when test="organization"><span class="org" lquery="(text organization)"></span></c:when>

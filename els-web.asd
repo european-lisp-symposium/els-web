@@ -20,4 +20,5 @@
                 :components ((:file "2015"))))
   :depends-on (:clip
                :local-time
-               :pathname-utils))
+               :pathname-utils
+               :alexandria))

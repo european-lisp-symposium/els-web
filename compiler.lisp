@@ -5,21 +5,18 @@
 
 (in-package #:els-web)
 
-(defvar *output-dir* (merge-pathnames "output/" *here*))
-
-(defun compile-edition-data (data)
-  ;; Rearrange data usefully
-  data)
-
-(defun compile-edition-template (template edition)
-  (with-open-file (stream template
+(defun compile-edition-template (template output data)
+  (with-open-file (stream output
                           :direction :output
                           :if-exists :supersede)
-    (plump:serialize
-     (apply #'clip:process
-            (plump:parse template)
-            (compile-edition-data (edition edition)))
-     stream)))
+    (let ((*package* #.*package*)
+          (target (plump:parse template)))
+      (plump:serialize
+       (clip:with-clipboard-bound ((append data
+                                           (loop for edition in (editions)
+                                                 collect `(:record-type :edition :year ,edition))))
+         (clip:process-node target))
+       stream))))
 
 (defun prepare-path (path &key (if-exists :supersede))
   (when (probe-file path)
@@ -35,10 +32,79 @@
   (let* ((edition (princ-to-string edition))
          (path (pathname-utils:subdirectory *output-dir* edition)))
     (when (prepare-path path :if-exists if-exists)
-      (compile-edition-template (merge-pathnames "index.html" path) edition))))
+      (compile-edition-template
+       template
+       (merge-pathnames "index.html" path)
+       (edition edition))
+      path)))
 
 (defun compile-all-editions (&key (if-exists :supersede)
                                   (template (template "index.ctml")))
-  (dolist (edition (editions))
-    (compile-edition edition :if-exists if-exists
-                             :template template)))
+  (loop for edition in (editions)
+        collect (compile-edition edition :if-exists if-exists
+                                         :template template)))
+
+(defun coerce-data (field entry)
+  (etypecase field
+    (keyword field)
+    (symbol (getp entry field :test #'string-equal))
+    (T field)))
+
+(defun match-filter (filter entry)
+  (if (eql T filter)
+      T
+      (ecase (first filter)
+        (=
+         (equalp
+          (coerce-data (second filter) entry)
+          (coerce-data (third filter) entry)))
+        (in
+         (destructuring-bind (container item) (rest filter)
+           (let ((container (coerce-data container entry))
+                 (item (coerce-data item entry)))
+             (etypecase container
+               (list (member item container :test #'equalp))
+               (string (search item container :test #'equalp))))))
+        (and
+         (loop for sub in (rest filter)
+               always (match-filter sub entry)))
+        (or
+         (loop for sub in (rest filter)
+               thereis (match-filter sub entry)))
+        (not
+         (not (match-filter (second filter) entry))))))
+
+(defun g< (a b)
+  (etypecase a
+    (local-time:timestamp (local-time:timestamp< a b))
+    (string (string< a b))
+    (character (char< a b))
+    (number (< a b))))
+
+(defun g> (a b)
+  (etypecase a
+    (local-time:timestamp (local-time:timestamp> a b))
+    (string (string> a b))
+    (character (char> a b))
+    (number (> a b))))
+
+(defun query (record-type &optional (filter T) &key sort)
+  (let ((data (loop for entry in (car (last clip:*clipboard-stack*))
+                    when (match-filter `(and (= record-type ,record-type) ,filter)
+                                       entry)
+                    collect entry)))
+    (if sort
+        (sort data (ecase (second sort)
+                     (:asc #'g<)
+                     (:dsc #'g>))
+              :key (lambda (a) (getp a (first sort))))
+        data)))
+
+(defun query1 (record-type &optional (filter T) &key sort)
+  (first (query record-type filter :sort sort)))
+
+(defun queryf (field record-type &optional (filter T) &key sort)
+  (getp (query1 record-type filter :sort sort) field))
+
+(defun query-text (filter)
+  (queryf :text :text filter))
