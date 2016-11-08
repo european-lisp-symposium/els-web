@@ -1,4 +1,4 @@
-<section class="programme-entry">
+<section class="programme-entry" lquery="(add-classes role)">
   <time lquery="(time time :clock)">00:00</time>
   <h4 lquery="(text title)">TITLE</h4>
   <ul iterate="speakers">

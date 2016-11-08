@@ -64,6 +64,10 @@
     (data "email" (encode-email email))
     (add-class "encoded-email")))
 
+(lquery:define-lquery-function add-classes (node classes)
+  (dolist (class classes)
+    (lquery:$ node (add-class (string-downcase class)))))
+
 (defun encode-email (email)
   (let* ((scramble (alexandria:shuffle (loop for a from 0 below (length email) collect a)))
          (email (loop for i in scramble collect (elt email i))))
