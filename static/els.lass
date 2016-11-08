@@ -1,4 +1,32 @@
 (body
  :font-family sans-serif
- :font-size 12pt
- )
+ :font-size 14pt
+
+ (a :color "#0088EE"
+    :text-decoration none)
+
+ (header
+  (h1 :font-size 3em
+      :text-align center
+      :margin 20px 0 0 0)
+  (nav.main
+   :margin 20px 0 0 0
+   :display flex
+   :justify-content center
+   (* :padding 10px))
+  (nav.editions
+   :display flex
+   :justify-content center))
+
+ (main
+  :margin 0 auto 0 auto
+  :width 800px)
+
+ (footer
+  :text-align center
+  :font-size 0.8em))
+
+(:media "(max-width: 800px)"
+        (main
+         :margin 0 !important
+         :width auto !important))
