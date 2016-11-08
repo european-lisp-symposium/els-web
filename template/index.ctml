@@ -22,60 +22,94 @@
         <a href="#proceedings">Proceedings</a>
         <a href="http://lists.lrde.epita.fr/listinfo/elsconf" rel="external">Mailing List</a>
       </nav>
-      <nav class="editions" iterate="editions">
-        <a href="#" lquery='(text *) (attr :href (format NIL "/editions/~a/" *))'>20XX</a>
+      <nav class="editions" iterate="(query :edition)">
+        <a href="#" lquery='(text year) (attr :href (format NIL "/editions/~a/" year))'>20XX</a>
       </nav>
     </header>
     <main>
       <article id="about">
         <h2>About</h2>
-        <p lquery="(text about)">
-          
-        </p>
+        <div lquery="(html (query-text '(= name :about)))" />
       </article>
 
       <article id="scope">
         <h2>Scope</h2>
+        <div lquery="(html (query-text '(= name :scope)))" />
       </article>
       
       <article id="current">
-        <h2></h2>
-
+        <h2>Current Conference</h2>
+        <div lquery="(html (query-text '(= name :announcement)))" />
         <section id="highlights">
           <h3>Highlights</h3>
+          <ul iterate="(query :programme-entry '(in role :keynote) :sort '(:title :asc))">
+            <li><c:splice lquery="(template :highlight)" /></li>
+          </ul>
         </section>
 
         <section id="location">
           <h3>Location</h3>
+          <c:using value="(query1 :location '(in role :conference))">
+            <c:splice lquery="(template :location)" />
+          </c:using>
+          <section id="hotels">
+            <h4>Hotels</h4>          
+            <ul iterate="(query :location '(in role :hotel))">
+              <li><c:splice lquery="(template :location)" /></li>
+            </ul>
+          </section>
         </section>
 
         <section id="organization">
           <h3>Organization</h3>
+          <h4>Programme Chair</h4>
+          <c:using value="(query1 :person '(in role :programme-chair))">
+            <c:splice lquery="(template :person)" />
+          </c:using>
+          <h4>Local Chair</h4>
+          <c:using value="(query1 :person '(in role :local-chair))">
+            <c:splice lquery="(template :person)" />
+          </c:using>
+          <h4>Committee</h4>
+          <ul iterate="(query :person '(in role :committee))">
+            <li><c:splice lquery="(template :person)" /></li>
+          </ul>
         </section>
 
-        <c:when test="registration-open">
+        <c:when test="(query1 :registration)">
           <c:splice lquery="(template :registration)" />
         </c:when>
 
+        <section id="speakers">
+          <h3>Speakers</h3>
+          <ul iterate="(query :person '(in role :speaker) :sort '(:full-name :asc))">
+            <li><c:splice lquery="(template :person)" /></li>
+          </ul>
+        </section>
+
         <section id="programme">
           <h3>Programme</h3>
+          <ol iterate="(query :programme-entry T :sort '(:time :asc))">
+            <li><c:splice lquery="(template :programme-entry)" /></li>
+          </ol>
         </section>
       </article>
 
       <section id="proceedings">
         <h2>Proceedings</h2>
-        <ul iterate="editions">
-          <li><a href="#" lquery='(text *) (attr :href (format NIL "/ELS~a.pdf" *))'>20XX</a></li>
+        <ul iterate="(query :edition)">
+          <li><a href="#" lquery='(text year) (attr :href (format NIL "/ELS~a.pdf" year))'>20XX</a></li>
         </ul>
       </section>
     </main>
     <footer>
       Authored by
-      <c:using value="author">
+      <c:using value="(query1 :person '(in role :administrator))">
         <c:splice lquery="(template :person)" />
       </c:using>
       last updated on
       <time lquery="(time (get-universal-time))" class="published updated">1000.00.00</time>
     </footer>
+    <script type="text/javascript" src="email.js"></script>
   </body>
 </html>

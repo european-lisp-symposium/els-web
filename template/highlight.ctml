@@ -1,0 +1,13 @@
+<section class="highlight">
+  <h4 lquery="(text title)">TITLE</h4>
+  <ul iterate="speakers">
+    <li class="speaker">
+      <c:using value="(query1 :person (list '= 'full-name *))">
+        <c:splice lquery="(template :person)" />
+      </c:using>
+    </li>
+  </ul>
+  <p lquery="(text description)">
+    DESCRIPTION
+  </p>
+</section>

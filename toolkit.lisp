@@ -5,9 +5,11 @@
 
 (in-package #:els-web)
 
-(defvar *here* #.(or *compile-file-pathname* *load-pathname* *default-pathname-defaults*))
+(defvar *here* (make-pathname :name NIL :type NIL :defaults
+                              #.(or *compile-file-pathname* *load-pathname* *default-pathname-defaults*)))
 (defvar *template-dir* (merge-pathnames "template/" *here*))
 (defvar *static-dir* (merge-pathnames "static/" *here*))
+(defvar *output-dir* (merge-pathnames "output/" *here*))
 
 (defun date-machine (stamp)
   (when (integerp stamp) (setf stamp (local-time:universal-to-timestamp stamp)))
@@ -27,21 +29,45 @@
     (local-time:format-timestring
      NIL stamp :format '(:long-weekday ", " :ordinal-day " of " :long-month " " :year ", " :hour ":" (:min 2) ":" (:sec 2) " UTC"))))
 
+(defun date-clock (stamp)
+  (when (integerp stamp) (setf stamp (local-time:universal-to-timestamp stamp)))
+  (let ((local-time:*default-timezone* local-time:+utc-zone+))
+    (local-time:format-timestring
+     NIL stamp :format '(:hour ":" (:min 2) ":" (:sec 2)))))
+
 (defun template (path-ish)
   (merge-pathnames path-ish *template-dir*))
 
-(lquery:define-lquery-function time (node time)
-  (let ((stamp (local-time:universal-to-timestamp time)))
+(lquery:define-lquery-function time (node time &optional (format :human))
+  (let ((stamp (etypecase time
+                 (integer (local-time:universal-to-timestamp time))
+                 (local-time:timestamp time))))
     (setf (plump:attribute node "datetime") (date-machine stamp))
     (setf (plump:attribute node "title") (date-fancy stamp))
     (setf (plump:children node) (plump:make-child-array))
-    (plump:make-text-node node (date-human stamp)))
+    (plump:make-text-node node (ecase format
+                                 (:machine (date-machine stamp))
+                                 (:human (date-human stamp))
+                                 (:fancy (date-fancy stamp))
+                                 (:clock (date-clock stamp)))))
   node)
 
 (lquery:define-lquery-function template (node object)
   (setf (plump:children node) (plump:make-child-array))
   (plump:parse (template (format NIL "~(~a~).ctml" object)) :root node)
   node)
+
+(lquery:define-lquery-function email (node email)
+  (lquery:$ node
+    (attr "href" "#")
+    (text "email@email.com")
+    (data "email" (encode-email email))
+    (add-class "encoded-email")))
+
+(defun encode-email (email)
+  (let* ((scramble (alexandria:shuffle (loop for a from 0 below (length email) collect a)))
+         (email (loop for i in scramble collect (elt email i))))
+    (format NIL "~{~a~}~{,~a~}" email scramble)))
 
 (defun directory-contents (dir)
   (directory (merge-pathnames pathname-utils:*wild-file* dir)))
@@ -73,7 +99,7 @@
 
 (defun getp (plist key &key (test #'equalp))
   (loop for (k v) on plist by #'cddr
-        do (when (funcall test key v)
+        do (when (funcall test key k)
              (return v))))
 
 (define-setf-expander getp (plist key &key (test '#'equalp))

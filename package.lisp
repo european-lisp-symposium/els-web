@@ -6,6 +6,25 @@
 (in-package #:cl-user)
 (defpackage #:els-web
   (:use #:cl)
+  ;; compiler.lisp
+  (:export
+   #:compile-edition-template
+   #:compile-edition
+   #:compile-all-editions)
+  ;; edition.lisp
+  (:export
+   #:*edition*
+   #:edition
+   #:remove-edition
+   #:editions
+   #:in-edition
+   #:set-type
+   #:define-person
+   #:define-location
+   #:define-text
+   #:define-programme-entry
+   #:define-programme-day)
+  ;; toolkit.lisp
   (:export
    ))
 
