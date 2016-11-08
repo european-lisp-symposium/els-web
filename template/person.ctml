@@ -1,4 +1,4 @@
-<span class="person vcard">
+<span class="person vcard" lquery="(add-classes role)">
   <c:when test="photo"><img class="photo" alt="photo" lquery="(attr :src photo)"></img></c:when>
   <span class="fn" lquery="(text full-name)">Frank Ly. Example</span>
   <c:when test="name">
