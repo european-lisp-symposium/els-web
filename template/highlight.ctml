@@ -1,4 +1,4 @@
-<section class="highlight">
+<section lquery="(add-classes role)">
   <h4 lquery="(text title)">TITLE</h4>
   <ul iterate="speakers">
     <li class="speaker">
