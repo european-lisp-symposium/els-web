@@ -21,4 +21,5 @@
   :depends-on (:clip
                :local-time
                :pathname-utils
-               :alexandria))
+               :alexandria
+               :cl-who))

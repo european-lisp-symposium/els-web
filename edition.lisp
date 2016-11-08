@@ -66,10 +66,11 @@
              ,@args)
            '(:record-type :name)))
 
-(defmacro define-text (name text)
-  `(record '(:record-type :text
-             :name ,name
-             :text ,text)
+(defmacro define-text (name &body text)
+  `(record (list :record-type :text
+                 :name ,name
+                 :text (cl-who:with-html-output-to-string (o)
+                         ,@text))
            '(:record-type :name)))
 
 (defmacro define-programme-entry (time &rest args)
