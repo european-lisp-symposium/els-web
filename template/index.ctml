@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <title>European Lisp Symposium</title>
-    <link rel="stylesheet" type="text/css" href="../../static/els.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/els.css"/>
     <meta name="viewport" content="width=device-width"/>
     <meta name="description" content="Homepage for the European Lisp Symposium"/>
     <meta name="robots" content="index, follow"/>
@@ -145,6 +145,6 @@
         <a href="https://github.com/Shinmera/els-web">els-web</a>
       </p>
     </footer>
-    <script type="text/javascript" src="../../static/email.js"></script>
+    <script type="text/javascript" src="../static/email.js"></script>
   </body>
 </html>
