@@ -3,8 +3,6 @@
 (in-package "2016")
 
 ;;; Texts
-(load-commons)
-
 (define-text :announcement
   (:div :class "announcement" "This year's conference is co-located with <a href=\"http://2017.programmingconference.org/home\">Programming 2017</a>")
   (:div :class "announcement" "Submissions are now open!"))

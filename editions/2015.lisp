@@ -3,8 +3,6 @@
 (in-package "2015")
 
 ;;; Texts
-(load-commons)
-
 (define-text :announcement
   (:div :class "announcement" "The Conference is Over!"))
 
