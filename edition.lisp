@@ -32,7 +32,8 @@
          (:use #:cl #:els-web))
        (in-package ,name)
        (setf (edition ,name) ())
-       (local-time:enable-read-macros))))
+       (local-time:enable-read-macros)
+       (load-commons))))
 
 (defun record (data comparison-fields &optional (edition (package-name *package*)))
   (dolist (field comparison-fields)
