@@ -39,8 +39,8 @@
              data field)))
   (flet ((match-fields (entry)
            (loop for field in comparison-fields
-                 always (equalp (getp entry field)
-                                (getp data field)))))
+                 always (g= (getp entry field)
+                            (getp data field)))))
     (let ((database (edition edition)))
       (setf database (remove-if #'match-fields database))
       (setf database (cons data database))

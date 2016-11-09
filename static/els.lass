@@ -1,30 +1,134 @@
 (body
  :font-family sans-serif
  :font-size 14pt
-
- (a :color "#0088EE"
+ :margin 0
+ 
+ (a :color "#857DB1"
     :text-decoration none)
+ (img :max-width 100%
+      :max-height 100%)
 
  (header
+  :color "#FFFFFF"
+  :position relative
   (h1 :font-size 3em
       :text-align center
-      :margin 20px 0 0 0)
+      :margin 0
+      :padding 100px 0 0 0)
+  (nav.editions
+   :display flex
+   :justify-content center
+   :padding 0 0 150px 0
+   :font-weight bold
+   (* :padding 0 5px 0 5px)
+   ("*:hover" :color "#FFFFFF"))
   (nav.main
+   :position absolute
+   :bottom 0 :left 0 :right 0
    :margin 20px 0 0 0
    :display flex
    :justify-content center
-   (* :padding 10px))
-  (nav.editions
-   :display flex
-   :justify-content center))
+   :font-size 1.2em
+   (* :padding 10px)
+   ("*:hover" :background "#FFFFFF")
+   :background (rgba 59 49 118 0.5)))
+ ("header::after"
+  :content "''"
+  :position absolute
+  :top 0 :left 0 :right 0 :bottom 0
+  :background "#FFFFFF"
+  :background-image (url "../static/header.jpg")
+  :background-size cover
+  :background-repeat no-repeat
+  :background-position center
+  :filter " brightness(0.5)"
+  :z-index -1)
 
  (main
-  :margin 0 auto 0 auto
-  :width 800px)
+  :background "#3B3176"
+
+  (h2 :font-size 1.7em :text-indent 10px)
+  (h3 :font-size 1.5em :text-indent 5px)
+  (h4 :font-size 1.2em)
+
+  (>*
+   :margin 0 auto 0 auto
+   :max-width 800px)
+
+  (.announcement
+   :margin 10px
+   :padding 10px
+   :text-align center
+   :border 2px solid red
+   :font-weight bold)
+
+  (article
+   :background "#FFFFFF"
+   :padding 20px
+   :text-align justify
+   (h2 :margin 0 0 0 10px))
+
+  (a :word-break break-all)
+
+  ("#location"
+   (.photo :display block
+           :margin 0 0 10px -20px
+           :max-width "calc(100% + 40px)")
+   (.role :display none)
+   (.adr :display block
+         (.street-address :display block)
+         (.country-name :display block)))
+
+  ((:or "#organization" "#speakers")
+   (.role :display none)
+   (.fn :display none)
+   (".org::before" :content "', '"))
+
+  ("#highlights"
+   (>ul :list-style none))
+
+  ("#programme"
+   (>ol
+    :list-style none
+    :padding 0
+    (.programme-entry
+     :display flex
+     :align-items center
+     (* :padding 2px)
+     (time :text-align right
+           :min-width 70px
+           :margin 0 5px 0 0)
+     (h4 :flex-grow 1
+         :text-align left)
+     (.speakers
+      :min-width 200px
+      :text-align right
+      (.speaker :white-space nowrap)))
+    (.break :background "#EEEEEE")
+    (.organization :background "#DDDDFF")
+    (.lightning :background "#FFF5AF")
+    (.dinner :background "#EEEEEE")))
+
+  ((:or .programme-entry .highlight)
+   (h4 :display inline-block
+       :margin 0)
+   (.speakers
+    :float right
+    :list-style none
+    :margin 0
+    :display inline-block)
+   (.speaker
+    (* :display none)
+    ((:or .fn .email .org .url) :display inline)
+    (.fn :white-space nowrap))))
 
  (footer
+  :padding 10px
   :text-align center
-  :font-size 0.8em))
+  :font-size 0.8em
+  ((.person *) :display none)
+  ((.person (:or .fn .email)) :display inline)
+  (p :margin 0)))
 
 (:media "(max-width: 800px)"
         (main

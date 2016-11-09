@@ -55,7 +55,7 @@
       T
       (ecase (first filter)
         (=
-         (equalp
+         (g=
           (coerce-data (second filter) entry)
           (coerce-data (third filter) entry)))
         (in
@@ -63,8 +63,8 @@
            (let ((container (coerce-data container entry))
                  (item (coerce-data item entry)))
              (etypecase container
-               (list (member item container :test #'equalp))
-               (string (search item container :test #'equalp))))))
+               (list (member item container :test #'g=))
+               (string (search item container :test #'g=))))))
         (and
          (loop for sub in (rest filter)
                always (match-filter sub entry)))
@@ -73,20 +73,6 @@
                thereis (match-filter sub entry)))
         (not
          (not (match-filter (second filter) entry))))))
-
-(defun g< (a b)
-  (etypecase a
-    (local-time:timestamp (local-time:timestamp< a b))
-    (string (string< a b))
-    (character (char< a b))
-    (number (< a b))))
-
-(defun g> (a b)
-  (etypecase a
-    (local-time:timestamp (local-time:timestamp> a b))
-    (string (string> a b))
-    (character (char> a b))
-    (number (> a b))))
 
 (defun query (record-type &optional (filter T) &key sort)
   (let ((data (loop for entry in (car (last clip:*clipboard-stack*))
