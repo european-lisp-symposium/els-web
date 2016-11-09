@@ -7,7 +7,7 @@
     <div type="text/javascript" as="script">
       window.location = '<c:splice lquery='(text (format NIL "~a/index.html" current))'/>';
     </div>
-    <link rel="stylesheet" href="../static/els.css" />
+    <link rel="stylesheet" href="static/els.css" />
   </head>
   <body>
     <header class="full">
