@@ -6,7 +6,6 @@
 (in-package #:els-web)
 
 (defvar *editions* (make-hash-table :test 'equal))
-(defvar *edition*)
 
 (defun edition (edition)
   (let ((edition (gethash (princ-to-string edition) *editions* :nothing)))
@@ -26,14 +25,16 @@
               collect k)
         #'string>))
 
-(defmacro in-edition (name)
+(defmacro define-edition (name)
   (let ((name (princ-to-string name)))
     `(eval-when (:compile-toplevel :load-toplevel :execute)
-       (defparameter *edition* ,name)
+       (defpackage ,name
+         (:use #:cl #:els-web))
+       (in-package ,name)
        (setf (edition ,name) ())
        (local-time:enable-read-macros))))
 
-(defun record (data comparison-fields &optional (edition *edition*))
+(defun record (data comparison-fields &optional (edition (package-name *package*)))
   (dolist (field comparison-fields)
     (unless (getp data field)
       (error "Cannot enter~%  ~s~%into the database as it is missing the identifying field ~s."

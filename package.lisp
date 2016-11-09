@@ -17,7 +17,7 @@
    #:edition
    #:remove-edition
    #:editions
-   #:in-edition
+   #:define-edition
    #:set-type
    #:load-commons
    #:define-person
