@@ -23,7 +23,7 @@
 (defun editions ()
   (sort (loop for k being the hash-keys of *editions*
               collect k)
-        #'string>))
+        #'string<))
 
 (defmacro define-edition (name)
   (let ((name (princ-to-string name)))

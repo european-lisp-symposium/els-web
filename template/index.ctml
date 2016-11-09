@@ -12,7 +12,8 @@
     <header>
       <h1>European Lisp Symposium</h1>
       <nav class="editions" iterate="(query :edition)">
-        <a href="#" lquery='(text year) (attr :href (format NIL "../~a/index.html" year))'>20XX</a>
+        <a href="#" lquery='(text year) (attr :href (format NIL "../~a/index.html" year))
+                            (add-class (if current "current" "other"))'>20XX</a>
       </nav>
       <nav class="main">
         <a href="#about">About</a>
