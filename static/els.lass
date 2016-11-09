@@ -20,15 +20,20 @@
   (nav.editions
    :display flex
    :justify-content center
+   :flex-wrap wrap
    :padding 0 0 150px 0
    :font-weight bold
+   :font-size 1.5em
+   (.current :color "#FFD013")
    (* :padding 0 5px 0 5px)
    ("*:hover" :color "#FFFFFF"))
   (nav.main
+   :text-align center
    :position absolute
    :bottom 0 :left 0 :right 0
    :margin 20px 0 0 0
    :display flex
+   :align-items stretch
    :justify-content center
    :font-size 1.2em
    (* :padding 10px)
@@ -61,8 +66,9 @@
    :margin 10px
    :padding 10px
    :text-align center
-   :border 2px solid red
-   :font-weight bold)
+   :background "#FFD013"
+   :font-weight bold
+   (a :color "#555555"))
 
   (article
    :margin 30px 0 0 0
@@ -138,6 +144,8 @@
   (p :margin 0)))
 
 (:media "(max-width: 800px)"
-        (main
-         :margin 0 !important
-         :width auto !important))
+        (body
+         :font-size 12pt
+         (main
+          :margin 0 !important
+          :width auto !important)))

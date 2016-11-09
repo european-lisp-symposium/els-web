@@ -12,9 +12,7 @@
     (let ((*package* #.*package*)
           (target (plump:parse template)))
       (plump:serialize
-       (clip:with-clipboard-bound ((append data
-                                           (loop for edition in (editions)
-                                                 collect `(:record-type :edition :year ,edition))))
+       (clip:with-clipboard-bound (data)
          (clip:process-node target))
        stream))))
 
@@ -36,7 +34,11 @@
       (compile-edition-template
        template
        (merge-pathnames "index.html" path)
-       (edition edition))
+       (append (edition edition)
+               (loop for year in (editions)
+                     collect `(:record-type :edition
+                               :year ,year
+                               :current ,(if (g= edition year) T NIL)))))
       path)))
 
 (defun compile-all-editions (&key (if-exists :supersede)
