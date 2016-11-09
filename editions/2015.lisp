@@ -1,5 +1,6 @@
 (in-package #:els-web-editions)
-(in-edition 2015)
+(define-edition "2015")
+(in-package "2015")
 
 ;;; Texts
 (load-commons)
