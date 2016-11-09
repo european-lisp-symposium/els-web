@@ -1,7 +1,7 @@
-<section lquery="(add-classes role)">
+<section class="highlight" lquery="(add-classes role)">
   <h4 lquery="(text title)">TITLE</h4>
-  <ul iterate="speakers">
-    <li class="speaker">
+  <ul iterate="speakers" class="speakers">
+    <li>
       <c:using value="(query1 :person (list '= 'full-name *))">
         <c:splice lquery="(template :person)" />
       </c:using>

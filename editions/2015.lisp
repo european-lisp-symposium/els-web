@@ -16,16 +16,16 @@
        (:li "Educational approaches and perspectives")
        (:li "Experience reports and case studies"))
   (:p "We invite submissions in the following forms:")
-  (:ul (:li "Papers: Technical papers of up to 8 pages that describe original results or explain known ideas in new and elegant ways.")
-       (:li "Demonstrations: Abstracts of up to 2 pages for demonstrations of tools, libraries, and applications.")
-       (:li "Tutorials: Abstracts of up to 4 pages for in-depth presentations about topics of special interest for at least 90 minutes and up to 180 minutes."))
+  (:ul (:li "<b>Papers</b>: Technical papers of up to 8 pages that describe original results or explain known ideas in new and elegant ways.")
+       (:li "<b>Demonstrations</b>: Abstracts of up to 2 pages for demonstrations of tools, libraries, and applications.")
+       (:li "<b>Tutorials</b>: Abstracts of up to 4 pages for in-depth presentations about topics of special interest for at least 90 minutes and up to 180 minutes."))
   (:p "The symposium will also provide slots for lightning talks, to be registered on-site, every day.
 All submissions should be formatted following the ACM SIGS guidelines and include ACM classification categories and terms. For more information on the submission guidelines and the ACM keywords, see: <a href=\"http://www.acm.org/sigs/publications/proceedings-templates\">http://www.acm.org/sigs/publications/proceedings-templates</a> and <a href=\"http://www.acm.org/about/class/1998\">http://www.acm.org/about/class/1998</a>.")
   (:p "Submissions should be uploaded to Easy Chair, at the following address:
 <a href=\"https://www.easychair.org/conferences/?conf=els2015\">https://www.easychair.org/conferences/?conf=els2015</a>"))
 
 (define-text :announcement
-  (:h2 "The Conference is Over!"))
+  (:div :class "announcement" "The Conference is Over!"))
 
 ;;; People
 (define-person (:family-name "Verna"
@@ -192,7 +192,7 @@ All submissions should be formatted following the ACM SIGS guidelines and includ
 ;;; Locations
 (define-location "Goldsmiths, University of London"
   :role (:conference)
-  :photo "http://www.european-lisp-symposium.org/editions/2015/img/london/rhb-gold.jpg"
+  :photo "https://c1.staticflickr.com/8/7234/7181843480_65728a3904_b.jpg"
   :website "http://www.gold.ac.uk/"
   :address (:street "New Cross"
             :city "London"
@@ -242,7 +242,8 @@ All submissions should be formatted following the ACM SIGS guidelines and includ
              :role (:organization))
   @09:30:00 (:title "Quicklisp: On Beyond Beta"
              :role (:talk :keynote)
-             :speakers ("Zach Beane"))
+             :speakers ("Zach Beane")
+             :description "Quicklisp was released in 2010 as a public beta. Five years later, it's still in beta. How has Quicklisp (and Common Lisp) evolved in the past five years? What will it take for Quicklisp to go on beyond beta?")
   @10:30:00 (:title "Coffee"
              :role (:break))
   @11:00:00 (:title "Efficient Applicative Programming Environments for Computer Vision Applications"
@@ -269,7 +270,8 @@ All submissions should be formatted following the ACM SIGS guidelines and includ
              :role (:break))
   @16:30:00 (:title "Unwanted memory retention"
              :role (:talk :keynote)
-             :speakers ("Martin Cracauer"))
+             :speakers ("Martin Cracauer")
+             :description "This talk goes over numerous oddities in a Lisp-based system which led to unwanted heap memory retention and to constant resident memory growth over the uptime of the system. Issues covered include a mostly conservative but also paged garbage collector, the difficulty of clearing out data structures that are retainted as an optimization but that might hold on to large amounts of heap (and how that happens in C++, too) and how large intercollected and theoretically uprooted \"clouds of heap debris\" interact with stale pointers out of same. The most delicious pieces center around pointer staleness out of the saved (on-disk, but read-write mapped) part of the heap, which is not garbage collected, into anonymous memory backed heap and how you can create rootless but uncollected and \"untraceable\" object circles. Untraceable until you hack up the GC to help you.")
   @17:30:00 (:title "Lightning Talks"
              :role (:talk :lightning))
   @18:00:00 (:title ""
@@ -291,12 +293,18 @@ All submissions should be formatted following the ACM SIGS guidelines and includ
              :speakers ("Simon Lynch"))
   @12:30:00 (:title "Escaping the Heap"
              :role (:talk :keynote)
-             :speakers ("Ahmon Dancy"))
+             :speakers ("Ahmon Dancy")
+             :description "Common Lisp implementations provide great automatic memory management of data structures. These data structures are allocated from a memory area called the “heap”. However, there are times when heap allocation is inadequate to satisfy the needs of the application. For example, sometimes data structures need to be persistent or shareable amongst separate processes. In these cases, alternatives to using the heap must be considered.
+
+In this talk we will explore the motivations for out-of-heap data structures. We will discuss some of the out-of-heap data structures that we’ve created in the course of developing our database product, such as lists, hash tables, and arrays. We will describe the tools and mechanisms that we used to implement them, including memory-mapped files, foreign structs, aligned pointers and direct memory accesses. Finally we will discuss the downsides of out-of-heap data structures and the constant struggle between abstractions and performance.")
   @13:00:00 (:title "Lunch"
              :role (:break))
   @14:30:00 (:title "µKanren: Running the Little Things Backwards"
              :role (:talk :keynote)
-             :speakers ("Bodil Stokke"))
+             :speakers ("Bodil Stokke")
+             :description "Relational programming, or logic programming, is a programming paradigm that exhibits remarkable and powerful properties, to the extent that its implementation seems frightfully daunting to the layman. µKanren is a minimal relational language that seeks to strip the paradigm down to its core, leaving us with a succinct, elegant and above all simple set of primitives on top of which we can rebuild even the most powerful relational constructs.
+
+In this talk, we will explore the µKanren language by implementing it from first principles in a simple functional programming language, going on to demonstrate how you can assemble these simple building blocks into a semblance of its richer parent, miniKanren, and maybe solve a logic puzzle or two to make sure it’s working as advertised.")
   @15:30:00 (:title "Coffee"
              :role (:break))
   @16:00:00 (:title "Woo: a fast HTTP server for Common Lisp"
@@ -311,7 +319,7 @@ All submissions should be formatted following the ACM SIGS guidelines and includ
   @17:30:00 (:title "First-class Global Environments in Common Lisp"
              :role (:talk)
              :speakers ("Robert Strandh"))
-  @18:00:00 (:title "Lightning Talk"
+  @18:00:00 (:title "Lightning Talks"
              :role (:talk :lightning))
   @18:30:00 (:title "Conference End"
              :role (:organization)))
