@@ -51,6 +51,11 @@
   :filter " brightness(0.5)"
   :z-index -1)
 
+ (header.full
+  :font-size 1.5em
+  :position fixed
+  :top 0 :bottom 0 :left 0 :right 0)
+
  ((:or main footer)
   :max-width 800px
   :margin 0 auto 0 auto

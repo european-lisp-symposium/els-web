@@ -26,6 +26,12 @@
   ;; (copy-directory-tree *static-dir* path)
   )
 
+(defun editions-data (current)
+  (loop for edition in (editions)
+        collect `(:record-type :edition
+                  :year ,edition
+                  :current ,(if (g= edition current) T NIL))))
+
 (defun compile-edition (edition &key (if-exists :supersede)
                                      (template (template "index.ctml")))
   (let* ((edition (princ-to-string edition))
@@ -35,14 +41,21 @@
        template
        (merge-pathnames "index.html" path)
        (append (edition edition)
-               (loop for year in (editions)
-                     collect `(:record-type :edition
-                               :year ,year
-                               :current ,(if (g= edition year) T NIL)))))
+               (editions-data edition)))
       path)))
+
+(defun compile-toplevel (&key (template (template "toplevel.ctml")))
+  (with-open-file (stream (merge-pathnames "index.html" *output-dir*)
+                          :direction :output
+                          :if-exists :supersede)
+    (let ((*package* #.*package*))
+      (plump:serialize
+       (clip:process template :current (car (last (editions))) :editions (editions))
+       stream))))
 
 (defun compile-all-editions (&key (if-exists :supersede)
                                   (template (template "index.ctml")))
+  (compile-toplevel)
   (loop for edition in (editions)
         collect (compile-edition edition :if-exists if-exists
                                          :template template)))

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8"/>
+    <title>European Lisp Symposium</title>
+    <meta http-equiv="refresh" content="0;URL=" lquery='(attr :content (format NIL "0;URL=~a/index.html" current))'>
+    <div type="text/javascript" as="script">
+      window.location = '<c:splice lquery='(text (format NIL "~a/index.html" current))'/>';
+    </div>
+    <link rel="stylesheet" href="../static/els.css" />
+  </head>
+  <body>
+    <header class="full">
+      <h1>European Lisp Symposium</h1>
+      <nav class="editions" iterate="editions">
+        <a href="#" lquery='(text *) (attr :href (format NIL "~a/index.html" *))'>20XX</a>
+      </nav>
+    </header>
+  </body>
+</html>
