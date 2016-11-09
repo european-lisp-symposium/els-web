@@ -18,7 +18,7 @@
       <nav class="main">
         <a href="#about">About</a>
         <a href="#scope">Scope</a>
-        <a href="#current">Current Conference</a>
+        <a href="#conference">Conference</a>
         <c:when test="registration-open">
           <a href="#registration">Registration</a>
         </c:when>
@@ -40,8 +40,8 @@
         <c:splice lquery="(html (query-text '(= name :scope)))" />
       </article>
       
-      <article id="current">
-        <h2>Current Conference</h2>
+      <article id="conference">
+        <h2>Conference</h2>
         <c:splice lquery="(html (query-text '(= name :announcement)))" />
 
         <c:when test="(query :deadline)">
