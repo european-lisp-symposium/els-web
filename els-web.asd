@@ -17,7 +17,8 @@
                (:file "edition")
                (:file "compiler")
                (:module "editions"
-                :components ((:file "2015"))))
+                :components ((:file "2015")
+                             (:file "2016"))))
   :depends-on (:clip
                :local-time
                :pathname-utils

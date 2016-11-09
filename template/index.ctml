@@ -21,7 +21,9 @@
         <c:when test="registration-open">
           <a href="#registration">Registration</a>
         </c:when>
-        <a href="#programme">Programme</a>
+        <c:when test="(query :programme-entry)">
+          <a href="#programme">Programme</a>
+        </c:when>
         <a href="#proceedings">Proceedings</a>
         <a href="http://lists.lrde.epita.fr/listinfo/elsconf" rel="external">Mailing List</a>
       </nav>
@@ -29,17 +31,30 @@
     <main>
       <article id="about">
         <h2>About</h2>
-        <div lquery="(html (query-text '(= name :about)))" />
+        <c:splice lquery="(html (query-text '(= name :about)))" />
       </article>
 
       <article id="scope">
         <h2>Scope</h2>
-        <div lquery="(html (query-text '(= name :scope)))" />
+        <c:splice lquery="(html (query-text '(= name :scope)))" />
       </article>
       
       <article id="current">
         <h2>Current Conference</h2>
-        <div lquery="(html (query-text '(= name :announcement)))" />
+        <c:splice lquery="(html (query-text '(= name :announcement)))" />
+
+        <c:when test="(query :deadline)">
+          <section id="submissions">
+            <h3>Submissions</h3>
+            <c:splice lquery="(html (query-text '(= name :submissions)))" />
+            <c:when test="(query :deadline)">
+              <h4>Deadlines</h4>
+              <ul iterate="(query :deadline)">
+                <li><label lquery="(text name)">NAME</label><time lquery="(time time)"/></li>
+              </ul>
+            </c:when>
+          </section>
+        </c:when>
 
         <c:when test="(query :programme-entry '(in role :keynote))">
           <section id="highlights">
@@ -56,12 +71,14 @@
             <c:using value="(query1 :location '(in role :conference))">
               <c:splice lquery="(template :location)" />
             </c:using>
-            <section id="hotels">
-              <h4>Hotels</h4>          
-              <ul iterate="(query :location '(in role :hotel))">
-                <li><c:splice lquery="(template :location)" /></li>
-              </ul>
-            </section>
+            <c:when test="(query :location '(in role :hotel))">
+              <section id="hotels">
+                <h4>Hotels</h4>          
+                <ul iterate="(query :location '(in role :hotel))">
+                  <li><c:splice lquery="(template :location)" /></li>
+                </ul>
+              </section>
+            </c:when>
           </section>
         </c:when>
 
@@ -129,6 +146,6 @@
         <a href="https://github.com/Shinmera/els-web">els-web</a>
       </p>
     </footer>
-    <script type="text/javascript" src="email.js"></script>
+    <script type="text/javascript" src="../../static/email.js"></script>
   </body>
 </html>

@@ -2,6 +2,8 @@
  :font-family sans-serif
  :font-size 14pt
  :margin 0
+ :color "#151515"
+ :background "#3B3176"
  
  (a :color "#857DB1"
     :text-decoration none)
@@ -44,16 +46,16 @@
   :filter " brightness(0.5)"
   :z-index -1)
 
- (main
-  :background "#3B3176"
+ ((:or main footer)
+  :max-width 800px
+  :margin 0 auto 0 auto
+  :padding 20px
+  :background "#FFFFFF")
 
+ (main
   (h2 :font-size 1.7em :text-indent 10px)
   (h3 :font-size 1.5em :text-indent 5px)
   (h4 :font-size 1.2em)
-
-  (>*
-   :margin 0 auto 0 auto
-   :max-width 800px)
 
   (.announcement
    :margin 10px
@@ -63,12 +65,15 @@
    :font-weight bold)
 
   (article
-   :background "#FFFFFF"
-   :padding 20px
+   :margin 30px 0 0 0
    :text-align justify
    (h2 :margin 0 0 0 10px))
 
   (a :word-break break-all)
+
+  ("#submissions"
+   (label :display inline-block
+          :min-width 250px))
 
   ("#location"
    (.photo :display block
@@ -76,7 +81,9 @@
            :max-width "calc(100% + 40px)")
    (.role :display none)
    (.adr :display block
-         (.street-address :display block)
+         (".extended-address::before" :content "', '")
+         ((:or ".extended-address::after"
+               ".postal-code::after") :content "'\\A '" :white-space pre)
          (.country-name :display block)))
 
   ((:or "#organization" "#speakers")
@@ -123,9 +130,9 @@
     (.fn :white-space nowrap))))
 
  (footer
-  :padding 10px
   :text-align center
   :font-size 0.8em
+  :padding 20px 20px 5px 20px
   ((.person *) :display none)
   ((.person (:or .fn .email)) :display inline)
   (p :margin 0)))

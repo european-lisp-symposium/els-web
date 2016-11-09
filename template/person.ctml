@@ -13,7 +13,7 @@
     </c:using>
   </c:when>
   <c:when test="nickname"><span class="nickname" lquery="(text nickname)"></span></c:when>
-  <c:when test="email"><span class="email" lquery="(email email)"></span></c:when>
+  <c:when test="email"><a class="email" lquery="(email email)"></a></c:when>
   <c:when test="website"><a class="url" lquery="(attr :href website) (text website)"></a></c:when>
   <c:when test="telephone"><span class="tel" lquery="(text telephone)"></span></c:when>
   <c:when test="organization"><span class="org" lquery="(text organization)"></span></c:when>
