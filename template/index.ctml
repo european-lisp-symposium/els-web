@@ -17,7 +17,6 @@
       </nav>
       <nav class="main">
         <a href="#about">About</a>
-        <a href="#scope">Scope</a>
         <a href="#conference">Conference</a>
         <c:when test="registration-open">
           <a href="#registration">Registration</a>
@@ -33,11 +32,10 @@
       <article id="about">
         <h2>About</h2>
         <c:splice lquery="(html (query-text '(= name :about)))" />
-      </article>
-
-      <article id="scope">
-        <h2>Scope</h2>
-        <c:splice lquery="(html (query-text '(= name :scope)))" />
+        <section id="scope">
+          <h3>Scope</h3>
+          <c:splice lquery="(html (query-text '(= name :scope)))" />
+        </section>
       </article>
       
       <article id="conference">
