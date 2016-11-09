@@ -1,6 +1,6 @@
 (in-package #:els-web-editions)
-(define-edition "2016")
-(in-package "2016")
+(define-edition "2017")
+(in-package "2017")
 
 ;;; Texts
 (define-text :announcement
