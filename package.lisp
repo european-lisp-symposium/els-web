@@ -19,11 +19,13 @@
    #:editions
    #:in-edition
    #:set-type
+   #:load-commons
    #:define-person
    #:define-location
    #:define-text
    #:define-programme-entry
-   #:define-programme-day)
+   #:define-programme-day
+   #:define-deadline)
   ;; toolkit.lisp
   (:export
    ))

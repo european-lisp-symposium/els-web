@@ -25,7 +25,8 @@
       (:error (error "Edition already exists."))
       ((NIL) (return-from prepare-path))))
   (ensure-directories-exist path)
-  (copy-directory-tree *static-dir* path))
+  ;; (copy-directory-tree *static-dir* path)
+  )
 
 (defun compile-edition (edition &key (if-exists :supersede)
                                      (template (template "index.ctml")))
