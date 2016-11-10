@@ -176,7 +176,8 @@
   :address (:street "New Cross"
             :city "London"
             :post-code "SE14 6NW"
-            :country "United Kingdom"))
+            :country "United Kingdom")
+  :map T)
 
 (define-location "Premier Inn"
   :role (:hotel)

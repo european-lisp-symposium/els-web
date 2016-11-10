@@ -13,6 +13,7 @@
   :homepage "https://github.com/Shinmera/els-web"
   :serial T
   :components ((:file "package")
+               (:file "secret")
                (:file "toolkit")
                (:file "edition")
                (:file "compiler")
@@ -23,4 +24,5 @@
                :local-time
                :pathname-utils
                :alexandria
-               :cl-who))
+               :cl-who
+               :cl-ppcre))
