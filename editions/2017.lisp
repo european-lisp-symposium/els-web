@@ -30,6 +30,7 @@
             :extended "Building D"
             :post-code "1050"
             :city "Brussels"
-            :country "Belgium"))
+            :country "Belgium")
+  :map T)
 
 ;;; Programme

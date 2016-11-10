@@ -1,5 +1,10 @@
 <span class="location vcard">
-  <c:when test="photo"><img class="photo" alt="photo" lquery="(attr :src photo)" /></c:when>
+  <span class="imagery">
+    <c:when test="photo"><img class="photo" alt="photo" lquery="(attr :src photo)" /></c:when>
+    <c:when test="map">
+      <iframe class="map" allowfullscreen src="" lquery="(attr :src (map-link *))">_</iframe>
+    </c:when>
+  </span>
   <a class="fn url" lquery="(text name) (attr :href website)">Frank Ly. Example</a>
   <c:when test="email"><span class="email" lquery="(text email)"></span></c:when>
   <c:when test="telephone"><span class="tel" lquery="(text telephone)"></span></c:when>

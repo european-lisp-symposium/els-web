@@ -35,6 +35,16 @@
     (local-time:format-timestring
      NIL stamp :format '(:hour ":" (:min 2)))))
 
+(defun format-location (l)
+  (format NIL "~a~@[, ~a~]~@[, ~a~]~@[, ~a~]~@[ ~a~]~@[, ~a~]"
+          (getp l :name)
+          (let ((l (getp l :address)))
+            (getp l :street)) (getp l :city) (getp l :region) (getp l :post-code) (getp l :country)))
+
+(defun map-link (location &optional (key (secret :google-api-key)))
+  (format NIL "https://www.google.com/maps/embed/v1/place?key=~a&q=~a"
+          key (cl-ppcre:regex-replace-all " " (format-location location) "+")))
+
 (defun template (path-ish)
   (merge-pathnames path-ish *template-dir*))
 
