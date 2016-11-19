@@ -101,9 +101,9 @@
              :description ,description)
            '(:record-type :name)))
 
-(defmacro define-sponsor (name &key website image)
+(defmacro define-sponsor (name &key website logo)
   `(record '(:record-type :sponsor
              :name ,name
              :website ,website
-             :image ,image)
+             :logo ,logo)
            '(:record-type :name)))

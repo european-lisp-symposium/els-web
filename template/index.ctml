@@ -93,8 +93,12 @@
               <c:splice lquery="(template :person)" />
             </c:using>
             <h4>Committee</h4>
-            <ul iterate="(query :person '(in role :committee))">
+            <ul class="committee-members" iterate="(query :person '(in role :committee))">
               <li><c:splice lquery="(template :person)" /></li>
+            </ul>
+            <h4>Sponsors</h4>
+            <ul class="sponsors" iterate="(query :sponsor)">
+              <li><c:splice lquery="(template :sponsor)" /></li>
             </ul>
           </section>
         </c:when>

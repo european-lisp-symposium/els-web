@@ -1,0 +1,4 @@
+<a class="sponsor" lquery="(attr :href website)">
+  <span class="name" lquery="(text name)"></span>
+  <img src="#" alt="logo" lquery="(attr :src logo)" />
+</a>
