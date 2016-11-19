@@ -6,6 +6,31 @@
 (define-text :announcement
   (:div :class "announcement" "The Conference is Over!"))
 
+;;; Sponsors
+(define-sponsor epita
+  :website "http://www.epita.fr/"
+  :image "http://www.epita.fr/images/logo-epita.png?v=26112014")
+
+(define-sponsor goldsmiths
+  :website "http://www.gold.ac.uk/"
+  :image "http://www.gold.ac.uk/_assets/img/svg/sprite/logo.b628588525161823.svg")
+
+(define-sponsor lispworks
+  :website "http://www.lispworks.com/"
+  :image "http://www.lispworks.com/images/logo.png")
+
+(define-sponsor franz
+  :website "http://www.franz.com/"
+  :image "http://franz.com/images/logo.png")
+
+(define-sponsor clozure
+  :website "http://www.clozure.com/"
+  :image "http://www.clozure.com/images/clozure-logo.png")
+
+(define-sponsor google
+  :website "http://www.itasoftware.com/"
+  :image "http://www.itasoftware.com/images/ita-logo-md.png")
+
 ;;; People
 (define-person (:family-name "Verna"
                 :given-name "Didier")

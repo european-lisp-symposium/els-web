@@ -100,3 +100,10 @@
              :time ,deadline
              :description ,description)
            '(:record-type :name)))
+
+(defmacro define-sponsor (name &key website image)
+  `(record '(:record-type :sponsor
+             :name ,name
+             :website ,website
+             :image ,image)
+           '(:record-type :name)))
