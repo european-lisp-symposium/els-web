@@ -13,8 +13,8 @@
   :homepage "https://github.com/Shinmera/els-web"
   :serial T
   :components ((:file "package")
-               (:file "secret")
                (:file "toolkit")
+               (:file "secret")
                (:file "edition")
                (:file "compiler")
                (:module "editions"
