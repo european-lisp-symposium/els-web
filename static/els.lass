@@ -136,6 +136,27 @@
      (.fn :display none)
      (".org::before" :content "', '"))
 
+    ("#organization"
+     (.sponsors
+      :list-style none
+      :padding 0
+      :display flex
+      :flex-wrap wrap
+      :justify-content space-between
+      (.name :display none)
+      (.sponsor
+       :display block
+       :width 128px
+       :height 128px
+       :line-height 128px
+       :padding 10px
+       :margin 2px
+       :background "#EEEEEE"
+       (img :max-width 100%
+            :max-height 100%
+            :display inline-block
+            :vertical-align middle))))
+
     ("#highlights"
      (>ul :list-style none))
 
