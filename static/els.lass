@@ -52,6 +52,7 @@
      :display flex
      :align-items stretch
      :justify-content center
+     :flex-wrap wrap
      :font-size 1.2em
      :background #(nav-bg)
      (* :padding 10px
@@ -82,6 +83,7 @@
     :background "#FFFFFF")
 
    (main
+    ((:or h2 h3 h4 h5 h6) :text-align left)
     (h2 :font-size 1.7em :text-indent 10px)
     (h3 :font-size 1.5em :text-indent 5px)
     (h4 :font-size 1.2em)
@@ -209,6 +211,18 @@
          (main
           :margin 0 !important
           :width auto !important
+          ("#organization"
+           (.sponsors
+            (.sponsor
+             :width 100px
+             :height 100px
+             :line-height 100px)))
+          ("#programme"
+           (>ol
+            :margin 0 -20px 0 -20px
+            (.programme-entry
+             (time :min-width 40px)
+             (.speakers :display none))))
           ("#location"
            (.location
             (.imagery
