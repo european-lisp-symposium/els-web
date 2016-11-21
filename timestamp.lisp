@@ -50,9 +50,9 @@
                                           (/ (offset timestamp) 60)))))
 
 (defun date-machine (stamp)
-  (format NIL "~4,'0d-~2,'0d-~2,'0dT~2,'0d:~2,'0d:~2,'0d~:[-~;+~]~2,'0d:~2,'0d"
+  (format NIL "~4,'0d-~2,'0d-~2,'0dT~2,'0d:~2,'0d:~2,'0d~:[~:[-~;+~]~2,'0d:~2,'0d~;Z~]"
           (year stamp) (month stamp) (day stamp) (hour stamp) (minute stamp) (sec stamp)
-          (< 0 (offset stamp)) (floor (abs (offset stamp)) 60) (mod (abs (offset stamp)) 60)))
+          (= 0 (offset stamp)) (< 0 (offset stamp)) (floor (abs (offset stamp)) 60) (mod (abs (offset stamp)) 60)))
 
 (defun date-human (stamp)
   (format NIL "~4,'0d.~2,'0d.~2,'0d"
@@ -92,9 +92,9 @@
     (T "th")))
 
 (defun date-fancy (stamp)
-  (format NIL "~a ~d~a of ~a ~d, ~a:~2,'0d (~:[-~;+~]~2,'0d:~2,'0d)"
+  (format NIL "~a ~d~a of ~a ~d, ~a:~2,'0d ~:[(~:[-~;+~]~2,'0d:~2,'0d)~;~]"
           (day-of-week-name (day-of-week stamp)) (day stamp) (plural-suffix (day stamp)) (month-name (month stamp)) (year stamp) (hour stamp) (minute stamp)
-          (< 0 (offset stamp)) (floor (abs (offset stamp)) 60) (mod (abs (offset stamp)) 60)))
+          (= 0 (offset stamp)) (< 0 (offset stamp)) (floor (abs (offset stamp)) 60) (mod (abs (offset stamp)) 60)))
 
 (defun date-clock (stamp)
   (format NIL "~a:~2,'0d"
