@@ -22,6 +22,7 @@
 
 (defun editions ()
   (sort (loop for k being the hash-keys of *editions*
+              unless (string= k "toplevel")
               collect k)
         #'string<))
 
@@ -32,8 +33,7 @@
          (:use #:cl #:els-web))
        (in-package ,name)
        (setf (edition ,name) ())
-       (named-readtables:in-readtable :els-web)
-       (load-commons))))
+       (named-readtables:in-readtable :els-web))))
 
 (defun record (data comparison-fields &optional (edition (package-name *package*)))
   (dolist (field comparison-fields)
@@ -48,9 +48,6 @@
       (setf database (remove-if #'match-fields database))
       (setf database (cons data database))
       (setf (edition edition) database))))
-
-(defun load-commons ()
-  (load (merge-pathnames "editions/common.lisp" *here*)))
 
 (defmacro define-person (name &rest args)
   (let ((full-name (if (listp name)
@@ -104,3 +101,8 @@
              :website ,website
              :logo ,logo)
            '(:record-type :name)))
+
+(defmacro define-proceedings (website)
+  `(record '(:record-type :proceedings
+             :website ,website)
+           '(:record-type)))

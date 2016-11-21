@@ -1,3 +1,7 @@
+(in-package #:els-web-editions)
+(define-edition "toplevel")
+(in-package "toplevel")
+
 (define-text :about
   (:p "The purpose of the European Lisp Symposium is to provide a forum for the discussion and dissemination of all aspects of design, implementation and application of any of the Lisp and Lisp-inspired dialects, including Common Lisp, Scheme, Emacs Lisp, AutoLisp, ISLISP, Dylan, Clojure, ACL2, ECMAScript, Racket, SKILL, Hop and so on. We encourage everyone interested in Lisp to participate.")
   (:p "The European Lisp Symposium invites high quality papers about novel research results, insights and lessons learned from practical applications and educational perspectives. We also encourage submissions about known ideas as long as they are presented in a new setting and/or in a highly elegant way."))

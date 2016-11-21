@@ -332,3 +332,5 @@ In this talk, we will explore the µKanren language by implementing it from firs
              :role (:talk :lightning))
   @18:30:00 (:title "Conference End"
              :role (:organization)))
+
+(define-proceedings "http://www.european-lisp-symposium.org/editions/2015/ELS2015.pdf")
