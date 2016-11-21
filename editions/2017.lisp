@@ -7,11 +7,15 @@
   (:div :class "announcement" "This year's conference is co-located with <a href=\"http://2017.programmingconference.org/home\">Programming 2017</a>")
   (:div :class "announcement" "Submissions are now open!"))
 
-(define-deadline "Submission deadline" @2017-01-30)
+(define-date "Submission deadline" @2017-01-30)
 
-(define-deadline "Notification of acceptance" @2017-02-27)
+(define-date "Notification of acceptance" @2017-02-27)
 
-(define-deadline "Final papers" @2017-03-20)
+(define-date "Final papers" @2017-03-20)
+
+(define-date "Conference start" @2017-04-03)
+
+(define-date "Conference end" @2017-04-04)
 
 ;;; People
 (define-person (:family-name "Verna"
