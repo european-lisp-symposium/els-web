@@ -45,13 +45,11 @@
       path)))
 
 (defun compile-toplevel (&key (template (template "toplevel.ctml")))
-  (with-open-file (stream (merge-pathnames "index.html" *output-dir*)
-                          :direction :output
-                          :if-exists :supersede)
-    (let ((*package* #.*package*))
-      (plump:serialize
-       (clip:process template :current (car (last (editions))) :editions (editions))
-       stream))))
+  (compile-edition-template
+   template
+   (merge-pathnames "index.html" *output-dir*)
+   (append (edition "toplevel")
+           (editions-data (car (last (editions)))))))
 
 (defun compile-all-editions (&key (if-exists :supersede)
                                   (template (template "index.ctml")))

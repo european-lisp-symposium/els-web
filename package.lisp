@@ -26,7 +26,8 @@
    #:define-programme-entry
    #:define-programme-day
    #:define-date
-   #:define-sponsor)
+   #:define-sponsor
+   #:define-proceedings)
   ;; toolkit.lisp
   (:export
    ))
