@@ -30,7 +30,7 @@
           <a href="#registration">Registration</a>
         </c:when>
         <c:when test="(query :location)">
-          <a href="3location">Location</a>
+          <a href="#location">Location</a>
         </c:when>
         <c:when test="(query :programme-entry)">
           <a href="#programme">Programme</a>
