@@ -37,18 +37,20 @@
      :display flex
      :justify-content center
      :flex-wrap wrap
-     :padding 0 0 150px 0
      :font-weight bold
      :font-size 1.5em
      (* :padding 0 5px 0 5px
         :color #(ed-fg))
      (.current :color #(ed-current-fg))
      ("*:hover" :color #(ed-hover-fg)))
+
+    (div.dates
+     :margin 20px 0 50px 0
+     :text-align center
+     :font-size 2em)
+    
     (nav.main
      :text-align center
-     :position absolute
-     :bottom 0 :left 0 :right 0
-     :margin 20px 0 0 0
      :display flex
      :align-items stretch
      :justify-content center
