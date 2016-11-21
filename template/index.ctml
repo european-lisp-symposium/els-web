@@ -15,6 +15,10 @@
         <a href="#" lquery='(text year) (attr :href (format NIL "../~a/index.html" year))
                             (add-class (if current "current" "other"))'>20XX</a>
       </nav>
+      <div class="dates">
+        <time lquery="(time (queryf :time :date '(= name :conference\ start)) :human)"/> - 
+        <time lquery="(time (queryf :time :date '(= name :conference\ end)) :human)"/>
+      </div>
       <nav class="main">
         <a href="#about">About</a>
         <a href="#conference">Conference</a>
