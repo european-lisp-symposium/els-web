@@ -95,6 +95,7 @@
 
 (defun g< (a b)
   (etypecase a
+    (symbol (string< a b))
     (timestamp (timestamp< a b))
     (string (string< a b))
     (character (char< a b))
@@ -102,6 +103,7 @@
 
 (defun g> (a b)
   (etypecase a
+    (symbol (string> a b))
     (timestamp (timestamp> a b))
     (string (string> a b))
     (character (char> a b))
@@ -110,4 +112,6 @@
 (defun g= (a b)
   (etypecase a
     (timestamp (timestamp= a b))
+    (symbol (string-equal a b))
+    (string (string-equal a b))
     (T (equalp a b))))
