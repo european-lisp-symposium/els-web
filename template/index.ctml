@@ -42,13 +42,13 @@
         <h2>Conference</h2>
         <c:splice lquery="(html (query-text '(= name :announcement)))" />
 
-        <c:when test="(query :deadline)">
+        <c:when test="(query :date '(= name :final\ papers))">
           <section id="submissions">
             <h3>Submissions</h3>
             <c:splice lquery="(html (query-text '(= name :submissions)))" />
-            <c:when test="(query :deadline)">
-              <h4>Deadlines</h4>
-              <ul iterate="(query :deadline)">
+            <c:when test="(query :date)">
+              <h4>Dates</h4>
+              <ul iterate="(query :date T :sort '(time :asc))">
                 <li><label lquery="(text name)">NAME</label><time lquery="(time time)"/></li>
               </ul>
             </c:when>

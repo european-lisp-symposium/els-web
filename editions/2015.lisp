@@ -6,6 +6,10 @@
 (define-text :announcement
   (:div :class "announcement" "The Conference is Over!"))
 
+(define-date "Conference start" @2015-04-20)
+
+(define-date "Conference end" @2015-04-21)
+
 ;;; Sponsors
 (define-sponsor epita
   :website "http://www.epita.fr/"

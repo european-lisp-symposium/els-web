@@ -25,7 +25,7 @@
    #:define-text
    #:define-programme-entry
    #:define-programme-day
-   #:define-deadline
+   #:define-date
    #:define-sponsor)
   ;; toolkit.lisp
   (:export

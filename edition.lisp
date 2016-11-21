@@ -91,10 +91,10 @@
              collect `(define-programme-entry ,(merge-timestamp time base-time)
                         ,@args))))
 
-(defmacro define-deadline (name deadline &optional description)
-  `(record '(:record-type :deadline
+(defmacro define-date (name date &optional description)
+  `(record '(:record-type :date
              :name ,name
-             :time ,deadline
+             :time ,date
              :description ,description)
            '(:record-type :name)))
 
