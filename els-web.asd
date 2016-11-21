@@ -15,6 +15,7 @@
   :components ((:file "package")
                (:file "toolkit")
                (:file "secret")
+               (:file "timestamp")
                (:file "edition")
                (:file "compiler")
                (:module "editions"
@@ -25,4 +26,5 @@
                :pathname-utils
                :alexandria
                :cl-who
-               :cl-ppcre))
+               :cl-ppcre
+               :named-readtables))

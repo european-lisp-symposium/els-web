@@ -11,26 +11,6 @@
 (defvar *static-dir* (merge-pathnames "static/" *here*))
 (defvar *output-dir* (merge-pathnames "output/" *here*))
 
-(defun date-machine (stamp)
-  (when (integerp stamp) (setf stamp (local-time:universal-to-timestamp stamp)))
-  (local-time:format-timestring
-   NIL stamp :format '((:year 4) "-" (:month 2) "-" (:day 2) "T" (:hour 2) ":" (:min 2) ":" (:sec 2) :gmt-offset-or-z)))
-
-(defun date-human (stamp)
-  (when (integerp stamp) (setf stamp (local-time:universal-to-timestamp stamp)))
-  (local-time:format-timestring
-   NIL stamp :format '((:year 4) "." (:month 2) "." (:day 2))))
-
-(defun date-fancy (stamp)
-  (when (integerp stamp) (setf stamp (local-time:universal-to-timestamp stamp)))
-  (local-time:format-timestring
-   NIL stamp :format '(:long-weekday ", " :ordinal-day " of " :long-month " " :year ", " :hour ":" (:min 2) ":" (:sec 2) " " :timezone)))
-
-(defun date-clock (stamp)
-  (when (integerp stamp) (setf stamp (local-time:universal-to-timestamp stamp)))
-  (local-time:format-timestring
-   NIL stamp :format '(:hour ":" (:min 2))))
-
 (defun format-location (l)
   (format NIL "~a~@[, ~a~]~@[, ~a~]~@[, ~a~]~@[ ~a~]~@[, ~a~]"
           (getp l :name)
@@ -43,20 +23,6 @@
 
 (defun template (path-ish)
   (merge-pathnames path-ish *template-dir*))
-
-(lquery:define-lquery-function time (node time &optional (format :human))
-  (let ((stamp (etypecase time
-                 (integer (local-time:universal-to-timestamp time))
-                 (local-time:timestamp time))))
-    (setf (plump:attribute node "datetime") (date-machine stamp))
-    (setf (plump:attribute node "title") (date-fancy stamp))
-    (setf (plump:children node) (plump:make-child-array))
-    (plump:make-text-node node (ecase format
-                                 (:machine (date-machine stamp))
-                                 (:human (date-human stamp))
-                                 (:fancy (date-fancy stamp))
-                                 (:clock (date-clock stamp)))))
-  node)
 
 (lquery:define-lquery-function template (node object)
   (setf (plump:children node) (plump:make-child-array))
@@ -94,7 +60,7 @@
 (defun delete-directory-tree (from)
   (dolist (file (directory-contents from) from)
     (when (pathname-utils:directory-p file)
-      (remove-directory-tree file))
+      (delete-directory-tree file))
     (delete-file file)))
 
 (defun copy-directory-tree (from to)
@@ -129,19 +95,19 @@
 
 (defun g< (a b)
   (etypecase a
-    (local-time:timestamp (local-time:timestamp< a b))
+    (timestamp (timestamp< a b))
     (string (string< a b))
     (character (char< a b))
     (number (< a b))))
 
 (defun g> (a b)
   (etypecase a
-    (local-time:timestamp (local-time:timestamp> a b))
+    (timestamp (timestamp> a b))
     (string (string> a b))
     (character (char> a b))
     (number (> a b))))
 
 (defun g= (a b)
   (etypecase a
-    (local-time:timestamp (local-time:timestamp= a b))
+    (timestamp (timestamp= a b))
     (T (equalp a b))))
