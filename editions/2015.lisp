@@ -240,7 +240,7 @@
             :post-code "SE10 9JN"))
 
 ;;; Programme
-(define-programme-day @2015-04-20T00:00:00+01:00
+(define-programme-day @2015-04-20T00:00:00+00:00
   @08:30:00 (:title "Registration"
              :role (:organization))
   @09:00:00 (:title "Welcome Message"
@@ -284,7 +284,7 @@
   @19:30:00 (:title "Conference Dinner"
              :role (:dinner)))
 
-(define-programme-day @2015-04-21T00:00:00+01:00
+(define-programme-day @2015-04-21T00:00:00+00:00
   @09:30:00 (:title "A Gentle Introduction to Gendl, a Common Lisp-based Knowledge Based Engineering Environment"
              :role (:talk :tutorial)
              :speakers ("Dave Cooper"))

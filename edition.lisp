@@ -32,7 +32,7 @@
          (:use #:cl #:els-web))
        (in-package ,name)
        (setf (edition ,name) ())
-       (local-time:enable-read-macros)
+       (named-readtables:in-readtable :els-web)
        (load-commons))))
 
 (defun record (data comparison-fields &optional (edition (package-name *package*)))
@@ -88,10 +88,7 @@
 (defmacro define-programme-day (base-time &body forms)
   `(progn
      ,@(loop for (time args) on forms by #'cddr
-             collect `(define-programme-entry ,(local-time:adjust-timestamp base-time
-                                                 (set :hour (local-time:timestamp-hour time))
-                                                 (set :minute (local-time:timestamp-minute time))
-                                                 (set :sec (local-time:timestamp-second time)))
+             collect `(define-programme-entry ,(merge-timestamp time base-time)
                         ,@args))))
 
 (defmacro define-deadline (name deadline &optional description)
