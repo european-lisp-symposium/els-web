@@ -41,9 +41,7 @@
     (lquery:$ node (add-class (string-downcase class)))))
 
 (defun encode-email (email)
-  (let* ((scramble (alexandria:shuffle (loop for a from 0 below (length email) collect a)))
-         (email (loop for i in scramble collect (elt email i))))
-    (format NIL "~{~a~}~{,~a~}" email scramble)))
+  (format NIL "~{~d~^,~}" (map 'list #'char-code email)))
 
 (defun directory-contents (dir)
   (directory (merge-pathnames pathname-utils:*wild-file* dir)))
