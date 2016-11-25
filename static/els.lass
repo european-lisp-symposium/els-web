@@ -32,7 +32,8 @@
     (h1 :font-size 3em
         :text-align center
         :margin 0
-        :padding 100px 0 0 0)
+        :padding 100px 0 0 0
+        (a :color #(header-fg)))
     (nav.editions
      :display flex
      :justify-content center
