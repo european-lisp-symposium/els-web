@@ -14,13 +14,19 @@
   <c:when test="address">
     <span class="adr">
       <c:using value="address">
-        <c:when test="po-box"><span class="post-office-box" lquery="(text po-box)"></span></c:when>
-        <c:when test="street"><span class="street-address" lquery="(text street)"></span></c:when>
-        <c:when test="extended"><span class="extended-address" lquery="(text extended)"></span></c:when>
-        <c:when test="city"><span class="locality" lquery="(text city)"></span></c:when>
-        <c:when test="region"><span class="region" lquery="(text region)"></span></c:when>
-        <c:when test="post-code"><span class="postal-code" lquery="(text post-code)"></span></c:when>
-        <c:when test="country"><span class="country-name" lquery="(text country)"></span></c:when>
+        <div>
+          <c:when test="po-box"><span class="post-office-box" lquery="(text po-box)"></span></c:when>
+        </div>
+        <div>
+          <c:when test="street"><span class="street-address" lquery="(text street)"></span></c:when>
+          <c:when test="extended"><span class="extended-address" lquery="(text extended)"></span></c:when>
+        </div>
+        <div>
+          <c:when test="city"><span class="locality" lquery="(text city)"></span></c:when>
+          <c:when test="region"><span class="region" lquery="(text region)"></span></c:when>
+          <c:when test="post-code"><span class="postal-code" lquery="(text post-code)"></span></c:when>
+          <c:when test="country"><span class="country-name" lquery="(text country)"></span></c:when>
+        </div>
       </c:using>
     </span>
   </c:when>
