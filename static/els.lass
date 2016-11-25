@@ -134,15 +134,13 @@
         :display inline-block))
       (.role :display none)
       (.adr :display block
-            (".extended-address::before" :content "', '")
-            ((:or ".extended-address::after"
-                  ".postal-code::after") :content "'\\A '" :white-space pre)
+            (".extended-address::before" :content ", ")
             (.country-name :display block))))
 
     ((:or "#organization" "#speakers")
      (.role :display none)
      (.fn :display none)
-     (".org::before" :content "', '"))
+     (".org::before" :content ", "))
 
     ("#organization"
      (.sponsors
