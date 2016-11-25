@@ -35,7 +35,9 @@
         <c:when test="(query :programme-entry)">
           <a href="#programme">Programme</a>
         </c:when>
-        <a href="#proceedings">Proceedings</a>
+        <c:when test="(query :proceedings)">
+          <a href="#proceedings">Proceedings</a>
+        </c:when>
         <a href="http://lists.lrde.epita.fr/listinfo/elsconf" rel="external">Mailing List</a>
       </nav>
     </header>
