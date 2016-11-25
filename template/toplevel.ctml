@@ -10,7 +10,7 @@
   </head>
   <body>
     <header class="toplevel">
-      <h1>European Lisp Symposium</h1>
+      <h1><a href="./index.html">European Lisp Symposium</a></h1>
       <nav class="editions" iterate="(query :edition)">
         <a href="#" lquery='(text year) (attr :href (format NIL "~a/index.html" year))
                             (add-class (if current "current" "other"))'>20XX</a>
