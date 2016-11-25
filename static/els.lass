@@ -168,9 +168,13 @@
      (>ul :list-style none))
 
     ("#programme"
+     ("#set-time"
+      :width 100%
+      :box-sizing border-box)
      (>ol
       :list-style none
       :padding 0
+      :margin 0
       (.programme-entry
        :display flex
        :align-items center
