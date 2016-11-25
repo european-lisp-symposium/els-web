@@ -174,20 +174,30 @@
       (.programme-entry
        :display flex
        :align-items center
+       :border-left 3px solid #(main-bg)
        (* :padding 2px)
        (time :text-align right
              :min-width 70px
              :margin 0 5px 0 0)
        (h4 :flex-grow 1
-           :text-align left)
+           :text-align left
+           :font-weight normal)
        (.speakers
-        :min-width 200px
         :text-align right
         (.speaker :white-space nowrap)))
       (.break :background "#EEEEEE")
       (.organization :background "#DDDDFF")
       (.lightning :background "#FFF5AF")
-      (.dinner :background "#EEEEEE")))
+      (.dinner :background "#EEEEEE")
+      (.past :opacity 0.5)
+      (.current :font-size 1.3em
+                (h4 :font-weight bold))
+      (".current::before"
+       :content "''"
+       :width 0 :height 0
+       :border-top 10px solid transparent
+       :border-bottom 10px solid transparent
+       :border-left 10px solid #(main-bg))))
 
     ((:or .programme-entry .highlight)
      (h4 :display inline-block
