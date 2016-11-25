@@ -66,7 +66,7 @@
      ("*:hover" :background #(nav-hover-bg)
                 :color #(nav-hover-fg))))
    ("header::after"
-    :content "''"
+    :content ""
     :position absolute
     :top 0 :left 0 :right 0 :bottom 0
     :background "#FFFFFF"
@@ -237,6 +237,9 @@
              :height 100px
              :line-height 100px)))
           ("#programme"
+           ("#set-time"
+            :margin 0 -20px 0 -20px
+            :width (calc (+ 100% 40px)))
            (>ol
             :margin 0 -20px 0 -20px
             (.programme-entry
