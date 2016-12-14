@@ -366,3 +366,5 @@
              :role (:break))
   @19:30:00 (:title "Conference Dinner"
              :role (:dinner)))
+
+(define-proceedings "http://www.european-lisp-symposium.org/editions/2016/ELS2016.pdf")
