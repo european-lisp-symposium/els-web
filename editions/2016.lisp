@@ -291,7 +291,8 @@
              :role (:organization))
   @09:30:00 (:title "Lexical Closures and Complexity"
              :role (:talk :keynote)
-             :speakers ("Francis Sergeraert"))
+             :speakers ("Francis Sergeraert")
+             :description "The power of Common Lisp for Functional_Programming is well known, the key tool being the notion of \"lexical closure\", allowing the programmer to write programs which, during execution, dynamically generate functional objects of arbitrary complexity. Using this technology, new algorithms in Algebraic Topology have been discovered, implemented in Common Lisp and used, producing homology and homotopy groups so far unreachable. An algorithm is viewed as \"tractable\" if its theoretical complexity is not worse than polynomial. The study of this complexity for the aforementioned of Algebraic Topology algorithms requires a lucid knowledge of the concrete implementation of these lexical closures. This talk is devoted to a report about a result of polynomial complexity so obtained. The scope of the method is general and in particular no knowledge in Algebraic Topology is expected from the audience.")
   @10:30:00 (:title "Coffee"
              :role (:break))
   @11:00:00 (:title "Refactoring Dynamic Languages"
@@ -330,7 +331,12 @@
 (define-programme-day @2016-05-10T00:00:00+02:00
   @09:00:00 (:title "Julia - To Lisp or not to Lisp"
              :role (:talk :keynote)
-             :speakers ("Stefan Karpinski"))
+             :speakers ("Stefan Karpinski")
+             :description "Julia is a general purpose dynamic language, designed to make numerical computing fast and convenient. Many aspects of Julia should be quite familiar since they are \"stolen\" straight from Lisp: it’s expression-oriented, lexically scoped, has closures, coroutines, and macros that operate on code as data. But Julia departs from the Lisp tradition in other ways. Julia has syntax – lots of it. Macro invocations look different than function calls. Some dynamic behaviors are sacrificed to make programs easier to analyze (for both humans and compilers), especially where it allows simpler, more reliable program optimization.
+
+Julia’s most distinctive feature is its emphasis on creating lightweight types and defining their behavior in terms of generic functions. While many Lisps support multiple dispatch as an opt-in feature, in Julia all function are generic by default. Even basic operators like `+` are generic, and primitive types like `Int` and `Float64` are defined in the standard library, and their behavior is specified via multiple dispatch. A combination of aggressive method specialization, inlining and data-flow-based type inference, allow these layers of abstraction and dispatch to be eliminated when it counts – Julia generally has performance comparable to static languages.
+
+In the tradition of the great Lisp hackers, this talk will include lots of live coding in the REPL, with all the excitement, and possibility of failure entailed.")
   @10:30:00 (:title "Coffee"
              :role (:break))
   @11:00:00 (:title "A modern implementation of the LOOP macro"
