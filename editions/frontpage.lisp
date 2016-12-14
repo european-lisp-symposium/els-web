@@ -20,11 +20,6 @@
        (:li "<b>Demonstrations</b>: Abstracts of up to 2 pages for demonstrations of tools, libraries, and applications.")
        (:li "<b>Tutorials</b>: Abstracts of up to 4 pages for in-depth presentations about topics of special interest for at least 90 minutes and up to 180 minutes.")))
 
-(define-text :submissions
-  (:p "All submissions should be formatted following the ACM SIGS guidelines and include ACM classification categories and terms. For more information on the submission guidelines and the ACM keywords, see: <a href=\"http://www.acm.org/sigs/publications/proceedings-templates\">http://www.acm.org/sigs/publications/proceedings-templates</a> and <a href=\"http://www.acm.org/about/class/1998\">http://www.acm.org/about/class/1998</a>.")
-  (:p "Submissions should be uploaded to Easy Chair, at the following address:
-<a href=\"https://www.easychair.org/conferences/?conf=els2015\">https://www.easychair.org/conferences/?conf=els2015</a>"))
-
 (define-person (:family-name "Verna"
                 :given-name "Didier")
   :role (:administrator)
