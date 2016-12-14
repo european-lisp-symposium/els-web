@@ -41,9 +41,11 @@
       (error "Cannot enter~%  ~s~%into the database as it is missing the identifying field ~s."
              data field)))
   (flet ((match-fields (entry)
-           (loop for field in comparison-fields
-                 always (g= (getp entry field)
-                            (getp data field)))))
+           (when (loop for field in comparison-fields
+                       always (g= (getp entry field)
+                                  (getp data field)))
+             (warn "Redefining record for ~{~a~^, ~}"
+                   (loop for field in comparison-fields collect (getp data field))))))
     (let ((database (edition edition)))
       (setf database (remove-if #'match-fields database))
       (setf database (cons data database))
@@ -77,10 +79,17 @@
            '(:record-type :name)))
 
 (defmacro define-programme-entry (time &rest args)
-  `(record '(:record-type :programme-entry
-             :time ,time
-             ,@args)
-           '(:record-type :time)))
+  `(progn (record '(:record-type :programme-entry
+                    :time ,time
+                    ,@args)
+                  '(:record-type :time))
+          ,(when (getp args :speakers)
+             `(dolist (speaker ',(getp args :speakers))
+                (let ((record (query1 :person `(= full-name ,speaker))))
+                  (cond ((not record)
+                         (warn "No such person ~s known." speaker))
+                        ((not (find :speaker (getp record :role)))
+                         (warn "Person ~s does not have the speaker role." speaker))))))))
 
 (defmacro define-programme-day (base-time &body forms)
   `(progn

@@ -89,7 +89,8 @@
          (not (match-filter (second filter) entry))))))
 
 (defun query (record-type &optional (filter T) &key sort)
-  (let ((data (loop for entry in (car (last clip:*clipboard-stack*))
+  (let ((data (loop for entry in (or (car (last clip:*clipboard-stack*))
+                                     (edition (package-name *package*)))
                     when (match-filter `(and (= record-type ,record-type) ,filter)
                                        entry)
                     collect entry)))
