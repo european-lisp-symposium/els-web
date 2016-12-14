@@ -20,7 +20,15 @@
                (:file "compiler")
                (:module "editions"
                 :components ((:file "frontpage")
+                             (:file "2008")
+                             (:file "2009")
+                             (:file "2010")
+                             (:file "2011")
+                             (:file "2012")
+                             (:file "2013")
+                             (:file "2014")
                              (:file "2015")
+                             (:file "2016")
                              (:file "2017"))))
   :depends-on (:clip
                :local-time
