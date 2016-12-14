@@ -4,7 +4,7 @@
 
 ;;; Texts
 (define-text :announcement
-  (:div :class "announcement" "The conference is over!"))
+  (:div :class "announcement" "The Conference is Over!"))
 
 (define-date "Conference start" @2016-05-09)
 
