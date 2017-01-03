@@ -30,23 +30,15 @@
 ;;; Sponsors
 ;; (define-sponsor epita
 ;;   :website "http://www.epita.fr/"
-;;   :logo "http://www.epita.fr/images/logo-epita.png?v=26112014")
+;;   :logo "../static/logos/epita.png")
 
 ;; (define-sponsor lispworks
 ;;   :website "http://www.lispworks.com/"
-;;   :logo "http://www.lispworks.com/images/logo.png")
+;;   :logo "../static/logos/lispworks.png")
 
 ;; (define-sponsor franz
 ;;   :website "http://www.franz.com/"
-;;   :logo "http://franz.com/images/logo.png")
-
-;; (define-sponsor clozure
-;;   :website "http://www.clozure.com/"
-;;   :logo "http://www.clozure.com/images/clozure-logo.png")
-
-;; (define-sponsor google
-;;   :website "http://www.itasoftware.com/"
-;;   :logo "http://www.itasoftware.com/images/ita-logo-md.png")
+;;   :logo "../static/logos/franz.png")
 
 ;;; People
 (define-person (:family-name "Verna"
