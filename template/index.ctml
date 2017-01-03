@@ -84,25 +84,36 @@
           </section>
         </c:when>
 
-        <c:when test="(query :person '(in role :programme-chair))">
+        <c:when test="(or (query :person '(in role :programme-chair))
+                          (query :person '(in role :local-chair))
+                          (query :person '(in role :committee))
+                          (query :sponsor))">
           <section id="organization">
             <h3>Organization</h3>
-            <h4>Programme Chair</h4>
-            <c:using value="(query1 :person '(in role :programme-chair))">
-              <c:splice lquery="(template :person)" />
-            </c:using>
-            <h4>Local Chair</h4>
-            <c:using value="(query1 :person '(in role :local-chair))">
-              <c:splice lquery="(template :person)" />
-            </c:using>
-            <h4>Committee</h4>
-            <ul class="committee-members" iterate="(query :person '(in role :committee))">
-              <li><c:splice lquery="(template :person)" /></li>
-            </ul>
-            <h4>Sponsors</h4>
-            <ul class="sponsors" iterate="(query :sponsor)">
-              <li><c:splice lquery="(template :sponsor)" /></li>
-            </ul>
+            <c:when test="(query1 :person '(in role :programme-chair))">
+              <h4>Programme Chair</h4>
+              <c:using value="(query1 :person '(in role :programme-chair))">
+                <c:splice lquery="(template :person)" />
+              </c:using>
+            </c:when>
+            <c:when test="(query1 :person '(in role :local-chair))">
+              <h4>Local Chair</h4>
+              <c:using value="(query1 :person '(in role :local-chair))">
+                <c:splice lquery="(template :person)" />
+              </c:using>
+            </c:when>
+            <c:when test="(query1 :person '(in role :committee))">
+              <h4>Committee</h4>
+              <ul class="committee-members" iterate="(query :person '(in role :committee) :sort '(:full-name :asc))">
+                <li><c:splice lquery="(template :person)" /></li>
+              </ul>
+            </c:when>
+            <c:when test="(query1 :sponsor)">
+              <h4>Sponsors</h4>
+              <ul class="sponsors" iterate="(query :sponsor)">
+                <li><c:splice lquery="(template :sponsor)" /></li>
+              </ul>
+            </c:when>
           </section>
         </c:when>
 
