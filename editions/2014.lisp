@@ -395,3 +395,5 @@ In this session we propose to present an overview of current computer-aided musi
              :role (:break))
   @19:30:00 (:title "Conference Dinner"
              :role (:dinner)))
+
+(define-proceedings "http://www.european-lisp-symposium.org/editions/2014/ELS2014.pdf")
