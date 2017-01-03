@@ -23,6 +23,11 @@
 
 (define-date "Conference end" @2017-04-04)
 
+;;; Sponsors
+(define-sponsor brunner
+  :website "http://www.systemhaus-brunner.de/"
+  :logo "../static/logos/brunner.png")
+
 ;;; People
 (define-person (:family-name "Verna"
                 :given-name "Didier")
@@ -30,6 +35,99 @@
   :email "didier@elsaa.org"
   :website "http://www.didierverna.net"
   :organization "ELS")
+
+(define-person (:family-name "Riva"
+                :given-name "Alberto")
+  :role (:programme-chair)
+  :organization "University of Florida"
+  :location (:country "USA"))
+
+(define-person (:family-name "Antoniotti"
+                :given-name "Marco")
+  :role (:committee)
+  :organization "Università Milano Bicocca"
+  :location (:country "Italy"))
+
+(define-person (:family-name "Battyani"
+                :given-name "Marc")
+  :role (:committee))
+
+(define-person (:family-name "D'Hondt"
+                :given-name "Theo")
+  :role (:committee)
+  :organization "Vrije Universiteit Brussel"
+  :location (:country "Belgium"))
+
+(define-person (:family-name "Feeley"
+                :given-name "Marc")
+  :role (:committee)
+  :organization "Université de Montreal"
+  :location (:country "Canada"))
+
+(define-person (:family-name "Ionescu"
+                :given-name "Stelian")
+  :role (:committee)
+  :organization "Google"
+  :location (:country "Switzerland"))
+
+(define-person (:family-name "Joswig"
+                :given-name "Rainer")
+  :role (:committee)
+  :organization "Independent Consultant"
+  :location (:country "Germany"))
+
+(define-person (:family-name "Leitão"
+                :given-name "António"
+                :additional-name "Menezes")
+  :role (:committee)
+  :organization "Technical University of Lisbon"
+  :location (:country "Portugal"))
+
+(define-person (:family-name "Levine"
+                :given-name "Nick")
+  :role (:committee)
+  :organization "RavenPack"
+  :location (:country "Spain"))
+
+(define-person (:family-name "Lieberman"
+                :given-name "Henry")
+  :role (:committee)
+  :organization "MIT"
+  :location (:country "USA"))
+
+(define-person (:family-name "Tarver"
+                :given-name "Mark")
+  :role (:committee)
+  :organization "Shen Programming Group")
+
+(define-person (:family-name "McCarthy"
+                :given-name "Jay")
+  :role (:committee)
+  :organization "University of Massachusetts"
+  :location (:city "Lowell" :country "USA"))
+
+(define-person (:family-name "Queinnec"
+                :given-name "Christian")
+  :role (:committee)
+  :organization "Université Pierre et Marie Curie"
+  :location (:country "France"))
+
+(define-person (:family-name "Rideau"
+                :given-name "François-René")
+  :role (:committee)
+  :organization "Bridgewater Associates"
+  :location (:country "USA"))
+
+(define-person (:family-name "Siivola"
+                :given-name "Nikodemus")
+  :role (:committee)
+  :organization "ZenRobotics Ltd")
+
+(define-person (:family-name "Stalla"
+                :given-name "Alessio")
+  :role (:committee)
+  :organization "Università degli Studi di Genova"
+  :location (:country "Italy"))
 
 ;;; Locations
 (define-location "Vrije Universiteit Brussel"
