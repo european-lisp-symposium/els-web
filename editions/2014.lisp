@@ -85,8 +85,8 @@
   :organization "Kyoto University"
   :location (:country "Japan"))
 
-(define-person (:family-name "António"
-                :given-name "Leitão")
+(define-person (:family-name "Leitão"
+                :given-name "António")
   :role (:committee :speaker)
   :organization "Instituto Superior Técnico Universidade de Lisboa"
   :location (:country "Portugal"))
