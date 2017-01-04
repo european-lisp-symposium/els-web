@@ -23,7 +23,7 @@
         <c:when test="(query :date '(= name :final\ papers))">
           <a href="#submissions">Submissions</a>
         </c:when>
-        <c:when test="(query :person '(in role :programme-chair))">
+        <c:when test="(or (query :person '(or (in role :programme-chair) (in role :local-chair) (in role :committee))) (query :sponsor))">
           <a href="#organization">Organization</a>
         </c:when>
         <c:when test="registration-open">
@@ -84,9 +84,7 @@
           </section>
         </c:when>
 
-        <c:when test="(or (query :person '(in role :programme-chair))
-                          (query :person '(in role :local-chair))
-                          (query :person '(in role :committee))
+        <c:when test="(or (query :person '(or (in role :programme-chair) (in role :local-chair) (in role :committee)))
                           (query :sponsor))">
           <section id="organization">
             <h3>Organization</h3>
