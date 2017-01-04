@@ -36,6 +36,11 @@
     (data "email" (encode-email email))
     (add-class "encoded-email")))
 
+(lquery:define-lquery-function tel (node telephone)
+  (lquery:$ node
+    (attr "href" (format NIL "tel:~a" (cl-ppcre:regex-replace-all "\\s+" telephone "-")))
+    (text telephone)))
+
 (lquery:define-lquery-function add-classes (node classes)
   (dolist (class classes)
     (lquery:$ node (add-class (string-downcase class)))))
