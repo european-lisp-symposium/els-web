@@ -38,25 +38,25 @@
   :email "didier@elsaa.org"
   :website "http://www.didierverna.net"
   :organization "Epita"
-  :location (:country "France"))
+  :address (:country "France"))
 
 (define-person (:family-name "Costanza"
                 :given-name "Pascal")
   :role (:committee)
   :organization "Intel"
-  :location (:country "Belgium"))
+  :address (:country "Belgium"))
 
 (define-person (:family-name "Courtès"
                 :given-name "Ludovic")
   :role (:committee)
   :organization "Inria"
-  :location (:country "France"))
+  :address (:country "France"))
 
 (define-person (:family-name "D'Hondt"
                 :given-name "Theo")
   :role (:committee)
   :organization "Vrije Universiteit Brussel"
-  :location (:country "Belgium"))
+  :address (:country "Belgium"))
 
 (define-person (:family-name "Gallesio"
                 :given-name "Erick")
@@ -67,31 +67,31 @@
                 :given-name "Florian")
   :role (:committee :speaker)
   :organization "Google"
-  :location (:country "Denmark"))
+  :address (:country "Denmark"))
 
 (define-person (:family-name "Noermark"
                 :given-name "Kurt")
   :role (:committee)
   :organization "Aalborg University"
-  :location (:country "Denmark"))
+  :address (:country "Denmark"))
 
 (define-person (:family-name "Queinnec"
                 :given-name "Christian")
   :role (:committee)
   :organization "Upmc"
-  :location (:country "France"))
+  :address (:country "France"))
 
 (define-person (:family-name "Shivers"
                 :given-name "Olin")
   :role (:committee)
   :organization "Northeastern University"
-  :location (:country "USA"))
+  :address (:country "USA"))
 
 (define-person (:family-name "Serrano"
                 :given-name "Manuel")
   :role (:committee)
   :organization "Inria"
-  :location (:country "France"))
+  :address (:country "France"))
 
 (define-person (:family-name "Courtes"
                 :given-name "Ludovic")

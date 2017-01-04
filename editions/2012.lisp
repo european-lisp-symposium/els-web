@@ -42,85 +42,85 @@
   :email "didier@elsaa.org"
   :website "http://www.didierverna.net"
   :organization "EPITA/LRDE"
-  :location (:country "France"))
+  :address (:country "France"))
 
 (define-person (:family-name "Antoniotti"
                 :given-name "Marco")
   :role (:programme-chair)
   :organization "Università degli Studi di Milano Bicocca"
-  :location (:city "Milan" :country "Italy"))
+  :address (:city "Milan" :country "Italy"))
 
 (define-person (:family-name "Ćavar"
                 :given-name "Damir")
   :role (:local-organizer)
   :organization "Eastern Michigan University"
-  :location (:country "USA"))
+  :address (:country "USA"))
 
 (define-person (:family-name "Pehar"
                 :given-name "Franjo")
   :role (:local-organizer)
   :organization "University of Zadar"
-  :location (:country "Croatia"))
+  :address (:country "Croatia"))
 
 (define-person (:family-name "Kero"
                 :given-name "Damir")
   :role (:local-organizer)
   :organization "University of Zadar"
-  :location (:country "Croatia"))
+  :address (:country "Croatia"))
 
 (define-person (:family-name "Attardi"
                 :given-name "Giuseppe")
   :role (:committee)
   :organization "Università degli Studi di Pisa"
-  :location (:city "Pisa" :country "Italy"))
+  :address (:city "Pisa" :country "Italy"))
 
 (define-person (:family-name "Costanza"
                 :given-name "Pascal")
   :role (:committee :speaker)
   :organization "Intel"
-  :location (:city "Bruxelles" :country "Belgium"))
+  :address (:city "Bruxelles" :country "Belgium"))
 
 (define-person (:family-name "Feeley"
                 :given-name "Marc")
   :role (:committee)
   :organization "Université de Montreal"
-  :location (:city "Montreal" :country "Canada"))
+  :address (:city "Montreal" :country "Canada"))
 
 (define-person (:family-name "McKay"
                 :given-name "Scott")
   :role (:committee)
   :organization "Google"
-  :location (:country "USA"))
+  :address (:country "USA"))
 
 (define-person (:family-name "Pitman"
                 :given-name "Kent")
   :role (:committee)
-  :location (:country "USA"))
+  :address (:country "USA"))
 
 (define-person (:family-name "Rhodes"
                 :given-name "Christophe")
   :role (:committee)
   :organization "Goldsmiths University of London"
-  :location (:city "London" :country "United Kingdom"))
+  :address (:city "London" :country "United Kingdom"))
 
 (define-person (:family-name "Strandh"
                 :given-name "Robert")
   :role (:committee)
   :organization "Université de Bordeaux"
-  :location (:city "Bordeaux" :country "France"))
+  :address (:city "Bordeaux" :country "France"))
 
 (define-person (:family-name "Yuasa"
                 :given-name "Taiichi")
   :role (:committee)
   :organization "Kyoto University"
-  :location (:country "Japan"))
+  :address (:country "Japan"))
 
 (define-person (:family-name "Garcia-Ripoll"
                 :given-name "Juan"
                 :additional-name "Jose")
   :role (:speaker)
   :organization "Instituto de Fisica Fundemantal CSIC"
-  :location (:country "Spain"))
+  :address (:country "Spain"))
 
 (define-person (:family-name "Senta"
                 :given-name "Laurent")
@@ -158,7 +158,7 @@
                 :given-name "Ernst")
   :role (:speaker)
   :organization "Infometrics"
-  :location (:country "Netherlands"))
+  :address (:country "Netherlands"))
 
 (define-person (:family-name "Benelli"
                 :given-name "Marco")

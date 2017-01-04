@@ -51,79 +51,79 @@
                 :given-name "Irène")
   :role (:programme-chair)
   :organization "LaBRI, University of Bordeaux"
-  :location (:country "France"))
+  :address (:country "France"))
 
 (define-person (:family-name "Psota"
                 :given-name "Michał")
   :role (:local-chair)
   :organization "Emergent Network Defense"
-  :location (:city "Kraków" :country "Poland"))
+  :address (:city "Kraków" :country "Poland"))
 
 (define-person (:family-name "Leitao"
                 :given-name "Antonio")
   :role (:committee)
   :organization "INESC-ID / Instituto Superior Técnico, Universidade de Lisboa"
-  :location (:country "Portugal"))
+  :address (:country "Portugal"))
 
 (define-person (:family-name "Herzeel"
                 :given-name "Charlotte")
   :role (:committee)
   :organization "IMEC"
-  :location (:city "Leuven" :country "Belgium"))
+  :address (:city "Leuven" :country "Belgium"))
 
 (define-person (:family-name "Queinnec"
                 :given-name "Christian")
   :role (:committee)
   :organization "University Pierre et Marie Curie"
-  :location (:city "Paris 6" :country "France"))
+  :address (:city "Paris 6" :country "France"))
 
 (define-person (:family-name "Rhodes"
                 :given-name "Christophe")
   :role (:committee)
   :organization "Goldsmiths, University of London"
-  :location (:country "UK"))
+  :address (:country "UK"))
 
 (define-person (:family-name "Gallesio"
                 :given-name "Erick")
   :role (:committee)
   :organization "University of Nice-Sophia Antipolis"
-  :location (:country "France"))
+  :address (:country "France"))
 
 (define-person (:family-name "Rideau"
                 :given-name "François-René")
   :role (:committee :speaker)
   :organization "Google"
-  :location (:country "USA"))
+  :address (:country "USA"))
 
 (define-person (:family-name "Attardi"
                 :given-name "Giuseppe")
   :role (:committee)
   :organization "University of Pisa"
-  :location (:country "Italy"))
+  :address (:country "Italy"))
 
 (define-person (:family-name "Pitman"
                 :given-name "Kent")
   :role (:committee)
   :organization "HyperMeta Inc."
-  :location (:country "USA"))
+  :address (:country "USA"))
 
 (define-person (:family-name "Dreschler-Fischer"
                 :given-name "Leonie")
   :role (:committee :speaker)
   :organization "University of Hamburg"
-  :location (:country "Germany"))
+  :address (:country "Germany"))
 
 (define-person (:family-name "Constanza"
                 :given-name "Pascal")
   :role (:committee)
   :organization "Intel Corporation"
-  :location (:country "Belgium"))
+  :address (:country "Belgium"))
 
 (define-person (:family-name "Strandh"
                 :given-name "Robert")
   :role (:committee :speaker)
   :organization "University of Bordeaux"
-  :location (:country "France"))
+  :address (:country "France"))
 
 (define-person (:family-name "Sergeraert"
                 :given-name "Francis")
