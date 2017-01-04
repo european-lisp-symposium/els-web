@@ -37,7 +37,7 @@
 
 (define-sponsor bordeaux-cpu
   :website "http://cpu.labex.u-bordeaux.fr/"
-  :logo "../static/logos/bordeaux.gif")
+  :logo "../static/logos/u-bordeaux.gif")
 
 ;;; People
 (define-person (:family-name "Verna"
