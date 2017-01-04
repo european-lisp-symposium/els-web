@@ -47,77 +47,77 @@
                 :given-name "Julian")
   :role (:programme-chair)
   :organization "University of Bath"
-  :location (:country "UK"))
+  :address (:country "UK"))
 
 (define-person (:family-name "Rhodes"
                 :given-name "Christophe")
   :role (:local-chair)
   :organization "Goldsmiths University of London"
-  :location (:country "UK"))
+  :address (:country "UK"))
 
 (define-person (:family-name "Chua"
                 :given-name "Sacha")
   :role (:committee)
-  :location (:city "Toronto" :country "Canada"))
+  :address (:city "Toronto" :country "Canada"))
 
 (define-person (:family-name "Weitz"
                 :given-name "Edmund")
   :role (:committee)
   :organization "University of Applied Sciences"
-  :location (:city "Hamburg" :country "Germany"))
+  :address (:city "Hamburg" :country "Germany"))
 
 (define-person (:family-name "Joswig"
                 :given-name "Rainer")
   :role (:committee)
-  :location (:city "Hamburg" :country "Germany"))
+  :address (:city "Hamburg" :country "Germany"))
 
 (define-person (:family-name "Liebermann"
                 :given-name "Henry")
   :role (:committee)
   :organization "MIT"
-  :location (:country "USA"))
+  :address (:country "USA"))
 
 (define-person (:family-name "Flatt"
                 :given-name "Matthew")
   :role (:committee)
   :organization "University of Utah"
-  :location (:country "USA"))
+  :address (:country "USA"))
 
 (define-person (:family-name "Queinnec"
                 :given-name "Christian")
   :role (:committee)
   :organization "University Pierre et Marie Curie"
-  :location (:city "Paris 6" :country "France"))
+  :address (:city "Paris 6" :country "France"))
 
 (define-person (:family-name "Attardi"
                 :given-name "Giuseppe")
   :role (:committee)
   :organization "University of Pisa"
-  :location (:country "Italy"))
+  :address (:country "Italy"))
 
 (define-person (:family-name "Freely"
                 :given-name "Marc")
   :role (:committee)
   :organization "University of Montreal"
-  :location (:country "Canada"))
+  :address (:country "Canada"))
 
 (define-person (:family-name "Eglen"
                 :given-name "Stephen")
   :role (:committee)
   :organization "University of Cambridge"
-  :location (:country "UK"))
+  :address (:country "UK"))
 
 (define-person (:family-name "Strandh"
                 :given-name "Robert")
   :role (:committee :speaker)
   :organization "University of Bordeaux"
-  :location (:country "France"))
+  :address (:country "France"))
 
 (define-person (:family-name "Levine"
                 :given-name "Nick")
   :role (:committee)
   :organization "RavenPack"
-  :location (:country "Spain"))
+  :address (:country "Spain"))
 
 (define-person (:family-name "Beane"
                 :given-name "Zach")

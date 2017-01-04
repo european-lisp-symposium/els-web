@@ -40,13 +40,13 @@
                 :given-name "Alberto")
   :role (:programme-chair)
   :organization "University of Florida"
-  :location (:country "USA"))
+  :address (:country "USA"))
 
 (define-person (:family-name "Antoniotti"
                 :given-name "Marco")
   :role (:committee)
   :organization "Università Milano Bicocca"
-  :location (:country "Italy"))
+  :address (:country "Italy"))
 
 (define-person (:family-name "Battyani"
                 :given-name "Marc")
@@ -56,44 +56,44 @@
                 :given-name "Theo")
   :role (:committee)
   :organization "Vrije Universiteit Brussel"
-  :location (:country "Belgium"))
+  :address (:country "Belgium"))
 
 (define-person (:family-name "Feeley"
                 :given-name "Marc")
   :role (:committee)
   :organization "Université de Montreal"
-  :location (:country "Canada"))
+  :address (:country "Canada"))
 
 (define-person (:family-name "Ionescu"
                 :given-name "Stelian")
   :role (:committee)
   :organization "Google"
-  :location (:country "Switzerland"))
+  :address (:country "Switzerland"))
 
 (define-person (:family-name "Joswig"
                 :given-name "Rainer")
   :role (:committee)
   :organization "Independent Consultant"
-  :location (:country "Germany"))
+  :address (:country "Germany"))
 
 (define-person (:family-name "Leitão"
                 :given-name "António"
                 :additional-name "Menezes")
   :role (:committee)
   :organization "Technical University of Lisbon"
-  :location (:country "Portugal"))
+  :address (:country "Portugal"))
 
 (define-person (:family-name "Levine"
                 :given-name "Nick")
   :role (:committee)
   :organization "RavenPack"
-  :location (:country "Spain"))
+  :address (:country "Spain"))
 
 (define-person (:family-name "Lieberman"
                 :given-name "Henry")
   :role (:committee)
   :organization "MIT"
-  :location (:country "USA"))
+  :address (:country "USA"))
 
 (define-person (:family-name "Tarver"
                 :given-name "Mark")
@@ -104,19 +104,19 @@
                 :given-name "Jay")
   :role (:committee)
   :organization "University of Massachusetts"
-  :location (:city "Lowell" :country "USA"))
+  :address (:city "Lowell" :country "USA"))
 
 (define-person (:family-name "Queinnec"
                 :given-name "Christian")
   :role (:committee)
   :organization "Université Pierre et Marie Curie"
-  :location (:country "France"))
+  :address (:country "France"))
 
 (define-person (:family-name "Rideau"
                 :given-name "François-René")
   :role (:committee)
   :organization "Bridgewater Associates"
-  :location (:country "USA"))
+  :address (:country "USA"))
 
 (define-person (:family-name "Siivola"
                 :given-name "Nikodemus")
@@ -127,7 +127,7 @@
                 :given-name "Alessio")
   :role (:committee)
   :organization "Università degli Studi di Genova"
-  :location (:country "Italy"))
+  :address (:country "Italy"))
 
 ;;; Locations
 (define-location "Vrije Universiteit Brussel"

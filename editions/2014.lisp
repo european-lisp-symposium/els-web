@@ -42,84 +42,84 @@
   :email "didier@elsaa.org"
   :website "http://www.didierverna.net"
   :organization "EPITA Research and Development Laboratory"
-  :location (:country "France"))
+  :address (:country "France"))
 
 (define-person (:family-name "Pitman"
                 :given-name "Kent")
   :role (:programme-chair)
   :organization "Hypermeta Inc."
-  :location (:country "USA"))
+  :address (:country "USA"))
 
 (define-person (:family-name "Assayag"
                 :given-name "Gérard")
   :role (:local-chair)
   :organization "IRCAM, UMR STMS (CNRS, UPMC)"
-  :location (:country "France"))
+  :address (:country "France"))
 
 (define-person (:family-name "Beurton-Aimar"
                 :given-name "Marie")
   :role (:committee)
   :organization "LaBRI University of Bordeaux"
-  :location (:country "France"))
+  :address (:country "France"))
 
 (define-person (:family-name "Parquier"
                 :given-name "Pierre")
   :role (:committee)
   :organization "IBM France Lab"
-  :location (:city "Paris" :country "France"))
+  :address (:city "Paris" :country "France"))
 
 (define-person (:family-name "Joswig"
                 :given-name "Rainer")
   :role (:committee)
-  :location (:city "Hamburg" :country "Germany"))
+  :address (:city "Hamburg" :country "Germany"))
 
 (define-person (:family-name "Attardi"
                 :given-name "Giuseppe")
   :role (:committee)
   :organization "Università di Pisa"
-  :location (:country "Italy"))
+  :address (:country "Italy"))
 
 (define-person (:family-name "Yuasa"
                 :given-name "Taiichi")
   :role (:committee)
   :organization "Kyoto University"
-  :location (:country "Japan"))
+  :address (:country "Japan"))
 
 (define-person (:family-name "Leitão"
                 :given-name "António")
   :role (:committee :speaker)
   :organization "Instituto Superior Técnico Universidade de Lisboa"
-  :location (:country "Portugal"))
+  :address (:country "Portugal"))
 
 (define-person (:family-name "Rhodes"
                 :given-name "Christophe")
   :role (:committee :speaker)
   :organization "Goldsmiths University of London"
-  :location (:country "United Kingdom"))
+  :address (:country "United Kingdom"))
 
 (define-person (:family-name "Shivers"
                 :given-name "Olin")
   :role (:committee)
   :organization "Northeastern University"
-  :location (:country "USA"))
+  :address (:country "USA"))
 
 (define-person (:family-name "Herzeel"
                 :given-name "Charlotte")
   :role (:committee)
   :organization "IMEC ExaScience Life Lab"
-  :location (:city "Leuven" :country "Belgium"))
+  :address (:city "Leuven" :country "Belgium"))
 
 (define-person (:family-name "Becker"
                 :given-name "Daniela")
   :role (:local-organizer)
   :organization "EPITA Research and Development Laboratory"
-  :location (:country "France"))
+  :address (:country "France"))
 
 (define-person (:family-name "Benoit"
                 :given-name "Sylvie")
   :role (:local-organizer)
   :organization "IRCAM"
-  :location (:city "France" :country "France"))
+  :address (:city "France" :country "France"))
 
 (define-person (:family-name "Gabriel"
                 :given-name "Richard"
