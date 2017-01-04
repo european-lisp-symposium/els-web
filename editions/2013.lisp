@@ -214,7 +214,7 @@
   @15:30:00 (:title "CL-NLP - a Natural Language Processing library for Common Lisp"
              :role (:talk :demonstration)
              :speakers ("Vsevolod Domkin"))
-  @16:25:00 (:title ""
-             :role (:break)))
+  @16:25:00 (:title "Conference End"
+             :role (:organization)))
 
 (define-proceedings "http://www-sop.inria.fr/members/Manuel.Serrano/conferences/proceedings-els2013.pdf")

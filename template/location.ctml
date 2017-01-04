@@ -6,7 +6,7 @@
     </c:when>
   </span>
   <a class="fn url" lquery="(text name) (attr :href website)">Frank Ly. Example</a>
-  <c:when test="email"><span class="email" lquery="(text email)"></span></c:when>
+  <c:when test="email"><a class="email" lquery="(email email)"></a></c:when>
   <c:when test="telephone"><span class="tel" lquery="(text telephone)"></span></c:when>
   <c:when test="organization"><span class="org" lquery="(text organization)"></span></c:when>
   <c:when test="category"><span class="category" lquery="(text category)"></span></c:when>
