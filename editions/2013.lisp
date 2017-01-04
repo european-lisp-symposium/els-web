@@ -161,7 +161,10 @@
 (define-programme-day @2013-06-03T00:00:00+02:00
   @09:00:00 (:title "Asynchronous Programming in Dart"
              :role (:talk :keynote)
-             :speakers ("Florian Loitsch"))
+             :speakers ("Florian Loitsch")
+             :description "Florian Loitsch has a passion for dynamic languages, like Scheme, JavaScript and now Dart. He wrote a Scheme-to-JavaScript compiler during his thesis, and then completed a JavaScript-to-Scheme compiler in his spare time.
+
+In 2010 he joined Google's team in Aarhus (Denmark) where he worked on V8 and later Dart. Being part of the Dart team Florian has helped specifying the language, which was presented in late 2011. In 2012 he became the Tech Lead for the Dart libraries where, among other tasks, he participated on the creation of a new asynchronous library that is based on Streams and Futures (aka promises).")
   @10:00:00 (:title "Functional Package Management with Guix"
              :role (:talk)
              :speakers ("Ludovic Courtes"))
@@ -177,7 +180,10 @@
              :role (:break))
   @14:30:00 (:title "Streams-Based, Multi-Threaded News Classification"
              :role (:talk :keynote)
-             :speakers ("Jason Cornez"))
+             :speakers ("Jason Cornez")
+             :description "Streams are a way of organizing indefinite collections of data such that each item can naturally flow through a network of computations. Using some simple abstractions, we construct a computation network that operates on streams with each node being handled by a separate computation thread. The result is efficient, maintainable and all done in Common Lisp.
+
+The financial industry is hungry to trade on news, but often ill-equipped to do so. The continuous publication of news is like big data in real time. RavenPack processes this flow and produces actionable News Analytics for any industry with an appetite for news. Jason Cornez joined RavenPack in 2003 to solve real-world problems using Common Lisp.")
   @15:30:00 (:title "Tutorial: Typed Racket"
              :role (:talk)
              :speakers ("Sam Tobin-Hochstadt"))
@@ -194,7 +200,10 @@
 (define-programme-day @2013-06-04T00:00:00+02:00
   @09:00:00 (:title "Lisp and Music Research"
              :role (:talk :keynote)
-             :speakers ("Gérard Assayag"))
+             :speakers ("Gérard Assayag")
+             :description "Lisp has long been and still is a privileged language for building \"experiments in musical intelligence\", to quote the title of a book by David Cope, a famous researcher in the field. Thus its use in several \"Computer Assisted Composition\" systems or more generally for environments oriented towards the modelisation, representation, analysis and generation of music. Although the choice of Lisp has been generally reserved to high level, symbolic and formal representations, it is also possible to benefit from this powerful functional language paradigm and from its characteristic data / program duality (think of the musical duality between structures and processes) in complex setups, where the whole range of representations and time scales is invoked from the acoustic signal to the formal organisation. Some interesting past and present systems will be presented in this perspective, including OpenMusic and OMax, designed by the author with his team at IRCAM.
+
+Gerard Assayag is the founder of the Music Representations Team at Ircam, where he has designed with his collaborators OpenMusic and OMax, two lisp based environments which have become international standards for computer assisted music composition / analysis and for music improvisation. He is head of the Ircam STMS research Lab since Jan 2011. Ircam is the biggest joint facility for music research and production in the world, where many leading technologies and softwares have been created.")
   @10:00:00 (:title "DBL - a Lisp-based interactive document markup language"
              :role (:talk)
              :speakers ("Mika Kuuskankare"))
