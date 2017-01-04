@@ -45,7 +45,8 @@
                        always (g= (getp entry field)
                                   (getp data field)))
              (warn "Redefining record for ~{~a~^, ~}"
-                   (loop for field in comparison-fields collect (getp data field))))))
+                   (loop for field in comparison-fields collect (getp data field)))
+             T)))
     (let ((database (edition edition)))
       (setf database (remove-if #'match-fields database))
       (setf database (cons data database))
