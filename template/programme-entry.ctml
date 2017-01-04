@@ -8,4 +8,7 @@
       <li class="speaker" lquery="(text *)">SPEAKER</li>
     </ul>
   </c:when>
+  <c:when test="note">
+    <p class="note" lquery="(text note)"></p>
+  </c:when>
 </section>
