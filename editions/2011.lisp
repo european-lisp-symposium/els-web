@@ -341,4 +341,4 @@
   @17:00:00 (:title "Conference End"
              :role (:organization)))
 
-(define-proceedings "http://www.european-lisp-symposium.org/editions/2011/ELS2011.pdf")
+(define-proceedings "../static/proceedings/2011.pdf")

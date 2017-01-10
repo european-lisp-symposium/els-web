@@ -353,3 +353,5 @@ Marco Antoniotti is an Associate Professor at the Dipartimento di Informatica Si
              :role (:break))
   @19:00:00 (:title "Conference Dinner"
              :role (:dinner)))
+
+(define-proceedings "../static/proceedings/2008.pdf")

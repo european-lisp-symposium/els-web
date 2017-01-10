@@ -226,4 +226,4 @@ Gerard Assayag is the founder of the Music Representations Team at Ircam, where 
   @16:25:00 (:title "Conference End"
              :role (:organization)))
 
-(define-proceedings "http://www-sop.inria.fr/members/Manuel.Serrano/conferences/proceedings-els2013.pdf")
+(define-proceedings "../static/proceedings/2013.pdf")
