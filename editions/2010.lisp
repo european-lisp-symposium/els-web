@@ -351,4 +351,4 @@ The second part of my talk will focus on how to equip LISP-like languages with a
   @20:30:00 (:title "Conference Dinner"
              :role (:dinner)))
 
-(define-proceedings "http://www.european-lisp-symposium.org/editions/2010/ELS2010.pdf")
+(define-proceedings "../static/proceedings/2010.pdf")

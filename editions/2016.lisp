@@ -373,4 +373,4 @@ In the tradition of the great Lisp hackers, this talk will include lots of live 
   @19:30:00 (:title "Conference Dinner"
              :role (:dinner)))
 
-(define-proceedings "http://www.european-lisp-symposium.org/editions/2016/ELS2016.pdf")
+(define-proceedings "../static/proceedings/2016.pdf")

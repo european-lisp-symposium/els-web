@@ -253,7 +253,7 @@
              :role (:organization))
   @09:30:00 (:title "Welcome Message"
              :role (:organization))
-  @10:00:00 (:title "?"
+  @10:00:00 (:title "Embeddable Common Lisp"
              :role (:talk :keynote)
              :speakers ("Juan Garcia-Ripoll"))
   @11:00:00 (:title "Coffee"
@@ -314,3 +314,5 @@
              :role (:dinner))
   @22:00:00 (:title ""
              :role (:break)))
+
+(define-proceedings "../static/proceedings/2012.pdf")
