@@ -146,13 +146,11 @@
   :role (:speaker))
 
 ;;; Locations
-(define-location "Somewhere"
+(define-location "Gran Meliá Palacio De Los Duques"
   :role (:conference)
-  ;; :photo "IMAGE URL"
-  ;; :website "WEBSITE URL"
-  :address (;; :street "A"
-            ;; :extended "B"
-            ;; :post-code "C"
+  :photo "http://www.hospitalitynet.org/picture/153061386.jpg"
+  :website "https://www.melia.com/es/hoteles/espana/madrid/gran-melia-palacio-de-los-duques/index.html"
+  :address (:street "Cuesta de Santo Domingo 5 y 7"
             :city "Madrid"
             :country "Spain")
   :map T)
