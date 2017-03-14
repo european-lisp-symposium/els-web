@@ -1,0 +1,277 @@
+(:let ((main-bg       (rgba  28  75 128 1.0))
+       (main-fg       (rgba  15  15  15 1.0))
+       (header-fg     (rgba 255 255 255 1.0))
+       (ed-fg         (rgba 200 200 200 1.0))
+       (ed-hover-fg   (rgba 245 210  20 1.0))
+       (ed-current-fg (rgba 255 255 255 1.0))
+       (nav-bg        (rgba  28 150 255 0.5))
+       (nav-fg        (rgba 255 255 255 1.0))
+       (nav-hover-bg  (rgba 255 255 255 1.0))
+       (nav-hover-fg  (rgba   0   0   0 1.0))
+       (high-bg       (rgba 245 210  20 1.0))
+       (high-fg       (rgba   0   0   0 1.0))
+       (link-fg       (rgba  28  75 128 1.0))
+       (link-hover-fg (rgba  28 150 255 1.0)))
+  (body
+   :font-family sans-serif
+   :font-size 14pt
+   :margin 0
+   :color #(main-fg)
+   :background #(main-bg)
+   
+   (a :color #(link-fg)
+      :text-decoration none)
+   ("a:hover" :color #(link-hover-fg))
+   
+   (img :max-width 100%
+        :max-height 100%)
+
+   (>header
+    :color #(header-fg)
+    :position relative
+    (h1 :font-size 3em
+        :text-align center
+        :margin 0
+        :padding 100px 0 0 0
+        (a :color #(header-fg)))
+    (nav.editions
+     :display flex
+     :justify-content center
+     :flex-wrap wrap
+     :font-weight bold
+     :font-size 1.5em
+     (* :padding 0 7px 0 7px
+        :color #(ed-fg)
+        :border 1px solid transparent)
+     (.current :color #(ed-current-fg)
+               :border 1px solid #(ed-current-fg)
+               :border-radius 5px)
+     ("*:hover" :color #(ed-hover-fg)))
+
+    (div.dates
+     :margin 20px 0 0 0
+     :text-align center
+     :font-size 2em)
+    
+    (nav.main
+     :margin 50px 0 0 0
+     :text-align center
+     :display flex
+     :align-items stretch
+     :justify-content center
+     :flex-wrap wrap
+     :font-size 1.2em
+     :background #(nav-bg)
+     (* :padding 10px
+        :color #(nav-fg))
+     ("*:hover" :background #(nav-hover-bg)
+                :color #(nav-hover-fg))))
+   (">header::after"
+    :content ""
+    :position absolute
+    :top 0 :left 0 :right 0 :bottom 0
+    :background "#FFFFFF"
+    :background-image (url "header.jpg")
+    :background-size cover
+    :background-repeat no-repeat
+    :background-position center
+    :filter " brightness(0.5)"
+    :z-index -1)
+
+   (>header.toplevel
+    (nav.editions
+     (.current :border none)))
+
+   ((:or main footer)
+    :max-width 800px
+    :margin 0 auto 0 auto
+    :padding 20px
+    :background "#FFFFFF")
+
+   (main
+    ((:or h2 h3 h4 h5 h6) :text-align left :margin 20px 0 5px 0)
+    (h2 :font-size 1.7em :text-indent 10px)
+    (h3 :font-size 1.5em :text-indent 5px)
+    (h4 :font-size 1.2em)
+
+    (.announcement
+     :margin 10px
+     :padding 10px
+     :text-align center
+     :background #(high-bg)
+     :color #(high-fg)
+     :font-weight bold)
+
+    (article
+     :clear both
+     :margin 30px 0 0 0
+     (p :text-align justify)
+     (h2 :margin 0 0 0 10px))
+
+    (a :word-break break-all)
+
+    ("#submissions"
+     (label :display inline-block
+            :min-width 250px))
+
+    ("#location"
+     (.location
+      (.imagery
+       :margin 0 -20px 5px -20px
+       :display flex
+       :align-items stretch
+       (.photo
+        :flex-grow 1
+        :flex-shrink 1
+        :object-fit cover
+        :width 10px
+        :height 250px
+        :display inline-block)
+       (.map
+        :border none
+        :width 33%
+        :height 250px
+        :display inline-block))
+      (.role :display none)
+      (.adr :display block
+            (".extended-address::before" :content ", ")
+            (.country-name :display block)))
+     ("#hotels" (ul :margin 0)))
+
+    ((:or "#organization" "#speakers")
+     (.role :display none)
+     (.fn :display none)
+     (".org::before" :content ", " :margin-left -2px)
+     (".adr::before" :content ", " :margin-left -2px))
+
+    ("#organization"
+     (ul :margin 0)
+     (.sponsors
+      :list-style none
+      :padding 0
+      :display flex
+      :flex-wrap wrap
+      :justify-content space-between
+      (.name :display none)
+      (.sponsor
+       :text-align center
+       :display block
+       :width 128px
+       :height 128px
+       :line-height 128px
+       :padding 10px
+       :margin 2px
+       :background "#EEEEEE"
+       (img :max-width 100%
+            :max-height 100%
+            :display inline-block
+            :vertical-align middle))))
+
+    ("#highlights"
+     (>ul :list-style none)
+     (p :white-space pre-line)
+     (.person
+      (".org:before"
+       :content ", ")
+      ((:or .n .email .tel .category .role .adr)
+       :display none)))
+
+    ("#programme"
+     ("#set-time"
+      :width 100%
+      :box-sizing border-box)
+     (>ol
+      :list-style none
+      :padding 0
+      :margin 0
+      (.programme-entry
+       :border-left 3px solid #(main-bg)
+       (header
+        :display flex
+        :align-items center
+        (* :padding 2px 2px 0 2px)
+        (time :text-align right
+              :min-width 70px
+              :margin 0 5px 0 0)
+        (h4 :font-weight normal))
+       (.speakers :margin-left 100px :padding 0)
+       (.note :margin 0 0 0 80px
+              :white-space pre-line
+              :display none))
+      (.break :background "#EEEEEE")
+      (.organization :background "#DDDDFF")
+      (.lightning :background "#FFF5AF")
+      (.dinner :background "#EEEEEE")
+      (.past :opacity 0.5)
+      (.current :font-size 1.3em
+                (h4 :font-weight bold))
+      (".current header::before"
+       :content ""
+       :width 0 :height 0
+       :border-top 10px solid transparent
+       :border-bottom 10px solid transparent
+       :border-left 10px solid #(main-bg))))
+    
+    ((:or .programme-entry .highlight)
+     (h4 :margin 0)
+     (.speakers
+      :font-size 0.8em
+      :list-style none
+      :margin 0
+      :display inline-block
+      (li :display inline-block)
+      (.speaker
+       :white-space nowrap
+       :display inline-block
+       (* :display none)
+       ((:or .fn .email .org .url) :display inline)
+       (.fn :white-space nowrap))
+      ((:and (:or >.speaker >li) "::after") :content ", " :padding-right 3px)
+      ((:and (:or >.speaker >li) ":last-child::after") :display none)))
+
+    ("#conferences"
+     (ul :display flex
+         :flex-wrap wrap
+         :justify-content space-around
+         :list-style none
+         :padding 10px
+         (li :padding 5px
+             :font-size 1.2em))))
+
+   (footer
+    :text-align center
+    :font-size 0.8em
+    :padding 20px 20px 5px 20px
+    ((.person *) :display none)
+    ((.person (:or .fn .email)) :display inline)
+    (p :margin 0))))
+
+(:media "(max-width: 800px)"
+        (body
+         :font-size 12pt
+         (main
+          :margin 0 !important
+          :width auto !important
+          ("#organization"
+           (.sponsors
+            (.sponsor
+             :width 100px
+             :height 100px
+             :line-height 100px)))
+          ("#programme"
+           ("#set-time"
+            :margin 0 -20px 0 -20px
+            :width (calc (+ 100% 40px)))
+           (>ol
+            :margin 0 -20px 0 -20px
+            (.programme-entry
+             (header
+              (time :min-width 40px))
+             (.speakers :display none))))
+          ("#location"
+           (.location
+            (.imagery
+             :flex-wrap wrap
+             (.map
+              :width 100%
+              :height 500px)))))))
