@@ -20,6 +20,8 @@ An edition is created by defining a new package of the editions' name --usually 
 
 When a definition is recompiled, its data is updated if possible. Each data entry is identified by one or more key fields. If those are changed, the data will instead be added again. To avoid this, you can recompile the entire file, which will first clear out all the data through the `define-edition` macro, and then add it all anew.
 
+If you add a new edition, you should place it into the `editions` directory, and then add the file to the ASDF system definition, such that the edition is automatically recognised once the system is loaded.
+
 ### Data Definition Constructs
 
 * `define-person` Define a new person that is relevant to this edition. All programme members and speakers should be defined in this way. The name should either be a name string directly, or ideally a list of the relevant name parts. See the list of fields below.
