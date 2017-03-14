@@ -22,9 +22,7 @@
       (:supersede (delete-directory-tree path))
       (:error (error "Edition already exists."))
       ((NIL) (return-from prepare-path))))
-  (ensure-directories-exist path)
-  ;; (copy-directory-tree *static-dir* path)
-  )
+  (ensure-directories-exist path))
 
 (defun editions-data (current)
   (loop for edition in (editions)
