@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8"/>
+    <title>European Lisp Symposium</title>
+    <link rel="stylesheet" type="text/css" href="../static/els.css"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="description" content="Homepage for the European Lisp Symposium"/>
+    <meta name="robots" content="index, follow"/>
+  </head>
+  <body>
+    <header>
+      <h1><a href="../index.html">European Lisp Symposium</a></h1>
+      <nav class="editions"><a href="../2008/index.html" class="other">2008</a><a href="../2009/index.html" class="other">2009</a><a href="../2010/index.html" class="other">2010</a><a href="../2011/index.html" class="current">2011</a><a href="../2012/index.html" class="other">2012</a><a href="../2013/index.html" class="other">2013</a><a href="../2014/index.html" class="other">2014</a><a href="../2015/index.html" class="other">2015</a><a href="../2016/index.html" class="other">2016</a><a href="../2017/index.html" class="other">2017</a></nav>
+      <div class="dates">
+        <time datetime="2011-03-31T00:00:00Z" title="Thursday 31st of March 2011, 0:00 ">2011.03.31</time> - 
+        <time datetime="2011-04-01T00:00:00Z" title="Friday 1st of April 2011, 0:00 ">2011.04.01</time>
+      </div>
+      <nav class="main">
+        
+        
+          <a href="#organization">Organization</a>
+        
+        
+        
+          <a href="#location">Location</a>
+        
+        
+          <a href="#programme">Programme</a>
+        
+        
+          <a href="#proceedings">Proceedings</a>
+        
+        <a href="http://lists.lrde.epita.fr/listinfo/elsconf" rel="external">Mailing List</a>
+      </nav>
+    </header>
+    <main>      
+      <article id="conference">
+        <div class="announcement">The conference is over!</div>
+
+        
+
+        
+          <section id="highlights">
+            <h3>Highlights</h3>
+            <ul><li><section class="highlight talk keynote">
+  <header>
+    <h4>Compiling for the Common Case</h4>
+    <ul class="speakers"><li>
+        
+          <span class="person vcard speaker">
+  
+  <span class="fn">Craig Zilles</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Craig</span>
+        
+        <span class="family-name">Zilles</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  <span class="org">University of Illinois</span>
+  
+  <span class="role">(SPEAKER)</span>
+  
+</span>
+
+        
+      </li></ul>
+  </header>
+  <p>Microprocessor vendors are actively exploring mechanisms that offer the potential to reduce the effort to produce parallel code. One such mechanism, is the ability to atomically execute code which is useful for accelerating critical sections, lock-free data structures, and for implementing transactional memory. With 3 prior implementations (Transmeta's Crusoe, Azul's Vega, and Sun's Rock) this mechanism has a lot of potential to be ubiquitous in the next decade. In this talk, I'll discuss how this mechanism can be re-purposed to provide very efficient user-mode checkpoint/rollback, allowing a compiler to generate &quot;speculative&quot; versions of code that support only the expected case. I'll detail our experiences exploring compiling in such an environment in the context of an x86 binary translator, a Java virtual machine, and the Python dynamic language.</p>
+</section>
+</li><li><section class="highlight talk keynote">
+  <header>
+    <h4>Reconfigurable Computing on Steroids: Using Common Lisp to Generate Domain Specific Hardware</h4>
+    <ul class="speakers"><li>
+        
+          <span class="person vcard speaker">
+  
+  <span class="fn">Marc Battyani</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Marc</span>
+        
+        <span class="family-name">Battyani</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  <span class="org">NovaSparks</span>
+  
+  <span class="role">(SPEAKER)</span>
+  
+</span>
+
+        
+      </li></ul>
+  </header>
+  <p>General purpose CPUs have been hitting the frequency wall but as the number of transistors in electronic chips continues to steadily increase, there is a tremendous need for other computing paradigms. One of them is the use of reconfigurable hardware (FPGA) to accelerate specific kinds of computations. Even though the performance gain can be huge, FPGAs are notoriously very difficult to program, which has been one of the major drawbacks in their adoption. There have been several attempts to solve this problem using C to VHDL/Verilog compilers. Though this can be useful at times, our opinion is that it is not a good approach. In this talk, we will explain how and why we use domain specific languages that enable us to generate high performance Domain Specific Hardware optimized for the final tasks being implemented. We will also present our experience at NovaSparks where we have been using Common Lisp to successfully define and implement those DSL-&gt;DSH compilers in financial applications since 2007.</p>
+</section>
+</li><li><section class="highlight talk keynote">
+  <header>
+    <h4>Scala: an Object-Oriented Surprise</h4>
+    <ul class="speakers"><li>
+        
+          <span class="person vcard speaker">
+  
+  <span class="fn">Apostolos Syropoulos</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Apostolos</span>
+        
+        <span class="family-name">Syropoulos</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  
+  
+  <span class="role">(SPEAKER)</span>
+  
+</span>
+
+        
+      </li></ul>
+  </header>
+  <p>Scala is an OO language that was released in 2003. The distinguished features of Scala include a seamless integration of functional programming features into an otherwise OO language. Scala owes its name to its ability to scale, that is, it is a language that can grow by providing an infrastructure that allows the introduction of new constructs and data types. Scala is a compiled language. Its compiler produces bytecode for the Java Virtual Machine, thus, allowing the (almost) seamless use of Java tools and constructs from within Scala. Most importantly, Scala is a concurrent programming language, thus, it is a tool for today as well as tomorrow.</p>
+</section>
+</li></ul>
+          </section>
+        
+
+        
+          <section id="location">
+            <h3>Location</h3>
+            
+              <span class="location vcard">
+  <span class="imagery">
+    <img class="photo" alt="photo" src="http://www.hamburg-news.hamburg/site_media/uploads/20140530_tuhh_hauptgebaeude_3_b_copyright_lina_p_a_nguyen_web_2_1.jpg"/>
+    
+      <iframe class="map" allowfullscreen="" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBB4rmYABuKj-CTQumeqSWiyhHPUFgGblg&amp;q=TUHH,+Schwarzenbergstraße+1">_</iframe>
+    
+  </span>
+  <a class="fn url" href="https://www.tuhh.de/">TUHH</a>
+  
+  
+  
+  
+  <span class="role">(CONFERENCE)</span>
+  
+    <span class="adr">
+      
+        <div>
+          
+        </div>
+        <div>
+          <span class="street-address">Schwarzenbergstraße 1</span>
+          <span class="extended-address">Building i</span>
+        </div>
+        <div>
+          <span class="locality">Hamburg</span>
+          
+          <span class="postal-code">21073</span>
+          <span class="country-name">Germany</span>
+        </div>
+      
+    </span>
+  
+</span>
+
+            
+            
+              <section id="hotels">
+                <h4>Hotels</h4>          
+                <ul><li><span class="location vcard">
+  <span class="imagery">
+    
+    
+  </span>
+  <a class="fn url" href="http://www.hotel-vorbach.de/">Hotel Vorbach Hamburg</a>
+  
+  <a class="tel" href="tel:+49-40-44-18-20">+49 40 44 18 20</a>
+  
+  
+  <span class="role">(HOTEL)</span>
+  
+    <span class="adr">
+      
+        <div>
+          
+        </div>
+        <div>
+          <span class="street-address">Johnsallee 63</span>
+          
+        </div>
+        <div>
+          <span class="locality">Hamburg</span>
+          
+          <span class="postal-code">20148</span>
+          
+        </div>
+      
+    </span>
+  
+</span>
+</li><li><span class="location vcard">
+  <span class="imagery">
+    
+    
+  </span>
+  <a class="fn url" href="http://www.grand-elysee.com/">Elysée Hotel Hamburg</a>
+  
+  <a class="tel" href="tel:+49-40-41-41-2-0">+49 40 41 41 2 0</a>
+  
+  
+  <span class="role">(HOTEL)</span>
+  
+    <span class="adr">
+      
+        <div>
+          
+        </div>
+        <div>
+          <span class="street-address">Rothenbaumchaussee 10</span>
+          
+        </div>
+        <div>
+          <span class="locality">Hamburg</span>
+          
+          <span class="postal-code">20148</span>
+          
+        </div>
+      
+    </span>
+  
+</span>
+</li><li><span class="location vcard">
+  <span class="imagery">
+    
+    
+  </span>
+  <a class="fn url" href="http://www.lindtner.com/">Hotel Lindtner Hamburg-Harburg</a>
+  
+  <a class="tel" href="tel:+49-40-79-009-448">+49 40 79 009 448</a>
+  
+  
+  <span class="role">(HOTEL)</span>
+  
+    <span class="adr">
+      
+        <div>
+          
+        </div>
+        <div>
+          <span class="street-address">Heimfelderstr. 123</span>
+          
+        </div>
+        <div>
+          <span class="locality">Hamburg</span>
+          
+          <span class="postal-code">21075</span>
+          
+        </div>
+      
+    </span>
+  
+</span>
+</li><li><span class="location vcard">
+  <span class="imagery">
+    
+    
+  </span>
+  <a class="fn url" href="http://www.hotelheimfeld.de/">Hotel Heimfeld Hamburg-Harburg</a>
+  
+  <a class="tel" href="tel:+49-40-7-90-56-78">+49 40 7 90 56 78</a>
+  
+  
+  <span class="role">(HOTEL)</span>
+  
+    <span class="adr">
+      
+        <div>
+          
+        </div>
+        <div>
+          <span class="street-address">Heimfelderstr. 91-93</span>
+          
+        </div>
+        <div>
+          <span class="locality">Hamburg</span>
+          
+          <span class="postal-code">21075</span>
+          
+        </div>
+      
+    </span>
+  
+</span>
+</li><li><span class="location vcard">
+  <span class="imagery">
+    
+    
+  </span>
+  <a class="fn url" href="http://www.hotel-heimhude.de/">Hotel Heimhude Hamburg</a>
+  
+  <a class="tel" href="tel:+49-40-41-33-30-0-">+49 40 41 33 30 0 </a>
+  
+  
+  <span class="role">(HOTEL)</span>
+  
+    <span class="adr">
+      
+        <div>
+          
+        </div>
+        <div>
+          <span class="street-address">Heimhuder Str. 16</span>
+          
+        </div>
+        <div>
+          <span class="locality">Hamburg</span>
+          
+          <span class="postal-code">20148</span>
+          
+        </div>
+      
+    </span>
+  
+</span>
+</li><li><span class="location vcard">
+  <span class="imagery">
+    
+    
+  </span>
+  <a class="fn url" href="http://www.panorama-hotels-hamburg.de/">Hotel Panorama Harburg</a>
+  
+  <a class="tel" href="tel:+49-40-41-33-30-0">+49 40 41 33 30 0</a>
+  
+  
+  <span class="role">(HOTEL)</span>
+  
+    <span class="adr">
+      
+        <div>
+          
+        </div>
+        <div>
+          <span class="street-address">Harburger Ring 8-10</span>
+          
+        </div>
+        <div>
+          <span class="locality">Hamburg</span>
+          
+          <span class="postal-code">21073</span>
+          
+        </div>
+      
+    </span>
+  
+</span>
+</li></ul>
+              </section>
+            
+          </section>
+        
+
+        
+          <section id="organization">
+            <h3>Organization</h3>
+            
+              <h4>Programme Chair</h4>
+              <ul class="programme-chairs"><li><span class="person vcard administrator programme-chair committee">
+  
+  <span class="fn">Didier Verna</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Didier</span>
+        
+        <span class="family-name">Verna</span>
+        
+      </span>
+    
+  
+  
+  <a class="email encoded-email" href="#" data-email="100,105,100,105,101,114,64,101,108,115,97,97,46,111,114,103">email@email.com</a>
+  <a class="url" href="http://www.didierverna.net">http://www.didierverna.net</a>
+  
+  <span class="org">EPITA</span>
+  
+  <span class="role">(ADMINISTRATOR PROGRAMME-CHAIR COMMITTEE)</span>
+  
+    
+      <span class="adr">
+        
+        
+        
+        
+        
+        
+        <span class="country-name">France</span>
+      </span>
+    
+  
+</span>
+</li></ul>
+            
+            
+              <h4>Local Chair</h4>
+              <ul class="local-chairs"><li><span class="person vcard local-chair">
+  
+  <span class="fn">Ralf Moeller</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Ralf</span>
+        
+        <span class="family-name">Moeller</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  <span class="org">Hamburg University of Technology</span>
+  
+  <span class="role">(LOCAL-CHAIR)</span>
+  
+    
+      <span class="adr">
+        
+        
+        
+        
+        
+        
+        <span class="country-name">Germany</span>
+      </span>
+    
+  
+</span>
+</li></ul>
+            
+            
+              <h4>Committee</h4>
+              <ul class="committee-members"><li><span class="person vcard committee">
+  
+  <span class="fn">António Leitão</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">António</span>
+        
+        <span class="family-name">Leitão</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  <span class="org">Instituto Superior Técnico/INESC-ID</span>
+  
+  <span class="role">(COMMITTEE)</span>
+  
+    
+      <span class="adr">
+        
+        
+        
+        
+        
+        
+        <span class="country-name">Portugal</span>
+      </span>
+    
+  
+</span>
+</li><li><span class="person vcard committee">
+  
+  <span class="fn">Christophe Rhodes</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Christophe</span>
+        
+        <span class="family-name">Rhodes</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  <span class="org">Goldsmiths University of London</span>
+  
+  <span class="role">(COMMITTEE)</span>
+  
+    
+      <span class="adr">
+        
+        
+        
+        
+        
+        
+        <span class="country-name">United Kingdom</span>
+      </span>
+    
+  
+</span>
+</li><li><span class="person vcard committee">
+  
+  <span class="fn">David Liebke</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">David</span>
+        <span class="additional-name">Edgar</span>
+        <span class="family-name">Liebke</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  <span class="org">Relevance Inc.</span>
+  
+  <span class="role">(COMMITTEE)</span>
+  
+    
+      <span class="adr">
+        
+        
+        
+        
+        
+        
+        <span class="country-name">USA</span>
+      </span>
+    
+  
+</span>
+</li><li><span class="person vcard administrator programme-chair committee">
+  
+  <span class="fn">Didier Verna</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Didier</span>
+        
+        <span class="family-name">Verna</span>
+        
+      </span>
+    
+  
+  
+  <a class="email encoded-email" href="#" data-email="100,105,100,105,101,114,64,101,108,115,97,97,46,111,114,103">email@email.com</a>
+  <a class="url" href="http://www.didierverna.net">http://www.didierverna.net</a>
+  
+  <span class="org">EPITA</span>
+  
+  <span class="role">(ADMINISTRATOR PROGRAMME-CHAIR COMMITTEE)</span>
+  
+    
+      <span class="adr">
+        
+        
+        
+        
+        
+        
+        <span class="country-name">France</span>
+      </span>
+    
+  
+</span>
+</li><li><span class="person vcard committee">
+  
+  <span class="fn">Henry Lieberman</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Henry</span>
+        
+        <span class="family-name">Lieberman</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  <span class="org">MIT Media Laboratory</span>
+  
+  <span class="role">(COMMITTEE)</span>
+  
+    
+      <span class="adr">
+        
+        
+        
+        
+        
+        
+        <span class="country-name">USA</span>
+      </span>
+    
+  
+</span>
+</li><li><span class="person vcard committee">
+  
+  <span class="fn">Jay McCarthy</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Jay</span>
+        
+        <span class="family-name">McCarthy</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  <span class="org">Brigham Young University</span>
+  
+  <span class="role">(COMMITTEE)</span>
+  
+    
+      <span class="adr">
+        
+        
+        
+        
+        
+        
+        <span class="country-name">USA</span>
+      </span>
+    
+  
+</span>
+</li><li><span class="person vcard committee">
+  
+  <span class="fn">José Reina</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">José</span>
+        <span class="additional-name">Luis Ruit</span>
+        <span class="family-name">Reina</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  <span class="org">Universidad de Sevilla</span>
+  
+  <span class="role">(COMMITTEE)</span>
+  
+    
+      <span class="adr">
+        
+        
+        
+        
+        
+        
+        <span class="country-name">Spain</span>
+      </span>
+    
+  
+</span>
+</li><li><span class="person vcard committee">
+  
+  <span class="fn">Manuel Serrano</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Manuel</span>
+        
+        <span class="family-name">Serrano</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  <span class="org">INRIA</span>
+  
+  <span class="role">(COMMITTEE)</span>
+  
+    
+      <span class="adr">
+        
+        
+        
+        
+        
+        
+        <span class="country-name">France</span>
+      </span>
+    
+  
+</span>
+</li><li><span class="person vcard committee">
+  
+  <span class="fn">Marco Antoniotti</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Marco</span>
+        
+        <span class="family-name">Antoniotti</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  <span class="org">Universita Milano Bicocca</span>
+  
+  <span class="role">(COMMITTEE)</span>
+  
+    
+      <span class="adr">
+        
+        
+        
+        
+        
+        
+        <span class="country-name">Italy</span>
+      </span>
+    
+  
+</span>
+</li><li><span class="person vcard committee">
+  
+  <span class="fn">Michael Sperber</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Michael</span>
+        
+        <span class="family-name">Sperber</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  <span class="org">DeinProgramm</span>
+  
+  <span class="role">(COMMITTEE)</span>
+  
+    
+      <span class="adr">
+        
+        
+        
+        
+        
+        
+        <span class="country-name">Germany</span>
+      </span>
+    
+  
+</span>
+</li><li><span class="person vcard committee">
+  
+  <span class="fn">Pascal Costanza</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Pascal</span>
+        
+        <span class="family-name">Costanza</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  <span class="org">Vrije Universiteit of Brussel</span>
+  
+  <span class="role">(COMMITTEE)</span>
+  
+    
+      <span class="adr">
+        
+        
+        
+        
+        
+        
+        <span class="country-name">Belgium</span>
+      </span>
+    
+  
+</span>
+</li><li><span class="person vcard committee">
+  
+  <span class="fn">Scott McKay</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Scott</span>
+        
+        <span class="family-name">McKay</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  <span class="org">ITA Software</span>
+  
+  <span class="role">(COMMITTEE)</span>
+  
+    
+      <span class="adr">
+        
+        
+        
+        
+        
+        
+        <span class="country-name">USA</span>
+      </span>
+    
+  
+</span>
+</li></ul>
+            
+            
+            
+              <h4>Sponsors</h4>
+              <ul class="sponsors"><li><a class="sponsor" href="https://www.tuhh.de" title="Tuhh">
+  <span class="name">TUHH</span>
+  <img src="../static/logos/tuhh.svg" alt="logo"/>
+</a>
+</li><li><a class="sponsor" href="http://www.freiheit.com/en/" title="Freiheit">
+  <span class="name">FREIHEIT</span>
+  <img src="../static/logos/freiheit.svg" alt="logo"/>
+</a>
+</li><li><a class="sponsor" href="http://www.novasparks.com/" title="Novasparks">
+  <span class="name">NOVASPARKS</span>
+  <img src="../static/logos/novasparks.jpg" alt="logo"/>
+</a>
+</li><li><a class="sponsor" href="http://www.franz.com/" title="Franz">
+  <span class="name">FRANZ</span>
+  <img src="../static/logos/franz.png" alt="logo"/>
+</a>
+</li><li><a class="sponsor" href="http://www.lispworks.com/" title="Lispworks">
+  <span class="name">LISPWORKS</span>
+  <img src="../static/logos/lispworks.png" alt="logo"/>
+</a>
+</li><li><a class="sponsor" href="http://www.epita.fr/" title="Epita">
+  <span class="name">EPITA</span>
+  <img src="../static/logos/epita.png" alt="logo"/>
+</a>
+</li></ul>
+            
+          </section>
+        
+
+        
+
+        
+          <section id="speakers">
+            <h3>Speakers</h3>
+            <ul><li><span class="person vcard speaker">
+  
+  <span class="fn">Alec Berryman</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Alec</span>
+        
+        <span class="family-name">Berryman</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  
+  
+  <span class="role">(SPEAKER)</span>
+  
+</span>
+</li><li><span class="person vcard speaker">
+  
+  <span class="fn">Antonio Hernández</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Antonio</span>
+        <span class="additional-name">Garrote</span>
+        <span class="family-name">Hernández</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  
+  
+  <span class="role">(SPEAKER)</span>
+  
+</span>
+</li><li><span class="person vcard speaker">
+  
+  <span class="fn">Apostolos Syropoulos</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Apostolos</span>
+        
+        <span class="family-name">Syropoulos</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  
+  
+  <span class="role">(SPEAKER)</span>
+  
+</span>
+</li><li><span class="person vcard speaker">
+  
+  <span class="fn">Craig Zilles</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Craig</span>
+        
+        <span class="family-name">Zilles</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  <span class="org">University of Illinois</span>
+  
+  <span class="role">(SPEAKER)</span>
+  
+</span>
+</li><li><span class="person vcard speaker">
+  
+  <span class="fn">Damir Cavar</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Damir</span>
+        
+        <span class="family-name">Cavar</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  
+  
+  <span class="role">(SPEAKER)</span>
+  
+</span>
+</li><li><span class="person vcard speaker">
+  
+  <span class="fn">Damir Kero</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Damir</span>
+        
+        <span class="family-name">Kero</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  
+  
+  <span class="role">(SPEAKER)</span>
+  
+</span>
+</li><li><span class="person vcard speaker">
+  
+  <span class="fn">David Rager</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">David</span>
+        <span class="additional-name">L.</span>
+        <span class="family-name">Rager</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  
+  
+  <span class="role">(SPEAKER)</span>
+  
+</span>
+</li><li><span class="person vcard speaker">
+  
+  <span class="fn">Franjo Pehar</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Franjo</span>
+        
+        <span class="family-name">Pehar</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  
+  
+  <span class="role">(SPEAKER)</span>
+  
+</span>
+</li><li><span class="person vcard speaker">
+  
+  <span class="fn">Irène Durand</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Irène</span>
+        <span class="additional-name">Anne</span>
+        <span class="family-name">Durand</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  
+  
+  <span class="role">(SPEAKER)</span>
+  
+</span>
+</li><li><span class="person vcard speaker">
+  
+  <span class="fn">Kurt Normak</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Kurt</span>
+        
+        <span class="family-name">Normak</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  
+  
+  <span class="role">(SPEAKER)</span>
+  
+</span>
+</li><li><span class="person vcard speaker">
+  
+  <span class="fn">Marc Battyani</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Marc</span>
+        
+        <span class="family-name">Battyani</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  <span class="org">NovaSparks</span>
+  
+  <span class="role">(SPEAKER)</span>
+  
+</span>
+</li><li><span class="person vcard speaker">
+  
+  <span class="fn">Maria Garcia</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Maria</span>
+        <span class="additional-name">Moreno</span>
+        <span class="family-name">Garcia</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  
+  
+  <span class="role">(SPEAKER)</span>
+  
+</span>
+</li><li><span class="person vcard speaker">
+  
+  <span class="fn">Matt Kaufmann</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Matt</span>
+        
+        <span class="family-name">Kaufmann</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  
+  
+  <span class="role">(SPEAKER)</span>
+  
+</span>
+</li><li><span class="person vcard speaker">
+  
+  <span class="fn">Matthieu Villeneuve</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Matthieu</span>
+        
+        <span class="family-name">Villeneuve</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  
+  
+  <span class="role">(SPEAKER)</span>
+  
+</span>
+</li><li><span class="person vcard speaker">
+  
+  <span class="fn">Nicolas Neuss</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Nicolas</span>
+        
+        <span class="family-name">Neuss</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  
+  
+  <span class="role">(SPEAKER)</span>
+  
+</span>
+</li><li><span class="person vcard speaker">
+  
+  <span class="fn">Pavle Valerjev</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Pavle</span>
+        
+        <span class="family-name">Valerjev</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  
+  
+  <span class="role">(SPEAKER)</span>
+  
+</span>
+</li><li><span class="person vcard speaker">
+  
+  <span class="fn">Robert Strandh</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Robert</span>
+        
+        <span class="family-name">Strandh</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  
+  
+  <span class="role">(SPEAKER)</span>
+  
+</span>
+</li><li><span class="person vcard speaker">
+  
+  <span class="fn">Tanja Gulan</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Tanja</span>
+        
+        <span class="family-name">Gulan</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  
+  
+  <span class="role">(SPEAKER)</span>
+  
+</span>
+</li><li><span class="person vcard speaker">
+  
+  <span class="fn">Valentin Pavlov</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Valentin</span>
+        
+        <span class="family-name">Pavlov</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  
+  
+  <span class="role">(SPEAKER)</span>
+  
+</span>
+</li><li><span class="person vcard speaker">
+  
+  <span class="fn">Warren Hunt</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Warren</span>
+        <span class="additional-name">A.</span>
+        <span class="family-name">Hunt</span>
+        
+      </span>
+    
+  
+  
+  
+  
+  
+  
+  
+  <span class="role">(SPEAKER)</span>
+  
+</span>
+</li></ul>
+          </section>
+        
+
+        
+          <section id="programme">
+            <h3>Programme</h3>
+            <input type="text" id="set-time" value="" placeholder="2015.4.20 8:30" title="Here you can manually set the time of the programme calendar."/>
+            <ol><li><section class="programme-entry organization">
+  <header>
+    <time datetime="2011-03-30T18:00:00+02:00" title="Wednesday 30th of March 2011, 18:00 (+02:00)">18:00</time>
+    <h4>Welcome Reception</h4>
+  </header>
+  
+  
+</section>
+</li><li><section class="programme-entry break">
+  <header>
+    <time datetime="2011-03-30T22:00:00+02:00" title="Wednesday 30th of March 2011, 22:00 (+02:00)">22:00</time>
+    <h4></h4>
+  </header>
+  
+  
+</section>
+</li><li><section class="programme-entry organization">
+  <header>
+    <time datetime="2011-03-31T08:30:00+02:00" title="Thursday 31st of March 2011, 8:30 (+02:00)">8:30</time>
+    <h4>Registration</h4>
+  </header>
+  
+  
+</section>
+</li><li><section class="programme-entry organization">
+  <header>
+    <time datetime="2011-03-31T09:00:00+02:00" title="Thursday 31st of March 2011, 9:00 (+02:00)">9:00</time>
+    <h4>Welcome Message</h4>
+  </header>
+  
+  
+</section>
+</li><li><section class="programme-entry talk keynote">
+  <header>
+    <time datetime="2011-03-31T09:30:00+02:00" title="Thursday 31st of March 2011, 9:30 (+02:00)">9:30</time>
+    <h4>Compiling for the Common Case</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Craig Zilles</li></ul>
+  
+  
+</section>
+</li><li><section class="programme-entry break">
+  <header>
+    <time datetime="2011-03-31T10:30:00+02:00" title="Thursday 31st of March 2011, 10:30 (+02:00)">10:30</time>
+    <h4>Coffee</h4>
+  </header>
+  
+  
+</section>
+</li><li><section class="programme-entry talk">
+  <header>
+    <time datetime="2011-03-31T11:00:00+02:00" title="Thursday 31st of March 2011, 11:00 (+02:00)">11:00</time>
+    <h4>Supercomputing in Lisp</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Valentin Pavlov</li></ul>
+  
+  
+</section>
+</li><li><section class="programme-entry talk">
+  <header>
+    <time datetime="2011-03-31T11:45:00+02:00" title="Thursday 31st of March 2011, 11:45 (+02:00)">11:45</time>
+    <h4>A Futures Library and Parallelism Abstractions for a Functional Subset of Lisp</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">David Rager</li><li class="speaker">Warren Hunt</li><li class="speaker">Matt Kaufmann</li></ul>
+  
+  
+</section>
+</li><li><section class="programme-entry break">
+  <header>
+    <time datetime="2011-03-31T12:30:00+02:00" title="Thursday 31st of March 2011, 12:30 (+02:00)">12:30</time>
+    <h4>Lunch</h4>
+  </header>
+  
+  
+</section>
+</li><li><section class="programme-entry talk keynote">
+  <header>
+    <time datetime="2011-03-31T14:00:00+02:00" title="Thursday 31st of March 2011, 14:00 (+02:00)">14:00</time>
+    <h4>Reconfigurable Computing on Steroids: Using Common Lisp to Generate Domain Specific Hardware</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Marc Battyani</li></ul>
+  
+  
+</section>
+</li><li><section class="programme-entry break">
+  <header>
+    <time datetime="2011-03-31T15:00:00+02:00" title="Thursday 31st of March 2011, 15:00 (+02:00)">15:00</time>
+    <h4>Coffee</h4>
+  </header>
+  
+  
+</section>
+</li><li><section class="programme-entry talk">
+  <header>
+    <time datetime="2011-03-31T15:30:00+02:00" title="Thursday 31st of March 2011, 15:30 (+02:00)">15:30</time>
+    <h4>Implementing huge term automata</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Irène Durand</li></ul>
+  
+  
+</section>
+</li><li><section class="programme-entry talk">
+  <header>
+    <time datetime="2011-03-31T16:15:00+02:00" title="Thursday 31st of March 2011, 16:15 (+02:00)">16:15</time>
+    <h4>Jobim: an Actors Library for the Clojure Programming Language</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Antonio Hernández</li><li class="speaker">Maria Garcia</li></ul>
+  
+  
+</section>
+</li><li><section class="programme-entry talk lightning">
+  <header>
+    <time datetime="2011-03-31T17:00:00+02:00" title="Thursday 31st of March 2011, 17:00 (+02:00)">17:00</time>
+    <h4>Lightning Talks</h4>
+  </header>
+  
+  
+</section>
+</li><li><section class="programme-entry break">
+  <header>
+    <time datetime="2011-03-31T18:00:00+02:00" title="Thursday 31st of March 2011, 18:00 (+02:00)">18:00</time>
+    <h4></h4>
+  </header>
+  
+  
+</section>
+</li><li><section class="programme-entry dinner">
+  <header>
+    <time datetime="2011-03-31T20:00:00+02:00" title="Thursday 31st of March 2011, 20:00 (+02:00)">20:00</time>
+    <h4>Conference Dinner</h4>
+  </header>
+  
+  
+</section>
+</li><li><section class="programme-entry talk keynote">
+  <header>
+    <time datetime="2011-04-01T09:00:00+02:00" title="Friday 1st of April 2011, 9:00 (+02:00)">9:00</time>
+    <h4>Scala: an Object-Oriented Surprise</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Apostolos Syropoulos</li></ul>
+  
+  
+</section>
+</li><li><section class="programme-entry break">
+  <header>
+    <time datetime="2011-04-01T10:00:00+02:00" title="Friday 1st of April 2011, 10:00 (+02:00)">10:00</time>
+    <h4>Coffee</h4>
+  </header>
+  
+  
+</section>
+</li><li><section class="programme-entry talk">
+  <header>
+    <time datetime="2011-04-01T10:30:00+02:00" title="Friday 1st of April 2011, 10:30 (+02:00)">10:30</time>
+    <h4>SICL, Building Blocks for Implementers of Common Lisp</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Robert Strandh</li><li class="speaker">Matthieu Villeneuve</li></ul>
+  
+  
+</section>
+</li><li><section class="programme-entry talk">
+  <header>
+    <time datetime="2011-04-01T11:15:00+02:00" title="Friday 1st of April 2011, 11:15 (+02:00)">11:15</time>
+    <h4>Using Common Lisp in University Course Administration</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Nicolas Neuss</li></ul>
+  
+  
+</section>
+</li><li><section class="programme-entry break">
+  <header>
+    <time datetime="2011-04-01T12:00:00+02:00" title="Friday 1st of April 2011, 12:00 (+02:00)">12:00</time>
+    <h4>Lunch</h4>
+  </header>
+  
+  
+</section>
+</li><li><section class="programme-entry talk">
+  <header>
+    <time datetime="2011-04-01T13:30:00+02:00" title="Friday 1st of April 2011, 13:30 (+02:00)">13:30</time>
+    <h4>Bites of Lists - Mapping and Filtering Sublists</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Kurt Normak</li></ul>
+  
+  
+</section>
+</li><li><section class="programme-entry talk">
+  <header>
+    <time datetime="2011-04-01T14:15:00+02:00" title="Friday 1st of April 2011, 14:15 (+02:00)">14:15</time>
+    <h4>The Scheme Natural Language Toolkit (S-NLTK): NLP Library for R6RS and Racket</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Damir Cavar</li><li class="speaker">Tanja Gulan</li><li class="speaker">Damir Kero</li><li class="speaker">Franjo Pehar</li><li class="speaker">Pavle Valerjev</li></ul>
+  
+  
+</section>
+</li><li><section class="programme-entry break">
+  <header>
+    <time datetime="2011-04-01T15:00:00+02:00" title="Friday 1st of April 2011, 15:00 (+02:00)">15:00</time>
+    <h4>Coffee</h4>
+  </header>
+  
+  
+</section>
+</li><li><section class="programme-entry talk">
+  <header>
+    <time datetime="2011-04-01T15:30:00+02:00" title="Friday 1st of April 2011, 15:30 (+02:00)">15:30</time>
+    <h4>Parallelizing a Commercial Common Lisp Code-Base for Performance</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Alec Berryman</li></ul>
+  
+  
+</section>
+</li><li><section class="programme-entry talk panel">
+  <header>
+    <time datetime="2011-04-01T16:15:00+02:00" title="Friday 1st of April 2011, 16:15 (+02:00)">16:15</time>
+    <h4>The Next Lisp Challenges - Distribution, Concurrency, Parallelism</h4>
+  </header>
+  
+  
+</section>
+</li><li><section class="programme-entry organization">
+  <header>
+    <time datetime="2011-04-01T17:00:00+02:00" title="Friday 1st of April 2011, 17:00 (+02:00)">17:00</time>
+    <h4>Conference End</h4>
+  </header>
+  
+  
+</section>
+</li></ol>
+          </section>
+        
+      </article>
+
+      
+        <article id="proceedings">
+          <h2>Proceedings</h2>
+          <p>
+            You can find the proceedings in PDF form here:
+          </p>
+          
+            <a href="../static/proceedings/2011.pdf">../static/proceedings/2011.pdf</a>
+          
+        </article>
+      
+    </main>
+    <footer>
+  <p>
+    Authored by
+    
+      <span class="person vcard administrator programme-chair committee">
+  
+  <span class="fn">Didier Verna</span>
+  
+    
+      <span class="n">
+        
+        <span class="given-name">Didier</span>
+        
+        <span class="family-name">Verna</span>
+        
+      </span>
+    
+  
+  
+  <a class="email encoded-email" href="#" data-email="100,105,100,105,101,114,64,101,108,115,97,97,46,111,114,103">email@email.com</a>
+  <a class="url" href="http://www.didierverna.net">http://www.didierverna.net</a>
+  
+  <span class="org">EPITA</span>
+  
+  <span class="role">(ADMINISTRATOR PROGRAMME-CHAIR COMMITTEE)</span>
+  
+    
+      <span class="adr">
+        
+        
+        
+        
+        
+        
+        <span class="country-name">France</span>
+      </span>
+    
+  
+</span>
+
+    
+  </p>
+  <p>
+    Last updated on
+    <time datetime="2017-03-14T10:24:04-01:00" class="published updated" title="Tuesday 14th of March 2017, 10:24 (-01:00)">2017.03.14</time>
+  </p>
+  <p>
+    Generated by
+    <a href="https://github.com/Shinmera/els-web">els-web</a>, designed by <a href="https://everything.shinmera.com">Nicolas Hafner</a>.
+  </p>
+</footer>
+
+    <script type="text/javascript" src="../static/els.js"></script>
+  </body>
+</html>
