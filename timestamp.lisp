@@ -28,7 +28,7 @@
 (defun timestamp->universal (timestamp)
   (encode-universal-time (sec timestamp) (minute timestamp) (hour timestamp)
                          (day timestamp) (month timestamp) (year timestamp)
-                         (/ (offset timestamp) 60)))
+                         (/ (offset timestamp) -60)))
 
 (defun make-timestamp (&optional (y 0) (m 1) (d 1) (hh 0) (mm 0) (ss 0) (offset 0))
   (make-instance 'timestamp :year y :month m :day d
@@ -38,7 +38,7 @@
 (defun universal->timestamp (universal)
   (multiple-value-bind (ss mm hh d m y dow dst zone) (decode-universal-time universal)
     (declare (ignore dow dst))
-    (make-timestamp y m d hh mm ss (round (* 60 zone)))))
+    (make-timestamp y m d hh mm ss (round (* -60 zone)))))
 
 (defun copy-timestamp (timestamp)
   (make-timestamp (year timestamp) (month timestamp) (day timestamp)
