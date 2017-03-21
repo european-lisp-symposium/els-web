@@ -168,7 +168,8 @@
             :vertical-align middle))))
 
     ("#highlights"
-     (>ul :list-style none)
+     (>ul :list-style none
+          :padding 0)
      (p :white-space pre-line)
      (.person
       (".org:before"
