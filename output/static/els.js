@@ -77,15 +77,24 @@ var ELS = function(){
             var time = programme.getElementsByTagName("time");
             if(time.length !== 0){
                 time = time[0].getAttribute("datetime");
-                return time.substring(time.indexOf("+") || time.indexOf("-"));
+                var plus = time.lastIndexOf("+");
+                return time.substring((plus>=0)? plus : time.lastIndexOf("-"));
             }
         }
         return null;
     }
 
+    self.toLocalDate = function(date){
+        // Find our offset and invert it
+        var offset = self.findTimezoneOffset();
+        var revoffset = ((offset[0] == "+")?"-":"+")+offset.substring(1);
+        // Translate browser time to normalised UTC time and offset to conference time.
+        var utctime = date.toISOString().slice(0, -1);
+        return new Date(Date.parse(utctime+revoffset)+date.getTimezoneOffset()*60000); 
+    }
+
     self.formatDateLocally = function(date){
-        var timestring = date.toISOString().slice(0, -1)+self.findTimezoneOffset();
-        var local = new Date(Date.parse(timestring));
+        var local = self.toLocalDate(date);
         var pad = function(a){return (a<10)? "0"+a : a;}
         return local.getFullYear()
             +"."+ (local.getMonth()+1)
