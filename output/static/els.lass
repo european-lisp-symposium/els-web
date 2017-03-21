@@ -221,7 +221,6 @@
       :display inline-block
       (li :display inline-block)
       (.speaker
-       :white-space nowrap
        :display inline-block
        (* :display none)
        ((:or .fn .email .org .url) :display inline)
