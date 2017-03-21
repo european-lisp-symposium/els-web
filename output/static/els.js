@@ -74,19 +74,24 @@ var ELS = function(){
     self.findTimezoneOffset = function(){
         var programme = document.getElementById("programme");
         if(programme){
-            var time = self.getElementTime(programme);
-            if(time) return time.getTimezoneOffset();
+            var time = programme.getElementsByTagName("time");
+            if(time.length !== 0){
+                time = time[0].getAttribute("datetime");
+                return time.substring(time.indexOf("+") || time.indexOf("-"));
+            }
         }
         return null;
     }
 
     self.formatDateLocally = function(date){
+        var timestring = date.toISOString().slice(0, -1)+self.findTimezoneOffset();
+        var local = new Date(Date.parse(timestring));
         var pad = function(a){return (a<10)? "0"+a : a;}
-        return date.getFullYear()
-            +"."+ (date.getMonth()+1)
-            +"."+ date.getDate()
-            +" "+ date.getHours()
-            +":"+ pad(date.getMinutes());
+        return local.getFullYear()
+            +"."+ (local.getMonth()+1)
+            +"."+ local.getDate()
+            +" "+ local.getHours()
+            +":"+ pad(local.getMinutes());
     }
 
     self.updateProgrammeEntry = function(element, current){
@@ -142,7 +147,7 @@ var ELS = function(){
     self.initTimeSetter = function(){
         var setter = document.getElementById("set-time");
         setter.addEventListener('change', function(){
-            var date = new Date(Date.parse(setter.value+"Z") + 60*self.findTimezoneOffset());
+            var date = new Date(Date.parse(setter.value+self.findTimezoneOffset()));
             if(setter.value === ""){
                 self.log("Resetting date-time to current, updating time.");
                 self.time = null;
