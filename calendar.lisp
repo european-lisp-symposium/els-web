@@ -26,7 +26,7 @@
   ;; Should test for octets, but hell, I'm not doing that.
   ;; (at least not until I run into problems)
   (cond ((<= (length line) 70)
-         (write-string line out))
+         (format out "~a~c~c" line #\Return #\Linefeed))
         (T
          (format out "~a~c~c "
                  (subseq line 0 70) #\Return #\Linefeed)
@@ -34,7 +34,7 @@
 
 (defun calwrite (string &rest args)
   (output-folded-calendar-line
-   (format NIL "~?~c~c" string args #\Return #\Linefeed)
+   (format NIL "~?" string args)
    *calendar-stream*))
 
 (defun escape-crlf (text)
