@@ -17,7 +17,10 @@
                (:file "secret")
                (:file "timestamp")
                (:file "edition")
-               (:file "compiler")
+               (:file "query")
+               (:file "calendar")
+               (:file "webpage")
+               (:file "shorthand")
                (:module "editions"
                 :components ((:file "frontpage")
                              (:file "2008")
