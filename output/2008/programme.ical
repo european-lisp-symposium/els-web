@@ -1,0 +1,367 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//hacksw/handcal//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:682-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080522T063000Z
+DTEND:20080522T070000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Registration
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:683-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080522T070000Z
+DTEND:20080522T073000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Welcome Message
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:684-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080522T073000Z
+DTEND:20080522T080000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Writers' Workshop I
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:685-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080522T080000Z
+DTEND:20080522T083000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Writers' Workshop II
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:686-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080522T083000Z
+DTEND:20080522T090000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Coffee
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:687-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080522T090000Z
+DTEND:20080522T093000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Writers' Workshop III
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:688-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080522T093000Z
+DTEND:20080522T100000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Writers' Workshop IV
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:689-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080522T100000Z
+DTEND:20080522T123000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Lunch
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:690-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080522T123000Z
+DTEND:20080522T130000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Writers' Workshop V
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:691-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080522T130000Z
+DTEND:20080522T133000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Writers' Workshop VI
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:692-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080522T133000Z
+DTEND:20080522T140000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Writers' Workshop VII
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:693-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080522T140000Z
+DTEND:20080522T143000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Coffee
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:694-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080522T143000Z
+DTEND:20080522T170000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:695-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080522T170000Z
+DTEND:20080522T180000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Reception at City Hall
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:696-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080522T180000Z
+DTEND:20080523T063000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:697-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080523T063000Z
+DTEND:20080523T070000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Registration
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:698-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080523T070000Z
+DTEND:20080523T073000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Welcome Message
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:699-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080523T073000Z
+DTEND:20080523T083000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:The Right Mix: Common Lisp in Bioinformatics, Systems Biology 
+ and in the Larger Semantic Network World
+DESCRIPTION:Working with CL nowadays is a choice based on a long progr
+ amming experience (and/or lazyness and or/inertia). Many times this ch
+ oice is hard because of a number of entrenched limitations of the CL (
+ or simply Lispy) world: lack of many agreed upon, modern and portable 
+ extensions, and lack of new programmers being the most visible. Yet, t
+ his talk will argue that the situation has improved and that CL is eve
+ n more "the right mix" for many researchers in the sciences, and, in p
+ articular, in the fields I have been working for a few years.
+
+For CL,
+  being the right mix comes from the strenghts of the standard and of t
+ he nature itself of the language. The ability to build code with more 
+ than decent numerical performance and the ability to morph in any (dec
+ larative) DSL are the key characteristics that make CL the right tool 
+ for many of the sciences.
+
+Bioinformatics and Systems Biology are two 
+ relatively broad terms that serve to describe a number of system and a
+ lgorithmic solutions to problems stemming from the needs of biologists
+  and clinicians. Very roughly speaking, these terms cover the range fr
+ om "sequence analysis" (DNA, RNA, and protein) to statistical interpre
+ tation of "high throughput experiments" (micro-array and new ion-trap 
+ protein studies), to model simulation and testing of metabolic, regula
+ tory and signaling pathways. The numerical capabilities of CL do fit w
+ ell with these problems. On the other end, these problems require the 
+ support of many data manipulation, sharing and, above all, description
+  systems that nowadays are continuously crystallized in different "ont
+ ologies" and "controlled vocabularies" which are then rendered in XML/
+ RDF. CL systems for solving such "representation" task predate all of 
+ these efforts and it should come to no surprise that Lisp-based system
+ s provide a very good platform to build more expressive DSL's capable 
+ of improving the inference capabilities of the tools needed by biologi
+ sts and physicians.
+
+At this point in time, the "basic library" situat
+ ion for CL is good enough to support its use in the field. CLSQL and X
+ ML parsing libraries are the basis for such use. Numerical libraries a
+ bound, as well as web development frameworks. Writing inference engine
+ s and DSL's has never been a problem for CL programmers and researcher
+ s. It is therefore a well founded conclusion that CL is a "well mixed 
+ solution" for Bioinformatics and Systems Biology, life, universe and e
+ verything else. It just needs to be put together.
+
+Marco Antoniotti is
+  an Associate Professor at the Dipartimento di Informatica Sistemistic
+ a e Comunicazione, Università degli Studi di Milano-Bicocca, Italy. Hi
+ s interests concentrate in the field of Computational and Systems Biol
+ ogy. He is the author or co-author of several papers and software syst
+ ems - SHIFT from UC Berkeley, Jester from PARADES, Simpathica and GOAL
+ IE from NYU - and co-authored three patents in the field of Genomics O
+ ptical Mapping. He received his PhD from New York University in 1995.
+ 
+CONTACT:Marco Antoniotti
+END:VEVENT
+BEGIN:VEVENT
+UID:700-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080523T083000Z
+DTEND:20080523T090000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Coffee
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:701-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080523T090000Z
+DTEND:20080523T093000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Context-Oriented Programming with the Ambient Object System
+DESCRIPTION:
+CONTACT:Sebastián González, Kim Mens, Alfredo Cádiz
+END:VEVENT
+BEGIN:VEVENT
+UID:702-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080523T093000Z
+DTEND:20080523T100000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Reasoning about qualitative temporal information with S-words 
+ and S-languages
+DESCRIPTION:
+CONTACT:Irène Durand, Sylviane Schwer
+END:VEVENT
+BEGIN:VEVENT
+UID:703-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080523T100000Z
+DTEND:20080523T123000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Lunch
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:704-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080523T123000Z
+DTEND:20080523T130000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Binary Methods Programming: the Clos Perspective
+DESCRIPTION:
+CONTACT:Didier Verna
+END:VEVENT
+BEGIN:VEVENT
+UID:705-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080523T130000Z
+DTEND:20080523T133000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Custom Specializers in Object-Oriented Lisp
+DESCRIPTION:
+CONTACT:Jim Newton, Christophe Rhodes
+END:VEVENT
+BEGIN:VEVENT
+UID:706-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080523T133000Z
+DTEND:20080523T140000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:UCL-GLORP - An ORM for Common Lisp
+DESCRIPTION:
+CONTACT:António Leitão
+END:VEVENT
+BEGIN:VEVENT
+UID:707-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080523T140000Z
+DTEND:20080523T143000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Coffee
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:708-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080523T143000Z
+DTEND:20080523T150000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:An Implementation of CLIM Presentation Types
+DESCRIPTION:
+CONTACT:Timothy Moore
+END:VEVENT
+BEGIN:VEVENT
+UID:709-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080523T150000Z
+DTEND:20080523T153000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Visual Programming in PWGL
+DESCRIPTION:
+CONTACT:Mikael Laurson, Mika Kuuskankare
+END:VEVENT
+BEGIN:VEVENT
+UID:710-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080523T153000Z
+DTEND:20080523T160000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Conference End
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:711-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080523T160000Z
+DTEND:20080523T170000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:712-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20080523T170000Z
+DTEND:20080523T180000Z
+LOCATION:351 Cours de la Libération, 33400 Talence, France
+SUMMARY:Conference Dinner
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+END:VCALENDAR

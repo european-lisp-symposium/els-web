@@ -1,0 +1,261 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//hacksw/handcal//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:792-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20130603T070000Z
+DTEND:20130603T080000Z
+LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
+SUMMARY:Asynchronous Programming in Dart
+DESCRIPTION:Florian Loitsch has a passion for dynamic languages, like 
+ Scheme, JavaScript and now Dart. He wrote a Scheme-to-JavaScript compi
+ ler during his thesis, and then completed a JavaScript-to-Scheme compi
+ ler in his spare time.
+
+In 2010 he joined Google's team in Aarhus (Den
+ mark) where he worked on V8 and later Dart. Being part of the Dart tea
+ m Florian has helped specifying the language, which was presented in l
+ ate 2011. In 2012 he became the Tech Lead for the Dart libraries where
+ , among other tasks, he participated on the creation of a new asynchro
+ nous library that is based on Streams and Futures (aka promises).
+CONTACT:Florian Loitsch
+END:VEVENT
+BEGIN:VEVENT
+UID:793-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20130603T080000Z
+DTEND:20130603T084500Z
+LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
+SUMMARY:Functional Package Management with Guix
+DESCRIPTION:
+CONTACT:Ludovic Courtes
+END:VEVENT
+BEGIN:VEVENT
+UID:794-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20130603T084500Z
+DTEND:20130603T091500Z
+LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
+SUMMARY:Coffee
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:795-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20130603T091500Z
+DTEND:20130603T100000Z
+LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
+SUMMARY:Data-transformer: an example of data-centered tool set
+DESCRIPTION:
+CONTACT:Mikhail Raskin
+END:VEVENT
+BEGIN:VEVENT
+UID:796-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20130603T100000Z
+DTEND:20130603T110000Z
+LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
+SUMMARY:The Leonardo System and Software Individuals
+DESCRIPTION:
+CONTACT:Erik Sandewall
+END:VEVENT
+BEGIN:VEVENT
+UID:797-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20130603T110000Z
+DTEND:20130603T123000Z
+LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
+SUMMARY:Lunch
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:798-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20130603T123000Z
+DTEND:20130603T133000Z
+LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
+SUMMARY:Streams-Based, Multi-Threaded News Classification
+DESCRIPTION:Streams are a way of organizing indefinite collections of 
+ data such that each item can naturally flow through a network of compu
+ tations. Using some simple abstractions, we construct a computation ne
+ twork that operates on streams with each node being handled by a separ
+ ate computation thread. The result is efficient, maintainable and all 
+ done in Common Lisp.
+
+The financial industry is hungry to trade on new
+ s, but often ill-equipped to do so. The continuous publication of news
+  is like big data in real time. RavenPack processes this flow and prod
+ uces actionable News Analytics for any industry with an appetite for n
+ ews. Jason Cornez joined RavenPack in 2003 to solve real-world problem
+ s using Common Lisp.
+CONTACT:Jason Cornez
+END:VEVENT
+BEGIN:VEVENT
+UID:799-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20130603T133000Z
+DTEND:20130603T141500Z
+LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
+SUMMARY:Tutorial: Typed Racket
+DESCRIPTION:
+CONTACT:Sam Tobin-Hochstadt
+END:VEVENT
+BEGIN:VEVENT
+UID:800-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20130603T141500Z
+DTEND:20130603T144500Z
+LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
+SUMMARY:Coffee
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:801-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20130603T144500Z
+DTEND:20130603T153000Z
+LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
+SUMMARY:Platforms for games and adversarial search, functional and for
+ mal evaluation of Lisp code exercises
+DESCRIPTION:
+CONTACT:Arturo de Salabert
+END:VEVENT
+BEGIN:VEVENT
+UID:802-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20130603T153000Z
+DTEND:20130603T160000Z
+LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
+SUMMARY:Lightning Talks
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:803-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20130603T160000Z
+DTEND:20130604T070000Z
+LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
+SUMMARY:
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:804-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20130604T070000Z
+DTEND:20130604T080000Z
+LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
+SUMMARY:Lisp and Music Research
+DESCRIPTION:Lisp has long been and still is a privileged language for 
+ building "experiments in musical intelligence", to quote the title of 
+ a book by David Cope, a famous researcher in the field. Thus its use i
+ n several "Computer Assisted Composition" systems or more generally fo
+ r environments oriented towards the modelisation, representation, anal
+ ysis and generation of music. Although the choice of Lisp has been gen
+ erally reserved to high level, symbolic and formal representations, it
+  is also possible to benefit from this powerful functional language pa
+ radigm and from its characteristic data / program duality (think of th
+ e musical duality between structures and processes) in complex setups,
+  where the whole range of representations and time scales is invoked f
+ rom the acoustic signal to the formal organisation. Some interesting p
+ ast and present systems will be presented in this perspective, includi
+ ng OpenMusic and OMax, designed by the author with his team at IRCAM.
+
+ 
+Gerard Assayag is the founder of the Music Representations Team at Ir
+ cam, where he has designed with his collaborators OpenMusic and OMax, 
+ two lisp based environments which have become international standards 
+ for computer assisted music composition / analysis and for music impro
+ visation. He is head of the Ircam STMS research Lab since Jan 2011. Ir
+ cam is the biggest joint facility for music research and production in
+  the world, where many leading technologies and softwares have been cr
+ eated.
+CONTACT:Gérard Assayag
+END:VEVENT
+BEGIN:VEVENT
+UID:805-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20130604T080000Z
+DTEND:20130604T084500Z
+LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
+SUMMARY:DBL - a Lisp-based interactive document markup language
+DESCRIPTION:
+CONTACT:Mika Kuuskankare
+END:VEVENT
+BEGIN:VEVENT
+UID:806-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20130604T084500Z
+DTEND:20130604T091500Z
+LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
+SUMMARY:Coffee
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:807-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20130604T091500Z
+DTEND:20130604T100000Z
+LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
+SUMMARY:Infinite transducers on terms denoting graphs
+DESCRIPTION:
+CONTACT:Irène Durand, Bruno Courcelle
+END:VEVENT
+BEGIN:VEVENT
+UID:808-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20130604T100000Z
+DTEND:20130604T110000Z
+LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
+SUMMARY:ASDF3: building portable Common Lisp programs
+DESCRIPTION:
+CONTACT:François-René Rideau
+END:VEVENT
+BEGIN:VEVENT
+UID:809-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20130604T110000Z
+DTEND:20130604T123000Z
+LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
+SUMMARY:Lunch
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:810-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20130604T123000Z
+DTEND:20130604T133000Z
+LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
+SUMMARY:Lazy Signal Combinators in Common Lisp
+DESCRIPTION:
+CONTACT:Max Rottenkolber
+END:VEVENT
+BEGIN:VEVENT
+UID:811-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20130604T133000Z
+DTEND:20130604T142500Z
+LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
+SUMMARY:CL-NLP - a Natural Language Processing library for Common Lisp
+ 
+DESCRIPTION:
+CONTACT:Vsevolod Domkin
+END:VEVENT
+BEGIN:VEVENT
+UID:812-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20130604T142500Z
+DTEND:20130604T152500Z
+LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
+SUMMARY:Conference End
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+END:VCALENDAR

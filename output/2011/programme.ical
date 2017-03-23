@@ -1,0 +1,316 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//hacksw/handcal//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:738-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110330T160000Z
+DTEND:20110330T200000Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:Welcome Reception
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:739-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110330T200000Z
+DTEND:20110331T063000Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:740-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110331T063000Z
+DTEND:20110331T070000Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:Registration
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:741-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110331T070000Z
+DTEND:20110331T073000Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:Welcome Message
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:742-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110331T073000Z
+DTEND:20110331T083000Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:Compiling for the Common Case
+DESCRIPTION:Microprocessor vendors are actively exploring mechanisms t
+ hat offer the potential to reduce the effort to produce parallel code.
+  One such mechanism, is the ability to atomically execute code which i
+ s useful for accelerating critical sections, lock-free data structures
+ , and for implementing transactional memory. With 3 prior implementati
+ ons (Transmeta's Crusoe, Azul's Vega, and Sun's Rock) this mechanism h
+ as a lot of potential to be ubiquitous in the next decade. In this tal
+ k, I'll discuss how this mechanism can be re-purposed to provide very 
+ efficient user-mode checkpoint/rollback, allowing a compiler to genera
+ te "speculative" versions of code that support only the expected case.
+  I'll detail our experiences exploring compiling in such an environmen
+ t in the context of an x86 binary translator, a Java virtual machine, 
+ and the Python dynamic language.
+CONTACT:Craig Zilles
+END:VEVENT
+BEGIN:VEVENT
+UID:743-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110331T083000Z
+DTEND:20110331T090000Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:Coffee
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:744-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110331T090000Z
+DTEND:20110331T094500Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:Supercomputing in Lisp
+DESCRIPTION:
+CONTACT:Valentin Pavlov
+END:VEVENT
+BEGIN:VEVENT
+UID:745-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110331T094500Z
+DTEND:20110331T103000Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:A Futures Library and Parallelism Abstractions for a Functiona
+ l Subset of Lisp
+DESCRIPTION:
+CONTACT:David Rager, Warren Hunt, Matt Kaufmann
+END:VEVENT
+BEGIN:VEVENT
+UID:746-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110331T103000Z
+DTEND:20110331T120000Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:Lunch
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:747-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110331T120000Z
+DTEND:20110331T130000Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:Reconfigurable Computing on Steroids: Using Common Lisp to Gen
+ erate Domain Specific Hardware
+DESCRIPTION:General purpose CPUs have been hitting the frequency wall 
+ but as the number of transistors in electronic chips continues to stea
+ dily increase, there is a tremendous need for other computing paradigm
+ s. One of them is the use of reconfigurable hardware (FPGA) to acceler
+ ate specific kinds of computations. Even though the performance gain c
+ an be huge, FPGAs are notoriously very difficult to program, which has
+  been one of the major drawbacks in their adoption. There have been se
+ veral attempts to solve this problem using C to VHDL/Verilog compilers
+ . Though this can be useful at times, our opinion is that it is not a 
+ good approach. In this talk, we will explain how and why we use domain
+  specific languages that enable us to generate high performance Domain
+  Specific Hardware optimized for the final tasks being implemented. We
+  will also present our experience at NovaSparks where we have been usi
+ ng Common Lisp to successfully define and implement those DSL->DSH com
+ pilers in financial applications since 2007.
+CONTACT:Marc Battyani
+END:VEVENT
+BEGIN:VEVENT
+UID:748-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110331T130000Z
+DTEND:20110331T133000Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:Coffee
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:749-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110331T133000Z
+DTEND:20110331T141500Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:Implementing huge term automata
+DESCRIPTION:
+CONTACT:Irène Durand
+END:VEVENT
+BEGIN:VEVENT
+UID:750-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110331T141500Z
+DTEND:20110331T150000Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:Jobim: an Actors Library for the Clojure Programming Language
+ 
+DESCRIPTION:
+CONTACT:Antonio Hernández, Maria Garcia
+END:VEVENT
+BEGIN:VEVENT
+UID:751-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110331T150000Z
+DTEND:20110331T160000Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:Lightning Talks
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:752-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110331T160000Z
+DTEND:20110331T180000Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:753-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110331T180000Z
+DTEND:20110401T070000Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:Conference Dinner
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:754-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110401T070000Z
+DTEND:20110401T080000Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:Scala: an Object-Oriented Surprise
+DESCRIPTION:Scala is an OO language that was released in 2003. The dis
+ tinguished features of Scala include a seamless integration of functio
+ nal programming features into an otherwise OO language. Scala owes its
+  name to its ability to scale, that is, it is a language that can grow
+  by providing an infrastructure that allows the introduction of new co
+ nstructs and data types. Scala is a compiled language. Its compiler pr
+ oduces bytecode for the Java Virtual Machine, thus, allowing the (almo
+ st) seamless use of Java tools and constructs from within Scala. Most 
+ importantly, Scala is a concurrent programming language, thus, it is a
+  tool for today as well as tomorrow.
+CONTACT:Apostolos Syropoulos
+END:VEVENT
+BEGIN:VEVENT
+UID:755-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110401T080000Z
+DTEND:20110401T083000Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:Coffee
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:756-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110401T083000Z
+DTEND:20110401T091500Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:SICL, Building Blocks for Implementers of Common Lisp
+DESCRIPTION:
+CONTACT:Robert Strandh, Matthieu Villeneuve
+END:VEVENT
+BEGIN:VEVENT
+UID:757-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110401T091500Z
+DTEND:20110401T100000Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:Using Common Lisp in University Course Administration
+DESCRIPTION:
+CONTACT:Nicolas Neuss
+END:VEVENT
+BEGIN:VEVENT
+UID:758-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110401T100000Z
+DTEND:20110401T113000Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:Lunch
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:759-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110401T113000Z
+DTEND:20110401T121500Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:Bites of Lists - Mapping and Filtering Sublists
+DESCRIPTION:
+CONTACT:Kurt Normak
+END:VEVENT
+BEGIN:VEVENT
+UID:760-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110401T121500Z
+DTEND:20110401T130000Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:The Scheme Natural Language Toolkit (S-NLTK): NLP Library for 
+ R6RS and Racket
+DESCRIPTION:
+CONTACT:Damir Cavar, Tanja Gulan, Damir Kero, Franjo Pehar, Pavle Vale
+ rjev
+END:VEVENT
+BEGIN:VEVENT
+UID:761-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110401T130000Z
+DTEND:20110401T133000Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:Coffee
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:762-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110401T133000Z
+DTEND:20110401T141500Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:Parallelizing a Commercial Common Lisp Code-Base for Performan
+ ce
+DESCRIPTION:
+CONTACT:Alec Berryman
+END:VEVENT
+BEGIN:VEVENT
+UID:763-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110401T141500Z
+DTEND:20110401T150000Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:The Next Lisp Challenges - Distribution, Concurrency, Parallel
+ ism
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:764-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20110401T150000Z
+DTEND:20110401T160000Z
+LOCATION:Schwarzenbergstraße 1, Building i, 21073 Hamburg, Germany
+SUMMARY:Conference End
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+END:VCALENDAR

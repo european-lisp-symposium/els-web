@@ -1,0 +1,350 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//hacksw/handcal//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:845-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150420T083000Z
+DTEND:20150420T090000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Registration
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:846-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150420T090000Z
+DTEND:20150420T093000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Welcome Message
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:847-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150420T093000Z
+DTEND:20150420T103000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Quicklisp: On Beyond Beta
+DESCRIPTION:Quicklisp was released in 2010 as a public beta. Five year
+ s later, it's still in beta. How has Quicklisp (and Common Lisp) evolv
+ ed in the past five years? What will it take for Quicklisp to go on be
+ yond beta?
+CONTACT:Zach Beane
+END:VEVENT
+BEGIN:VEVENT
+UID:848-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150420T103000Z
+DTEND:20150420T110000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Coffee
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:849-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150420T110000Z
+DTEND:20150420T113000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Efficient Applicative Programming Environments for Computer Vi
+ sion Applications
+DESCRIPTION:
+CONTACT:Benjamin Seppke, Leonie Dreschler-Fischer
+END:VEVENT
+BEGIN:VEVENT
+UID:850-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150420T113000Z
+DTEND:20150420T120000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Keyboard? How quaint. Visual Dataflow Implemented in Lisp
+DESCRIPTION:
+CONTACT:Donald Fisk
+END:VEVENT
+BEGIN:VEVENT
+UID:851-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150420T120000Z
+DTEND:20150420T123000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:P2R - Implementation of Processing in Racket
+DESCRIPTION:
+CONTACT:Hugo Correia, António Leitão
+END:VEVENT
+BEGIN:VEVENT
+UID:852-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150420T123000Z
+DTEND:20150420T143000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Lunch
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:853-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150420T143000Z
+DTEND:20150420T150000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Constraining application behaviour by generating languages
+DESCRIPTION:
+CONTACT:Paul van der Walt
+END:VEVENT
+BEGIN:VEVENT
+UID:854-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150420T150000Z
+DTEND:20150420T153000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Processing List Elements in Reverse Order
+DESCRIPTION:
+CONTACT:Irène Durand, Robert Strandh
+END:VEVENT
+BEGIN:VEVENT
+UID:855-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150420T153000Z
+DTEND:20150420T160000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Executable Pseudocode for Graph Algorithms
+DESCRIPTION:
+CONTACT:Breanndán Ó Nualláin
+END:VEVENT
+BEGIN:VEVENT
+UID:856-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150420T160000Z
+DTEND:20150420T163000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Coffee
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:857-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150420T163000Z
+DTEND:20150420T173000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Unwanted memory retention
+DESCRIPTION:This talk goes over numerous oddities in a Lisp-based syst
+ em which led to unwanted heap memory retention and to constant residen
+ t memory growth over the uptime of the system. Issues covered include 
+ a mostly conservative but also paged garbage collector, the difficulty
+  of clearing out data structures that are retainted as an optimization
+  but that might hold on to large amounts of heap (and how that happens
+  in C++, too) and how large intercollected and theoretically uprooted 
+ "clouds of heap debris" interact with stale pointers out of same. The 
+ most delicious pieces center around pointer staleness out of the saved
+  (on-disk, but read-write mapped) part of the heap, which is not garba
+ ge collected, into anonymous memory backed heap and how you can create
+  rootless but uncollected and "untraceable" object circles. Untraceabl
+ e until you hack up the GC to help you.
+CONTACT:Martin Cracauer
+END:VEVENT
+BEGIN:VEVENT
+UID:858-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150420T173000Z
+DTEND:20150420T180000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Lightning Talks
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:859-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150420T180000Z
+DTEND:20150420T193000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:860-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150420T193000Z
+DTEND:20150421T093000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Conference Dinner
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:861-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150421T093000Z
+DTEND:20150421T110000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:A Gentle Introduction to Gendl, a Common Lisp-based Knowledge 
+ Based Engineering Environment
+DESCRIPTION:
+CONTACT:Dave Cooper
+END:VEVENT
+BEGIN:VEVENT
+UID:862-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150421T110000Z
+DTEND:20150421T113000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Coffee
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:863-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150421T113000Z
+DTEND:20150421T120000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:lambdatalk
+DESCRIPTION:
+CONTACT:Alain Marty
+END:VEVENT
+BEGIN:VEVENT
+UID:864-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150421T120000Z
+DTEND:20150421T123000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Symbolic Pattern Matching in Clojure
+DESCRIPTION:
+CONTACT:Simon Lynch
+END:VEVENT
+BEGIN:VEVENT
+UID:865-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150421T123000Z
+DTEND:20150421T130000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Escaping the Heap
+DESCRIPTION:Common Lisp implementations provide great automatic memory
+  management of data structures. These data structures are allocated fr
+ om a memory area called the “heap”. However, there are times when heap
+  allocation is inadequate to satisfy the needs of the application. For
+  example, sometimes data structures need to be persistent or shareable
+  amongst separate processes. In these cases, alternatives to using the
+  heap must be considered.
+
+In this talk we will explore the motivation
+ s for out-of-heap data structures. We will discuss some of the out-of-
+ heap data structures that we’ve created in the course of developing ou
+ r database product, such as lists, hash tables, and arrays. We will de
+ scribe the tools and mechanisms that we used to implement them, includ
+ ing memory-mapped files, foreign structs, aligned pointers and direct 
+ memory accesses. Finally we will discuss the downsides of out-of-heap 
+ data structures and the constant struggle between abstractions and per
+ formance.
+CONTACT:Ahmon Dancy
+END:VEVENT
+BEGIN:VEVENT
+UID:866-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150421T130000Z
+DTEND:20150421T143000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Lunch
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:867-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150421T143000Z
+DTEND:20150421T153000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:µKanren: Running the Little Things Backwards
+DESCRIPTION:Relational programming, or logic programming, is a program
+ ming paradigm that exhibits remarkable and powerful properties, to the
+  extent that its implementation seems frightfully daunting to the laym
+ an. µKanren is a minimal relational language that seeks to strip the p
+ aradigm down to its core, leaving us with a succinct, elegant and abov
+ e all simple set of primitives on top of which we can rebuild even the
+  most powerful relational constructs.
+
+In this talk, we will explore t
+ he µKanren language by implementing it from first principles in a simp
+ le functional programming language, going on to demonstrate how you ca
+ n assemble these simple building blocks into a semblance of its richer
+  parent, miniKanren, and maybe solve a logic puzzle or two to make sur
+ e it’s working as advertised.
+CONTACT:Bodil Stokke
+END:VEVENT
+BEGIN:VEVENT
+UID:868-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150421T153000Z
+DTEND:20150421T160000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Coffee
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:869-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150421T160000Z
+DTEND:20150421T163000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Woo: a fast HTTP server for Common Lisp
+DESCRIPTION:
+CONTACT:Eitaro Fukamachi
+END:VEVENT
+BEGIN:VEVENT
+UID:870-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150421T163000Z
+DTEND:20150421T170000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Clasp: Common Lisp+LLVM+C++
+DESCRIPTION:
+CONTACT:Christian Schafmeister
+END:VEVENT
+BEGIN:VEVENT
+UID:871-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150421T170000Z
+DTEND:20150421T173000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Quantum Physics Simulations in Common Lisp
+DESCRIPTION:
+CONTACT:Miroslav Urbanek
+END:VEVENT
+BEGIN:VEVENT
+UID:872-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150421T173000Z
+DTEND:20150421T180000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:First-class Global Environments in Common Lisp
+DESCRIPTION:
+CONTACT:Robert Strandh
+END:VEVENT
+BEGIN:VEVENT
+UID:873-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150421T180000Z
+DTEND:20150421T183000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Lightning Talks
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:874-3699278015@european-lisp-symposium.org
+DTSTAMP:20170323T171335Z
+DTSTART:20150421T183000Z
+DTEND:20150421T193000Z
+LOCATION:New Cross, SE14 6NW London, United Kingdom
+SUMMARY:Conference End
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+END:VCALENDAR
