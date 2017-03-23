@@ -80,4 +80,4 @@
                        (:summary "~a" (getf entry :title))
                        (:description "~a" (escape-crlf (or (getf entry :description) "")))
                        (:contact "~{~a~^, ~}" (getf entry :speakers))))))))
- ))
+    path))
