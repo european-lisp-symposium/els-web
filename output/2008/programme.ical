@@ -2,8 +2,8 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:682-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:1-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080522T063000Z
 DTEND:20080522T070000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -12,8 +12,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:683-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:2-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080522T070000Z
 DTEND:20080522T073000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -22,8 +22,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:684-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:3-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080522T073000Z
 DTEND:20080522T080000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -32,8 +32,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:685-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:4-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080522T080000Z
 DTEND:20080522T083000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -42,8 +42,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:686-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:5-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080522T083000Z
 DTEND:20080522T090000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -52,8 +52,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:687-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:6-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080522T090000Z
 DTEND:20080522T093000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -62,8 +62,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:688-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:7-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080522T093000Z
 DTEND:20080522T100000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -72,8 +72,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:689-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:8-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080522T100000Z
 DTEND:20080522T123000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -82,8 +82,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:690-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:9-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080522T123000Z
 DTEND:20080522T130000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -92,8 +92,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:691-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:10-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080522T130000Z
 DTEND:20080522T133000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -102,8 +102,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:692-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:11-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080522T133000Z
 DTEND:20080522T140000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -112,8 +112,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:693-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:12-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080522T140000Z
 DTEND:20080522T143000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -122,8 +122,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:694-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:13-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080522T143000Z
 DTEND:20080522T170000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -132,8 +132,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:695-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:14-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080522T170000Z
 DTEND:20080522T180000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -142,8 +142,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:696-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:15-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080522T180000Z
 DTEND:20080523T063000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -152,8 +152,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:697-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:16-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080523T063000Z
 DTEND:20080523T070000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -162,8 +162,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:698-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:17-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080523T070000Z
 DTEND:20080523T073000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -172,8 +172,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:699-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:18-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080523T073000Z
 DTEND:20080523T083000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -186,56 +186,48 @@ DESCRIPTION:Working with CL nowadays is a choice based on a long progr
  extensions, and lack of new programmers being the most visible. Yet, t
  his talk will argue that the situation has improved and that CL is eve
  n more "the right mix" for many researchers in the sciences, and, in p
- articular, in the fields I have been working for a few years.
-
-For CL,
-  being the right mix comes from the strenghts of the standard and of t
- he nature itself of the language. The ability to build code with more 
- than decent numerical performance and the ability to morph in any (dec
- larative) DSL are the key characteristics that make CL the right tool 
- for many of the sciences.
-
-Bioinformatics and Systems Biology are two 
- relatively broad terms that serve to describe a number of system and a
- lgorithmic solutions to problems stemming from the needs of biologists
-  and clinicians. Very roughly speaking, these terms cover the range fr
- om "sequence analysis" (DNA, RNA, and protein) to statistical interpre
- tation of "high throughput experiments" (micro-array and new ion-trap 
- protein studies), to model simulation and testing of metabolic, regula
- tory and signaling pathways. The numerical capabilities of CL do fit w
- ell with these problems. On the other end, these problems require the 
- support of many data manipulation, sharing and, above all, description
-  systems that nowadays are continuously crystallized in different "ont
- ologies" and "controlled vocabularies" which are then rendered in XML/
- RDF. CL systems for solving such "representation" task predate all of 
- these efforts and it should come to no surprise that Lisp-based system
- s provide a very good platform to build more expressive DSL's capable 
- of improving the inference capabilities of the tools needed by biologi
- sts and physicians.
-
-At this point in time, the "basic library" situat
- ion for CL is good enough to support its use in the field. CLSQL and X
- ML parsing libraries are the basis for such use. Numerical libraries a
- bound, as well as web development frameworks. Writing inference engine
- s and DSL's has never been a problem for CL programmers and researcher
- s. It is therefore a well founded conclusion that CL is a "well mixed 
- solution" for Bioinformatics and Systems Biology, life, universe and e
- verything else. It just needs to be put together.
-
-Marco Antoniotti is
-  an Associate Professor at the Dipartimento di Informatica Sistemistic
- a e Comunicazione, Università degli Studi di Milano-Bicocca, Italy. Hi
- s interests concentrate in the field of Computational and Systems Biol
- ogy. He is the author or co-author of several papers and software syst
- ems - SHIFT from UC Berkeley, Jester from PARADES, Simpathica and GOAL
- IE from NYU - and co-authored three patents in the field of Genomics O
- ptical Mapping. He received his PhD from New York University in 1995.
- 
+ articular, in the fields I have been working for a few years.\n\nFor C
+ L, being the right mix comes from the strenghts of the standard and of
+  the nature itself of the language. The ability to build code with mor
+ e than decent numerical performance and the ability to morph in any (d
+ eclarative) DSL are the key characteristics that make CL the right too
+ l for many of the sciences.\n\nBioinformatics and Systems Biology are 
+ two relatively broad terms that serve to describe a number of system a
+ nd algorithmic solutions to problems stemming from the needs of biolog
+ ists and clinicians. Very roughly speaking, these terms cover the rang
+ e from "sequence analysis" (DNA, RNA, and protein) to statistical inte
+ rpretation of "high throughput experiments" (micro-array and new ion-t
+ rap protein studies), to model simulation and testing of metabolic, re
+ gulatory and signaling pathways. The numerical capabilities of CL do f
+ it well with these problems. On the other end, these problems require 
+ the support of many data manipulation, sharing and, above all, descrip
+ tion systems that nowadays are continuously crystallized in different 
+ "ontologies" and "controlled vocabularies" which are then rendered in 
+ XML/RDF. CL systems for solving such "representation" task predate all
+  of these efforts and it should come to no surprise that Lisp-based sy
+ stems provide a very good platform to build more expressive DSL's capa
+ ble of improving the inference capabilities of the tools needed by bio
+ logists and physicians.\n\nAt this point in time, the "basic library" 
+ situation for CL is good enough to support its use in the field. CLSQL
+  and XML parsing libraries are the basis for such use. Numerical libra
+ ries abound, as well as web development frameworks. Writing inference 
+ engines and DSL's has never been a problem for CL programmers and rese
+ archers. It is therefore a well founded conclusion that CL is a "well 
+ mixed solution" for Bioinformatics and Systems Biology, life, universe
+  and everything else. It just needs to be put together.\n\nMarco Anton
+ iotti is an Associate Professor at the Dipartimento di Informatica Sis
+ temistica e Comunicazione, Università degli Studi di Milano-Bicocca, I
+ taly. His interests concentrate in the field of Computational and Syst
+ ems Biology. He is the author or co-author of several papers and softw
+ are systems - SHIFT from UC Berkeley, Jester from PARADES, Simpathica 
+ and GOALIE from NYU - and co-authored three patents in the field of Ge
+ nomics Optical Mapping. He received his PhD from New York University i
+ n 1995.
 CONTACT:Marco Antoniotti
 END:VEVENT
 BEGIN:VEVENT
-UID:700-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:19-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080523T083000Z
 DTEND:20080523T090000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -244,8 +236,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:701-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:20-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080523T090000Z
 DTEND:20080523T093000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -254,8 +246,8 @@ DESCRIPTION:
 CONTACT:Sebastián González, Kim Mens, Alfredo Cádiz
 END:VEVENT
 BEGIN:VEVENT
-UID:702-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:21-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080523T093000Z
 DTEND:20080523T100000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -265,8 +257,8 @@ DESCRIPTION:
 CONTACT:Irène Durand, Sylviane Schwer
 END:VEVENT
 BEGIN:VEVENT
-UID:703-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:22-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080523T100000Z
 DTEND:20080523T123000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -275,8 +267,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:704-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:23-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080523T123000Z
 DTEND:20080523T130000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -285,8 +277,8 @@ DESCRIPTION:
 CONTACT:Didier Verna
 END:VEVENT
 BEGIN:VEVENT
-UID:705-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:24-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080523T130000Z
 DTEND:20080523T133000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -295,8 +287,8 @@ DESCRIPTION:
 CONTACT:Jim Newton, Christophe Rhodes
 END:VEVENT
 BEGIN:VEVENT
-UID:706-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:25-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080523T133000Z
 DTEND:20080523T140000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -305,8 +297,8 @@ DESCRIPTION:
 CONTACT:António Leitão
 END:VEVENT
 BEGIN:VEVENT
-UID:707-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:26-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080523T140000Z
 DTEND:20080523T143000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -315,8 +307,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:708-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:27-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080523T143000Z
 DTEND:20080523T150000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -325,8 +317,8 @@ DESCRIPTION:
 CONTACT:Timothy Moore
 END:VEVENT
 BEGIN:VEVENT
-UID:709-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:28-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080523T150000Z
 DTEND:20080523T153000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -335,8 +327,8 @@ DESCRIPTION:
 CONTACT:Mikael Laurson, Mika Kuuskankare
 END:VEVENT
 BEGIN:VEVENT
-UID:710-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:29-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080523T153000Z
 DTEND:20080523T160000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -345,8 +337,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:711-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:30-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080523T160000Z
 DTEND:20080523T170000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France
@@ -355,8 +347,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:712-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:31-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20080523T170000Z
 DTEND:20080523T180000Z
 LOCATION:351 Cours de la Libération, 33400 Talence, France

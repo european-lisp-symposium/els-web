@@ -2,8 +2,8 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:813-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:132-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140504T160000Z
 DTEND:20140504T200000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -12,8 +12,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:814-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:133-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140504T200000Z
 DTEND:20140505T063000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -22,8 +22,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:815-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:134-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140505T063000Z
 DTEND:20140505T070000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -32,8 +32,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:816-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:135-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140505T070000Z
 DTEND:20140505T073000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -42,8 +42,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:817-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:136-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140505T073000Z
 DTEND:20140505T083000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -59,19 +59,15 @@ DESCRIPTION:Programming, software development, and software engineerin
  isplays a flair for the strange that even the most daring poets can ra
  rely match. I don’t have requirements, I don’t have specifications, an
  d I normally don’t have a plan much beyond a guess. If my program does
- n’t surprise me, I cry “failure!” and lament.
-
-I’ll explore what progr
- amming is, how software can act as a collaborator, show you how the ag
- ile practices are like training wheels, and explain how a program can 
- astound.
-
-All in Lisp, of course.
+ n’t surprise me, I cry “failure!” and lament.\n\nI’ll explore what pro
+ gramming is, how software can act as a collaborator, show you how the 
+ agile practices are like training wheels, and explain how a program ca
+ n astound.\n\nAll in Lisp, of course.
 CONTACT:Richard Gabriel
 END:VEVENT
 BEGIN:VEVENT
-UID:818-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:137-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140505T083000Z
 DTEND:20140505T090000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -80,8 +76,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:819-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:138-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140505T090000Z
 DTEND:20140505T093000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -90,8 +86,8 @@ DESCRIPTION:
 CONTACT:Nick Levine
 END:VEVENT
 BEGIN:VEVENT
-UID:820-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:139-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140505T093000Z
 DTEND:20140505T100000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -100,8 +96,8 @@ DESCRIPTION:
 CONTACT:François-René Rideau
 END:VEVENT
 BEGIN:VEVENT
-UID:821-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:140-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140505T100000Z
 DTEND:20140505T103000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -110,8 +106,8 @@ DESCRIPTION:
 CONTACT:Christophe Rhodes, Jan Moringen, David Lichteblau
 END:VEVENT
 BEGIN:VEVENT
-UID:822-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:141-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140505T103000Z
 DTEND:20140505T120000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -120,8 +116,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:823-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:142-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140505T120000Z
 DTEND:20140505T130000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -136,8 +132,8 @@ DESCRIPTION:This presentation gives an overview of parallel programmin
 CONTACT:Pascal Costanza
 END:VEVENT
 BEGIN:VEVENT
-UID:824-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:143-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140505T130000Z
 DTEND:20140505T133000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -146,8 +142,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:825-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:144-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140505T133000Z
 DTEND:20140505T140000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -157,8 +153,8 @@ DESCRIPTION:
 CONTACT:François-Xavier Bois
 END:VEVENT
 BEGIN:VEVENT
-UID:826-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:145-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140505T140000Z
 DTEND:20140505T143000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -167,8 +163,8 @@ DESCRIPTION:
 CONTACT:Jean-Paul Barthés
 END:VEVENT
 BEGIN:VEVENT
-UID:827-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:146-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140505T143000Z
 DTEND:20140505T150000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -177,8 +173,8 @@ DESCRIPTION:
 CONTACT:Alain Marty
 END:VEVENT
 BEGIN:VEVENT
-UID:828-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:147-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140505T150000Z
 DTEND:20140505T160000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -187,8 +183,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:829-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:148-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140505T160000Z
 DTEND:20140506T070000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -197,8 +193,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:830-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:149-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140506T070000Z
 DTEND:20140506T080000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -206,26 +202,22 @@ SUMMARY:Sending Beams into the Parallel Cube
 DESCRIPTION:We send probes into the topic hypercube bounded by machine
   learning, parallelism, software and contests, demonstrate existing an
  d sketch future Lisp infrastructure, pin the future and foreign arrays
-  down.
-
-We take a seemingly random walk along the different paths, wat
- ch the scenery of pairwise interactions unfold and piece a puzzle toge
- ther. In the purely speculative thread, we compare models of parallel 
- computation, keeping an eye on their applicability and lisp support. I
- n the the Python and R envy thread, we detail why lisp could be a bett
- er vehicle for scientific programming and how high performance computi
- ng is eroding lisp's largely unrealized competitive advantages. Switch
- ing to constructive mode, a basic data structure is proposed as a firs
- t step.
-
-In the machine learning thread, lisp's unparalleled interacti
- ve capabilities meet contests, neural networks cross threads and all g
- et in the way of the presentation.
+  down.\n\nWe take a seemingly random walk along the different paths, w
+ atch the scenery of pairwise interactions unfold and piece a puzzle to
+ gether. In the purely speculative thread, we compare models of paralle
+ l computation, keeping an eye on their applicability and lisp support.
+  In the the Python and R envy thread, we detail why lisp could be a be
+ tter vehicle for scientific programming and how high performance compu
+ ting is eroding lisp's largely unrealized competitive advantages. Swit
+ ching to constructive mode, a basic data structure is proposed as a fi
+ rst step.\n\nIn the machine learning thread, lisp's unparalleled inter
+ active capabilities meet contests, neural networks cross threads and a
+ ll get in the way of the presentation.
 CONTACT:Gábor Melis
 END:VEVENT
 BEGIN:VEVENT
-UID:831-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:150-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140506T080000Z
 DTEND:20140506T083000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -234,8 +226,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:832-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:151-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140506T083000Z
 DTEND:20140506T090000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -245,8 +237,8 @@ DESCRIPTION:
 CONTACT:Massimiliano Ghilardi
 END:VEVENT
 BEGIN:VEVENT
-UID:833-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:152-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140506T090000Z
 DTEND:20140506T093000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -257,8 +249,8 @@ CONTACT:Ignasi Gómez-Sebastià, Luis Oliva, Sergio Alvarez-Napagao, Dar
  io Garcia-Gasulla, Arturo Tejeda, Javier Vazquez
 END:VEVENT
 BEGIN:VEVENT
-UID:834-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:153-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140506T093000Z
 DTEND:20140506T100000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -269,8 +261,8 @@ CONTACT:Franco Raimondi, Giuseppe Primiero, Kelly Androutsopoulos, Nik
  ldin, Alex Zivanovic
 END:VEVENT
 BEGIN:VEVENT
-UID:835-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:154-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140506T100000Z
 DTEND:20140506T113000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -279,8 +271,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:836-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:155-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140506T113000Z
 DTEND:20140506T120000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -289,8 +281,8 @@ DESCRIPTION:
 CONTACT:Jean-Paul Barthés
 END:VEVENT
 BEGIN:VEVENT
-UID:837-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:156-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140506T120000Z
 DTEND:20140506T123000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -299,8 +291,8 @@ DESCRIPTION:
 CONTACT:Pedro Ramos, António Leitão
 END:VEVENT
 BEGIN:VEVENT
-UID:838-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:157-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140506T123000Z
 DTEND:20140506T130000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -310,8 +302,8 @@ CONTACT:Kai Selgrad, Alexander Lier, Markus Wittmann, Daniel Lohmann,
  Marc Stamminger
 END:VEVENT
 BEGIN:VEVENT
-UID:839-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:158-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140506T130000Z
 DTEND:20140506T133000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -320,8 +312,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:840-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:159-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140506T133000Z
 DTEND:20140506T150000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -330,23 +322,20 @@ DESCRIPTION:Numerous Lisp-based musical systems have been developed an
  d used in the past. However, Lisp usage has been progressively discont
  inued with the development of new branches in mainstream computer musi
  c such as digital signal processing, real-time systems or distributed 
- multimedia computing.
-
-The power and expressivity of Lisp make it a va
- luable language to musicians for exploring high-level compositional pr
- ocesses, and this language remains a fundamental support for computer-
- aided composition research and creation at Ircam.
-
-In this session we 
- propose to present an overview of current computer-aided music composi
- tion projects, and discuss with ELS attendees the challenges, issues a
- nd perspectives for using Lisp in aforementioned music technologies.
+ multimedia computing.\n\nThe power and expressivity of Lisp make it a 
+ valuable language to musicians for exploring high-level compositional 
+ processes, and this language remains a fundamental support for compute
+ r-aided composition research and creation at Ircam.\n\nIn this session
+  we propose to present an overview of current computer-aided music com
+ position projects, and discuss with ELS attendees the challenges, issu
+ es and perspectives for using Lisp in aforementioned music technologie
+ s.
 CONTACT:Dimitri Bouche, Jean Bresson, Christophe Rhodes, Max Rottenkol
  ber, Jérôme Nika, Robert Piéchaud
 END:VEVENT
 BEGIN:VEVENT
-UID:841-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:160-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140506T150000Z
 DTEND:20140506T153000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -355,8 +344,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:842-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:161-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140506T153000Z
 DTEND:20140506T160000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -365,8 +354,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:843-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:162-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140506T160000Z
 DTEND:20140506T173000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France
@@ -375,8 +364,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:844-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:163-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20140506T173000Z
 DTEND:20140506T183000Z
 LOCATION:place Igor-Stravinsky, 1, 75004 Paris, France

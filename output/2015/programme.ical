@@ -2,8 +2,8 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:845-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:164-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150420T083000Z
 DTEND:20150420T090000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -12,8 +12,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:846-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:165-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150420T090000Z
 DTEND:20150420T093000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -22,8 +22,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:847-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:166-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150420T093000Z
 DTEND:20150420T103000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -35,8 +35,8 @@ DESCRIPTION:Quicklisp was released in 2010 as a public beta. Five year
 CONTACT:Zach Beane
 END:VEVENT
 BEGIN:VEVENT
-UID:848-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:167-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150420T103000Z
 DTEND:20150420T110000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -45,8 +45,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:849-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:168-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150420T110000Z
 DTEND:20150420T113000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -56,8 +56,8 @@ DESCRIPTION:
 CONTACT:Benjamin Seppke, Leonie Dreschler-Fischer
 END:VEVENT
 BEGIN:VEVENT
-UID:850-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:169-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150420T113000Z
 DTEND:20150420T120000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -66,8 +66,8 @@ DESCRIPTION:
 CONTACT:Donald Fisk
 END:VEVENT
 BEGIN:VEVENT
-UID:851-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:170-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150420T120000Z
 DTEND:20150420T123000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -76,8 +76,8 @@ DESCRIPTION:
 CONTACT:Hugo Correia, António Leitão
 END:VEVENT
 BEGIN:VEVENT
-UID:852-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:171-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150420T123000Z
 DTEND:20150420T143000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -86,8 +86,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:853-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:172-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150420T143000Z
 DTEND:20150420T150000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -96,8 +96,8 @@ DESCRIPTION:
 CONTACT:Paul van der Walt
 END:VEVENT
 BEGIN:VEVENT
-UID:854-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:173-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150420T150000Z
 DTEND:20150420T153000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -106,8 +106,8 @@ DESCRIPTION:
 CONTACT:Irène Durand, Robert Strandh
 END:VEVENT
 BEGIN:VEVENT
-UID:855-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:174-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150420T153000Z
 DTEND:20150420T160000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -116,8 +116,8 @@ DESCRIPTION:
 CONTACT:Breanndán Ó Nualláin
 END:VEVENT
 BEGIN:VEVENT
-UID:856-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:175-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150420T160000Z
 DTEND:20150420T163000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -126,8 +126,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:857-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:176-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150420T163000Z
 DTEND:20150420T173000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -148,8 +148,8 @@ DESCRIPTION:This talk goes over numerous oddities in a Lisp-based syst
 CONTACT:Martin Cracauer
 END:VEVENT
 BEGIN:VEVENT
-UID:858-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:177-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150420T173000Z
 DTEND:20150420T180000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -158,8 +158,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:859-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:178-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150420T180000Z
 DTEND:20150420T193000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -168,8 +168,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:860-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:179-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150420T193000Z
 DTEND:20150421T093000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -178,8 +178,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:861-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:180-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150421T093000Z
 DTEND:20150421T110000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -189,8 +189,8 @@ DESCRIPTION:
 CONTACT:Dave Cooper
 END:VEVENT
 BEGIN:VEVENT
-UID:862-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:181-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150421T110000Z
 DTEND:20150421T113000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -199,8 +199,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:863-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:182-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150421T113000Z
 DTEND:20150421T120000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -209,8 +209,8 @@ DESCRIPTION:
 CONTACT:Alain Marty
 END:VEVENT
 BEGIN:VEVENT
-UID:864-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:183-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150421T120000Z
 DTEND:20150421T123000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -219,8 +219,8 @@ DESCRIPTION:
 CONTACT:Simon Lynch
 END:VEVENT
 BEGIN:VEVENT
-UID:865-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:184-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150421T123000Z
 DTEND:20150421T130000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -231,22 +231,20 @@ DESCRIPTION:Common Lisp implementations provide great automatic memory
   allocation is inadequate to satisfy the needs of the application. For
   example, sometimes data structures need to be persistent or shareable
   amongst separate processes. In these cases, alternatives to using the
-  heap must be considered.
-
-In this talk we will explore the motivation
- s for out-of-heap data structures. We will discuss some of the out-of-
- heap data structures that we’ve created in the course of developing ou
- r database product, such as lists, hash tables, and arrays. We will de
- scribe the tools and mechanisms that we used to implement them, includ
- ing memory-mapped files, foreign structs, aligned pointers and direct 
- memory accesses. Finally we will discuss the downsides of out-of-heap 
- data structures and the constant struggle between abstractions and per
- formance.
+  heap must be considered.\n\nIn this talk we will explore the motivati
+ ons for out-of-heap data structures. We will discuss some of the out-o
+ f-heap data structures that we’ve created in the course of developing 
+ our database product, such as lists, hash tables, and arrays. We will 
+ describe the tools and mechanisms that we used to implement them, incl
+ uding memory-mapped files, foreign structs, aligned pointers and direc
+ t memory accesses. Finally we will discuss the downsides of out-of-hea
+ p data structures and the constant struggle between abstractions and p
+ erformance.
 CONTACT:Ahmon Dancy
 END:VEVENT
 BEGIN:VEVENT
-UID:866-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:185-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150421T130000Z
 DTEND:20150421T143000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -255,8 +253,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:867-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:186-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150421T143000Z
 DTEND:20150421T153000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -267,19 +265,17 @@ DESCRIPTION:Relational programming, or logic programming, is a program
  an. µKanren is a minimal relational language that seeks to strip the p
  aradigm down to its core, leaving us with a succinct, elegant and abov
  e all simple set of primitives on top of which we can rebuild even the
-  most powerful relational constructs.
-
-In this talk, we will explore t
- he µKanren language by implementing it from first principles in a simp
- le functional programming language, going on to demonstrate how you ca
- n assemble these simple building blocks into a semblance of its richer
-  parent, miniKanren, and maybe solve a logic puzzle or two to make sur
- e it’s working as advertised.
+  most powerful relational constructs.\n\nIn this talk, we will explore
+  the µKanren language by implementing it from first principles in a si
+ mple functional programming language, going on to demonstrate how you 
+ can assemble these simple building blocks into a semblance of its rich
+ er parent, miniKanren, and maybe solve a logic puzzle or two to make s
+ ure it’s working as advertised.
 CONTACT:Bodil Stokke
 END:VEVENT
 BEGIN:VEVENT
-UID:868-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:187-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150421T153000Z
 DTEND:20150421T160000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -288,8 +284,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:869-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:188-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150421T160000Z
 DTEND:20150421T163000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -298,8 +294,8 @@ DESCRIPTION:
 CONTACT:Eitaro Fukamachi
 END:VEVENT
 BEGIN:VEVENT
-UID:870-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:189-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150421T163000Z
 DTEND:20150421T170000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -308,8 +304,8 @@ DESCRIPTION:
 CONTACT:Christian Schafmeister
 END:VEVENT
 BEGIN:VEVENT
-UID:871-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:190-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150421T170000Z
 DTEND:20150421T173000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -318,8 +314,8 @@ DESCRIPTION:
 CONTACT:Miroslav Urbanek
 END:VEVENT
 BEGIN:VEVENT
-UID:872-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:191-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150421T173000Z
 DTEND:20150421T180000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -328,8 +324,8 @@ DESCRIPTION:
 CONTACT:Robert Strandh
 END:VEVENT
 BEGIN:VEVENT
-UID:873-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:192-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150421T180000Z
 DTEND:20150421T183000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom
@@ -338,8 +334,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:874-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:193-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20150421T183000Z
 DTEND:20150421T193000Z
 LOCATION:New Cross, SE14 6NW London, United Kingdom

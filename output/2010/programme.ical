@@ -2,8 +2,8 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:713-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:32-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100505T150000Z
 DTEND:20100505T163000Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -12,8 +12,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:714-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:33-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100505T163000Z
 DTEND:20100506T073000Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -22,8 +22,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:715-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:34-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100506T073000Z
 DTEND:20100506T080000Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -32,8 +32,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:716-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:35-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100506T080000Z
 DTEND:20100506T083000Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -42,8 +42,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:717-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:36-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100506T083000Z
 DTEND:20100506T093000Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -53,19 +53,17 @@ DESCRIPTION:Over a period of several decades, I have had the good fort
  d use of quite a number of dialects of Lisp, including MACLISP, T, Sch
  eme, Zetalisp, Common Lisp, and ISLISP. I will offer reflections, from
   a personal point of view, about what enduring lessons I have learned 
- through this long involvement.
-
-Both the programming world and the rea
- l world it serves have changed a lot in that time. Some issues that fa
- ced Lisp in the past no longer matter, while others matter more than e
- ver. I'll assess the state of Lisp today, what challenges it faces, wh
- at pitfalls it needs to avoid, and what Lisp's role might and should b
- e in the future of languages, of programming, and of humanity.
+ through this long involvement.\n\nBoth the programming world and the r
+ eal world it serves have changed a lot in that time. Some issues that 
+ faced Lisp in the past no longer matter, while others matter more than
+  ever. I'll assess the state of Lisp today, what challenges it faces, 
+ what pitfalls it needs to avoid, and what Lisp's role might and should
+  be in the future of languages, of programming, and of humanity.
 CONTACT:Kent Pitman
 END:VEVENT
 BEGIN:VEVENT
-UID:718-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:37-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100506T093000Z
 DTEND:20100506T100000Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -74,8 +72,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:719-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:38-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100506T100000Z
 DTEND:20100506T110000Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -85,8 +83,8 @@ DESCRIPTION:
 CONTACT:Bruno Courcelle, Irène Durand
 END:VEVENT
 BEGIN:VEVENT
-UID:720-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:39-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100506T110000Z
 DTEND:20100506T114500Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -95,8 +93,8 @@ DESCRIPTION:
 CONTACT:Aleksandar Bakic
 END:VEVENT
 BEGIN:VEVENT
-UID:721-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:40-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100506T114500Z
 DTEND:20100506T133000Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -105,8 +103,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:722-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:41-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100506T133000Z
 DTEND:20100506T143000Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -120,24 +118,22 @@ DESCRIPTION:The financial industry thrives on data: oceans of historic
  portant input into their trading decisions, most automated systems tod
  ay are completely unaware of the news — some data is missing. What tec
  hnology is being used to change all this and make news available as an
- alytic data to meet the aggressive demands of the financial industry?
-
- 
-For around seven years now, RavenPack has been using Common Lisp as t
- he core technology to solve problems and create opportunities for the 
- financial industry. We have a revenue-generating business model where 
- we sell News Analytics — factual and sentiment data extracted from uns
- tructured, textual news. In this talk, I'll describe the RavenPack sof
- tware architecture with special focus on how Lisp plays a critical rol
- e in our technology platform, and hopefully in our success. I hope to 
- touch upon why we at RavenPack love Lisp, some challenges we face when
-  using Lisp, and perhaps even some principles of successful software e
- ngineering.
+ alytic data to meet the aggressive demands of the financial industry?\
+ n\nFor around seven years now, RavenPack has been using Common Lisp as
+  the core technology to solve problems and create opportunities for th
+ e financial industry. We have a revenue-generating business model wher
+ e we sell News Analytics — factual and sentiment data extracted from u
+ nstructured, textual news. In this talk, I'll describe the RavenPack s
+ oftware architecture with special focus on how Lisp plays a critical r
+ ole in our technology platform, and hopefully in our success. I hope t
+ o touch upon why we at RavenPack love Lisp, some challenges we face wh
+ en using Lisp, and perhaps even some principles of successful software
+  engineering.
 CONTACT:Jason Cornez
 END:VEVENT
 BEGIN:VEVENT
-UID:723-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:42-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100506T143000Z
 DTEND:20100506T150000Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -146,8 +142,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:724-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:43-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100506T150000Z
 DTEND:20100506T160000Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -156,8 +152,8 @@ DESCRIPTION:
 CONTACT:Jerry Boetje, Steven Melcher
 END:VEVENT
 BEGIN:VEVENT
-UID:725-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:44-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100506T160000Z
 DTEND:20100506T180000Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -167,8 +163,8 @@ DESCRIPTION:
 CONTACT:Benjamin Seppke, Leonie Dreschler-Fischer
 END:VEVENT
 BEGIN:VEVENT
-UID:726-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:45-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100506T180000Z
 DTEND:20100507T080000Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -177,8 +173,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:727-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:46-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100507T080000Z
 DTEND:20100507T093000Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -189,27 +185,25 @@ DESCRIPTION:Parallel programming is the wave of the future: It becomes
  ore computing power. However, parallel programming is in principle ver
  y hard since it introduces the potential for a combinatorial explosion
   of the program state space. Therefore, we need different programming 
- models to reduce the complexity induced by concurrency.
-
-Common Lisp i
- mplementations have started to provide low-level symmetric multi-proce
- ssing (SMP) facilities for current multi-core processors. In this tuto
- rial, we will learn about important parallel programming concepts, wha
- t impact concurrency has on our intuitions about program efficiency, w
- hat low-level features are provided by current Common Lisp implementat
- ions, how they can be used to build high-level concepts, and what conc
- epts Lispers should watch out for in the near future. The tutorial wil
- l cover basic concepts such as task parallelism, data parallelism and 
- pipeline models; synchronization primitives ranging from compare-and-s
- wap, over locks and software transactional memory, to mailboxes and ba
- rriers; integration with Lisp-specific concepts, such as special varia
- bles; and last but not least some rules of thumb for writing parallel 
- programs.
+ models to reduce the complexity induced by concurrency.\n\nCommon Lisp
+  implementations have started to provide low-level symmetric multi-pro
+ cessing (SMP) facilities for current multi-core processors. In this tu
+ torial, we will learn about important parallel programming concepts, w
+ hat impact concurrency has on our intuitions about program efficiency,
+  what low-level features are provided by current Common Lisp implement
+ ations, how they can be used to build high-level concepts, and what co
+ ncepts Lispers should watch out for in the near future. The tutorial w
+ ill cover basic concepts such as task parallelism, data parallelism an
+ d pipeline models; synchronization primitives ranging from compare-and
+ -swap, over locks and software transactional memory, to mailboxes and 
+ barriers; integration with Lisp-specific concepts, such as special var
+ iables; and last but not least some rules of thumb for writing paralle
+ l programs.
 CONTACT:Pascal Costanza
 END:VEVENT
 BEGIN:VEVENT
-UID:728-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:47-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100507T093000Z
 DTEND:20100507T100000Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -218,8 +212,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:729-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:48-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100507T100000Z
 DTEND:20100507T110000Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -228,8 +222,8 @@ DESCRIPTION:
 CONTACT:Didier Verna
 END:VEVENT
 BEGIN:VEVENT
-UID:730-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:49-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100507T110000Z
 DTEND:20100507T114500Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -238,8 +232,8 @@ DESCRIPTION:
 CONTACT:Alexander Plotnick
 END:VEVENT
 BEGIN:VEVENT
-UID:731-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:50-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100507T114500Z
 DTEND:20100507T133000Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -248,8 +242,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:732-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:51-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100507T133000Z
 DTEND:20100507T143000Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -261,31 +255,27 @@ DESCRIPTION:Since 1995 my research team (PLT) and I have been working
  pick our lazy dialect to implement one module and to link it to a stri
  ct language for another module in the same system. Later they may even
   migrate one of the modules to the typed variant during some maintenan
- ce task.
-
-An expressive macro system is one key to this riches of lang
- uages. Starting with the 1986 introduction of hygienic macros, the SCH
- EME world has worked on turning macros into tools for creating proper 
- abstractions. The first part of my talk will briefly describe this wor
- ld of modern macros and its key attributes: hygiene, referential trans
- parency, modularity of macros, phase separation, and macro specificati
- on.
-
-The second part of my talk will focus on how to equip LISP-like l
- anguages with a sound type systems and that will illustrate the second
-  key idea, namely, monitoring the interactions between different langu
- ages. Our approach to type systems allows programmers to stick to thei
- r favorite LISP idioms. It mostly suffices to annotate functions and s
- tructures with type declarations during maintenance work. To ensure th
- e soundness of this information even when higher-order values flow bac
- k and forth between typed and untyped modules, module boundaries are a
- utomatically equipped with software contracts that enforce type-invari
- ants at all levels.
+ ce task.\n\nAn expressive macro system is one key to this riches of la
+ nguages. Starting with the 1986 introduction of hygienic macros, the S
+ CHEME world has worked on turning macros into tools for creating prope
+ r abstractions. The first part of my talk will briefly describe this w
+ orld of modern macros and its key attributes: hygiene, referential tra
+ nsparency, modularity of macros, phase separation, and macro specifica
+ tion.\n\nThe second part of my talk will focus on how to equip LISP-li
+ ke languages with a sound type systems and that will illustrate the se
+ cond key idea, namely, monitoring the interactions between different l
+ anguages. Our approach to type systems allows programmers to stick to 
+ their favorite LISP idioms. It mostly suffices to annotate functions a
+ nd structures with type declarations during maintenance work. To ensur
+ e the soundness of this information even when higher-order values flow
+  back and forth between typed and untyped modules, module boundaries a
+ re automatically equipped with software contracts that enforce type-in
+ variants at all levels.
 CONTACT:Matthias Felleisen
 END:VEVENT
 BEGIN:VEVENT
-UID:733-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:52-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100507T143000Z
 DTEND:20100507T150000Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -294,8 +284,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:734-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:53-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100507T150000Z
 DTEND:20100507T160000Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -304,8 +294,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:735-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:54-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100507T160000Z
 DTEND:20100507T163000Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -314,8 +304,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:736-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:55-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100507T163000Z
 DTEND:20100507T193000Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal
@@ -324,8 +314,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:737-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:56-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20100507T193000Z
 DTEND:20100507T203000Z
 LOCATION:Av. de Berna 45 A, 1067-001 Lisboa, Portugal

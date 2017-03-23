@@ -2,8 +2,8 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:792-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:111-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20130603T070000Z
 DTEND:20130603T080000Z
 LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
@@ -11,19 +11,17 @@ SUMMARY:Asynchronous Programming in Dart
 DESCRIPTION:Florian Loitsch has a passion for dynamic languages, like 
  Scheme, JavaScript and now Dart. He wrote a Scheme-to-JavaScript compi
  ler during his thesis, and then completed a JavaScript-to-Scheme compi
- ler in his spare time.
-
-In 2010 he joined Google's team in Aarhus (Den
- mark) where he worked on V8 and later Dart. Being part of the Dart tea
- m Florian has helped specifying the language, which was presented in l
- ate 2011. In 2012 he became the Tech Lead for the Dart libraries where
- , among other tasks, he participated on the creation of a new asynchro
- nous library that is based on Streams and Futures (aka promises).
+ ler in his spare time.\n\nIn 2010 he joined Google's team in Aarhus (D
+ enmark) where he worked on V8 and later Dart. Being part of the Dart t
+ eam Florian has helped specifying the language, which was presented in
+  late 2011. In 2012 he became the Tech Lead for the Dart libraries whe
+ re, among other tasks, he participated on the creation of a new asynch
+ ronous library that is based on Streams and Futures (aka promises).
 CONTACT:Florian Loitsch
 END:VEVENT
 BEGIN:VEVENT
-UID:793-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:112-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20130603T080000Z
 DTEND:20130603T084500Z
 LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
@@ -32,8 +30,8 @@ DESCRIPTION:
 CONTACT:Ludovic Courtes
 END:VEVENT
 BEGIN:VEVENT
-UID:794-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:113-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20130603T084500Z
 DTEND:20130603T091500Z
 LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
@@ -42,8 +40,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:795-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:114-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20130603T091500Z
 DTEND:20130603T100000Z
 LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
@@ -52,8 +50,8 @@ DESCRIPTION:
 CONTACT:Mikhail Raskin
 END:VEVENT
 BEGIN:VEVENT
-UID:796-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:115-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20130603T100000Z
 DTEND:20130603T110000Z
 LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
@@ -62,8 +60,8 @@ DESCRIPTION:
 CONTACT:Erik Sandewall
 END:VEVENT
 BEGIN:VEVENT
-UID:797-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:116-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20130603T110000Z
 DTEND:20130603T123000Z
 LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
@@ -72,8 +70,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:798-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:117-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20130603T123000Z
 DTEND:20130603T133000Z
 LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
@@ -83,19 +81,17 @@ DESCRIPTION:Streams are a way of organizing indefinite collections of
  tations. Using some simple abstractions, we construct a computation ne
  twork that operates on streams with each node being handled by a separ
  ate computation thread. The result is efficient, maintainable and all 
- done in Common Lisp.
-
-The financial industry is hungry to trade on new
- s, but often ill-equipped to do so. The continuous publication of news
-  is like big data in real time. RavenPack processes this flow and prod
- uces actionable News Analytics for any industry with an appetite for n
- ews. Jason Cornez joined RavenPack in 2003 to solve real-world problem
- s using Common Lisp.
+ done in Common Lisp.\n\nThe financial industry is hungry to trade on n
+ ews, but often ill-equipped to do so. The continuous publication of ne
+ ws is like big data in real time. RavenPack processes this flow and pr
+ oduces actionable News Analytics for any industry with an appetite for
+  news. Jason Cornez joined RavenPack in 2003 to solve real-world probl
+ ems using Common Lisp.
 CONTACT:Jason Cornez
 END:VEVENT
 BEGIN:VEVENT
-UID:799-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:118-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20130603T133000Z
 DTEND:20130603T141500Z
 LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
@@ -104,8 +100,8 @@ DESCRIPTION:
 CONTACT:Sam Tobin-Hochstadt
 END:VEVENT
 BEGIN:VEVENT
-UID:800-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:119-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20130603T141500Z
 DTEND:20130603T144500Z
 LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
@@ -114,8 +110,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:801-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:120-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20130603T144500Z
 DTEND:20130603T153000Z
 LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
@@ -125,8 +121,8 @@ DESCRIPTION:
 CONTACT:Arturo de Salabert
 END:VEVENT
 BEGIN:VEVENT
-UID:802-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:121-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20130603T153000Z
 DTEND:20130603T160000Z
 LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
@@ -135,8 +131,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:803-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:122-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20130603T160000Z
 DTEND:20130604T070000Z
 LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
@@ -145,8 +141,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:804-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:123-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20130604T070000Z
 DTEND:20130604T080000Z
 LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
@@ -164,22 +160,20 @@ DESCRIPTION:Lisp has long been and still is a privileged language for
   where the whole range of representations and time scales is invoked f
  rom the acoustic signal to the formal organisation. Some interesting p
  ast and present systems will be presented in this perspective, includi
- ng OpenMusic and OMax, designed by the author with his team at IRCAM.
-
- 
-Gerard Assayag is the founder of the Music Representations Team at Ir
- cam, where he has designed with his collaborators OpenMusic and OMax, 
- two lisp based environments which have become international standards 
- for computer assisted music composition / analysis and for music impro
- visation. He is head of the Ircam STMS research Lab since Jan 2011. Ir
- cam is the biggest joint facility for music research and production in
-  the world, where many leading technologies and softwares have been cr
- eated.
+ ng OpenMusic and OMax, designed by the author with his team at IRCAM.\
+ n\nGerard Assayag is the founder of the Music Representations Team at 
+ Ircam, where he has designed with his collaborators OpenMusic and OMax
+ , two lisp based environments which have become international standard
+ s for computer assisted music composition / analysis and for music imp
+ rovisation. He is head of the Ircam STMS research Lab since Jan 2011. 
+ Ircam is the biggest joint facility for music research and production 
+ in the world, where many leading technologies and softwares have been 
+ created.
 CONTACT:Gérard Assayag
 END:VEVENT
 BEGIN:VEVENT
-UID:805-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:124-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20130604T080000Z
 DTEND:20130604T084500Z
 LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
@@ -188,8 +182,8 @@ DESCRIPTION:
 CONTACT:Mika Kuuskankare
 END:VEVENT
 BEGIN:VEVENT
-UID:806-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:125-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20130604T084500Z
 DTEND:20130604T091500Z
 LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
@@ -198,8 +192,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:807-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:126-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20130604T091500Z
 DTEND:20130604T100000Z
 LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
@@ -208,8 +202,8 @@ DESCRIPTION:
 CONTACT:Irène Durand, Bruno Courcelle
 END:VEVENT
 BEGIN:VEVENT
-UID:808-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:127-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20130604T100000Z
 DTEND:20130604T110000Z
 LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
@@ -218,8 +212,8 @@ DESCRIPTION:
 CONTACT:François-René Rideau
 END:VEVENT
 BEGIN:VEVENT
-UID:809-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:128-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20130604T110000Z
 DTEND:20130604T123000Z
 LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
@@ -228,8 +222,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:810-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:129-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20130604T123000Z
 DTEND:20130604T133000Z
 LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
@@ -238,19 +232,18 @@ DESCRIPTION:
 CONTACT:Max Rottenkolber
 END:VEVENT
 BEGIN:VEVENT
-UID:811-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:130-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20130604T133000Z
 DTEND:20130604T142500Z
 LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain
 SUMMARY:CL-NLP - a Natural Language Processing library for Common Lisp
- 
 DESCRIPTION:
 CONTACT:Vsevolod Domkin
 END:VEVENT
 BEGIN:VEVENT
-UID:812-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:131-3699282108@european-lisp-symposium.org
+DTSTAMP:20170323T182148Z
 DTSTART:20130604T142500Z
 DTEND:20130604T152500Z
 LOCATION:Cuesta de Santo Domingo 5 y 7, NIL Madrid, Spain

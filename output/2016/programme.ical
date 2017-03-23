@@ -2,8 +2,8 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:875-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:194-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160508T160000Z
 DTEND:20160509T063000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -12,8 +12,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:876-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:195-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160509T063000Z
 DTEND:20160509T070000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -22,8 +22,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:877-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:196-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160509T070000Z
 DTEND:20160509T073000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -32,8 +32,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:878-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:197-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160509T073000Z
 DTEND:20160509T083000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -55,8 +55,8 @@ DESCRIPTION:The power of Common Lisp for Functional_Programming is wel
 CONTACT:Francis Sergeraert
 END:VEVENT
 BEGIN:VEVENT
-UID:879-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:198-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160509T083000Z
 DTEND:20160509T090000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -65,8 +65,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:880-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:199-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160509T090000Z
 DTEND:20160509T093000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -75,8 +75,8 @@ DESCRIPTION:
 CONTACT:Rafael Reia, António Leitão
 END:VEVENT
 BEGIN:VEVENT
-UID:881-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:200-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160509T093000Z
 DTEND:20160509T100000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -85,8 +85,8 @@ DESCRIPTION:
 CONTACT:Jim Newton, Akim Demaille, Didier Verna
 END:VEVENT
 BEGIN:VEVENT
-UID:882-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:201-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160509T100000Z
 DTEND:20160509T103000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -95,8 +95,8 @@ DESCRIPTION:
 CONTACT:Robert Strandh
 END:VEVENT
 BEGIN:VEVENT
-UID:883-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:202-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160509T103000Z
 DTEND:20160509T120000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -105,19 +105,18 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:884-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:203-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160509T120000Z
 DTEND:20160509T123000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
 SUMMARY:Using Lisp Macro-Facilities for Transferable Statistical Tests
- 
 DESCRIPTION:
 CONTACT:Kay Hamacher
 END:VEVENT
 BEGIN:VEVENT
-UID:885-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:204-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160509T123000Z
 DTEND:20160509T130000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -128,8 +127,8 @@ CONTACT:Kai Selgrad, Alexander Lier, Jan Dörntlein, Oliver Reiche, Mar
  c Stamminger
 END:VEVENT
 BEGIN:VEVENT
-UID:886-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:205-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160509T130000Z
 DTEND:20160509T133000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -138,8 +137,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:887-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:206-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160509T133000Z
 DTEND:20160509T140000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -148,8 +147,8 @@ DESCRIPTION:
 CONTACT:Marco Heisig, Nicolas Neuss
 END:VEVENT
 BEGIN:VEVENT
-UID:888-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:207-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160509T140000Z
 DTEND:20160509T143000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -158,8 +157,8 @@ DESCRIPTION:
 CONTACT:Benjamin Seppke, Leonie Dreschler-Fischer
 END:VEVENT
 BEGIN:VEVENT
-UID:889-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:208-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160509T143000Z
 DTEND:20160509T150000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -168,8 +167,8 @@ DESCRIPTION:
 CONTACT:Michael Raskin, Nikita Mamardashvili
 END:VEVENT
 BEGIN:VEVENT
-UID:890-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:209-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160509T150000Z
 DTEND:20160509T153000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -178,8 +177,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:891-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:210-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160509T153000Z
 DTEND:20160510T070000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -188,8 +187,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:892-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:211-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160510T070000Z
 DTEND:20160510T083000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -203,28 +202,24 @@ DESCRIPTION:Julia is a general purpose dynamic language, designed to m
  ns look different than function calls. Some dynamic behaviors are sacr
  ificed to make programs easier to analyze (for both humans and compile
  rs), especially where it allows simpler, more reliable program optimiz
- ation.
-
-Julia’s most distinctive feature is its emphasis on creating l
- ightweight types and defining their behavior in terms of generic funct
- ions. While many Lisps support multiple dispatch as an opt-in feature,
-  in Julia all function are generic by default. Even basic operators li
- ke `+` are generic, and primitive types like `Int` and `Float64` are d
- efined in the standard library, and their behavior is specified via mu
- ltiple dispatch. A combination of aggressive method specialization, in
- lining and data-flow-based type inference, allow these layers of abstr
- action and dispatch to be eliminated when it counts – Julia generally 
- has performance comparable to static languages.
-
-In the tradition of t
- he great Lisp hackers, this talk will include lots of live coding in t
- he REPL, with all the excitement, and possibility of failure entailed.
- 
+ ation.\n\nJulia’s most distinctive feature is its emphasis on creating
+  lightweight types and defining their behavior in terms of generic fun
+ ctions. While many Lisps support multiple dispatch as an opt-in featur
+ e, in Julia all function are generic by default. Even basic operators 
+ like `+` are generic, and primitive types like `Int` and `Float64` are
+  defined in the standard library, and their behavior is specified via 
+ multiple dispatch. A combination of aggressive method specialization, 
+ inlining and data-flow-based type inference, allow these layers of abs
+ traction and dispatch to be eliminated when it counts – Julia generall
+ y has performance comparable to static languages.\n\nIn the tradition 
+ of the great Lisp hackers, this talk will include lots of live coding 
+ in the REPL, with all the excitement, and possibility of failure entai
+ led.
 CONTACT:Stefan Karpinski
 END:VEVENT
 BEGIN:VEVENT
-UID:893-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:212-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160510T083000Z
 DTEND:20160510T090000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -233,8 +228,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:894-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:213-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160510T090000Z
 DTEND:20160510T093000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -243,8 +238,8 @@ DESCRIPTION:
 CONTACT:Robert Strandh
 END:VEVENT
 BEGIN:VEVENT
-UID:895-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:214-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160510T093000Z
 DTEND:20160510T100000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -253,8 +248,8 @@ DESCRIPTION:
 CONTACT:Tero Hasu, Matthew Flatt
 END:VEVENT
 BEGIN:VEVENT
-UID:896-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:215-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160510T100000Z
 DTEND:20160510T103000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -264,8 +259,8 @@ DESCRIPTION:
 CONTACT:Søren Jensen, Lone Thomsen
 END:VEVENT
 BEGIN:VEVENT
-UID:897-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:216-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160510T103000Z
 DTEND:20160510T120000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -274,8 +269,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:898-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:217-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160510T120000Z
 DTEND:20160510T123000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -285,8 +280,8 @@ DESCRIPTION:
 CONTACT:Christian Schafmeister
 END:VEVENT
 BEGIN:VEVENT
-UID:899-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:218-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160510T123000Z
 DTEND:20160510T130000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -295,8 +290,8 @@ DESCRIPTION:
 CONTACT:Alexander Lier, Linus Franke, Marc Stamminger, Kai Selgrad
 END:VEVENT
 BEGIN:VEVENT
-UID:900-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:219-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160510T130000Z
 DTEND:20160510T133000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -305,8 +300,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:901-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:220-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160510T133000Z
 DTEND:20160510T140000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -315,8 +310,8 @@ DESCRIPTION:
 CONTACT:James Anderson
 END:VEVENT
 BEGIN:VEVENT
-UID:902-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:221-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160510T140000Z
 DTEND:20160510T143000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -325,8 +320,8 @@ DESCRIPTION:
 CONTACT:James Knight, François-René Rideau, Andrzej Walczak
 END:VEVENT
 BEGIN:VEVENT
-UID:903-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:222-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160510T143000Z
 DTEND:20160510T150000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -335,8 +330,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:904-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:223-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160510T150000Z
 DTEND:20160510T153000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -345,8 +340,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:905-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:224-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160510T153000Z
 DTEND:20160510T173000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland
@@ -355,8 +350,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:906-3699278015@european-lisp-symposium.org
-DTSTAMP:20170323T171335Z
+UID:225-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20160510T173000Z
 DTEND:20160510T183000Z
 LOCATION:Kawiory 21, 30-055 Kraków, Poland

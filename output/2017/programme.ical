@@ -2,8 +2,8 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:907-3699278016@european-lisp-symposium.org
-DTSTAMP:20170323T171336Z
+UID:226-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20170403T073000Z
 DTEND:20170404T070000Z
 LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
@@ -35,8 +35,8 @@ DESCRIPTION:We present a rationale for expanding the presence of the L
 CONTACT:Bohdan Khomtchouk
 END:VEVENT
 BEGIN:VEVENT
-UID:908-3699278016@european-lisp-symposium.org
-DTSTAMP:20170323T171336Z
+UID:227-3699282109@european-lisp-symposium.org
+DTSTAMP:20170323T182149Z
 DTSTART:20170404T070000Z
 DTEND:20170404T080000Z
 LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
@@ -47,18 +47,14 @@ DESCRIPTION:Data persistence can add a great deal of complexity to app
  e object oriented programming paradigm, persistence seems to be a natu
  ral extension to object behavior, and even though one could argue that
   many persistent object systems have flaws and leak their abstractions
- , there is a large body of prior art and research in that area.
-
-In th
- e functional programming world, persistence does not find as natural a
-  partnering abstraction, and it is often either conceptionally pushed 
- to the boundaries of the application, or treated in an ad-hoc fashion 
- interleaved with the beauty and conceptional rigor of pure functions.
-
- 
-The presentation discusses these forces and explores how Clojure's So
- ftware Transactional Memory system can be used to implement applicatio
- n data persistence.
+ , there is a large body of prior art and research in that area.\n\nIn 
+ the functional programming world, persistence does not find as natural
+  a partnering abstraction, and it is often either conceptionally pushe
+ d to the boundaries of the application, or treated in an ad-hoc fashio
+ n interleaved with the beauty and conceptional rigor of pure functions
+ .\n\nThe presentation discusses these forces and explores how Clojure'
+ s Software Transactional Memory system can be used to implement applic
+ ation data persistence.
 CONTACT:Hans Hübner
 END:VEVENT
 END:VCALENDAR
