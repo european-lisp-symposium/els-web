@@ -5,57 +5,6 @@
 
 (in-package #:els-web)
 
-(defun compile-edition-template (template output data)
-  (with-open-file (stream output
-                          :direction :output
-                          :if-exists :supersede)
-    (let ((*package* #.*package*)
-          (target (plump:parse template)))
-      (plump:serialize
-       (clip:with-clipboard-bound (data)
-         (clip:process-node target))
-       stream))))
-
-(defun prepare-path (path &key (if-exists :supersede))
-  (when (probe-file path)
-    (ecase if-exists
-      (:supersede (delete-directory-tree path))
-      (:error (error "Edition already exists."))
-      ((NIL) (return-from prepare-path))))
-  (ensure-directories-exist path))
-
-(defun editions-data (current)
-  (loop for edition in (editions)
-        collect `(:record-type :edition
-                  :year ,edition
-                  :current ,(if (g= edition current) T NIL))))
-
-(defun compile-edition (edition &key (if-exists :supersede)
-                                     (template (template "index.ctml")))
-  (let* ((edition (princ-to-string edition))
-         (path (pathname-utils:subdirectory *output-dir* edition)))
-    (when (prepare-path path :if-exists if-exists)
-      (compile-edition-template
-       template
-       (merge-pathnames "index.html" path)
-       (append (edition edition)
-               (editions-data edition)))
-      path)))
-
-(defun compile-toplevel (&key (template (template "toplevel.ctml")))
-  (compile-edition-template
-   template
-   (merge-pathnames "index.html" *output-dir*)
-   (append (edition "toplevel")
-           (editions-data (car (last (editions)))))))
-
-(defun compile-all-editions (&key (if-exists :supersede)
-                                  (template (template "index.ctml")))
-  (compile-toplevel)
-  (loop for edition in (editions)
-        collect (compile-edition edition :if-exists if-exists
-                                         :template template)))
-
 (defun coerce-data (field entry)
   (etypecase field
     (keyword field)
