@@ -38,7 +38,7 @@
    *calendar-stream*))
 
 (defun escape-crlf (text)
-  (cl-ppcre:regex-replace-all "\\r\\n" text #.(format NIL "~%")))
+  (cl-ppcre:regex-replace-all "(\\r\\n)|\\n" text "\\n"))
 
 (defmacro with-calendar-object (type props &body forms)
   `(progn
