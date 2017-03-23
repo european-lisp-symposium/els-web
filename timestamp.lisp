@@ -35,8 +35,8 @@
                             :hour hh :minute mm :sec ss
                             :offset offset))
 
-(defun universal->timestamp (universal)
-  (multiple-value-bind (ss mm hh d m y dow dst zone) (decode-universal-time universal)
+(defun universal->timestamp (universal &optional time-zone)
+  (multiple-value-bind (ss mm hh d m y dow dst zone) (decode-universal-time universal time-zone)
     (declare (ignore dow dst))
     (make-timestamp y m d hh mm ss (round (* -60 zone)))))
 
@@ -44,6 +44,11 @@
   (make-timestamp (year timestamp) (month timestamp) (day timestamp)
                   (hour timestamp) (minute timestamp) (sec timestamp)
                   (offset timestamp)))
+
+(defun adjust-timestamp (timestamp offset)
+  (universal->timestamp
+   (+ (timestamp->universal timestamp) offset)
+   (/ (offset timestamp) -60)))
 
 (defmethod day-of-week ((timestamp timestamp))
   (1+ (nth-value 6 (decode-universal-time (timestamp->universal timestamp)
