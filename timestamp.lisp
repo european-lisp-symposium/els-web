@@ -96,6 +96,11 @@
     (3 "rd")
     (T "th")))
 
+(defun date-title (stamp)
+  (format NIL "~a ~d~a"
+          (month-name (month stamp))
+          (day stamp) (plural-suffix (day stamp))))
+
 (defun date-fancy (stamp)
   (format NIL "~a ~d~a of ~a ~d, ~a:~2,'0d ~:[(~:[-~;+~]~2,'0d:~2,'0d)~;~]"
           (day-of-week-name (day-of-week stamp)) (day stamp) (plural-suffix (day stamp)) (month-name (month stamp)) (year stamp) (hour stamp) (minute stamp)
@@ -113,6 +118,7 @@
                                (:machine (date-machine stamp))
                                (:human (date-human stamp))
                                (:fancy (date-fancy stamp))
+                               (:title (date-title stamp))
                                (:clock (date-clock stamp))))
   node)
 
