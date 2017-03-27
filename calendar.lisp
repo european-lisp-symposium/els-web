@@ -69,7 +69,7 @@
         (let ((location (format-location (query1 :location '(in role :conference)))))
           (with-calendar
             (loop for i from 0
-                  for (entry next) on (query :programme-entry T :sort '(:time :asc))
+                  for (entry next) on (query :programme-entry '(not (in role :break)) :sort '(:time :asc))
                   do (with-calendar-event
                        (:dtstamp "~a" (date-calendar (now)))
                        (:dtstart "~a" (date-calendar (getf entry :time)))
