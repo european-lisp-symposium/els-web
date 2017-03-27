@@ -303,18 +303,18 @@
   @15:30:00 (:title "Delivering Common Lisp Applications with ASDF 3.3"
              :role (:talk)
              :speakers ("Robert Goldman" "Elias Pipping" "François-René Rideau"))
-  @16:00:00 (:title "Radiance – a Web Application Environment"
+  @15:52:00 (:title "Radiance – a Web Application Environment"
              :role (:talk)
              :speakers ("Nicolas Hafner"))
-  @16:30:00 (:title "Teaching Students of Engineering some Insights of the Internet of Things using Racket and the RaspberryPi"
+  @16:15:00 (:title "Teaching Students of Engineering some Insights of the Internet of Things using Racket and the RaspberryPi"
              :role (:talk)
              :speakers ("Daniel Brunner" "Stephan Brunner"))
-  @17:00:00 (:title "Interactive Functional Medical Image Analysis"
+  @16:37:00 (:title "Interactive Functional Medical Image Analysis"
              :role (:talk)
              :speakers ("Benjamin Seppke" "Leonie Dreschler-Fischer"))
-  @17:30:00 (:title "Lightning Talks"
+  @17:00:00 (:title "Lightning Talks"
              :role (:talk :lightning))
-  @18:00:00 (:title ""
+  @17:30:00 (:title ""
              :role (:break)))
 
 (define-programme-day @2017-04-04T00:00:00+02:00
