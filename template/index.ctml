@@ -16,8 +16,8 @@
                             (add-class (if current "current" "other"))'>20XX</a>
       </nav>
       <div class="dates">
-        <time lquery="(time (queryf :time :date '(= name :conference\ start)) :human)"/> - 
-        <time lquery="(time (queryf :time :date '(= name :conference\ end)) :human)"/>
+        <time lquery="(time (queryf :time :date '(= name :conference\ start)) :title)"/> - 
+        <time lquery="(time (queryf :time :date '(= name :conference\ end)) :title)"/>
       </div>
       <nav class="main">
         <c:when test="(query :date '(= name :final\ papers))">
