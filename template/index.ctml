@@ -125,15 +125,6 @@
           <c:splice lquery="(template :registration)" />
         </c:when>
 
-        <c:when test="(query :person '(in role :speaker))">
-          <section id="speakers">
-            <h3>Speakers</h3>
-            <ul iterate="(query :person '(in role :speaker) :sort '(:full-name :asc))">
-              <li><c:splice lquery="(template :person)" /></li>
-            </ul>
-          </section>
-        </c:when>
-
         <c:when test="(query :programme-entry)">
           <section id="programme">
             <h3>Programme</h3>
