@@ -48,5 +48,5 @@
      template
      path
      (append (edition "toplevel")
-             (editions-data (car (last (editions))))))
+             (editions-data (first (editions)))))
     path))
