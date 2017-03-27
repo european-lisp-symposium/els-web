@@ -24,7 +24,7 @@
   (sort (loop for k being the hash-keys of *editions*
               unless (string= k "toplevel")
               collect k)
-        #'string<))
+        #'string>))
 
 (defmacro define-edition (name)
   (let ((name (princ-to-string name)))
