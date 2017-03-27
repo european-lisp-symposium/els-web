@@ -44,6 +44,14 @@
     <main>      
       <article id="conference">
         <c:splice lquery="(html (query-text '(= name :announcement)))" />
+        
+        <c:when test="(query1 :sponsor)">
+          <section id="sponsors">
+            <ul iterate="(query :sponsor)">
+              <li><c:splice lquery="(template :sponsor)" /></li>
+            </ul>
+          </section>
+        </c:when>
 
         <c:when test="(query :date '(= name :final\ papers))">
           <section id="submissions">
@@ -84,8 +92,7 @@
           </section>
         </c:when>
 
-        <c:when test="(or (query :person '(or (in role :programme-chair) (in role :local-chair) (in role :committee)))
-                          (query :sponsor))">
+        <c:when test="(or (query :person '(or (in role :programme-chair) (in role :local-chair) (in role :committee))))">
           <section id="organization">
             <h3>Organization</h3>
             <c:when test="(query1 :person '(in role :programme-chair))">
@@ -110,12 +117,6 @@
               <h4>Local Organizers</h4>
               <ul class="local-organizers" iterate="(query :person '(in role :local-organizer) :sort '(:full-name :asc))">
                 <li><c:splice lquery="(template :person)" /></li>
-              </ul>
-            </c:when>
-            <c:when test="(query1 :sponsor)">
-              <h4>Sponsors</h4>
-              <ul class="sponsors" iterate="(query :sponsor)">
-                <li><c:splice lquery="(template :sponsor)" /></li>
               </ul>
             </c:when>
           </section>
