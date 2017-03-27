@@ -201,7 +201,7 @@
        (.note :margin 0 0 0 80px
               :white-space pre-line
               :display none))
-      (.break :background "#EEEEEE")
+      (.break :background "#E8E8E8")
       (.organization :background "#DDDDFF")
       (.lightning :background "#FFF5AF")
       (.dinner :background "#EEEEEE")
