@@ -69,15 +69,17 @@
         (let ((location (format-location (query1 :location '(in role :conference)))))
           (with-calendar
             (loop for i from 0
-                  for (entry next) on (query :programme-entry '(not (in role :break)) :sort '(:time :asc))
-                  do (with-calendar-event
-                       (:dtstamp "~a" (date-calendar (now)))
-                       (:dtstart "~a" (date-calendar (getf entry :time)))
-                       (:dtend "~a" (if next
-                                        (date-calendar (getf next :time))
-                                        (date-calendar (adjust-timestamp (getf entry :time) (* 60 60 1)))))
-                       (:location "~a" location)
-                       (:summary "~a" (getf entry :title))
-                       (:description "~a" (escape-crlf (or (getf entry :description) "")))
-                       (:contact "~{~a~^, ~}" (getf entry :speakers))))))))
+                  for (entry next) on (query :programme-entry T :sort '(:time :asc))
+                  do (unless (or (find :break (getf entry :role))
+                                 (find :section (getf entry :role)))
+                       (with-calendar-event
+                         (:dtstamp "~a" (date-calendar (now)))
+                         (:dtstart "~a" (date-calendar (getf entry :time)))
+                         (:dtend "~a" (if next
+                                          (date-calendar (getf next :time))
+                                          (date-calendar (adjust-timestamp (getf entry :time) (* 60 60 1)))))
+                         (:location "~a" location)
+                         (:summary "~a" (getf entry :title))
+                         (:description "~a" (escape-crlf (or (getf entry :description) "")))
+                         (:contact "~{~a~^, ~}" (getf entry :speakers)))))))))
     path))
