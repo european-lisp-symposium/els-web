@@ -196,12 +196,15 @@
         (time :text-align right
               :min-width 70px
               :margin 0 5px 0 0)
-        (h4 :font-weight normal))
+        (h4 :font-weight normal :flex-grow 1))
        (.speakers :margin-left 100px :padding 0)
        (.note :margin 0 0 0 80px
               :white-space pre-line
               :display none))
       (.break :background "#E8E8E8")
+      (.section :border-bottom 2px solid black
+                (time :display none)
+                (h4 :text-align right))
       (.organization :background "#DDDDFF")
       (.lightning :background "#FFF5AF")
       (.dinner :background "#EEEEEE")
