@@ -94,6 +94,9 @@
 
 (defmacro define-programme-day (base-time &body forms)
   `(progn
+     (define-programme-entry ,base-time
+       :title ,(date-title base-time)
+       :role (:section))
      ,@(loop for (time args) on forms by #'cddr
              collect `(define-programme-entry ,(merge-timestamp time base-time)
                         ,@args))))
