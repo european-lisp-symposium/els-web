@@ -48,10 +48,11 @@
      ,@forms
      (calwrite "END:~a" ,type)))
 
-(defmacro with-calendar (&body entries)
+(defmacro with-calendar (edition &body entries)
   `(with-calendar-object :vcalendar
        ((:version "2.0")
-        (:prodid "-//hacksw/handcal//NONSGML v1.0//EN"))
+        (:prodid "-//hacksw/handcal//NONSGML v1.0//EN")
+        (:name (format nil "European Lisp Symposium ~A" ,edition)))
      ,@entries))
 
 (defmacro with-calendar-event (&body props)
@@ -67,7 +68,7 @@
                                          :direction :output
                                          :if-exists if-exists)
         (let ((location (format-location (query1 :location '(in role :conference)))))
-          (with-calendar
+          (with-calendar edition
             (loop for i from 0
                   for (entry next) on (query :programme-entry T :sort '(:time :asc))
                   do (unless (or (find :break (getf entry :role))
