@@ -11,13 +11,17 @@
 (define-date "Conference end" @2017-04-04)
 
 ;;; Sponsors
-(define-sponsor brunner
-  :website "http://www.systemhaus-brunner.de/"
-  :logo "../static/logos/brunner.png")
+(define-sponsor cl-foundation
+  :website "http://cl-foundation.org/"
+  :logo "../static/logos/cl-foundation.png")
 
 (define-sponsor epita
   :website "http://www.epita.fr/"
   :logo "../static/logos/epita.png")
+
+(define-sponsor biotech-ufl
+  :website "http://www.biotech.ufl.edu/"
+  :logo "../static/logos/ufl.svg")
 
 (define-sponsor lispworks
   :website "http://www.lispworks.com/"
@@ -27,13 +31,9 @@
   :website "http://www.franz.com/"
   :logo "../static/logos/franz.png")
 
-(define-sponsor cl-foundation
-  :website "http://cl-foundation.org/"
-  :logo "../static/logos/cl-foundation.png")
-
-(define-sponsor biotech-ufl
-  :website "http://www.biotech.ufl.edu/"
-  :logo "../static/logos/ufl.svg")
+(define-sponsor brunner
+  :website "http://www.systemhaus-brunner.de/"
+  :logo "../static/logos/brunner.png")
 
 ;;; People
 (define-person (:family-name "Verna"
