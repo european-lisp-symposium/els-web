@@ -35,8 +35,8 @@
 (define-person (:family-name "Verna"
                 :given-name "Didier")
   :role (:administrator :committee)
-  :email "didier@elsaa.org"
-  :website "http://www.didierverna.net"
+  :email "www@european-lisp-symposium.org"
+  :website "http://www.european-lisp-symposium.org"
   :organization "Epita"
   :address (:country "France"))
 
