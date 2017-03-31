@@ -56,8 +56,20 @@
   :address (:country "Italy"))
 
 (define-person (:family-name "Battyani"
-                :given-name "Marc")
+		:given-name "Marc")
+  :organization "Fractal Concept"
   :role (:committee))
+
+(define-person (:family-name "Gallesio"
+		:given-name "Erick")
+  :role (:committee)
+  :organization "Université de Nice Sophia Antipolis"
+  :address (:country "France"))
+
+(define-person (:family-name "Stacy"
+		:given-name "Chris")
+  :role (:committee)
+  :organization "CS Consulting")
 
 (define-person (:family-name "D'Hondt"
                 :given-name "Theo")
@@ -133,7 +145,7 @@
 (define-person (:family-name "Stalla"
                 :given-name "Alessio")
   :role (:committee)
-  :organization "Università degli Studi di Genova"
+  :organization "Many Designs s.r.l."
   :address (:country "Italy"))
 
 (define-person (:family-name "Hübner"
