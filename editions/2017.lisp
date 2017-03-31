@@ -83,12 +83,6 @@
   :organization "Université de Montreal"
   :address (:country "Canada"))
 
-(define-person (:family-name "Ionescu"
-                :given-name "Stelian")
-  :role (:committee)
-  :organization "Google"
-  :address (:country "Switzerland"))
-
 (define-person (:family-name "Joswig"
                 :given-name "Rainer")
   :role (:committee)
