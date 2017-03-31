@@ -274,11 +274,15 @@
 ;;; Programme
 (define-programme-day @2017-04-03T00:00:00+02:00
   @09:00:00 (:title "Welcome Message"
-             :role (:organization))
-  @09:30:00 (:title "How the strengths of Lisp-family languages facilitate building complex and flexible bioinformatics applications"
-             :role (:talk :keynote)
-             :speakers ("Bohdan Khomtchouk")
-             :description "We present a rationale for expanding the presence of the Lisp family of programming languages in bioinformatics and computational biology research. Put simply, Lisp-family languages enable programmers to more quickly write programs that run faster than in other languages. Languages such as Common Lisp, Scheme and Clojure facilitate the creation of powerful and flexible software that is required for complex and rapidly evolving domains like biology. We will point out several important key features that distinguish languages of the Lisp family from other programming languages, and we will explain how these features can aid researchers in becoming more productive and creating better code. We will also show how these features make these languages ideal tools for artificial intelligence and machine learning applications. We will specifically stress the advantages of domain-specific languages (DSLs): languages that are specialized to a particular area, and thus not only facilitate easier research problem formulation, but also aid in the establishment of standards and best programming practices as applied to the specific research field at hand. DSLs are particularly easy to build in Common Lisp, the most comprehensive Lisp dialect, which is commonly referred to as the 'programmable programming language'. We are convinced that Lisp grants programmers unprecedented power to build increasingly sophisticated artificial intelligence systems that may ultimately transform machine learning and artificial intelligence research in bioinformatics and computational biology.")
+	     :role (:organization))
+  @09:30:00 (:title "Identity in a World of Values"
+	     :role (:talk :keynote)
+	     :speakers ("Hans Hübner")
+	     :description "Data persistence can add a great deal of complexity to application software, and making the gap between application and storage has been a constant field of research, experiments and products. In the object oriented programming paradigm, persistence seems to be a natural extension to object behavior, and even though one could argue that many persistent object systems have flaws and leak their abstractions, there is a large body of prior art and research in that area.
+
+In the functional programming world, persistence does not find as natural a partnering abstraction, and it is often either conceptionally pushed to the boundaries of the application, or treated in an ad-hoc fashion interleaved with the beauty and conceptional rigor of pure functions.
+
+The presentation discusses these forces and explores how Clojure's Software Transactional Memory system can be used to implement application data persistence.")
   @10:30:00 (:title "Coffee"
              :role (:break))
   @11:00:00 (:title "Common Lisp UltraSpec - A Project For Modern Common Lisp Documentation"
@@ -318,14 +322,10 @@
              :role (:break)))
 
 (define-programme-day @2017-04-04T00:00:00+02:00
-  @09:00:00 (:title "Identity in a World of Values"
-             :role (:talk :keynote)
-             :speakers ("Hans Hübner")
-             :description "Data persistence can add a great deal of complexity to application software, and making the gap between application and storage has been a constant field of research, experiments and products. In the object oriented programming paradigm, persistence seems to be a natural extension to object behavior, and even though one could argue that many persistent object systems have flaws and leak their abstractions, there is a large body of prior art and research in that area.
-
-In the functional programming world, persistence does not find as natural a partnering abstraction, and it is often either conceptionally pushed to the boundaries of the application, or treated in an ad-hoc fashion interleaved with the beauty and conceptional rigor of pure functions.
-
-The presentation discusses these forces and explores how Clojure's Software Transactional Memory system can be used to implement application data persistence.")
+  @09:00:00 (:title "How the strengths of Lisp-family languages facilitate building complex and flexible bioinformatics applications"
+	     :role (:talk :keynote)
+	     :speakers ("Bohdan Khomtchouk")
+	     :description "We present a rationale for expanding the presence of the Lisp family of programming languages in bioinformatics and computational biology research. Put simply, Lisp-family languages enable programmers to more quickly write programs that run faster than in other languages. Languages such as Common Lisp, Scheme and Clojure facilitate the creation of powerful and flexible software that is required for complex and rapidly evolving domains like biology. We will point out several important key features that distinguish languages of the Lisp family from other programming languages, and we will explain how these features can aid researchers in becoming more productive and creating better code. We will also show how these features make these languages ideal tools for artificial intelligence and machine learning applications. We will specifically stress the advantages of domain-specific languages (DSLs): languages that are specialized to a particular area, and thus not only facilitate easier research problem formulation, but also aid in the establishment of standards and best programming practices as applied to the specific research field at hand. DSLs are particularly easy to build in Common Lisp, the most comprehensive Lisp dialect, which is commonly referred to as the 'programmable programming language'. We are convinced that Lisp grants programmers unprecedented power to build increasingly sophisticated artificial intelligence systems that may ultimately transform machine learning and artificial intelligence research in bioinformatics and computational biology.")
   @10:00:00 (:title "Parallelizing Femlisp"
              :role (:talk)
              :speakers ("Marco Heisig" "Nicolas Neuss"))
