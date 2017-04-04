@@ -11,6 +11,10 @@
 (define-date "Conference end" @2017-04-04)
 
 ;;; Sponsors
+(define-sponsor acm
+  :website "http://www.sigplan.org/"
+  :logo "../static/logos/acm.svg")
+
 (define-sponsor cl-foundation
   :website "http://cl-foundation.org/"
   :logo "../static/logos/cl-foundation.png")
