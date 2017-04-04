@@ -1,5 +1,14 @@
 <section class="highlight" lquery="(add-classes role)">
   <header>
+    <span iterate="speakers" class="photos">
+      <span>
+        <c:using value="(query1 :person (list '= 'full-name *))">
+          <c:when test="photo">
+            <img class="photo" alt="Profile" lquery="(attr :src photo)">
+          </c:when>
+        </c:using>
+      </span>
+    </span>
     <h4 lquery="(text title)">TITLE</h4>
     <ul iterate="speakers" class="speakers">
       <li>
