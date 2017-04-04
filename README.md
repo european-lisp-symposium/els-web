@@ -81,6 +81,7 @@ Many of these definitions accept arbitrary data fields in the form of a plist. T
   * `:dinner` This is for the conference dinner time.
 * `:description` The long description used for keynote talks. This is displayed in the highlights section of the page.
 * `:note` An additional note to display in the programme about this event. Can be used in cases where an event is cancelled or something to that effect.
+* `:website` If present turns the title into a link. Intended to be used to link to a video or slides of the entry.
 
 ### Fields for Sponsors
 
