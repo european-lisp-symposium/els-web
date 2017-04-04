@@ -1,7 +1,10 @@
 <section class="programme-entry" lquery="(add-classes role)">
   <header>
     <time lquery="(time time :clock)">00:00</time>
-    <h4 lquery="(text title)">TITLE</h4>
+    <c:if test="website">
+      <c:then><h4><a lquery="(attr :href website) (text title)">TITLE</a></h4></c:then>
+      <c:else><h4 lquery="(text title)">TITLE</h4></c:else>
+    </c:if>
   </header>
   <c:when test="speakers">
     <ul iterate="speakers" class="speakers">
