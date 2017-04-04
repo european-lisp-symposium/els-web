@@ -5,6 +5,19 @@
 
 (in-package #:els-web)
 
+(defun compact (node)
+  (typecase node
+    (plump:text-node
+     (setf (plump:text node) (cl-ppcre:regex-replace-all "(^\\s+)|(\\s+$)" (plump:text node) " ")))
+    (plump:element
+     (unless (find (plump:tag-name node) '("pre" "script") :test #'string-equal)
+       (loop for child across (plump:children node)
+             do (compact child))))
+    (plump:nesting-node
+     (loop for child across (plump:children node)
+           do (compact child))))
+  node)
+
 (defun compile-edition-template (template output data)
   (with-open-file (stream output
                           :direction :output
@@ -12,8 +25,9 @@
     (let ((*package* #.*package*)
           (target (plump:parse template)))
       (plump:serialize
-       (clip:with-clipboard-bound (data)
-         (clip:process-node target))
+       (compact
+        (clip:with-clipboard-bound (data)
+          (clip:process-node target)))
        stream))))
 
 (defun prepare-path (path &key (if-exists :supersede))
