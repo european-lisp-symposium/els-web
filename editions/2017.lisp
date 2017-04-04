@@ -369,4 +369,6 @@ The presentation discusses these forces and explores how Clojure's Software Tran
   @17:00:00 (:title "Lightning Talks"
              :role (:talk :lightning))
   @17:30:00 (:title "Conference End"
-             :role (:organization)))
+	     :role (:organization)))
+
+(define-proceedings "../static/proceedings/2017.pdf")
