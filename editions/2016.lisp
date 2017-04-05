@@ -300,7 +300,8 @@
              :speakers ("Rafael Reia" "António Leitão"))
   @11:30:00 (:title "Type-Checking of Heterogeneous Sequences in Common Lisp"
              :role (:talk)
-             :speakers ("Jim Newton" "Akim Demaille" "Didier Verna"))
+             :speakers ("Jim Newton" "Akim Demaille" "Didier Verna")
+	     :website "../static/2016/newton.pdf")
   @12:00:00 (:title "A CLOS Protocol for Editor Buffers"
              :role (:talk)
              :speakers ("Robert Strandh"))
@@ -322,9 +323,11 @@
              :speakers ("Benjamin Seppke" "Leonie Dreschler-Fischer"))
   @16:30:00 (:title "Accessing local variables during debugging"
              :role (:talk)
-             :speakers ("Michael Raskin" "Nikita Mamardashvili"))
+             :speakers ("Michael Raskin" "Nikita Mamardashvili")
+	     :website "../static/2016/raskin.pdf")
   @17:00:00 (:title "Lightning Talks"
-             :role (:talk :lightning))
+             :role (:talk :lightning)
+	     :website "../static/2016/lt1.pdf")
   @17:30:00 (:title ""
              :role (:break)))
 
@@ -347,7 +350,8 @@ In the tradition of the great Lisp hackers, this talk will include lots of live 
              :speakers ("Tero Hasu" "Matthew Flatt"))
   @12:00:00 (:title "Extending Software Transactional Memory in Clojure with Side-Effects and Transaction Control"
              :role (:talk)
-             :speakers ("Søren Jensen" "Lone Thomsen"))
+             :speakers ("Søren Jensen" "Lone Thomsen")
+	     :website "../static/2016/jensen.pdf")
   @12:30:00 (:title "Lunch"
              :role (:talk :break))
   @14:00:00 (:title "CANDO: A Compiled Programming Language for Computer-Aided Nanomaterial Design and Optimization Based on Clasp Common Lisp"
@@ -360,12 +364,14 @@ In the tradition of the great Lisp hackers, this talk will include lots of live 
              :role (:talk))
   @15:30:00 (:title "An Inferred System Description Facility"
              :role (:talk)
-             :speakers ("James Anderson"))
+             :speakers ("James Anderson")
+	     :website "../static/2016/anderson.pdf")
   @16:00:00 (:title "Building Common Lisp programs using Bazel"
              :role (:talk)
              :speakers ("James Knight" "François-René Rideau" "Andrzej Walczak"))
   @16:30:00 (:title "Lightning Talks"
-             :role (:talk :lightning))
+             :role (:talk :lightning)
+	     :website "../static/2016/lt2.pdf")
   @17:00:00 (:title "Conference End"
              :role (:organization))
   @17:30:00 (:title ""
