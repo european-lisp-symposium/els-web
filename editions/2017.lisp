@@ -362,7 +362,8 @@ The presentation discusses these forces and explores how Clojure's Software Tran
              :role (:break))
   @15:30:00 (:title "on the {lambda way}"
              :role (:talk)
-             :speakers ("Alain Marty"))
+             :speakers ("Alain Marty")
+	     :website "http://epsilonwiki.free.fr/lambdaway/?view=brussels_slides")
   @16:00:00 (:title "Writing a portable code walker in Common Lisp"
              :role (:talk)
              :speakers ("Mikhail Raskin"))
