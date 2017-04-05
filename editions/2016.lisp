@@ -239,7 +239,7 @@
 ;;; Locations
 (define-location "Dept. of Computer Science, AGH University of Science and Technology"
   :role (:conference)
-  :photo "http://www.european-lisp-symposium.org/editions/2016/img/agh-ust.jpg"
+  :photo "http://home.agh.edu.pl/~ebccsp15/wp-content/uploads/AGH_gmach-e1402235249672.jpg"
   :website "http://www.agh.edu.pl/en"
   :address (:street "Kawiory 21"
             :post-code "30-055"
