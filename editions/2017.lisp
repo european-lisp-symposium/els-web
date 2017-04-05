@@ -4,7 +4,8 @@
 
 ;;; Texts
 (define-text :announcement
-  (:div :class "announcement" "This year's conference is co-located with <a href=\"http://2017.programmingconference.org/home\">Programming 2017</a>"))
+  (:div :class "announcement" "The conference is over!")
+  (:div :class "announcement" "This year's conference was co-located with <a href=\"http://2017.programmingconference.org/home\">Programming 2017</a>"))
 
 (define-date "Conference start" @2017-04-03)
 
