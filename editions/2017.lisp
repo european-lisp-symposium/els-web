@@ -298,7 +298,8 @@ The presentation discusses these forces and explores how Clojure's Software Tran
              :role (:break))
   @11:00:00 (:title "Common Lisp UltraSpec - A Project For Modern Common Lisp Documentation"
              :role (:talk)
-             :speakers ("Michal Herda"))
+             :speakers ("Michal Herda")
+	     :website "../static/2017/herda.pdf")
   @11:30:00 (:title "Loading Multiple Versions of an ASDF System in the Same Lisp Image"
              :role (:talk)
              :speakers ("Vsevolod Domkin"))
