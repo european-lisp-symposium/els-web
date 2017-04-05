@@ -284,7 +284,8 @@
 ;;; Programme
 (define-programme-day @2017-04-03T00:00:00+02:00
   @09:00:00 (:title "Welcome Message"
-	     :role (:organization))
+	     :role (:organization)
+		    :website "../static/2017/opening.pdf")
   @09:30:00 (:title "Identity in a World of Values"
 	     :role (:talk :keynote)
 	     :speakers ("Hans Hübner")
@@ -319,7 +320,8 @@ The presentation discusses these forces and explores how Clojure's Software Tran
              :speakers ("Robert Goldman" "Elias Pipping" "François-René Rideau"))
   @15:52:00 (:title "Radiance – a Web Application Environment"
              :role (:talk)
-             :speakers ("Nicolas Hafner"))
+             :speakers ("Nicolas Hafner")
+	     :website "../static/2017/hafner.pdf")
   @16:15:00 (:title "Teaching Students of Engineering some Insights of the Internet of Things using Racket and the RaspberryPi"
              :role (:talk)
              :speakers ("Daniel Brunner" "Stephan Brunner"))
@@ -327,7 +329,8 @@ The presentation discusses these forces and explores how Clojure's Software Tran
              :role (:talk)
              :speakers ("Benjamin Seppke" "Leonie Dreschler-Fischer"))
   @17:00:00 (:title "Lightning Talks"
-             :role (:talk :lightning))
+             :role (:talk :lightning)
+	     :website "../static/2017/lt1.pdf")
   @17:30:00 (:title ""
              :role (:break)))
 
@@ -367,8 +370,10 @@ The presentation discusses these forces and explores how Clojure's Software Tran
              :role (:talk)
              :speakers ("Irène Durand" "Robert Strandh"))
   @17:00:00 (:title "Lightning Talks"
-             :role (:talk :lightning))
+             :role (:talk :lightning)
+	     :website "../static/2017/lt2.pdf")
   @17:30:00 (:title "Conference End"
-	     :role (:organization)))
+	     :role (:organization)
+	     :website "../static/2017/closing.pdf"))
 
 (define-proceedings "../static/proceedings/2017.pdf")
