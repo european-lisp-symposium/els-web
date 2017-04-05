@@ -320,7 +320,8 @@ The presentation discusses these forces and explores how Clojure's Software Tran
              :role (:break))
   @15:30:00 (:title "Delivering Common Lisp Applications with ASDF 3.3"
              :role (:talk)
-             :speakers ("Robert Goldman" "Elias Pipping" "François-René Rideau"))
+             :speakers ("Robert Goldman" "Elias Pipping" "François-René Rideau")
+	     :website "../static/2017/rideau.pdf")
   @15:52:00 (:title "Radiance – a Web Application Environment"
              :role (:talk)
              :speakers ("Nicolas Hafner")
