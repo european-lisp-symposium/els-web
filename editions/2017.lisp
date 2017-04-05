@@ -303,7 +303,8 @@ The presentation discusses these forces and explores how Clojure's Software Tran
 	     :website "../static/2017/herda.pdf")
   @11:30:00 (:title "Loading Multiple Versions of an ASDF System in the Same Lisp Image"
              :role (:talk)
-             :speakers ("Vsevolod Domkin"))
+             :speakers ("Vsevolod Domkin")
+	     :website "../static/2017/domkin.pdf")
   @12:00:00 (:title "Lunch"
              :role (:break))
   @13:30:00 (:title "A Lisp Way to Type Theory and Formal Proofs"
@@ -326,7 +327,8 @@ The presentation discusses these forces and explores how Clojure's Software Tran
 	     :website "../static/2017/hafner.pdf")
   @16:15:00 (:title "Teaching Students of Engineering some Insights of the Internet of Things using Racket and the RaspberryPi"
              :role (:talk)
-             :speakers ("Daniel Brunner" "Stephan Brunner"))
+             :speakers ("Daniel Brunner" "Stephan Brunner")
+	     :website "../static/2017/brunner.pdf")
   @16:37:00 (:title "Interactive Functional Medical Image Analysis"
              :role (:talk)
              :speakers ("Benjamin Seppke" "Leonie Dreschler-Fischer"))
@@ -348,7 +350,8 @@ The presentation discusses these forces and explores how Clojure's Software Tran
              :role (:break))
   @11:00:00 (:title "General Game Playing in Common Lisp"
              :role (:talk)
-             :speakers ("Steve Losh"))
+             :speakers ("Steve Losh")
+	     :website "../static/2017/losh.pdf")
   @12:00:00 (:title "Lunch"
              :role (:break))
   @13:30:00 (:title "Fast, Maintainable, and Portable Sequence Functions"
