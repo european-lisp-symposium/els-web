@@ -370,7 +370,8 @@ The presentation discusses these forces and explores how Clojure's Software Tran
              :speakers ("Mikhail Raskin"))
   @16:30:00 (:title "Removing redundant tests by replicating control paths"
              :role (:talk)
-             :speakers ("Irène Durand" "Robert Strandh"))
+             :speakers ("Irène Durand" "Robert Strandh")
+	     :website "../static/2017/durand.pdf")
   @17:00:00 (:title "Lightning Talks"
              :role (:talk :lightning)
 	     :website "../static/2017/lt2.pdf")
