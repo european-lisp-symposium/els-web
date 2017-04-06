@@ -346,7 +346,8 @@ The presentation discusses these forces and explores how Clojure's Software Tran
 	     :description "We present a rationale for expanding the presence of the Lisp family of programming languages in bioinformatics and computational biology research. Put simply, Lisp-family languages enable programmers to more quickly write programs that run faster than in other languages. Languages such as Common Lisp, Scheme and Clojure facilitate the creation of powerful and flexible software that is required for complex and rapidly evolving domains like biology. We will point out several important key features that distinguish languages of the Lisp family from other programming languages, and we will explain how these features can aid researchers in becoming more productive and creating better code. We will also show how these features make these languages ideal tools for artificial intelligence and machine learning applications. We will specifically stress the advantages of domain-specific languages (DSLs): languages that are specialized to a particular area, and thus not only facilitate easier research problem formulation, but also aid in the establishment of standards and best programming practices as applied to the specific research field at hand. DSLs are particularly easy to build in Common Lisp, the most comprehensive Lisp dialect, which is commonly referred to as the 'programmable programming language'. We are convinced that Lisp grants programmers unprecedented power to build increasingly sophisticated artificial intelligence systems that may ultimately transform machine learning and artificial intelligence research in bioinformatics and computational biology.")
   @10:00:00 (:title "Parallelizing Femlisp"
              :role (:talk)
-             :speakers ("Marco Heisig" "Nicolas Neuss"))
+             :speakers ("Marco Heisig" "Nicolas Neuss")
+	     :website "../static/2017/neuss.pdf")
   @10:30:00 (:title "Coffee"
              :role (:break))
   @11:00:00 (:title "General Game Playing in Common Lisp"
@@ -372,7 +373,8 @@ The presentation discusses these forces and explores how Clojure's Software Tran
 	     :website "http://epsilonwiki.free.fr/lambdaway/?view=brussels_slides")
   @16:00:00 (:title "Writing a portable code walker in Common Lisp"
              :role (:talk)
-             :speakers ("Mikhail Raskin"))
+             :speakers ("Mikhail Raskin")
+	     :website "../static/2017/raskin.pdf")
   @16:30:00 (:title "Removing redundant tests by replicating control paths"
              :role (:talk)
              :speakers ("Irène Durand" "Robert Strandh")
