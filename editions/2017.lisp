@@ -309,7 +309,8 @@ The presentation discusses these forces and explores how Clojure's Software Tran
              :role (:break))
   @13:30:00 (:title "A Lisp Way to Type Theory and Formal Proofs"
              :role (:talk)
-             :speakers ("Frederic Peschanski"))
+             :speakers ("Frederic Peschanski")
+	     :website "../static/2017/peschanski.pdf")
   @14:00:00 (:title "Programmatic Manipulation of Common Lisp Type Specifiers"
              :role (:talk)
              :speakers ("Jim Newton" "Didier Verna" "Maximilien Colange"))
