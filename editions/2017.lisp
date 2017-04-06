@@ -332,7 +332,8 @@ The presentation discusses these forces and explores how Clojure's Software Tran
 	     :website "../static/2017/brunner.pdf")
   @16:37:00 (:title "Interactive Functional Medical Image Analysis"
              :role (:talk)
-             :speakers ("Benjamin Seppke" "Leonie Dreschler-Fischer"))
+             :speakers ("Benjamin Seppke" "Leonie Dreschler-Fischer")
+	     :website "../static/2017/seppke.pdf")
   @17:00:00 (:title "Lightning Talks"
              :role (:talk :lightning)
 	     :website "../static/2017/lt1.pdf")
