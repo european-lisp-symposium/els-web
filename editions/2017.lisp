@@ -313,7 +313,8 @@ The presentation discusses these forces and explores how Clojure's Software Tran
 	     :website "../static/2017/peschanski.pdf")
   @14:00:00 (:title "Programmatic Manipulation of Common Lisp Type Specifiers"
              :role (:talk)
-             :speakers ("Jim Newton" "Didier Verna" "Maximilien Colange"))
+             :speakers ("Jim Newton" "Didier Verna" "Maximilien Colange")
+	     :website "../static/2017/newton.pdf")
   @14:30:00 (:title "Type Inference in Cleavir"
              :role (:talk)
              :speakers ("Alexander Wood"))
