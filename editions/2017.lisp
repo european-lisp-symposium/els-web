@@ -364,7 +364,8 @@ The presentation discusses these forces and explores how Clojure's Software Tran
              :speakers ("Irène Durand" "Robert Strandh"))
   @14:00:00 (:title "DIY Meta Languages with Common Lisp"
              :role (:talk)
-             :speakers ("Alexander Lier" "Kai Selgrad" "Marc Stamminger"))
+             :speakers ("Alexander Lier" "Kai Selgrad" "Marc Stamminger")
+	     :website "../static/2017/lier.pdf")
   @14:30:00 (:title "Static Taint Analysis of Event-driven Scheme Programs"
              :role (:talk)
              :speakers ("Jonas De Bleser" "Quentin Stiévenart" "Jens Nicolay" "Coen De Roover"))
