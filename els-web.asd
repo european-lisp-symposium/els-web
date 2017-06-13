@@ -1,6 +1,6 @@
 #|
- This file is a part of els-web
- Author: Nicolas Hafner <shinmera@tymoon.eu>
+This file is a part of els-web
+Author: Nicolas Hafner <shinmera@tymoon.eu>
 |#
 
 (in-package #:cl-user)
@@ -10,7 +10,7 @@
   :author "Nicolas Hafner <shinmera@tymoon.eu>"
   :maintainer "Nicolas Hafner <shinmera@tymoon.eu>"
   :description "Tools to generate the European Lisp Symposium's website."
-  :homepage "https://github.com/Shinmera/els-web"
+  :homepage "https://github.com/european-lisp-symposium/els-web"
   :serial T
   :components ((:file "package")
                (:file "toolkit")
