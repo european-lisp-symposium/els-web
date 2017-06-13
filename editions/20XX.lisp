@@ -42,7 +42,7 @@
 
 ;;; People
 (define-person (:family-name "Verna"
-                :given-name "Didier")
+		:given-name "Didier")
   :role (:administrator)
   :email "www@european-lisp-symposium.org"
   :website "http://www.european-lisp-symposium.org"
@@ -69,3 +69,5 @@
 ;;   ...
 ;;   @19:30:00 (:title "Conference Dinner"
 ;;              :role (:dinner)))
+
+;; (define-proceedings "../static/proceedings/20XX.pdf")
