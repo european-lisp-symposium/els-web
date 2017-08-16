@@ -3,7 +3,6 @@ This file is a part of els-web
 Author: Nicolas Hafner <shinmera@tymoon.eu>
 |#
 
-(in-package #:cl-user)
 (asdf:defsystem els-web
   :version "3.0.0"
   :license "Artistic"
