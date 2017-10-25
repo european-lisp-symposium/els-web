@@ -4,7 +4,7 @@
 
 ;;; Texts
 (define-text :announcement
-    (:div :class "announcement" "Plans for this conference are being made. Please wait patiently.")
+    (:div :class "announcement" "The conference is being organized. Stay tuned for updates!")
   ;; (:div :class "announcement" "Submissions are now open!")
   ;; (:div :class "announcement" "Registration is now open!")
   ;; (:div :class "announcement" "Registrations are closed!")
@@ -21,8 +21,8 @@
 ;; (define-date "Notification of acceptance" @20XX-MM-DD)
 ;; (define-date "Final papers" @20XX-MM-DD)
 
-(define-date "Conference start" @2018-01-01)
-(define-date "Conference end" @2018-01-02)
+(define-date "Conference start" @2018-04-16)
+(define-date "Conference end" @2018-04-17)
 
 ;;; Sponsors
 (define-sponsor epita
@@ -46,17 +46,17 @@
   :organization "ELS")
 
 ;;; Locations
-(define-location "Marbella, Spain"
+(define-location "Centro Cultural Cortijo de Miraflores"
   :role (:conference)
-  ;;   :photo "IMAGE URL"
-  ;;   :website "WEBSITE URL"
-  ;;   :address (:street "A"
-  ;;             :extended "B"
-  ;;             :post-code "C"
-  ;;             :city "D"
-  ;;             :country "E")
-  ;;   :map T
-  )
+  :photo "http://www.marbella.es/cultura/media/k2/galleries/114/museo_cortijo_miraflores_1098.jpg"
+  :website "http://www.marbella.es/cultura/centros/item/35-c-c-cortijo-de-miraflores.html"
+  ;; #### FIXME: this doesn't show the proper address in Maps!
+  :address (:street "29601, Calle, 10"
+	 ;; :extended "B"
+	    :post-code "29660"
+	    :city "Marbella, Malaga"
+	    :country "Spain")
+  :map T)
 
 ;;; Programme
 ;; (define-programme-day @20XX-MM-DDT00:00:00+ZZ:ZZ
