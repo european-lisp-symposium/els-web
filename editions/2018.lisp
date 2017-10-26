@@ -50,11 +50,10 @@
   :role (:conference)
   :photo "http://www.marbella.es/cultura/media/k2/galleries/114/museo_cortijo_miraflores_1098.jpg"
   :website "http://www.marbella.es/cultura/centros/item/35-c-c-cortijo-de-miraflores.html"
-  ;; #### FIXME: this doesn't show the proper address in Maps!
-  :address (:street "29601, Calle, 10"
+  :address (:street "C/ Camino del Trapiche s/n."
 	 ;; :extended "B"
-	    :post-code "29660"
-	    :city "Marbella, Malaga"
+	    :post-code "29601"
+	    :city "Marbella"
 	    :country "Spain")
   :map T)
 
