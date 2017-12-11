@@ -55,8 +55,7 @@
   :role (:conference)
   :photo "http://www.marbella.es/cultura/media/k2/galleries/114/museo_cortijo_miraflores_1098.jpg"
   :website "http://www.marbella.es/cultura/centros/item/35-c-c-cortijo-de-miraflores.html"
-  :address (:street "C/ Camino del Trapiche s/n."
-	 ;; :extended "B"
+  :address (:street "Calle San Pedro Alcantara, 10"
 	    :post-code "29601"
 	    :city "Marbella"
 	    :country "Spain")
