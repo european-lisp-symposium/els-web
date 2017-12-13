@@ -45,6 +45,11 @@
   :website "http://www.european-lisp-symposium.org"
   :organization "ELS")
 
+(define-person (:family-name "Cooper"
+		:given-name "David")
+  :role (:programme-chair)
+  :organization "Genworks Intl.")
+
 (define-person (:family-name "Lawson"
 		:given-name "Andrew")
   :role (:local-chair)
