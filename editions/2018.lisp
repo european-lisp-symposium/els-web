@@ -49,7 +49,7 @@
 (define-person (:family-name "Cooper"
 		:given-name "David")
   :role (:programme-chair)
-  :organization "Genworks Intl.")
+  :organization "Genworks")
 
 (define-person (:family-name "Lawson"
 		:given-name "Andrew")
