@@ -38,6 +38,10 @@
 ;;   :website "http://www.franz.com/"
 ;;   :logo "../static/logos/franz.png")
 
+(define-sponsor brunner
+  :website "http://www.systemhaus-brunner.de/"
+  :logo "../static/logos/brunner.png")
+
 ;;; People
 (define-person (:family-name "Verna"
 		:given-name "Didier")
