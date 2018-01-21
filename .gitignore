@@ -1,1 +1,4 @@
 secrets.lisp
+*.fasl
+*.dx64fsl
+
