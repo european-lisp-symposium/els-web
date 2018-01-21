@@ -56,6 +56,59 @@
   :role (:local-chair)
   :organization "Ravenpack")
 
+(define-person (:family-name "Durand"
+                :given-name "Irène")
+  :role (:committee)
+  :organization "Université Bordeaux"
+  :address (:country "France"))
+
+(define-person (:family-name "McKay"
+                :given-name "Scott")
+  :role (:committee)
+  :organization "Future Fuel"
+  :address (:country "USA"))
+
+(define-person (:family-name "Neuss"
+                :given-name "Nicolas")
+  :role (:committee)
+  :organization "Universität Karlsruhe"
+  :address (:country "Germany"))
+
+
+(define-person (:family-name "Rhodes"
+                :given-name "Christophe")
+  :role (:committee)
+  :organization "Goldsmiths University"
+  :address (:country "UK"))
+
+(define-person (:family-name "Padget"
+                :given-name "Julian")
+  :role (:committee)
+  :organization "University of Bath"
+  :address (:country "UK"))
+
+
+(define-person (:family-name "Strandh"
+                :given-name "Robert")
+  :role (:committee)
+  :organization "Université Bordeaux"
+  :address (:country "France"))
+
+
+(define-person (:family-name "Sperber"
+                :given-name "Michael")
+  :role (:committee)
+  :organization "DeinProgramm"
+  :address (:country "Germany"))
+
+(define-person (:family-name "Courtès"
+                :given-name "Ludovic")
+  :role (:committee)
+  :organization "Inria"
+  :address (:country "France"))
+
+
+
 ;;; Locations
 (define-location "Centro Cultural Cortijo de Miraflores"
   :role (:conference)
