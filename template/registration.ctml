@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>ELS registration</title>
+    <link rel="stylesheet" type="text/css" href="../output/static/els.css"/>
+  </head>
+  <body>
+    <header>
+      <h1><a href="../index.html">European Lisp Symposium</a></h1>
+      <nav class="editions" iterate="(query :edition)">
+        <a href="#" lquery='(text year) (attr :href (format NIL "../~a/index.html" year))
+                 (add-class (if current "current" "other"))'>20XX</a>
+      </nav>
+      <div class="dates">
+        <time lquery="(time (queryf :time :date '(= name :conference\ start)) :title)"/> - 
+        <time lquery="(time (queryf :time :date '(= name :conference\ end)) :title)"/>
+      </div>
+      <nav class="main">
+      </nav>
+    </header>
+    <main>
+      <article id="registration">
+        <h3>Registration</h3>
+        <noscript>
+          Sorry, JavaScript needs to be enabled for the registration.
+        </noscript>
+        <form action="/register" method="post" id="payment-form">
+          <div class="kind" iterate="(query :sku)">
+            <div>
+              <input type="radio" class="input" name="kind" lquery="(attr :value id :id id)" />
+              <label lquery='(attr :for id) (text kind)'>KIND</label>
+              <span class="price" lquery="(text price)" />
+            </div>
+          </div>
+          <div class="text-container name">
+            <input type="text" class="input empty" name="name" id="name" required />
+            <label for="name">Full Name</label>
+          </div>
+          <div class="supplementary">
+            <div class="text-container email">
+              <input type="email" class="input empty" name="email" id="email" required />
+              <label for="email">Email Address</label>
+            </div>
+            <div class="text-container affiliation">
+              <input type="text" class="input empty" name="affiliation" id="affiliation" />
+              <label for="affiliation">Affiliation</label>
+            </div>
+          </div>
+          <div class="text-container food-restrictions">
+            <input type="text" class="input empty" name="food-restrictions" id="food-restrictions" />
+            <label for="food-restrictions">Food restrictions</label>
+          </div>
+          <div class="card">
+            <div class="text-container">
+              <div id="card-number" class="input empty"></div>
+              <label for="card-number">Card number</label>
+            </div>
+            <div class="text-container">
+              <div id="card-expiry" class="input empty"></div>
+              <label for="card-expiry">Expiration</label>
+            </div>
+            <div class="text-container">
+              <div id="card-cvc" class="input empty"></div>
+              <label for="card-cvc">CVC</label>
+            </div>
+          </div>
+          <div class="options">
+            <span>Options:</span>
+            <div><input type="checkbox" name="banquet" id="banquet" checked />
+              <label for="banquet">Banquet</label></div>
+            <div><input type="checkbox" name="certificate" id="certificate" />
+              <label for="certificate">Attendance certificate</label></div>
+            <div><input type="checkbox" name="proceedings" id="proceedings" />
+              <label for="proceedings">Printed proceedings</label></div>
+          </div>
+          <div id="errors" role="alert"></div>
+          <button>Submit Registration</button>
+        </form>
+      </article>
+    </main>
+  </body>
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="../output/static/els.js"></script>
+</html>

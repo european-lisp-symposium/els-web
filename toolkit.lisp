@@ -51,6 +51,9 @@
 (defun directory-contents (dir)
   (directory (merge-pathnames pathname-utils:*wild-file* dir)))
 
+(defun enlist (a &rest rest)
+  (if (listp a) a (list* a rest)))
+
 (defun copy-file (from to &key (buffer 4096))
   (with-open-file (out to :direction :output :element-type '(unsigned-byte 8))
     (with-open-file (in from :direction :input :element-type '(unsigned-byte 8))

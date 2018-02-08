@@ -15,6 +15,7 @@ Author: Nicolas Hafner <shinmera@tymoon.eu>
 	       (:file "toolkit")
 	       (:file "secret")
 	       (:file "timestamp")
+               (:file "stripe")
 	       (:file "edition")
 	       (:file "query")
 	       (:file "calendar")
@@ -39,4 +40,7 @@ Author: Nicolas Hafner <shinmera@tymoon.eu>
 	       :alexandria
 	       :cl-who
 	       :cl-ppcre
-	       :named-readtables))
+	       :named-readtables
+               :drakma
+               :yason
+               :lambda-fiddle))

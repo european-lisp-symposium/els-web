@@ -171,6 +171,95 @@ var ELS = function(){
         return setter;
     }
 
+    self.initRegistration = function(){
+        var form = document.getElementById('payment-form');
+        var stripe = Stripe('pk_test_BfJybZ274ukk4HOqIaCLrAx1');
+        var elements = stripe.elements();
+
+        var inputs = form.querySelectorAll('.input');
+        Array.prototype.forEach.call(inputs, function(input) {
+            input.addEventListener('focus', function() {
+                input.classList.add('focused');
+            });
+            input.addEventListener('blur', function() {
+                input.classList.remove('focused');
+            });
+            input.addEventListener('keyup', function() {
+                if (input.value.length === 0) {
+                    input.classList.add('empty');
+                } else {
+                    input.classList.remove('empty');
+                }
+            });
+        });
+        
+        var elementClasses = {
+            focus: 'focused',
+            empty: 'empty',
+            invalid: 'invalid',
+        };
+
+        var elementStyles = {
+            base: {
+                fontSize: '18px',
+                '::placeholder': {color: 'transparent'}
+            }
+        };
+
+        var createElement = function(type, id){
+            var element = elements.create(type, {
+                style: elementStyles,
+                classes: elementClasses,
+            });
+            element.mount(id);
+            element.addEventListener('change', function(event) {
+                var displayError = document.getElementById('errors');
+                if (event.error) {
+                    displayError.textContent = event.error.message;
+                } else {
+                    displayError.textContent = '';
+                }
+            });
+            return element;
+        };
+
+        var card = createElement('cardNumber', "#card-number");
+        createElement('cardExpiry', "#card-expiry");
+        createElement('cardCvc', "#card-cvc");
+        
+        var stripeTokenHandler = function(token) {
+            var hiddenInput = document.createElement('input');
+            hiddenInput.setAttribute('type', 'hidden');
+            hiddenInput.setAttribute('name', 'stripeToken');
+            hiddenInput.setAttribute('value', token.id);
+            form.appendChild(hiddenInput);
+            form.submit();
+        };
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            var data = {
+                kind: document.querySelector(".kind [checked]").value,
+                name: document.getElementbyId("name").value,
+                email: document.getElementbyId("email").value,
+                affiliation: document.getElementbyId("affiliation").value,
+                foodRestrictions: document.getElementbyId("food-restrictions").value,
+                banquet: document.getElementbyId("banquet").checked,
+                certificate: document.getElementbyId("certificate").checked,
+                proceedings: document.getElementbyId("proceedings").checked
+            };
+
+            stripe.createToken(card, data).then(function(result) {
+                if (result.error) {
+                    var errorElement = document.getElementById('errors');
+                    errorElement.textContent = result.error.message;
+                } else {
+                    stripeTokenHandler(result.token);
+                }
+            });
+        });
+    }
+
     self.decorateBackground = function(num){
         var rand = function(n){return Math.random()*n};
         
@@ -209,6 +298,9 @@ var ELS = function(){
         if(document.getElementById("programme")){
             self.continuouslyUpdateProgramme();
             self.initTimeSetter();
+        }
+        if(document.getElementById("registration")){
+            self.initRegistration();
         }
         self.decorateBackground();
         self.log("Done.");

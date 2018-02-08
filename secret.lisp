@@ -9,8 +9,8 @@
 (defvar *secret*)
 
 (defun load-secrets (&optional (file *secret-file*))
-  (with-open-file (stream file :direction :input)
-    (setf *secret* (read stream))))
+  (with-open-file (stream file :direction :input :if-does-not-exist NIL)
+    (setf *secret* (if stream (read stream) NIL))))
 
 (defun save-secrets (&optional (file *secret-file*))
   (with-open-file (stream file :direction :output :if-exists :supersede)

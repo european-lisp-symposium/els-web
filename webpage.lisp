@@ -45,9 +45,21 @@
                   :current ,(if (g= edition current) T NIL))))
 
 (defun compile-edition-page (edition &key (if-exists :supersede)
-                                     (template (template "index.ctml")))
+                                          (template (template "index.ctml")))
   (let* ((edition (princ-to-string edition))
          (path (merge-pathnames "index.html" (pathname-utils:subdirectory *output-dir* edition))))
+    (when (prepare-path path :if-exists if-exists)
+      (compile-edition-template
+       template
+       path
+       (append (edition edition)
+               (editions-data edition)))
+      path)))
+
+(defun compile-registration-page (edition &key (if-exists :supersede)
+                                               (template (template "registration.ctml")))
+  (let* ((edition (princ-to-string edition))
+         (path (merge-pathnames "register.html" (pathname-utils:subdirectory *output-dir* edition))))
     (when (prepare-path path :if-exists if-exists)
       (compile-edition-template
        template
