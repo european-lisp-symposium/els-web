@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <title>ELS registration</title>
-    <link rel="stylesheet" type="text/css" href="../output/static/els.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/els.css"/>
   </head>
   <body>
     <header>
@@ -16,8 +16,7 @@
         <time lquery="(time (queryf :time :date '(= name :conference\ start)) :title)"/> - 
         <time lquery="(time (queryf :time :date '(= name :conference\ end)) :title)"/>
       </div>
-      <nav class="main">
-      </nav>
+      <nav class="main"></nav>
     </header>
     <main>
       <article id="registration">
@@ -25,10 +24,10 @@
         <noscript>
           Sorry, JavaScript needs to be enabled for the registration.
         </noscript>
-        <form action="/register" method="post" id="payment-form">
+        <form action="../static/register.php" method="post" id="payment-form">
           <div class="kind" iterate="(query :sku)">
             <div>
-              <input type="radio" class="input" name="kind" lquery="(attr :value id :id id)" />
+              <input type="radio" class="input" name="sku" lquery="(attr :value id :id id)" />
               <label lquery='(attr :for id) (text kind)'>KIND</label>
               <span class="price" lquery="(text price)" />
             </div>
@@ -67,11 +66,11 @@
           </div>
           <div class="options">
             <span>Options:</span>
-            <div><input type="checkbox" name="banquet" id="banquet" checked />
+            <div><input type="checkbox" name="banquet" id="banquet" value="yes" checked />
               <label for="banquet">Banquet</label></div>
-            <div><input type="checkbox" name="certificate" id="certificate" />
+            <div><input type="checkbox" name="certificate" id="certificate" value="yes" />
               <label for="certificate">Attendance certificate</label></div>
-            <div><input type="checkbox" name="proceedings" id="proceedings" />
+            <div><input type="checkbox" name="proceedings" id="proceedings" value="yes" />
               <label for="proceedings">Printed proceedings</label></div>
           </div>
           <div id="errors" role="alert"></div>
