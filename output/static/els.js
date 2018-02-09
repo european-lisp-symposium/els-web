@@ -71,6 +71,20 @@ var ELS = function(){
         return element;
     }
 
+    self.urlencode = function(string) {
+        return encodeURIComponent(string).replace(/[!'()*]/g, function(c) {
+            return '%' + c.charCodeAt(0).toString(16);
+        });
+    }
+
+    self.createPostPayload = function(data) {
+        var result = "";
+        for(var key in data){
+            result += self.urlencode(key)+"="+self.urlencode(data[key])+"&";
+        }
+        return result;
+    }
+
     self.findTimezoneOffset = function(){
         var programme = document.getElementById("programme");
         if(programme){
@@ -175,6 +189,7 @@ var ELS = function(){
         var form = document.getElementById('payment-form');
         var stripe = Stripe('pk_test_BfJybZ274ukk4HOqIaCLrAx1');
         var elements = stripe.elements();
+        var errors = document.getElementById('errors');
 
         var inputs = form.querySelectorAll('.input');
         Array.prototype.forEach.call(inputs, function(input) {
@@ -228,15 +243,32 @@ var ELS = function(){
         createElement('cardCvc', "#card-cvc");
         
         var stripeTokenHandler = function(token) {
-            var hiddenInput = document.createElement('input');
-            hiddenInput.setAttribute('type', 'hidden');
-            hiddenInput.setAttribute('name', 'stripe-token');
-            hiddenInput.setAttribute('value', token.id);
-            form.appendChild(hiddenInput);
-            form.submit();
+            self.log("Submitting registration to server-side script...");
+            var req = new XMLHttpRequest();
+            try {
+                req.onreadystatechange = function() {
+                    if (req.readyState == XMLHttpRequest.DONE) {
+                        if (req.status == 200) {
+                            self.log("Registration successful");
+                            // FIXME: Celebrate
+                        } else {
+                            self.log("Registration failed:",req.response);
+                            errors.textContent = req.response;
+                        }
+                    }
+                }
+                req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                req.open("POST", form.getAttribute("action"));
+                data["token"] = token.id;
+                req.send(self.createPostPayload(data));
+            } catch(err) {
+                self.log("Local failure:", err);
+                errors.textContent = ""+err;
+            }
         };
 
         form.addEventListener('submit', function(event) {
+            self.log("Received registration submit, creating token.");
             event.preventDefault();
             var data = {
                 kind: document.querySelector(".kind [checked]").value,
@@ -245,16 +277,17 @@ var ELS = function(){
                 affiliation: document.getElementbyId("affiliation").value,
                 foodRestrictions: document.getElementbyId("food-restrictions").value,
                 banquet: document.getElementbyId("banquet").checked,
-                certificate: document.getElementbyId("certificate").checked,
-                proceedings: document.getElementbyId("proceedings").checked
+                certificate: (document.getElementbyId("certificate").checked?"yes":"no"),
+                proceedings: (document.getElementbyId("proceedings").checked?"yes":"no")
             };
 
-            stripe.createToken(card, data).then(function(result) {
+            stripe.createToken(card, {name: data.name}).then(function(result) {
                 if (result.error) {
-                    var errorElement = document.getElementById('errors');
-                    errorElement.textContent = result.error.message;
+                    self.log("Token creation failed:",result);
+                    errors.textContent = result.error.message;
                 } else {
-                    stripeTokenHandler(result.token);
+                    self.log("Token creation successful.");
+                    stripeTokenHandler(result.token, data);
                 }
             });
         });
