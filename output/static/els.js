@@ -187,7 +187,8 @@ var ELS = function(){
 
     self.initRegistration = function(){
         var form = document.getElementById('payment-form');
-        var stripe = Stripe('pk_test_BfJybZ274ukk4HOqIaCLrAx1');
+        var pubkey = document.querySelector('head [name=stripe-public-key]').getAttribute("content");
+        var stripe = Stripe(pubkey);
         var elements = stripe.elements();
         var errors = document.getElementById('errors');
 

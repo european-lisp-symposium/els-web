@@ -54,8 +54,9 @@
 (define-condition unknown-stripe-error (stripe-error)
   ())
 
-(defun to-param-name (thing)
-  (cl-ppcre:regex-replace-all "-" (string-downcase thing) "_"))
+(eval-when (:compile-toplevel :load-toplevel :execute)
+  (defun to-param-name (thing)
+    (cl-ppcre:regex-replace-all "-" (string-downcase thing) "_")))
 
 (defun coerce-stripe-parameter (parameter)
   (destructuring-bind (param . value) parameter
@@ -68,9 +69,9 @@
           (T
            `((,param . ,value))))))
 
-(defun stripe-request (endpoint parameters &key (key (secret :stripe-api-key)) (method :get) endpoint-param)
+(defun stripe-request (endpoint parameters &key (key (secret :stripe-private-key)) (method :get) endpoint-params)
   (multiple-value-bind (stream code)
-      (drakma:http-request (format NIL "~a~a~@[/~a~]" *stripe-base* endpoint endpoint-param)
+      (drakma:http-request (format NIL "~a~a~{/~a~}" *stripe-base* endpoint endpoint-params)
                            :method method
                            :force-ssl T
                            :verify :required
@@ -98,7 +99,7 @@
       (close stream))))
 
 (defmacro define-endpoint (name endpoint args &body options)
-  (lambda-fiddle:with-destructured-lambda-list (:required required :optional optional) args
+  (lambda-fiddle:with-destructured-lambda-list (:required required :key optional) args
     (let ((optional (loop for opt in optional
                           for (var default) = (enlist opt)
                           collect (list var default (intern (format NIL "~a-~a" var 'p))))))
@@ -115,12 +116,12 @@
 (define-endpoint product "products" (id)
   :endpoint-param id)
 
-(define-endpoint list-products "products" (&optional active created ending-before ids limit shippable starting-after type url))
+(define-endpoint list-products "products" (&key active created ending-before ids limit shippable starting-after type url))
 
-(define-endpoint create-product "products" (id name type &optional active attributes caption deactivate-on description images metadata package-dimensions shippable statement-descriptor url)
+(define-endpoint create-product "products" (id name type &key active attributes caption deactivate-on description images metadata package-dimensions shippable statement-descriptor url)
   :method :post)
 
-(define-endpoint update-product "products" (id &optional active attributes caption deactivate-on description images metadata name package-dimensions shippable statement-descriptor url)
+(define-endpoint update-product "products" (id &key active attributes caption deactivate-on description images metadata name package-dimensions shippable statement-descriptor url)
   :endpoint-param id
   :method :post)
 
@@ -128,18 +129,45 @@
   :endpoint-param id
   :method :delete)
 
+(defun ensure-product (id name type &rest options)
+  (handler-case
+      (apply #'update-product id :name name options)
+    (invalid-request-error (err)
+      (declare (ignore err))
+      (apply #'create-product id name type options))))
+
 (define-endpoint sku "skus" (id)
-  :endpoint-param id)
+  :endpoint-params (list id))
 
-(define-endpoint list-skus "skus" (&optional active attributes ending-before ids in-stock limit product starting-after))
+(define-endpoint list-skus "skus" (&key active attributes ending-before ids in-stock limit product starting-after))
 
-(define-endpoint create-sku "skus" (product id price &optional (currency "eur") (quantity '(("type" . "infinite"))) (active "true") attributes image metadata package-dimensions)
+(define-endpoint create-sku "skus" (product id price &key (currency "eur") (quantity '(("type" . "infinite"))) (active "true") attributes image metadata package-dimensions)
   :method :post)
 
-(define-endpoint update-sku "skus" (id &optional active attributes currency image inventory metadata package-dimensions price product)
-  :endpoint-param id
+(define-endpoint update-sku "skus" (id &key active attributes currency image inventory metadata package-dimensions price product)
+  :endpoint-params (list id)
   :method :post)
 
 (define-endpoint delete-sku "skus" (id)
-  :endpoint-param id
+  :endpoint-params (list id)
   :method :delete)
+
+(defun ensure-sku (product id price &rest options)
+  (handler-case
+      (apply #'update-sku id :price price :product product options)
+    (invalid-request-error (err)
+      (declare (ignore err))
+      (apply #'create-sku product id price options))))
+
+(define-endpoint order "orders" (id)
+  :endpoint-params (list id))
+
+(define-endpoint list-orders "orders" (&key created customer ending-before ids limit starting-after status status-transitions upstream-ids))
+
+(define-endpoint update-order "orders" (id &key coupon metadata selected-shipping-method shipping status)
+  :endpoint-params (list id)
+  :method :post)
+
+(define-endpoint return-order "orders" (id &key items)
+  :endpoint-params (list id "returns")
+  :method :post)

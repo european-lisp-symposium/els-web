@@ -119,3 +119,29 @@
   `(record '(:record-type :proceedings
              :website ,website)
            '(:record-type)))
+
+(defmacro define-registration ((kind active &rest options) &body skus)
+  (destructuring-bind (&key (id (format NIL "ELS-~a-~a" (package-name *package*) kind))
+                            (name (format NIL "European Lisp Symposium ~a" (package-name *package*)))
+                            &allow-other-keys) options
+    (let ((options (copy-list options)))
+      (remf options :id) (remf options :name)
+      `(progn (ensure-product ,id ,name "good"
+                              :active ,(ecase active
+                                         (:active "true")
+                                         (:inactive "false"))
+                              ,@options)
+              ,@(loop for (name . options) in skus
+                      for sku-id = (format NIL "~a-~a" id name)
+                      for pure-opts = (copy-list options)
+                      do (remf pure-opts :price)
+                      nconc `((record '(:record-type :registration
+                                        :id ,sku-id
+                                        :name ,name
+                                        :price ,(getf options :price)
+                                        :status ,active))
+                              (ensure-sku ,id ,sku-id ,(round (* (getf options :price) 100))
+                                          :active ,(ecase active
+                                                     (:active "true")
+                                                     (:inactive "false"))
+                                          ,@options)))))))
