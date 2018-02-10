@@ -117,7 +117,9 @@ These weakened comparisons are done to make it more convenient to extract the da
 ## Secrets File
 Some parts of the website require keys and tokens that should not be made public in a repository like this. Thus, this includes a simple "secrets" mechanism. The system expects a file called `secrets.lisp` within its root directory. This file should contain a single plist. The following keys are required:
 
-* `:google-api-key` The public key provided to you by [google](https://console.developers.google.com/flows/enableapi?apiid=maps_backend,geocoding_backend,directions_backend,distance_matrix_backend,elevation_backend,places_backend&reusekey=true).
+* `:google-api-key` The public key provided to you by [Google](https://console.developers.google.com/flows/enableapi?apiid=maps_backend,geocoding_backend,directions_backend,distance_matrix_backend,elevation_backend,places_backend&reusekey=true).
+* `:stripe-public-key` The public key provided by [Stripe](https://dashboard.stripe.com/account/apikeys).
+* `:stripe-private-key` The private key provided by Stripe.
 
 More keys may be added at a later point to facilitate the registration process.
 

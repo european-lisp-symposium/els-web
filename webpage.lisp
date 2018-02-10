@@ -56,18 +56,6 @@
                (editions-data edition)))
       path)))
 
-(defun compile-registration-page (edition &key (if-exists :supersede)
-                                               (template (template "registration.ctml")))
-  (let* ((edition (princ-to-string edition))
-         (path (merge-pathnames "register.html" (pathname-utils:subdirectory *output-dir* edition))))
-    (when (prepare-path path :if-exists if-exists)
-      (compile-edition-template
-       template
-       path
-       (append (edition edition)
-               (editions-data edition)))
-      path)))
-
 (defun compile-toplevel-page (&key (template (template "toplevel.ctml")))
   (let ((path (merge-pathnames "index.html" *output-dir*)))
     (compile-edition-template
