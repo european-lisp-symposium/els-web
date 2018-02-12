@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width"/>
     <meta name="description" content="Homepage for the European Lisp Symposium"/>
     <meta name="robots" content="index, follow"/>
+    <meta name="stripe-public-key" lquery="(attr :content (secret :stripe-public-key))"/>
   </head>
   <body>
     <header>
@@ -26,7 +27,7 @@
         <c:when test="(or (query :person '(or (in role :programme-chair) (in role :local-chair) (in role :committee))) (query :sponsor))">
           <a href="#organization">Organization</a>
         </c:when>
-        <c:when test="(query :registration '(eql status :active))">
+        <c:when test="(query :registration '(= status :active))">
           <a href="#registration">Registration</a>
         </c:when>
         <c:when test="(query :location)">
@@ -122,7 +123,7 @@
           </section>
         </c:when>
 
-        <c:when test="(query :registration '(eql status :active))">
+        <c:when test="(query :registration '(= status :active))">
           <c:splice lquery="(template :registration)" />
         </c:when>
 
