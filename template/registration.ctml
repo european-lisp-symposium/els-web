@@ -4,7 +4,7 @@
     Sorry, JavaScript needs to be enabled for the registration.
   </noscript>
   <form action="../static/register.php" method="post" id="payment-form">
-    <div class="kind" iterate="(query :registration '(eql status :active))">
+    <div class="kind" iterate="(query :registration-sku '(eql status :active))">
       <div>
         <input type="radio" class="input" name="kind" lquery="(attr :value id :id id)" />
         <label lquery='(attr :for id) (text name)'>KIND</label>
