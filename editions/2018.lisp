@@ -207,3 +207,8 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 ;;              :role (:dinner)))
 
 ;; (define-proceedings "../static/proceedings/2018.pdf")
+
+(define-registration ("early" :active)
+  ("regular" :price 120)
+  ("student" :price 60)
+  ("companion" :price 40))

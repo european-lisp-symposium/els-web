@@ -126,22 +126,20 @@
                             &allow-other-keys) options
     (let ((options (copy-list options)))
       (remf options :id) (remf options :name)
-      `(progn (ensure-product ,id ,name "good"
-                              :active ,(ecase active
-                                         (:active "true")
-                                         (:inactive "false"))
-                              ,@options)
+      `(progn (record '(:record-type :registration
+                        :id ,id
+                        :name ,name
+                        :status ,active
+                        ,@options)
+                      '(:record-type :id))
               ,@(loop for (name . options) in skus
                       for sku-id = (format NIL "~a-~a" id name)
                       for pure-opts = (copy-list options)
                       do (remf pure-opts :price)
-                      nconc `((record '(:record-type :registration
-                                        :id ,sku-id
-                                        :name ,name
-                                        :price ,(getf options :price)
-                                        :status ,active))
-                              (ensure-sku ,id ,sku-id ,(round (* (getf options :price) 100))
-                                          :active ,(ecase active
-                                                     (:active "true")
-                                                     (:inactive "false"))
-                                          ,@options)))))))
+                      collect `(record '(:record-type :registration-sku
+                                         :product ,id
+                                         :id ,sku-id
+                                         :name ,name
+                                         :price ,(getf options :price)
+                                         :status ,active)
+                                       '(:record-type :id)))))))
