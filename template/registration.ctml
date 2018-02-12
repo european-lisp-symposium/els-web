@@ -4,11 +4,12 @@
     Sorry, JavaScript needs to be enabled for the registration.
   </noscript>
   <form action="../static/register.php" method="post" id="payment-form">
-    <div class="kind" iterate="(query :registration-sku '(eql status :active))">
+    <div class="kind" iterate="(query :registration-sku '(= status :active) :sort '(:price :dsc))">
       <div>
         <input type="radio" class="input" name="kind" lquery="(attr :value id :id id)" />
-        <label lquery='(attr :for id) (text name)'>KIND</label>
-        <span class="price" lquery="(text price)" />
+        <label lquery='(attr :for id) (text name)'>KIND
+          <span class="price" lquery="(text price)" />
+        </label>
       </div>
     </div>
     <div class="text-container name">
@@ -29,6 +30,15 @@
       <input type="text" class="input empty" name="food-restrictions" id="food-restrictions" />
       <label for="food-restrictions">Food restrictions</label>
     </div>
+    <div class="options">
+      <span>Options:</span>
+      <div><input type="checkbox" name="banquet" id="banquet" checked />
+        <label for="banquet">Banquet</label></div>
+      <div><input type="checkbox" name="certificate" id="certificate" />
+        <label for="certificate">Attendance certificate</label></div>
+      <div><input type="checkbox" name="proceedings" id="proceedings" />
+        <label for="proceedings">Printed proceedings</label></div>
+    </div>
     <div class="card">
       <div class="text-container">
         <div id="card-number" class="input empty"></div>
@@ -42,15 +52,6 @@
         <div id="card-cvc" class="input empty"></div>
         <label for="card-cvc">CVC</label>
       </div>
-    </div>
-    <div class="options">
-      <span>Options:</span>
-      <div><input type="checkbox" name="banquet" id="banquet" checked />
-        <label for="banquet">Banquet</label></div>
-      <div><input type="checkbox" name="certificate" id="certificate" />
-        <label for="certificate">Attendance certificate</label></div>
-      <div><input type="checkbox" name="proceedings" id="proceedings" />
-        <label for="proceedings">Printed proceedings</label></div>
     </div>
     <div id="errors" role="alert"></div>
     <button>Submit Registration</button>

@@ -136,7 +136,6 @@
      :padding 10px
      (.kind
       :margin 0 0 1em 0
-      :border-bottom 1px solid #(main-bg)
       :display flex
       :align-items center
       (>* :flex-grow 1)
@@ -144,12 +143,14 @@
       (label :text-align center
              :display block
              :white-space nowrap
-             (.price :color #(main-bg))
-             (".price::after" :content "€"))
+             :border 1px solid transparent
+             :border-bottom 1px solid #(main-bg))
+      (.price :color #(main-bg)
+              :padding 0 5px 0 5px)
+      (".price::after" :content "€")
       ("input:checked+label"
        :border 1px solid #(main-bg)
-       :border-bottom 1px solid white
-       :margin-bottom -1px))
+       :border-bottom 1px solid white))
      (.options
       :display flex
       (span :flex-grow 1)
@@ -167,30 +168,31 @@
       (">:nth-child(1)" :flex-grow 1)
       (">:nth-child(2)" :min-width 5em :margin 0 0.5em 0 0.5em)
       (">:nth-child(3)" :min-width 3em))
-     (input :font-size 1.0em)
-     (.input
-      :width 100%
-      :border none
-      :border-bottom 1px solid gray
-      :background none
-      (.empty :color transparent))
-     (.input.focused
-      :border-color #(main-bg)
-      :outline none)
-     (.input+label
-      :position absolute
-      :left 0
-      :top -1em
-      :font-size 0.2em
-      :color gray)
-     (.input.empty+label
-      :font-size 1em
-      :top 0)
-     (.input.focused+label
-      :font-size 0.2em
-      :top -1em)
-     (.input.focused+label
-      :color #(main-bg))
+     (.text-container
+      (input :font-size 1.0em)
+      (.input
+       :width 100%
+       :border none
+       :border-bottom 1px solid gray
+       :background none
+       (.empty :color transparent))
+      (.input.focused
+       :border-color #(main-bg)
+       :outline none)
+      (.input+label
+       :position absolute
+       :left 0
+       :top -1em
+       :font-size 0.2em
+       :color gray)
+      (.input.empty+label
+       :font-size 1em
+       :top 0)
+      (.input.focused+label
+       :font-size 0.2em
+       :top -1em)
+      (.input.focused+label
+       :color #(main-bg)))
      ("#errors"
       :margin 0.5em 0 1em 0
       :background red
