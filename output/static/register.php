@@ -1,13 +1,21 @@
 <?php
 $message = "";
+$failed = false;
 
-$matches = array();
 $secrets = file_get_contents(__DIR__."/../../secrets.lisp");
-if(preg_match('/:stripe-private-key\\s*\"([\\w\\d_]*)\"/', $secrets, $matches) == 1){
-    $stripe_private_key = $matches[1]; 
-}else{
-    $message = "Internal error.";
+function secret($key) {
+    global $secrets, $message, $failed;
+    $matches = array();
+    if(preg_match('/:'.$key.'\\s*\"([^\"]*)\"/', $secrets, $matches) == 1){
+        return $matches[1]; 
+    }else{
+        $message = "Internal error: key ".$key." not configured in secrets.lisp";
+        $failed = true;
+    }
 }
+
+$stripe_private_key = secret("stripe-private-key");
+$stripe_init = secret("stripe-init");
 
 $missing = array();
 if(!$_POST['token']){ $missing[] = "Credit card transaction"; }
@@ -16,11 +24,12 @@ if(!$_POST['name']){ $missing[] = "Name"; }
 if(!$_POST['email']){ $missing[] = "Email"; }
 if(!empty($missing)){
     $message = "Missing fields: ".join(", ", $missing);
+    $failed = true;
 }
 
-if($message == ""){
+if($failed == false){
     try{
-        require_once('/media/DATA/Projects/php/stripe-php-6.1.0/init.php');
+        require_once($stripe_init);
         \Stripe\Stripe::setApiKey($stripe_private_key);
         $order = \Stripe\Order::create(array(
             "currency" => "eur",
@@ -43,28 +52,29 @@ if($message == ""){
         ));
         
         $order->pay(array("source" => $_POST['token']));
+        $message = $order->id;
     } catch(Stripe_CardError $e) {
         $message = $e->getMessage();
+        $failed = true;
     } catch (Stripe_InvalidRequestError $e) {
-        // Invalid parameters were supplied to Stripe's API
         $message = $e->getMessage();
+        $failed = true;
     } catch (Stripe_AuthenticationError $e) {
-        // Authentication with Stripe's API failed
         $message = $e->getMessage();
+        $failed = true;
     } catch (Stripe_ApiConnectionError $e) {
-        // Network communication with Stripe failed
         $message = $e->getMessage();
+        $failed = true;
     } catch (Stripe_Error $e) {
-        // Display a very generic error to the user, and maybe send
-        // yourself an email
         $message = $e->getMessage();
+        $failed = true;
     } catch (Exception $e) {
-        // Something else happened, completely unrelated to Stripe
         $message = $e->getMessage();
+        $failed = true;
     }
 }
 
-if($message == ""){
+if($failed == false){
     header('X-PHP-Response-Code: 200', true, 200);
 }else{
     header('X-PHP-Response-Code: 400', true, 400);
