@@ -15,7 +15,7 @@
 (defun save-secrets (&optional (file *secret-file*))
   (with-open-file (stream file :direction :output :if-exists :supersede)
     (let ((*print-case* :downcase))
-      (format stream "(~{~a ~s~^~% ~})" *secret*))))
+      (format stream "(~{~s ~s~^~% ~})" *secret*))))
 
 (defun secret (name)
   (unless (boundp '*secret*)
