@@ -138,31 +138,24 @@
       :margin 0 0 1em 0
       :display flex
       :align-items center
-      (>* :flex-grow 1)
-      (input :display none :margin 0 0.5em 0 2em)
-      (label :text-align center
-             :display block
-             :white-space nowrap
-             :border 1px solid transparent
-             :border-bottom 1px solid #(main-bg))
+      (>* :flex-grow 1
+          :text-align center)
+      (label :white-space nowrap)
       (.price :color #(main-bg)
               :padding 0 5px 0 5px)
-      (".price::after" :content "€")
-      ("input:checked+label"
-       :border 1px solid #(main-bg)
-       :border-bottom 1px solid white))
-     (.options
-      :display flex
-      (span :flex-grow 1)
-      (div :margin 0 0 0 2em))
+      (".price::after" :content "€"))
      (.text-container
       :position relative)
-     ((:or .name .supplementary .card)
+     ((:or .name .supplementary .options .card)
       :margin 0.8em 0 0.8em 0)
      (.supplementary
       :display flex
       (">:nth-child(1)" :flex-grow 1)
       (">:nth-child(2)" :min-width 30% :margin 0 0 0 0.5em))
+     (.options
+      :display flex
+      (span :flex-grow 1)
+      (div :margin 0 0 0 2em))
      (.card
       :display flex
       (">:nth-child(1)" :flex-grow 1)
@@ -193,10 +186,9 @@
        :top -1em)
       (.input.focused+label
        :color #(main-bg)))
-     ("#errors"
+     (".errors"
       :margin 0.5em 0 1em 0
-      :background red
-      :color white
+      :background "#FF5555"
       :font-weight bold
       :padding 0 5px 0 5px)
      (button

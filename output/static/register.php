@@ -1,25 +1,34 @@
 <?php
-\Stripe\Stripe::setApiKey("FIXME FIXME FIXME");
-
 $message = "";
-$missing = array();
 
+$matches = array();
+$secrets = file_get_contents(__DIR__."/../../secrets.lisp");
+if(preg_match('/:stripe-private-key\\s*\"([\\w\\d_]*)\"/', $secrets, $matches) == 1){
+    $stripe_private_key = $matches[1]; 
+}else{
+    $message = "Internal error.";
+}
+
+$missing = array();
 if(!$_POST['token']){ $missing[] = "Credit card transaction"; }
-if(!$_POST['sku']){ $missing[] = "Type of attendance"; }
+if(!$_POST['kind']){ $missing[] = "Type of attendance"; }
 if(!$_POST['name']){ $missing[] = "Name"; }
 if(!$_POST['email']){ $missing[] = "Email"; }
-
 if(!empty($missing)){
     $message = "Missing fields: ".join(", ", $missing);
-}else{
+}
+
+if($message == ""){
     try{
+        require_once('/media/DATA/Projects/php/stripe-php-6.1.0/init.php');
+        \Stripe\Stripe::setApiKey($stripe_private_key);
         $order = \Stripe\Order::create(array(
             "currency" => "eur",
             "email" => $_POST['email'],
             "items" => array(
                 array(
                     "type" => "sku",
-                    "parent" => $_POST['sku'],
+                    "parent" => $_POST['kind'],
                 )
             ),
             "metadata" => array(
@@ -34,7 +43,6 @@ if(!empty($missing)){
         ));
         
         $order->pay(array("source" => $_POST['token']));
-        $message = "Payment processed successfully.";
     } catch(Stripe_CardError $e) {
         $message = $e->getMessage();
     } catch (Stripe_InvalidRequestError $e) {
@@ -56,7 +64,7 @@ if(!empty($missing)){
     }
 }
 
-if($status == "success"){
+if($message == ""){
     header('X-PHP-Response-Code: 200', true, 200);
 }else{
     header('X-PHP-Response-Code: 400', true, 400);
