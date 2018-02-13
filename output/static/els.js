@@ -192,10 +192,10 @@ var ELS = function(){
             req.onreadystatechange = function() {
                 if (req.readyState == XMLHttpRequest.DONE) {
                     if (req.status == 200) {
-                        self.log("Registration successful");
-                        success();
+                        self.log("Registration successful:", req.response);
+                        success(req.response);
                     } else {
-                        self.log("Registration failed:",req.response);
+                        self.log("Registration failed:", req.response);
                         failure(req.response);
                     }
                 }
