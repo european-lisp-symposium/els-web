@@ -185,12 +185,36 @@ var ELS = function(){
         return setter;
     }
 
+    self.submitRegistration = function(target, data, success, failure) {
+        self.log("Submitting registration to server-side script...");
+        var req = new XMLHttpRequest();
+        try {
+            req.onreadystatechange = function() {
+                if (req.readyState == XMLHttpRequest.DONE) {
+                    if (req.status == 200) {
+                        self.log("Registration successful");
+                        success();
+                    } else {
+                        self.log("Registration failed:",req.response);
+                        failure(req.response);
+                    }
+                }
+            }
+            req.open("POST", target);
+            req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            req.send(self.createPostPayload(data));
+        } catch(err) {
+            self.log("Local failure:", err);
+            failure(err);
+        }
+    };
+
     self.initRegistration = function(){
-        var form = document.getElementById('payment-form');
+        var form = document.querySelector("#registration form");
         var pubkey = document.querySelector('head [name=stripe-public-key]').getAttribute("content");
         var stripe = Stripe(pubkey);
         var elements = stripe.elements();
-        var errors = document.getElementById('errors');
+        var errors = form.querySelector('.errors');
 
         var inputs = form.querySelectorAll('.input');
         Array.prototype.forEach.call(inputs, function(input) {
@@ -229,58 +253,34 @@ var ELS = function(){
             });
             element.mount(id);
             element.addEventListener('change', function(event) {
-                var displayError = document.getElementById('errors');
                 if (event.error) {
-                    displayError.textContent = event.error.message;
+                    errors.textContent = event.error.message;
                 } else {
-                    displayError.textContent = '';
+                    errors.textContent = '';
                 }
             });
             return element;
         };
 
-        var card = createElement('cardNumber', "#card-number");
-        createElement('cardExpiry', "#card-expiry");
-        createElement('cardCvc', "#card-cvc");
-        
-        var stripeTokenHandler = function(token) {
-            self.log("Submitting registration to server-side script...");
-            var req = new XMLHttpRequest();
-            try {
-                req.onreadystatechange = function() {
-                    if (req.readyState == XMLHttpRequest.DONE) {
-                        if (req.status == 200) {
-                            self.log("Registration successful");
-                            // FIXME: Celebrate
-                        } else {
-                            self.log("Registration failed:",req.response);
-                            errors.textContent = req.response;
-                        }
-                    }
-                }
-                req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                req.open("POST", form.getAttribute("action"));
-                data["token"] = token.id;
-                req.send(self.createPostPayload(data));
-            } catch(err) {
-                self.log("Local failure:", err);
-                errors.textContent = ""+err;
-            }
-        };
+        var card = createElement('cardNumber', form.querySelector("#card-number"));
+        createElement('cardExpiry', form.querySelector("#card-expiry"));
+        createElement('cardCvc', form.querySelector("#card-cvc"));
 
         form.addEventListener('submit', function(event) {
             self.log("Received registration submit, creating token.");
             event.preventDefault();
             var data = {
-                kind: document.querySelector(".kind [checked]").value,
-                name: document.getElementbyId("name").value,
-                email: document.getElementbyId("email").value,
-                affiliation: document.getElementbyId("affiliation").value,
-                foodRestrictions: document.getElementbyId("food-restrictions").value,
-                banquet: document.getElementbyId("banquet").checked,
-                certificate: (document.getElementbyId("certificate").checked?"yes":"no"),
-                proceedings: (document.getElementbyId("proceedings").checked?"yes":"no")
+                kind: form.querySelector(".kind input:checked").value,
+                name: form.querySelector("#name").value,
+                email: form.querySelector("#email").value,
+                affiliation: form.querySelector("#affiliation").value,
+                foodRestrictions: form.querySelector("#food-restrictions").value,
+                banquet: (form.querySelector("#banquet").checked?"yes":"no"),
+                certificate: (form.querySelector("#certificate").checked?"yes":"no"),
+                proceedings: (form.querySelector("#proceedings").checked?"yes":"no")
             };
+
+            // FIXME: Display busy
 
             stripe.createToken(card, {name: data.name}).then(function(result) {
                 if (result.error) {
@@ -288,7 +288,9 @@ var ELS = function(){
                     errors.textContent = result.error.message;
                 } else {
                     self.log("Token creation successful.");
-                    stripeTokenHandler(result.token, data);
+                    data["token"] = result.token.id;
+                    self.submitRegistration(form.getAttribute("action"), data,
+                                            function(){}, function(e){errors.textContent = e;});
                 }
             });
         });

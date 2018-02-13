@@ -23,7 +23,8 @@
                           :direction :output
                           :if-exists :supersede)
     (let ((*package* #.*package*)
-          (target (plump:parse template)))
+          (target (plump:parse template))
+          (plump:*tag-dispatchers* plump:*html-tags*))
       (plump:serialize
        (compact
         (clip:with-clipboard-bound (data)

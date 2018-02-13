@@ -189,6 +189,7 @@
                        (:active "true")
                        (:inactive "false"))
              :attributes '("name")
+             :shippable "false"
              options))
     (dolist (options (query :registration-sku))
       (apply #'ensure-sku (getf options :product) (getf options :id)

@@ -3,40 +3,40 @@
   <noscript>
     Sorry, JavaScript needs to be enabled for the registration.
   </noscript>
-  <form action="../static/register.php" method="post" id="payment-form">
+  <form action="../static/register.php" method="post">
     <div class="kind" iterate="(query :registration-sku '(= status :active) :sort '(:price :dsc))">
       <div>
-        <input type="radio" class="input" name="kind" lquery="(attr :value id :id id)" />
+        <input type="radio" class="input" name="kind" required lquery="(attr :value id :id id)" />
         <label lquery='(attr :for id) (text name)'>KIND
           <span class="price" lquery="(text price)" />
         </label>
       </div>
     </div>
     <div class="text-container name">
-      <input type="text" class="input empty" name="name" id="name" required />
+      <input type="text" class="input empty" id="name" required />
       <label for="name">Full Name</label>
     </div>
     <div class="supplementary">
       <div class="text-container email">
-        <input type="email" class="input empty" name="email" id="email" required />
+        <input type="email" class="input empty" id="email" required />
         <label for="email">Email Address</label>
       </div>
       <div class="text-container affiliation">
-        <input type="text" class="input empty" name="affiliation" id="affiliation" />
+        <input type="text" class="input empty" id="affiliation" />
         <label for="affiliation">Affiliation</label>
       </div>
     </div>
     <div class="text-container food-restrictions">
-      <input type="text" class="input empty" name="food-restrictions" id="food-restrictions" />
+      <input type="text" class="input empty" id="food-restrictions" />
       <label for="food-restrictions">Food restrictions</label>
     </div>
     <div class="options">
       <span>Options:</span>
-      <div><input type="checkbox" name="banquet" id="banquet" checked />
+      <div><input type="checkbox" id="banquet" checked />
         <label for="banquet">Banquet</label></div>
-      <div><input type="checkbox" name="certificate" id="certificate" />
+      <div><input type="checkbox" id="certificate" />
         <label for="certificate">Attendance certificate</label></div>
-      <div><input type="checkbox" name="proceedings" id="proceedings" />
+      <div><input type="checkbox" id="proceedings" />
         <label for="proceedings">Printed proceedings</label></div>
     </div>
     <div class="card">
@@ -53,7 +53,7 @@
         <label for="card-cvc">CVC</label>
       </div>
     </div>
-    <div id="errors" role="alert"></div>
+    <div class="errors" role="alert"></div>
     <button>Submit Registration</button>
   </form>
   <script src="https://js.stripe.com/v3/"></script>
