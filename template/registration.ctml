@@ -1,7 +1,7 @@
 <article id="registration">
   <h3>Registration</h3>
   <noscript>
-    Sorry, JavaScript needs to be enabled for the registration.
+    Sorry, JavaScript is required for the registration.
   </noscript>
   <form action="../static/register.php" method="post">
     <div class="kind" iterate="(query :registration-sku '(= status :active) :sort '(:price :dsc))">
