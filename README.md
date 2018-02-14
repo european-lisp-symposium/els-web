@@ -115,13 +115,20 @@ Comparison between values is done through `g=`, which is a form of "generalised 
 These weakened comparisons are done to make it more convenient to extract the data within templates.
 
 ## Secrets File
-Some parts of the website require keys and tokens that should not be made public in a repository like this. Thus, this includes a simple "secrets" mechanism. The system expects a file called `secrets.lisp` within its root directory. This file should contain a single plist. The following keys are required:
+Some parts of the website require keys and tokens that should not be made public in a repository like this. Thus, this includes a simple "secrets" mechanism. The system expects a file called `secrets.lisp` within its root directory. This file should contain a single plist of keywords to strings. The following keys are required:
 
 * `:google-api-key` The public key provided to you by [Google](https://console.developers.google.com/flows/enableapi?apiid=maps_backend,geocoding_backend,directions_backend,distance_matrix_backend,elevation_backend,places_backend&reusekey=true).
+* `:stripe` A path to the [Stripe PHP library](https://github.com/stripe/stripe-php) root folder.
 * `:stripe-public-key` The public key provided by [Stripe](https://dashboard.stripe.com/account/apikeys).
 * `:stripe-private-key` The private key provided by Stripe.
+* `:mailer` A path to the [PHPMailer](https://github.com/PHPMailer/PHPMailer) root folder.
+* `:mailer-host` The hostname of the SMTP server.
+* `:mailer-port` The port to connect through (usually 587 for SSL).
+* `:mailer-ssl` One of `"false"`, `"true"`, `"self-signed"`. Note that the self-signed option disables certificate checking.
+* `:mailer-user` The username to connect to the SMTP server with.
+* `:mailer-pass` The password for the user account.
 
-More keys may be added at a later point to facilitate the registration process.
+Note that for Stripe you should use the provided testing keys during development, and use the production keys for the deployed website. Using either key set on the other environment is a very bad idea.
 
 ## Writing the Templates
 The templates are written using the [Clip](https://shinmera.github.io/clip/) system. For the most part the data is introduced using the aforementioned `query` function, and its abbreviations `query1` and `queryf`. Common structures like locations, people, and programme entries are separated out of the primary `index.ctml` template and spliced back in using the `<c:splice>` tag.
@@ -132,3 +139,8 @@ What's going on in the templates should not be too difficult to figure out. Othe
 You can compile the edition data using `compile-edition`. When you add or remove an edition, you should also compile all the other ones as well, in order to ensure the cross-links are still valid. You can do so with `compile-all-editions`.
 
 The resulting static files will be placed in the `output` directory, automatically overwriting previous files. In order to publish the site, you simply need to copy the entire `output` directory, or make it visible through a webserver somehow.
+
+## Deploying on a Server
+In order to deploy ELS-web on a server, you will need a PHP5 capable server. I'm well aware that using PHP sounds like heresy for a Lisp project, but many servers don't offer direct root access to run a Lisp instance.
+
+Either way, in order to deploy it, you will need the full ELS-web repository, including a filled out `secrets.lisp` file. The server-side registration script will access this file to retrieve some options. While the root of the project does need to be accessible to PHP, it should naturally not be accessible to the web. The document root that your web server should serve is the `output` directory.
