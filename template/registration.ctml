@@ -53,7 +53,6 @@
         <label for="card-cvc">CVC</label>
       </div>
     </div>
-    <div class="errors" role="alert"></div>
     <button>Submit Registration</button>
   </form>
   <script src="https://js.stripe.com/v3/"></script>

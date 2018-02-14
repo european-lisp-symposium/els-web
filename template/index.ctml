@@ -22,14 +22,14 @@
         <time lquery="(time (queryf :time :date '(= name :conference\ end)) :title)"/>
       </div>
       <nav class="main">
+        <c:when test="(query :registration '(= status :active))">
+          <a href="#registration">Registration</a>
+        </c:when>
         <c:when test="(query :date '(= name :final\ papers))">
           <a href="#submissions">Submissions</a>
         </c:when>
         <c:when test="(or (query :person '(or (in role :programme-chair) (in role :local-chair) (in role :committee))) (query :sponsor))">
           <a href="#organization">Organization</a>
-        </c:when>
-        <c:when test="(query :registration '(= status :active))">
-          <a href="#registration">Registration</a>
         </c:when>
         <c:when test="(query :location)">
           <a href="#location">Location</a>
@@ -66,6 +66,10 @@
               </ul>
             </c:when>
           </section>
+        </c:when>
+
+        <c:when test="(query :registration '(= status :active))">
+          <c:splice lquery="(template :registration)" />
         </c:when>
 
         <c:when test="(query :programme-entry '(in role :keynote))">
@@ -124,10 +128,6 @@
           </section>
         </c:when>
 
-        <c:when test="(query :registration '(= status :active))">
-          <c:splice lquery="(template :registration)" />
-        </c:when>
-
         <c:when test="(query :programme-entry)">
           <section id="programme">
             <h3>Programme</h3>
@@ -153,6 +153,17 @@
       </c:when>
     </main>
     <c:splice lquery="(template :footer)" />
+    <div id="failure" class="message-box" role="alert"></div>
+    <div id="success" class="message-box" role="alert"></div>
+    <div id="busy">
+      <h4>Please wait...</h4>
+      <div class="busy-anim">
+        <div class="busy-cube1 busy-cube"></div>
+        <div class="busy-cube2 busy-cube"></div>
+        <div class="busy-cube4 busy-cube"></div>
+        <div class="busy-cube3 busy-cube"></div>
+      </div>
+    </div>
     <script type="text/javascript" src="../static/els.js"></script>
   </body>
 </html>
