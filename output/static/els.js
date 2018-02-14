@@ -185,6 +185,36 @@ var ELS = function(){
         return setter;
     }
 
+    self.busy = function() {
+        document.querySelector("#busy").style.display = "flex";
+    }
+
+    self.unbusy = function() {
+        document.querySelector("#busy").style.display = "none";
+    }
+
+    self.showFailure = function(msg) {
+        self.unbusy();
+        self.hideSuccess();
+        document.querySelector("#failure").style.display = "block";
+        document.querySelector("#failure").textContent = msg;
+    }
+
+    self.hideFailure = function(){
+        document.querySelector("#failure").style.display = "none";
+    }
+
+    self.showSuccess = function(msg) {
+        self.unbusy();
+        self.hideFailure();
+        document.querySelector("#success").style.display = "block";
+        document.querySelector("#success").textContent = msg;
+    }
+
+    self.hideSuccess = function(){
+        document.querySelector("#success").style.display = "none";
+    }
+
     self.submitRegistration = function(target, data, success, failure) {
         self.log("Submitting registration to server-side script...");
         var req = new XMLHttpRequest();
@@ -214,7 +244,6 @@ var ELS = function(){
         var pubkey = document.querySelector('head [name=stripe-public-key]').getAttribute("content");
         var stripe = Stripe(pubkey);
         var elements = stripe.elements();
-        var errors = form.querySelector('.errors');
 
         var inputs = form.querySelectorAll('.input');
         Array.prototype.forEach.call(inputs, function(input) {
@@ -253,10 +282,10 @@ var ELS = function(){
             });
             element.mount(id);
             element.addEventListener('change', function(event) {
-                if (event.error) {
-                    errors.textContent = event.error.message;
-                } else {
-                    errors.textContent = '';
+                if(event.error){
+                    self.showFailure(event.error.message);
+                }else{
+                    self.hideFailure();
                 }
             });
             return element;
@@ -280,17 +309,19 @@ var ELS = function(){
                 proceedings: (form.querySelector("#proceedings").checked?"yes":"no")
             };
 
-            // FIXME: Display busy
-
+            self.busy();
             stripe.createToken(card, {name: data.name}).then(function(result) {
                 if (result.error) {
                     self.log("Token creation failed:",result);
-                    errors.textContent = result.error.message;
+                    self.showFailure(result.error.message);
                 } else {
                     self.log("Token creation successful.");
                     data["token"] = result.token.id;
-                    self.submitRegistration(form.getAttribute("action"), data,
-                                            function(){}, function(e){errors.textContent = e;});
+                    self.submitRegistration(form.getAttribute("action"), data, function(e){
+                        self.showSuccess("Registration complete! You should receive an email receipt shortly.");
+                    }, function(e){
+                        self.showFailure(e);
+                    });
                 }
             });
         });

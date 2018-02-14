@@ -1,0 +1,24 @@
+Dear %3$s
+
+Thank you for registering for the European Lisp Symposium!
+Your registration has been paid successfully, and we look forward to
+seeing you in person at the conference.
+
+Here are your registration details:
+
+    Order ID: %s
+    Registration: %s
+    Name: %s
+    Email: %s
+    Affiliation: %s
+    Food Restrictions: %s
+    Banquet: %s
+    Certificate: %s
+    Proceedings: %s
+
+If you find any error in the details, or would like to cancel your
+registration, please reply to this e-mail and let us know. Be sure
+to include the Order ID with your message.
+
+You will receive your badge and other physical goods at the
+conference.
