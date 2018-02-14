@@ -4,6 +4,7 @@
     <meta charset="utf-8"/>
     <title>European Lisp Symposium</title>
     <link rel="stylesheet" type="text/css" href="static/els.css"/>
+    <link rel="icon" href="../static/favicon.png"/>
     <meta name="viewport" content="width=device-width"/>
     <meta name="description" content="Homepage for the European Lisp Symposium"/>
     <meta name="robots" content="index, follow"/>
