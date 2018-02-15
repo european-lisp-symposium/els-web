@@ -62,7 +62,7 @@
 
 (defun compile-edition-calendar (edition &key (if-exists :supersede))
   (let* ((edition (princ-to-string edition))
-         (path (merge-pathnames "programme.ical" (pathname-utils:subdirectory *output-dir* edition))))
+         (path (merge-pathnames "programme.ics" (pathname-utils:subdirectory *output-dir* edition))))
     (clip:with-clipboard-bound ((edition edition))
       (with-open-file (*calendar-stream* path
                                          :direction :output
