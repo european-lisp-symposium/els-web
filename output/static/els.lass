@@ -201,6 +201,7 @@
            :vertical-align middle)))
 
     ("#registration"
+     (form :margin-top 10px)
      (.kind
       :margin 0 0 1em 0
       :display flex
