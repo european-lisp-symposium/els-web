@@ -42,7 +42,7 @@
     <div class="card">
       <div class="text-container">
         <div id="card-number" class="input empty"></div>
-        <label for="card-number">Card number</label>
+        <label for="card-number">Credit card number</label>
       </div>
       <div class="text-container">
         <div id="card-expiry" class="input empty"></div>
@@ -53,6 +53,9 @@
         <label for="card-cvc">CVC</label>
       </div>
     </div>
+    <p>
+      All payments are handled through <a href="https://stripe.com/">Stripe</a>. None of your card details arrive on our server.
+    </p>
     <button>Submit Registration</button>
   </form>
   <script src="https://js.stripe.com/v3/"></script>

@@ -120,7 +120,7 @@
              :website ,website)
            '(:record-type)))
 
-(defmacro define-registration ((kind active &rest options) &body skus)
+(defmacro define-registration ((kind status &rest options) &body skus)
   (destructuring-bind (&key (id (format NIL "ELS-~a-~a" (package-name *package*) kind))
                             (name (format NIL "European Lisp Symposium ~a" (package-name *package*)))
                             &allow-other-keys) options
@@ -129,7 +129,7 @@
       `(progn (record '(:record-type :registration
                         :id ,id
                         :name ,name
-                        :status ,active
+                        :status ,status
                         ,@options)
                       '(:record-type :id))
               ,@(loop for (name . options) in skus
@@ -138,8 +138,9 @@
                       do (remf pure-opts :price)
                       collect `(record '(:record-type :registration-sku
                                          :product ,id
+                                         ,@pure-opts
                                          :id ,sku-id
                                          :name ,name
                                          :price ,(getf options :price)
-                                         :status ,active)
+                                         :status ,status)
                                        '(:record-type :id)))))))
