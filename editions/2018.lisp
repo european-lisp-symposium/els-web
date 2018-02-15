@@ -14,7 +14,7 @@
 (define-text :submissions
 
   (:p "Topics include but are not limited to:")
-  
+
   (:ul (:li "Context-, aspect-, domain-oriented and generative programming")
        (:li "Macro-, reflective-, meta- and/or rule-based development approaches")
        (:li "Language design and implementation")
@@ -22,15 +22,15 @@
        (:li "Development methodologies, support and environments")
        (:li "Educational approaches and perspectives")
        (:li "Experience reports and case studies"))
-  
+
   (:p "We invite submissions in the following forms:")
-  
+
   (:ul (:li "<b>Papers</b>: Technical papers of up to 8 pages that describe original results or explain known ideas in new and elegant ways.")
        (:li "<b>Demonstrations</b>: Abstracts of up to 2 pages for demonstrations of tools, libraries, and applications.")
        (:li "<b>Tutorials</b>: Abstracts of up to 4 pages for in-depth presentations about topics of special interest for at least 90 minutes and up to 180 minutes."))
-  
+
   (:p "Yolu can upload submissions on <a href=\"https://www.easychair.org/conferences/?conf=els2018\">EasyChair</a>.")
-  
+
   (:p "All submissions should be formatted following the ACM SIGS
   guidelines and include <a
   href=\"http://www.acm.org/about/class/2012\">ACM Computing
@@ -42,7 +42,7 @@
   (:p "LaTeX submissions are encouraged. For LaTeX submissions, please
 use the SIGCONF style (two columns, reasonably compact). This is done
 like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
-  
+
   (:p "Please use the <a href=\"http://dl.acm.org/ccs/ccs.cfm\">ACM
   Computing Classification System site</a> to generate the CCS
   codes. In order to add a concept, navigate to it using the boxes,
@@ -53,7 +53,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   Code\" and copy the displayed code into your TeX file. The templates
   should already include sections with bogus CCS codes, which you can
   simply replace with your own.")
-  
+
   (:p "If you are using the correct style and classification system,
   your document will contain a section called <code>CCS
   Concepts</code> and include terms formatted like <code>•Information
@@ -126,7 +126,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 (define-person (:family-name "Neuss"
 		:given-name "Nicolas")
   :role (:committee)
-  :organization "Universität Karlsruhe"
+  :organization "FAU Erlangen-Nürnberg"
   :address (:country "Germany"))
 
 
@@ -181,7 +181,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
     :role (:committee)
     :organization "Northwestern University"
     :address (:country "USA"))
-		
+
 
 
 
