@@ -129,7 +129,7 @@
         <c:when test="(query :programme-entry)">
           <section id="programme">
             <h3>Programme</h3>
-            Times are local to the conference. You can download the programme in iCalendar format <a href="programme.ical">here</a>.
+            Times are local to the conference. You can download the programme in iCalendar format <a href="programme.ics">here</a>.
             <input type="text" id="set-time" value="" placeholder="2015.4.20 8:30" title="Here you can manually set the time of the programme calendar." />
             <ol iterate="(query :programme-entry T :sort '(:time :asc))">
               <li><c:splice lquery="(template :programme-entry)" /></li>
