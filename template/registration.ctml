@@ -10,6 +10,7 @@
         <label lquery='(attr :for id) (text name)'>KIND
           <span class="price" lquery="(text price)" />
         </label>
+        <div class="description" lquery="(text description)"></div>
       </div>
     </div>
     <div class="text-container name">
