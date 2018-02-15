@@ -63,6 +63,7 @@
              (etypecase value
                (string value)
                (number (princ-to-string value))
+               (timestamp (timestamp->unix value))
                ((eql T) "true")
                ((eql NIL) "false"))))
       (cond ((and (consp value) (consp (car value)))
