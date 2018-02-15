@@ -5,6 +5,8 @@
 
 (in-package #:els-web)
 
+(defvar *unix-epoch-difference* (encode-universal-time 0 0 0 1 1 1970 0))
+
 (defclass timestamp ()
   ((year :initarg :year :accessor year)
    (day :initarg :day :accessor day)
@@ -30,6 +32,9 @@
                          (day timestamp) (month timestamp) (year timestamp)
                          (/ (offset timestamp) -60)))
 
+(defun timestsamp->unix (timestamp)
+  (- (timestamp->universal timestamp) *unix-epoch-difference*))
+
 (defun make-timestamp (&optional (y 0) (m 1) (d 1) (hh 0) (mm 0) (ss 0) (offset 0))
   (make-instance 'timestamp :year y :month m :day d
                             :hour hh :minute mm :sec ss
@@ -39,6 +44,9 @@
   (multiple-value-bind (ss mm hh d m y dow dst zone) (decode-universal-time universal time-zone)
     (declare (ignore dow dst))
     (make-timestamp y m d hh mm ss (round (* -60 zone)))))
+
+(defun unix->timestamp (unix &optional time-zone)
+  (universal->timestamp (+ unix *unix-epoch-difference*) time-zone))
 
 (defun copy-timestamp (timestamp)
   (make-timestamp (year timestamp) (month timestamp) (day timestamp)
