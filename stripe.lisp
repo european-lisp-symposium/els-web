@@ -181,9 +181,8 @@
   :method :post)
 
 (defun update-edition-registration (edition)
-  (let* ((*package* (find-package (princ-to-string edition)))
-         (options (query1 :registration)))
-    (when options
+  (let* ((*package* (find-package (princ-to-string edition))))
+    (dolist (options (query :registration))
       (apply #'ensure-product (getf options :id)
              :type "good"
              :active (ecase (getf options :status)
@@ -202,3 +201,17 @@
                        (:active "true")
                        (:inactive "false"))
              options))))
+
+(defun edition-orders (edition)
+  (let* ((*package* (find-package (princ-to-string edition)))
+         (ids (loop for registration in (query :registration-sku)
+                    collect (getf registration :id)))
+         (orders (loop for response = (list-orders :limit 100)
+                       then (list-orders :limit 100 :starting-after (gethash "id" (car (last data))))
+                       for data = (gethash "data" response)
+                       nconc data
+                       while (gethash "has_more" response))))
+    (remove-if-not (lambda (order)
+                     (loop for item in (gethash "items" order)
+                           thereis (find (gethash "parent" item) ids :test #'equal)))
+                   orders)))
