@@ -5,6 +5,7 @@
 ;;; Texts
 (define-text :announcement
   ;; (:div :class "announcement" "The conference is being organized. Stay tuned for updates!")
+  (:div :class "announcement" "Submissions deadline extended by one week!")
   (:div :class "announcement" "Submissions are now open!")
   ;; (:div :class "announcement" "Registration is now open!")
   ;; (:div :class "announcement" "Registrations are closed!")
@@ -68,7 +69,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 
 
 
-(define-date "Submission deadline" @2018-02-18)
+(define-date "(New) Submission deadline" @2018-02-25)
 (define-date "Notification of acceptance" @2018-03-19)
 (define-date "Early Registration Deadline" @2018-03-25)
 (define-date "Final papers" @2018-04-02)
