@@ -184,6 +184,12 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
     :address (:country "USA"))
 
 
+(define-person (:family-name "Wingo"
+			     :given-name "Andy")
+    :role (:committee)
+    :organization "Igalia"
+    :address (:country "Spain"))
+
 
 
 ;;; Locations
