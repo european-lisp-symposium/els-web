@@ -84,6 +84,7 @@ if($failed == false){
             }
             $mail->SMTPSecure = 'tls';
         }
+        $mail->Timeout = 10;
         $mail->Username = $mailer_user;
         $mail->Password = $mailer_pass;
         $mail->setFrom($mailer_user, "European Lisp Symposium");
