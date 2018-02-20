@@ -245,21 +245,22 @@ var ELS = function(){
         var stripe = Stripe(pubkey);
         var elements = stripe.elements();
 
-        var inputs = form.querySelectorAll('.input');
-        Array.prototype.forEach.call(inputs, function(input) {
+        Array.prototype.forEach.call(form.querySelectorAll('input'), function(input) {
             input.addEventListener('focus', function() {
                 input.classList.add('focused');
             });
             input.addEventListener('blur', function() {
                 input.classList.remove('focused');
             });
-            input.addEventListener('keyup', function() {
+            var testEmpty = function(){
                 if (input.value.length === 0) {
                     input.classList.add('empty');
                 } else {
                     input.classList.remove('empty');
                 }
-            });
+            };
+            input.addEventListener('keyup', testEmpty);
+            testEmpty();
         });
         
         var elementClasses = {
@@ -271,6 +272,7 @@ var ELS = function(){
         var elementStyles = {
             base: {
                 fontSize: '18px',
+                color: '#000',
                 '::placeholder': {color: 'transparent'}
             }
         };
