@@ -255,6 +255,7 @@
      (.text-container
       :font-size 1.0em
       (.input
+       :font-size 1.0em
        :color #(main-fg)
        :width 100%
        :border none
