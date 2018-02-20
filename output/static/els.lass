@@ -250,11 +250,12 @@
      (.card
       :display flex
       (">:nth-child(1)" :flex-grow 1)
-      (">:nth-child(2)" :min-width 4em :margin 0 0.5em 0 0.5em)
+      (">:nth-child(2)" :min-width 5em :margin 0 0.5em 0 0.5em)
       (">:nth-child(3)" :min-width 3em))
      (.text-container
-      (input :font-size 1.0em)
+      :font-size 1.0em
       (.input
+       :color #(main-fg)
        :width 100%
        :border none
        :border-bottom 1px solid gray
@@ -267,13 +268,13 @@
        :position absolute
        :left 0
        :top -1em
-       :font-size 0.2em
+       :font-size 0.5em
        :color gray)
       (.input.empty+label
        :font-size 1em
        :top 0)
       (.input.focused+label
-       :font-size 0.2em
+       :font-size 0.5em
        :top -1em)
       (.input.focused+label
        :color #(main-bg)))
