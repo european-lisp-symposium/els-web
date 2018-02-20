@@ -2,6 +2,7 @@
 (define-edition "2018")
 (in-package "2018")
 
+
 ;;; Texts
 (define-text :announcement
   ;; (:div :class "announcement" "The conference is being organized. Stay tuned for updates!")
@@ -68,7 +69,6 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   abstract."))
 
 
-
 (define-date "(New) Submission deadline" @2018-02-25)
 (define-date "Notification of acceptance" @2018-03-19)
 (define-date "Early Registration Deadline" @2018-03-25)
@@ -76,6 +76,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 
 (define-date "Conference start" @2018-04-16)
 (define-date "Conference end" @2018-04-17)
+
 
 ;;; Sponsors
 (define-sponsor epita
@@ -93,6 +94,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 (define-sponsor brunner
   :website "http://www.systemhaus-brunner.de/"
   :logo "../static/logos/brunner.png")
+
 
 ;;; People
 (define-person (:family-name "Verna"
@@ -130,7 +132,6 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   :organization "FAU Erlangen-Nürnberg"
   :address (:country "Germany"))
 
-
 (define-person (:family-name "Rhodes"
 		:given-name "Christophe")
   :role (:committee)
@@ -143,13 +144,11 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   :organization "University of Bath"
   :address (:country "UK"))
 
-
 (define-person (:family-name "Strandh"
 		:given-name "Robert")
   :role (:committee)
   :organization "LaBRI, Université de Bordeaux"
   :address (:country "France"))
-
 
 (define-person (:family-name "Sperber"
 		:given-name "Michael")
@@ -163,38 +162,34 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   :organization "Inria"
   :address (:country "France"))
 
-(define-person (:family-name
-		"Chua"
+(define-person (:family-name "Chua"
 		:given-name "Sacha")
-    :role (:committee)
-    :organization "Living an Awesome Life"
-    :address (:country "Canada"))
+  :role (:committee)
+  :organization "Living an Awesome Life"
+  :address (:country "Canada"))
 
-(define-person (:family-name
-		"Wellons"
+(define-person (:family-name "Wellons"
 		:given-name "Christopher")
-    :role (:committee)
-    :organization "Null Program"
-    :address (:country "Canada"))
+  :role (:committee)
+  :organization "Null Program"
+  :address (:country "Canada"))
 
 (define-person (:family-name "Shivers"
-			     :given-name "Olin")
-    :role (:committee)
-    :organization "Northwestern University"
-    :address (:country "USA"))
-
+		:given-name "Olin")
+  :role (:committee)
+  :organization "Northwestern University"
+  :address (:country "USA"))
 
 (define-person (:family-name "Wingo"
-			     :given-name "Andy")
-    :role (:committee)
-    :organization "Igalia"
-    :address (:country "Spain"))
-
+		:given-name "Andy")
+  :role (:committee)
+  :organization "Igalia"
+  :address (:country "Spain"))
 
 (define-person (:family-name "Philipp"
-			     :given-name "Marek")
-    :role (:committee)
-    :address (:country "Austria"))
+		:given-name "Marek")
+  :role (:committee)
+  :address (:country "Austria"))
 
 
 ;;; Locations
