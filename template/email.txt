@@ -1,8 +1,7 @@
 Dear %4$s
 
 Thank you for registering for the European Lisp Symposium!
-Your registration has been paid successfully, and we look forward to
-seeing you in person at the conference.
+We look forward to seeing you in person at the conference.
 
 Here are your registration details:
 
