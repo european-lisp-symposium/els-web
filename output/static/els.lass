@@ -203,16 +203,19 @@
     ("#registration"
      :position relative
      (form :margin-top 10px)
+     (.price
+      :color #(main-bg)
+      :padding 0 5px 0 5px
+      :min-width 2em
+      :display inline-block)
+     (".price::after" :content "€")
      (.kind
-      :margin 0 0 3em 0
+      :margin 0 0 2.5em 0
       :display flex
       :align-items flex-start
       (>* :flex-grow 1
           :text-align center)
       (label :white-space nowrap :position relative)
-      (.price :color #(main-bg)
-              :padding 0 5px 0 5px)
-      (".price::after" :content "€")
       (.description
        :z-index 5
        :position absolute
@@ -243,10 +246,10 @@
       (">:nth-child(1)" :flex-grow 1)
       (">:nth-child(2)" :min-width 30% :margin 0 0 0 0.5em))
      (.options
-      :display flex
-      :flex-wrap wrap
-      (span :flex-grow 1)
-      (div :margin 0 0 0 2em))
+      (>div
+       :display flex
+       :flex-wrap wrap
+       (div :margin 0 0 0 1em :min-width 30%)))
      (.card
       :display flex
       (">:nth-child(1)" :flex-grow 1)

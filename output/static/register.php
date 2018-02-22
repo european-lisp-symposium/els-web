@@ -26,7 +26,7 @@ $mailer_body = file_get_contents(__DIR__."/../../template/email.txt");
 
 $missing = array();
 if(!$_POST['token']){ $missing[] = "Credit card transaction"; }
-if(!$_POST['kind']){ $missing[] = "Type of attendance"; }
+if(!$_POST['items'][0]){ $missing[] = "Type of attendance"; }
 if(!$_POST['name']){ $missing[] = "Name"; }
 if(!$_POST['email']){ $missing[] = "Email"; }
 if(!empty($missing)){
@@ -41,25 +41,22 @@ if($failed == false){
         require_once($mailer."/src/Exception.php");
         require_once($mailer."/src/PHPMailer.php");
         require_once($mailer."/src/SMTP.php");
+
+        $items = array();
+        foreach ($_POST['items'] as &$item){
+            $items[] = array("type" => "sku", "parent" => $item);
+        }
         
         \Stripe\Stripe::setApiKey($stripe_private_key);
         $order = \Stripe\Order::create(array(
             "currency" => "eur",
             "email" => $_POST['email'],
-            "items" => array(
-                array(
-                    "type" => "sku",
-                    "parent" => $_POST['kind'],
-                )
-            ),
+            "items" => $items,
             "metadata" => array(
                 "name" => $_POST['name'],
                 "email" => $_POST['email'],
                 "affiliation" => $_POST['affiliation'],
-                "food-restrictions" => $_POST['foodRestrictions'],
-                "banquet" => $_POST['banquet'],
-                "certificate" => $_POST['certificate'],
-                "proceedings" => $_POST['proceedings'],
+                "food-restrictions" => $_POST['foodRestrictions']
             ),
         ));
         
@@ -89,17 +86,15 @@ if($failed == false){
         $mail->Password = $mailer_pass;
         $mail->setFrom($mailer_user, "European Lisp Symposium");
         $mail->addAddress($_POST['email']);
+        $mail->addAddress($mailer_user);
         $mail->Subject = "European Lisp Symposium Registration";
         $mail->Body = sprintf($mailer_body,
                               $order->id,
-                              $_POST['kind'],
+                              join(", ", $_POST['items']),
                               $_POST['name'],
                               $_POST['email'],
                               $_POST['affiliation'],
-                              $_POST['foodRestrictions'],
-                              $_POST['banquet'],
-                              $_POST['certificate'],
-                              $_POST['proceedings']);
+                              $_POST['foodRestrictions']);
         $mail->send();
     } catch(Stripe_CardError $e) {
         $message = $e->getMessage();

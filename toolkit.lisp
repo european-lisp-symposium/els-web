@@ -54,6 +54,14 @@
 (defun enlist (a &rest rest)
   (if (listp a) a (list* a rest)))
 
+(defun alphanumerize (string)
+  (with-output-to-string (out)
+    (loop for c across string
+          do (cond ((char= c #\Space)
+                    (write-char #\- out))
+                   ((find c "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_")
+                    (write-char c out))))))
+
 (defun copy-file (from to &key (buffer 4096))
   (with-open-file (out to :direction :output :element-type '(unsigned-byte 8))
     (with-open-file (in from :direction :input :element-type '(unsigned-byte 8))
