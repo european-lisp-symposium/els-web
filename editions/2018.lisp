@@ -186,8 +186,8 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   :organization "Igalia"
   :address (:country "Spain"))
 
-(define-person (:family-name "Philipp"
-		:given-name "Marek")
+(define-person (:family-name "Marek"
+		:given-name "Philipp")
   :role (:committee)
   :address (:country "Austria"))
 
