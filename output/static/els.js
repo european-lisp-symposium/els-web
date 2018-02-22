@@ -80,7 +80,14 @@ var ELS = function(){
     self.createPostPayload = function(data) {
         var result = "";
         for(var key in data){
-            result += self.urlencode(key)+"="+self.urlencode(data[key])+"&";
+            var item = data[key];
+            if(item instanceof Array){
+                for (entry of item){
+                    result += self.urlencode(key+"[]")+"="+self.urlencode(entry)+"&";
+                }
+            } else {
+                result += self.urlencode(key)+"="+self.urlencode(item)+"&";
+            }
         }
         return result;
     }
@@ -300,15 +307,24 @@ var ELS = function(){
         form.addEventListener('submit', function(event) {
             self.log("Received registration submit, creating token.");
             event.preventDefault();
+
+            var items = Array.prototype.slice.call(form.querySelectorAll("[name=item]"))
+                .filter(function(item){ return item.checked; })
+                .map(function(item){ return item.value; });
+
+            if(form.querySelector(".kind input:checked").length == 0){
+                self.showFailure("Please select an attendance kind."); return;}
+            if(form.querySelector("#name").value == ""){
+                self.showFailure("Please enter a name."); return;}
+            if(form.querySelector("#email").value == ""){
+                self.showFailure("Please enter an email address."); return;}
+            
             var data = {
-                kind: form.querySelector(".kind input:checked").value,
                 name: form.querySelector("#name").value,
                 email: form.querySelector("#email").value,
                 affiliation: form.querySelector("#affiliation").value,
                 foodRestrictions: form.querySelector("#food-restrictions").value,
-                banquet: (form.querySelector("#banquet").checked?"yes":"no"),
-                certificate: (form.querySelector("#certificate").checked?"yes":"no"),
-                proceedings: (form.querySelector("#proceedings").checked?"yes":"no")
+                items: items
             };
 
             self.busy();
@@ -322,7 +338,7 @@ var ELS = function(){
                     self.submitRegistration(form.getAttribute("action"), data, function(e){
                         self.showSuccess("Registration complete! You should receive an email receipt shortly.");
                     }, function(e){
-                        self.showFailure(e);
+                        self.showFailure((e=="")? "Registration failed." : e);
                     });
                 }
             });

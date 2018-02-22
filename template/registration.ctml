@@ -4,10 +4,11 @@
     Sorry, JavaScript is required for the registration.
   </noscript>
   <form action="../static/register.php" method="post">
-    <div class="kind" iterate="(query :registration-sku '(= status :active) :sort '(:price :dsc))">
+    <div class="kind" iterate="(query :registration-sku '(and (= type :kind) (= status :active)) :sort '(:price :dsc))">
       <div>
-        <input type="radio" class="input" name="kind" required lquery="(attr :value id :id id)" />
-        <label lquery='(attr :for id) (text name)'>KIND
+        <input type="radio" class="input" name="item" required lquery="(attr :value id :id id)" />
+        <label lquery='(attr :for id)'>
+          <c:splice lquery="(text name)" />
           <span class="price" lquery="(text price)" />
         </label>
         <div class="description" lquery="(text description)"></div>
@@ -33,12 +34,13 @@
     </div>
     <div class="options">
       <span>Options:</span>
-      <div><input type="checkbox" id="banquet" checked />
-        <label for="banquet">Banquet</label></div>
-      <div><input type="checkbox" id="certificate" />
-        <label for="certificate">Attendance certificate</label></div>
-      <div><input type="checkbox" id="proceedings" />
-        <label for="proceedings">Printed proceedings</label></div>
+      <div iterate="(query :registration-sku '(and (= type :option) (= status :active)))">
+        <div><input type="checkbox" name="item" lquery="(attr :id id :value id)" />
+          <label lquery="(attr :for id)">
+            <c:splice lquery="(text description)" />
+            <c:when test="(/= 0 price)"><span class="price" lquery="(text price)" /></c:when>
+          </label></div>
+      </div>
     </div>
     <div class="card">
       <div class="text-container">

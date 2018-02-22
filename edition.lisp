@@ -49,8 +49,7 @@
              T)))
     (let ((database (edition edition)))
       (setf database (remove-if #'match-fields database))
-      (setf database (cons data database))
-      (setf (edition edition) database))))
+      (setf (edition edition) (append database (list data))))))
 
 (defmacro define-person (name &rest args)
   (let ((full-name (if (listp name)
@@ -120,8 +119,8 @@
              :website ,website)
            '(:record-type)))
 
-(defmacro define-registration ((kind status &rest options) &body skus)
-  (destructuring-bind (&key (id (format NIL "ELS-~a-~a" (package-name *package*) kind))
+(defmacro define-registration ((status &rest options) &body skus)
+  (destructuring-bind (&key (id (format NIL "ELS-~a" (package-name *package*)))
                             (name (format NIL "European Lisp Symposium ~a" (package-name *package*)))
                             &allow-other-keys) options
     (let ((options (copy-list options)))
@@ -132,15 +131,13 @@
                         :status ,status
                         ,@options)
                       '(:record-type :id))
-              ,@(loop for (name . options) in skus
-                      for sku-id = (format NIL "~a-~a" id name)
-                      for pure-opts = (copy-list options)
-                      do (remf pure-opts :price)
+              ,@(loop for (type name . options) in skus
+                      for sku-id = (format NIL "~a-~(~a~)" id (alphanumerize name))
                       collect `(record '(:record-type :registration-sku
                                          :product ,id
-                                         ,@pure-opts
+                                         ,@options
                                          :id ,sku-id
                                          :name ,name
-                                         :price ,(getf options :price)
+                                         :type ,type
                                          :status ,status)
                                        '(:record-type :id)))))))

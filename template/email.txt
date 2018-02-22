@@ -7,14 +7,11 @@ seeing you in person at the conference.
 Here are your registration details:
 
     Order ID: %s
-    Registration: %s
+    Items: %s
     Name: %s
     Email: %s
     Affiliation: %s
     Food Restrictions: %s
-    Banquet: %s
-    Certificate: %s
-    Proceedings: %s
 
 If you find any error in the details, or would like to cancel your
 registration, please reply to this e-mail and let us know. Be sure
