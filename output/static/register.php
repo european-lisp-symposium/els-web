@@ -46,22 +46,24 @@ if($failed == false){
         foreach ($_POST['items'] as &$item){
             $items[] = array("type" => "sku", "parent" => $item);
         }
-        
-        \Stripe\Stripe::setApiKey($stripe_private_key);
-        $order = \Stripe\Order::create(array(
-            "currency" => "eur",
-            "email" => $_POST['email'],
-            "items" => $items,
-            "metadata" => array(
-                "name" => $_POST['name'],
+
+        if($_POST['token'] != "bank"){
+            \Stripe\Stripe::setApiKey($stripe_private_key);
+            $order = \Stripe\Order::create(array(
+                "currency" => "eur",
                 "email" => $_POST['email'],
-                "affiliation" => $_POST['affiliation'],
-                "food-restrictions" => $_POST['foodRestrictions']
-            ),
-        ));
-        
-        $order->pay(array("source" => $_POST['token']));
-        $message = $order->id;
+                "items" => $items,
+                "metadata" => array(
+                    "name" => $_POST['name'],
+                    "email" => $_POST['email'],
+                    "affiliation" => $_POST['affiliation'],
+                    "food-restrictions" => $_POST['foodRestrictions']
+                ),
+            ));
+
+            $order->pay(array("source" => $_POST['token']));
+            $message = $order->id;
+        }
 
         $mail = new PHPMailer\PHPMailer\PHPMailer(true);
         $mail->IsSMTP();
@@ -89,8 +91,9 @@ if($failed == false){
         $mail->addAddress($mailer_user);
         $mail->Subject = "European Lisp Symposium Registration";
         $mail->Body = sprintf($mailer_body,
-                              $order->id,
+                              ($order == null? "- (Manual bank transfer)" : $order->id),
                               join(", ", $_POST['items']),
+                              $_POST['price'],
                               $_POST['name'],
                               $_POST['email'],
                               $_POST['affiliation'],

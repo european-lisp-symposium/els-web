@@ -66,6 +66,7 @@
     (".busy-cube4:before" :animation-delay 0.9s)))
 
   (.message-box
+   :z-index 7
    :position fixed
    :top 0 :left 0 :right 0
    :padding 10px
@@ -250,6 +251,11 @@
        :display flex
        :flex-wrap wrap
        (div :margin 0 0 0 1em :min-width 30%)))
+     (.payment
+      ([name=payment]~* :opacity 0.5)
+      ("[name=payment]:checked~*"
+       :opacity 1.0)
+      (p :font-size 0.9em))
      (.card
       :display flex
       (">:nth-child(1)" :flex-grow 1)

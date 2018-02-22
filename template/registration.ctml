@@ -6,7 +6,7 @@
   <form action="../static/register.php" method="post">
     <div class="kind" iterate="(query :registration-sku '(and (= type :kind) (= status :active)) :sort '(:price :dsc))">
       <div>
-        <input type="radio" class="input" name="item" required lquery="(attr :value id :id id)" />
+        <input type="radio" class="input" name="item" required lquery='(attr :value id :id id)' />
         <label lquery='(attr :for id)'>
           <c:splice lquery="(text name)" />
           <span class="price" lquery="(text price)" />
@@ -32,8 +32,8 @@
       <input type="text" class="input empty" id="food-restrictions" />
       <label for="food-restrictions">Food restrictions</label>
     </div>
+    <h4>Options</h4>
     <div class="options">
-      <span>Options:</span>
       <div iterate="(query :registration-sku '(and (= type :option) (= status :active)))">
         <div><input type="checkbox" name="item" lquery="(attr :id id :value id)" />
           <label lquery="(attr :for id)">
@@ -42,23 +42,35 @@
           </label></div>
       </div>
     </div>
-    <div class="card">
-      <div class="text-container">
-        <div id="card-number" class="input empty"></div>
-        <label for="card-number">Credit card number</label>
+    <h4>Payment <span id="full-price" class="price">0</span></h4>
+    <div class="payment">
+      <input type="radio" name="payment" id="stripe-payment" value="stripe" checked />
+      <label for="stripe-payment">Pay by Credit Card</label>
+      <div class="card">
+        <div class="text-container">
+          <div id="card-number" class="input empty"></div>
+          <label for="card-number">Credit card number</label>
+        </div>
+        <div class="text-container">
+          <div id="card-expiry" class="input empty"></div>
+          <label for="card-expiry">Expiration</label>
+        </div>
+        <div class="text-container">
+          <div id="card-cvc" class="input empty"></div>
+          <label for="card-cvc">CVC</label>
+        </div>
       </div>
-      <div class="text-container">
-        <div id="card-expiry" class="input empty"></div>
-        <label for="card-expiry">Expiration</label>
-      </div>
-      <div class="text-container">
-        <div id="card-cvc" class="input empty"></div>
-        <label for="card-cvc">CVC</label>
-      </div>
+      <p>
+        All credit card payments are handled through <a href="https://stripe.com/">Stripe</a>. None of your card details arrive on our server.
+      </p>
     </div>
-    <p>
-      All payments are handled through <a href="https://stripe.com/">Stripe</a>. None of your card details arrive on our server.
-    </p>
+    <div class="payment">
+      <input type="radio" name="payment" id="bank-payment" value="bank" />
+      <label for="bank-payment">Pay by Bank Transfer</label>
+      <p>
+        Please only choose bank transfer payment if the credit card option is unavailable to you. Manual bank transfers incur additional work for us. We will send the details of the payment account in an email to you, though processing might take a few days.
+      </p>
+    </div>
     <button>Submit Registration</button>
   </form>
   <script src="https://js.stripe.com/v3/"></script>

@@ -72,7 +72,7 @@ var ELS = function(){
     }
 
     self.urlencode = function(string) {
-        return encodeURIComponent(string).replace(/[!'()*]/g, function(c) {
+        return encodeURIComponent(""+string).replace(/[!'()*]/g, function(c) {
             return '%' + c.charCodeAt(0).toString(16);
         });
     }
@@ -246,6 +246,16 @@ var ELS = function(){
         }
     };
 
+    self.calculatePrice = function(){
+        var price = 0;
+        Array.prototype.forEach.call(document.querySelectorAll("input:checked+label>.price"), function(el){
+            price += parseFloat(el.textContent);
+        });
+        var full = document.getElementById("full-price");
+        if(full) full.textContent = price+"";
+        return price;
+    };
+
     self.initRegistration = function(){
         var form = document.querySelector("#registration form");
         var pubkey = document.querySelector('head [name=stripe-public-key]').getAttribute("content");
@@ -267,6 +277,7 @@ var ELS = function(){
                 }
             };
             input.addEventListener('keyup', testEmpty);
+            input.addEventListener('change', self.calculatePrice);
             testEmpty();
         });
         
@@ -311,6 +322,7 @@ var ELS = function(){
             var items = Array.prototype.slice.call(form.querySelectorAll("[name=item]"))
                 .filter(function(item){ return item.checked; })
                 .map(function(item){ return item.value; });
+            var payment = form.querySelector("[name=payment]:checked").value;
 
             if(form.querySelector(".kind input:checked").length == 0){
                 self.showFailure("Please select an attendance kind."); return;}
@@ -324,24 +336,39 @@ var ELS = function(){
                 email: form.querySelector("#email").value,
                 affiliation: form.querySelector("#affiliation").value,
                 foodRestrictions: form.querySelector("#food-restrictions").value,
-                items: items
+                items: items,
+                price: self.calculatePrice()
+            };
+
+            var submit = function(data){
+                self.submitRegistration(form.getAttribute("action"), data, function(e){
+                    self.showSuccess("Registration complete! You should receive an email receipt shortly.");
+                }, function(e){
+                    self.showFailure((e=="")? "Registration failed." : e);
+                });
             };
 
             self.busy();
-            stripe.createToken(card, {name: data.name}).then(function(result) {
-                if (result.error) {
-                    self.log("Token creation failed:",result);
-                    self.showFailure(result.error.message);
-                } else {
-                    self.log("Token creation successful.");
-                    data["token"] = result.token.id;
-                    self.submitRegistration(form.getAttribute("action"), data, function(e){
-                        self.showSuccess("Registration complete! You should receive an email receipt shortly.");
-                    }, function(e){
-                        self.showFailure((e=="")? "Registration failed." : e);
-                    });
-                }
-            });
+            switch(payment){
+            case "stripe":
+                stripe.createToken(card, {name: data.name}).then(function(result) {
+                    if (result.error) {
+                        self.log("Token creation failed:",result);
+                        self.showFailure(result.error.message);
+                    } else {
+                        self.log("Token creation successful.");
+                        data["token"] = result.token.id;
+                        submit(data);
+                    }
+                });
+                break;
+            case "bank":
+                data["token"] = "bank";
+                submit(data);
+                break;
+            default:
+                self.showFailure("Please choose a payment option.");
+            }
         });
     }
 
