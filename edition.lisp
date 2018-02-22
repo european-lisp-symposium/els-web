@@ -139,5 +139,6 @@
                                          :id ,sku-id
                                          :name ,name
                                          :type ,type
-                                         :status ,status)
+                                         :status ,status
+                                         :price 0)
                                        '(:record-type :id)))))))
