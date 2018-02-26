@@ -98,6 +98,13 @@
           </section>
         </c:when>
 
+        <c:when test="(query-text '(= name :excursion))">
+          <section id="excursion">
+            <h4>Sunday Excursion</h4>
+            <c:splice lquery="(html (query-text '(= name :excursion)))" />
+          </section>
+        </c:when>
+
         <c:when test="(or (query :person '(or (in role :programme-chair) (in role :local-chair) (in role :committee))))">
           <section id="organization">
             <h3>Organization</h3>
