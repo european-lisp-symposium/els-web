@@ -203,6 +203,10 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 	    :country "Spain")
   :map T)
 
+(define-text :excursion
+  (:p "A guided visit to the Andalusian town of Ronda, famous for its spectacular views, traditional architecture and bull-ring turned museum. An ideal introduction to the old and new Spain. More details soon!"))
+
+
 ;;; Programme
 ;; (define-programme-day @20XX-MM-DDT00:00:00+ZZ:ZZ
 ;;   @08:30:00 (:title "Registration"
