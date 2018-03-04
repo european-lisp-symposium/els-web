@@ -35,7 +35,7 @@
     <h4>Options</h4>
     <div class="options">
       <div iterate="(query :registration-sku '(and (= type :option) (= status :active)))">
-        <div><input type="checkbox" name="item" lquery="(attr :id id :value id)" />
+        <div><input type="checkbox" name="item" lquery="(attr :id id :value id :checked checked)" />
           <label lquery="(attr :for id)">
             <c:splice lquery="(text description)" />
             <c:when test="(/= 0 price)"><span class="price" lquery="(text price)" /></c:when>
