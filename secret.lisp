@@ -7,9 +7,11 @@
 
 (defvar *secret-file* (merge-pathnames "secrets.lisp" *here*))
 (defvar *secret*)
+(defvar *secret-load-stamp* 0)
 
 (defun load-secrets (&optional (file *secret-file*))
   (with-open-file (stream file :direction :input :if-does-not-exist NIL)
+    (setf *secret-load-stamp* (file-write-date file))
     (setf *secret* (if stream (read stream) NIL))))
 
 (defun save-secrets (&optional (file *secret-file*))
@@ -18,7 +20,8 @@
       (format stream "(~{~s ~s~^~% ~})" *secret*))))
 
 (defun secret (name)
-  (unless (boundp '*secret*)
+  (when (or (not (boundp '*secret*))
+            (< *secret-load-stamp* (file-write-date *secret-file*)))
     (load-secrets))
   (getp *secret* name))
 
