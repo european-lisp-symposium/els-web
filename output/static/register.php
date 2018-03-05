@@ -23,6 +23,7 @@ $mailer_ssl = secret("mailer-ssl");
 $mailer_user = secret("mailer-user");
 $mailer_pass = secret("mailer-pass");
 $mailer_body = file_get_contents(__DIR__."/../../template/email.txt");
+$mailer_receipt_recipient = secret("mailer-receipt-recipient");
 
 $missing = array();
 if(!$_POST['token']){ $missing[] = "Credit card transaction"; }
@@ -88,7 +89,7 @@ if($failed == false){
         $mail->Password = $mailer_pass;
         $mail->setFrom($mailer_user, "European Lisp Symposium");
         $mail->addAddress($_POST['email']);
-        $mail->addAddress($mailer_user);
+        $mail->addAddress($mailer_receipt_recipient);
         $mail->Subject = "European Lisp Symposium Registration";
         $mail->Body = sprintf($mailer_body,
                               ($order == null? "- (Manual bank transfer)" : $order->id),

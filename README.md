@@ -153,6 +153,7 @@ Some parts of the website require keys and tokens that should not be made public
 * `:mailer-ssl` One of `"false"`, `"true"`, `"self-signed"`. Note that the self-signed option disables certificate checking.
 * `:mailer-user` The username to connect to the SMTP server with.
 * `:mailer-pass` The password for the user account.
+* `:mailer-receipt-recipient` The recipient of email receipts.
 
 Note that for Stripe you should use the provided testing keys during development, and use the production keys for the deployed website. Using either key set on the other environment is a very bad idea.
 
