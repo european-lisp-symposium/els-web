@@ -99,22 +99,22 @@ if($failed == false){
                               $_POST['affiliation'],
                               $_POST['foodRestrictions']);
         $mail->send();
-    } catch(Stripe_CardError $e) {
+    } catch(Stripe\Error\Card $e) {
         $message = $e->getMessage();
         $failed = true;
-    } catch (Stripe_InvalidRequestError $e) {
+    } catch (Stripe\Error\InvalidRequest $e) {
         error_log($e);
         $message = $e->getMessage();
         $failed = true;
-    } catch (Stripe_AuthenticationError $e) {
+    } catch (Stripe\Error\Authentication $e) {
         error_log($e);
         $message = $e->getMessage();
         $failed = true;
-    } catch (Stripe_ApiConnectionError $e) {
+    } catch (Stripe\Error\Api $e) {
         error_log($e);
         $message = $e->getMessage();
         $failed = true;
-    } catch (Stripe_Error $e) {
+    } catch (Stripe\Error\Base $e) {
         error_log($e);
         $message = $e->getMessage();
         $failed = true;
