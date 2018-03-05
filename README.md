@@ -149,11 +149,12 @@ Some parts of the website require keys and tokens that should not be made public
 * `:stripe-private-key` The private key provided by Stripe.
 * `:mailer` A path to the [PHPMailer](https://github.com/PHPMailer/PHPMailer) root folder.
 * `:mailer-host` The hostname of the SMTP server.
-* `:mailer-port` The port to connect through (usually 587 for SSL).
+* `:mailer-port` The port to connect through (usually 465 for SSL, 587 for TLS).
 * `:mailer-ssl` One of `"false"`, `"true"`, `"self-signed"`. Note that the self-signed option disables certificate checking.
+* `:mailer-tls` Either `"true"` or `"false"`.
 * `:mailer-user` The username to connect to the SMTP server with.
 * `:mailer-pass` The password for the user account.
-* `:mailer-receipt-recipient` The recipient of email receipts.
+* `:mailer-from` Both the recipient of email receipts and the `From:` address.
 
 Note that for Stripe you should use the provided testing keys during development, and use the production keys for the deployed website. Using either key set on the other environment is a very bad idea.
 
