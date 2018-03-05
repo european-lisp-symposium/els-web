@@ -6,9 +6,9 @@
 ;;; Texts
 (define-text :announcement
   ;; (:div :class "announcement" "The conference is being organized. Stay tuned for updates!")
-  (:div :class "announcement" "Submissions deadline extended by one week!")
-  (:div :class "announcement" "Submissions are now open!")
-  ;; (:div :class "announcement" "Registration is now open!")
+  ;; (:div :class "announcement" "Submissions deadline extended by one week!")
+  ;; (:div :class "announcement" "Submissions are now open!")
+  (:div :class "announcement" "Registration is now open!")
   ;; (:div :class "announcement" "Registrations are closed!")
   ;; (:div :class "announcement" "The conference is over!")
   )
@@ -69,8 +69,8 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   abstract."))
 
 
-(define-date "(New) Submission deadline" @2018-02-25)
-(define-date "Notification of acceptance" @2018-03-19)
+;;(define-date "(New) Submission deadline" @2018-02-25)
+;;(define-date "Notification of acceptance" @2018-03-19)
 (define-date "Early Registration Deadline" @2018-03-25)
 (define-date "Final papers" @2018-04-02)
 
@@ -205,6 +205,27 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 
 (define-text :excursion
   (:p "A guided visit to the Andalusian town of Ronda, famous for its spectacular views, traditional architecture and bull-ring turned museum. An ideal introduction to the old and new Spain. More details soon!"))
+
+
+;; Registration
+(define-registration (:active)
+  (:kind "Early regular" :price 120
+   :description "Full conference package (talks, coffee breaks, banquet).")
+  (:kind "Early student" :price 60
+   :description "Same as \"Early regular\", student price (requires student ID copy via e-mail).")
+  (:kind "Regular" :price 160
+   :description "Full conference package (talks, coffee breaks, banquet)."
+   :status :inactive)
+  (:kind "Student" :price 90
+   :description "Same as \"Regular\", student price (requires student ID copy via e-mail)."
+   :status :inactive)
+  (:option "banquet" :checked t :price 0 :description "Banquet")
+  (:option "banquet-guest" :price 35 :description "Banquet guest")
+  (:option "certificate" :price 0 :description "Certificate of attendance")
+  (:option "proceedings" :price 0 :description "Printed proceedings")
+  ;; (:option "welcome" :price 0 :description "Welcome reception")
+  (:option "excursion" :price 20 :description "Sunday excursion (details below)")
+  (:option "excursion-guest" :price 20 :description "Sunday excursion guest"))
 
 
 ;;; Programme
