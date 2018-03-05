@@ -102,18 +102,6 @@ if($failed == false){
     } catch(Stripe\Error\Card $e) {
         $message = $e->getMessage();
         $failed = true;
-    } catch (Stripe\Error\InvalidRequest $e) {
-        error_log($e);
-        $message = $e->getMessage();
-        $failed = true;
-    } catch (Stripe\Error\Authentication $e) {
-        error_log($e);
-        $message = $e->getMessage();
-        $failed = true;
-    } catch (Stripe\Error\Api $e) {
-        error_log($e);
-        $message = $e->getMessage();
-        $failed = true;
     } catch (Stripe\Error\Base $e) {
         error_log($e);
         $message = $e->getMessage();
