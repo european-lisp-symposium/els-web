@@ -1,4 +1,5 @@
 secrets.lisp
+output/lib
 *.fasl
 *.dx64fsl
 
