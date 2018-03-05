@@ -1,5 +1,6 @@
 secrets.lisp
 output/lib
+.htaccess
 *.fasl
 *.dx64fsl
 
