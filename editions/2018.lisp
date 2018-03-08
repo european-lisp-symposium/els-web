@@ -95,6 +95,10 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   :website "http://www.systemhaus-brunner.de/"
   :logo "../static/logos/brunner.png")
 
+(define-sponsor ravenpack
+  :website "https://www.ravenpack.com/"
+  :logo "../static/logos/ravenpack.jpg")
+
 
 ;;; People
 (define-person (:family-name "Verna"
