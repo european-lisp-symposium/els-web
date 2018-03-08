@@ -1,4 +1,4 @@
-<article id="registration">
+<article id="registration" eval='(unless (secret :stripe-public-key) (error "The :stripe-public-key secret is missing!"))'>
   <h3>Registration</h3>
   <noscript>
     Sorry, JavaScript is required for the registration.
