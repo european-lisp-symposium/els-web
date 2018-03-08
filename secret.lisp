@@ -29,3 +29,7 @@
   (setf (getp *secret* name) value)
   (save-secrets)
   value)
+
+(defun check-secret (secret)
+  (unless (secret secret)
+    (error "The secret ~s is not defined!" secret)))
