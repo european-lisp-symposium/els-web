@@ -196,6 +196,16 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   :address (:country "Austria"))
 
 
+(define-person (:family-name "Emerson"
+		:given-name "R. Matthew")
+  :role (:speaker)
+  :address (:country "USA"))
+
+(define-person (:family-name "Domkin"
+                :given-name "Vsevolod")
+  :role (:speaker))
+
+
 ;;; Locations
 (define-location "Centro Cultural Cortijo de Miraflores"
   :role (:conference)
@@ -233,13 +243,32 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 
 
 ;;; Programme
-;; (define-programme-day @20XX-MM-DDT00:00:00+ZZ:ZZ
-;;   @08:30:00 (:title "Registration"
-;;              :role (:organization))
-;;   @09:00:00 (:title "Welcome Message"
-;;              :role (:organization))
-;;   ...
-;;   @19:30:00 (:title "Conference Dinner"
-;;              :role (:dinner)))
+(define-programme-day @2018-04-16T00:00:00+02:00
+  ;;   @08:30:00 (:title "Registration"
+  ;;              :role (:organization))
+  @09:00:00 (:title "Welcome Message"
+	     :role (:organization))
+  @09:30:00 (:title "This Old Lisp"
+	     :role (:talk :keynote)
+	     :speakers ("R. Matthew Emerson")
+	     :description "Lisp was invented 60 years ago.  Coral Common Lisp, the ancestor of today's Clozure Common Lisp, was released over 30 years ago.
+
+Over this time, processor architectures and operating systems have come and gone, but Clozure CL (under various names and forms) has survived and is still with us today.
+
+Clozure CL, Common Lisp, and Lisp itself are the product of many intelligent and clever people. Indeed, we find ourselves saying, with Newton, \"If I have seen a little farther than others, it is because I have stood on the shoulders of giants.\"
+
+I will say a few words, looking down from the giant's shoulders, on the subject of Clozure CL, that old Lisp, including where it stands today, and how it might evolve in the future.")
+
+  ;;   @19:30:00 (:title "Conference Dinner"
+  ;;              :role (:dinner))
+  )
+
+(define-programme-day @2018-04-17T00:00:00+02:00
+  @09:30:00 (:title "Lisp in a Startup: the Good, the Bad, and the Ugly"
+	     :role (:talk :keynote)
+	     :speakers ("Vsevolod Domkin")
+	     :description "Over the last 10 years of my software development career, I have mostly programmed in Common Lisp, in two distinct environments: open-source and startup (aka consumer Internet companies). Among the startup projects, in which I managed to introduce Lisp, the most successful is Grammarly where the system we had built continues to playa major role — more than two years after my departure from the company — at the core of its intelligent product used by 10 million people daily.
+
+In this talk, I'd like to share the success stories of developing a number of internet services in Lisp and the merits of the Lisp enviornment that enabled those, as well as the flip sides of the same stories that manifest the problems of the Lisp ecosystem — and propose possible solutions to them. We'll discuss where Lisp fits best and worst among the different professional environments and why."))
 
 ;; (define-proceedings "../static/proceedings/2018.pdf")
