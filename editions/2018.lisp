@@ -5,12 +5,13 @@
 
 ;;; Texts
 (define-text :announcement
-  ;; (:div :class "announcement" "The conference is being organized. Stay tuned for updates!")
+  ;; (:div :class "announcement" "The conference is over!")
+  (:div :class "announcement" "Invited speakers announced!")
+  ;; (:div :class "announcement" "Registrations are closed!")
+  (:div :class "announcement" "Registration is now open!")
   ;; (:div :class "announcement" "Submissions deadline extended by one week!")
   ;; (:div :class "announcement" "Submissions are now open!")
-  (:div :class "announcement" "Registration is now open!")
-  ;; (:div :class "announcement" "Registrations are closed!")
-  ;; (:div :class "announcement" "The conference is over!")
+  ;; (:div :class "announcement" "The conference is being organized. Stay tuned for updates!")
   )
 
 (define-text :submissions
