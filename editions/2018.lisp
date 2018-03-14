@@ -196,6 +196,12 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   :role (:committee)
   :address (:country "Austria"))
 
+(define-person (:family-name "van Waning"
+			     :given-name "Ernst")
+    :organization "Infometrics.nl"
+    :role (:committee)
+    :address (:country "Netherlands"))
+
 
 (define-person (:family-name "Emerson"
 		:given-name "R. Matthew")
@@ -204,7 +210,8 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 
 (define-person (:family-name "Domkin"
                 :given-name "Vsevolod")
-  :role (:speaker))
+    :role (:speaker)
+    :address (:country "Ukraine"))
 
 
 ;;; Locations
