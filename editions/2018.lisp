@@ -83,9 +83,9 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   :website "http://www.epita.fr/"
   :logo "../static/logos/epita.png")
 
-;; (define-sponsor lispworks
-;;   :website "http://www.lispworks.com/"
-;;   :logo "../static/logos/lispworks.png")
+(define-sponsor lispworks
+  :website "http://www.lispworks.com/"
+  :logo "../static/logos/lispworks.png")
 
 (define-sponsor franz
   :website "http://www.franz.com/"
