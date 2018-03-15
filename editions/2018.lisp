@@ -177,7 +177,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 		:given-name "Christopher")
   :role (:committee)
   :organization "Null Program"
-  :address (:country "Canada"))
+  :address (:country "USA"))
 
 (define-person (:family-name "Shivers"
 		:given-name "Olin")
