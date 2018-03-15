@@ -98,13 +98,6 @@
           </section>
         </c:when>
 
-        <c:when test="(query-text '(= name :hotels))">
-          <section id="hotels">
-            <h4>Recommended Hotels</h4>
-            <c:splice lquery="(html (query-text '(= name :hotels)))" />
-          </section>
-        </c:when>
-
         <c:when test="(query-text '(= name :excursion))">
           <section id="excursion">
             <h4>Sunday Excursion</h4>
