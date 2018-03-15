@@ -32,4 +32,14 @@
 
 (defun check-secret (secret)
   (unless (secret secret)
-    (error "The secret ~s is not defined!" secret)))
+    (restart-case
+        (error "The secret ~s is not defined!" secret)
+      (use-value (value)
+        :report "Supply a value to use for the secret."
+        :interactive (lambda ()
+                       (format *query-io* "~&Enter a new value (evaluated): ")
+                       (list (eval (read *query-io*))))
+        value)
+      (continue ()
+        :report "Continue, returning NIL for the secret."
+        NIL))))
