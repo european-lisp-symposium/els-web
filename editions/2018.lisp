@@ -228,6 +228,11 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 (define-text :excursion
   (:p "A guided visit to the Andalusian town of Ronda, famous for its spectacular views, traditional architecture and bull-ring turned museum. An ideal introduction to the old and new Spain. More details soon!"))
 
+(define-text :hotels
+  (:ul
+   (:li "Hotel <a href=\"https://www.fuertehoteles.com/en/hotels/fuerte-marbella/the-hotel/\">Fuerte</a> (****)")
+   (:li "Hotel <a href=\"https://www.hotelsancristobal.com/en/\">San Cristóbal</a> (***)")))
+
 
 ;; Registration
 (define-registration (:active)
