@@ -197,10 +197,10 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   :address (:country "Austria"))
 
 (define-person (:family-name "van Waning"
-			     :given-name "Ernst")
-    :organization "Infometrics.nl"
-    :role (:committee)
-    :address (:country "Netherlands"))
+		:given-name "Ernst")
+  :organization "Infometrics.nl"
+  :role (:committee)
+  :address (:country "Netherlands"))
 
 
 (define-person (:family-name "Emerson"
