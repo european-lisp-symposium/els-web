@@ -71,7 +71,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 
 
 ;;(define-date "(New) Submission deadline" @2018-02-25)
-(define-date "Notification of acceptance" @2018-03-19)
+;; (define-date "Notification of acceptance" @2018-03-19)
 (define-date "Early Registration Deadline" @2018-03-25)
 (define-date "Final papers" @2018-04-02)
 
