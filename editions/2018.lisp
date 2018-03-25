@@ -152,7 +152,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 (define-person (:family-name "Strandh"
 		:given-name "Robert")
   :role (:committee)
-  :organization "LaBRI, Université de Bordeaux"
+  :organization "Université de Bordeaux"
   :address (:country "France"))
 
 (define-person (:family-name "Sperber"
