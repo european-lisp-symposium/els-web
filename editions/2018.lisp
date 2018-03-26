@@ -70,9 +70,9 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   abstract."))
 
 
-;;(define-date "(New) Submission deadline" @2018-02-25)
+;; (define-date "(New) Submission deadline" @2018-02-25)
 ;; (define-date "Notification of acceptance" @2018-03-19)
-(define-date "Early Registration Deadline" @2018-03-25)
+;; (define-date "Early Registration Deadline" @2018-03-25)
 (define-date "Final papers" @2018-04-02)
 
 (define-date "Conference start" @2018-04-16)
@@ -239,16 +239,14 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 
 ;; Registration
 (define-registration (:active)
-  (:kind "Early regular" :price 120
+  (:kind "Early regular" :price 120 :status :inactive
    :description "Full conference package (talks, coffee breaks, banquet).")
-  (:kind "Early student" :price 60
+  (:kind "Early student" :price 60 :status :inactive
    :description "Same as \"Early regular\", student price (requires student ID copy via e-mail).")
   (:kind "Regular" :price 160
-   :description "Full conference package (talks, coffee breaks, banquet)."
-   :status :inactive)
+   :description "Full conference package (talks, coffee breaks, banquet).")
   (:kind "Student" :price 90
-   :description "Same as \"Regular\", student price (requires student ID copy via e-mail)."
-   :status :inactive)
+   :description "Same as \"Regular\", student price (requires student ID copy via e-mail).")
   (:option "banquet" :checked t :price 0 :description "Banquet")
   (:option "banquet-guest" :price 35 :description "Banquet guest")
   (:option "certificate" :price 0 :description "Certificate of attendance")
