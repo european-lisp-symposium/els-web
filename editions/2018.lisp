@@ -281,38 +281,38 @@ I will say a few words, looking down from the giant's shoulders, on the subject 
 
   @10:30:00 (:title "Petalisp: A Common Lisp Library for Data Parallel Programming"
 	    :role (:talk)
-		    :speakers ())
+		    :speakers ("Marco Heisig"))
 
   @11:00:00 (:title "Dynamic Optimizations for SBCL Garbage Collection"
 		    :role (:talk)
-		    :speakers ())
+		    :speakers ("Ethan Schwartz"))
 
   @11:30:00 (:title "Patio Break" :role (:break))
 
   @12:00:00 (:title "Incremental Parsing of Common Lisp Code"
 		    :role (:talk)
-		    :speakers ())
+		    :speakers ("Irène Anne Durand and Robert Strandh"))
 
   
   @12:40:00 (:title "Strategies for Typecase Optimization"
 		    :role (:talk)
-		    :speakers ())
+		    :speakers ("Jim Newton and Didier Verna"))
 
   
   @13:20:00 (:title "Method Combinators"
 		    :role (:talk)
-		    :speakers ())
+		    :speakers ("Dider Verna"))
   
   @14:00:00 (:title "Lunch" :role (:break))
 
   @15:30:00  (:title "The Computational Structure of the Clifford Groups,
   and Overview of Quantum Computing Development with Common Lisp"
 		     :role (:talk)
-		     :speakers ())
+		     :speakers ("Robert Smith"))
   
   @16:15:00  (:title "Clasp Common Lisp Implementation and Optimization"
 		     :role (:talk)
-		     :speakers ())
+		     :speakers ("Alex Wood and Christian Schafmeister"))
 
   @17:00:00  (:title "Patio Break" :role (:break))
 
@@ -343,26 +343,48 @@ In this talk, I'd like to share the success stories of developing a number of in
 
   @10:20:00 (:title "Coffee Break" :role (:break))
 
-  @10:30:00 (:title "pLisp: a Friendly Lisp IDE for Beginners")
+  @10:30:00 (:title "pLisp: a Friendly Lisp IDE for Beginners"
+		    :speakers ("Rajesh Jayaprakash")
+		    :role (:talk))
 
-  @11:00:00 (:title "Using Lisp-based Pseudocode to Probe Student Understanding")
+  @11:00:00 (:title "Using Lisp-based Pseudocode to Probe Student Understanding"
+		    :speakers ("Christophe Rhodes")
+		    :role (:talk))
 
   @11:30:00 (:title "Patio Break" :role (:break))
 
-  @12:00:00 (:title "Interactive Flow Simulation with Common Lisp")
+  @12:00:00 (:title "Interactive Flow Simulation with Common Lisp"
+		    :speakers ("Nicolas Neuss")
+		    :role (:talk))
   
-  @12:40:00 (:title "Object-oriented Shader Composiiton using CLOS")
+  @12:30:00 (:title "Object-oriented Shader Compositon using CLOS"
+		    :speakers ("Nicolas Hafner")
+		    :role (:talk))
 
-  @13:20:00 (:title "Context-oriented Algorithmic Design")
+  @13:00:00 (:title "Context-oriented Algorithmic Design"
+		    :speakers ("Bruno Ferreira and António Menezes Leitão")
+		    :role (:talk))
+  
+  @13:30:00 (:title "Event Detection in Unstructured Text (using Common Lisp)"
+		    :role (:talk :keynote)
+		    :speakers ("Jason Comez") 
+		    :description "At RavenPack, we use Common Lisp to extract meaning from unstructured English text.  The focus is low-latency processing of real-time news feeds and blogs, to provide actionable intelligence to our clients in the financial industry.  This talk discusses our technology for detecting events.  We look at what we've done so far, what we are working on now, and some future possibilities.")
+
+    
   @14:00:00 (:title "Lunch" :role (:break))
 
-  @15:30:00  (:title "Clef Design: Thoughts on the Formalization of Program Construction")
+  @15:30:00  (:title "Clef Design: Thoughts on the Formalization of Program Construction"
+		     :speakers ("Klaas van Schelven")
+		     :role (:talk))
   
-  @16:15:00  (:title "Partial Inlining using Local Graph Rewriting")
+  @16:15:00  (:title "Partial Inlining using Local Graph Rewriting"
+		     :speakers ("Irène Anne Durand and Robert Strandh")
+		     :role (:talk))
 
   @17:00:00  (:title "Patio Break" :role (:break))
 
-  @17:30:00  (:title "Lightnight Talks" :role (:talk))
+  @17:30:00  (:title "Lightning Talks"
+		     :role (:talk))
   
   @18:00:00  (:title "Common Lisp Foundation Overview & Brainstorming for common-lisp.net content and Fundraisers" :role (:organization))
 
