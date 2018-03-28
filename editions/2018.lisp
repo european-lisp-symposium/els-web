@@ -6,6 +6,7 @@
 ;;; Texts
 (define-text :announcement
   ;; (:div :class "announcement" "The conference is over!")
+  (:div :class "announcement" "Preliminary program announced!")
   (:div :class "announcement" "Invited speakers announced!")
   ;; (:div :class "announcement" "Registrations are closed!")
   (:div :class "announcement" "Registration is now open!")
