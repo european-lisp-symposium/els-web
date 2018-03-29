@@ -308,11 +308,11 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 (define-programme-day @2018-04-16T00:00:00+02:00
   ;;   @08:30:00 (:title "Registration"
   ;;              :role (:organization))
-  @08:45:00 (:title "Breakfast on Patio (Coffee, bisuits, bread, fruit)"
+  @09:00:00 (:title "Breakfast on Patio (Coffee, bisuits, bread, fruit)"
 	     :role (:organization))
-  @09:15:00 (:title "Welcome Message" :role (:organization))
+  @09:30:00 (:title "Welcome Message" :role (:organization))
   
-  @09:30:00 (:title "Keynote: This Old Lisp"
+  @09:40:00 (:title "Keynote: This Old Lisp"
 	     :role (:talk :keynote)
 	     :speakers ("R. Matthew Emerson")
 	     :description "Lisp was invented 60 years ago.  Coral Common Lisp, the ancestor of today's Clozure Common Lisp, was released over 30 years ago. 
@@ -325,8 +325,6 @@ have stood on the shoulders of giants.\"
 I will say a few words, looking down from the giant's shoulders, on the subject of Clozure CL, that old Lisp, including where it stands today, and how it might evolve in the future.")
   
 
-  @10:20:00 (:title "Coffee Break")
-  
   @10:30:00 (:title "Petalisp: A Common Lisp Library for Data Parallel Programming"
 	     :role (:talk)
 	     :speakers ("Marco Heisig"))
@@ -377,19 +375,17 @@ I will say a few words, looking down from the giant's shoulders, on the subject 
 (define-programme-day @2018-04-17T00:00:00+02:00
   ;;   @08:30:00 (:title "Registration"
   ;;              :role (:organization))
-  @08:45:00 (:title "Breakfast on Patio (Coffee, bisuits, bread, fruit)"
+  @09:00:00 (:title "Breakfast on Patio (Coffee, bisuits, bread, fruit)"
 	     :role (:organization))
-  @09:15:00 (:title "Welcome Message" :role (:organization))
+  @09:30:00 (:title "Welcome Message" :role (:organization))
   
-  @09:30:00 (:title "Keynote: Lisp in a Startup: the Good, the Bad, and the Ugly"
+  @09:40:00 (:title "Keynote: Lisp in a Startup: the Good, the Bad, and the Ugly"
 	     :role (:talk :keynote)
 	     :speakers ("Vsevolod Domkin")
 	     :description "Over the last 10 years of my software development career, I have mostly programmed in Common Lisp, in two distinct environments: open-source and startup (aka consumer Internet companies). Among the startup projects, in which I managed to introduce Lisp, the most successful is Grammarly where the system we had built continues to playa major role — more than two years after my departure from the company — at the core of its intelligent product used by 10 million people daily.
 
 In this talk, I'd like to share the success stories of developing a number of internet services in Lisp and the merits of the Lisp enviornment that enabled those, as well as the flip sides of the same stories that manifest the problems of the Lisp ecosystem — and propose possible solutions to them. We'll discuss where Lisp fits best and worst among the different professional environments and why.")
   
-  
-  @10:20:00 (:title "Coffee Break" :role (:break))
   
   @10:30:00 (:title "pLisp: a Friendly Lisp IDE for Beginners"
 	     :speakers ("Rajesh Jayaprakash")
