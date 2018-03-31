@@ -364,7 +364,7 @@ I will say a few words, looking down from the giant's shoulders, on the subject 
   
   @17:30:00  (:title "Lightning Talks" :role (:talk))
   
-  @18:00:00  (:title "Association of Lisp Users Overview & Search for new President" :role (:organization))
+  @18:00:00  (:title "Association of Lisp Users Overview & Search for New President" :role (:organization))
   
   @18:45:00  (:title "Travel & Prepare for Dinner")
   
