@@ -74,7 +74,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 ;; (define-date "(New) Submission deadline" @2018-02-25)
 ;; (define-date "Notification of acceptance" @2018-03-19)
 ;; (define-date "Early Registration Deadline" @2018-03-25)
-(define-date "Final papers" @2018-04-02)
+(define-date "Final papers" @2018-04-09)
 
 (define-date "Conference start" @2018-04-16)
 (define-date "Conference end" @2018-04-17)
@@ -430,7 +430,7 @@ In this talk, I'd like to share the success stories of developing a number of in
   @17:30:00  (:title "Lightning Talks"
 	      :role (:talk))
   
-  @18:00:00  (:title "Common Lisp Foundation Overview & Brainstorming for common-lisp.net content and Fundraisers" :role (:organization))
+  @18:00:00  (:title "Common Lisp Foundation Overview & Brainstorming for common-lisp.net Content and Fundraisers" :role (:organization))
   
   @18:45:00 (:title "Birds of a Feather Gatherings, Farewells, Impromptu Dinner Plans for those staying in Marbella"))
 
