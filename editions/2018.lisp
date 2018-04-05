@@ -254,7 +254,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   :role (:speaker))
 
 (define-person (:family-name "Menezes Leitão"
-		:given-name "Antonio")
+		:given-name "António")
   :role (:speaker))
 
 (define-person (:family-name "Cornez"
