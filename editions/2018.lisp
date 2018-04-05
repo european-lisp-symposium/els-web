@@ -296,16 +296,20 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   (:kind "Early student" :price 60 :status :inactive
    :description "Same as \"Early regular\", student price (requires student ID copy via e-mail).")
   (:kind "Regular" :price 160
-   :description "Full conference package (talks, coffee breaks, banquet).")
+   :description "Full conference package (talks, coffee breaks, note: banquet out).")
   (:kind "Student" :price 90
    :description "Same as \"Regular\", student price (requires student ID copy via e-mail).")
-  (:option "banquet" :checked t :price 0 :description "Banquet")
-  (:option "banquet-guest" :price 35 :description "Banquet guest")
+  (:option "banquet" :status :inactive
+   :checked t :price 0 :description "Banquet")
+  (:option "banquet-guest" :status :inactive
+   :price 35 :description "Banquet guest")
   (:option "certificate" :price 0 :description "Certificate of attendance")
   (:option "proceedings" :price 0 :description "Printed proceedings")
   ;; (:option "welcome" :price 0 :description "Welcome reception")
-  (:option "excursion" :price 20 :description "Sunday excursion (details below)")
-  (:option "excursion-guest" :price 20 :description "Sunday excursion guest"))
+  (:option "excursion" :status :inactive
+   :price 20 :description "Sunday excursion (details below)")
+  (:option "excursion-guest" :status :inactive
+   :price 20 :description "Sunday excursion guest"))
 
 
 ;;; Programme
