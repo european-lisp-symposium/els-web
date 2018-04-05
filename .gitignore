@@ -1,5 +1,7 @@
 secrets.lisp
 output/lib
+output/[0-9]*
+output/index.html
 .htaccess
 *.fasl
 *.dx64fsl
