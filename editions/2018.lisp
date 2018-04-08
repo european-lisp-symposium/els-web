@@ -316,7 +316,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 (define-programme-day @2018-04-16T00:00:00+02:00
   ;;   @08:30:00 (:title "Registration"
   ;;              :role (:organization))
-  @09:00:00 (:title "Breakfast on Patio (Coffee, bisuits, bread, fruit)"
+  @09:00:00 (:title "Breakfast on Patio (Coffee, biscuits, bread, fruit)"
 	     :role (:organization))
   @09:30:00 (:title "Welcome Message" :role (:organization))
 
@@ -383,7 +383,7 @@ I will say a few words, looking down from the giant's shoulders, on the subject 
 (define-programme-day @2018-04-17T00:00:00+02:00
   ;;   @08:30:00 (:title "Registration"
   ;;              :role (:organization))
-  @09:00:00 (:title "Breakfast on Patio (Coffee, bisuits, bread, fruit)"
+  @09:00:00 (:title "Breakfast on Patio (Coffee, biscuits, bread, fruit)"
 	     :role (:organization))
   @09:30:00 (:title "Welcome Message" :role (:organization))
 
