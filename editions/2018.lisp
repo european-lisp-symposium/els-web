@@ -231,7 +231,11 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 
 (define-person (:family-name "Smith"
 		:given-name "Robert")
-  :role (:speaker))
+    :role (:speaker))
+
+(define-person (:family-name "Nikolas"
+		:given-name "Tezak")
+    :role (:speaker))
 
 (define-person (:family-name "Wood"
 		:given-name "Alex")
@@ -359,10 +363,11 @@ I will say a few words, looking down from the giant's shoulders, on the subject 
 
   @14:00:00 (:title "Lunch" :role (:break))
 
-  @15:30:00  (:title "The Computational Structure of the Clifford Groups,
-  and Overview of Quantum Computing Development with Common Lisp"
+  @15:30:00 (:title "The Computational Structure of the Clifford
+  Groups, Simulating Quantum Processor Errors, and Overview of Quantum
+  Computing Development with Common Lisp"
 	      :role (:talk)
-	      :speakers ("Robert Smith"))
+	      :speakers ("Robert Smith and Nikolas Tezak"))
 
   @16:15:00  (:title "Clasp Common Lisp Implementation and Optimization"
 	      :role (:talk)
