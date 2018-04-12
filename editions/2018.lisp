@@ -191,7 +191,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   :address (:country "USA"))
 
 (define-person (:family-name "Wingo"
-		:given-name "Andy")
+        	:given-name "Andy")
   :role (:committee)
   :organization "Igalia"
   :address (:country "Spain"))
@@ -231,11 +231,11 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 
 (define-person (:family-name "Smith"
 		:given-name "Robert")
-    :role (:speaker))
+  :role (:speaker))
 
 (define-person (:family-name "Nikolas"
 		:given-name "Tezak")
-    :role (:speaker))
+  :role (:speaker))
 
 (define-person (:family-name "Wood"
 		:given-name "Alex")
@@ -267,7 +267,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 
 (define-person (:family-name "van Schelven"
 		:given-name "Klaas")
-    :role (:speaker))
+  :role (:speaker))
 
 
 ;;; Locations
@@ -366,8 +366,8 @@ I will say a few words, looking down from the giant's shoulders, on the subject 
   @15:30:00 (:title "The Computational Structure of the Clifford
   Groups, Simulating Quantum Processor Errors, and Overview of Quantum
   Computing Development with Common Lisp"
-	      :role (:talk)
-	      :speakers ("Robert Smith and Nikolas Tezak"))
+	     :role (:talk)
+  	     :speakers ("Robert Smith" "Nikolas Tezak"))
 
   @16:15:00  (:title "Clasp Common Lisp Implementation and Optimization"
 	      :role (:talk)
@@ -430,25 +430,21 @@ In this talk, I'd like to share the success stories of developing a number of in
 
   @14:00:00 (:title "Lunch" :role (:break))
 
-  @15:30:00  (:title "Clef Design: Thoughts on the Formalization of Program Construction"
-	      :speakers ("Klaas van Schelven")
-	      :role (:talk))
+  @15:30:00 (:title "Clef Design: Thoughts on the Formalization of Program Construction"
+	     :speakers ("Klaas van Schelven")
+	     :role (:talk))
 
-  @16:15:00  (:title "Partial Inlining using Local Graph Rewriting"
-	      :speakers ("Irène Durand" "Robert Strandh")
-	      :role (:talk))
+  @16:15:00 (:title "Partial Inlining using Local Graph Rewriting"
+	     :speakers ("Irène Durand" "Robert Strandh")
+	     :role (:talk))
 
-  @17:00:00  (:title "Patio Break" :role (:break))
+  @17:00:00 (:title "Patio Break" :role (:break))
 
-  @17:30:00  (:title "Lightning Talks"
-	      :role (:talk))
+  @17:30:00 (:title "Lightning Talks"
+	     :role (:talk))
 
-  @18:00:00  (:title "Common Lisp Foundation Overview & Brainstorming for common-lisp.net Content and Fundraisers" :role (:organization))
+  @18:00:00 (:title "Common Lisp Foundation Overview & Brainstorming for common-lisp.net Content and Fundraisers" :role (:organization))
 
   @18:45:00 (:title "Birds of a Feather Gatherings, Farewells, Impromptu Dinner Plans for those staying in Marbella"))
-
-
-
-
 
 ;; (define-proceedings "../static/proceedings/2018.pdf")
