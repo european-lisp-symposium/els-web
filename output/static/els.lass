@@ -438,7 +438,7 @@
             (.programme-entry
              (header
               (time :min-width 40px))
-             (.speakers :display none))))
+             (.speakers #+nil :display #+nil none))))
           ("#location"
            (.location
             (.imagery
