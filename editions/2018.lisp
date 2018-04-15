@@ -447,4 +447,4 @@ In this talk, I'd like to share the success stories of developing a number of in
 
   @18:45:00 (:title "Birds of a Feather Gatherings, Farewells, Impromptu Dinner Plans for those staying in Marbella"))
 
-;; (define-proceedings "../static/proceedings/2018.pdf")
+(define-proceedings "../static/proceedings/2018.pdf")
