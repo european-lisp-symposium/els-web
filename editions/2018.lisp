@@ -233,8 +233,8 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 		:given-name "Robert")
   :role (:speaker))
 
-(define-person (:family-name "Nikolas"
-		:given-name "Tezak")
+(define-person (:family-name "Tezak"
+        :given-name "Nikolas")
   :role (:speaker))
 
 (define-person (:family-name "Wood"
