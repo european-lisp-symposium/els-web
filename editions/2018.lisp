@@ -294,7 +294,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 
 
 ;; Registration
-#+()(define-registration (:active)
+(define-registration (:inactive)
   (:kind "Early regular" :price 120 :status :inactive
    :description "Full conference package (talks, coffee breaks, banquet).")
   (:kind "Early student" :price 60 :status :inactive
