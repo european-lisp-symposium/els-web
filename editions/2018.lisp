@@ -395,6 +395,7 @@ I will say a few words, looking down from the giant's shoulders, on the subject 
   @09:40:00 (:title "Keynote: Lisp in a Startup: the Good, the Bad, and the Ugly"
          :role (:talk :keynote)
          :speakers ("Vsevolod Domkin")
+         :website "../static/2018/dyomkin.pdf"
          :description "Over the last 10 years of my software development career, I have mostly programmed in Common Lisp, in two distinct environments: open-source and startup (aka consumer Internet companies). Among the startup projects, in which I managed to introduce Lisp, the most successful is Grammarly where the system we had built continues to playa major role — more than two years after my departure from the company — at the core of its intelligent product used by 10 million people daily.
 
 In this talk, I'd like to share the success stories of developing a number of internet services in Lisp and the merits of the Lisp enviornment that enabled those, as well as the flip sides of the same stories that manifest the problems of the Lisp ecosystem — and propose possible solutions to them. We'll discuss where Lisp fits best and worst among the different professional environments and why.")
