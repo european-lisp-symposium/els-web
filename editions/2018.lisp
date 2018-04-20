@@ -327,6 +327,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   @09:40:00 (:title "Keynote: This Old Lisp"
          :role (:talk :keynote)
          :speakers ("R. Matthew Emerson")
+         :website "../static/2018/emerson.pdf"
          :description "Lisp was invented 60 years ago.  Coral Common Lisp, the ancestor of today's Clozure Common Lisp, was released over 30 years ago.
 
 Over this time, processor architectures and operating systems have come and gone, but Clozure CL (under various names and forms) has survived and is still with us today.
@@ -339,6 +340,7 @@ I will say a few words, looking down from the giant's shoulders, on the subject 
 
   @10:30:00 (:title "Petalisp: A Common Lisp Library for Data Parallel Programming"
          :role (:talk)
+         :website "../static/2018/heisig.pdf"
          :speakers ("Marco Heisig"))
 
   @11:00:00 (:title "Dynamic Optimizations for SBCL Garbage Collection"
@@ -349,11 +351,13 @@ I will say a few words, looking down from the giant's shoulders, on the subject 
 
   @12:00:00 (:title "Incremental Parsing of Common Lisp Code"
          :role (:talk)
+         :website "../static/2018/strandh1.pdf"
          :speakers ("Irène Durand" "Robert Strandh"))
 
 
   @12:40:00 (:title "Strategies for Typecase Optimization"
          :role (:talk)
+         :website "../static/2018/newton.pdf"
          :speakers ("Jim Newton" "Didier Verna"))
 
 
@@ -417,15 +421,18 @@ In this talk, I'd like to share the success stories of developing a number of in
 
   @12:30:00 (:title "Object-oriented Shader Compositon using CLOS"
          :speakers ("Nicolas Hafner")
+         :website "../static/2018/hafner.pdf"
          :role (:talk))
 
   @13:00:00 (:title "Context-oriented Algorithmic Design"
          :speakers ("Bruno Ferreira" "António Menezes Leitão")
+         :website "../static/2018/ferreira.pdf"
          :role (:talk))
 
   @13:30:00 (:title "Event Detection in Unstructured Text (using Common Lisp)"
          :role (:talk :keynote)
          :speakers ("Jason Cornez")
+         :website "../static/2018/cornez.pdf"
          :description "At RavenPack, we use Common Lisp to extract meaning from unstructured English text.  The focus is low-latency processing of real-time news feeds and blogs, to provide actionable intelligence to our clients in the financial industry.  This talk discusses our technology for detecting events.  We look at what we've done so far, what we are working on now, and some future possibilities.")
 
 
@@ -437,6 +444,7 @@ In this talk, I'd like to share the success stories of developing a number of in
 
   @16:15:00 (:title "Partial Inlining using Local Graph Rewriting"
          :speakers ("Irène Durand" "Robert Strandh")
+         :website "../static/2018/strandh2.pdf"
          :role (:talk))
 
   @17:00:00 (:title "Patio Break" :role (:break))
