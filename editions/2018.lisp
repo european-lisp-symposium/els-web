@@ -363,6 +363,7 @@ I will say a few words, looking down from the giant's shoulders, on the subject 
 
   @13:20:00 (:title "Method Combinators"
          :role (:talk)
+         :website "../static/2018/verna.pdf"
          :speakers ("Didier Verna"))
 
   @14:00:00 (:title "Lunch" :role (:break))
