@@ -407,6 +407,7 @@ In this talk, I'd like to share the success stories of developing a number of in
 
   @10:30:00 (:title "pLisp: a Friendly Lisp IDE for Beginners"
          :speakers ("Rajesh Jayaprakash")
+         :website "../static/2018/jayaprakash.pdf"
          :role (:talk))
 
   @11:00:00 (:title "Using Lisp-based Pseudocode to Probe Student Understanding"
@@ -417,6 +418,7 @@ In this talk, I'd like to share the success stories of developing a number of in
 
   @12:00:00 (:title "Interactive Flow Simulation with Common Lisp"
          :speakers ("Nicolas Neuss")
+         :website "../static/2018/neuss.pdf"
          :role (:talk))
 
   @12:30:00 (:title "Object-oriented Shader Compositon using CLOS"
