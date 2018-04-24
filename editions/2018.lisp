@@ -380,7 +380,9 @@ I will say a few words, looking down from the giant's shoulders, on the subject 
 
   @17:00:00  (:title "Patio Break" :role (:break))
 
-  @17:30:00  (:title "Lightning Talks" :role (:talk))
+  @17:30:00  (:title "Lightning Talks"
+              :role (:talk)
+              :website "../static/2018/lt1.pdf")
 
   @18:00:00  (:title "Association of Lisp Users Overview & Search for New President" :role (:organization))
 
@@ -453,7 +455,9 @@ In this talk, I'd like to share the success stories of developing a number of in
   @17:00:00 (:title "Patio Break" :role (:break))
 
   @17:30:00 (:title "Lightning Talks"
-         :role (:talk))
+             :role (:talk)
+             :website "../static/2018/lt2.pdf")
+
 
   @18:00:00 (:title "Common Lisp Foundation Overview & Brainstorming for common-lisp.net Content and Fundraisers" :role (:organization))
 
