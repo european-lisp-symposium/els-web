@@ -415,6 +415,7 @@ In this talk, I'd like to share the success stories of developing a number of in
 
   @11:00:00 (:title "Using Lisp-based Pseudocode to Probe Student Understanding"
          :speakers ("Christophe Rhodes")
+         :website "../static/2018/rhodes.pdf"
          :role (:talk))
 
   @11:30:00 (:title "Patio Break" :role (:break))
