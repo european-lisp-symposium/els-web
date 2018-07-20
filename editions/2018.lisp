@@ -332,8 +332,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 
 Over this time, processor architectures and operating systems have come and gone, but Clozure CL (under various names and forms) has survived and is still with us today.
 
-Clozure CL, Common Lisp, and Lisp itself are the product of many intelligent and clever people. Indeed, we find ourselves saying, with Newton, \"If I have seen a little farther than others, it is because I
-have stood on the shoulders of giants.\"
+Clozure CL, Common Lisp, and Lisp itself are the product of many intelligent and clever people. Indeed, we find ourselves saying, with Newton, \"If I have seen a little farther than others, it is because I have stood on the shoulders of giants.\"
 
 I will say a few words, looking down from the giant's shoulders, on the subject of Clozure CL, that old Lisp, including where it stands today, and how it might evolve in the future.")
 
