@@ -9,7 +9,9 @@ Author: Nicolas Hafner <shinmera@tymoon.eu>
   :author "Nicolas Hafner <shinmera@tymoon.eu>"
   :maintainer "Nicolas Hafner <shinmera@tymoon.eu>"
   :description "Tools to generate the European Lisp Symposium's website."
-  :homepage "https://github.com/european-lisp-symposium/els-web"
+  :homepage "https://european-lisp-symposium.github.io/els-web/"
+  :bug-tracker "https://github.com/european-lisp-symposium/els-web/issues"
+  :source-control (:git "https://github.com/european-lisp-symposium/els-web.git")
   :serial T
   :components ((:file "package")
                (:file "toolkit")
