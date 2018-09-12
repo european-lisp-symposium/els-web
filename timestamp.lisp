@@ -53,6 +53,9 @@
                   (hour timestamp) (minute timestamp) (sec timestamp)
                   (offset timestamp)))
 
+(defun timestamp->utc (timestamp)
+  (universal->timestamp (timestamp->universal timestamp) 0))
+
 (defun adjust-timestamp (timestamp offset)
   (universal->timestamp
    (+ (timestamp->universal timestamp) offset)

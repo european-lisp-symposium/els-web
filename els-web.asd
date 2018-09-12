@@ -46,4 +46,5 @@ Author: Nicolas Hafner <shinmera@tymoon.eu>
                :named-readtables
                :drakma
                :yason
-               :lambda-fiddle))
+               :lambda-fiddle
+               :iclendar))
