@@ -63,8 +63,12 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   file includes the <code>\\printccsdesc</code> command below the
   abstract."))
 
-(define-date "Conference start" @2017-04-01)
-(define-date "Conference end" @2017-04-02)
+(define-date "Submission deadline" @2019-02-01)
+(define-date "Notification of acceptance" @2019-03-01)
+;; (define-date "Early Registration Deadline" @2018-03-25)
+(define-date "Final papers" @2019-03-18)
+(define-date "Conference start" @2019-04-01)
+(define-date "Conference end" @2019-04-02)
 
 ;;; Sponsors
 ;;(define-sponsor acm
@@ -99,6 +103,11 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   :email "www@european-lisp-symposium.org"
   :website "http://www.european-lisp-symposium.org"
   :organization "ELS")
+
+(define-person (:family-name "Neuss"
+        :given-name "Nicolas")
+  :role (:programme-chair)
+  :organization "FAU Erlangen-Nürnberg, Germany")
 
 
 ;;; Locations
