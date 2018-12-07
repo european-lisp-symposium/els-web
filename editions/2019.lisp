@@ -109,6 +109,76 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   :role (:programme-chair)
   :organization "FAU Erlangen-Nürnberg, Germany")
 
+(define-person (:family-name "Antoniotti"
+        :given-name "Marco")
+  :role (:committee)
+  :organization "Universita Milano Bicocca, Italy")
+
+(define-person (:family-name "Battyani"
+        :given-name "Marc")
+  :role (:committee)
+  :organization "Fractal Concept")
+
+(define-person (:family-name "Emerson"
+        :given-name "R. Matthew")
+  :role (:committee)
+  :organization "Concur, USA")
+
+(define-person (:family-name "Heisig"
+        :given-name "Marco")
+  :role (:committee)
+  :organization "FAU Erlangen-Nürnberg, Germany")
+
+(define-person (:family-name "Herzeel"
+        :given-name "Charlotte")
+  :role (:committee)
+  :organization "IMEC, ExaScience Life Lab, Leuven, Belgium")
+
+(define-person (:family-name "Riva"
+        :given-name "Alberto")
+  :role (:committee)
+  :organization "University of Florida, USA")
+
+(define-person (:family-name "Stalla"
+        :given-name "Alessio")
+  :role (:committee)
+  :organization "ManyDesigns Srl, Italy")
+
+(define-person (:family-name "Mai"
+        :given-name "Pierre M.")
+  :role (:committee)
+  :organization "PMSF IT Consulting, Germany")
+
+(define-person (:family-name "Ó Nualláin"
+        :given-name "Breanndán ")
+  :role (:committee)
+  :organization "University of Amsterdam, Netherlands")
+
+(define-person (:family-name "Dreschler-Fischer"
+        :given-name "Leonie")
+  :role (:committee)
+  :organization "University of Hamburg, Germany")
+
+(define-person (:family-name "Rideau"
+        :given-name "François-René")
+  :role (:committee)
+  :organization "Google, USA")
+
+(define-person (:family-name "Krusenotto"
+        :given-name "Patrick")
+  :role (:committee)
+  :organization "Deutsche Welle, Germany")
+
+(define-person (:family-name "Marek"
+        :given-name "Philipp")
+  :role (:committee)
+  :organization "Austria")
+
+(define-person (:family-name "Chua"
+        :given-name "Sacha")
+  :role (:committee)
+  :organization "Toronto, Canada")
+
 
 ;;; Locations
 (define-location "Hotel Bristol Palace"
