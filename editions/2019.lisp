@@ -117,12 +117,22 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 (define-person (:family-name "Battyani"
         :given-name "Marc")
   :role (:committee)
-  :organization "Fractal Concept")
+  :organization "Fractal Concept, France")
+
+(define-person (:family-name "Costanza"
+        :given-name "Pascal")
+  :role (:committee)
+  :organization "IMEC, ExaScience Life Lab, Leuven, Belgium")
+
+(define-person (:family-name "Dreschler-Fischer"
+        :given-name "Leonie")
+  :role (:committee)
+  :organization "University of Hamburg, Germany")
 
 (define-person (:family-name "Emerson"
         :given-name "R. Matthew")
   :role (:committee)
-  :organization "Concur, USA")
+  :organization "toughtstuff LLC, USA")
 
 (define-person (:family-name "Heisig"
         :given-name "Marco")
@@ -134,16 +144,6 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   :role (:committee)
   :organization "IMEC, ExaScience Life Lab, Leuven, Belgium")
 
-(define-person (:family-name "Riva"
-        :given-name "Alberto")
-  :role (:committee)
-  :organization "University of Florida, USA")
-
-(define-person (:family-name "Stalla"
-        :given-name "Alessio")
-  :role (:committee)
-  :organization "ManyDesigns Srl, Italy")
-
 (define-person (:family-name "Mai"
         :given-name "Pierre M.")
   :role (:committee)
@@ -154,15 +154,20 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   :role (:committee)
   :organization "University of Amsterdam, Netherlands")
 
-(define-person (:family-name "Dreschler-Fischer"
-        :given-name "Leonie")
-  :role (:committee)
-  :organization "University of Hamburg, Germany")
-
 (define-person (:family-name "Rideau"
         :given-name "François-René")
   :role (:committee)
   :organization "Google, USA")
+
+(define-person (:family-name "Riva"
+        :given-name "Alberto")
+  :role (:committee)
+  :organization "University of Florida, USA")
+
+(define-person (:family-name "Stalla"
+        :given-name "Alessio")
+  :role (:committee)
+  :organization "ManyDesigns Srl, Italy")
 
 (define-person (:family-name "Krusenotto"
         :given-name "Patrick")
@@ -177,7 +182,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 (define-person (:family-name "Chua"
         :given-name "Sacha")
   :role (:committee)
-  :organization "Toronto, Canada")
+  :organization "Living an Awesome Life, Canada")
 
 
 ;;; Locations
