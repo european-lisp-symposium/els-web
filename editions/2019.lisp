@@ -71,9 +71,9 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 (define-date "Conference end" @2019-04-02)
 
 ;;; Sponsors
-;;(define-sponsor acm
-;;  :website "http://www.sigplan.org/"
-;;  :logo "../static/logos/acm.svg")
+(define-sponsor acm
+  :website "http://www.sigplan.org/"
+  :logo "../static/logos/acm.svg")
 
 ;;(define-sponsor cl-foundation
 ;;  :website "http://cl-foundation.org/"
