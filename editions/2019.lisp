@@ -4,9 +4,10 @@
 
 ;;; Texts
 (define-text :announcement
-  ;;  (:div :class "announcement" "The conference is over!")
-  (:div :class "announcement" "The conference is being organized. Stay tuned for updates!")
-  (:div :class "announcement" "The conference will be co-located with <a href=\"http://2019.programming-conference.org/\">Programming 2019</a>"))
+    ;;  (:div :class "announcement" "The conference is over!")
+    (:div :class "announcement" "Invited speakers announced!")
+    ;; (:div :class "announcement" "The conference is being organized. Stay tuned for updates!")
+    (:div :class "announcement" "The conference will be co-located with <a href=\"http://2019.programming-conference.org/\">Programming 2019</a>"))
 
 (define-text :submissions
 
@@ -184,6 +185,27 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   :role (:committee)
   :organization "Living an Awesome Life, Canada")
 
+
+(define-person (:family-name "Monnier"
+                :given-name "Stefan")
+  :role (:speaker)
+  :organization "Université de Montréal, Québec, Canada")
+
+(define-person (:family-name "Rhodes"
+                :given-name "Christophe")
+  :role (:speaker)
+  :organization "")
+
+(define-person (:family-name "Flatt"
+                :given-name "Matthew")
+  :role (:speaker)
+  :organization "")
+
+(define-text :keynotes
+  (:ul
+   (:li "Keynote Speaker: Stefan Monnier on Emacs Lisp")
+   (:li "Keynote Speaker: Christophe Rhodes on SBCL")
+   (:li "And a bonus guest appearance by Matthew Flatt on Racket")))
 
 ;;; Locations
 (define-location "Hotel Bristol Palace"
