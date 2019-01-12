@@ -72,6 +72,13 @@
           <c:splice lquery="(template :registration)" />
         </c:when>
 
+        <c:when test="(query-text '(= name :keynotes))">
+          <section id="keynotes">
+            <h3>Invited Speakers</h3>
+            <c:splice lquery="(html (query-text '(= name :keynotes)))" />
+          </section>
+        </c:when>
+
         <c:when test="(query :programme-entry '(in role :keynote))">
           <section id="highlights">
             <h3>Highlights</h3>
