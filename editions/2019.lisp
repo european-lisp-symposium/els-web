@@ -5,6 +5,8 @@
 ;;; Texts
 (define-text :announcement
   ;;  (:div :class "announcement" "The conference is over!")
+  (:div :class "announcement"
+        "&lt;Programming&gt; <a href=\"https://2019.programming-conference.org/attending/Registration\">registration</a> is now open (early bird deadline is Feb. 25).")
   (:div :class "announcement" "Submissions deadline extended by one week!")
   (:div :class "announcement" "Keynote abstracts now available!")
   ;; (:div :class "announcement" "The conference is being organized. Stay tuned for updates!")
@@ -67,7 +69,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 
 (define-date "Submission deadline" @2019-02-08)
 (define-date "Notification of acceptance" @2019-03-01)
-;; (define-date "Early Registration Deadline" @2018-03-25)
+(define-date "Early Registration Deadline" @2018-03-25)
 (define-date "Final papers" @2019-03-18)
 (define-date "Conference start" @2019-04-01)
 (define-date "Conference end" @2019-04-02)
@@ -201,6 +203,14 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
                 :given-name "Matthew")
   :role (:speaker)
   :organization "")
+
+(define-text :registration
+  (:p "Since we are co-locating with &lt;Programming&gt; this year,
+registration must be done  through their <a href=\"https://2019.programming-conference.org/attending/Registration\">website</a>.
+You may register for either the full conference, or only the first 2 days (ELS
+and workshops). Because the student fee is higher than our normal rate, we
+will also implement a student refund program when the conference is over, as
+we did two years ago."))
 
 (define-text :keynotes
   (:ul
