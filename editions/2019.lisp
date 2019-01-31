@@ -5,7 +5,7 @@
 ;;; Texts
 (define-text :announcement
     ;;  (:div :class "announcement" "The conference is over!")
-    (:div :class "announcement" "Invited speakers announced!")
+    (:div :class "announcement" "Keynote abstracts now available!")
     ;; (:div :class "announcement" "The conference is being organized. Stay tuned for updates!")
     (:div :class "announcement" "The conference will be co-located with <a href=\"http://2019.programming-conference.org/\">Programming 2019</a>"))
 
@@ -203,8 +203,24 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 
 (define-text :keynotes
   (:ul
-   (:li "Keynote Speaker: Stefan Monnier on Emacs Lisp")
-   (:li "Keynote Speaker: Christophe Rhodes on SBCL")
+   (:li "Stefan Monnier: The Lisp of the prophet for the One True Editor
+<p><i>
+While the editor war is long gone and Emacs's marketshare has undoubtedly
+shrunk, it has established itself as an important branch in the Lisp family of
+languages. In this talk, I will look at what gave Emacs Lisp its shape,
+including what it took from its siblings and ancestors and what makes it
+different.
+</i></p>")
+   (:li "Christophe Rhodes: 20 more years of bootstrapping
+<p><i>
+Although its history is longer than this, the Steel Bank
+Common Lisp system was announced to the world in 1999, with its
+distinguishing characteristic of being written in vanilla ANSI Common
+Lisp explicitly described in the announcement.  We provide a
+retrospective on 20 years of development, discuss some of the features
+SBCL provides and the rationale behind them, and offer entirely
+speculative thoughts about the next 20 years of the project.
+</i></p>")
    (:li "And a bonus guest appearance by Matthew Flatt on Racket")))
 
 ;;; Locations
