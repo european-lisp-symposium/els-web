@@ -18,7 +18,7 @@
                             (add-class (if current "current" "other"))'>20XX</a>
       </nav>
       <div class="dates">
-        <time lquery="(time (queryf :time :date '(= name :conference\ start)) :title)"/> - 
+        <time lquery="(time (queryf :time :date '(= name :conference\ start)) :title)"/> -
         <time lquery="(time (queryf :time :date '(= name :conference\ end)) :title)"/>
       </div>
       <nav class="main">
@@ -43,10 +43,10 @@
         <a href="http://lists.lrde.epita.fr/listinfo/elsconf" rel="external">Mailing List</a>
       </nav>
     </header>
-    <main>      
+    <main>
       <article id="conference">
         <c:splice lquery="(html (query-text '(= name :announcement)))" />
-        
+
         <c:when test="(query1 :sponsor)">
           <section id="sponsors">
             <ul iterate="(query :sponsor)">
@@ -68,6 +68,12 @@
           </section>
         </c:when>
 
+        <c:when test="(query-text '(= name :registration))">
+          <section id="excursion">
+            <h4>Registration</h4>
+            <c:splice lquery="(html (query-text '(= name :registration)))" />
+          </section>
+        </c:when>
         <c:when test="(query :registration '(= status :active))">
           <c:splice lquery="(template :registration)" />
         </c:when>
@@ -96,7 +102,7 @@
             </c:using>
             <c:when test="(query :location '(in role :hotel))">
               <section id="hotels">
-                <h4>Hotels</h4>          
+                <h4>Hotels</h4>
                 <ul iterate="(query :location '(in role :hotel))">
                   <li><c:splice lquery="(template :location)" /></li>
                 </ul>
