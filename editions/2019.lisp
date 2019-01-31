@@ -4,10 +4,11 @@
 
 ;;; Texts
 (define-text :announcement
-    ;;  (:div :class "announcement" "The conference is over!")
-    (:div :class "announcement" "Keynote abstracts now available!")
-    ;; (:div :class "announcement" "The conference is being organized. Stay tuned for updates!")
-    (:div :class "announcement" "The conference will be co-located with <a href=\"http://2019.programming-conference.org/\">Programming 2019</a>"))
+  ;;  (:div :class "announcement" "The conference is over!")
+  (:div :class "announcement" "Submissions deadline extended by one week!")
+  (:div :class "announcement" "Keynote abstracts now available!")
+  ;; (:div :class "announcement" "The conference is being organized. Stay tuned for updates!")
+  (:div :class "announcement" "The conference will be co-located with <a href=\"http://2019.programming-conference.org/\">Programming 2019</a>"))
 
 (define-text :submissions
 
@@ -64,7 +65,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   file includes the <code>\\printccsdesc</code> command below the
   abstract."))
 
-(define-date "Submission deadline" @2019-02-01)
+(define-date "Submission deadline" @2019-02-08)
 (define-date "Notification of acceptance" @2019-03-01)
 ;; (define-date "Early Registration Deadline" @2018-03-25)
 (define-date "Final papers" @2019-03-18)
