@@ -91,9 +91,9 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 ;;  :website "http://www.lispworks.com/"
 ;;  :logo "../static/logos/lispworks.png")
 
-;;(define-sponsor franz
-;;  :website "http://www.franz.com/"
-;;  :logo "../static/logos/franz.png")
+(define-sponsor franz
+  :website "http://www.franz.com/"
+  :logo "../static/logos/franz.png")
 
 ;;(define-sponsor brunner
 ;;  :website "http://www.systemhaus-brunner.de/"
