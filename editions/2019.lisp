@@ -5,14 +5,12 @@
 ;;; Texts
 (define-text :announcement
     ;;  (:div :class "announcement" "The conference is over!")
-  (:div :class "announcement"
-        "&lt;Programming&gt; early-bird <a href=\"https://2019.programming-conference.org/attending/Registration\">registration</a> deadline extended to Feb. 28 AoE.")
-  ;; (:div :class "announcement"
-  ;; "&lt;Programming&gt; <a href=\"https://2019.programming-conference.org/attending/Registration\">registration</a> is now open (early bird deadline is Feb. 25).")
-  ;;  (:div :class "announcement" "Submissions deadline extended by one week!")
+    (:div :class "announcement"
+          "&lt;Programming&gt; <a href=\"https://2019.programming-conference.org/attending/Registration\">registration</a> is now open.")
   (:div :class "announcement" "Keynote abstracts now available!")
-  ;; (:div :class "announcement" "The conference is being organized. Stay tuned for updates!")
-  (:div :class "announcement" "The conference will be co-located with <a href=\"http://2019.programming-conference.org/\">Programming 2019</a>"))
+  (:div :class "announcement" "The conference will be co-located with <a
+href=\"http://2019.programming-conference.org/\">Programming 2019</a>")
+  #+() (:div :class "announcement" "The conference is being organized. Stay tuned for updates!"))
 
 (define-text :submissions
 
