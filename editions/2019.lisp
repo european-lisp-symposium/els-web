@@ -4,10 +4,10 @@
 
 ;;; Texts
 (define-text :announcement
-    ;;  (:div :class "announcement" "The conference is over!")
-    (:div :class "announcement"
-          "&lt;Programming&gt; <a href=\"https://2019.programming-conference.org/attending/Registration\">registration</a> is now open.")
-  (:div :class "announcement" "Keynote abstracts now available!")
+  ;;  (:div :class "announcement" "The conference is over!")
+  (:div :class "announcement" "Tentative program now available!")
+  (:div :class "announcement"
+        "&lt;Programming&gt; <a href=\"https://2019.programming-conference.org/attending/Registration\">registration</a> is now open.")
   (:div :class "announcement" "The conference will be co-located with <a
 href=\"http://2019.programming-conference.org/\">Programming 2019</a>")
   #+() (:div :class "announcement" "The conference is being organized. Stay tuned for updates!"))
@@ -212,27 +212,99 @@ and workshops). Because the student fee is higher than our normal rate, we
 will also implement a student refund program when the conference is over, as
 we did two years ago."))
 
-(define-text :keynotes
-  (:ul
-   (:li "Stefan Monnier: The Lisp of the prophet for the One True Editor
-<p><i>
-While the editor war is long gone and Emacs's marketshare has undoubtedly
-shrunk, it has established itself as an important branch in the Lisp family of
-languages. In this talk, I will look at what gave Emacs Lisp its shape,
-including what it took from its siblings and ancestors and what makes it
-different.
-</i></p>")
-   (:li "Christophe Rhodes: 20 more years of bootstrapping
-<p><i>
-Although its history is longer than this, the Steel Bank
-Common Lisp system was announced to the world in 1999, with its
-distinguishing characteristic of being written in vanilla ANSI Common
-Lisp explicitly described in the announcement.  We provide a
-retrospective on 20 years of development, discuss some of the features
-SBCL provides and the rationale behind them, and offer entirely
-speculative thoughts about the next 20 years of the project.
-</i></p>")
-   (:li "And a bonus guest appearance by Matthew Flatt on Racket")))
+
+;;; Programme
+(define-programme-day @2019-04-01T00:00:00+01:00
+  @08:30:00 (:title "Registration" :role (:organization))
+  @09:15:00 (:title "Welcome message" :role (:organization))
+
+  @09:30:00 (:title "Keynote: The Lisp of the Prophet for the One True Editor"
+             :role (:talk :keynote)
+             :speakers ("Stefan Monnier")
+             :description "While the editor war is long gone and Emacs's
+marketshare has undoubtedly shrunk, it has established itself as an important
+branch in the Lisp family of languages. In this talk, I will look at what gave
+Emacs Lisp its shape, including what it took from its siblings and ancestors
+and what makes it different.")
+  @10:30:00 (:title "Pattern-Based S-Expression Rewriting in Emacs"
+             :role (:talk)
+             :speakers ("Ryan Culpepper"))
+
+  @11:00:00 (:title "Coffee Break" :role (:break))
+
+  @11:30:00 (:title "Implementing Baker’s SUBTYPEP Decision Procedure"
+             :role (:talk)
+             :speakers ("Léo Valais" "Jim Newton" "Didier Verna"))
+  @12:00:00 (:title "MAKE-METHOD-LAMBDA Revisited"
+             :role (:talk)
+             :speakers ("Irène Anne Durand" "Robert Strandh"))
+
+  @12:30:00 (:title "Lunch" :role (:break))
+
+  @14:30:00 (:title "Finite Automata Theory Based Optimization"
+             :role (:talk)
+             :speakers ("Jim Newton" "Didier Verna"))
+  @15:00:00  (:title "Lazy, Parallel Multiple Value Reductions in Common Lisp"
+              :role (:talk)
+              :speakers ("Marco Heisig"))
+
+  @15:30:00  (:title "Coffee Break" :role (:break))
+
+  @16:00:00  (:title "Working with First-Order Proofs and Provers"
+              :role (:talk)
+              :speakers ("Mikhail Raskin" "Christoph Welzel"))
+  @16:30:00  (:title "Plagiarism Detection for Common Lisp"
+              :role (:talk)
+              :speakers ("António Leitão"))
+
+  @17:00:00 (:title "Lightning Talks" :role (:talk))
+
+  @19:00:00 (:title "Social Event" :role (:dinner :organization)))
+
+
+(define-programme-day @2019-04-02T00:00:00+01:00
+  @08:30:00 (:title "Registration" :role (:organization))
+
+  @09:00:00 (:title "Keynote: 20 More Years of Bootstrapping"
+             :role (:talk :keynote)
+             :speakers ("Christophe Rhodes")
+             :description "Although its history is longer than this, the Steel
+Bank Common Lisp system was announced to the world in 1999, with its
+distinguishing characteristic of being written in vanilla ANSI Common Lisp
+explicitly described in the announcement. We provide a retrospective on 20
+years of development, discuss some of the features SBCL provides and the
+rationale behind them, and offer entirely speculative thoughts about the next
+20 years of the project.")
+  @10:00:00 (:title "Bootstrapping Common Lisp Using Common Lisp"
+             :speakers ("Irène Anne Durand" "Robert Strandh")
+             :role (:talk))
+
+  @10:30:00 (:title "Coffee Break" :role (:break))
+
+  @11:00:00 (:title "Shader Pipeline and Effect Encapsulation using CLOS"
+             :speakers ("Nicolas Hafner")
+             :role (:talk))
+  @11:45:00 (:title "Hierarchical Task Network Planning in Common Lisp"
+             :speakers ("Robert P. Goldman" "Ugur Kuter")
+             :role (:talk))
+
+  @12:30:00 (:title "Lunch" :role (:break))
+
+  @14:30:00 (:title "Invited Talk on Racket"
+             :speakers ("Matthew Flatt")
+             :role (:talk :keynote))
+  @15:30:00 (:title "Symbols as Namespaces in Common Lisp"
+             :speakers ("Alessio Stalla")
+             :role (:talk))
+
+  @16:00:00 (:title "Coffee Break" :role (:break))
+
+  @16:30:00 (:title "Parallelizing Quickref"
+             :speakers ("Didier Verna")
+             :role (:talk))
+
+  @17:00:00 (:title "Lightning Talks"
+             :role (:talk)))
 
 ;;; Locations
 (define-location "Hotel Bristol Palace"
