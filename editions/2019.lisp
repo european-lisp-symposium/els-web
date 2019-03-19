@@ -226,11 +226,12 @@ marketshare has undoubtedly shrunk, it has established itself as an important
 branch in the Lisp family of languages. In this talk, I will look at what gave
 Emacs Lisp its shape, including what it took from its siblings and ancestors
 and what makes it different.")
-  @10:30:00 (:title "Pattern-Based S-Expression Rewriting in Emacs"
+
+  @10:30:00 (:title "Coffee Break" :role (:break))
+
+  @11:00:00 (:title "Pattern-Based S-Expression Rewriting in Emacs"
              :role (:talk)
              :speakers ("Ryan Culpepper"))
-
-  @11:00:00 (:title "Coffee Break" :role (:break))
 
   @11:30:00 (:title "Implementing Baker’s SUBTYPEP Decision Procedure"
              :role (:talk)
@@ -290,14 +291,15 @@ rationale behind them, and offer entirely speculative thoughts about the next
 
   @12:30:00 (:title "Lunch" :role (:break))
 
-  @14:30:00 (:title "Invited Talk on Racket"
+  @14:30:00 (:title "Rebooting Racket"
              :speakers ("Matthew Flatt")
              :role (:talk :keynote))
-  @15:30:00 (:title "Symbols as Namespaces in Common Lisp"
+
+  @15:30:00 (:title "Coffee Break" :role (:break))
+
+  @16:00:00 (:title "Symbols as Namespaces in Common Lisp"
              :speakers ("Alessio Stalla")
              :role (:talk))
-
-  @16:00:00 (:title "Coffee Break" :role (:break))
 
   @16:30:00 (:title "Parallelizing Quickref"
              :speakers ("Didier Verna")
