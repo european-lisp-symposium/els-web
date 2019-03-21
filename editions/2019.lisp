@@ -5,7 +5,7 @@
 ;;; Texts
 (define-text :announcement
   ;;  (:div :class "announcement" "The conference is over!")
-  (:div :class "announcement" "Tentative program now available!")
+  (:div :class "announcement" "Program now available!")
   (:div :class "announcement"
         "&lt;Programming&gt; <a href=\"https://2019.programming-conference.org/attending/Registration\">registration</a> is now open.")
   (:div :class "announcement" "The conference will be co-located with <a
