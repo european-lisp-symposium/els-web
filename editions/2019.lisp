@@ -161,7 +161,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 (define-person (:family-name "Rideau"
         :given-name "François-René")
   :role (:committee)
-  :organization "Google, USA")
+  :organization "Alacris.io")
 
 (define-person (:family-name "Riva"
         :given-name "Alberto")
