@@ -149,7 +149,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   :organization "IMEC, ExaScience Life Lab, Leuven, Belgium")
 
 (define-person (:family-name "Mai"
-        :given-name "Pierre M.")
+        :given-name "Pierre R.")
   :role (:committee)
   :organization "PMSF IT Consulting, Germany")
 
