@@ -318,3 +318,5 @@ rationale behind them, and offer entirely speculative thoughts about the next
             :city "Genova"
             :country "Italy")
   :map T)
+
+(define-proceedings "../static/proceedings/2019.pdf")
