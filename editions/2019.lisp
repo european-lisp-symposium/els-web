@@ -259,7 +259,8 @@ and what makes it different.")
               :role (:talk)
               :speakers ("António Leitão"))
 
-  @17:00:00 (:title "Lightning Talks" :role (:talk))
+  @17:00:00 (:title "Lightning Talks" :role (:talk)
+             :website "../static/2019/lt1.pdf")
 
   @19:00:00 (:title "Social Event" :role (:dinner :organization)))
 
@@ -315,7 +316,8 @@ happy ending.")
              :role (:talk))
 
   @17:00:00 (:title "Lightning Talks"
-             :role (:talk)))
+             :role (:talk)
+             :website "../static/2019/lt2.pdf"))
 
 ;;; Locations
 (define-location "Hotel Bristol Palace"
