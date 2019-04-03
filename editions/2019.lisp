@@ -197,12 +197,12 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 (define-person (:family-name "Rhodes"
                 :given-name "Christophe")
   :role (:speaker)
-  :organization "")
+  :organization "England")
 
 (define-person (:family-name "Flatt"
                 :given-name "Matthew")
   :role (:speaker)
-  :organization "")
+  :organization "University of Utah, USA")
 
 (define-text :registration
   (:p "Since we are co-locating with &lt;Programming&gt; this year,
@@ -293,7 +293,15 @@ rationale behind them, and offer entirely speculative thoughts about the next
 
   @14:30:00 (:title "Rebooting Racket"
              :speakers ("Matthew Flatt")
-             :role (:talk :keynote))
+             :role (:talk :keynote)
+             :description "Racket started in 1995 as a fusion of two
+off-the-shelf C/C++ libraries. From there, things got out of hand. We ended up
+building and maintaining a large programming language — with ambitions that
+span from language design to performance, from research to production — on an
+especially inelegant core implementation. After 2+ years of concerted effort,
+we have re-built Racket’s core in a more maintainable form. It’s a story as
+old as programming, and this particular instance looks like it will have a
+happy ending.")
 
   @15:30:00 (:title "Coffee Break" :role (:break))
 
