@@ -10,9 +10,21 @@
 (defvar *secret-load-stamp* 0)
 
 (defun load-secrets (&optional (file *secret-file*))
-  (with-open-file (stream file :direction :input :if-does-not-exist NIL)
-    (setf *secret-load-stamp* (file-write-date file))
-    (setf *secret* (if stream (read stream) NIL))))
+  (restart-case
+      (with-open-file (stream file :direction :input :if-does-not-exist NIL)
+        (setf *secret-file* file)
+        (setf *secret-load-stamp* (file-write-date file))
+        (setf *secret* (if stream (read stream) NIL)))
+    (use-value (value)
+      :report "Supply a different secrets file path to use."
+      :interactive (lambda ()
+                     (format *query-io* "~&Enter a new path to use (unevaluated): ")
+                     (list (uiop:parse-native-namestring (read-line *query-io*))))
+      (load-secrets value))
+    (continue ()
+      :report "Stub out the secrets file and continue."
+      (setf *secret-load-stamp* (get-universal-time))
+      (setf *secret* ()))))
 
 (defun save-secrets (&optional (file *secret-file*))
   (with-open-file (stream file :direction :output :if-exists :supersede)
