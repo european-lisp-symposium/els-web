@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8"/>
-    <title>European Lisp Symposium</title>
+    <title>ELS <c:splice lquery="(text (clip:clip (query1 :edition '(= current T)) :year))"/>, <c:splice lquery="(text (clip:clip (clip:clip (query1 :location '(in role :conference)) :address) :city))"/> - European Lisp Symposium</title>
     <link rel="stylesheet" type="text/css" href="../static/els.css"/>
     <link rel="icon" href="../static/favicon.png"/>
     <meta name="viewport" content="width=device-width"/>

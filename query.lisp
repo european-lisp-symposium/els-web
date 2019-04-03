@@ -7,7 +7,7 @@
 
 (defun coerce-data (field entry)
   (etypecase field
-    (keyword field)
+    ((or keyword (member NIL T)) field)
     (symbol (getp entry field :test #'string-equal))
     (T field)))
 
