@@ -19,7 +19,8 @@
       </nav>
       <div class="dates">
         <time lquery="(time (queryf :time :date '(= name :conference\ start)) :title)"/> -
-        <time lquery="(time (queryf :time :date '(= name :conference\ end)) :title)"/>
+        <time lquery="(time (queryf :time :date '(= name :conference\ end)) :title)"/>,
+        <span class="location" lquery="(text (clip:clip (clip:clip (query1 :location '(in role :conference)) :address) :city))">Place</span>
       </div>
       <nav class="main">
         <c:when test="(query :registration '(= status :active))">
