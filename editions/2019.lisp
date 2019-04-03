@@ -4,11 +4,11 @@
 
 ;;; Texts
 (define-text :announcement
-  ;;  (:div :class "announcement" "The conference is over!")
-  (:div :class "announcement" "Program now available!")
-  (:div :class "announcement"
+  (:div :class "announcement" "The conference is over!")
+  #+()(:div :class "announcement" "Program now available!")
+  #+()(:div :class "announcement"
         "&lt;Programming&gt; <a href=\"https://2019.programming-conference.org/attending/Registration\">registration</a> is now open.")
-  (:div :class "announcement" "The conference will be co-located with <a
+  (:div :class "announcement" "The conference was co-located with <a
 href=\"http://2019.programming-conference.org/\">Programming 2019</a>")
   #+() (:div :class "announcement" "The conference is being organized. Stay tuned for updates!"))
 
@@ -204,7 +204,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   :role (:speaker)
   :organization "University of Utah, USA")
 
-(define-text :registration
+#+()(define-text :registration
   (:p "Since we are co-locating with &lt;Programming&gt; this year,
 registration must be done  through their <a href=\"https://2019.programming-conference.org/attending/Registration\">website</a>.
 You may register for either the full conference, or only the first 2 days (ELS
