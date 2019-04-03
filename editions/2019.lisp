@@ -253,7 +253,8 @@ and what makes it different.")
 
   @16:00:00  (:title "Working with First-Order Proofs and Provers"
               :role (:talk)
-              :speakers ("Mikhail Raskin" "Christoph Welzel"))
+              :speakers ("Mikhail Raskin" "Christoph Welzel")
+              :website "../static/2019/raskin.pdf")
   @16:30:00  (:title "Plagiarism Detection for Common Lisp"
               :role (:talk)
               :speakers ("António Leitão"))
