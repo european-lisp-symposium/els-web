@@ -44,7 +44,7 @@
                                                         :summary (getf entry :title)
                                                         :description (or (getf entry :description) "")
                                                         :location (format-location (query1 :location '(in role :conference)))
-                                                        :contacts (getf entry :speakers)
+                                                        :contacts (copy-list (getf entry :speakers))
                                                         :categories (mapcar #'string-downcase (getf entry :role)))
                          (iclendar:components calendar))))
         (iclendar:serialize calendar path :if-exists if-exists)))
