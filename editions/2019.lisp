@@ -247,7 +247,8 @@ and what makes it different.")
              :speakers ("Jim Newton" "Didier Verna"))
   @15:00:00  (:title "Lazy, Parallel Multiple Value Reductions in Common Lisp"
               :role (:talk)
-              :speakers ("Marco Heisig"))
+              :speakers ("Marco Heisig")
+              :website "../static/2019/heisig.pdf")
 
   @15:30:00  (:title "Coffee Break" :role (:break))
 
@@ -277,10 +278,12 @@ distinguishing characteristic of being written in vanilla ANSI Common Lisp
 explicitly described in the announcement. We provide a retrospective on 20
 years of development, discuss some of the features SBCL provides and the
 rationale behind them, and offer entirely speculative thoughts about the next
-20 years of the project.")
+20 years of the project."
+             :website "../static/2019/rhodes.pdf")
   @10:00:00 (:title "Bootstrapping Common Lisp Using Common Lisp"
              :speakers ("Irène Anne Durand" "Robert Strandh")
              :role (:talk))
+
 
   @10:30:00 (:title "Coffee Break" :role (:break))
 
@@ -313,7 +316,8 @@ happy ending.")
 
   @16:30:00 (:title "Parallelizing Quickref"
              :speakers ("Didier Verna")
-             :role (:talk))
+             :role (:talk)
+             :website "../static/2019/verna.pdf")
 
   @17:00:00 (:title "Lightning Talks"
              :role (:talk)
