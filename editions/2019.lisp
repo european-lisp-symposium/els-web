@@ -289,7 +289,8 @@ rationale behind them, and offer entirely speculative thoughts about the next
 
   @11:00:00 (:title "Shader Pipeline and Effect Encapsulation using CLOS"
              :speakers ("Nicolas Hafner")
-             :role (:talk))
+             :role (:talk)
+             :website "../static/2019/hafner.pdf")
   @11:45:00 (:title "Hierarchical Task Network Planning in Common Lisp"
              :speakers ("Robert P. Goldman" "Ugur Kuter")
              :role (:talk))
