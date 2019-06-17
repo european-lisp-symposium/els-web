@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE dblpsubmission SYSTEM "dblpsubmission.dtd">
+<?xml-stylesheet type="text/xsl" href="dblpsubmission.xsl" ?>
+<dblpsubmission>
+  <proceedings>
+    <key>ELS</key>
+    <title>ELS 2016 - 9th European Lisp Symposium</title>
+    <editor>Irène Durand</editor>
+    <publisher>ELSAA</publisher>
+    <year>2016</year>
+    <isbn type="print">978-2-9557474-0-7</isbn>
+    <conf>
+      <acronym>ELS</acronym>
+      <number>9</number>
+      <location>Kraków, Poland</location>
+      <date>May 9-10, 2016</date>
+      <url>https://european-lisp-symposium.org/2016/index.html</url>
+    </conf>
+    <toc>
+      <section>Language Design</section>
+      <publ>
+	<author>Rafael Reia</author>
+	<author>António Menezes Leitão</author>
+	<title>Refactoring Dynamic Languages</title>
+	<pages>5-12</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3005730</ee>
+      </publ>
+      <publ>
+	<author>Jim E. Newton</author>
+	<author>Akim Demaille</author>
+	<author>Didier Verna</author>
+	<title>Type-Checking of Heterogeneous Sequences in Common Lisp</title>
+	<pages>13-20</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3005731</ee>
+      </publ>
+      <publ>
+	<author>Robert Strandh</author>
+	<title>A CLOS Protocol for Editor Buffers</title>
+	<pages>21-28</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3005732</ee>
+      </publ>
+      <section>Domain-Specific Languages</section>
+      <publ>
+	<author>Kay Hamacher</author>
+	<title>Using Lisp Macro-Facilities for Transferable Statistical Tests</title>
+	<pages>31-37</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3005733</ee>
+      </publ>
+      <publ>
+	<author>Kai Selgrad</author>
+	<author>Alexander Lier</author>
+	<author>Jan Dörntlein</author>
+	<author>Oliver Reiche</author>
+	<author>Marc Stamminger</author>
+	<title>A High-Performance Image Processing DSL for Heterogeneous Architectures</title>
+	<pages>39-46</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3005734</ee>
+      </publ>
+      <section>Implementation</section>
+      <publ>
+	<author>Robert Strandh</author>
+	<title>A Modern Implementation of the LOOP Macro</title>
+	<pages>49-55</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3005735</ee>
+      </publ>
+      <publ>
+	<author>Tero Hasu</author>
+	<author>Matthew Flatt</author>
+	<title>Source-to-Source Compilation via Submodules</title>
+	<pages>57-64</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3005736</ee>
+      </publ>
+      <publ>
+	<author>Søren Kejser Jensen</author>
+	<author>Lone Leth Thomsen</author>
+	<title>Extending Software Transactional Memory in Clojure with Side-Effects and Transaction Control</title>
+	<pages>65-72</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3005737</ee>
+      </publ>
+      <section>Applications</section>
+      <publ>
+	<author>Christian Schafmeister</author>
+	<title>CANDO: A Compiled Programming Language for Computer-Aided Nanomaterial Design and Optimization Based on Clasp Common Lisp</title>
+	<pages>75-82</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3005738</ee>
+      </publ>
+      <publ>
+	<author>Alexander Lier</author>
+	<author>Linus Franke</author>
+	<author>Marc Stamminger</author>
+	<author>Kai Selgrad</author>
+	<title>A Case Study in Implementation-Space Exploration</title>
+	<pages>83-90</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3005739</ee>
+      </publ>
+      <section>Demonstrations</section>
+      <publ>
+	<author>Michael Raskin</author>
+	<author>Nikita Mamardashvili</author>
+	<title>Accessing Local Variables During Debugging</title>
+	<pages>93-94</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3005740</ee>
+      </publ>
+      <publ>
+	<author>James Y. Knight</author>
+	<author>François-René Rideau</author>
+	<author>Andrzej Walczak</author>
+	<title>Building Common Lisp Programs Using Bazel</title>
+	<pages>95-96</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3005741</ee>
+      </publ>
+      <publ>
+	<author>Benjamin Seppke</author>
+	<author>Leonie Dreschler-Fischer</author>
+	<title>Fast Interactive Functional Computer Vision with Racket</title>
+	<pages>97-98</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3005742</ee>
+      </publ>
+      <publ>
+	<author>James Anderson</author>
+	<title>An Inferred System Description</title>
+	<pages>99-100</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3005743</ee>
+      </publ>
+      <publ>
+	<author>Marco Heisig</author>
+	<author>Nicolas Neuss</author>
+	<title>Distributed High Performance Computing in Common Lisp</title>
+	<pages>101-102</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3005744</ee>
+      </publ>
+    </toc>
+  </proceedings>
+</dblpsubmission>
