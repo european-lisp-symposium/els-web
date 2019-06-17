@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE dblpsubmission SYSTEM "dblpsubmission.dtd">
+<?xml-stylesheet type="text/xsl" href="dblpsubmission.xsl" ?>
+<dblpsubmission>
+  <proceedings>
+    <key>ELS</key>
+    <title>ELS 2019 - 12th European Lisp Symposium</title>
+    <editor>Nicolas Neuss</editor>
+    <publisher>ELSAA</publisher>
+    <year>2019</year>
+    <isbn type="print">978-2-9557474-3-8</isbn>
+    <conf>
+      <acronym>ELS</acronym>
+      <number>12</number>
+      <location>Genova, Italy</location>
+      <date>April 1-2, 2019</date>
+      <url>https://european-lisp-symposium.org/2019/index.html</url>
+      <partof>&lt;Programming&gt; 2019 https://2019.programming-conference.org/</partof>
+    </conf>
+    <toc>
+      <section>Emacs Lisp</section>
+      <publ>
+	<author>Ryan Culpepper</author>
+	<title>Pattern-Based S-Expression Rewriting in Emacs</title>
+	<pages>8-10</pages>
+	<doi>10.5281/zenodo.26420</doi>
+      </publ>
+      <section>Implementation</section>
+      <publ>
+	<author>Léo Valais</author>
+	<author>Jim E. Newton</author>
+	<author>Didier Verna</author>
+	<title>Implementing Baker's SUBTYPEP Decision Procedure</title>
+	<pages>12-19</pages>
+	<doi>10.5281/zenodo.2646982</doi>
+      </publ>
+      <publ>
+	<author>Irène Durand</author>
+	<author>Robert Strandh</author>
+	<title>MAKE-METHOD-LAMBDA Revisited</title>
+	<pages>20-23</pages>
+	<doi>10.5281/zenodo.2634303</doi>
+      </publ>
+      <section>Metaprogramming</section>
+      <publ>
+	<author>Jim E. Newton</author>
+	<author>Didier Verna</author>
+	<title>Finite Automata Theory Based Optimization of Conditional Variable Binding</title>
+	<pages>26-33</pages>
+	<doi>10.5281/zenodo.2635412</doi>
+      </publ>
+      <publ>
+	<author>Marco Heisig</author>
+	<title>Lazy, Parallel Multiple Value Reductions in Common Lisp</title>
+	<pages>34-39</pages>
+	<doi>10.5281/zenodo.2642164</doi>
+      </publ>
+      <section>Code as Data</section>
+      <publ>
+	<author>Michael Raskin</author>
+	<author>Christoph Welzel</author>
+	<title>Working with First Order Proofs and Provers</title>
+	<pages>42-45</pages>
+	<doi>10.5281/zenodo.2633990</doi>
+      </publ>
+      <publ>
+	<author>António Menezes Leitão</author>
+	<title>Plagiarism Detection for Lisp</title>
+	<pages>46-53</pages>
+	<doi>10.5281/zenodo.2648976</doi>
+      </publ>
+      <section>Bootstrapping</section>
+      <publ>
+	<author>Irène Durand</author>
+	<author>Robert Strandh</author>
+	<title>Bootstrapping Common Lisp Using Common Lisp</title>
+	<pages>56-63</pages>
+	<doi>10.5281/zenodo.2634314</doi>
+      </publ>
+      <section>Lisp in Action</section>
+      <publ>
+	<author>Nicolas Hafner</author>
+	<title>Shader Pipeline and Effect Encapsulation Using CLOS</title>
+	<pages>66-72</pages>
+	<doi>10.5281/zenodo.2636508</doi>
+      </publ>
+      <publ>
+	<author>Robert P. Goldman</author>
+	<author>Ugur Kuter</author>
+	<title>Hierarchical Task Network Planning in Common Lisp: the case of SHOP3</title>
+	<pages>73-80</pages>
+	<doi>10.5281/zenodo.2633324</doi>
+      </publ>
+      <section>Ecosystem</section>
+      <publ>
+	<author>Alessio Stalla</author>
+	<title>Symbols as Namespaces in Common Lisp</title>
+	<pages>84-88</pages>
+	<doi>10.5281/zenodo.2648195</doi>
+      </publ>
+      <publ>
+	<author>Didier Verna</author>
+	<title>Parallelizing Quickref</title>
+	<pages>89-96</pages>
+	<doi>10.5281/zenodo.2632534</doi>
+      </publ>
+    </toc>
+  </proceedings>
+</dblpsubmission>
