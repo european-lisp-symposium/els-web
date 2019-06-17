@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE dblpsubmission SYSTEM "dblpsubmission.dtd">
+<?xml-stylesheet type="text/xsl" href="dblpsubmission.xsl" ?>
+<dblpsubmission>
+  <proceedings>
+    <key>ELS</key>
+    <title>ELS 2017 - 10th European Lisp Symposium</title>
+    <editor>Alberto Riva</editor>
+    <publisher>ELSAA</publisher>
+    <year>2017</year>
+    <isbn type="print">978-2-9557474-1-4</isbn>
+    <conf>
+      <acronym>ELS</acronym>
+      <number>10</number>
+      <location>Brussels, Belgium</location>
+      <date>April 3-4, 2017</date>
+      <url>https://european-lisp-symposium.org/2017/index.html</url>
+      <partof>&lt;Programming&gt; 2017 https://2017.programming-conference.org/</partof>
+    </conf>
+    <toc>
+      <section>Tools</section>
+      <publ>
+	<author>Michal Herda</author>
+	<title>Common Lisp UltraSpec - A Project For Modern Common Lisp Documentation</title>
+	<pages>4-9</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2017.pdf</ee>
+      </publ>
+      <publ>
+	<author>Vsevolod Domkin</author>
+	<title>Loading Multiple Versions of an ASDF System in the Same Lisp Image</title>
+	<pages>10-18</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2017.pdf</ee>
+      </publ>
+      <section>Types</section>
+      <publ>
+	<author>Frederic Peschanski</author>
+	<title>A Lisp Way to Type Theory and Formal Proofs</title>
+	<pages>20-27</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2017.pdf</ee>
+      </publ>
+      <publ>
+	<author>Jim E. Newton</author>
+	<author>Didier Verna</author>
+	<author>Maximilien Colange</author>
+	<title>Programmatic Manipulation of Common Lisp Type Specifiers</title>
+	<pages>28-35</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2017.pdf</ee>
+      </publ>
+      <publ>
+	<author>Alexander Wood</author>
+	<title>Type Inference in Cleavir</title>
+	<pages>36-39</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2017.pdf</ee>
+      </publ>
+      <section>Demonstrations</section>
+      <publ>
+	<author>Robert Goldman</author>
+	<author>Elias Pipping</author>
+	<author>François-René Rideau</author>
+	<title>Delivering Common Lisp Applications with ASDF 3.3</title>
+	<pages>42-43</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2017.pdf</ee>
+      </publ>
+      <publ>
+	<author>Nicolas Hafner</author>
+	<title>Radiance – a Web Application Environment</title>
+	<pages>44-48</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2017.pdf</ee>
+      </publ>
+      <publ>
+	<author>Daniel Brunner</author>
+	<author>Stephan Brunner</author>
+	<title>Teaching Students of Engineering some Insights of the Internet of Things using Racket and the RaspberryPi</title>
+	<pages>49-50</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2017.pdf</ee>
+      </publ>
+      <publ>
+	<author>Benjamin Seppke</author>
+	<author>Leonie Dreschler-Fischer</author>
+	<title>Interactive Functional Medical Image Analysis</title>
+	<pages>51-52</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2017.pdf</ee>
+      </publ>
+      <section>Applications</section>
+      <publ>
+	<author>Marco Heisig</author>
+	<author>Nicolas Neuss</author>
+	<title>Parallelizing Femlisp</title>
+	<pages>54-55</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2017.pdf</ee>
+      </publ>
+      <section>Tutorials</section>
+      <publ>
+	<author>Steve Losh</author>
+	<title>General Game Playing in Common Lisp</title>
+	<pages>58-61</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2017.pdf</ee>
+      </publ>
+      <section>Languages and Meta-Languages</section>
+      <publ>
+	<author>Irène Durand</author>
+	<author>Robert Strandh</author>
+	<title>Fast, Maintainable, and Portable Sequence Functions</title>
+	<pages>64-71</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2017.pdf</ee>
+      </publ>
+      <publ>
+	<author>Alexander Lier</author>
+	<author>Kai Selgrad</author>
+	<author>Marc Stamminger</author>
+	<title>DIY Meta Languages with Common Lisp</title>
+	<pages>72-79</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2017.pdf</ee>
+      </publ>
+      <publ>
+	<author>Jonas de Bleser</author>
+	<author>Quentin Stiévenart</author>
+	<author>Jens Nicolay</author>
+	<author>Coen De Roover</author>
+	<title>Static Taint Analysis of Event-driven Scheme Programs</title>
+	<pages>80-87</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2017.pdf</ee>
+      </publ>
+      <publ>
+	<author>Alain Marty</author>
+	<title>On the {Lambda Way}</title>
+	<pages>90-97</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2017.pdf</ee>
+      </publ>
+      <publ>
+	<author>Michael Raskin</author>
+	<title>Writing a Portable Code Walker in Common Lisp</title>
+	<pages>98-105</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2017.pdf</ee>
+      </publ>
+      <publ>
+	<author>Irène Durand</author>
+	<author>Robert Strandh</author>
+	<title>Removing Redundant Tests by Replicating Control Paths</title>
+	<pages>106-112</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2017.pdf</ee>
+      </publ>
+    </toc>
+  </proceedings>
+</dblpsubmission>
