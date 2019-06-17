@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE dblpsubmission SYSTEM "dblpsubmission.dtd">
+<?xml-stylesheet type="text/xsl" href="dblpsubmission.xsl" ?>
+<dblpsubmission>
+  <proceedings>
+    <key>ELS</key>
+    <title>ELS 2018 - 11th European Lisp Symposium</title>
+    <editor>David Cooper</editor>
+    <publisher>ELSAA</publisher>
+    <year>2018</year>
+    <isbn type="print">978-2-9557474-2-1</isbn>
+    <conf>
+      <acronym>ELS</acronym>
+      <number>11</number>
+      <location>Marbella, Spain</location>
+      <date>April 16-17, 2018</date>
+      <url>https://european-lisp-symposium.org/2018/index.html</url>
+    </conf>
+    <toc>
+      <section>Performance</section>
+      <publ>
+	<author>Marco Heisig</author>
+	<title>Petalisp: A Common Lisp Library for Data Parallel Programming</title>
+	<pages>4-11</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3323216</ee>
+      </publ>
+      <publ>
+	<author>Ethan Schwartz</author>
+	<title>Dynamic Optimization for SBCL Garbage Collection</title>
+	<pages>12-14</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3323217</ee>
+      </publ>
+      <section>Implementation</section>
+      <publ>
+	<author>Irène Durand</author>
+	<author>Robert Strandh</author>
+	<title>Incremental Parsing of Common Lisp Code</title>
+	<pages>16-22</pages>
+	<doi>10.5281/zenodo.3247555</doi>
+      </publ>
+      <publ>
+	<author>Jim E. Newton</author>
+	<author>Didier Verna</author>
+	<title>Strategies for TYPECASE Optimization</title>
+	<pages>23-31</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3323219</ee>
+      </publ>
+      <publ>
+	<author>Didier Verna</author>
+	<title>Method Combinators</title>
+	<pages>32-41</pages>
+	<doi>10.5281/zenodo.3247610</doi>
+      </publ>
+      <section>Cutting Edge</section>
+      <publ>
+	<author>Robert S. Smith</author>
+	<title>The Computational Structure of the Clifford Groups</title>
+	<pages>44-53</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3323221</ee>
+      </publ>
+      <publ>
+	<author>Nikolas A. Tezak</author>
+	<author>Robert S. Smith</author>
+	<title>Simulating Quantum Processor Errors by Extending the Quantum Abstract Machine</title>
+	<pages>54-58</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3323222</ee>
+      </publ>
+      <publ>
+	<author>Alex Wood</author>
+	<author>Christian Schafmeister</author>
+	<title>CLASP Common Lisp Implementation and Optimization</title>
+	<pages>59-64</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3323223</ee>
+      </publ>
+      <section>Teaching and Learning</section>
+      <publ>
+	<author>Rajesh Jayaprakash</author>
+	<title>pLisp: a Friendly Lisp IDE for Beginners</title>
+	<pages>66-67</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3323224</ee>
+      </publ>
+      <publ>
+	<author>Christophe Rhodes</author>
+	<title>Using Lisp-Based Pseudocode to Probe Student Understanding</title>
+	<pages>68-75</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3323225</ee>
+      </publ>
+      <section>Graphics and Modeling</section>
+      <publ>
+	<author>Nicolas Neuss</author>
+	<title>Interactive Flow Simulation with Common Lisp</title>
+	<pages>78-79</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3323226</ee>
+      </publ>
+      <publ>
+	<author>Nicolas Hafner</author>
+	<title>Object Oriented Shader Composition Using CLOS</title>
+	<pages>80-83</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3323227</ee>
+      </publ>
+      <publ>
+	<author>Bruno Ferreira</author>
+	<author>António Menezes Leitão</author>
+	<title>Context-Oriented Algorithmic Design</title>
+	<pages>84-91</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3323228</ee>
+      </publ>
+      <section>Source Code Management and More Implementation</section>
+      <publ>
+	<author>Klaas van Schelven</author>
+	<title>Clef Design</title>
+	<pages>94-101</pages>
+	<ee>https://dl.acm.org/citation.cfm?id=3323229</ee>
+      </publ>
+      <publ>
+	<author>Irène Durand</author>
+	<author>Robert Strandh</author>
+	<title>Partial Inlining Using Local Graph Rewriting</title>
+	<pages>102-109</pages>
+	<doi>zenodo.3247542</doi>
+      </publ>
+    </toc>
+  </proceedings>
+</dblpsubmission>
