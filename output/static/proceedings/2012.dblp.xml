@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE dblpsubmission SYSTEM "dblpsubmission.dtd">
+<?xml-stylesheet type="text/xsl" href="dblpsubmission.xsl" ?>
+<dblpsubmission>
+  <proceedings>
+    <key>ELS</key>
+    <title>ELS 2012 - 5th European Lisp Symposium</title>
+    <editor>Marco Antoniotti</editor>
+    <publisher>ELSAA</publisher>
+    <year>2012</year>
+    <conf>
+      <acronym>ELS</acronym>
+      <number>5</number>
+      <location>Zadar, Croatia</location>
+      <date>April 30 - May 1, 2012</date>
+      <url>https://european-lisp-symposium.org/2012/index.html</url>
+    </conf>
+    <toc>
+      <publ>
+	<author>Laurent Senta</author>
+	<author>Christopher Chedeau</author>
+	<author>Didier Verna</author>
+	<title>Generic Image Processing with Climb</title>
+	<pages>9-12</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2012.pdf</ee>
+      </publ>
+      <publ>
+	<author>Giovanni Anzani</author>
+	<title>An Iterative Method to Solve Overdetermined Systems of
+Nonlinear Equations Applied to the Restitution of Planimetric Measurements</title>
+	<pages>13-20</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2012.pdf</ee>
+      </publ>
+      <publ>
+	<author>Alessio Stalla</author>
+	<title>Java Interop with ABCL: a Practical Example</title>
+	<pages>22-25</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2012.pdf</ee>
+      </publ>
+      <publ>
+	<author>Niels Bertschinger</author>
+	<title>Embedded Probabilistic Programming in Clojure</title>
+	<pages>26-29</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2012.pdf</ee>
+      </publ>
+      <publ>
+	<author>Pascal Costanza</author>
+	<title>A Little History of Meta-Programming and Reflection</title>
+	<pages>30</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2012.pdf</ee>
+      </publ>
+      <publ>
+	<author>Marco Benelli</author>
+	<title>Scheme in Industrial Automation</title>
+	<pages>32-33</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2012.pdf</ee>
+      </publ>
+      <publ>
+	<author>Gunnar Völkel</author>
+	<author>Johann M. Kraus</author>
+	<author>Hans A. Kestler</author>
+	<title>Algorithmic Engineering with Clojure</title>
+	<pages>34-41</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2012.pdf</ee>
+      </publ>
+      <publ>
+	<author>Irène Durand</author>
+	<title>Object Enumeration</title>
+	<pages>43-57</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2012.pdf</ee>
+      </publ>
+      <publ>
+	<author>Alessio Stalla</author>
+	<title>DOPLUS: the High Level, Lispy, Extensible Iteration Construct</title>
+	<pages>58-59</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2012.pdf</ee>
+      </publ>
+    </toc>
+  </proceedings>
+</dblpsubmission>
