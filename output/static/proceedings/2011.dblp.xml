@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE dblpsubmission SYSTEM "dblpsubmission.dtd">
+<?xml-stylesheet type="text/xsl" href="dblpsubmission.xsl" ?>
+<dblpsubmission>
+  <proceedings>
+    <key>ELS</key>
+    <title>ELS 2011 - 4th European Lisp Symposium</title>
+    <editor>Didier Verna</editor>
+    <publisher>ELSAA</publisher>
+    <year>2011</year>
+    <conf>
+      <acronym>ELS</acronym>
+      <number>4</number>
+      <location>Hamburg, Germany</location>
+      <date>March 31 - April 1, 2011</date>
+      <url>https://european-lisp-symposium.org/2011/index.html</url>
+    </conf>
+    <toc>
+      <session>Parallelism</session>
+      <publ>
+	<author>Valentin Pavlov</author>
+	<title>Supercomputing in Lisp</title>
+	<pages>4-12</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2011.pdf</ee>
+      </publ>
+      <publ>
+	<author>David L. Rager</author>
+	<author>Warren A. Hunt</author>
+	<author>Matt Kaufmann</author>
+	<title>A Futures Library and Parallelism Abstractions for a Functional Subset of Lisp</title>
+	<pages>13-16</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2011.pdf</ee>
+      </publ>
+      <session>Performance and Distribution</session>
+      <publ>
+	<author>Irène Durand</author>
+	<title>Implementing Huge Term Automata</title>
+	<pages>18-27</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2011.pdf</ee>
+      </publ>
+      <publ>
+	<author>Antonio Garrote</author>
+	<author>María N. Moreno García</author>
+	<title>Jobim: an Actors Library for the Clojure Programming Language</title>
+	<pages>28-32</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2011.pdf</ee>
+      </publ>
+      <session>Common Lisp</session>
+      <publ>
+	<author>Robert Strandh</author>
+	<author>Matthieu Villeneuve</author>
+	<title>SICL: Building Blocks for Implementers of Common Lisp</title>
+	<pages>34-38</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2011.pdf</ee>
+      </publ>
+      <publ>
+	<author>Nicolas Neuss</author>
+	<title>Using Common Lisp in University Course Administration</title>
+	<pages>39-42</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2011.pdf</ee>
+      </publ>
+      <session>Scheme and Racket</session>
+      <publ>
+	<author>Kurt Nørmark</author>
+	<title>Bites of Lists: Mapping and Filtering Sublists</title>
+	<pages>44-57</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2011.pdf</ee>
+      </publ>
+      <publ>
+	<author>Damir Cavar</author>
+	<author>Tanja Gulan</author>
+	<author>Damir Kero</author>
+	<author>Franjo Pehar</author>
+	<author>Pavle Valerjev</author>
+	<title>The Scheme Natural Language Toolkit (S-NLTK): NLP Library for R6RS and Racket</title>
+	<pages>58-61</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2011.pdf</ee>
+      </publ>
+    </toc>
+  </proceedings>
+</dblpsubmission>
