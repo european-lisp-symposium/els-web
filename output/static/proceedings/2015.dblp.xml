@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE dblpsubmission SYSTEM "dblpsubmission.dtd">
+<?xml-stylesheet type="text/xsl" href="dblpsubmission.xsl" ?>
+<dblpsubmission>
+  <proceedings>
+    <key>ELS</key>
+    <title>ELS 2015 - 8th European Lisp Symposium</title>
+    <editor>Julian Padget</editor>
+    <publisher>ELSAA</publisher>
+    <year>2015</year>
+    <conf>
+      <acronym>ELS</acronym>
+      <number>8</number>
+      <location>London, England</location>
+      <date>April 20-21, 2015</date>
+      <url>https://european-lisp-symposium.org/2015/index.html</url>
+    </conf>
+    <toc>
+      <publ>
+	<author>Benjamin Seppke</author>
+	<author>Leonie Dreschler-Fischer</author>
+	<title>Efficient Applicative Programming Environments for Computer Vision Applications</title>
+	<pages>7-14</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2015.pdf</ee>
+      </publ>
+      <publ>
+	<author>Donald Fisk</author>
+	<title>Keyboard? How quaint. Visual Dataflow Implemented in Lisp</title>
+	<pages>15-22</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2015.pdf</ee>
+      </publ>
+      <publ>
+	<author>Hugo Correira</author>
+	<author>António Menezes Leitão</author>
+	<title>P2R: Implementation of Processing in Racket</title>
+	<pages>23-30</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2015.pdf</ee>
+      </publ>
+      <publ>
+	<author>Paul van der Valt</author>
+	<title>Constraining application behaviour by generating languages</title>
+	<pages>31-38</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2015.pdf</ee>
+      </publ>
+      <publ>
+	<author>Irène Durand</author>
+	<author>Robert Strandh</author>
+	<title>Processing Lisp Elements in Reverse Order</title>
+	<pages>39-46</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2015.pdf</ee>
+      </publ>
+      <publ>
+	<author>Breanndán Ó Nualláin</author>
+	<title>Executable Pseudocode for Graph Algorithms</title>
+	<pages>47-54</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2015.pdf</ee>
+      </publ>
+      <publ>
+	<author>Alain Marty</author>
+	<title>Lambdatalk</title>
+	<pages>55-62</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2015.pdf</ee>
+      </publ>
+      <publ>
+	<author>Simon Lynch</author>
+	<title>Symbolic Pattern Matching in Clojure</title>
+	<pages>63-70</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2015.pdf</ee>
+      </publ>
+      <publ>
+	<author>Miroslav Urbanek</author>
+	<title>Quantum Physics Simulations in Common Lisp</title>
+	<pages>71-78</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2015.pdf</ee>
+      </publ>
+      <publ>
+	<author>Robert Strandh</author>
+	<title>First-Class Global Environments in Common Lisp</title>
+	<pages>79-86</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2015.pdf</ee>
+      </publ>
+      <publ>
+	<author>Eitaro Fukamachi</author>
+	<title>Woo: a Fast HTTP Server for Common Lisp</title>
+	<pages>88-89</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2015.pdf</ee>
+      </publ>
+      <publ>
+	<author>Christian Schafmeister</author>
+	<title>CLASP: Common Lisp + LLVM + C++</title>
+	<pages>90-91</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2015.pdf</ee>
+      </publ>
+    </toc>
+  </proceedings>
+</dblpsubmission>
