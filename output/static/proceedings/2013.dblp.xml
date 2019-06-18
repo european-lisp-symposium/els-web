@@ -18,12 +18,6 @@
     </conf>
     <toc>
       <publ>
-	<author></author>
-	<title></title>
-	<pages></pages>
-	<ee>https://european-lisp-symposium.org/static/proceedings/2013.pdf</ee>
-      </publ>
-      <publ>
 	<author>Ludovic Courtès</author>
 	<title>Functional Package Management with Guix</title>
 	<pages>4-14</pages>
