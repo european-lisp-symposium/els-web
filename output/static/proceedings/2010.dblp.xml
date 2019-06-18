@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE dblpsubmission SYSTEM "dblpsubmission.dtd">
+<?xml-stylesheet type="text/xsl" href="dblpsubmission.xsl" ?>
+<dblpsubmission>
+  <proceedings>
+    <key>ELS</key>
+    <title>ELS 2010 - 3th European Lisp Symposium</title>
+    <editor>Christophe Rhodes</editor>
+    <publisher>ELSAA</publisher>
+    <year>2010</year>
+    <conf>
+      <acronym>ELS</acronym>
+      <number>3</number>
+      <location>Lisbon, Portugal</location>
+      <date>May 6-7, 2010</date>
+      <url>https://european-lisp-symposium.org/2010/index.html</url>
+    </conf>
+    <toc>
+      <publ>
+	<author>Bruno Courcelle</author>
+	<author>Irène Durand</author>
+	<title>Verifying Monadic Second Order Graph Properties with Tree Automata</title>
+	<pages>7-21</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2010.pdf</ee>
+      </publ>
+      <publ>
+	<author>Aleksandar M. Bakić</author>
+	<title>A DSEL for Computational Category Theory</title>
+	<pages>22-37</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2010.pdf</ee>
+      </publ>
+      <publ>
+	<author>Jerry Boetje</author>
+	<author>Steven Melcher</author>
+	<title>Marrying Common Lisp to Java, and Their Offspring</title>
+	<pages>38-52</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2010.pdf</ee>
+      </publ>
+      <publ>
+	<author>Benjamin Seppke</author>
+	<author>Leonie Dreschler-Fischer</author>
+	<title>Computer Vision with Allegro Common Lisp and VIGRACL</title>
+	<pages>53-62</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2010.pdf</ee>
+      </publ>
+      <publ>
+	<author>Didier Verna</author>
+	<title>CLOX: Common Lisp Objets for XEmacs</title>
+	<pages>63-80</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2010.pdf</ee>
+      </publ>
+      <publ>
+	<author>Alexander F. Plotnik</author>
+	<title>CLWEB: A literate programming system for Common Lisp</title>
+	<pages></pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2010.pdf</ee>
+      </publ>
+    </toc>
+  </proceedings>
+</dblpsubmission>
