@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE dblpsubmission SYSTEM "dblpsubmission.dtd">
+<?xml-stylesheet type="text/xsl" href="dblpsubmission.xsl" ?>
+<dblpsubmission>
+  <proceedings>
+    <key>ELS</key>
+    <title>ELS 2013 - 6th European Lisp Symposium</title>
+    <editor>Christian Queinnec</editor>
+    <editor>Manuel Serrano</editor>
+    <publisher>ELSAA</publisher>
+    <year>2013</year>
+    <conf>
+      <acronym>ELS</acronym>
+      <number>6</number>
+      <location>Madrid, Spain</location>
+      <date>June 3-4, 2013</date>
+      <url>https://european-lisp-symposium.org/2013/index.html</url>
+    </conf>
+    <toc>
+      <publ>
+	<author></author>
+	<title></title>
+	<pages></pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2013.pdf</ee>
+      </publ>
+      <publ>
+	<author>Ludovic Courtès</author>
+	<title>Functional Package Management with Guix</title>
+	<pages>4-14</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2013.pdf</ee>
+      </publ>
+      <publ>
+	<author>Michael Raskin</author>
+	<title>Data-Transformer: an Example of Data-Centered Toolset</title>
+	<pages>15-17</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2013.pdf</ee>
+      </publ>
+      <publ>
+	<author>Erik Sandewall</author>
+	<title>The Leonardo System and Software Individuals</title>
+	<pages></pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2013.pdf</ee>
+      </publ>
+      <publ>
+	<author>SamTobin-Hochstadt</author>
+	<title>Typed Racket</title>
+	<pages>26</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2013.pdf</ee>
+      </publ>
+      <publ>
+	<author>Arturo de Salabert</author>
+	<title>Platforms for Games and Evaluation of Lisp Code</title>
+	<pages>27-34</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2013.pdf</ee>
+      </publ>
+      <publ>
+	<author>Mika Kuuskankare</author>
+	<title>DBL - a Lisp-Based Interactive Document Markup Language</title>
+	<pages>36-45</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2013.pdf</ee>
+      </publ>
+      <publ>
+	<author>Irène Durand</author>
+	<author>Bruno Courcelle</author>
+	<title>Infinite Transducers on Terms Denoting Graphs</title>
+	<pages>47-58</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2013.pdf</ee>
+      </publ>
+      <publ>
+	<author>Max Rottenkolber</author>
+	<title>Lazy Signal Combinators in Common Lisp</title>
+	<pages>60-62</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2013.pdf</ee>
+      </publ>
+      <publ>
+	<author>Vsevolod Domkin</author>
+	<title>CL-NLP - a Natural Language Processing library for Common Lisp</title>
+	<pages>63-70</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2013.pdf</ee>
+      </publ>
+    </toc>
+  </proceedings>
+</dblpsubmission>
