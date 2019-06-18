@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE dblpsubmission SYSTEM "dblpsubmission.dtd">
+<?xml-stylesheet type="text/xsl" href="dblpsubmission.xsl" ?>
+<dblpsubmission>
+  <proceedings>
+    <key>ELS</key>
+    <title>ELS 2008 - 1st European Lisp Symposium</title>
+    <editor>Pascal Costanza</editor>
+    <publisher>ELSAA</publisher>
+    <year>2008</year>
+    <conf>
+      <acronym>ELS</acronym>
+      <number>1</number>
+      <location>Bordeaux, France</location>
+      <date>May 22-23, 2008</date>
+      <url>https://european-lisp-symposium.org/2008/index.html</url>
+    </conf>
+    <toc>
+      <publ>
+	<author>Irène Durand</author>
+	<author>Sylviane R. Schwer</author>
+	<title>Reasoning about qualitative temporal information with S-words and S-languages</title>
+	<pages>1-16</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2008.pdf</ee>
+      </publ>
+      <publ>
+	<author>Sebastián González</author>
+	<author>Kim Menz</author>
+	<author>Alfredo Cádiz</author>
+	<title>Context-Oriented Programming with the Ambient Object System</title>
+	<pages>17-32</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2008.pdf</ee>
+      </publ>
+      <publ>
+	<author>Mikael Laurson</author>
+	<author>Mika Kuuskankare</author>
+	<title>Visual Programming in PWGL</title>
+	<pages>33-46</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2008.pdf</ee>
+      </publ>
+      <publ>
+	<author>António Menezes Leitão</author>
+	<title>UCL-GLORP - An ORM for Common Lisp</title>
+	<pages>47-62</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2008.pdf</ee>
+      </publ>
+      <publ>
+	<author>Timothy Moore</author>
+	<title>An Implementation of CLIM Presentation Types</title>
+	<pages>63-74</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2008.pdf</ee>
+      </publ>
+      <publ>
+	<author>Jim E. Newton</author>
+	<author>Christophe Rhodes</author>
+	<title>Custom Specializers in Object-Oriented Lisp</title>
+	<pages>75-90</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2008.pdf</ee>
+      </publ>
+      <publ>
+	<author>Didier Verna</author>
+	<title>Binary Methods Programming: the CLOS Perspective</title>
+	<pages>91-105</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2008.pdf</ee>
+      </publ>
+      <publ>
+	<author>Carlos Agon</author>
+	<author>Jean Bresson</author>
+	<author>Gérard Assayag</author>
+	<title>OpenMusic: Design and Implementation Aspects of a Visual Programming
+Language</title>
+	<pages>107-124</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2008.pdf</ee>
+      </publ>
+      <publ>
+	<author>Marco Antoniotti</author>
+	<title>CLAZY: Lazy Calling for Common Lisp</title>
+	<pages>125-132</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2008.pdf</ee>
+      </publ>
+      <publ>
+	<author>Jerry Boetje</author>
+	<author>David Williams</author>
+	<author>Robert Shields</author>
+	<author>Hector Raphael Mojica</author>
+	<author>Seth Rylan Gainey</author>
+	<title>CL for Java 2008</title>
+	<pages>133-154</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2008.pdf</ee>
+      </publ>
+      <publ>
+	<author>Jónathan Heras</author>
+	<author>Vico Pascual</author>
+	<author>Julio Rubio</author>
+	<author>Francis Sergeraert</author>
+	<title>Improving the usability of Kenzo, a Common Lisp system for Algebraic Topology
+</title>
+	<pages>155-176</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2008.pdf</ee>
+      </publ>
+      <publ>
+	<author>Jim E. Newton</author>
+	<title>VNS: Namespace Facility</title>
+	<pages>177-184</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2008.pdf</ee>
+      </publ>
+      <publ>
+	<author>Mikhail Semenov</author>
+	<title>Prime-Lisp 2.0: an ISLisp Implementation in .NET with Multithreading Extensions
+</title>
+	<pages>185-198</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2008.pdf</ee>
+      </publ>
+      <publ>
+	<author>Pierre Thierry</author>
+	<author>Simon E.B. Thierry</author>
+	<title>Abolishing Object-Oriented Xenophobia: Designing Highly Reusable Libraries</title>
+	<pages>199-214</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2008.pdf</ee>
+      </publ>
+    </toc>
+  </proceedings>
+</dblpsubmission>
