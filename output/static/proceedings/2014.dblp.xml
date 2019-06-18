@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE dblpsubmission SYSTEM "dblpsubmission.dtd">
+<?xml-stylesheet type="text/xsl" href="dblpsubmission.xsl" ?>
+<dblpsubmission>
+  <proceedings>
+    <key>ELS</key>
+    <title>ELS 2014 - 7th European Lisp Symposium</title>
+    <editor>Kent M. Pitman</editor>
+    <publisher>ELSAA</publisher>
+    <year>2014</year>
+    <conf>
+      <acronym>ELS</acronym>
+      <number>7</number>
+      <location>Paris, France</location>
+      <date>May 5-6, 2014</date>
+      <url>https://european-lisp-symposium.org/2014/index.html</url>
+    </conf>
+    <toc>
+      <session>Language and Libraries</session>
+      <publ>
+	<author>Nick Levine</author>
+	<title>CLAUDE: the Common Lisp Library Audience Expansion Toolkit</title>
+	<pages>4-11</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2014.pdf</ee>
+      </publ>
+      <publ>
+	<author>François-René Rideau</author>
+	<title>ASDF3, or Why Lisp is Now an Acceptable Scripting Language</title>
+	<pages>12-19</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2014.pdf</ee>
+      </publ>
+      <publ>
+	<author>Jan Moringen</author>
+	<author>David Lichteblau</author>
+	<title>Generalizers: New Metaobjects for Generalized Dispatch</title>
+	<pages>20-27</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2014.pdf</ee>
+      </publ>
+      <session>Demonstrations</session>
+      <publ>
+	<author>François-Xavier Bois</author>
+	<title>web-mode.el: Heterogeneous Recursive Code Parsing with Emacs Lisp</title>
+	<pages>30-32</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2014.pdf</ee>
+      </publ>
+      <publ>
+	<author>Jean-Paul Barthès</author>
+	<title>The OMAS Multi-Agent Platform</title>
+	<pages>33-34</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2014.pdf</ee>
+      </publ>
+      <publ>
+	<author>Alain Marty</author>
+	<title>Yet Another Wiki</title>
+	<pages>35-36</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2014.pdf</ee>
+      </publ>
+      <session>Application and Deployment Issues</session>
+      <publ>
+	<author>Massimiliano Ghilardi</author>
+	<title>High performance Concurrency in Common Lisp: Hybrid Transactional Memory with STMX</title>
+	<pages>38-45</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2014.pdf</ee>
+      </publ>
+      <publ>
+	<author>Ignasi Gómez-Sebastià</author>
+	<author>Luis Oliva</author>
+	<author>Sergio Alvarez-Napagao</author>
+	<author>Dario Garcia-Gasulla</author>
+	<author>Arturo Tejeda</author>
+	<author>Javier Vazquez</author>
+	<title>A Functional Approach for Disruptive Event Discovery and Policy Monitoring in Mobility Scenarios</title>
+	<pages>46-53</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2014.pdf</ee>
+      </publ>
+      <publ>
+	<author>Franco Raimondi</author>
+	<author>Giuseppe Primiero</author>
+	<author>Kelly Androutsopoulos</author>
+	<author>Nikos Gorogiannis</author>
+	<author>Martin Loomes</author>
+	<author>Michael Margolis</author>
+	<author>Puja Varsani</author>
+	<author>Nick Weldin</author>
+	<author>Alex Zivanovic</author>
+	<title>A Racket-Based Robot to Teach First-Year Computer Science</title>
+	<pages>54-62</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2014.pdf</ee>
+      </publ>
+      <session>Crossing the Language Barrier</session>
+      <publ>
+	<author>Jean-Paul Barthès</author>
+	<title>A Need for Multilingual Names</title>
+	<pages>64-71</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2014.pdf</ee>
+      </publ>
+      <publ>
+	<author>Pedro Ramos</author>
+	<author>António Menezes Leitão</author>
+	<title>An Implementation of Python for Racket</title>
+	<pages>72-79</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2014.pdf</ee>
+      </publ>
+      <publ>
+	<author>Kai Selgrad</author>
+	<author>Alexander Lier</author>
+	<author>Markus Wittmann</author>
+	<author>Daniel Lohmann</author>
+	<author>Marc Stamminger</author>
+	<title>Defmacro for C: Lightweight, Ad Hoc Code Generation</title>
+	<pages>80-87</pages>
+	<ee>https://european-lisp-symposium.org/static/proceedings/2014.pdf</ee>
+      </publ>
+    </toc>
+  </proceedings>
+</dblpsubmission>
