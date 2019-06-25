@@ -131,7 +131,7 @@
 	<author>Michael Raskin</author>
 	<title>Writing a Portable Code Walker in Common Lisp</title>
 	<pages>98-105</pages>
-	<ee>https://european-lisp-symposium.org/static/proceedings/2017.pdf</ee>
+	<doi>10.5281/zenodo.3254669</doi>
       </publ>
       <publ>
 	<author>Irène Durand</author>
