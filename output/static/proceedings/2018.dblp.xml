@@ -8,7 +8,8 @@
     <editor>David Cooper</editor>
     <publisher>ELSAA</publisher>
     <year>2018</year>
-    <isbn type="print">978-2-9557474-2-1</isbn>
+    <isbn>978-2-9557474-2-1</isbn>
+    <issn>2677-3465</issn>
     <conf>
       <acronym>ELS</acronym>
       <number>11</number>
@@ -110,7 +111,7 @@
 	<author>Klaas van Schelven</author>
 	<title>Clef Design</title>
 	<pages>94-101</pages>
-	<ee>https://dl.acm.org/citation.cfm?id=3323229</ee>
+	<doi>10.5281/zenodo.3263960</doi>
       </publ>
       <publ>
 	<author>Irène Durand</author>
