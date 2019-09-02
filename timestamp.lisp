@@ -32,7 +32,7 @@
                          (day timestamp) (month timestamp) (year timestamp)
                          (/ (offset timestamp) -60)))
 
-(defun timestsamp->unix (timestamp)
+(defun timestamp->unix (timestamp)
   (- (timestamp->universal timestamp) *unix-epoch-difference*))
 
 (defun make-timestamp (&optional (y 0) (m 1) (d 1) (hh 0) (mm 0) (ss 0) (offset 0))
