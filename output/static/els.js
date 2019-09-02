@@ -11,7 +11,7 @@ var ELS = function(){
             console.log.apply(console, args);
         }
         return null;
-    }
+    };
 
     self.decodeEmail = function(encoded){
         var parts = encoded.split(",");
@@ -23,7 +23,7 @@ var ELS = function(){
         element.href = "mailto:"+email;
         element.textContent = email;
         return element;
-    }
+    };
 
     self.decodeEmailElements = function(){
         var elements = document.getElementsByClassName("encoded-email");
@@ -31,7 +31,7 @@ var ELS = function(){
             self.decodeEmailElement(elements[i]);        
         }
         return elements;
-    }
+    };
 
     self.getElementTime = function(element){
         if(element.tagName.toLowerCase() === "time"){
@@ -40,21 +40,21 @@ var ELS = function(){
             var times = element.getElementsByTagName("time");
             return (times.length === 0)? null : self.getElementTime(times[0]);
         }
-    }
+    };
 
     self.removeClass = function(element){
         for(var i=1; i<arguments.length; i++){
             element.className = element.className.replace(new RegExp("(?:^|\\s)"+arguments[i]+"(?:\\s|$)"),"");
         }
         return element;
-    }
+    };
 
     self.addClass = function(element){
         for(var i=1; i<arguments.length; i++){
             element.className += " " + arguments[i];
         }
         return element;
-    }
+    };
 
     self.hasClass = function(element){
         for(var i=1; i<arguments.length; i++){
@@ -62,20 +62,20 @@ var ELS = function(){
                 return false;
         }
         return true;
-    }
+    };
 
     self.getNextSibling = function(element){
         do{
             element = element.nextSibling;
         }while(element !== null && element.nodeType !== Node.ELEMENT_NODE);
         return element;
-    }
+    };
 
     self.urlencode = function(string) {
         return encodeURIComponent(""+string).replace(/[!'()*]/g, function(c) {
             return '%' + c.charCodeAt(0).toString(16);
         });
-    }
+    };
 
     self.createPostPayload = function(data) {
         var result = "";
@@ -90,7 +90,7 @@ var ELS = function(){
             }
         }
         return result;
-    }
+    };
 
     self.findTimezoneOffset = function(){
         var programme = document.getElementById("programme");
@@ -103,7 +103,7 @@ var ELS = function(){
             }
         }
         return null;
-    }
+    };
 
     self.toLocalDate = function(date){
         // Find our offset and invert it
@@ -112,17 +112,17 @@ var ELS = function(){
         // Translate browser time to normalised UTC time and offset to conference time.
         var utctime = date.toISOString().slice(0, -1);
         return new Date(Date.parse(utctime+revoffset)+date.getTimezoneOffset()*60000); 
-    }
+    };
 
     self.formatDateLocally = function(date){
         var local = self.toLocalDate(date);
-        var pad = function(a){return (a<10)? "0"+a : a;}
+        var pad = function(a){return (a<10)? "0"+a : a;};
         return local.getFullYear()
             +"."+ (local.getMonth()+1)
             +"."+ local.getDate()
             +" "+ local.getHours()
             +":"+ pad(local.getMinutes());
-    }
+    };
 
     self.updateProgrammeEntry = function(element, current){
         current = current || new Date();
@@ -151,7 +151,7 @@ var ELS = function(){
         }
         
         return element;
-    }
+    };
 
     self.updateProgramme = function(current){
         current = current || new Date();
@@ -165,14 +165,14 @@ var ELS = function(){
             self.updateProgrammeEntry(entries[i], current);
         }
         return entries;
-    }
+    };
 
     self.continuouslyUpdateProgramme = function(){
         // Don't use setInterval such as to fail and then abort in case of problems.
         self.updateProgramme(self.time);
         setTimeout(self.continuouslyUpdateProgramme, self.updateInterval);
         return null;
-    }
+    };
 
     self.initTimeSetter = function(){
         var setter = document.getElementById("set-time");
@@ -190,53 +190,53 @@ var ELS = function(){
             self.updateProgramme(self.time);
         });
         return setter;
-    }
+    };
 
     self.busy = function() {
         document.querySelector("#busy").style.display = "flex";
-    }
+    };
 
     self.unbusy = function() {
         document.querySelector("#busy").style.display = "none";
-    }
+    };
 
     self.showFailure = function(msg) {
         self.unbusy();
         self.hideSuccess();
         document.querySelector("#failure").style.display = "block";
         document.querySelector("#failure").textContent = msg;
-    }
+    };
 
     self.hideFailure = function(){
         document.querySelector("#failure").style.display = "none";
-    }
+    };
 
     self.showSuccess = function(msg) {
         self.unbusy();
         self.hideFailure();
         document.querySelector("#success").style.display = "block";
         document.querySelector("#success").textContent = msg;
-    }
+    };
 
     self.hideSuccess = function(){
         document.querySelector("#success").style.display = "none";
-    }
+    };
 
-    self.submitRegistration = function(target, data, success, failure) {
-        self.log("Submitting registration to server-side script...");
+    self.request = function(target, data, success, failure) {
+        self.log("Submitting to", target);
         var req = new XMLHttpRequest();
         try {
             req.onreadystatechange = function() {
                 if (req.readyState == XMLHttpRequest.DONE) {
                     if (req.status == 200) {
-                        self.log("Registration successful:", req.response);
+                        self.log("Request succeeded:", req.response);
                         success(req.response);
                     } else {
-                        self.log("Registration failed:", req.response);
+                        self.log("Request failed:", req.response);
                         failure(req.response);
                     }
                 }
-            }
+            };
             req.open("POST", target);
             req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
             req.send(self.createPostPayload(data));
@@ -340,40 +340,75 @@ var ELS = function(){
                 price: self.calculatePrice()
             };
 
-            var submit = function(data){
-                self.submitRegistration(form.getAttribute("action"), data, function(e){
+            var failPayment = function(e){
+                self.log("Payment failed.", e);
+                self.showFailure((e=="")? "Registration failed." : e);
+            };
+            
+            var confirmPayment = function(data){
+                data["action"] = "confirm";
+                self.request(form.getAttribute("action"), data, function(response){
+                    self.log("Payment confirmed.");
                     self.showSuccess("Registration complete! You should receive an email receipt shortly.");
-                }, function(e){
-                    self.showFailure((e=="")? "Registration failed." : e);
-                });
+                }, failPayment);
+            };
+
+            var requestPayment = function(data){
+                data["action"] = "request";
+                self.request(form.getAttribute("action"), data, function(response){
+                    response = JSON.parse(response);
+                    if(response.error){
+                        self.showFailure(response.error);
+                    }else if(response.status == "requires_action"){
+                        stripe.handleCardAction(
+                            response.payment_intent_client_secret
+                        ).then(function(result){
+                            if(result.error){
+                                self.log("Payment request failed:", result);
+                                self.showFailure(result.error.message);
+                            } else {
+                                self.log("Payment request successful.");
+                                data["token"] = result.paymentIntent.id;
+                                confirmPayment(data);
+                            }
+                        });
+                    }else if(response.status == "succeeded"){
+                        confirmPayment(data);
+                    }
+                }, failPayment);
             };
 
             self.busy();
             switch(payment){
             case "stripe":
-                stripe.createToken(card, {name: data.name}).then(function(result) {
+                stripe.createPaymentMethod(
+                    'card', card, {billing_details: {
+                        name: data.name,
+                        email: data.email
+                    }})
+                .then(function(result) {
                     if (result.error) {
                         self.log("Token creation failed:",result);
                         self.showFailure(result.error.message);
                     } else {
                         self.log("Token creation successful.");
-                        data["token"] = result.token.id;
-                        submit(data);
+                        data["token"] = result.paymentMethod.id;
+                        requestPayment(data);
                     }
                 });
                 break;
             case "bank":
                 data["token"] = "bank";
-                submit(data);
+                confirmPayment(data);
                 break;
             default:
                 self.showFailure("Please choose a payment option.");
             }
         });
-    }
+    };
 
     self.decorateBackground = function(num){
-        var rand = function(n){return Math.random()*n};
+        var rand = function(n){return Math.random()*n;};
         
         var html = document.documentElement;
         var body = document.body;
@@ -402,7 +437,7 @@ var ELS = function(){
             container.appendChild(el);
         }
         return null;
-    }
+    };
 
     self.init = function(){
         self.log("Initializing...");
@@ -417,8 +452,8 @@ var ELS = function(){
         self.decorateBackground();
         self.log("Done.");
         return self;
-    }
-}
+    };
+};
 
 var els = new ELS();
 document.addEventListener('DOMContentLoaded', els.init, false);

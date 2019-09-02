@@ -132,97 +132,21 @@
                                                           (cons ,(to-param-name opt) ,opt)))))
                          ,@options)))))
 
-(define-endpoint product "products" (id)
-  :endpoint-params (list id))
 
-(define-endpoint list-products "products" (&key active created ending-before ids limit shippable starting-after type url))
+(define-endpoint list-payment-intents "payment_intents" (&key created customer ending-before limit starting-after))
 
-(define-endpoint create-product "products" (id name type &key active attributes caption deactivate-on description images metadata package-dimensions shippable statement-descriptor url)
-  :method :post)
-
-(define-endpoint update-product "products" (id &key active attributes caption deactivate-on description images metadata name package-dimensions shippable statement-descriptor url)
-  :endpoint-params (list id)
-  :method :post)
-
-(define-endpoint delete-product "products" (id)
-  :endpoint-params (list id)
-  :method :delete)
-
-(defun ensure-product (id &rest options)
-  (handler-case
-      (apply #'update-product id options)
-    (invalid-request-error (err)
-      (declare (ignore err))
-      (apply #'create-product id (getf options :name) (getf options :type) options))))
-
-(define-endpoint sku "skus" (id)
-  :endpoint-params (list id))
-
-(define-endpoint list-skus "skus" (&key active attributes ending-before ids in-stock limit product starting-after))
-
-(define-endpoint create-sku "skus" (product id price currency inventory &key active attributes image metadata package-dimensions)
-  :method :post)
-
-(define-endpoint update-sku "skus" (id &key active attributes currency image inventory metadata package-dimensions price product)
-  :endpoint-params (list id)
-  :method :post)
-
-(define-endpoint delete-sku "skus" (id)
-  :endpoint-params (list id)
-  :method :delete)
-
-(defun ensure-sku (product id &rest options)
-  (handler-case
-      (apply #'update-sku id :product product options)
-    (invalid-request-error (err)
-      (declare (ignore err))
-      (apply #'create-sku product id (getf options :price) (getf options :currency) (getf options :inventory) options))))
-
-(define-endpoint order "orders" (id)
-  :endpoint-params (list id))
-
-(define-endpoint list-orders "orders" (&key created customer ending-before ids limit starting-after status status-transitions upstream-ids))
-
-(define-endpoint update-order "orders" (id &key coupon metadata selected-shipping-method shipping status)
-  :endpoint-params (list id)
-  :method :post)
-
-(define-endpoint return-order "orders" (id &key items)
-  :endpoint-params (list id "returns")
-  :method :post)
-
-(defun update-edition-registration (edition)
-  (let* ((*package* (find-package (princ-to-string edition))))
-    (dolist (options (query :registration))
-      (apply #'ensure-product (getf options :id)
-             :type "good"
-             :active (ecase (getf options :status)
-                       (:active "true")
-                       (:inactive "false"))
-             :attributes '("name")
-             :shippable "false"
-             options))
-    (dolist (options (query :registration-sku))
-      (apply #'ensure-sku (getf options :product) (getf options :id)
-             :price (round (* (getf options :price) 100))
-             :currency "eur"
-             :inventory '(("type" . "infinite"))
-             :attributes `(("name" . ,(getf options :name)))
-             :active (ecase (getf options :status)
-                       (:active "true")
-                       (:inactive "false"))
-             options))))
-
-(defun edition-orders (edition)
-  (let* ((*package* (find-package (princ-to-string edition)))
-         (ids (loop for registration in (query :registration-sku)
-                    collect (getf registration :id)))
-         (orders (loop for response = (list-orders :limit 100)
-                       then (list-orders :limit 100 :starting-after (gethash "id" (car (last data))))
-                       for data = (gethash "data" response)
-                       nconc data
-                       while (gethash "has_more" response))))
-    (remove-if-not (lambda (order)
-                     (loop for item in (gethash "items" order)
-                           thereis (find (gethash "parent" item) ids :test #'equal)))
-                   orders)))
+(defun edition-payments (edition)
+  (clip:with-clipboard-bound ((edition edition))
+    (let* ((end-date (queryf :time :date T :sort '(:time :dsc)))
+           (result (list-payment-intents :created `(("gt" . ,(adjust-timestamp end-date (- (* 60 60 24 365))))
+                                                    ("lt" . ,end-date)))))
+      (loop for payment in (gethash "data" result)
+            for meta = (gethash "metadata" payment)
+            do (list :id (gethash "id" payment)
+                     :amount (/ (gethash "amount" payment) 100.0)
+                     :status (gethash "status" payment)
+                     :name (gethash "name" meta)
+                     :email (gethash "email" meta)
+                     :affiliation (gethash "affiliation" meta)
+                     :food-restrictions (gethash "food-restrictions" meta)
+                     :items (gethash "items" meta))))))
