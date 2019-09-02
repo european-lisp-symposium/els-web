@@ -90,29 +90,13 @@ Many of these definitions accept arbitrary data fields in the form of a plist. T
 * `:logo` A link to the logo image of the sponsor. The logo should be no bigger than 256px², should be hosted locally, and ideally should be a vector graphics image.
 
 ### Fields for Registration
-The registration definition is a bit more complicated. Each registration has options of its own, and then a set of "SKUs", which are the available variants of the registration. See the section below for fields available to each SKU.
+The registration definition is composed of a number of items. Each item has the following structure: a type, a name, and attributes. The type should be either `:kind` for primary registration types, and `:option` for optional features attendees can request. The name should uniquely identify the item in the list. The following attributes can also be specified:
 
-* `kind` A string allowing you to define different sets of registrations. Typically this is for distinguishing early birds and late joiners.
-* `status` Either `:active` or `:inactive`, denoting whether this registration is still open.
-* `:id` The id of the product used in Stripe. This is automatically generated.
-* `:name` The publicly visible name of the product in Stripe. This is automatically generated.
-* `:caption` An short description of the product in Stripe.
-* `:deactivate-on` An optional date on which the product is automatically deactivated by Stripe.
-* `:description` An optional description of the product in Stripe.
-* `:images` An optional list of URLs to images for the product used in Stripe.
-* `:metadata` An optional alist of metadata for use in Stripe.
-* `:url` An optional string of an URL for use in Stripe.
+* `:price` The price of the item in €. If you need cents, use a float. Defaults to `0`.
+* `:status` Should be `:active` if one can buy the item, and `:inactive` if not. Useful for managing early-bird items. Defaults to the status of the entire registration block.
+* `:description` A textual description of the item, explaining it in more detail.
 
-Note that defining the registration will only update the internal database used by ELS-web. The remote Stripe servers are not automatically updated, as that would incur contacting the API every time you load the system. Instead, you need to manually notify the Stripe API of changes to the registration definition by using `update-edition-registration`.
-
-#### Fields for Registration SKUs
-Each SKU in a registration requires a name, followed by a set of options. The name should describe the type of registration possible as a string.
-
-* `:price` The price of the product in €. If you need cents, use a float or ratio.
-* `:id` The id of the SKU used in Stripe. This is automatically generated.
-* `:status` Either `:active` or `:inactive`, denoting whether this SKU is still available. Defaults to the same as the product.
-* `:image` An optional URL to an image for use in Stripe.
-* `:metadata` An optional alist of metadata for use in Stripe.
+Once registrations are closed, you should set the entire registration block to `:inactive`.
 
 ## Extracting the Data
 The data can be easily retrieved through the `query` function that does some light matching. The filter argument can be of the following structure:

@@ -6,8 +6,8 @@
   <form action="../static/register.php" method="post">
     <div class="kind" iterate="(query :registration-sku '(and (= type :kind) (= status :active)) :sort '(:price :dsc))">
       <div>
-        <input type="radio" class="input" name="item" required lquery='(attr :value id :id id)' />
-        <label lquery='(attr :for id)'>
+        <input type="radio" class="input" name="item" required lquery='(attr :value name :id name)' />
+        <label lquery='(attr :for name)'>
           <c:splice lquery="(text name)" />
           <span class="price" lquery="(text price)" />
         </label>
@@ -35,8 +35,8 @@
     <h4>Options</h4>
     <div class="options">
       <div iterate="(query :registration-sku '(and (= type :option) (= status :active)))">
-        <div><input type="checkbox" name="item" lquery="(attr :id id :value id :checked checked)" />
-          <label lquery="(attr :for id)">
+        <div><input type="checkbox" name="item" lquery="(attr :id name :value name :checked checked)" />
+          <label lquery="(attr :for name)">
             <c:splice lquery="(text description)" />
             <c:when test="(/= 0 price)"><span class="price" lquery="(text price)" /></c:when>
           </label></div>

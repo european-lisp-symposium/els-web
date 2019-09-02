@@ -120,25 +120,20 @@
            '(:record-type)))
 
 (defmacro define-registration ((status &rest options) &body skus)
-  (destructuring-bind (&key (id (format NIL "ELS-~a" (package-name *package*)))
-                            (name (format NIL "European Lisp Symposium ~a" (package-name *package*)))
+  (destructuring-bind (&key (id (format NIL "ELS ~a" (package-name *package*)))
                             &allow-other-keys) options
     (let ((options (copy-list options)))
-      (remf options :id) (remf options :name)
+      (remf options :id)
       `(progn (record '(:record-type :registration
                         :id ,id
-                        :name ,name
                         :status ,status
                         ,@options)
                       '(:record-type :id))
               ,@(loop for (type name . options) in skus
-                      for sku-id = (format NIL "~a-~(~a~)" id (alphanumerize name))
                       collect `(record '(:record-type :registration-sku
-                                         :product ,id
                                          ,@options
-                                         :id ,sku-id
                                          :name ,name
                                          :type ,type
                                          :status ,status
                                          :price 0)
-                                       '(:record-type :id)))))))
+                                       '(:record-type :name)))))))
