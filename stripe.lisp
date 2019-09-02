@@ -63,7 +63,7 @@
              (etypecase value
                (string value)
                (number (princ-to-string value))
-               (timestamp (timestamp->unix value))
+               (timestamp (princ-to-string (timestamp->unix value)))
                ((eql T) "true")
                ((eql NIL) "false"))))
       (cond ((and (consp value) (consp (car value)))
@@ -78,6 +78,17 @@
 (defun stripe-request (endpoint parameters &key (key (secret :stripe-private-key)) (method :get) endpoint-params)
   (let ((url (format NIL "~a~a~{/~a~}" *stripe-base* endpoint endpoint-params))
         (parameters (loop for param in parameters append (coerce-stripe-parameter param))))
+    (when (eql :get method)
+      (let ((uri (puri:parse-uri url)))
+        (setf (puri:uri-query uri)
+              (with-output-to-string (out)
+                (loop for (key . value) in parameters
+                      do (write-string key out)
+                         (write-char #\= out)
+                         (write-string (drakma:url-encode value :utf-8) out)
+                         (write-char #\& out))))
+        (setf url uri)
+        (setf parameters ())))
     (multiple-value-bind (stream code)
         (drakma:http-request url
                              :method method
