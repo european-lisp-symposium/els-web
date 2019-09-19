@@ -24,7 +24,8 @@ Author: Nicolas Hafner <shinmera@tymoon.eu>
                (:file "webpage")
                (:file "shorthand")
                (:module "editions"
-                :components ((:file "frontpage")
+                :components ((:file "global")
+                             (:file "frontpage")
                              (:file "2008")
                              (:file "2009")
                              (:file "2010")

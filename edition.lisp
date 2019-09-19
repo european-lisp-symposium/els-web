@@ -22,7 +22,8 @@
 
 (defun editions ()
   (sort (loop for k being the hash-keys of *editions*
-              unless (string= k "toplevel")
+              unless (or (string= k "global")
+                         (string= k "toplevel"))
               collect k)
         #'string>))
 
@@ -34,6 +35,28 @@
        (in-package ,name)
        (setf (edition ,name) ())
        (named-readtables:in-readtable :els-web))))
+
+(defun complete-data-with (source target)
+  ;; Heuristics to try and figure out how to merge right. Yikes!
+  (cond ((null target)                ; No value
+         source)
+        ((not (listp target))         ; Unmergeable
+         target)
+        ((and (evenp (length target)) ; Plist, merge recursively
+              (keywordp (first target))
+              (not (every #'symbolp target)))
+         (loop for (key val) on source by #'cddr
+               for other = (getf target key)
+               do (setf (getf target key) (complete-data-with val other)))
+         target)
+        (T                            ; Other list, don't override
+         source)))
+
+(defun find-global-record (data comparison-fields)
+  (let ((clip:*clipboard-stack* (list (edition "global"))))
+    (query1 (getf data :record-type)
+            (list* 'and (loop for field in comparison-fields
+                              collect (list '= (getf data field) (intern (string field))))))))
 
 (defun record (data comparison-fields &optional (edition (package-name *package*)))
   (dolist (field comparison-fields)
@@ -47,6 +70,8 @@
              (warn "Redefining record for ~{~a~^, ~}"
                    (loop for field in comparison-fields collect (getp data field)))
              T)))
+    (unless (string= "global" edition)
+      (setf data (complete-data-with (find-global-record data comparison-fields) data)))
     (let ((database (edition edition)))
       (setf database (remove-if #'match-fields database))
       (setf (edition edition) (append database (list data))))))
