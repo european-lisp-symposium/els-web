@@ -95,6 +95,11 @@
    (img :max-width 100%
         :max-height 100%)
 
+   (div.dates
+    :margin 20px 0 0 0
+    :text-align center
+    :font-size 2em)
+
    (>header
     :color #(header-fg)
     :position relative
@@ -116,11 +121,6 @@
                :border 1px solid #(ed-current-fg)
                :border-radius 5px)
      ("*:hover" :color #(ed-hover-fg)))
-
-    (div.dates
-     :margin 20px 0 0 0
-     :text-align center
-     :font-size 2em)
     
     (nav.main
      :margin 50px 0 0 0
@@ -175,7 +175,8 @@
      :clear both
      :margin 30px 0 0 0
      (p :text-align justify)
-     (h2 :margin 0 0 0 10px))
+     (h2 :margin 0 0 0 10px)
+     (.dates :margin 0 0 1em 0))
 
     (a :word-break break-all)
 
@@ -321,6 +322,8 @@
         :height 250px
         :display inline-block))
       (.role :display none)
+      ((:or .email .tel .org .category)
+       :display block)
       (.adr :display block
             (".extended-address::before" :content ", ")
             (.country-name :display block)))

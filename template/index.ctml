@@ -15,13 +15,8 @@
       <h1><a href="../index.html">European Lisp Symposium</a></h1>
       <nav class="editions" iterate="(query :edition)">
         <a href="#" lquery='(text year) (attr :href (format NIL "../~a/index.html" year))
-                            (add-class (if current "current" "other"))'>20XX</a>
+                 (add-class (if current "current" "other"))'>20XX</a>
       </nav>
-      <div class="dates">
-        <time lquery="(time (queryf :time :date '(= name :conference\ start)) :title)"/> -
-        <time lquery="(time (queryf :time :date '(= name :conference\ end)) :title)"/>,
-        <span class="location" lquery="(text (clip:clip (clip:clip (query1 :location '(in role :conference)) :address) :city))">Place</span>
-      </div>
       <nav class="main">
         <c:when test="(query :registration '(= status :active))">
           <a href="#registration">Registration</a>
@@ -46,6 +41,13 @@
     </header>
     <main>
       <article id="conference">
+        <div class="dates">
+          <time lquery="(time (queryf :time :date '(= name :conference\ start)) :title)"/> -
+          <time lquery="(time (queryf :time :date '(= name :conference\ end)) :title)"/>
+          <span lquery="(text (clip:clip (query1 :edition '(= current T)) :year))">20XX</span>,
+          <span class="location" lquery="(text (clip:clip (clip:clip (query1 :location '(in role :conference)) :address) :city))">Place</span>
+        </div>
+
         <c:splice lquery="(html (query-text '(= name :announcement)))" />
 
         <c:when test="(query1 :sponsor)">
