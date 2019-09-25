@@ -37,7 +37,8 @@ Author: Nicolas Hafner <shinmera@tymoon.eu>
                              (:file "2016")
                              (:file "2017")
                              (:file "2018")
-                             (:file "2019"))))
+                             (:file "2019")
+                             (:file "2020"))))
   :depends-on (:clip
                :local-time
                :pathname-utils
