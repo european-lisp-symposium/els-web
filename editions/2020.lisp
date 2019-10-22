@@ -15,6 +15,13 @@
                 :given-name "Nicolas")
   :role (:local-chair))
 
+(define-person (:family-name "Dimitriou"
+                :given-name "Ioanna"
+                :additional-name "M.")
+  :role (:programme-chair)
+  :website "https://ioa.re"
+  :address (:city "Bonn" :country "Germany"))
+
 (define-location "GZ Riesbach"
   :role (:conference)
   :photo "../static/2020/venue.jpg"
