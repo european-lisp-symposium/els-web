@@ -1,5 +1,5 @@
 <span class="person vcard" lquery="(add-classes role)">
-  <c:when test="photo"><img class="photo" alt="photo" lquery="(attr :src photo)"></img></c:when>
+  <img class="photo" alt="photo" lquery='(attr :src (or photo "../static/anonymous.png"))'/>
   <span class="fn" lquery="(text full-name)">Frank Ly. Example</span>
   <c:when test="name">
     <c:using value="name">

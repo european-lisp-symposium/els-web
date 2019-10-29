@@ -12,6 +12,7 @@
 
 (define-person (:family-name "Hafner"
                 :given-name "Nicolas")
+  :photo "https://en.gravatar.com/userimage/12617850/a50422c48339a730dee468056eab402c.png"
   :email "shinmera@tymoon.eu"
   :website "https://shinmera.com"
   :nickname "Shinmera"

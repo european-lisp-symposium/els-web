@@ -171,6 +171,34 @@
      :color #(high-fg)
      :font-weight bold)
 
+    (.person
+     :position relative
+     :margin 0.5em 0
+     :display grid
+     :grid-template-rows 1.2em 1em 1em 1em
+     :grid-template-columns 80px 2fr 1fr
+     :grid-gap 0.05em 0.5em
+     (.photo
+      :float left
+      :width 80px
+      :max-height 4em
+      :object-fit contain
+      :grid-row 1 / 4 :grid-column 1
+      :margin 0.1em)
+     (.n
+      :font-size 1.2em
+      :grid-row 1 :grid-column 2)
+     (.nickname
+      :grid-row 1 :grid-column 3)
+     (.email
+      :grid-row 2 :grid-column 3)
+     (.url
+      :grid-row 2 :grid-column 2)
+     (.org
+      :grid-row 3 :grid-column 2)
+     (.adr
+      :grid-row 4 :grid-column 2 / 3))
+
     (article
      :clear both
      :margin 30px 0 0 0
@@ -331,12 +359,10 @@
 
     ((:or "#organization" "#speakers")
      (.role :display none)
-     (.fn :display none)
-     (".org::before" :content ", " :margin-left -2px)
-     (".adr::before" :content ", " :margin-left -2px))
+     (.fn :display none))
 
     ("#organization"
-     (ul :margin 0))
+     (ul :margin 0 :padding 0 :list-style none))
 
     ("#highlights"
      (>ul :list-style none
