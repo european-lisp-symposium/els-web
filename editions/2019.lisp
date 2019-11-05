@@ -111,52 +111,62 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 (define-person (:family-name "Neuss"
         :given-name "Nicolas")
   :role (:programme-chair)
-  :organization "FAU Erlangen-Nürnberg, Germany")
+  :organization "FAU Erlangen-Nürnberg"
+  :address (:country "Germany"))
 
 (define-person (:family-name "Antoniotti"
         :given-name "Marco")
   :role (:committee)
-  :organization "Universita Milano Bicocca, Italy")
+  :organization "Universita Milano Bicocca"
+  :address (:country "Italy"))
 
 (define-person (:family-name "Battyani"
         :given-name "Marc")
   :role (:committee)
-  :organization "Fractal Concept, France")
+  :organization "Fractal Concept"
+  :address (:country "France"))
 
 (define-person (:family-name "Costanza"
         :given-name "Pascal")
   :role (:committee)
-  :organization "IMEC, ExaScience Life Lab, Leuven, Belgium")
+  :organization "IMEC, ExaScience Life Lab"
+  :address (:country "Belgium" :city "Leuven"))
 
 (define-person (:family-name "Dreschler-Fischer"
         :given-name "Leonie")
   :role (:committee)
-  :organization "University of Hamburg, Germany")
+  :organization "University of Hamburg"
+  :address (:country "Germany"))
 
 (define-person (:family-name "Emerson"
         :given-name "R. Matthew")
   :role (:committee)
-  :organization "toughtstuff LLC, USA")
+  :organization "toughtstuff LLC"
+  :address (:country "USA"))
 
 (define-person (:family-name "Heisig"
         :given-name "Marco")
   :role (:committee)
-  :organization "FAU Erlangen-Nürnberg, Germany")
+  :organization "FAU Erlangen-Nürnberg"
+  :address (:country "Germany"))
 
 (define-person (:family-name "Herzeel"
         :given-name "Charlotte")
   :role (:committee)
-  :organization "IMEC, ExaScience Life Lab, Leuven, Belgium")
+  :organization "IMEC, ExaScience Life Lab"
+  :address (:country "Belgium" :city "Leuven"))
 
 (define-person (:family-name "Mai"
         :given-name "Pierre R.")
   :role (:committee)
-  :organization "PMSF IT Consulting, Germany")
+  :organization "PMSF IT Consulting"
+  :address (:country "Germany"))
 
 (define-person (:family-name "Ó Nualláin"
         :given-name "Breanndán ")
   :role (:committee)
-  :organization "University of Amsterdam, Netherlands")
+  :organization "University of Amsterdam"
+  :address (:country "Netherlands"))
 
 (define-person (:family-name "Rideau"
         :given-name "François-René")
@@ -166,43 +176,48 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 (define-person (:family-name "Riva"
         :given-name "Alberto")
   :role (:committee)
-  :organization "University of Florida, USA")
+  :organization "University of Florida"
+  :address (:country "USA"))
 
 (define-person (:family-name "Stalla"
         :given-name "Alessio")
   :role (:committee)
-  :organization "ManyDesigns Srl, Italy")
+  :organization "ManyDesigns Srl"
+  :address (:country "Italy"))
 
 (define-person (:family-name "Krusenotto"
         :given-name "Patrick")
   :role (:committee)
-  :organization "Deutsche Welle, Germany")
+  :organization "Deutsche Welle"
+  :address (:country "Germany"))
 
 (define-person (:family-name "Marek"
         :given-name "Philipp")
   :role (:committee)
-  :organization "Austria")
+  :address (:country "Austria"))
 
 (define-person (:family-name "Chua"
         :given-name "Sacha")
   :role (:committee)
-  :organization "Living an Awesome Life, Canada")
-
+  :organization "Living an Awesome Life"
+  :address (:country "Canada"))
 
 (define-person (:family-name "Monnier"
                 :given-name "Stefan")
   :role (:speaker)
-  :organization "Université de Montréal, Québec, Canada")
+  :organization "Université de Montréal"
+  :address (:country "Canada" :city "Québec"))
 
 (define-person (:family-name "Rhodes"
                 :given-name "Christophe")
   :role (:speaker)
-  :organization "England")
+  :address (:country "England"))
 
 (define-person (:family-name "Flatt"
                 :given-name "Matthew")
   :role (:speaker)
-  :organization "University of Utah, USA")
+  :organization "University of Utah"
+  :address (:country "USA"))
 
 #+()(define-text :registration
   (:p "Since we are co-locating with &lt;Programming&gt; this year,

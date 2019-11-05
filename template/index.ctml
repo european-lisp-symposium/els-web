@@ -45,7 +45,7 @@
           <time lquery="(time (queryf :time :date '(= name :conference\ start)) :title)"/> -
           <time lquery="(time (queryf :time :date '(= name :conference\ end)) :title)"/>
           <span lquery="(text (clip:clip (query1 :edition '(= current T)) :year))">20XX</span>,
-          <span class="location" lquery="(text (clip:clip (clip:clip (query1 :location '(in role :conference)) :address) :city))">Place</span>
+          <span lquery="(text (clip:clip (clip:clip (query1 :location '(in role :conference)) :address) :city))">Place</span>
         </div>
 
         <c:splice lquery="(html (query-text '(= name :announcement)))" />
