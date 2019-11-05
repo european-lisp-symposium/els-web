@@ -6,6 +6,7 @@
 (define-date "Conference end" @2020-04-28)
 
 (define-text :announcement
+  (:div :class "announcement" "First invited speaker confirmed! Andy Keep (Nanopass Framework).")
   (:div :class "announcement" "The conference is being organized. Stay tuned for updates!"))
 
 (define-person (:family-name "Verna"
@@ -21,6 +22,12 @@
   :role (:programme-chair)
   :website "https://ioa.re"
   :address (:city "Bonn" :country "Germany"))
+
+(define-person (:family-name "Keep"
+                :given-name "Andrew"
+                :additional-name "W.")
+  :role (:speaker)
+  :website "https://andykeep.com")
 
 (define-location "GZ Riesbach"
   :role (:conference)
