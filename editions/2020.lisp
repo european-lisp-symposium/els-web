@@ -8,6 +8,9 @@
 (define-text :announcement
   (:div :class "announcement" "First invited speaker confirmed! Andy Keep (Nanopass Framework).")
   (:div :class "announcement" "The conference is being organized. Stay tuned for updates!"))
+  (:div :class "announcement" "Second invited speaker confirmed! Daniel Kochmański (ECL).")
+  #+()(:div :class "announcement" "First invited speaker confirmed! Andy Keep (Nanopass Framework).")
+;; persons
 
 (define-person (:family-name "Verna"
                 :given-name "Didier"))
@@ -27,7 +30,25 @@
                 :given-name "Andrew"
                 :additional-name "W.")
   :role (:speaker)
-  :website "https://andykeep.com")
+  :organization "Cisco Systems Inc."
+  :photo "andy-keep.jpg"
+  :website "https://andykeep.com"
+  :address (:country "USA"))
+
+(define-person (:family-name "Kochmański"
+                :given-name "Daniel")
+  :role (:speaker)
+  :organization "TurtleWare"
+  :photo "http://turtleware.eu/static/images/daniel-k.png"
+  :website "https://turtleware.eu"
+  :address (:country "Poland"))
+
+;; pre-programme keynotes list.
+
+(define-text :keynotes
+  (:ul
+   (:li (:b "Andy Keep") " (Cisco Systems, Inc.), on the Nanopass Framework.")
+   (:li (:b "Daniel Kochmański") " (Turtleware), on the Embeddable Common Lisp (ECL).")))
 
 (define-location "GZ Riesbach"
   :role (:conference)
