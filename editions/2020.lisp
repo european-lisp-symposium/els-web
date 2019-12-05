@@ -23,6 +23,7 @@
                 :given-name "Ioanna"
                 :additional-name "M.")
   :role (:programme-chair)
+  :organization "Igalia"
   :website "https://ioa.re"
   :address (:city "Bonn" :country "Germany"))
 
@@ -42,6 +43,72 @@
   :photo "http://turtleware.eu/static/images/daniel-k.png"
   :website "https://turtleware.eu"
   :address (:country "Poland"))
+
+(define-person (:family-name "Wingo"
+                :given-name "Andy")
+  :role (:committee)
+  :organization "Igalia"
+  :address (:country "France"))
+
+(define-person (:given-name "Asumu"
+                :family-name "Takikawa")
+  :role (:committee)
+  :organization "Igalia"
+  :address (:country "USA"))
+
+(define-person (:given-name "Iréne"
+                :family-name "Durand")
+  :role (:committee)
+  :organization "Université Bordeaux 1"
+  :address (:country "France"))
+
+(define-person (:given-name "Jim"
+                :family-name "Newton")
+  :role (:committee)
+  :organization "EPITA Research Lab"
+  :address (:country "France"))
+
+(define-person (:given-name "Kent"
+                :family-name "Pitman")
+  :role (:committee)
+  :organization "HyperMeta"
+  :address (:country "USA"))
+
+(define-person (:given-name "Leonie"
+                :family-name "Dreschler-Fischer")
+  :role (:committee)
+  :organization "University of Hamburg"
+  :address (:country "Germany"))
+
+(define-person (:given-name "Marco"
+                :family-name "Heisig")
+  :role (:committee)
+  :organization "FAU Erlangen-Nürnberg"
+  :address (:country "Germany"))
+
+(define-person (:given-name "Max"
+                :family-name "Rottenkolber")
+  :role (:committee)
+  :organization "Interstellar Ventures"
+  :address (:country "Germany"))
+
+(define-person (:given-name "Paulo"
+                :family-name "Matos")
+  :role (:committee)
+  :organization "Igalia"
+  :address (:country "Germany"))
+
+(define-person (:given-name "Robert"
+                :family-name "Goldman")
+  :role (:committee)
+  :organization "SIFT"
+  :address (:country "USA"))
+
+(define-person (:given-name "Robert"
+                :family-name "Strandh")
+  :role (:committee)
+  :organization "Université Bordeaux 1"
+  :address (:country "France"))
 
 ;; pre-programme keynotes list.
 
@@ -81,3 +148,6 @@
    :price 20 :description "Sunday excursion (details below)")
   (:option "excursion-guest" :status :active
    :price 20 :description "Sunday excursion guest"))
+(define-sponsor igalia
+    :website "https://igalia.com"
+    :logo "../static/logos/igalia.png")
