@@ -76,6 +76,7 @@
                 :additional-name "M.")
   :role (:programme-chair)
   :organization "Igalia"
+  :photo "https://ioa.re/images/ioa-2019.jpg"
   :website "https://ioa.re"
   :address (:city "Bonn" :country "Germany"))
 
