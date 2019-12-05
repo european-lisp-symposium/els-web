@@ -84,7 +84,6 @@
                 :additional-name "W.")
   :role (:speaker)
   :organization "Cisco Systems Inc."
-  :photo "andy-keep.jpg"
   :website "https://andykeep.com"
   :address (:country "USA"))
 
@@ -202,4 +201,4 @@
    :price 20 :description "Sunday excursion guest"))
 (define-sponsor igalia
     :website "https://igalia.com"
-    :logo "../static/logos/igalia.png")
+    :logo "https://www.igalia.com/assets/i/logoDark.png")
