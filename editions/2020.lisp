@@ -171,6 +171,12 @@
   :role (:committee)
   :organization "IMEC, Intel Exascience Lab"
   :address (:country "Belgium"))
+
+(define-person (:given-name "Mark"
+                :family-name "Evenson")
+  :role (:committee)
+  :email "evenson@panix.com")
+
 ;; pre-programme keynotes list.
 
 (define-text :keynotes
