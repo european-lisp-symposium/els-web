@@ -162,6 +162,15 @@
   :organization "Université Bordeaux 1"
   :address (:country "France"))
 
+(define-person (:given-name "Christophe"
+                :family-name "Rhodes")
+  :role (:committee))
+
+(define-person (:given-name "Charlotte"
+                :family-name "Herzeel")
+  :role (:committee)
+  :organization "IMEC, Intel Exascience Lab"
+  :address (:country "Belgium"))
 ;; pre-programme keynotes list.
 
 (define-text :keynotes
