@@ -398,11 +398,14 @@
       (>header
        (.photos
         :float left
+        :margin 0 1em 0 0
         (img
-         :margin 0 1em 0 0
          :width 80px
          :max-height 80px
-         :object-fit contain)))
+         :object-fit contain)
+        (span :margin-left -40px)
+        ((:and span :first-child)
+         :margin-left 0)))
       (p :clear left))
      (.person
       (".org:before"
