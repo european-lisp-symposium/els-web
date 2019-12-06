@@ -108,7 +108,7 @@
   :organization "Igalia"
   :address (:country "USA"))
 
-(define-person (:given-name "Iréne"
+(define-person (:given-name "Irène"
                 :family-name "Durand")
   :role (:committee)
   :organization "Université Bordeaux 1"
@@ -167,7 +167,7 @@
   :role (:committee)
   :organization "Google"
   :address (:country "UK"))
-  
+
 (define-person (:given-name "Charlotte"
                 :family-name "Herzeel")
   :role (:committee)
