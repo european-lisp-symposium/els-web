@@ -9,6 +9,8 @@ This repository makes use of [Git LFS](https://git-lfs.github.com/) for storage 
 
 If all went fine, the file at `els-web/output/static/favicon.png` should be a binary image. If something went wrong it will be a plain text file. In that case, Git LFS was not properly set up. Please make sure you have installed it correctly and try again.
 
+When pulling, please make sure to pull with rebase to avoid merge commits and branching history. You can do so either explicitly with `git pull --rebase` or configure rebase as the default with `git config --bool pull.rebase true`.
+
 ## How to Define an Edition
 An edition is created by defining a new package of the editions' name --usually its year-- and following it up with various data definitions. The basic outline is as follows:
 
