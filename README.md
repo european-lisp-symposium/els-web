@@ -1,6 +1,14 @@
 ## About ELS-Web
 This is a system that contains all data related to the [European Lisp Symposium](http://european-lisp-symposium.org/), and is able to compile it into a static website for publishing.
 
+## Cloning the Repository
+This repository makes use of [Git LFS](https://git-lfs.github.com/) for storage of several large files (images, pdfs, etc.) In order to properly clone all the data and contribute to the repository, please first make sure Git LFS is installed on your machine. Typically it should be available as a `git-lfs` package. Following that, run these commands to clone the repository:
+
+- `git lfs install`
+- `git clone git@github.com:european-lisp-symposium/els-web`
+
+If all went fine, the file at `els-web/output/static/favicon.png` should be a binary image. If something went wrong it will be a plain text file. In that case, Git LFS was not properly set up. Please make sure you have installed it correctly and try again.
+
 ## How to Define an Edition
 An edition is created by defining a new package of the editions' name --usually its year-- and following it up with various data definitions. The basic outline is as follows:
 
