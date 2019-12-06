@@ -4,7 +4,7 @@
 
 (define-date "Submission deadline" @2020-02-13)
 (define-date "Author notification" @2020-03-16)
-(define-date "Final papers due" @2020-04-06)
+(define-date "Final papers" @2020-04-06)
 
 (define-date "Conference start" @2020-04-27)
 (define-date "Conference end" @2020-04-28)
