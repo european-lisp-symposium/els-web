@@ -394,10 +394,20 @@
      (>ul :list-style none
           :padding 0)
      (p :white-space pre-line)
+     (.highlight
+      (>header
+       (.photos
+        :float left
+        (img
+         :margin 0 1em 0 0
+         :width 80px
+         :max-height 80px
+         :object-fit contain)))
+      (p :clear left))
      (.person
       (".org:before"
        :content ", ")
-      ((:or .n .email .tel .category .role .adr)
+      ((:or .photo .n .email .tel .category .role .adr)
        :display none)))
 
     ("#programme"
