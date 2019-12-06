@@ -164,8 +164,10 @@
 
 (define-person (:given-name "Christophe"
                 :family-name "Rhodes")
-  :role (:committee))
-
+  :role (:committee)
+  :organization "Google"
+  :address (:country "UK"))
+  
 (define-person (:given-name "Charlotte"
                 :family-name "Herzeel")
   :role (:committee)
@@ -175,7 +177,9 @@
 (define-person (:given-name "Mark"
                 :family-name "Evenson")
   :role (:committee)
-  :email "evenson@panix.com")
+  :organization "not.org"
+  :email "evenson@panix.com"
+  :address (:country "Austria"))
 
 ;; pre-programme keynotes list.
 
