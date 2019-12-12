@@ -171,7 +171,7 @@
 (define-person (:given-name "Charlotte"
                 :family-name "Herzeel")
   :role (:committee)
-  :organization "IMEC, Intel Exascience Lab"
+  :organization "Imec, ExasSience Lab"
   :address (:country "Belgium"))
 
 (define-person (:given-name "Mark"
