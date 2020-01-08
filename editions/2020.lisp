@@ -181,6 +181,12 @@
   :email "evenson@panix.com"
   :address (:country "Austria"))
 
+(define-person (:given-name "Sky"
+                :family-name "Hester")
+  :role (:committee)
+  :organization "consultant"
+  :address (:country "USA"))
+    
 ;; pre-programme keynotes list.
 
 (define-text :keynotes
