@@ -45,7 +45,7 @@
   (:p "We invite submissions in the following forms:")
 
   (:ul (:li "<b>Papers</b>: Technical papers of up to 8 pages that describe original results or explain known ideas in new and elegant ways.")
-       (:li "<b>Demonstrations</b>: Abstracts of up to 2 pages for demonstrations of tools, libraries, and applications.")
+       (:li "<b>Demonstrations</b>: Abstracts of up to 4 pages for demonstrations of tools, libraries, and applications.")
        (:li "<b>Tutorials</b>: Abstracts of up to 4 pages for in-depth presentations about topics of special interest for at least 90 minutes and up to 180 minutes."))
 
   (:p "You can upload submissions on <a href=\"https://www.easychair.org/conferences/?conf=els2020\">EasyChair</a>.")
