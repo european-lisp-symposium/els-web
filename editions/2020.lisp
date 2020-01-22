@@ -10,8 +10,9 @@
 (define-date "Conference end" @2020-04-28)
 
 (define-text :announcement
-  (:div :class "announcement" "Call for Papers")
-  (:div :class "announcement" "Second invited speaker confirmed! Daniel Kochmański (ECL).")
+  (:div :class "announcement" "ACM In-Cooperation-With status renewed!")
+  (:div :class "announcement" "Submissions being accepted now.")
+  #+()(:div :class "announcement" "Second invited speaker confirmed! Daniel Kochmański (ECL).")
   #+()(:div :class "announcement" "First invited speaker confirmed! Andy Keep (Nanopass Framework).")
   #+()(:div :class "announcement" "The conference is being organized. Stay tuned for updates!"))
 
@@ -225,6 +226,10 @@
    :price 20 :description "Sunday excursion (details below)")
   (:option "excursion-guest" :status :active
    :price 20 :description "Sunday excursion guest"))
+
+(define-sponsor acm
+  :website "http://www.sigplan.org/"
+  :logo "../static/logos/acm.svg")
 
 (define-sponsor igalia
     :website "https://igalia.com"
