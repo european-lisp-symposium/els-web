@@ -112,7 +112,7 @@
 (define-person (:given-name "Irène"
                 :family-name "Durand")
   :role (:committee)
-  :organization "Université Bordeaux 1"
+  :organization "Université de Bordeaux"
   :address (:country "France"))
 
 (define-person (:given-name "Jim"
@@ -160,7 +160,7 @@
 (define-person (:given-name "Robert"
                 :family-name "Strandh")
   :role (:committee)
-  :organization "Université Bordeaux 1"
+  :organization "Université de Bordeaux"
   :address (:country "France"))
 
 (define-person (:given-name "Christophe"
