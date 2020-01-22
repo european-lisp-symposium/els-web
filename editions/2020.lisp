@@ -186,7 +186,7 @@
   :role (:committee)
   :organization "consultant"
   :address (:country "USA"))
-    
+
 ;; pre-programme keynotes list.
 
 (define-text :keynotes
