@@ -3,6 +3,7 @@
 (in-package "2020")
 
 (define-date "Submission deadline" @2020-02-13)
+(define-date "Extended deadline" @2020-02-23)
 (define-date "Author notification" @2020-03-16)
 (define-date "Final papers" @2020-04-06)
 
@@ -10,8 +11,9 @@
 (define-date "Conference end" @2020-04-28)
 
 (define-text :announcement
-  (:div :class "announcement" "ACM In-Cooperation-With status renewed!")
-  (:div :class "announcement" "Submissions being accepted now.")
+  (:div :class "announcement" "Paper sumbission deadline extended")
+  #+()(:div :class "announcement" "ACM In-Cooperation-With status renewed!")
+  #+()(:div :class "announcement" "Submissions being accepted now.")
   #+()(:div :class "announcement" "Second invited speaker confirmed! Daniel Kochmański (ECL).")
   #+()(:div :class "announcement" "First invited speaker confirmed! Andy Keep (Nanopass Framework).")
   #+()(:div :class "announcement" "The conference is being organized. Stay tuned for updates!"))
@@ -188,7 +190,13 @@
   :organization "consultant"
   :address (:country "USA"))
 
-;; pre-programme keynotes list.
+(define-person (:given-name "Metin Evrim"
+                :family-name "Ulu")
+  :role (:committee)
+  :organization "Middle East Technical University"
+  :address (:country "Turkey"))
+
+  ;; pre-programme keynotes list.
 
 (define-text :keynotes
   (:ul
