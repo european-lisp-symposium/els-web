@@ -47,24 +47,7 @@
    #:rate-limit-error
    #:validation-error
    #:unknown-stripe-error
-   #:product
-   #:list-products
-   #:create-product
-   #:update-product
-   #:delete-product
-   #:ensure-product
-   #:sku
-   #:list-skus
-   #:create-sku
-   #:update-sku
-   #:delete-sku
-   #:ensure-sku
-   #:order
-   #:list-orders
-   #:update-order
-   #:return-order
-   #:update-edition-registration
-   #:edition-orders)
+   #:edition-payments)
   ;; toolkit.lisp
   (:export
    ))
