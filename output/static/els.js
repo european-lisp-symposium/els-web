@@ -361,6 +361,7 @@ var ELS = function(){
                     if(response.error){
                         self.showFailure(response.error);
                     }else if(response.status == "requires_action"){
+                        self.log("Payment requires action...");
                         stripe.handleCardAction(
                             response.payment_intent_client_secret
                         ).then(function(result){
@@ -374,7 +375,8 @@ var ELS = function(){
                             }
                         });
                     }else if(response.status == "succeeded"){
-                        confirmPayment(data);
+                        self.log("Payment confirmed.");
+                        self.showSuccess("Registration complete! You should receive an email receipt shortly.");
                     }
                 }, failPayment);
             };
@@ -392,7 +394,7 @@ var ELS = function(){
                         self.log("Token creation failed:",result);
                         self.showFailure(result.error.message);
                     } else {
-                        self.log("Token creation successful.");
+                        self.log("Token creation successful:",result.paymentMethod.id);
                         data["token"] = result.paymentMethod.id;
                         requestPayment(data);
                     }
