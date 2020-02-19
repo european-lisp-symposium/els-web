@@ -5,12 +5,15 @@
 (define-date "Submission deadline" @2020-02-13)
 (define-date "Extended deadline" @2020-02-23)
 (define-date "Author notification" @2020-03-16)
+(define-date "Early registration deadline" @2020-04-01)
 (define-date "Final papers" @2020-04-06)
 
 (define-date "Conference start" @2020-04-27)
 (define-date "Conference end" @2020-04-28)
 
 (define-text :announcement
+  (:div :class "announcement"
+        "Registration is now open! Early bird deadline: April 1st.")
   (:div :class "announcement" "Paper sumbission deadline extended")
   #+()(:div :class "announcement" "ACM In-Cooperation-With status renewed!")
   #+()(:div :class "announcement" "Submissions being accepted now.")
@@ -215,7 +218,7 @@
             :country "Switzerland")
   :map T)
 
-(define-registration (:inactive)
+(define-registration (:active)
   (:kind "Early regular" :price 120 :status :active
    :description "Full conference package (talks, coffee breaks, banquet).")
   (:kind "Early student" :price 60 :status :active
@@ -230,9 +233,9 @@
    :price 35 :description "Banquet guest")
   (:option "certificate" :price 0 :description "Certificate of attendance")
   (:option "proceedings" :price 0 :description "Printed proceedings")
-  (:option "excursion" :status :active
+  #+()(:option "excursion" :status :inactive
    :price 20 :description "Sunday excursion (details below)")
-  (:option "excursion-guest" :status :active
+  #+()(:option "excursion-guest" :status :inactive
    :price 20 :description "Sunday excursion guest"))
 
 (define-sponsor acm
