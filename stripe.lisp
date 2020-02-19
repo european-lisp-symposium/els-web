@@ -138,17 +138,23 @@
 (defun edition-payments (edition)
   (clip:with-clipboard-bound ((edition edition))
     (let* ((end-date (queryf :time :date T :sort '(:time :dsc)))
-           (result (list-payment-intents :created `(("gt" . ,(adjust-timestamp end-date (- (* 60 60 24 365))))
-                                                    ("lt" . ,end-date))
-                                         :limit 100)))
-      ;; FIXME: page
-      (loop for payment in (gethash "data" result)
-            for meta = (gethash "metadata" payment)
-            collect (list :id (gethash "id" payment)
-                          :amount (/ (gethash "amount" payment) 100.0)
-                          :status (gethash "status" payment)
-                          :name (gethash "name" meta)
-                          :email (gethash "email" meta)
-                          :affiliation (gethash "affiliation" meta)
-                          :food-restrictions (gethash "food-restrictions" meta)
-                          :items (gethash "items" meta))))))
+           (start-date (timestamp->unix (adjust-timestamp end-date (- (* 60 60 24 365))))))
+      ;; KLUDGE: we assume the API always lists most recent first. This is not documented,
+      ;;         but I assume it has to be the case as we could not pageinate otherwise.
+      (loop for result = (list-payment-intents :created `(("gt" . ,start-date)
+                                                          ("lt" . ,end-date))
+                                               :limit 100)
+            for results = (gethash "data" result)
+            while results
+            append (loop for payment in results
+                         for meta = (gethash "metadata" payment)
+                         collect (list :id (gethash "id" payment)
+                                       :amount (/ (gethash "amount" payment) 100.0)
+                                       :status (gethash "status" payment)
+                                       :name (gethash "name" meta)
+                                       :email (gethash "email" meta)
+                                       :affiliation (gethash "affiliation" meta)
+                                       :food-restrictions (gethash "food-restrictions" meta)
+                                       :items (gethash "items" meta)))
+            do (setf end-date (loop for payment in results
+                                    minimize (gethash "created" payment)))))))
