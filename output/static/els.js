@@ -356,7 +356,8 @@ var ELS = function(){
             var requestPayment = function(data){
                 data["action"] = "request";
                 self.request(form.getAttribute("action"), data, function(response){
-                    response = JSON.parse(response);
+                    try{ response = JSON.parse(response); }
+                    catch(e){ response = {error: e}; }
                     if(response.error){
                         self.showFailure(response.error);
                     }else if(response.status == "requires_action"){
