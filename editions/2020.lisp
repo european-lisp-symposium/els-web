@@ -249,3 +249,7 @@
 (define-sponsor epita
   :website "http://www.epita.fr/"
   :logo "../static/logos/epita.png")
+
+(define-sponsor swissdevjobs
+  :website "https://swissdevjobs.ch/menu"
+  :logo "../static/logos/swissdevjobs.png")
