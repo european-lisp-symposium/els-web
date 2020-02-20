@@ -246,6 +246,10 @@
     :website "https://igalia.com"
     :logo "https://www.igalia.com/assets/i/logoDark.png")
 
+(define-sponsor ravenpack
+  :website "https://www.ravenpack.com/"
+  :logo "../static/logos/ravenpack.jpg")
+
 (define-sponsor epita
   :website "http://www.epita.fr/"
   :logo "../static/logos/epita.png")
