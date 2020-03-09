@@ -14,7 +14,7 @@
 (define-text :announcement
   (:div :class "announcement"
         "Registration is now open! Early bird deadline: April 1st.")
-  (:div :class "announcement" "Paper sumbission deadline extended")
+  #+()(:div :class "announcement" "Paper sumbission deadline extended")
   #+()(:div :class "announcement" "ACM In-Cooperation-With status renewed!")
   #+()(:div :class "announcement" "Submissions being accepted now.")
   #+()(:div :class "announcement" "Second invited speaker confirmed! Daniel Kochmański (ECL).")
