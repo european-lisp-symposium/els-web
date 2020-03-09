@@ -12,6 +12,8 @@
 (define-date "Conference end" @2020-04-28)
 
 (define-text :announcement
+    (:div :class "announcement"
+          "COVID-19 information: registration fees will be fully refunded in case of cancellation.")
   (:div :class "announcement"
         "Registration is now open! Early bird deadline: April 1st.")
   #+()(:div :class "announcement" "Paper sumbission deadline extended")
