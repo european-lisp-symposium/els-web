@@ -12,6 +12,7 @@
 (define-date "Conference end" @2020-04-28)
 
 (define-text :announcement
+    (:div :class "announcement" "Preliminary programme and keynote abstracts now online.")
     (:div :class "announcement"
           "COVID-19 information: registration fees will be fully refunded in case of cancellation.")
   (:div :class "announcement"
@@ -259,3 +260,116 @@
 (define-sponsor swissdevjobs
   :website "https://swissdevjobs.ch/menu"
   :logo "../static/logos/swissdevjobs.png")
+
+
+
+;;; Programme
+(define-programme-day @2020-04-27T00:00:00+01:00
+  @08:30:00 (:title "Registration" :role (:organization))
+  @09:15:00 (:title "Welcome message" :role (:organization))
+
+  @09:30:00 (:title "Keynote: The Nanopass Framework as a Nanopass Compiler"
+             :role (:talk :keynote)
+             :speakers ("Andy Keep")
+             :description "The nanopass framework is a domain specific language for defining compilers that provides two basic syntactic forms: define-language and define-pass. The define-language form defines the grammar for an intermediate representation and can either define the full language or extend an existing language. Language forms are represented using Scheme records and a parser and unparser can be constructed from the language definition to move between S-expression and nanopass language form representations. The define-pass form defines procedures for operating over these language forms, based on the specified input and output languages.
+
+In addition to these two basic forms, a number of small tools for interacting with languages exist, including tools for extracting the define-language syntactic form for a language, making it easier to see the full language when it was defined as an extension, along with tools for differencing two languages to produce the language extension form, pruning unreachable nonterminals, and defining a procedure for counting nodes in a language form for a given language.
+
+These tools are helpful, but we can imagine wanting more tools, for instance a tool to generate a equivalence procedure over language forms or a tool to generate a procedure for computing a histogram of nonterminal node types in a language form. Unfortunately, each tool must be written with knowledge of the internals of the nanopass framework. What if the nanopass framework instead provided an API for writing these extensions? What if the define-language and define-pass forms, were defined as nanopass languages that could be treated like other nanopass languages? How much of the nanopass framework could be written using the nanopass framework? This talk will explore this experiment.")
+
+  @10:30:00 (:title "Coffee Break" :role (:break))
+
+  @11:00:00 (:title "Omnipresent and low-overhead application debugging"
+             :role (:talk)
+             :speakers ("Robert Strandh"))
+
+  @11:30:00 (:title "An R7RS Compatible Module System for Termite Scheme"
+             :role (:talk)
+             :speakers ("Frédéric Hamel" "Marc Feeley"))
+  
+  @12:00:00 (:title "LLVM Code Generation for Open Dylan"
+             :role (:talk)
+             :speakers ("Peter Housel"))
+
+  @12:30:00 (:title "Lunch" :role (:break))
+
+  @14:30:00 (:title "Sealable Metaobjects for Common Lisp"
+             :role (:talk)
+             :speakers ("Marco Heisig"))
+  
+  @15:00:00  (:title "Later Binding: Just-in-Time Compilation of a Younger Dynamic Programming Language"
+              :role (:talk)
+              :speakers ("Max Rottenkolber"))
+
+  @15:30:00  (:title "Coffee Break" :role (:break))
+
+  @16:00:00  (:title "Bidirectional leveled enumerators"
+              :role (:talk)
+              :speakers ("Irène Anne Durand"))
+  
+  @16:30:00  (:title "Indexing Common Lisp with Kythe"
+              :role (:talk)
+              :speakers ("Jonathan Godbout"))
+
+  @17:00:00  (:title "TBA"
+              :role (:talk)
+              :speakers ("TBA"))
+
+  @17:30:00 (:title "Lightning Talks" :role (:talk))
+
+  @19:00:00 (:title "Social Event" :role (:dinner :organization)))
+
+
+(define-programme-day @2020-04-28T00:00:00+01:00
+  @08:30:00 (:title "Registration" :role (:organization))
+
+  @09:00:00 (:title "Keynote: On ECL, the Embeddable Common Lisp"
+             :role (:talk :keynote)
+             :speakers ("Daniel Kochmański")
+             :description "Embeddable Common Lisp is a Common Lisp implementation with historical roots dating back to 1985 when Kyoto Common Lisp was released as an open source project by Taichi Yuasa and Masami Hagiya. It is one of the first Common Lisp implementations predating the ANSI standard (CLtL1) and it has influenced its final version. First developed by academia, then by volunteers from the free software community, it still thrives as one of many actively developed Common Lisp implementations.
+
+Thanks to a portable and small core it is possible to embed ECL in other applications as a shared library. This property enables Common Lisp programmers to develop their applications and plugins as an extension to existing software and to use Common Lisp software on platforms like Android and iOS. Executables and libraries built with ECL are small and suitable for writing utilities and libraries used by applications outside of the Common Lisp world.
+
+Maintaining and improving a Common Lisp implementation is a challenging and fun task with many opportunities to learn about software and compilers. During this presentation I'll talk about the past, the present, and the future of ECL. I'll discuss its heritage, then move to its current architecture with its flaws and advantages, and I will finish with my plans for further development.")
+
+  @10:00:00 (:title "A portable, annotation-based, visual stepper for Common Lisp"
+             :speakers ("João Távora")
+             :role (:talk))
+
+  @10:30:00 (:title "Coffee Break" :role (:break))
+
+  @11:00:00 (:title "Workshop: Mixing Mutability into the Nanopass Framework"
+             :speakers ("Andy Keep")
+             :role (:talk :keynote)
+             :description "Languages defined using the nanopass framework are represented using immutable Scheme records [1], however, it can be useful to have mutable cells with the terminals of a language form. For instance, the Chez Scheme compiler represents each variable as a single Scheme record instance. This means the binding site and all use sites for a given variable all use the same record instance to represent that variable. The variable record contains mutable fields which allow information from variable uses to be visible at the binding site and vice versa. For instance, variable uses can report whether they are referenced, multiply referenced, or assigned to the variable binding site, or the variable binding site can record information needed at the use sites for a variable without constructing an environment within the pass.
+
+This workshop will give a brief introduction to the nanopass framework using an example compiler for a small subset of Scheme, and then look at how this technique is used for converting assigned variables and computing free variable sets in lambda expressions.
+
+[1] In addition to immutable records, standard (and hence mutable) Scheme lists are used for for representing lists within a language form, but the expectation is that these lists will not be mutated.")
+
+  @12:00:00 (:title "Partial Evaluation Based CPS Transformation: An Implementation Case Study"
+             :speakers ("Rajesh Jayaprakash")
+             :role (:talk))
+
+  @12:30:00 (:title "Lunch" :role (:break))
+
+  @14:30:00 (:title "Representing method combinations"
+             :speakers ("Robert Strandh")
+             :role (:talk))
+
+  @15:00:00 (:title "Why You Cannot (Yet) Write an \"Interval Arithmetic\" Library in Common Lisp -- or: Hammering Some Sense into :ieee-floating-point"
+             :speakers ("Marco Antoniotti")
+             :role (:talk))
+
+  @15:30:00 (:title "Coffee Break" :role (:break))
+
+  @16:00:00 (:title "JACL: A Common Lisp for Developing Single-Page Web Applications"
+             :speakers ("Alan Dipert")
+             :role (:talk))
+
+  @16:30:00 (:title "Bringing GNU Emacs to native code"
+             :speakers ("Andrea Corallo" "Luca Nassi" "Nicola Manca")
+             :role (:talk))
+
+  @17:00:00 (:title "Lightning Talks"
+             :role (:talk)))
