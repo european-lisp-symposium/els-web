@@ -371,5 +371,9 @@ This workshop will give a brief introduction to the nanopass framework using an 
              :speakers ("Andrea Corallo" "Luca Nassi" "Nicola Manca")
              :role (:talk))
 
-  @17:00:00 (:title "Lightning Talks"
+  @17:00:00  (:title "TBA"
+              :role (:talk)
+              :speakers ("TBA"))
+
+  @17:30:00 (:title "Lightning Talks"
              :role (:talk)))
