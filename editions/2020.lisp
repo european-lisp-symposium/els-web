@@ -2,20 +2,21 @@
 (define-edition "2020")
 (in-package "2020")
 
-(define-date "Submission deadline" @2020-02-13)
-(define-date "Extended deadline" @2020-02-23)
-(define-date "Author notification" @2020-03-16)
-(define-date "Early registration deadline" @2020-04-01)
+;;(define-date "Submission deadline" @2020-02-13)
+;;(define-date "Extended deadline" @2020-02-23)
+;;(define-date "Author notification" @2020-03-16)
+;;(define-date "Early registration deadline" @2020-04-01)
 (define-date "Final papers" @2020-04-06)
 
 (define-date "Conference start" @2020-04-27)
 (define-date "Conference end" @2020-04-28)
 
 (define-text :announcement
-    (:div :class "announcement" "Preliminary programme and keynote abstracts now online.")
     (:div :class "announcement"
-          "COVID-19 information: registration fees will be fully refunded in case of cancellation.")
-  (:div :class "announcement"
+          "#COVID-19: physical event cancelled / fully refunded. Stay tuned
+for updates.")
+    (:div :class "announcement" "Preliminary programme and keynote abstracts now online.")
+  #+()(:div :class "announcement"
         "Registration is now open! Early bird deadline: April 1st.")
   #+()(:div :class "announcement" "Paper sumbission deadline extended")
   #+()(:div :class "announcement" "ACM In-Cooperation-With status renewed!")
@@ -221,7 +222,7 @@
             :country "Switzerland")
   :map T)
 
-(define-registration (:active)
+(define-registration (:inactive)
   (:kind "Early regular" :price 120 :status :active
    :description "Full conference package (talks, coffee breaks, banquet).")
   (:kind "Early student" :price 60 :status :active
@@ -286,7 +287,7 @@ These tools are helpful, but we can imagine wanting more tools, for instance a t
   @11:30:00 (:title "An R7RS Compatible Module System for Termite Scheme"
              :role (:talk)
              :speakers ("Frédéric Hamel" "Marc Feeley"))
-  
+
   @12:00:00 (:title "LLVM Code Generation for Open Dylan"
              :role (:talk)
              :speakers ("Peter Housel"))
@@ -296,7 +297,7 @@ These tools are helpful, but we can imagine wanting more tools, for instance a t
   @14:30:00 (:title "Sealable Metaobjects for Common Lisp"
              :role (:talk)
              :speakers ("Marco Heisig"))
-  
+
   @15:00:00  (:title "Later Binding: Just-in-Time Compilation of a Younger Dynamic Programming Language"
               :role (:talk)
               :speakers ("Max Rottenkolber"))
@@ -306,7 +307,7 @@ These tools are helpful, but we can imagine wanting more tools, for instance a t
   @16:00:00  (:title "Bidirectional leveled enumerators"
               :role (:talk)
               :speakers ("Irène Anne Durand"))
-  
+
   @16:30:00  (:title "Indexing Common Lisp with Kythe"
               :role (:talk)
               :speakers ("Jonathan Godbout"))
