@@ -6,7 +6,7 @@
 ;;(define-date "Extended deadline" @2020-02-23)
 ;;(define-date "Author notification" @2020-03-16)
 ;;(define-date "Early registration deadline" @2020-04-01)
-(define-date "Final papers" @2020-04-06)
+;;(define-date "Final papers" @2020-04-06)
 
 (define-date "Conference start" @2020-04-27)
 (define-date "Conference end" @2020-04-28)
