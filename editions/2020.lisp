@@ -13,8 +13,7 @@
 
 (define-text :announcement
     (:div :class "announcement"
-          "#COVID-19: physical event cancelled / fully refunded. Stay tuned
-for updates.")
+          "#COVID-19 update: The even will happen online. Stay tuned for updates.")
     (:div :class "announcement" "Preliminary programme and keynote abstracts now online.")
   #+()(:div :class "announcement"
         "Registration is now open! Early bird deadline: April 1st.")
