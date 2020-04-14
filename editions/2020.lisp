@@ -13,7 +13,7 @@
 
 (define-text :announcement
     (:div :class "announcement"
-          "#COVID-19 update: The even will happen online. Stay tuned for updates.")
+          "#COVID-19 update: The event will happen online. Stay tuned for updates.")
     (:div :class "announcement" "Preliminary programme and keynote abstracts now online.")
   #+()(:div :class "announcement"
         "Registration is now open! Early bird deadline: April 1st.")
@@ -93,7 +93,8 @@
                 :given-name "Andrew"
                 :additional-name "W.")
   :role (:speaker)
-  :organization "Cisco Systems Inc."
+  :organization "Facebook"
+  :photo "../static/2020/andy-keep.jpg"
   :website "https://andykeep.com"
   :address (:country "USA"))
 
@@ -206,7 +207,7 @@
 
 (define-text :keynotes
   (:ul
-   (:li (:b "Andy Keep") " (Cisco Systems, Inc.), on the Nanopass Framework.")
+   (:li (:b "Andrew W. Keep") " (Facebook), on the Nanopass Framework.")
    (:li (:b "Daniel Kochmański") " (Turtleware), on the Embeddable Common Lisp (ECL).")))
 
 (define-location "GZ Riesbach"
@@ -270,7 +271,7 @@
 
   @09:30:00 (:title "Keynote: The Nanopass Framework as a Nanopass Compiler"
              :role (:talk :keynote)
-             :speakers ("Andy Keep")
+             :speakers ("Andrew W. Keep")
              :description "The nanopass framework is a domain specific language for defining compilers that provides two basic syntactic forms: define-language and define-pass. The define-language form defines the grammar for an intermediate representation and can either define the full language or extend an existing language. Language forms are represented using Scheme records and a parser and unparser can be constructed from the language definition to move between S-expression and nanopass language form representations. The define-pass form defines procedures for operating over these language forms, based on the specified input and output languages.
 
 In addition to these two basic forms, a number of small tools for interacting with languages exist, including tools for extracting the define-language syntactic form for a language, making it easier to see the full language when it was defined as an extension, along with tools for differencing two languages to produce the language extension form, pruning unreachable nonterminals, and defining a procedure for counting nodes in a language form for a given language.
@@ -311,11 +312,7 @@ These tools are helpful, but we can imagine wanting more tools, for instance a t
               :role (:talk)
               :speakers ("Jonathan Godbout"))
 
-  @17:00:00  (:title "TBA"
-              :role (:talk)
-              :speakers ("TBA"))
-
-  @17:30:00 (:title "Lightning Talks" :role (:talk))
+  @17:00:00  (:title "Lightning Talks" :role (:talk))
 
   @19:00:00 (:title "Social Event" :role (:dinner :organization)))
 
@@ -332,14 +329,14 @@ Thanks to a portable and small core it is possible to embed ECL in other applica
 
 Maintaining and improving a Common Lisp implementation is a challenging and fun task with many opportunities to learn about software and compilers. During this presentation I'll talk about the past, the present, and the future of ECL. I'll discuss its heritage, then move to its current architecture with its flaws and advantages, and I will finish with my plans for further development.")
 
-  @10:00:00 (:title "A portable, annotation-based, visual stepper for Common Lisp"
-             :speakers ("João Távora")
+  @10:00:00 (:title "Representing method combinations"
+             :speakers ("Robert Strandh")
              :role (:talk))
 
   @10:30:00 (:title "Coffee Break" :role (:break))
 
   @11:00:00 (:title "Workshop: Mixing Mutability into the Nanopass Framework"
-             :speakers ("Andy Keep")
+             :speakers ("Andrew W. Keep")
              :role (:talk :keynote)
              :description "Languages defined using the nanopass framework are represented using immutable Scheme records [1], however, it can be useful to have mutable cells with the terminals of a language form. For instance, the Chez Scheme compiler represents each variable as a single Scheme record instance. This means the binding site and all use sites for a given variable all use the same record instance to represent that variable. The variable record contains mutable fields which allow information from variable uses to be visible at the binding site and vice versa. For instance, variable uses can report whether they are referenced, multiply referenced, or assigned to the variable binding site, or the variable binding site can record information needed at the use sites for a variable without constructing an environment within the pass.
 
@@ -353,8 +350,8 @@ This workshop will give a brief introduction to the nanopass framework using an 
 
   @12:30:00 (:title "Lunch" :role (:break))
 
-  @14:30:00 (:title "Representing method combinations"
-             :speakers ("Robert Strandh")
+  @14:30:00 (:title "Bringing GNU Emacs to native code"
+             :speakers ("Andrea Corallo" "Luca Nassi" "Nicola Manca")
              :role (:talk))
 
   @15:00:00 (:title "Why You Cannot (Yet) Write an \"Interval Arithmetic\" Library in Common Lisp -- or: Hammering Some Sense into :ieee-floating-point"
@@ -367,13 +364,9 @@ This workshop will give a brief introduction to the nanopass framework using an 
              :speakers ("Alan Dipert")
              :role (:talk))
 
-  @16:30:00 (:title "Bringing GNU Emacs to native code"
-             :speakers ("Andrea Corallo" "Luca Nassi" "Nicola Manca")
-             :role (:talk))
-
-  @17:00:00  (:title "TBA"
+  @16:30:00 (:title "TBA"
               :role (:talk)
               :speakers ("TBA"))
 
-  @17:30:00 (:title "Lightning Talks"
+  @17:00:00  (:title "Lightning Talks"
              :role (:talk)))
