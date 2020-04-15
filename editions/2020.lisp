@@ -271,7 +271,7 @@
 
   @09:30:00 (:title "Keynote: The Nanopass Framework as a Nanopass Compiler"
              :role (:talk :keynote)
-             :speakers ("Andrew W. Keep")
+             :speakers ("Andrew Keep")
              :description "The nanopass framework is a domain specific language for defining compilers that provides two basic syntactic forms: define-language and define-pass. The define-language form defines the grammar for an intermediate representation and can either define the full language or extend an existing language. Language forms are represented using Scheme records and a parser and unparser can be constructed from the language definition to move between S-expression and nanopass language form representations. The define-pass form defines procedures for operating over these language forms, based on the specified input and output languages.
 
 In addition to these two basic forms, a number of small tools for interacting with languages exist, including tools for extracting the define-language syntactic form for a language, making it easier to see the full language when it was defined as an extension, along with tools for differencing two languages to produce the language extension form, pruning unreachable nonterminals, and defining a procedure for counting nodes in a language form for a given language.
@@ -336,7 +336,7 @@ Maintaining and improving a Common Lisp implementation is a challenging and fun 
   @10:30:00 (:title "Coffee Break" :role (:break))
 
   @11:00:00 (:title "Workshop: Mixing Mutability into the Nanopass Framework"
-             :speakers ("Andrew W. Keep")
+             :speakers ("Andrew Keep")
              :role (:talk :keynote)
              :description "Languages defined using the nanopass framework are represented using immutable Scheme records [1], however, it can be useful to have mutable cells with the terminals of a language form. For instance, the Chez Scheme compiler represents each variable as a single Scheme record instance. This means the binding site and all use sites for a given variable all use the same record instance to represent that variable. The variable record contains mutable fields which allow information from variable uses to be visible at the binding site and vice versa. For instance, variable uses can report whether they are referenced, multiply referenced, or assigned to the variable binding site, or the variable binding site can record information needed at the use sites for a variable without constructing an environment within the pass.
 
