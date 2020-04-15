@@ -120,7 +120,7 @@
 
 (define-person (:given-name "Irène"
                 :family-name "Durand")
-  :role (:committee)
+  :role (:committee :speaker)
   :organization "Université de Bordeaux"
   :address (:country "France"))
 
@@ -144,13 +144,13 @@
 
 (define-person (:given-name "Marco"
                 :family-name "Heisig")
-  :role (:committee)
+  :role (:committee :speaker)
   :organization "FAU Erlangen-Nürnberg"
   :address (:country "Germany"))
 
 (define-person (:given-name "Max"
                 :family-name "Rottenkolber")
-  :role (:committee)
+  :role (:committee :speaker)
   :organization "Interstellar Ventures"
   :address (:country "Germany"))
 
@@ -168,7 +168,7 @@
 
 (define-person (:given-name "Robert"
                 :family-name "Strandh")
-  :role (:committee)
+  :role (:committee :speaker)
   :organization "Université de Bordeaux"
   :address (:country "France"))
 
@@ -306,7 +306,7 @@ These tools are helpful, but we can imagine wanting more tools, for instance a t
 
   @16:00:00  (:title "Bidirectional leveled enumerators"
               :role (:talk)
-              :speakers ("Irène Anne Durand"))
+              :speakers ("Irène Durand"))
 
   @16:30:00  (:title "Indexing Common Lisp with Kythe"
               :role (:talk)
