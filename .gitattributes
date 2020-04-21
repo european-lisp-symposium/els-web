@@ -3,3 +3,4 @@
 *.gif filter=lfs diff=lfs merge=lfs -text
 *.pdf filter=lfs diff=lfs merge=lfs -text
 output/static/2020/andy-keep.jpg filter=lfs diff=lfs merge=lfs -text
+output/static/2020/amr-abdelwahab.jpg filter=lfs diff=lfs merge=lfs -text
