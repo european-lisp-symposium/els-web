@@ -13,8 +13,14 @@
 
 (define-text :announcement
     (:div :class "announcement"
+          "New invited speaker confirmed! Amr Abdelwahab on Privilege as a technical debt.")
+    (:div :class "announcement"
+          "Daniel Kochmański's talk on ECL will be uploaded later.")
+    (:div :class "announcement"
+          "Updated schedule! Smaller last minute still possible.")
+    (:div :class "announcement"
           "#COVID-19 update: The event will happen online. Stay tuned for updates.")
-    (:div :class "announcement" "Preliminary programme and keynote abstracts now online.")
+  #+()(:div :class "announcement" "Preliminary programme and keynote abstracts now online.")
   #+()(:div :class "announcement"
         "Registration is now open! Early bird deadline: April 1st.")
   #+()(:div :class "announcement" "Paper sumbission deadline extended")
@@ -97,6 +103,12 @@
   :photo "../static/2020/andy-keep.jpg"
   :website "https://andykeep.com"
   :address (:country "USA"))
+
+(define-person (:family-name "Abdelwahab"
+                :given-name "Amr")
+  :role (:speaker)
+  :photo "../static/2020/amr-abdelwahab.jpg"
+  :address (:country "Germany"))
 
 (define-person (:family-name "Kochmański"
                 :given-name "Daniel")
@@ -208,6 +220,7 @@
 (define-text :keynotes
   (:ul
    (:li (:b "Andrew W. Keep") " (Facebook), on the Nanopass Framework.")
+   (:li (:b "Amr Abdelwahab") ", Privilege as a technical debt.")
    (:li (:b "Daniel Kochmański") " (Turtleware), on the Embeddable Common Lisp (ECL).")))
 
 (define-location "GZ Riesbach"
@@ -288,15 +301,15 @@ These tools are helpful, but we can imagine wanting more tools, for instance a t
              :role (:talk)
              :speakers ("Frédéric Hamel" "Marc Feeley"))
 
-  @12:00:00 (:title "LLVM Code Generation for Open Dylan"
+  @12:00:00  (:title "Sealable Metaobjects for Common Lisp"
              :role (:talk)
-             :speakers ("Peter Housel"))
+             :speakers ("Marco Heisig"))
 
   @12:30:00 (:title "Lunch" :role (:break))
 
-  @14:30:00 (:title "Sealable Metaobjects for Common Lisp"
-             :role (:talk)
-             :speakers ("Marco Heisig"))
+  @14:30:00 (:title "Bidirectional leveled enumerators"
+              :role (:talk)
+              :speakers ("Irène Durand"))
 
   @15:00:00  (:title "Later Binding: Just-in-Time Compilation of a Younger Dynamic Programming Language"
               :role (:talk)
@@ -304,14 +317,14 @@ These tools are helpful, but we can imagine wanting more tools, for instance a t
 
   @15:30:00  (:title "Coffee Break" :role (:break))
 
-  @16:00:00  (:title "Bidirectional leveled enumerators"
-              :role (:talk)
-              :speakers ("Irène Durand"))
+  @16:00:00  (:title "LLVM Code Generation for Open Dylan"
+             :role (:talk)
+             :speakers ("Peter Housel"))
 
   @16:30:00  (:title "Indexing Common Lisp with Kythe"
               :role (:talk)
               :speakers ("Jonathan Godbout"))
-
+  
   @17:00:00  (:title "Lightning Talks" :role (:talk))
 
   @19:00:00 (:title "Social Event" :role (:dinner :organization)))
@@ -320,22 +333,7 @@ These tools are helpful, but we can imagine wanting more tools, for instance a t
 (define-programme-day @2020-04-28T00:00:00+01:00
   @08:30:00 (:title "Registration" :role (:organization))
 
-  @09:00:00 (:title "Keynote: On ECL, the Embeddable Common Lisp"
-             :role (:talk :keynote)
-             :speakers ("Daniel Kochmański")
-             :description "Embeddable Common Lisp is a Common Lisp implementation with historical roots dating back to 1985 when Kyoto Common Lisp was released as an open source project by Taichi Yuasa and Masami Hagiya. It is one of the first Common Lisp implementations predating the ANSI standard (CLtL1) and it has influenced its final version. First developed by academia, then by volunteers from the free software community, it still thrives as one of many actively developed Common Lisp implementations.
-
-Thanks to a portable and small core it is possible to embed ECL in other applications as a shared library. This property enables Common Lisp programmers to develop their applications and plugins as an extension to existing software and to use Common Lisp software on platforms like Android and iOS. Executables and libraries built with ECL are small and suitable for writing utilities and libraries used by applications outside of the Common Lisp world.
-
-Maintaining and improving a Common Lisp implementation is a challenging and fun task with many opportunities to learn about software and compilers. During this presentation I'll talk about the past, the present, and the future of ECL. I'll discuss its heritage, then move to its current architecture with its flaws and advantages, and I will finish with my plans for further development.")
-
-  @10:00:00 (:title "Representing method combinations"
-             :speakers ("Robert Strandh")
-             :role (:talk))
-
-  @10:30:00 (:title "Coffee Break" :role (:break))
-
-  @11:00:00 (:title "Workshop: Mixing Mutability into the Nanopass Framework"
+  @09:00:00 (:title "Workshop: Mixing Mutability into the Nanopass Framework"
              :speakers ("Andrew Keep")
              :role (:talk :keynote)
              :description "Languages defined using the nanopass framework are represented using immutable Scheme records [1], however, it can be useful to have mutable cells with the terminals of a language form. For instance, the Chez Scheme compiler represents each variable as a single Scheme record instance. This means the binding site and all use sites for a given variable all use the same record instance to represent that variable. The variable record contains mutable fields which allow information from variable uses to be visible at the binding site and vice versa. For instance, variable uses can report whether they are referenced, multiply referenced, or assigned to the variable binding site, or the variable binding site can record information needed at the use sites for a variable without constructing an environment within the pass.
@@ -344,29 +342,50 @@ This workshop will give a brief introduction to the nanopass framework using an 
 
 [1] In addition to immutable records, standard (and hence mutable) Scheme lists are used for for representing lists within a language form, but the expectation is that these lists will not be mutated.")
 
-  @12:00:00 (:title "Partial Evaluation Based CPS Transformation: An Implementation Case Study"
+  @10:00:00 (:title "Partial Evaluation Based CPS Transformation: An Implementation Case Study"
              :speakers ("Rajesh Jayaprakash")
              :role (:talk))
 
-  @12:30:00 (:title "Lunch" :role (:break))
+  @10:30:00 (:title "Coffee Break" :role (:break))
+  
+  @11:00:00 (:title "Representing method combinations"
+             :speakers ("Robert Strandh")
+             :role (:talk))
 
-  @14:30:00 (:title "Bringing GNU Emacs to native code"
+  @11:30:00 (:title "Bringing GNU Emacs to native code"
              :speakers ("Andrea Corallo" "Luca Nassi" "Nicola Manca")
              :role (:talk))
 
-  @15:00:00 (:title "Why You Cannot (Yet) Write an \"Interval Arithmetic\" Library in Common Lisp -- or: Hammering Some Sense into :ieee-floating-point"
-             :speakers ("Marco Antoniotti")
-             :role (:talk))
+  @12:00:00 (:title "TBA" :role (:talk))
+  
+  @12:30:00 (:title "Lunch" :role (:break))
 
+  @14:30:00 (:title "Privilege as a technical debt"
+             :speakers ("Amr Abdelwahab")
+             :role (:talk :keynote)
+             :description "Do you believe political correctness and empathy are buzzwords that limit society rather than contribute to its advancement? Do you think talking about topics like diversity quotas and privilege doesn't make much sense and you would rather spend this time talking about the latest in technology?
+
+In this talk I would like to take the chance to try and add the missing contexts to such terms and arguments, moreover, I will try to go through various examples on how it can impact your product from a very pragmatic perspective.")
+             
   @15:30:00 (:title "Coffee Break" :role (:break))
 
   @16:00:00 (:title "JACL: A Common Lisp for Developing Single-Page Web Applications"
              :speakers ("Alan Dipert")
              :role (:talk))
 
-  @16:30:00 (:title "TBA"
-              :role (:talk)
-              :speakers ("TBA"))
+  @16:30:00 (:title "Why You Cannot (Yet) Write an \"Interval Arithmetic\" Library in Common Lisp -- or: Hammering Some Sense into :ieee-floating-point"
+             :speakers ("Marco Antoniotti")
+             :role (:talk))
 
-  @17:00:00  (:title "Lightning Talks"
-             :role (:talk)))
+  @17:00:00 (:title "Lightning Talks"
+             :role (:talk))
+
+  @20:30:00 (:title "-WILL NOT BE BROADCAST- Keynote: On ECL, the Embeddable Common Lisp"
+             :role (:talk :keynote) 
+             :speakers ("Daniel Kochmański")
+             :description "Embeddable Common Lisp is a Common Lisp implementation with historical roots dating back to 1985 when Kyoto Common Lisp was released as an open source project by Taichi Yuasa and Masami Hagiya. It is one of the first Common Lisp implementations predating the ANSI standard (CLtL1) and it has influenced its final version. First developed by academia, then by volunteers from the free software community, it still thrives as one of many actively developed Common Lisp implementations.
+
+Thanks to a portable and small core it is possible to embed ECL in other applications as a shared library. This property enables Common Lisp programmers to develop their applications and plugins as an extension to existing software and to use Common Lisp software on platforms like Android and iOS. Executables and libraries built with ECL are small and suitable for writing utilities and libraries used by applications outside of the Common Lisp world.
+
+Maintaining and improving a Common Lisp implementation is a challenging and fun task with many opportunities to learn about software and compilers. During this presentation I'll talk about the past, the present, and the future of ECL. I'll discuss its heritage, then move to its current architecture with its flaws and advantages, and I will finish with my plans for further development."))
+
