@@ -17,7 +17,7 @@
     (:div :class "announcement"
           "Daniel Kochmański's talk on ECL will be uploaded later.")
     (:div :class "announcement"
-          "Updated schedule! Smaller last minute still possible.")
+          "Updated schedule! Smaller last minute changes still possible.")
     (:div :class "announcement"
           "#COVID-19 update: The event will happen online. Stay tuned for updates.")
   #+()(:div :class "announcement" "Preliminary programme and keynote abstracts now online.")
