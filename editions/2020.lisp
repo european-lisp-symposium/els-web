@@ -107,6 +107,7 @@
 (define-person (:family-name "Abdelwahab"
                 :given-name "Amr")
   :role (:speaker)
+  :organization "tourlane.com"
   :photo "../static/2020/amr-abdelwahab.jpg"
   :address (:country "Germany"))
 
