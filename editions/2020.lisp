@@ -30,6 +30,9 @@
   #+()(:div :class "announcement" "First invited speaker confirmed! Andy Keep (Nanopass Framework).")
   #+()(:div :class "announcement" "The conference is being organized. Stay tuned for updates!"))
 
+(define-text :additional-info
+  (:p ""))
+
 (define-text :submissions
 
   (:p "This year's focus will be directed towards \"Compilers\".")
@@ -236,7 +239,7 @@
             :country "Switzerland")
   :map T)
 
-(define-registration (:inactive)
+(define-registration (:active)
   (:kind "Early regular" :price 120 :status :active
    :description "Full conference package (talks, coffee breaks, banquet).")
   (:kind "Early student" :price 60 :status :active

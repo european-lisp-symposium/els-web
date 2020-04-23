@@ -49,6 +49,7 @@
         </div>
 
         <c:splice lquery="(html (query-text '(= name :announcement)))" />
+        <c:splice lquery="(html (query-text '(= name :additional-info)))" />
 
         <c:when test="(query1 :sponsor)">
           <section id="sponsors">
