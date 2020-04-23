@@ -34,7 +34,7 @@
 
 (define-text :additional-info
   (:p "This year's online ELS will be streamed on twitch, at this link: https://twitch.tv/elsconf")
-  (:p "You will need a twitcher account to participate in the accompanying live chat, where the Q&A will take place in the end of each talk. The chat will be always on, so you could chat during the breaks as well. There will be no video or audio for the participants. For the online event there is no other registration, and the event is free. If you follow the user elsconf on twitcher you should get an email when each day's broadcast is online, 15 minutes before we actually start. During these 15 minutes just a standby image will be shown. All times in the schedule are CEST, but the video of the streams will stay online with the chat attached so you can follow the Q&As. See you soon online!"))
+  (:p "You will need a twitch account to participate in the accompanying live chat, where the Q&A will take place in the end of each talk. The chat will be always on, so you could chat during the breaks as well. There will be no video or audio for the participants. For the online event there is no other registration, and the event is free. If you follow the user elsconf on twitch you should get an email when each day's broadcast is online, 15 minutes before we actually start. During these 15 minutes just a standby image will be shown. All times in the schedule are CEST, but the video of the streams will stay online with the chat attached so you can follow the Q&As. See you soon online!"))
 
 (define-text :submissions
 
