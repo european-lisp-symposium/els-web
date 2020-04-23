@@ -13,12 +13,14 @@
 
 (define-text :announcement
     (:div :class "announcement"
+          "Link to stream and online format description now available.")
+  #+()(:div :class "announcement"
           "New invited speaker confirmed! Amr Abdelwahab on Privilege as a technical debt.")
-    (:div :class "announcement"
+  #+()(:div :class "announcement"
           "Daniel Kochmański's talk on ECL will be uploaded later.")
-    (:div :class "announcement"
+  #+()(:div :class "announcement"
           "Updated schedule! Smaller last minute changes still possible.")
-    (:div :class "announcement"
+  #+()(:div :class "announcement"
           "#COVID-19 update: The event will happen online. Stay tuned for updates.")
   #+()(:div :class "announcement" "Preliminary programme and keynote abstracts now online.")
   #+()(:div :class "announcement"
@@ -31,7 +33,8 @@
   #+()(:div :class "announcement" "The conference is being organized. Stay tuned for updates!"))
 
 (define-text :additional-info
-  (:p ""))
+  (:p "This year's online ELS will be streamed on twitch, at this link: https://twitch.tv/elsconf")
+  (:p "You will need a twitcher account to participate in the accompanying live chat, where the Q&A will take place in the end of each talk. The chat will be always on, so you could chat during the breaks as well. There will be no video or audio for the participants. For the online event there is no other registration, and the event is free. If you follow the user elsconf on twitcher you should get an email when each day's broadcast is online, 15 minutes before we actually start. During these 15 minutes just a standby image will be shown. All times in the schedule are CEST, but the video of the streams will stay online with the chat attached so you can follow the Q&As. See you soon online!"))
 
 (define-text :submissions
 
@@ -283,7 +286,7 @@
 
 ;;; Programme
 (define-programme-day @2020-04-27T00:00:00+01:00
-  @08:30:00 (:title "Registration" :role (:organization))
+  @09:00:00 (:title "Broadcast start" :role (:organization))
   @09:15:00 (:title "Welcome message" :role (:organization))
 
   @09:30:00 (:title "Keynote: The Nanopass Framework as a Nanopass Compiler"
@@ -335,7 +338,7 @@ These tools are helpful, but we can imagine wanting more tools, for instance a t
 
 
 (define-programme-day @2020-04-28T00:00:00+01:00
-  @08:30:00 (:title "Registration" :role (:organization))
+  @08:45:00 (:title "Broadcast start" :role (:organization))
 
   @09:00:00 (:title "Workshop: Mixing Mutability into the Nanopass Framework"
              :speakers ("Andrew Keep")
