@@ -242,7 +242,7 @@
             :country "Switzerland")
   :map T)
 
-(define-registration (:active)
+(define-registration (:inactive)
   (:kind "Early regular" :price 120 :status :active
    :description "Full conference package (talks, coffee breaks, banquet).")
   (:kind "Early student" :price 60 :status :active
