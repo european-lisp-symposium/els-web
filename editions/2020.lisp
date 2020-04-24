@@ -12,8 +12,10 @@
 (define-date "Conference end" @2020-04-28)
 
 (define-text :announcement
-    (:div :class "announcement"
-          "Link to stream and online format description now available.")
+  (:div :class "announcement"
+        "Link to stream and online format description now available.")
+  (:div :class "announcement"
+        "Programme is now finalized".)
   #+()(:div :class "announcement"
           "New invited speaker confirmed! Amr Abdelwahab on Privilege as a technical debt.")
   #+()(:div :class "announcement"
@@ -227,7 +229,7 @@
 (define-text :keynotes
   (:ul
    (:li (:b "Andrew W. Keep") " (Facebook), on the Nanopass Framework.")
-   (:li (:b "Amr Abdelwahab") ", Privilege as a technical debt.")
+   (:li (:b "Amr Abdelwahab") " (tourlane.com), Privilege as a technical debt.")
    (:li (:b "Daniel Kochmański") " (Turtleware), on the Embeddable Common Lisp (ECL).")))
 
 (define-location "GZ Riesbach"
@@ -363,7 +365,9 @@ This workshop will give a brief introduction to the nanopass framework using an 
              :speakers ("Andrea Corallo" "Luca Nassi" "Nicola Manca")
              :role (:talk))
 
-  @12:00:00 (:title "TBA" :role (:talk))
+  @12:00:00 (:title "RavenPack in the time of COVID-19"
+             :speakers "Andrew Lawson"
+             :role (:talk)) ;; sponsored talk
   
   @12:30:00 (:title "Lunch" :role (:break))
 
