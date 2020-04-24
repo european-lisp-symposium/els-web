@@ -15,7 +15,7 @@
   (:div :class "announcement"
         "Link to stream and online format description now available.")
   (:div :class "announcement"
-        "Programme is now finalized".)
+        "Programme is now finalized.")
   #+()(:div :class "announcement"
           "New invited speaker confirmed! Amr Abdelwahab on Privilege as a technical debt.")
   #+()(:div :class "announcement"
@@ -333,7 +333,7 @@ These tools are helpful, but we can imagine wanting more tools, for instance a t
   @16:30:00  (:title "Indexing Common Lisp with Kythe"
               :role (:talk)
               :speakers ("Jonathan Godbout"))
-  
+
   @17:00:00  (:title "Lightning Talks" :role (:talk))
 
   @19:00:00 (:title "Social Event" :role (:dinner :organization)))
@@ -356,7 +356,7 @@ This workshop will give a brief introduction to the nanopass framework using an 
              :role (:talk))
 
   @10:30:00 (:title "Coffee Break" :role (:break))
-  
+
   @11:00:00 (:title "Representing method combinations"
              :speakers ("Robert Strandh")
              :role (:talk))
@@ -366,9 +366,9 @@ This workshop will give a brief introduction to the nanopass framework using an 
              :role (:talk))
 
   @12:00:00 (:title "RavenPack in the time of COVID-19"
-             :speakers "Andrew Lawson"
+             :speakers ("Andrew Lawson")
              :role (:talk)) ;; sponsored talk
-  
+
   @12:30:00 (:title "Lunch" :role (:break))
 
   @14:30:00 (:title "Privilege as a technical debt"
@@ -377,7 +377,7 @@ This workshop will give a brief introduction to the nanopass framework using an 
              :description "Do you believe political correctness and empathy are buzzwords that limit society rather than contribute to its advancement? Do you think talking about topics like diversity quotas and privilege doesn't make much sense and you would rather spend this time talking about the latest in technology?
 
 In this talk I would like to take the chance to try and add the missing contexts to such terms and arguments, moreover, I will try to go through various examples on how it can impact your product from a very pragmatic perspective.")
-             
+
   @15:30:00 (:title "Coffee Break" :role (:break))
 
   @16:00:00 (:title "JACL: A Common Lisp for Developing Single-Page Web Applications"
@@ -392,11 +392,10 @@ In this talk I would like to take the chance to try and add the missing contexts
              :role (:talk))
 
   @20:30:00 (:title "-WILL NOT BE BROADCAST- Keynote: On ECL, the Embeddable Common Lisp"
-             :role (:talk :keynote) 
+             :role (:talk :keynote)
              :speakers ("Daniel Kochmański")
              :description "Embeddable Common Lisp is a Common Lisp implementation with historical roots dating back to 1985 when Kyoto Common Lisp was released as an open source project by Taichi Yuasa and Masami Hagiya. It is one of the first Common Lisp implementations predating the ANSI standard (CLtL1) and it has influenced its final version. First developed by academia, then by volunteers from the free software community, it still thrives as one of many actively developed Common Lisp implementations.
 
 Thanks to a portable and small core it is possible to embed ECL in other applications as a shared library. This property enables Common Lisp programmers to develop their applications and plugins as an extension to existing software and to use Common Lisp software on platforms like Android and iOS. Executables and libraries built with ECL are small and suitable for writing utilities and libraries used by applications outside of the Common Lisp world.
 
 Maintaining and improving a Common Lisp implementation is a challenging and fun task with many opportunities to learn about software and compilers. During this presentation I'll talk about the past, the present, and the future of ECL. I'll discuss its heritage, then move to its current architecture with its flaws and advantages, and I will finish with my plans for further development."))
-
