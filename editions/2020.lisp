@@ -290,7 +290,7 @@
 
 
 ;;; Programme
-(define-programme-day @2020-04-27T00:00:00+01:00
+(define-programme-day @2020-04-27T00:00:00+02:00
   @09:00:00 (:title "Broadcast start" :role (:organization))
   @09:15:00 (:title "Welcome message" :role (:organization))
 
@@ -342,7 +342,7 @@ These tools are helpful, but we can imagine wanting more tools, for instance a t
   @19:00:00 (:title "Social Event" :role (:dinner :organization)))
 
 
-(define-programme-day @2020-04-28T00:00:00+01:00
+(define-programme-day @2020-04-28T00:00:00+02:00
   @08:45:00 (:title "Broadcast start" :role (:organization))
 
   @09:00:00 (:title "Workshop: Mixing Mutability into the Nanopass Framework"
