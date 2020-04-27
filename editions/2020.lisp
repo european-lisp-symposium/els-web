@@ -301,27 +301,32 @@
 
 In addition to these two basic forms, a number of small tools for interacting with languages exist, including tools for extracting the define-language syntactic form for a language, making it easier to see the full language when it was defined as an extension, along with tools for differencing two languages to produce the language extension form, pruning unreachable nonterminals, and defining a procedure for counting nodes in a language form for a given language.
 
-These tools are helpful, but we can imagine wanting more tools, for instance a tool to generate a equivalence procedure over language forms or a tool to generate a procedure for computing a histogram of nonterminal node types in a language form. Unfortunately, each tool must be written with knowledge of the internals of the nanopass framework. What if the nanopass framework instead provided an API for writing these extensions? What if the define-language and define-pass forms, were defined as nanopass languages that could be treated like other nanopass languages? How much of the nanopass framework could be written using the nanopass framework? This talk will explore this experiment.")
+These tools are helpful, but we can imagine wanting more tools, for instance a tool to generate a equivalence procedure over language forms or a tool to generate a procedure for computing a histogram of nonterminal node types in a language form. Unfortunately, each tool must be written with knowledge of the internals of the nanopass framework. What if the nanopass framework instead provided an API for writing these extensions? What if the define-language and define-pass forms, were defined as nanopass languages that could be treated like other nanopass languages? How much of the nanopass framework could be written using the nanopass framework? This talk will explore this experiment."
+             :website "../static/2020/keep-slides-keynote.pdf")
 
   @10:30:00 (:title "Coffee Break" :role (:break))
 
   @11:00:00 (:title "Omnipresent and low-overhead application debugging"
              :role (:talk)
-             :speakers ("Robert Strandh"))
+             :speakers ("Robert Strandh")
+             :website "../static/2020/strandh-slides-omnipresent.pdf")
 
   @11:30:00 (:title "An R7RS Compatible Module System for Termite Scheme"
              :role (:talk)
-             :speakers ("Frédéric Hamel" "Marc Feeley"))
+             :speakers ("Frédéric Hamel" "Marc Feeley")
+             :website "../static/2020/hamel-feeley-slides.pdf")
 
   @12:00:00  (:title "Sealable Metaobjects for Common Lisp"
              :role (:talk)
-             :speakers ("Marco Heisig"))
+             :speakers ("Marco Heisig")
+             :website "../static/2020/heisig-slides.pdf")
 
   @12:30:00 (:title "Lunch" :role (:break))
 
   @14:30:00 (:title "Bidirectional leveled enumerators"
               :role (:talk)
-              :speakers ("Irène Durand"))
+              :speakers ("Irène Durand")
+              :website "../static/2020/durand-slides.pdf")
 
   @15:00:00  (:title "Later Binding: Just-in-Time Compilation of a Younger Dynamic Programming Language"
               :role (:talk)
@@ -331,11 +336,13 @@ These tools are helpful, but we can imagine wanting more tools, for instance a t
 
   @16:00:00  (:title "LLVM Code Generation for Open Dylan"
              :role (:talk)
-             :speakers ("Peter Housel"))
+             :speakers ("Peter Housel")
+             :website "../static/2020/housel-slides.pdf")
 
   @16:30:00  (:title "Indexing Common Lisp with Kythe"
               :role (:talk)
-              :speakers ("Jonathan Godbout"))
+              :speakers ("Jonathan Godbout")
+              :website "../static/2020/godbout-slides.pdf")
 
   @17:00:00  (:title "Lightning Talks" :role (:talk))
 
@@ -352,25 +359,30 @@ These tools are helpful, but we can imagine wanting more tools, for instance a t
 
 This workshop will give a brief introduction to the nanopass framework using an example compiler for a small subset of Scheme, and then look at how this technique is used for converting assigned variables and computing free variable sets in lambda expressions.
 
-[1] In addition to immutable records, standard (and hence mutable) Scheme lists are used for for representing lists within a language form, but the expectation is that these lists will not be mutated.")
+[1] In addition to immutable records, standard (and hence mutable) Scheme lists are used for for representing lists within a language form, but the expectation is that these lists will not be mutated."
+             :website "../static/2020/keep-slides-workshop.pdf")
 
   @10:00:00 (:title "Partial Evaluation Based CPS Transformation: An Implementation Case Study"
              :speakers ("Rajesh Jayaprakash")
-             :role (:talk))
+             :role (:talk)
+             :website "../static/2020/jayaprakash-slides.pdf")
 
   @10:30:00 (:title "Coffee Break" :role (:break))
 
   @11:00:00 (:title "Representing method combinations"
              :speakers ("Robert Strandh")
-             :role (:talk))
+             :role (:talk)
+             :website "../static/2020/strandh-slides-representing.pdf")
 
   @11:30:00 (:title "Bringing GNU Emacs to native code"
              :speakers ("Andrea Corallo" "Luca Nassi" "Nicola Manca")
-             :role (:talk))
+             :role (:talk)
+             :website "../static/2020/corallo-nassi-manca-slides.pdf")
 
   @12:00:00 (:title "RavenPack in the time of COVID-19"
              :speakers ("Andrew Lawson")
-             :role (:talk)) ;; sponsored talk
+             :role (:talk)
+             :website "../static/2020/lawson-slides.pdf") ;; sponsored talk
 
   @12:30:00 (:title "Lunch" :role (:break))
 
@@ -379,7 +391,8 @@ This workshop will give a brief introduction to the nanopass framework using an 
              :role (:talk :keynote)
              :description "Do you believe political correctness and empathy are buzzwords that limit society rather than contribute to its advancement? Do you think talking about topics like diversity quotas and privilege doesn't make much sense and you would rather spend this time talking about the latest in technology?
 
-In this talk I would like to take the chance to try and add the missing contexts to such terms and arguments, moreover, I will try to go through various examples on how it can impact your product from a very pragmatic perspective.")
+In this talk I would like to take the chance to try and add the missing contexts to such terms and arguments, moreover, I will try to go through various examples on how it can impact your product from a very pragmatic perspective."
+             :website "https://prezi.com/view/2CD5h8Ge4hjXB98J7AB9/")
 
   @15:30:00 (:title "Coffee Break" :role (:break))
 
