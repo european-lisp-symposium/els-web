@@ -406,6 +406,8 @@ In this talk I would like to take the chance to try and add the missing contexts
              :speakers ("Marco Antoniotti")
              :role (:talk))
 
+  @17:00:00 (:title "Coffee break" :role (:break))
+
   @17:20:00 (:title "Keynote: On ECL, the Embeddable Common Lisp"
              :role (:talk :keynote)
              :speakers ("Daniel Kochmański")
