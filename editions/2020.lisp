@@ -406,7 +406,7 @@ In this talk I would like to take the chance to try and add the missing contexts
              :speakers ("Marco Antoniotti")
              :role (:talk))
 
-  @17:00:00 (:title "Keynote: On ECL, the Embeddable Common Lisp"
+  @17:20:00 (:title "Keynote: On ECL, the Embeddable Common Lisp"
              :role (:talk :keynote)
              :speakers ("Daniel Kochmański")
              :description "Embeddable Common Lisp is a Common Lisp implementation with historical roots dating back to 1985 when Kyoto Common Lisp was released as an open source project by Taichi Yuasa and Masami Hagiya. It is one of the first Common Lisp implementations predating the ANSI standard (CLtL1) and it has influenced its final version. First developed by academia, then by volunteers from the free software community, it still thrives as one of many actively developed Common Lisp implementations.
