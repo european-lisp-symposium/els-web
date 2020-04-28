@@ -13,10 +13,12 @@
 
 (define-text :announcement
   (:div :class "announcement"
-        "The conference will be streamed on "
+        "The " (:a :href "../static/proceedings/2020.pdf" "proceedings") " are now online!")
+  (:div :class "announcement"
+        "The conference is streamed on "
         (:a :href "https://twitch.tv/elsconf" "Twitch")
         ". More info below.")
-  (:div :class "announcement"
+  #+()(:div :class "announcement"
         "Programme is now finalized.")
   #+()(:div :class "announcement"
           "New invited speaker confirmed! Amr Abdelwahab on Privilege as a technical debt.")
