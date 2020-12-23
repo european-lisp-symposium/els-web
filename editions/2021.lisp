@@ -121,7 +121,7 @@
   :website "http://www.sigplan.org/"
   :logo "../static/logos/acm.svg")
 
-#+()(define-sponsor ravenpack
+(define-sponsor ravenpack
   :website "https://www.ravenpack.com/"
   :logo "../static/logos/ravenpack.jpg")
 
