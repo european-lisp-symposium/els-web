@@ -81,7 +81,7 @@
 (define-person (:family-name "Evenson"
                 :given-name "Mark")
   :role (:local-chair)
-  :organization "Ravenpack")
+  :organization "RavenPack")
 
 
 ;; pre-programme keynotes list.
