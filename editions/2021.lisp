@@ -164,7 +164,7 @@
 (define-person (:family-name "Smith"
                 :given-name "Robert")
   :role (:committee)
-  :organization "Rigetti Quantum Computing"
+  :organization "HRL Laboratories"
   :address (:country "USA"))
 
 (define-person (:family-name "Sperber"
