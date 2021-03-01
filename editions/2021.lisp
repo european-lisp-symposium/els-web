@@ -190,7 +190,7 @@
 (define-text :keynotes
     (:ul
      (:li (:b "Nada Amin") " (Harvard SEAS)")
-     (:li (:b "tba"))))
+     (:li (:b "Andrew Sorensen") " (Australian National University)")))
 
 (define-location "Online"
   :role (:conference)
