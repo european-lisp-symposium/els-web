@@ -83,14 +83,114 @@
   :role (:local-chair)
   :organization "RavenPack")
 
+(define-person (:family-name "Dimitriou"
+                :given-name "Ioanna")
+  :role (:committee)
+  :organization "Igalia"
+  :address (:country "Germany"))
+
+(define-person (:family-name "Durand"
+                :given-name "Irène")
+  :role (:committee)
+  :organization "LaBRI University of Bordeaux"
+  :address (:country "France"))
+
+(define-person (:family-name "Emerson"
+        :given-name "R. Matthew")
+  :role (:committee)
+  :organization "toughtstuff LLC"
+  :address (:country "USA"))
+
+(define-person (:family-name "Flatt"
+                :given-name "Matthew")
+  :role (:committee)
+  :organization "University of Utah"
+  :address (:country "USA"))
+
+(define-person (:family-name "Godbout"
+                :given-name "Jonathan")
+  :role (:committee)
+  :organization "Google"
+  :address (:country "USA"))
+
+(define-person (:family-name "Matos"
+                :given-name "Paulo")
+  :role (:committee)
+  :organization "Linki Tools"
+  :address (:country "Germany"))
+
+(define-person (:family-name "McClain"
+                :given-name "David")
+  :role (:committee)
+  :organization "SpectroDynamics LLC"
+  :address (:country "USA"))
+
+(define-person (:family-name "Monnier"
+                :given-name "Stefan")
+  :role (:committee)
+  :organization "University of Montreal"
+  :address (:country "Canada"))
+
+(define-person (:family-name "Newton"
+                :given-name "Jim")
+  :role (:committee)
+  :organization "EPITA Research Lab"
+  :address (:country "France"))
+
+(define-person (:family-name "Pitman"
+                :given-name "Kent")
+  :role (:committee)
+  :organization "HyperMeta Inc."
+  :address (:country "USA"))
+
+(define-person (:family-name "Rhodes"
+                :given-name "Christophe")
+  :role (:committee)
+  :organization "Google"
+  :address (:country "UK"))
+
+(define-person (:family-name "Selgrad"
+                :given-name "Kai")
+  :role (:committee)
+  :organization "OTH Regensburg"
+  :address (:country "Germany"))
+
+(define-person (:family-name "Shivers"
+                :given-name "Olin")
+  :role (:committee)
+  :organization "Northeastern University"
+  :address (:country "USA"))
+
+(define-person (:family-name "Smith"
+                :given-name "Robert")
+  :role (:committee)
+  :organization "Rigetti Quantum Computing"
+  :address (:country "USA"))
+
+(define-person (:family-name "Sperber"
+                :given-name "Michael")
+  :role (:committee)
+  :organization "DeinProgramm"
+  :address (:country "Germany"))
+
+(define-person (:family-name "Ulu"
+                :given-name "Evrim")
+  :role (:committee)
+  :organization "Istinye University"
+  :address (:country "Turkey"))
+
+(define-person (:family-name "Ó Nualláin"
+                :given-name "Breanndán")
+  :role (:committee)
+  :organization "Machine Learning Programs"
+  :address (:country "Netherlands"))
 
 ;; pre-programme keynotes list.
 
-#+()(define-text :keynotes
-  (:ul
-   (:li (:b "Andrew W. Keep") " (Facebook), on the Nanopass Framework.")
-   (:li (:b "Amr Abdelwahab") " (tourlane.com), Privilege as a technical debt.")
-   (:li (:b "Daniel Kochmański") " (Turtleware), on the Embeddable Common Lisp (ECL).")))
+(define-text :keynotes
+    (:ul
+     (:li (:b "Nada Amin") " (Harvard SEAS)")
+     (:li (:b "tba"))))
 
 (define-location "Online"
   :role (:conference)
