@@ -2,9 +2,9 @@
 (define-edition "2021")
 (in-package "2021")
 
-(define-date "Submission deadline" @2021-03-07)
-;;(define-date "Extended deadline" @2020-02-23)
-(define-date "Author notification" @2021-04-06)
+;;(define-date "Submission deadline" @2021-03-07)
+(define-date "Extended deadline" @2021-03-14)
+(define-date "Author notification" @2021-04-11)
 ;;(define-date "Early registration deadline" @2020-04-01)
 (define-date "Final papers" @2021-04-19)
 
