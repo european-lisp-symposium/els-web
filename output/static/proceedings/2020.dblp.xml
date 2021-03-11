@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE dblpsubmission SYSTEM "dblpsubmission.dtd">
+<?xml-stylesheet type="text/xsl" href="dblpsubmission.xsl" ?>
+<dblpsubmission>
+  <proceedings>
+    <key>ELS</key>
+    <title>ELS 2020 - 13th European Lisp Symposium</title>
+    <editor>Ioanna M. Dimitriou H.</editor>
+    <publisher>ELSAA</publisher>
+    <year>2020</year>
+    <isbn>978-2-9557474-3-8</isbn>
+    <issn>2677-3465</issn>
+    <conf>
+      <acronym>ELS</acronym>
+      <number>13</number>
+      <location>Zürich (stream), Switzerland</location>
+      <date>April 27-28, 2020</date>
+      <url>https://european-lisp-symposium.org/2020</url>
+    </conf>
+    <toc>
+      <section>Technical Papers</section>
+      <publ>
+	<author>Robert Strandh</author>
+	<title>Omnipresent and low-overhead application debugging</title>
+	<pages>8-15</pages>
+	<doi>10.5281/zenodo.3747548</doi>
+      </publ>
+      <publ>
+	<author>Frédéric Hamel</author>
+	<author>Marc Feeley</author>
+	<title>An R7RS Compatible Module System for Termite Scheme</title>
+	<pages>16-25</pages>
+	<doi>10.5281/zenodo.3742443</doi>
+      </publ>
+      <publ>
+	<author>Marco Heisig</author>
+	<title>Sealable Metaobjects for Common Lisp</title>
+	<pages>26-32</pages>
+	<doi>10.5281/zenodo.3743823</doi>
+      </publ>
+      <publ>
+	<author>Irène Durand</author>
+	<title>Bidirectional leveled enumerators</title>
+	<pages>33-40</pages>
+	<doi>10.5281/zenodo.3740554</doi>
+      </publ>
+      <publ>
+	<author>Max Rottenkolber</author>
+	<title>Later Binding: Just-in-Time Compilation of a Younger Dynamic Programming Language</title>
+	<pages>41-45</pages>
+	<doi>10.5281/zenodo.3743226</doi>
+      </publ>
+      <publ>
+	<author>Peter S. Housel</author>
+	<title>LLVM Code Generation for Open Dylan</title>
+	<pages>46-51</pages>
+	<doi>10.5281/zenodo.3742567</doi>
+      </publ>
+      <publ>
+	<author>Rajesh Jayaprakash</author>
+	<title>Partial Evaluation Based CPS Transformation: An Implementation Case Study</title>
+	<pages>52-59</pages>
+	<doi>10.5281/zenodo.3740941</doi>
+      </publ>
+      <publ>
+	<author>Robert Strandh</author>
+	<title>Representing method combinations</title>
+	<pages>60-67</pages>
+	<doi>10.5281/zenodo.3747553</doi>
+      </publ>
+      <publ>
+	<author>Andrea Corallo</author>
+        <author>Luca Nassi</author>
+        <author>Nicola Manca</author>
+	<title>Bringing GNU Emacs to Native Code</title>
+	<pages>68-75</pages>
+	<doi>10.5281/zenodo.3736363</doi>
+      </publ>
+      <publ>
+	<author>Marco Antoniotti</author>
+	<title>Why You Cannot (Yet) Write an “Interval Arithmetic” Library in Common Lisp</title>
+	<pages>76-83</pages>
+	<doi>10.5281/zenodo.3759522</doi>
+      </publ>
+      <publ>
+	<author>João Távora</author>
+	<title>A portable, annotation-based, visual stepper for Common Lisp</title>
+	<pages>84-91</pages>
+	<doi>10.5281/zenodo.3742759</doi>
+      </publ>
+    <section>Demonstrations</section>
+      <publ>
+	<author>Jonathan Godbout</author>
+	<title>Indexing Common Lisp with Kythe</title>
+	<pages>94-96</pages>
+	<doi>10.5281/zenodo.3765987</doi>
+      </publ>
+      <publ>
+	<author>Alan Dipert</author>
+	<title>JACL: A Common Lisp for Developing Single-Page Web Applications</title>
+	<pages>97-100</pages>
+	<doi>10.5281/zenodo.3764494</doi>
+      </publ>
+    </toc>
+  </proceedings>
+</dblpsubmission>
