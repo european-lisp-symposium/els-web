@@ -140,7 +140,7 @@
 (define-person (:family-name "Pitman"
                 :given-name "Kent")
   :role (:committee)
-  :organization "HyperMeta Inc."
+  :organization "Harvard Medical School"
   :address (:country "USA"))
 
 (define-person (:family-name "Rhodes"
