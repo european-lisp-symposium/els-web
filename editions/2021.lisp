@@ -116,7 +116,7 @@
 (define-person (:family-name "Matos"
                 :given-name "Paulo")
   :role (:committee)
-  :organization "Linki Tools"
+  :organization "Igalia"
   :address (:country "Germany"))
 
 (define-person (:family-name "McClain"
