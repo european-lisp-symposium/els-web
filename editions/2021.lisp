@@ -185,6 +185,19 @@
   :organization "Machine Learning Programs"
   :address (:country "Netherlands"))
 
+
+(define-person (:family-name "Lawson"
+                :given-name "Andrew")
+  :role (:speaker)
+  :organization "RavenPack"
+  :address (:country "Spain"))
+
+(define-person (:family-name "Grinis"
+                :given-name "Inna")
+  :role (:speaker)
+  :organization "RavenPack"
+  :address (:country "Spain"))
+
 ;; pre-programme keynotes list.
 
 (define-text :keynotes
@@ -235,11 +248,11 @@
   @09:00:00 (:title "Broadcast start" :role (:organization))
   @09:15:00 (:title "Welcome message" :role (:organization))
 
-  @09:30:00 (:title "Keynote: XXX"
+  @09:30:00 (:title "Keynote: Producing News Analytics and Turning them into Actionable Insights"
              :role (:talk :keynote)
-             :speakers ("XXX")
-             :description "XXX"
-             :website "../static/2021/XXX-slides-keynote.pdf")
+             :speakers ("Andrew Lawson" "Inna Grinis")
+             :description "We will first look at the basics of RavenPack’s news analytics system, from incoming stories to outgoing analytics and the technology involved. We will then look at several examples of how RavenPack’s news volume, sentiment scores, events taxonomy, and connections functionality can be leveraged to create data insights that can be used to make more informed decisions in the finance industry and the corporate world."
+             :website "../static/2021/ravenpack-slides-keynote.pdf")
 
   @10:30:00 (:title "Coffee Break" :role (:break))
 
