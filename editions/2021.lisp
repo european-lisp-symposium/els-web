@@ -193,7 +193,7 @@
   :address (:country "Spain"))
 
 (define-person (:family-name "Grinis"
-                :given-name "Inna1")
+                :given-name "Inna")
   :role (:speaker)
   :organization "RavenPack"
   :address (:country "Spain"))
