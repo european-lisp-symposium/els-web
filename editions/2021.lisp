@@ -6,7 +6,7 @@
 (define-date "Extended deadline" @2021-03-14)
 (define-date "Author notification" @2021-04-11)
 ;;(define-date "Early registration deadline" @2020-04-01)
-(define-date "Final papers" @2021-04-19)
+(define-date "Final papers" @2021-04-23)
 
 (define-date "Conference start" @2021-05-03)
 (define-date "Conference end" @2021-05-04)
@@ -202,8 +202,9 @@
 
 (define-text :keynotes
     (:ul
-     (:li (:b "Nada Amin") " (Harvard SEAS)")
-     (:li (:b "Andrew Sorensen") " (Australian National University)")))
+     (:li (:b "Nada Amin") " (Harvard SEAS), Staged Relational Interpreters: Running Backwards, Faster")
+     (:li (:b "Andrew Sorensen") " (Australian National University), Symbolic Expressions for Cyper-Physical Programming")
+     (:li (:b "Inna Grinis and Andrew Lawson") "(RavenPack), Producing News Analytics and Turning them into Actionable Insights")))
 
 (define-location "Online"
   :role (:conference)
