@@ -198,6 +198,18 @@
   :organization "RavenPack"
   :address (:country "Spain"))
 
+(define-person (:family-name "Amin"
+                :given-name "Nada")
+  :role (:speaker)
+  :organization "Harvard SEAS"
+  :address (:country "USA"))
+
+(define-person (:family-name "Sorensen"
+                :given-name "Andrew")
+  :role (:speaker)
+  :organization "Australian National University"
+  :address (:country "Australia"))
+
 ;; pre-programme keynotes list.
 
 (define-text :keynotes
@@ -245,9 +257,49 @@
 
 
 ;;; Programme
-#+()(define-programme-day @2021-XX-XXT00:00:00+02:00
+
+(define-programme-day @2021-05-03T00:00:00+02:00
   @09:00:00 (:title "Broadcast start" :role (:organization))
-  @09:15:00 (:title "Welcome message" :role (:organization))
+
+  @09:15:00 (:title "Welcome Message" :role (:organization))
+
+  @09:30:00 (:title "Keynote: Symbolic expressions for cyper-physical programming"
+             :role (:talk :keynote)
+             :speakers ("Andrew Sorensen")
+             :description "Cyber-physical programming gives programmers the ability to engage actively and proactively in an experimental and experiential relationship with complex virtual, physical and cultural systems. Cyber-physical programming offers programmers the opportunity to actively shape and control these complex systems of events - to be engaged with them. Studying these natural events is often only possible in situ, in-the-world, within their own temporal and spatial frames of reference.
+
+Cyber-physical programming posits that a causal connection to the world is valuable and that it can be useful to privilege the present. To quote Rodney Brooks “It turns out to be better to use the world as its own model”. One of cyber-physical programming's tenets is that a program's state is not only an internal property of the machine, but is also an external property-of-the-world. This external, physical state, can be sensed and acted upon by both the machine and the programmer. The programmer is actively engaged in both perceiving and acting upon the world, directly, but also mediated through the machine. For the cyber-physical programmer, the physical environment constitutes a meaningful component of a program's state.")
+
+  @10:30:00 (:title "Coffee Break" :role (:break))
+
+  @11:00:00 (:title "A Tangram Puzzle Solver in Common Lisp"
+             :role (:talk)
+             :speakers ("Michael Wessel"))
+
+  @11:30:00 (:title "A Portable, Simple, Embeddable Type System"
+             :role (:talk)
+             :speakers ("Jim Newton" "Adrien Pommellet"))
+
+  @12:00:00 (:title "Lunch" :role (:break))
+
+  @14:00:00 (:title "Common Lisp Project Manager"
+             :role (:talk)
+             :speakers ("Eric Timmons"))
+
+  @14:30:00 (:title "A Corpus Processing and Analysis Pipeline for Quickref"
+             :role (:talk)
+             :speakers ("Antoine Hacquard" "Didier Verna"))
+
+  @15:00:00  (:title "Coffee Break" :role (:break))
+
+  @15:30:00 (:title "A CLOG Tutorial - Writing modern cross platform GUIs and Web apps"
+             :role (:talk)
+             :speakers ("David Botton"))
+
+  @16:30:00  (:title "Lightning Talks" :role (:talk)))
+
+(define-programme-day @2021-05-04T00:00:00+02:00
+  @09:15:00 (:title "Broadcast start" :role (:organization))
 
   @09:30:00 (:title "Keynote: Producing News Analytics and Turning them into Actionable Insights"
              :role (:talk :keynote)
@@ -257,15 +309,33 @@
 
   @10:30:00 (:title "Coffee Break" :role (:break))
 
-  @11:00:00 (:title "XXX"
+  @11:00:00 (:title "TBA"
              :role (:talk)
-             :speakers ("XXX")
-             :website "../static/2021/XXX.pdf")
+             :speakers ("???"))
 
-  @12:30:00 (:title "Lunch" :role (:break))
+  @11:30:00 (:title "aether: Distributed system emulation in Common Lisp"
+             :role (:talk)
+             :speakers ("Eric Peterson" "Peter Karalekas"))
 
-  @15:30:00  (:title "Coffee Break" :role (:break))
+  @12:00:00 (:title "Lunch" :role (:break))
 
-  @17:00:00  (:title "Lightning Talks" :role (:talk)))
+  @14:00:00 (:title "A Scheme Foreign Function Interface to JavaScript Based on an Infix Extension"
+             :role (:talk)
+             :speakers ("Marc-André Bélanger" "Feeley Marc"))
+
+  @14:30:00 (:title "Call-site optimization for Common Lisp"
+             :role (:talk)
+             :speakers ("Robert Strandh"))
+
+  @15:00:00  (:title "Coffee Break" :role (:break))
+
+  @15:30:00 (:title "Keynote: Staged Relational Interpreters: Running Backwards, Faster"
+             :role (:talk :keynote)
+             :speakers ("Nada Amin")
+             :description "Relational programming, as exemplified in miniKanren, strives to be a pure form of logic programming. Relational interpreters enable turning functions into relations, as well as synthesizing functions from partial specifications. However, however successful, the approach incurs an interpretation overhead. We turn functions into relations, while removing all interpretation overhead thanks to a novel multi-stage programming mechanism. While partial evaluation has a rich history in both functional and logic programming, multi-stage programming has so far only been explored in a functional/imperative setting, with many success stories in high-performance computing. Bringing multi-stage programming to relational programming, we derive a relational compiler from the relational interpreter. Via this compiler, we generate relations from functions with no interpretation overhead. In addition to useful first-order applications, we explore running staged relational programs backwards.
+
+In this talk, I will introduce multi-stage programming in its traditional functional setting and in the new relational setting. I will explain how to derive a compiler from an interpreter using generative programming. I will showcase the resulting staged-miniKanren system with a theorem checker turned prover and various towers of interpreters for generating quines.")
+
+  @16:30:00  (:title "Lightning Talks" :role (:talk)))
 
 #+()(define-proceedings "../static/proceedings/2021.pdf")
