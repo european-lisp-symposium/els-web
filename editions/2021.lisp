@@ -185,6 +185,17 @@
   :organization "Machine Learning Programs"
   :address (:country "Netherlands"))
 
+(define-person (:family-name "Amin"
+                :given-name "Nada")
+  :role (:speaker)
+  :organization "Harvard SEAS"
+  :address (:country "USA"))
+
+(define-person (:family-name "Sorensen"
+                :given-name "Andrew")
+  :role (:speaker)
+  :organization "Australian National University"
+  :address (:country "Australia"))
 
 (define-person (:family-name "Lawson"
                 :given-name "Andrew")
@@ -198,24 +209,12 @@
   :organization "RavenPack"
   :address (:country "Spain"))
 
-(define-person (:family-name "Amin"
-                :given-name "Nada")
-  :role (:speaker)
-  :organization "Harvard SEAS"
-  :address (:country "USA"))
-
-(define-person (:family-name "Sorensen"
-                :given-name "Andrew")
-  :role (:speaker)
-  :organization "Australian National University"
-  :address (:country "Australia"))
-
 ;; pre-programme keynotes list.
 
 (define-text :keynotes
     (:ul
      (:li (:b "Nada Amin") " (Harvard SEAS), Staged Relational Interpreters: Running Backwards, Faster")
-     (:li (:b "Andrew Sorensen") " (Australian National University), Symbolic Expressions for Cyper-Physical Programming")
+     (:li (:b "Andrew Sorensen") " (Australian National University), Symbolic Expressions for Cyber-Physical Programming")
      (:li (:b "Inna Grinis and Andrew Lawson") "(RavenPack), Producing News Analytics and Turning them into Actionable Insights")))
 
 (define-location "Online"
@@ -259,11 +258,11 @@
 ;;; Programme
 
 (define-programme-day @2021-05-03T00:00:00+02:00
-  @09:00:00 (:title "Broadcast start" :role (:organization))
+  @08:00:00 (:title "Broadcast start" :role (:organization))
 
   @09:15:00 (:title "Welcome Message" :role (:organization))
 
-  @09:30:00 (:title "Keynote: Symbolic expressions for cyper-physical programming"
+  @09:30:00 (:title "Keynote: Symbolic expressions for cyber-physical programming"
              :role (:talk :keynote)
              :speakers ("Andrew Sorensen")
              :description "Cyber-physical programming gives programmers the ability to engage actively and proactively in an experimental and experiential relationship with complex virtual, physical and cultural systems. Cyber-physical programming offers programmers the opportunity to actively shape and control these complex systems of events - to be engaged with them. Studying these natural events is often only possible in situ, in-the-world, within their own temporal and spatial frames of reference.
@@ -299,7 +298,9 @@ Cyber-physical programming posits that a causal connection to the world is valua
   @16:30:00  (:title "Lightning Talks" :role (:talk)))
 
 (define-programme-day @2021-05-04T00:00:00+02:00
-  @09:15:00 (:title "Broadcast start" :role (:organization))
+  @08:00:00 (:title "Broadcast start" :role (:organization))
+
+  @09:15:00 (:title "Auction" :role (:organization))
 
   @09:30:00 (:title "Keynote: Producing News Analytics and Turning them into Actionable Insights"
              :role (:talk :keynote)
@@ -309,9 +310,9 @@ Cyber-physical programming posits that a causal connection to the world is valua
 
   @10:30:00 (:title "Coffee Break" :role (:break))
 
-  @11:00:00 (:title "TBA"
+  @11:00:00 (:title "A replicated object system"
              :role (:talk)
-             :speakers ("???"))
+             :speakers ("Hayley Patton"))
 
   @11:30:00 (:title "aether: Distributed system emulation in Common Lisp"
              :role (:talk)
