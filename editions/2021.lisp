@@ -3,10 +3,10 @@
 (in-package "2021")
 
 ;;(define-date "Submission deadline" @2021-03-07)
-(define-date "Extended deadline" @2021-03-14)
-(define-date "Author notification" @2021-04-11)
+;;(define-date "Extended deadline" @2021-03-14)
+;;(define-date "Author notification" @2021-04-11)
 ;;(define-date "Early registration deadline" @2020-04-01)
-(define-date "Final papers" @2021-04-23)
+;;(define-date "Final papers" @2021-04-23)
 
 (define-date "Conference start" @2021-05-03)
 (define-date "Conference end" @2021-05-04)
