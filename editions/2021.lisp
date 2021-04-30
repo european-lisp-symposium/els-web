@@ -264,7 +264,9 @@
 (define-programme-day @2021-05-03T00:00:00+02:00
   @08:00:00 (:title "Broadcast start" :role (:organization))
 
-  @09:15:00 (:title "Welcome Message" :role (:organization))
+  @09:00:00 (:title "Welcome Message" :role (:organization))
+
+  @09:15:00 (:title "Auction Start" :role (:organization))
 
   @09:30:00 (:title "Keynote: Symbolic expressions for cyber-physical programming"
              :role (:talk :keynote)
@@ -295,16 +297,20 @@ Cyber-physical programming posits that a causal connection to the world is valua
 
   @15:00:00  (:title "Coffee Break" :role (:break))
 
-  @15:30:00 (:title "A CLOG Tutorial - Writing modern cross platform GUIs and Web apps"
+  @15:30:00 (:title "Lisp in the middle: using Lisp to manage a Linux system"
              :role (:talk)
-             :speakers ("David Botton"))
+             :speakers ("Mikhail Raskin"))
 
-  @16:30:00  (:title "Lightning Talks" :role (:talk)))
+  @16:00:00 (:title "Panel Discussion: Implementations of ANSI Common Lisp"
+             :role (:talk)
+             :speakers ("Mark Evenson" "Daniel Kochmański" "Christophe Rhodes"))
+
+  @16:45:00  (:title "Lightning Talks" :role (:talk))
+
+  @17:15:00  (:title "Get-together" :role (:break)))
 
 (define-programme-day @2021-05-04T00:00:00+02:00
   @08:00:00 (:title "Broadcast start" :role (:organization))
-
-  @09:15:00 (:title "Auction" :role (:organization))
 
   @09:30:00 (:title "Keynote: Producing News Analytics and Turning them into Actionable Insights"
              :role (:talk :keynote)
@@ -341,6 +347,10 @@ Cyber-physical programming posits that a causal connection to the world is valua
 
 In this talk, I will introduce multi-stage programming in its traditional functional setting and in the new relational setting. I will explain how to derive a compiler from an interpreter using generative programming. I will showcase the resulting staged-miniKanren system with a theorem checker turned prover and various towers of interpreters for generating quines.")
 
-  @16:30:00  (:title "Lightning Talks" :role (:talk)))
+  @16:30:00  (:title "Lightning Talks" :role (:talk))
+
+  @17:00:00  (:title "Auction Stop" :role (:organization))
+
+  @17:15:00  (:title "Closing Ceremony" :role (:organization)))
 
 #+()(define-proceedings "../static/proceedings/2021.pdf")
