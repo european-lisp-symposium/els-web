@@ -189,24 +189,28 @@
                 :given-name "Nada")
   :role (:speaker)
   :organization "Harvard SEAS"
+  :photo "../static/2021/nada-amin.jpg"
   :address (:country "USA"))
 
 (define-person (:family-name "Sorensen"
                 :given-name "Andrew")
   :role (:speaker)
   :organization "Australian National University"
+  :photo "../static/2021/andrew-sorensen.jpg"
   :address (:country "Australia"))
 
 (define-person (:family-name "Lawson"
                 :given-name "Andrew")
   :role (:speaker)
   :organization "RavenPack"
+  :photo "../static/2021/andrew-lawson.jpg"
   :address (:country "Spain"))
 
 (define-person (:family-name "Grinis"
                 :given-name "Inna")
   :role (:speaker)
   :organization "RavenPack"
+  :photo "../static/2021/inna-grinis.jpg"
   :address (:country "Spain"))
 
 ;; pre-programme keynotes list.
