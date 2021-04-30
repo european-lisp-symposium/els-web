@@ -242,9 +242,13 @@
   #+()(:option "excursion-guest" :status :inactive
    :price 20 :description "Sunday excursion guest"))
 
-#+()(define-sponsor acm
+(define-sponsor acm
   :website "http://www.sigplan.org/"
   :logo "../static/logos/acm.svg")
+
+(define-sponsor franz
+  :website "http://www.franz.com/"
+  :logo "../static/logos/franz.png")
 
 (define-sponsor ravenpack
   :website "https://www.ravenpack.com/"
