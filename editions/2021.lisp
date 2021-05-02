@@ -15,7 +15,7 @@
   #+()(:div :class "announcement"
         "The " (:a :href "../static/proceedings/2021.pdf" "proceedings") " are now online!")
   (:div :class "announcement"
-        "The conference will be streamed on "
+        "The conference is being streamed on "
         (:a :href "https://twitch.tv/elsconf" "Twitch")
         ". More info below.")
   #+()(:div :class "announcement" "Preliminary programme and keynote abstracts now online.")
@@ -26,12 +26,15 @@
   #+()(:div :class "announcement" "Submissions being accepted now.")
   #+()(:div :class "announcement" "Second invited speaker confirmed! XXX.")
   #+()(:div :class "announcement" "First invited speaker confirmed! XXX.")
-  (:div :class "announcement" "The conference is being organized. Stay tuned for updates!"))
+  #+()(:div :class "announcement" "The conference is being organized. Stay tuned for updates!"))
 
 (define-text :additional-info
-  (:p "This year again, ELS will happen online and will be streamed on Twitch:"
-     (:a :href "https://twitch.tv/elsconf" "https://twitch.tv/elsconf"))
-  (:p "You will need a twitch account to participate in the accompanying live chat, where the Q&A will take place in the end of each talk. The chat will be always on, so you could chat during the breaks as well. There will be no video or audio for the participants. For the online event there is no other registration, and the event is free. If you follow the user elsconf on twitch you should get an email when each day's broadcast is online, 15 minutes before we actually start. During these 15 minutes just a standby image will be shown. All times in the schedule are CEST, but the video of the streams will stay online with the chat attached so you can follow the Q&As. See you soon online!"))
+  (:p "There are several ways for you to join ELS:"
+      (:ul (:li "<b>Via Twitch</b>: You join <a href=\"https://twitch.tv/elsconf\"> and enjoy the show.  If you have a Twitch account, you can also use the text chat to communicate with other participants or the authors.  You can also follow the elsconf user on Twitch to receive a notification when each day's broadcast starts."))
+      (:ul (:li "<b>Via IRC</b>: You can join the #elsconf channel on <a href=\"https://freenode.net\">Freenode</a>.  Messages from this channel are automatically forwarded to the Twitch chat, and vice versa."))
+      (:ul (:li "<b>Via VLC</b>: If you want to avoid Twitch, you can also receive the live stream via <a href=\"https://www.videolan.org/vlc/\">VLC</a>.  Using VLC and IRC, you can join ELS using only free software!"))
+      (:ul (:li "<b>Via Jitsi</b>: The coffee breaks, lunch breaks, and social gatherings in the evenings take place in several Jitsi rooms.  You can see a list of available channels at <a href=\"https://els2021.common-lisp.net/everywhere/\">.")))
+  (:p "All times in the schedule are CEST, but the video of the streams will stay online with the chat attached so you can follow the Q&As. See you online!"))
 
 (define-text :submissions
 
@@ -66,7 +69,8 @@
 ;; persons
 
 (define-person (:family-name "Verna"
-                :given-name "Didier"))
+                :given-name "Didier")
+  :role (:speaker))
 
 (define-person (:family-name "Heisig"
                 :given-name "Marco")
@@ -81,7 +85,7 @@
 
 (define-person (:family-name "Evenson"
                 :given-name "Mark")
-  :role (:local-chair)
+  :role (:local-chair :speaker)
   :address (:country "Austria")
   :organization "RavenPack")
 
@@ -141,7 +145,7 @@
 
 (define-person (:family-name "Newton"
                 :given-name "Jim")
-  :role (:committee)
+  :role (:committee :speaker)
   :organization "EPITA Research Lab"
   :address (:country "France"))
 
@@ -153,7 +157,7 @@
 
 (define-person (:family-name "Rhodes"
                 :given-name "Christophe")
-  :role (:committee)
+  :role (:committee :speaker)
   :organization "Google"
   :address (:country "UK"))
 
@@ -315,11 +319,11 @@ Cyber-physical programming posits that a causal connection to the world is valua
 
   @16:00:00 (:title "Panel Discussion: Implementations of ANSI Common Lisp"
              :role (:talk)
-             :speakers ("Mark Evenson" "Daniel Kochmański" "Christophe Rhodes"))
+             :speakers ("Mark Evenson" "Daniel Kochmański" "Christophe Rhodes" "Kevin Layer"))
 
-  @16:45:00  (:title "Lightning Talks" :role (:talk))
+  @17:00:00  (:title "Lightning Talks" :role (:talk))
 
-  @17:15:00  (:title "Get-together" :role (:break)))
+  @17:30:00  (:title "Get-together" :role (:break)))
 
 (define-programme-day @2021-05-04T00:00:00+02:00
   @08:00:00 (:title "Broadcast start" :role (:organization))
