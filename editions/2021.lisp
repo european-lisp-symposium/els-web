@@ -12,7 +12,7 @@
 (define-date "Conference end" @2021-05-04)
 
 (define-text :announcement
-  #+()(:div :class "announcement"
+  (:div :class "announcement"
         "The " (:a :href "../static/proceedings/2021.pdf" "proceedings") " are now online!")
   (:div :class "announcement"
         "The conference is being streamed on "
@@ -350,7 +350,7 @@ Cyber-physical programming posits that a causal connection to the world is valua
 
   @14:00:00 (:title "A Scheme Foreign Function Interface to JavaScript Based on an Infix Extension"
              :role (:talk)
-             :speakers ("Marc-André Bélanger" "Feeley Marc"))
+             :speakers ("Marc-André Bélanger" "Marc Feeley"))
 
   @14:30:00 (:title "Call-site optimization for Common Lisp"
              :role (:talk)
@@ -371,4 +371,4 @@ In this talk, I will introduce multi-stage programming in its traditional functi
 
   @17:15:00  (:title "Closing Ceremony" :role (:organization)))
 
-#+()(define-proceedings "../static/proceedings/2021.pdf")
+(define-proceedings "../static/proceedings/2021.pdf")
