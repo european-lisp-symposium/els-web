@@ -76,12 +76,20 @@
 
 (define-person (:family-name "Herda"
                 :given-name "Michał")
-  :role (:local-chair))
+  :role (:local-chair)
+  :address (:country "Poland"))
 
 (define-person (:family-name "Evenson"
                 :given-name "Mark")
   :role (:local-chair)
+  :address (:country "Austria")
   :organization "RavenPack")
+
+(define-person (:family-name "Tugai"
+                :given-name "Georgiy")
+  :role (:local-chair)
+  :organization "Configura"
+  :address (:country "Sweden"))
 
 (define-person (:family-name "Dimitriou"
                 :given-name "Ioanna")
