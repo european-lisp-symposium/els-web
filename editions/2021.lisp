@@ -33,7 +33,7 @@
       (:ul (:li "<b>Via Twitch</b>: You join <a href=\"https://twitch.tv/elsconf\"> and enjoy the show.  If you have a Twitch account, you can also use the text chat to communicate with other participants or the authors.  You can also follow the elsconf user on Twitch to receive a notification when each day's broadcast starts."))
       (:ul (:li "<b>Via IRC</b>: You can join the #elsconf channel on <a href=\"https://freenode.net\">Freenode</a>.  Messages from this channel are automatically forwarded to the Twitch chat, and vice versa."))
       (:ul (:li "<b>Via VLC</b>: If you want to avoid Twitch, you can also receive the live stream via <a href=\"https://www.videolan.org/vlc/\">VLC</a>.  Using VLC and IRC, you can join ELS using only free software!"))
-      (:ul (:li "<b>Via Jitsi</b>: The coffee breaks, lunch breaks, and social gatherings in the evenings take place in several Jitsi rooms.  You can see a list of available channels at <a href=\"https://els2021.common-lisp.net/everywhere/\">.")))
+      (:ul (:li "<b>Via Jitsi</b>: The coffee breaks, lunch breaks, and social gatherings in the evenings take place in several Jitsi rooms.  You can see a list of available channels <a href=\"https://els2021.common-lisp.net/everywhere/\">ere</a>.")))
   (:p "All times in the schedule are CEST, but the video of the streams will stay online with the chat attached so you can follow the Q&As. See you online!"))
 
 (define-text :submissions
