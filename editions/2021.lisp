@@ -321,7 +321,7 @@ Cyber-physical programming posits that a causal connection to the world is valua
 
   @16:00:00 (:title "Panel Discussion: Implementations of ANSI Common Lisp"
              :role (:talk)
-             :speakers ("Mark Evenson" "Daniel Kochmański" "Christophe Rhodes" "Kevin Layer"))
+             :speakers ("Mark Evenson" "Daniel Kochmański" "Christophe Rhodes" "Kevin Layer" "Christian Schafmeister"))
 
   @17:00:00  (:title "Lightning Talks" :role (:talk))
 
