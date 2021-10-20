@@ -2,11 +2,11 @@
 (define-edition "2022")
 (in-package "2022")
 
-;;(define-date "Submission deadline" @2021-03-07)
+(define-date "Submission deadline" @2022-01-23)
 ;;(define-date "Extended deadline" @2021-03-14)
-;;(define-date "Author notification" @2021-04-11)
+(define-date "Author notification" @2022-02-21)
+(define-date "Final papers" @2022-03-07)
 ;;(define-date "Early registration deadline" @2020-04-01)
-;;(define-date "Final papers" @2021-04-23)
 
 (define-date "Conference start" @2022-03-21)
 (define-date "Conference end" @2022-03-22)
