@@ -63,7 +63,7 @@
 
 (define-location "FEUP, Universidade do Porto"
   :role (:conference)
-  :photo "https://2022.programming-conference.org/getImage/carousel/venue.png?1616702291000"
+  :photo "https://2022.programming-conference.org/getImage/carousel/Puente_Don_Luis_I%252C_Oporto%252C_Portugal%252C_2012-05-09%252C_DD_13.JPG?1616701137000"
   :website "https://2022.programming-conference.org/venue/programming-2022-venue"
   :address (:street "Rua Dr. Roberto Frias s/n"
             :post-code "4200-465"
