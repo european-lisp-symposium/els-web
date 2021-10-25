@@ -8,17 +8,17 @@
 
 (define-text :scope
   (:p "Topics include but are not limited to:")
-  (:ul (:li "Context-, aspect-, domain-oriented and generative programming")
-       (:li "Macro-, reflective-, meta- and/or rule-based development approaches")
-       (:li "Language design and implementation")
-       (:li "Language integration, inter-operation and deployment")
-       (:li "Development methodologies, support and environments")
-       (:li "Educational approaches and perspectives")
-       (:li "Experience reports and case studies"))
-  (:p "We invite submissions in the following forms:")
-  (:ul (:li "<b>Papers</b>: Technical papers of up to 8 pages that describe original results or explain known ideas in new and elegant ways.")
-       (:li "<b>Demonstrations</b>: Abstracts of up to 4 pages for demonstrations of tools, libraries, and applications.")
-       (:li "<b>Tutorials</b>: Abstracts of up to 4 pages for in-depth presentations about topics of special interest for at least 90 minutes and up to 180 minutes.")))
+  (:ul (:li "context-, aspect-, domain-oriented and generative programming")
+       (:li "macro-, reflective-, meta- and/or rule-based development approaches")
+       (:li "language design and implementation")
+       (:li "language integration, inter-operation and deployment")
+       (:li "development methodologies, support and environments")
+       (:li "educational approaches and perspectives")
+       (:li "experience reports and case studies"))
+  (:p "We invite submissions in the following forms.")
+  (:ul (:li "<b>Papers</b>: technical papers of up to 8 pages that describe original results or explain known ideas in new and elegant ways.")
+       (:li "<b>Demonstrations</b>: abstracts of up to 4 pages for demonstrations of tools, libraries, and applications.")
+       (:li "<b>Tutorials</b>: abstracts of up to 4 pages for in-depth presentations about topics of special interest for at least 90 minutes and up to 180 minutes.")))
 
 (define-person (:family-name "Verna"
                 :given-name "Didier")
