@@ -60,6 +60,81 @@
   :organization "EPITA Research and Development Laboratory"
   :address (:country "France"))
 
+(define-person (:family-name "Meier"
+                :given-name "Philipp")
+  :role (:committee)
+  :organization "Nubank")
+
+(define-person (:family-name "Dimitriou H."
+                :given-name "Ioanna M.")
+  :role (:committee)
+  :organization "Igalia")
+
+(define-person (:family-name "Raskin"
+                :given-name "Mikhail")
+  :role (:committee)
+  :organization "Technical University of Munich")
+
+(define-person (:family-name "Levine"
+                :given-name "Nick")
+  :role (:committee)
+  :organization "RavenPack")
+
+(define-person (:family-name "Pommellet"
+                :given-name "Adrien")
+  :role (:committee)
+  :organization "EPITA / LRDE")
+
+(define-person (:family-name "Heisig"
+                :given-name "Marco")
+  :role (:committee)
+  :organization "FAU Erlangen-Nürnberg")
+
+(define-person (:family-name "Riva"
+                :given-name "Alberto")
+  :role (:committee)
+  :organization "Bioinformatics Core, ICBR, University of Florida")
+
+(define-person (:family-name "Antoniotti"
+                :given-name "Marco")
+  :role (:committee)
+  :organization "DISCo, Università degli Studi di Milano-Bicocca")
+
+(define-person (:family-name "Neuss"
+                :given-name "Nicolas")
+  :role (:committee)
+  :organization "Friedrich-Alexander-Universität Erlangen")
+
+(define-person (:family-name "Rhodes"
+                :given-name "Christophe")
+  :role (:committee)
+  :organization "Google")
+
+(define-person (:family-name "Durand"
+                :given-name "Irène Anne")
+  :role (:committee)
+  :organization "LaBRI, University of Bordeaux")
+
+(define-person (:family-name "Moeller"
+                :given-name "Ralph")
+  :role (:committee)
+  :organization "")
+
+(define-person (:family-name "Ó Nualláin"
+                :given-name "Breanndán")
+  :role (:committee)
+  :organization "University of Amsterdam")
+
+(define-person (:family-name "Battyani"
+                :given-name "Marc")
+  :role (:committee)
+  :organization "Fractal Concept")
+
+(define-person (:family-name "Costanza"
+                :given-name "Pascal")
+  :role (:committee)
+  :organization "Intel")
+
 
 (define-location "FEUP, Universidade do Porto"
   :role (:conference)
