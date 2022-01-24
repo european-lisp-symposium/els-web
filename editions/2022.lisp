@@ -158,6 +158,10 @@ we did two years ago."))
   :website "http://www.epita.fr/"
   :logo "../static/logos/epita.png")
 
+(define-sponsor franz
+  :website "http://www.franz.com/"
+  :logo "../static/logos/franz.png")
+
 
 ;;; Programme
 
