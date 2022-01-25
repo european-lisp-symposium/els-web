@@ -13,6 +13,7 @@
 
 (define-text :announcement
   (:div :class "announcement" "Submission deadline extended by one week!")
+  (:div :class "announcement" "ACM In-Cooperation-With status renewed!")
   (:div :class "announcement" "In co-location with <a href=\"http://2022.programming-conference.org/\">Programming 2022</a>"))
 
 (define-text :submissions
@@ -157,6 +158,10 @@ we did two years ago."))
 (define-sponsor epita
   :website "http://www.epita.fr/"
   :logo "../static/logos/epita.png")
+
+(define-sponsor acm
+  :website "http://www.sigplan.org/"
+  :logo "../static/logos/acm.svg")
 
 (define-sponsor franz
   :website "http://www.franz.com/"
