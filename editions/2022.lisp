@@ -137,42 +137,42 @@
   :organization "Intel")
 
 (define-person (:family-name "Ritchie"
-                :given-name "Sam"
-                :role (:speaker :keynote :demo)))
+                :given-name "Sam")
+  :role (:speaker :keynote :demo))
 
 (define-person (:family-name "Strandh"
-                :given-name "Robert"
-                :role (:speaker :keynote)
-                :description "Recently retired, Robert Strandh can look back at a lifelong
+                :given-name "Robert")
+  :role (:speaker :keynote)
+  :description "Recently retired, Robert Strandh can look back at a lifelong
 experience in computer science and software development both in
 academia and industry, from 5 countries on 4 continents.
 
 Currently, Strandh's projects are focused on the implementation of
 dynamic programming languages, as well as on operating-system
 technology in view of progress in computer and software technology
-during the past few decades."))
+during the past few decades.")
 
 
 (define-person (:family-name "Monnier"
-                :given-name "Stefan"
-                :role (:speaker)))
+                :given-name "Stefan")
+  :role (:speaker))
 
 (define-person (:family-name "De Roover"
-                :given-name "CoenCoen"
-                :role (:speaker)))
+                :given-name "CoenCoen")
+  :role (:speaker))
 
 
 (define-person (:family-name "Raskin"
-                :given-name "Michael"
-                :role (:speaker)))
+                :given-name "Michael")
+  :role (:speaker))
   
 (define-person (:family-name  "Durand"
-                :given-name "Irène Anne"
-                :role (:speaker)))
+                :given-name "Irène Anne")
+  :role (:speaker))
   
 (define-person (:family-name "Retzlaff"
-                :given-name "Max-Gerd"
-                :description "This demonstrates that uLisp is not only fun but mature enough to be
+                :given-name "Max-Gerd")
+  :description "This demonstrates that uLisp is not only fun but mature enough to be
 used for serious projects and commercial prototypes.
 
 Max-Gerd Retzlaff started to use Common Lisp in 2003 and uses it
@@ -201,52 +201,47 @@ interactive installations in exhibitions in many European cities,
 with works in the collection of the ZKM Karlsruhe and on permanent
 display in the DASA Dortmund. More on www.retzlaff-wenger.com.
 "
-              :role (:speaker :demo)))
+  :role (:speaker :demo))
 
 (define-person (:family-name "Heisig"
-                :given-name "Marco"
-                :role (:speaker)))
+                :given-name "Marco")
+  :role (:speaker))
 
 (define-person (:family-name "Koestler"
-                :given-name  "Harald"
-                :role (:speaker)))
+                :given-name  "Harald")
+  :role (:speaker))
 
 (define-person (:family-name "Sengul"
-                :given-name "Andrew"
-                :role (:speaker)))
+                :given-name "Andrew")
+  :role (:speaker))
   
 (define-person (:family-name "Wessel"
-                :given-name "Michael"
-                :role (:speaker)))
+                :given-name "Michael")
+  :role (:speaker))
   
 (define-person (:family-name "Marcelino" 
-                :given-name "Miguel"
-                :role (:speaker)))
+                :given-name "Miguel")
+  :role (:speaker))
   
 (define-person (:family-name "Leitão"
-                :given-name "António"
-                :role (:speaker)))
-
+                :given-name "António")
+  :role (:speaker))
 
 (define-person (:family-name "Kursun"
-                :given-name "Turgut Reis"
-                :role (:speaker)))
+                :given-name "Turgut Reis")
+  :role (:speaker))
 
 (define-person (:family-name  "Van der Plas"
-                :given-name "Jens "
-                :role (:speaker)))
+                :given-name "Jens")
+  :role (:speaker))
 
 (define-person (:family-name  "Stiévenart"
-                :given-name "Quentin"
-                :role (:speaker)))
+                :given-name "Quentin")
+  :role (:speaker))
   
 (define-person (:family-name  "De Roover"
-                :given-name  "Coen"
-                :role (:speaker)))
-
-(define-person (:family-name ""
-                :given-name ""
-                :role (:speaker)))
+                :given-name  "Coen")
+  :role (:speaker))
 
 (define-location "FEUP, Universidade do Porto"
   :role (:conference)
