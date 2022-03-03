@@ -421,7 +421,7 @@ We conclude with a performance evaluation for several example programs, and show
   @16:00:00 (:title "Remote Demo: April APL Compiler"
              :role (:talk)
              :speakers ("Andrew Sengul")
-             :description ("Proposed is a demonstration of the April APL compiler (code hosted at https://github.com/phantomics/april). April compiles a subset of the APL language into Common Lisp, allowing APL’s terse, efficient syntax to be leveraged for array processing and mathematical operations within a Common Lisp program. This presentation will cover April’s basic syntax, its use cases and its architecture, leading into a broader discussion of language design philosophy."))
+             :description "Proposed is a demonstration of the April APL compiler (code hosted at https://github.com/phantomics/april). April compiles a subset of the APL language into Common Lisp, allowing APL’s terse, efficient syntax to be leveraged for array processing and mathematical operations within a Common Lisp program. This presentation will cover April’s basic syntax, its use cases and its architecture, leading into a broader discussion of language design philosophy.")
   @16:30:00 (:title "Enlightening Lightning Talks"
              :role (:talk)))
 
