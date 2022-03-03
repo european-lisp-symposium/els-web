@@ -3,8 +3,8 @@
 (in-package "2022")
 
 ;;(define-date "Submission deadline" @2022-01-23)
-(define-date "*** Extended deadline ***" @2022-01-30)
-(define-date "Author notification" @2022-02-21)
+;;(define-date "*** Extended deadline ***" @2022-01-30)
+;;(define-date "Author notification" @2022-02-21)
 (define-date "Final papers" @2022-03-07)
 ;;(define-date "Early registration deadline" @2020-04-01)
 
@@ -12,7 +12,8 @@
 (define-date "Conference end" @2022-03-22)
 
 (define-text :announcement
-  (:div :class "announcement" "Submission deadline extended by one week!")
+  (:div :class "announcement" "Preliminary programme available now!")
+  ;;(:div :class "announcement" "Submission deadline extended by one week!")
   (:div :class "announcement" "ACM In-Cooperation-With status renewed!")
   (:div :class "announcement" "In co-location with <a href=\"http://2022.programming-conference.org/\">Programming 2022</a>"))
 
