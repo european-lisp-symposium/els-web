@@ -76,7 +76,9 @@
       (setf database (remove-if #'match-fields database))
       (setf (edition edition) (append database (list data))))))
 
-(defmacro define-person (name &rest args)
+(defmacro define-person (name &rest args &key role &allow-other-keys)
+  (if (not role)
+      (warn "defining person ~A with no role. ~A" name args))
   (let ((full-name (if (listp name)
                        (or (getf name :full-name)
                            (format NIL "~a ~a"
@@ -114,7 +116,8 @@
                   (cond ((not record)
                          (warn "No such person ~s known." speaker))
                         ((not (find :speaker (getp record :role)))
-                         (warn "Person ~s does not have the speaker role." speaker))))))))
+                         (warn "Person ~s does not have the speaker role. role=~A~%record=~A"
+                               speaker (getp record :role) record))))))))
 
 (defmacro define-programme-day (base-time &body forms)
   `(progn

@@ -50,6 +50,7 @@
    #:edition-payments)
   ;; toolkit.lisp
   (:export
+   #:getp
    ))
 
 (defpackage #:els-web-editions
