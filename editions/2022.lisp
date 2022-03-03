@@ -265,13 +265,17 @@ we did two years ago."))
   :website "http://www.epita.fr/"
   :logo "../static/logos/epita.png")
 
-(define-sponsor acm
-  :website "http://www.sigplan.org/"
-  :logo "../static/logos/acm.svg")
-
 (define-sponsor franz
   :website "http://www.franz.com/"
   :logo "../static/logos/franz.png")
+
+(define-sponsor siscog
+  :website "https://www.siscog.pt/"
+  :logo "../static/logos/siscog.png")
+
+(define-sponsor acm
+  :website "http://www.sigplan.org/"
+  :logo "../static/logos/acm.svg")
 
 
 (define-text :keynotes
