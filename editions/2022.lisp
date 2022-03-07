@@ -3,8 +3,8 @@
 (in-package "2022")
 
 ;;(define-date "Submission deadline" @2022-01-23)
-(define-date "*** Extended deadline ***" @2022-01-30)
-(define-date "Author notification" @2022-02-21)
+;;(define-date "*** Extended deadline ***" @2022-01-30)
+;;(define-date "Author notification" @2022-02-21)
 (define-date "Final papers" @2022-03-07)
 ;;(define-date "Early registration deadline" @2020-04-01)
 
@@ -12,7 +12,8 @@
 (define-date "Conference end" @2022-03-22)
 
 (define-text :announcement
-  (:div :class "announcement" "Submission deadline extended by one week!")
+  (:div :class "announcement" "Preliminary programme available now!")
+  ;;(:div :class "announcement" "Submission deadline extended by one week!")
   (:div :class "announcement" "ACM In-Cooperation-With status renewed!")
   (:div :class "announcement" "In co-location with <a href=\"http://2022.programming-conference.org/\">Programming 2022</a>"))
 
@@ -265,13 +266,17 @@ we did two years ago."))
   :website "http://www.epita.fr/"
   :logo "../static/logos/epita.png")
 
-(define-sponsor acm
-  :website "http://www.sigplan.org/"
-  :logo "../static/logos/acm.svg")
-
 (define-sponsor franz
   :website "http://www.franz.com/"
   :logo "../static/logos/franz.png")
+
+(define-sponsor siscog
+  :website "https://www.siscog.pt/"
+  :logo "../static/logos/siscog.png")
+
+(define-sponsor acm
+  :website "http://www.sigplan.org/"
+  :logo "../static/logos/acm.svg")
 
 
 (define-text :keynotes
@@ -417,7 +422,7 @@ We conclude with a performance evaluation for several example programs, and show
   @16:00:00 (:title "Remote Demo: April APL Compiler"
              :role (:talk)
              :speakers ("Andrew Sengul")
-             :description ("Proposed is a demonstration of the April APL compiler (code hosted at https://github.com/phantomics/april). April compiles a subset of the APL language into Common Lisp, allowing APL’s terse, efficient syntax to be leveraged for array processing and mathematical operations within a Common Lisp program. This presentation will cover April’s basic syntax, its use cases and its architecture, leading into a broader discussion of language design philosophy."))
+             :description "Proposed is a demonstration of the April APL compiler (code hosted at https://github.com/phantomics/april). April compiles a subset of the APL language into Common Lisp, allowing APL’s terse, efficient syntax to be leveraged for array processing and mathematical operations within a Common Lisp program. This presentation will cover April’s basic syntax, its use cases and its architecture, leading into a broader discussion of language design philosophy.")
   @16:30:00 (:title "Enlightening Lightning Talks"
              :role (:talk)))
 
