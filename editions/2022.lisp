@@ -408,7 +408,7 @@ with works in the collection of the ZKM Karlsruhe and on permanent
 display in the DASA Dortmund. More on www.retzlaff-wenger.com.
 
 Contact him via e-mail to mgr@matroid.org"
-                    :website "http://www.defsystem.net/")
+                    :website "http://www.defsystem.net")
   @15:00:00 (:title "Coffee Break"
              :role (:break))
   @15:30:30 (:title "Research Paper: Closing the Performance Gap Between Lisp and C"
