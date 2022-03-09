@@ -139,6 +139,14 @@
 
 (define-person (:family-name "Ritchie"
                 :given-name "Sam")
+  :description "I'm a researcher at the Mentat Collective, and currently working 
+on a series of interactive, multiplayer computational textbooks for exploring
+ mathematical physics and other forms of modeled reality. I've lived past work-lives 
+at (Google) X, Stripe, Twitter, founded Paddleguru and Racehub; I'm most well known 
+in the software world as the author of Summingbird, Algebird, and SICMUtils, and 
+as the maintainer of Cascalog. I have a secret identity as a mountain athlete and 
+amateur aircraft mechanic, and live with wife Jenna and daughter Juno in 
+Boulder, Colorado."
   :role (:speaker :keynote :demo))
 
 (define-person (:family-name "Strandh"
@@ -317,7 +325,17 @@ We present the design and implementation of such a feature in the context of Ema
 
 Deep principles and beautiful abstractions seem to drive these systems, but they have always been hard to discover; and we are floundering at the computational frontiers of intelligence, synthetic biology and control systems for our climate. The only way to push forward is to build powerful tools that can communicate and teach.
 
-This talk will take a tour through SICMUtils, a Lisp system designed as a workshop for conducting serious work in mathematical physics and sharing those explorations in a deeply interactive, multiplayer way. The library’s growth parallels our human scientific history; hopefully tools like this will help us write the next chapter.")
+This talk will take a tour through SICMUtils, a Lisp system designed as a workshop for conducting serious work in mathematical physics and sharing those explorations in a deeply interactive, multiplayer way. The library’s growth parallels our human scientific history; hopefully tools like this will help us write the next chapter.
+
+Bio:
+I'm a researcher at the Mentat Collective, and currently working 
+on a series of interactive, multiplayer computational textbooks for exploring
+ mathematical physics and other forms of modeled reality. I've lived past work-lives 
+at (Google) X, Stripe, Twitter, founded Paddleguru and Racehub; I'm most well known 
+in the software world as the author of Summingbird, Algebird, and SICMUtils, and 
+as the maintainer of Cascalog. I have a secret identity as a mountain athlete and 
+amateur aircraft mechanic, and live with wife Jenna and daughter Juno in 
+Boulder, Colorado.")
   @11:30:00 (:title "Relaxation Event")
   @12:00:00 (:title "Lunch"
              :role (:break))
@@ -488,7 +506,17 @@ OntoVPA projects.")
              :role (:keynote :demo)
              :description "SICMUtils is a Clojure library designed for interactive exploration of mathematical physics. It is simultaneously a work of persuasive writing, a collection of essays on functional pearls and computational ideas, a stable of workhorse functional abstractions, and a practical place to work and visualize algorithms and physical systems, on a server or in the browser.
 
-How do you build a library like this? This talk will go through the architecture of SICMUtils, based on many of the ideas of \"additive programming\" from Gerald Sussman and Chris Hanson's latest book, Software Design for Flexibility. We'll look at surprising examples of the system becoming easier to extend over time. Clojure's embrace of its host platform lets us use the best modern work in Javascript for visualization, while keeping the horsepower of our servers for real work. Lisp's particular elegance will shine throughout.")
+How do you build a library like this? This talk will go through the architecture of SICMUtils, based on many of the ideas of \"additive programming\" from Gerald Sussman and Chris Hanson's latest book, Software Design for Flexibility. We'll look at surprising examples of the system becoming easier to extend over time. Clojure's embrace of its host platform lets us use the best modern work in Javascript for visualization, while keeping the horsepower of our servers for real work. Lisp's particular elegance will shine throughout.
+
+Bio:
+I'm a researcher at the Mentat Collective, and currently working 
+on a series of interactive, multiplayer computational textbooks for exploring
+ mathematical physics and other forms of modeled reality. I've lived past work-lives 
+at (Google) X, Stripe, Twitter, founded Paddleguru and Racehub; I'm most well known 
+in the software world as the author of Summingbird, Algebird, and SICMUtils, and 
+as the maintainer of Cascalog. I have a secret identity as a mountain athlete and 
+amateur aircraft mechanic, and live with wife Jenna and daughter Juno in 
+Boulder, Colorado.")
   @15:00:00 (:title "Coffee Break"
              :role (:break))
   @15:30:00 (:title "Research Paper: Transpiling Python to Julia using PyJL"
