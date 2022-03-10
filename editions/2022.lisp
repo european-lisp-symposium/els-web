@@ -12,7 +12,7 @@
 (define-date "Conference end" @2022-03-22)
 
 (define-text :announcement
-  (:div :class "announcement" "Preliminary programme available now!")
+  (:div :class "announcement" "Programme available now!")
   ;;(:div :class "announcement" "Submission deadline extended by one week!")
   (:div :class "announcement" "ACM In-Cooperation-With status renewed!")
   (:div :class "announcement" "In co-location with <a href=\"http://2022.programming-conference.org/\">Programming 2022</a>"))
