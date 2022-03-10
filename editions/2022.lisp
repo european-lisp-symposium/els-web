@@ -289,7 +289,7 @@ This talk will take a tour through SICMUtils, a Lisp system designed as a worksh
 Bio:
 I'm a researcher at the Mentat Collective, and currently working on a series of interactive, multiplayer computational textbooks for exploring  mathematical physics and other forms of modeled reality. I've lived past work-lives at (Google) X, Stripe, Twitter, founded Paddleguru and Racehub; I'm most well known in the software world as the author of Summingbird, Algebird, and SICMUtils, and as the maintainer of Cascalog. I have a secret identity as a mountain athlete and amateur aircraft mechanic, and live with wife Jenna and daughter Juno in
 Boulder, Colorado.")
-  @11:30:00 (:title "Relaxation Event")
+  @11:30:00 (:title "Group Exercise")
   @12:00:00 (:title "Lunch"
              :role (:break))
   @13:30:00 (:title "Research Paper: QueryFS: compiling queries to define a filesystem"
