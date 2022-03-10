@@ -14,9 +14,7 @@
 (define-text :announcement
   (:div :class "announcement" "<a href=\"https://www.last2ticket.com/en/embed/e/4173/s/45625/programming-2022\">Register</a> now!")
   (:div :class "announcement" "Programme available now!")
-  ;;(:div :class "announcement" "Submission deadline extended by one week!")
-  (:div :class "announcement" "ACM In-Cooperation-With status renewed!")
-  (:div :class "announcement" "In co-location with <a href=\"http://2022.programming-conference.org/\">Programming 2022</a>"))
+  #+()(:div :class "announcement" "Submission deadline extended by one week!"))
 
 (define-text :submissions
 
