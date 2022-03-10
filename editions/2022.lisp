@@ -12,6 +12,7 @@
 (define-date "Conference end" @2022-03-22)
 
 (define-text :announcement
+  (:div :class "announcement" "<a href=\"https://www.last2ticket.com/en/embed/e/4173/s/45625/programming-2022\">Register</a> now!")
   (:div :class "announcement" "Programme available now!")
   ;;(:div :class "announcement" "Submission deadline extended by one week!")
   (:div :class "announcement" "ACM In-Cooperation-With status renewed!")
@@ -234,13 +235,9 @@ Since 2004 Max has been working as an artist and participated with interactive i
             :country "Portugal")
   :map T)
 
-#+()(define-text :registration
+(define-text :registration
       (:p "Since we are co-locating with &lt;Programming&gt; this year,
-registration must be done  through their <a href=\"https://2022.programming-conference.org/attending/Registration\">website</a>.
-You may register for either the full conference, or only the first 2 days (ELS
-and workshops). Because the student fee is higher than our normal rate, we
-will also implement a student refund program when the conference is over, as
-we did two years ago."))
+registration must be done through their <a href=\"https://www.last2ticket.com/en/embed/e/4173/s/45625/programming-2022\">system</a>."))
 
 (define-sponsor epita
   :website "http://www.epita.fr/"
