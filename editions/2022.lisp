@@ -447,22 +447,12 @@ We conclude with a performance evaluation for several example programs, and show
 (define-programme-day @2022-03-22T00:00:00+01:00
   @08:30:00 (:title "Registration, badges, meet and greet"
              :role (:organization))
-  @09:00:00 (:title "Remote Research Paper: : An Ontology-Based Dialogue Managment Framework for Virtual Personal Assistants in Common Lisp"
-             :speakers ("Michael Wessel")
+  @09:00:00 (:title "Research Paper: Transpiling Python to Julia using PyJL"
              :role (:talk)
-             :description "We present a new approach to dialogue specification for 
-Virtual Personal Assistants (VPAs) based on so-called 
-dialogue workflow graphs. Our approach relies on Semantic Web 
-technology (OWL), implemented in Common Lisp with the help of the 
-Racer reasoner. Our new dialogue specification language (DSL) 
-is a set of Common Lisp macros, a Domain Specific Language, which 
-facilitates customer participation in the modeling process. The 
-resulting dialogue models are also very concise. The DSL is a new 
-modeling layer on top of our ontology-based Dialogue 
-Management (DM) framework OntoVPA. We explain the rationale and 
-benefits behind the new language, and support our claims with 
-concrete reduced Level-of-Effort (LOE) numbers from two recent 
-OntoVPA projects.")
+             :speakers ("Miguel Marcelino" "António Leitão")
+             :description "Transpilers translate between high-level programming languages, providing an efficient alternative to manually porting software from one language to another. With the rise of new programming languages, transpilers are ideal tools to assist the conversion of libraries written in more established programming languages to newer and less popular ones. This process facilitates language adoption and fosters their development. 
+There are currently many transpilation tools available, however, only some focus on producing human-readable and maintainable code, and only smaller set of these generate code that is indistinguishable from human-written programs. The main benefit is that the generated code can easily be understood and modified by programmers, resulting in improved maintainability. 
+Julia is a recent programming language that targets some of the application areas of the widely popular Python language. However, the number of libraries available in Julia is still lower than what is provided in Python. We propose a solution that involves the development of a transpiler to generate human-readable Julia code from Python code, to speedup the translation of Python libraries to Julia.")
   @09:30:00 (:title "Demo: ETAP: Experimental Typesetting Algorithms Platform"
              :speakers ("Didier Verna")
              :role (:demo)
@@ -519,12 +509,22 @@ amateur aircraft mechanic, and live with wife Jenna and daughter Juno in
 Boulder, Colorado.")
   @15:00:00 (:title "Coffee Break"
              :role (:break))
-  @15:30:00 (:title "Research Paper: Transpiling Python to Julia using PyJL"
+  @15:30:00 (:title "Remote Research Paper: : An Ontology-Based Dialogue Managment Framework for Virtual Personal Assistants in Common Lisp"
+             :speakers ("Michael Wessel")
              :role (:talk)
-             :speakers ("Miguel Marcelino" "António Leitão")
-             :description "Transpilers translate between high-level programming languages, providing an efficient alternative to manually porting software from one language to another. With the rise of new programming languages, transpilers are ideal tools to assist the conversion of libraries written in more established programming languages to newer and less popular ones. This process facilitates language adoption and fosters their development. 
-There are currently many transpilation tools available, however, only some focus on producing human-readable and maintainable code, and only smaller set of these generate code that is indistinguishable from human-written programs. The main benefit is that the generated code can easily be understood and modified by programmers, resulting in improved maintainability. 
-Julia is a recent programming language that targets some of the application areas of the widely popular Python language. However, the number of libraries available in Julia is still lower than what is provided in Python. We propose a solution that involves the development of a transpiler to generate human-readable Julia code from Python code, to speedup the translation of Python libraries to Julia.")
+             :description "We present a new approach to dialogue specification for 
+Virtual Personal Assistants (VPAs) based on so-called 
+dialogue workflow graphs. Our approach relies on Semantic Web 
+technology (OWL), implemented in Common Lisp with the help of the 
+Racer reasoner. Our new dialogue specification language (DSL) 
+is a set of Common Lisp macros, a Domain Specific Language, which 
+facilitates customer participation in the modeling process. The 
+resulting dialogue models are also very concise. The DSL is a new 
+modeling layer on top of our ontology-based Dialogue 
+Management (DM) framework OntoVPA. We explain the rationale and 
+benefits behind the new language, and support our claims with 
+concrete reduced Level-of-Effort (LOE) numbers from two recent 
+OntoVPA projects.")
   @16:00:00 (:title "Research Paper: RacketLogger: Logging and Visualising Changes in DrRacket"
              :role (:talk)
              :speakers ("Turgut Reis Kursun"
