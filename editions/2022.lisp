@@ -113,7 +113,7 @@
 
 (define-person (:family-name "Durand"
                 :given-name "Irène Anne")
-  :role (:committee)
+  :role (:committee :speaker)
   :organization "LaBRI, University of Bordeaux")
 
 (define-person (:family-name "Moeller"
@@ -163,10 +163,6 @@ Currently, Strandh's projects are focused on the implementation of dynamic progr
                 :given-name "Michael")
   :role (:speaker))
 
-(define-person (:family-name  "Durand"
-                :given-name "Irène Anne")
-  :role (:speaker))
-
 (define-person (:family-name "Retzlaff"
                 :given-name "Max-Gerd")
   :description "This demonstrates that uLisp is not only fun but mature enough to be used for serious projects and commercial prototypes.
@@ -182,10 +178,6 @@ Currently, he works as a software developer at Datagraph, Berlin, developing tec
 Since 2004 Max has been working as an artist and participated with interactive installations in exhibitions in many European cities, with works in the collection of the ZKM Karlsruhe and on permanent display in the DASA Dortmund. More on www.retzlaff-wenger.com.
 "
   :role (:speaker :demo))
-
-(define-person (:family-name "Heisig"
-                :given-name "Marco")
-  :role (:speaker))
 
 (define-person (:family-name "Koestler"
                 :given-name  "Harald")
