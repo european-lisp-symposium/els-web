@@ -73,7 +73,7 @@
 
 (define-person (:family-name "Raskin"
                 :given-name "Mikhail")
-  :role (:committee)
+  :role (:committee :speaker)
   :organization "Technical University of Munich")
 
 (define-person (:family-name "Levine"
@@ -117,7 +117,7 @@
   :organization "LaBRI, University of Bordeaux")
 
 (define-person (:family-name "Moeller"
-                :given-name "Ralph")
+                :given-name "Ralf")
   :role (:committee)
   :organization "")
 
@@ -135,6 +135,11 @@
                 :given-name "Pascal")
   :role (:committee)
   :organization "Intel")
+
+(define-person (:family-name "Hester"
+                :given-name "Sky")
+  :role (:committee)
+  :organization "Private Consultant")
 
 (define-person (:family-name "Ritchie"
                 :given-name "Sam")
@@ -158,10 +163,6 @@ Currently, Strandh's projects are focused on the implementation of dynamic progr
                 :given-name "CoenCoen")
   :role (:speaker))
 
-
-(define-person (:family-name "Raskin"
-                :given-name "Michael")
-  :role (:speaker))
 
 (define-person (:family-name "Retzlaff"
                 :given-name "Max-Gerd")
