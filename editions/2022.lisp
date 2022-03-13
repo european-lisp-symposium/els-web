@@ -302,7 +302,12 @@ For the purpose of this paper, an environment is a mapping (or several such mapp
 In this paper, we propose a replacement for the environment protocol documented in the book ``Common Lisp the Language, second edition'' by Guy Steele. Rather than returning multiple values as the functions in that protocol do, the protocol suggested in this paper is designed so that functions return instances of standard classes. Accessor functions on those instances supply the information needed by a compiler or any other code walker application.
 
 The advantage of our approach is that a protocol based on generic functions and standard classes is easier to extend in backward-compatible ways than the previous protocol, so that implementations can define additional functionality on these objects. Furthermore, CLOS features such as auxiliary methods can be used on
-these objects, making it possible to extend or override functionality provided by the protocol, for implementation-specific purposes.")
+these objects, making it possible to extend or override functionality provided by the protocol, for implementation-specific purposes.
+
+Bio: 
+Recently retired, Robert Strandh can look back at a lifelongexperience in computer science and software development both in academia and industry, from 5 countries on 4 continents.
+
+Currently, Strandh's projects are focused on the implementation of dynamic programming languages, as well as on operating-system technology in view of progress in computer and software technology during the past few decades.")
   @14:30:00 (:title "Demo: IoT devices and embedded systems with uLisp"
              :speakers ("Max-Gerd Retzlaff")
              :role (:demo)
