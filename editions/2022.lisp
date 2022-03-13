@@ -368,7 +368,7 @@ Julia is a recent programming language that targets some of the application area
 
 A crucial element is a bootstrapping technique that can handle these modules.  In this spirit, we have developed several modules, including an implementation of CLOS which is also an important element of bootstrapping.  Lately, we have increased our level of ambition in that we want to extract those modules as separate (and separately maintained) repositories, which requires us to deal with code during bootstrapping that was not specifically written for SICL.
 
-In our talk, we describe this evolution of ambition, and its consequences to bootstrapping, in more detail.  We also give an overview of several new techniques we created, some of which have been published (at ICL and ELS) and some of which have not.  Finally, we discuss the future of the project, and other projects for which we imagine SICL to be a base.")
+In our talk, we describe this evolution of ambition, and its consequences to bootstrapping, in more detail.  We also give an overview of several new techniques we created, some of which have been published (at ILC and ELS) and some of which have not.  Finally, we discuss the future of the project, and other projects for which we imagine SICL to be a base.")
   @11:30:00 (:title "SICL demo"
              :role (:demo))
   @12:00:00 (:title "Lunch"
