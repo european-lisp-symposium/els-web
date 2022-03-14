@@ -216,6 +216,10 @@ Since 2004 Max has been working as an artist and participated with interactive i
                 :given-name  "Coen")
   :role (:speaker))
 
+(define-person (:family-name "Muñoz"
+                :given-name "Fermin")
+  :roll (:speaker))
+
 (define-location "FEUP, Universidade do Porto"
   :role (:conference)
   :photo "https://2022.programming-conference.org/getImage/carousel/Puente_Don_Luis_I%252C_Oporto%252C_Portugal%252C_2012-05-09%252C_DD_13.JPG?1616701137000"
@@ -373,7 +377,9 @@ In our talk, we describe this evolution of ambition, and its consequences to boo
              :role (:demo))
   @12:00:00 (:title "Lunch"
              :role (:break))
-  @13:30:30 (:title "TBA")
+  @13:30:30 (:title "CEDAR"
+             :speakers ("Fermin Muñoz")
+             :roll (:demo))
   @14:00:00 (:title "Building SICMUtils, the Atelier of Abstractions"
              :speakers ("Sam Ritchie")
              :role (:keynote :demo)
