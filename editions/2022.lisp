@@ -218,6 +218,9 @@ Since 2004 Max has been working as an artist and participated with interactive i
 
 (define-person (:family-name "Muñoz"
                 :given-name "Fermin")
+  :description "Bio: My name is Fermin MF, I work as a Common Lisp engineer at RavenPack where my main focus is to maintain and develop new features for the RavenPack API that our clients use to access our data. 
+  In my spare time, I develop Free Software in gitlab, mainly Emacs packages (like maxima.el) and Common Lisp software (like CEDAR and actor).
+  Some of my non-tech interests are chess, history and Chinese martial arts."
   :roll (:speaker))
 
 (define-location "FEUP, Universidade do Porto"
@@ -377,8 +380,13 @@ In our talk, we describe this evolution of ambition, and its consequences to boo
              :role (:demo))
   @12:00:00 (:title "Lunch"
              :role (:break))
-  @13:30:30 (:title "CEDAR"
+  @13:30:30 (:title "CEDAR: Emacs in Common Lisp"
              :speakers ("Fermin Muñoz")
+             :description "CEDAR is a project that started from the fork of lice which was an Emacs like editor develop by Shawn Betts (sabetts) from 2005 to 2007. The core idea of the project remains similar, instead of creating an Emacs like editor (like lem or Second-Climacs) the goal is to achieve 100%~ API compatibility with the GNU Emacs editor, what this mean is that a package (or .el file) should work almost identical in both editors, which will give us access to MELPA and ELPA packages(the Emacs internal package should already be in Common Lisp).
+
+Bio: My name is Fermin MF, I work as a Common Lisp engineer at RavenPack where my main focus is to maintain and develop new features for the RavenPack API that our clients use to access our data. 
+  In my spare time, I develop Free Software in gitlab, mainly Emacs packages (like maxima.el) and Common Lisp software (like CEDAR and actor).
+  Some of my non-tech interests are chess, history and Chinese martial arts."
              :roll (:demo))
   @14:00:00 (:title "Building SICMUtils, the Atelier of Abstractions"
              :speakers ("Sam Ritchie")
