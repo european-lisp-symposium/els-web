@@ -218,7 +218,7 @@ Since 2004 Max has been working as an artist and participated with interactive i
 
 (define-person (:family-name "Muñoz"
                 :given-name "Fermin")
-  :description "Bio: My name is Fermin MF, I work as a Common Lisp engineer at RavenPack where my main focus is to maintain and develop new features for the RavenPack API that our clients use to access our data. 
+  :description "Bio: My name is Fermin MF, I work as a Common Lisp engineer at RavenPack where my main focus is to maintain and develop new features for the RavenPack API that our clients use to access our data.
   In my spare time, I develop Free Software in gitlab, mainly Emacs packages (like maxima.el) and Common Lisp software (like CEDAR and actor).
   Some of my non-tech interests are chess, history and Chinese martial arts."
   :roll (:speaker))
@@ -248,6 +248,10 @@ registration must be done through their <a href=\"https://www.last2ticket.com/en
 (define-sponsor siscog
   :website "https://www.siscog.pt/"
   :logo "../static/logos/siscog.png")
+
+(define-sponsor ravenpack
+  :website "https://www.ravenpack.com/"
+  :logo "../static/logos/ravenpack.jpg")
 
 (define-sponsor acm
   :website "http://www.sigplan.org/"
@@ -311,7 +315,7 @@ In this paper, we propose a replacement for the environment protocol documented 
 The advantage of our approach is that a protocol based on generic functions and standard classes is easier to extend in backward-compatible ways than the previous protocol, so that implementations can define additional functionality on these objects. Furthermore, CLOS features such as auxiliary methods can be used on
 these objects, making it possible to extend or override functionality provided by the protocol, for implementation-specific purposes.
 
-Bio: 
+Bio:
 Recently retired, Robert Strandh can look back at a lifelongexperience in computer science and software development both in academia and industry, from 5 countries on 4 continents.
 
 Currently, Strandh's projects are focused on the implementation of dynamic programming languages, as well as on operating-system technology in view of progress in computer and software technology during the past few decades.")
@@ -384,7 +388,7 @@ In our talk, we describe this evolution of ambition, and its consequences to boo
              :speakers ("Fermin Muñoz")
              :description "CEDAR is a project that started from the fork of lice which was an Emacs like editor develop by Shawn Betts (sabetts) from 2005 to 2007. The core idea of the project remains similar, instead of creating an Emacs like editor (like lem or Second-Climacs) the goal is to achieve 100%~ API compatibility with the GNU Emacs editor, what this mean is that a package (or .el file) should work almost identical in both editors, which will give us access to MELPA and ELPA packages(the Emacs internal package should already be in Common Lisp).
 
-Bio: My name is Fermin MF, I work as a Common Lisp engineer at RavenPack where my main focus is to maintain and develop new features for the RavenPack API that our clients use to access our data. 
+Bio: My name is Fermin MF, I work as a Common Lisp engineer at RavenPack where my main focus is to maintain and develop new features for the RavenPack API that our clients use to access our data.
   In my spare time, I develop Free Software in gitlab, mainly Emacs packages (like maxima.el) and Common Lisp software (like CEDAR and actor).
   Some of my non-tech interests are chess, history and Chinese martial arts."
              :roll (:demo))
