@@ -266,7 +266,7 @@ registration must be done through their <a href=\"https://www.last2ticket.com/en
 
 ;;; Programme
 
-(define-programme-day @2022-03-21T00:00:00+01:00
+(define-programme-day @2022-03-21T00:00:00+00:00
   @08:30:00 (:title "Registration, badges, meet and greet"
              :role (:organization))
   @09:00:00 (:title "Welcome Message"
@@ -355,7 +355,7 @@ We conclude with a performance evaluation for several example programs, and show
   @16:30:00 (:title "Enlightening Lightning Talks"
              :role (:talk)))
 
-(define-programme-day @2022-03-22T00:00:00+01:00
+(define-programme-day @2022-03-22T00:00:00+00:00
   @08:30:00 (:title "Registration, badges, meet and greet"
              :role (:organization))
   @09:00:00 (:title "Research Paper: Open Closures: Disclosing lambda's inner monomaniac object!"
