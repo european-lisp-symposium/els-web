@@ -267,14 +267,12 @@ registration must be done through their <a href=\"https://www.last2ticket.com/en
              :role (:organization))
   @09:00:00 (:title "Welcome Message"
              :role (:organization))
-  @09:15:00 (:title "Research Paper: Open Closures: Disclosing lambda's inner monomaniac object!"
+  @09:15:00 (:title "Research Paper: Transpiling Python to Julia using PyJL"
              :role (:talk)
-             :speakers ("Stefan Monnier")
-             :description "While folklore teaches us that closures and objects are two sides of the same coin, they remain quite different in practice, most notably because closures are opaque, the only supported operation being to call them.
-
-In this article we discuss a few cases where we need functions to be less opaque, and propose to satisfy this need by extending our beloved $\lambda$ so as to expose as sorts of record fields some of the variables it captures. These \emph{open closures} are close relatives of CLOS's \emph{funcallable objects} as well as of the \emph{function objects} of traditional object-oriented languages like Java, except that they are functions made to behave like objects rather than the reverse.
-
-We present the design and implementation of such a feature in the context of Emacs Lisp.")
+             :speakers ("Miguel Marcelino" "António Leitão")
+             :description "Transpilers translate between high-level programming languages, providing an efficient alternative to manually porting software from one language to another. With the rise of new programming languages, transpilers are ideal tools to assist the conversion of libraries written in more established programming languages to newer and less popular ones. This process facilitates language adoption and fosters their development.
+There are currently many transpilation tools available, however, only some focus on producing human-readable and maintainable code, and only smaller set of these generate code that is indistinguishable from human-written programs. The main benefit is that the generated code can easily be understood and modified by programmers, resulting in improved maintainability.
+Julia is a recent programming language that targets some of the application areas of the widely popular Python language. However, the number of libraries available in Julia is still lower than what is provided in Python. We propose a solution that involves the development of a transpiler to generate human-readable Julia code from Python code, to speedup the translation of Python libraries to Julia.")
   @10:00:00 (:title "Coffee Break"
              :role (:break))
   @10:30:00 (:title "Lisp as Renaissance Workshop: A Lispy Tour through Mathematical Physics"
@@ -356,12 +354,14 @@ We conclude with a performance evaluation for several example programs, and show
 (define-programme-day @2022-03-22T00:00:00+01:00
   @08:30:00 (:title "Registration, badges, meet and greet"
              :role (:organization))
-  @09:00:00 (:title "Research Paper: Transpiling Python to Julia using PyJL"
+  @09:00:00 (:title "Research Paper: Open Closures: Disclosing lambda's inner monomaniac object!"
              :role (:talk)
-             :speakers ("Miguel Marcelino" "António Leitão")
-             :description "Transpilers translate between high-level programming languages, providing an efficient alternative to manually porting software from one language to another. With the rise of new programming languages, transpilers are ideal tools to assist the conversion of libraries written in more established programming languages to newer and less popular ones. This process facilitates language adoption and fosters their development.
-There are currently many transpilation tools available, however, only some focus on producing human-readable and maintainable code, and only smaller set of these generate code that is indistinguishable from human-written programs. The main benefit is that the generated code can easily be understood and modified by programmers, resulting in improved maintainability.
-Julia is a recent programming language that targets some of the application areas of the widely popular Python language. However, the number of libraries available in Julia is still lower than what is provided in Python. We propose a solution that involves the development of a transpiler to generate human-readable Julia code from Python code, to speedup the translation of Python libraries to Julia.")
+             :speakers ("Stefan Monnier")
+             :description "While folklore teaches us that closures and objects are two sides of the same coin, they remain quite different in practice, most notably because closures are opaque, the only supported operation being to call them.
+
+In this article we discuss a few cases where we need functions to be less opaque, and propose to satisfy this need by extending our beloved $\lambda$ so as to expose as sorts of record fields some of the variables it captures. These \emph{open closures} are close relatives of CLOS's \emph{funcallable objects} as well as of the \emph{function objects} of traditional object-oriented languages like Java, except that they are functions made to behave like objects rather than the reverse.
+
+We present the design and implementation of such a feature in the context of Emacs Lisp.")
   @09:30:00 (:title "Demo: ETAP: Experimental Typesetting Algorithms Platform"
              :speakers ("Didier Verna")
              :role (:demo)
