@@ -12,9 +12,21 @@
 (define-date "Conference end" @2022-03-22)
 
 (define-text :announcement
+  (:div :class "announcement"
+        "The conference is being streamed on "
+        (:a :href "https://twitch.tv/elsconf" "Twitch")
+        ". More info below.")
   (:div :class "announcement" "<a href=\"https://www.last2ticket.com/en/embed/e/4173/s/45625/programming-2022\">Register</a> now!")
   (:div :class "announcement" "Programme available now!")
   #+()(:div :class "announcement" "Submission deadline extended by one week!"))
+
+(define-text :additional-info
+  (:p "There are several ways for you to join ELS online:"
+      (:ul (:li "<b>Via Twitch</b>: You join <a href=\"https://twitch.tv/elsconf\">https://twitch.tv/elsconf</a> and enjoy the show.  If you have a Twitch account, you can also use the text chat to communicate with other participants or the authors.  You can also follow the elsconf user on Twitch to receive a notification when each day's broadcast starts."))
+      (:ul (:li "<b>Via IRC</b>: You join the #els2022 channel on <a href=\"https://web.libera.chat/#els2022\">libera.chat</a>.  Messages from this channel are automatically forwarded to the Twitch chat, and vice versa."))
+      (:ul (:li "<b>Via VLC</b>: If you want to avoid Twitch, you can also receive the live stream via <a href=\"https://www.videolan.org/vlc/\">VLC</a>.  Using VLC and IRC, you can join ELS using only free software!"))
+      #+()(:ul (:li "<b>Via Jitsi</b>: The coffee breaks, lunch breaks, and social gatherings in the evenings take place on Jitsi (a video chat application that runs in any browser).  You can see a list of available Jitsi rooms <a href=\"https://els2021.common-lisp.net/everywhere/\">here</a>.")))
+  (:p "The timezone of our schedule is UTC, but the video of the streams will stay online for you to watch later, too. See you online!"))
 
 (define-text :submissions
 
