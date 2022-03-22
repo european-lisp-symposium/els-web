@@ -16,8 +16,8 @@
         "The conference is being streamed on "
         (:a :href "https://twitch.tv/elsconf" "Twitch")
         ". More info below.")
-  (:div :class "announcement" "<a href=\"https://www.last2ticket.com/en/embed/e/4173/s/45625/programming-2022\">Register</a> now!")
-  (:div :class "announcement" "Programme available now!")
+  #+()(:div :class "announcement" "<a href=\"https://www.last2ticket.com/en/embed/e/4173/s/45625/programming-2022\">Register</a> now!")
+  #+()(:div :class "announcement" "Programme available now!")
   #+()(:div :class "announcement" "Submission deadline extended by one week!"))
 
 (define-text :additional-info
@@ -245,7 +245,7 @@ Since 2004 Max has been working as an artist and participated with interactive i
             :country "Portugal")
   :map T)
 
-(define-text :registration
+#+()(define-text :registration
       (:p "Since we are co-locating with &lt;Programming&gt; this year,
 registration must be done through their <a href=\"https://www.last2ticket.com/en/embed/e/4173/s/45625/programming-2022\">system</a>."))
 
