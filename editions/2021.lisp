@@ -12,9 +12,10 @@
 (define-date "Conference end" @2021-05-04)
 
 (define-text :announcement
-  (:div :class "announcement"
+  (:div :class "announcement" "The conference is over!")
+  #+()(:div :class "announcement"
         "The " (:a :href "../static/proceedings/2021.pdf" "proceedings") " are now online!")
-  (:div :class "announcement"
+  #+()(:div :class "announcement"
         "The conference is being streamed on "
         (:a :href "https://twitch.tv/elsconf" "Twitch")
         ". More info below.")
@@ -28,7 +29,7 @@
   #+()(:div :class "announcement" "First invited speaker confirmed! XXX.")
   #+()(:div :class "announcement" "The conference is being organized. Stay tuned for updates!"))
 
-(define-text :additional-info
+#+()(define-text :additional-info
   (:p "There are several ways for you to join ELS:"
       (:ul (:li "<b>Via Twitch</b>: You join <a href=\"https://twitch.tv/elsconf\">https://twitch.tv/elsconf</a> and enjoy the show.  If you have a Twitch account, you can also use the text chat to communicate with other participants or the authors.  You can also follow the elsconf user on Twitch to receive a notification when each day's broadcast starts."))
       (:ul (:li "<b>Via IRC</b>: You join the #elsconf channel on <a href=\"https://freenode.net\">Freenode</a>.  Messages from this channel are automatically forwarded to the Twitch chat, and vice versa.  Note that /me messages don't work."))

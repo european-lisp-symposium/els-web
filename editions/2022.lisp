@@ -12,11 +12,24 @@
 (define-date "Conference end" @2022-03-22)
 
 (define-text :announcement
-  (:div :class "announcement" "<a href=\"https://www.last2ticket.com/en/embed/e/4173/s/45625/programming-2022\">Register</a> now!")
-  (:div :class "announcement" "Programme available now!")
+  (:div :class "announcement" "The conference is over!")
+  #+()(:div :class "announcement"
+        "The conference is being streamed on "
+        (:a :href "https://twitch.tv/elsconf" "Twitch")
+        ". More info below.")
+  #+()(:div :class "announcement" "<a href=\"https://www.last2ticket.com/en/embed/e/4173/s/45625/programming-2022\">Register</a> now!")
+  #+()(:div :class "announcement" "Programme available now!")
   #+()(:div :class "announcement" "Submission deadline extended by one week!"))
 
-(define-text :submissions
+#+()(define-text :additional-info
+  (:p "There are several ways for you to join ELS online:"
+      (:ul (:li "<b>Via Twitch</b>: You join <a href=\"https://twitch.tv/elsconf\">https://twitch.tv/elsconf</a> and enjoy the show.  If you have a Twitch account, you can also use the text chat to communicate with other participants or the authors.  You can also follow the elsconf user on Twitch to receive a notification when each day's broadcast starts."))
+      (:ul (:li "<b>Via IRC</b>: You join the #els2022 channel on <a href=\"https://web.libera.chat/#els2022\">libera.chat</a>.  Messages from this channel are automatically forwarded to the Twitch chat, and vice versa."))
+      (:ul (:li "<b>Via VLC</b>: If you want to avoid Twitch, you can also receive the live stream via <a href=\"https://www.videolan.org/vlc/\">VLC</a>.  Using VLC and IRC, you can join ELS using only free software!"))
+      #+()(:ul (:li "<b>Via Jitsi</b>: The coffee breaks, lunch breaks, and social gatherings in the evenings take place on Jitsi (a video chat application that runs in any browser).  You can see a list of available Jitsi rooms <a href=\"https://els2021.common-lisp.net/everywhere/\">here</a>.")))
+  (:p "The timezone of our schedule is UTC, but the video of the streams will stay online for you to watch later, too. See you online!"))
+
+#+()(define-text :submissions
 
   (:p "Submission topics include, but are not limited to:")
 
@@ -218,6 +231,9 @@ Since 2004 Max has been working as an artist and participated with interactive i
 
 (define-person (:family-name "Muñoz"
                 :given-name "Fermin")
+  :description "Bio: My name is Fermin MF, I work as a Common Lisp engineer at RavenPack where my main focus is to maintain and develop new features for the RavenPack API that our clients use to access our data.
+  In my spare time, I develop Free Software in gitlab, mainly Emacs packages (like maxima.el) and Common Lisp software (like CEDAR and actor).
+  Some of my non-tech interests are chess, history and Chinese martial arts."
   :roll (:speaker))
 
 (define-location "FEUP, Universidade do Porto"
@@ -230,7 +246,7 @@ Since 2004 Max has been working as an artist and participated with interactive i
             :country "Portugal")
   :map T)
 
-(define-text :registration
+#+()(define-text :registration
       (:p "Since we are co-locating with &lt;Programming&gt; this year,
 registration must be done through their <a href=\"https://www.last2ticket.com/en/embed/e/4173/s/45625/programming-2022\">system</a>."))
 
@@ -246,6 +262,10 @@ registration must be done through their <a href=\"https://www.last2ticket.com/en
   :website "https://www.siscog.pt/"
   :logo "../static/logos/siscog.png")
 
+(define-sponsor ravenpack
+  :website "https://www.ravenpack.com/"
+  :logo "../static/logos/ravenpack.jpg")
+
 (define-sponsor acm
   :website "http://www.sigplan.org/"
   :logo "../static/logos/acm.svg")
@@ -259,19 +279,17 @@ registration must be done through their <a href=\"https://www.last2ticket.com/en
 
 ;;; Programme
 
-(define-programme-day @2022-03-21T00:00:00+01:00
+(define-programme-day @2022-03-21T00:00:00+00:00
   @08:30:00 (:title "Registration, badges, meet and greet"
              :role (:organization))
   @09:00:00 (:title "Welcome Message"
              :role (:organization))
-  @09:15:00 (:title "Research Paper: Open Closures: Disclosing lambda's inner monomaniac object!"
+  @09:15:00 (:title "Research Paper: Transpiling Python to Julia using PyJL"
              :role (:talk)
-             :speakers ("Stefan Monnier")
-             :description "While folklore teaches us that closures and objects are two sides of the same coin, they remain quite different in practice, most notably because closures are opaque, the only supported operation being to call them.
-
-In this article we discuss a few cases where we need functions to be less opaque, and propose to satisfy this need by extending our beloved $\lambda$ so as to expose as sorts of record fields some of the variables it captures. These \emph{open closures} are close relatives of CLOS's \emph{funcallable objects} as well as of the \emph{function objects} of traditional object-oriented languages like Java, except that they are functions made to behave like objects rather than the reverse.
-
-We present the design and implementation of such a feature in the context of Emacs Lisp.")
+             :speakers ("Miguel Marcelino" "António Leitão")
+             :description "Transpilers translate between high-level programming languages, providing an efficient alternative to manually porting software from one language to another. With the rise of new programming languages, transpilers are ideal tools to assist the conversion of libraries written in more established programming languages to newer and less popular ones. This process facilitates language adoption and fosters their development.
+There are currently many transpilation tools available, however, only some focus on producing human-readable and maintainable code, and only smaller set of these generate code that is indistinguishable from human-written programs. The main benefit is that the generated code can easily be understood and modified by programmers, resulting in improved maintainability.
+Julia is a recent programming language that targets some of the application areas of the widely popular Python language. However, the number of libraries available in Julia is still lower than what is provided in Python. We propose a solution that involves the development of a transpiler to generate human-readable Julia code from Python code, to speedup the translation of Python libraries to Julia.")
   @10:00:00 (:title "Coffee Break"
              :role (:break))
   @10:30:00 (:title "Lisp as Renaissance Workshop: A Lispy Tour through Mathematical Physics"
@@ -308,7 +326,7 @@ In this paper, we propose a replacement for the environment protocol documented 
 The advantage of our approach is that a protocol based on generic functions and standard classes is easier to extend in backward-compatible ways than the previous protocol, so that implementations can define additional functionality on these objects. Furthermore, CLOS features such as auxiliary methods can be used on
 these objects, making it possible to extend or override functionality provided by the protocol, for implementation-specific purposes.
 
-Bio: 
+Bio:
 Recently retired, Robert Strandh can look back at a lifelongexperience in computer science and software development both in academia and industry, from 5 countries on 4 continents.
 
 Currently, Strandh's projects are focused on the implementation of dynamic programming languages, as well as on operating-system technology in view of progress in computer and software technology during the past few decades.")
@@ -350,15 +368,17 @@ We conclude with a performance evaluation for several example programs, and show
   @16:30:00 (:title "Enlightening Lightning Talks"
              :role (:talk)))
 
-(define-programme-day @2022-03-22T00:00:00+01:00
+(define-programme-day @2022-03-22T00:00:00+00:00
   @08:30:00 (:title "Registration, badges, meet and greet"
              :role (:organization))
-  @09:00:00 (:title "Research Paper: Transpiling Python to Julia using PyJL"
+  @09:00:00 (:title "Research Paper: Open Closures: Disclosing lambda's inner monomaniac object!"
              :role (:talk)
-             :speakers ("Miguel Marcelino" "António Leitão")
-             :description "Transpilers translate between high-level programming languages, providing an efficient alternative to manually porting software from one language to another. With the rise of new programming languages, transpilers are ideal tools to assist the conversion of libraries written in more established programming languages to newer and less popular ones. This process facilitates language adoption and fosters their development.
-There are currently many transpilation tools available, however, only some focus on producing human-readable and maintainable code, and only smaller set of these generate code that is indistinguishable from human-written programs. The main benefit is that the generated code can easily be understood and modified by programmers, resulting in improved maintainability.
-Julia is a recent programming language that targets some of the application areas of the widely popular Python language. However, the number of libraries available in Julia is still lower than what is provided in Python. We propose a solution that involves the development of a transpiler to generate human-readable Julia code from Python code, to speedup the translation of Python libraries to Julia.")
+             :speakers ("Stefan Monnier")
+             :description "While folklore teaches us that closures and objects are two sides of the same coin, they remain quite different in practice, most notably because closures are opaque, the only supported operation being to call them.
+
+In this article we discuss a few cases where we need functions to be less opaque, and propose to satisfy this need by extending our beloved $\lambda$ so as to expose as sorts of record fields some of the variables it captures. These \emph{open closures} are close relatives of CLOS's \emph{funcallable objects} as well as of the \emph{function objects} of traditional object-oriented languages like Java, except that they are functions made to behave like objects rather than the reverse.
+
+We present the design and implementation of such a feature in the context of Emacs Lisp.")
   @09:30:00 (:title "Demo: ETAP: Experimental Typesetting Algorithms Platform"
              :speakers ("Didier Verna")
              :role (:demo)
@@ -377,8 +397,13 @@ In our talk, we describe this evolution of ambition, and its consequences to boo
              :role (:demo))
   @12:00:00 (:title "Lunch"
              :role (:break))
-  @13:30:30 (:title "CEDAR"
+  @13:30:30 (:title "CEDAR: Emacs in Common Lisp"
              :speakers ("Fermin Muñoz")
+             :description "CEDAR is a project that started from the fork of lice which was an Emacs like editor develop by Shawn Betts (sabetts) from 2005 to 2007. The core idea of the project remains similar, instead of creating an Emacs like editor (like lem or Second-Climacs) the goal is to achieve 100%~ API compatibility with the GNU Emacs editor, what this mean is that a package (or .el file) should work almost identical in both editors, which will give us access to MELPA and ELPA packages(the Emacs internal package should already be in Common Lisp).
+
+Bio: My name is Fermin MF, I work as a Common Lisp engineer at RavenPack where my main focus is to maintain and develop new features for the RavenPack API that our clients use to access our data.
+  In my spare time, I develop Free Software in gitlab, mainly Emacs packages (like maxima.el) and Common Lisp software (like CEDAR and actor).
+  Some of my non-tech interests are chess, history and Chinese martial arts."
              :roll (:demo))
   @14:00:00 (:title "Building SICMUtils, the Atelier of Abstractions"
              :speakers ("Sam Ritchie")
