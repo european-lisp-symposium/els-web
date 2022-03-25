@@ -414,4 +414,4 @@ We have evaluated our plugin by creating a visualisation for the logged changes 
 
   )
 
-#+()(define-proceedings "../static/proceedings/2022.pdf")
+(define-proceedings "../static/proceedings/2022.pdf")
