@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE dblpsubmission SYSTEM "dblpsubmission.dtd">
+<?xml-stylesheet type="text/xsl" href="dblpsubmission.xsl" ?>
+<dblpsubmission>
+  <proceedings>
+    <key>ELS</key>
+    <title>ELS 2022 - 15th European Lisp Symposium</title>
+    <editor>Jim Newton</editor>
+    <publisher>EPITA</publisher>
+    <year>2022</year>
+    <isbn>978-2-9557474-6-9</isbn>
+    <issn>2677-3465</issn>
+    <conf>
+      <acronym>ELS</acronym>
+      <number>15</number>
+      <location>Porto, Portugal</location>
+      <date>April 21-22, 2022</date>
+      <url>https://european-lisp-symposium.org/2022</url>
+    </conf>
+    <toc>
+      <section>Technical Papers</section>
+      <publ>
+	    <author>Open Closures</author>
+	    <title>Open Closures</title>
+	    <pages>6-13</pages>
+	    <doi>10.5281/zenodo.6228797</doi>
+      </publ>
+      <publ>
+	    <author>Michael Raskin</author>
+	    <title>QueryFS: compiling queries to define a filesystem</title>
+	    <pages>14-19</pages>
+	    <doi>10.5281/zenodo.6308532</doi>
+      </publ>
+      <publ>
+	    <author>Robert Strandh</author>
+	    <author>Irène Durand</author>
+	    <title>A CLOS protocol for lexical environments</title>
+	    <pages>20-26</pages>
+	    <doi>10.5281/zenodo.6331519</doi>
+      </publ>
+      <publ>
+	    <author>Marco Heisig</author>
+	    <author>Harald Köstler</author>
+	    <title>Closing the Performance Gap Between Lisp and C</title>
+	    <pages>27-33</pages>
+	    <doi>10.5281/zenodo.6335627</doi>
+      </publ>
+      <publ>
+	    <author>Andrew Sengul</author>
+	    <title>April: APL Compiling to Common Lisp</title>
+	    <pages>34-38</pages>
+	    <doi>10.5281/zenodo.6381963</doi>
+      </publ>
+      <publ>
+	    <author>Miguel Marcelino</author>
+	    <author>António Menezes Leitão</author>
+	    <title>Transpiling Python to Julia using PyJL</title>
+	    <pages>40-47</pages>
+	    <doi>10.5281/zenodo.6332890</doi>
+      </publ>
+      <publ>
+	    <author>Didier Verna</author>
+	    <title>ETAP: Experimental Typesetting Algorithms Platform</title>
+	    <pages>48-52</pages>
+	    <doi>10.5281/zenodo.6334248</doi>
+      </publ>
+      <publ>
+	    <author>Michael Wessel</author>
+	    <title>An Ontology-Based Dialogue Management Framework for Virtual Personal Assistants in Common Lisp</title>
+	    <pages>53-60</pages>
+	    <doi>10.5281/zenodo.6335631</doi>
+      </publ>
+      <publ>
+	    <author>Turgut Reis Kursun</author>
+	    <author>Quentin Stiévenart</author>
+	    <author>Jens Van der Plas</author>
+	    <author>Coen De Roover</author>
+	    <title>RacketLogger: Logging and Visualising Changes in DrRacket</title>
+	    <pages>61-68</pages>
+	    <doi>10.5281/zenodo.6326894</doi>
+      </publ>
+    </toc>
+  </proceedings>
+</dblpsubmission>
