@@ -82,9 +82,12 @@
             :country "Nederlands")
   :map T)
 
-#+()(define-text :registration
-      (:p "Since we are co-locating with &lt;Programming&gt; this year,
-registration must be done through their <a href=\"https://www.last2ticket.com/en/embed/e/4173/s/45625/programming-2022\">system</a>."))
+(define-text :tourism
+  (:p "Please note! April 27th in the Nederlands is King's Day,
+the national holiday, a renowned and very colorful event, especially in
+Amsterdam. This is a great opportunity for those who'd wish to combine ELS
+with some tourism...")
+  (:p "More information on King's Day <a target=\"_blank\" href=\"https://www.iamsterdam.com/en/see-and-do/whats-on/major-events-and-celebrations/kings-day\">here</a>."))
 
 (define-sponsor epita
   :website "http://www.epita.fr/"
