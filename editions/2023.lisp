@@ -93,6 +93,10 @@ with some tourism...")
   :website "http://www.epita.fr/"
   :logo "../static/logos/epita.png")
 
+(define-sponsor diro
+  :website "https://diro.umontreal.ca/"
+  :logo "../static/2023/diro.png")
+
 #+()(define-sponsor franz
   :website "http://www.franz.com/"
   :logo "../static/logos/franz.png")
