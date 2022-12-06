@@ -2,10 +2,10 @@
 (define-edition "2023")
 (in-package "2023")
 
-;;(define-date "Submission deadline" @2022-01-23)
+(define-date "Submission deadline" @2023-02-26)
 ;;(define-date "*** Extended deadline ***" @2022-01-30)
-;;(define-date "Author notification" @2022-02-21)
-;;(define-date "Final papers" @2022-03-07)
+(define-date "Author notification" @2023-03-26)
+(define-date "Final papers" @2023-04-09)
 ;;(define-date "Early registration deadline" @2020-04-01)
 
 (define-date "Conference start" @2023-04-24)
@@ -22,7 +22,7 @@
       #+()(:ul (:li "<b>Via Jitsi</b>: The coffee breaks, lunch breaks, and social gatherings in the evenings take place on Jitsi (a video chat application that runs in any browser).  You can see a list of available Jitsi rooms <a href=\"https://els2023.common-lisp.net/everywhere/\">here</a>.")))
   (:p "The timezone of our schedule is UTC, but the video of the streams will stay online for you to watch later, too. See you online!"))
 
-#+()(define-text :submissions
+(define-text :submissions
 
   (:p "Submission topics include, but are not limited to:")
 
@@ -39,7 +39,7 @@
 
   (:ul (:li "<b>Papers</b>: Technical papers of up to 8 pages that describe original results or explain known ideas in new and elegant ways.")
        (:li "<b>Demonstrations</b>: Abstracts of up to 4 pages for demonstrations of tools, libraries, and applications.")
-       (:li "<b>Tutorials</b>: Abstracts of up to 4 pages for in-depth presentations about topics of special interest for at least 90 minutes and up to 180 minutes."))
+       (:li "<b>Tutorials</b>: Abstracts of up to 4 pages for in-depth presentations about topics of special interest."))
 
   (:p "You can upload submissions on <a href=\"https://www.easychair.org/conferences/?conf=els2023\">EasyChair</a>.")
 
