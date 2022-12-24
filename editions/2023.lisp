@@ -97,6 +97,10 @@ with some tourism...")
   :website "https://diro.umontreal.ca/"
   :logo "../static/2023/diro.png")
 
+(define-sponsor mlp
+  :website "https://www.mlprograms.com/"
+  :logo "../static/2023/mlp.png")
+
 #+()(define-sponsor franz
   :website "http://www.franz.com/"
   :logo "../static/logos/franz.png")
