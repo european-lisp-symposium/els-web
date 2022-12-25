@@ -101,7 +101,7 @@ with some tourism...")
   :website "https://www.mlprograms.com/"
   :logo "../static/2023/mlp.png")
 
-#+()(define-sponsor franz
+(define-sponsor franz
   :website "http://www.franz.com/"
   :logo "../static/logos/franz.png")
 
