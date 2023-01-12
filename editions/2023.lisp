@@ -38,8 +38,10 @@
   (:p "We invite submissions in the following forms:")
 
   (:ul (:li "<b>Papers</b>: Technical papers of up to 8 pages that describe original results or explain known ideas in new and elegant ways.")
+       (:li "<b>Tutorials</b>: Abstracts of up to 4 pages for in-depth
+       presentations about topics of special interest.")
        (:li "<b>Demonstrations</b>: Abstracts of up to 4 pages for demonstrations of tools, libraries, and applications.")
-       (:li "<b>Tutorials</b>: Abstracts of up to 4 pages for in-depth presentations about topics of special interest."))
+       (:li "<b>Experience reports</b>: papers of up to 6 pages describing a Lisp success story and/or analyzing obstacles that have kept it from working in practice."))
 
   (:p "You can upload submissions on <a href=\"https://www.easychair.org/conferences/?conf=els2023\">EasyChair</a>.")
 
