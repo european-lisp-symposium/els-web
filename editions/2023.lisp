@@ -12,7 +12,8 @@
 (define-date "Conference end" @2023-04-25)
 
 (define-text :announcement
-  (:div :class "announcement" "Conference dates announced!"))
+    (:div :class "announcement"
+          "First keynote speaker announced: Gerald Jay Sussman, MIT, MA, USA"))
 
 #+()(define-text :additional-info
   (:p "There are several ways for you to join ELS online:"
