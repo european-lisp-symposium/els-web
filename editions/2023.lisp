@@ -74,6 +74,90 @@
   :organization "Machine Learning Programs"
   :address (:country "Nederlands"))
 
+(define-person (:family-name "Evenson"
+                :given-name "Mark")
+  :role (:committee)
+  :organisation "RavenPack")
+
+(define-person (:family-name "Heisig"
+                :given-name "Marco")
+  :role (:committee)
+  :organisation "Friedrich-Alexander-Universität Erlangen-Nürnberg"
+  :address (:country "Germany"))
+
+(define-person (:family-name "Dimitriou"
+                :given-name "Ioanna")
+  :role (:committee)
+  :organisation "Igalia S.L."
+  :address (:country "Spain, Germany"))
+
+(define-person (:family-name "Smith"
+                :given-name "Robert")
+  :role (:committee))
+
+(define-person (:family-name "Engdegård"
+                :given-name "Mattias")
+  :role (:committee))
+
+(define-person (:family-name "Feeley"
+                :given-name "Marc")
+  :role (:committee)
+  :organisation "Université de Montréal"
+  :address (:country "Canada"))
+
+(define-person (:family-name "Battyani"
+                :given-name "Marc")
+  :role (:committee)
+  :organisation "FractalConcept")
+
+(define-person (:family-name "Ruttenberg"
+                :given-name "Alan")
+  :role (:committee)
+  :organisation "National Center for Ontological Research"
+  :address (:country "USA"))
+
+(define-person (:family-name "Levine"
+                :given-name "Nick")
+  :role (:committee)
+  :organisation "Ravenbrook Ltd"
+  :address (:country "UK"))
+
+(define-person (:family-name "Courtès"
+                :given-name "Ludovic")
+  :role (:committee)
+  :organisation "Inria"
+  :address (:country "France"))
+
+(define-person (:family-name "Flatt"
+                :given-name "Matthew")
+  :role (:committee)
+  :organisation "University of Utah"
+  :address (:country "USA"))
+
+(define-person (:family-name "Durand"
+                :given-name "Irène")
+  :role (:committee)
+  :organisation "Université Bordeaux 1"
+  :address (:country "France"))
+
+(define-person (:family-name "McCarthy"
+                :given-name "Jay")
+  :role (:committee)
+  :organisation "Brigham Young University"
+  :address (:country "USA"))
+
+(define-person (:family-name "Bonnaire"
+                :given-name-"Sergeant Ambrose")
+  :role (:committee)
+  :organisation "Cisco")
+
+(define-person (:family-name "League"
+                :given-name "Christopher")
+  :role (:committee)
+  :organisation "Long Island University"
+  :address (:country "USA"))
+
+
 
 (define-location "Startup Village"
   :role (:conference)
