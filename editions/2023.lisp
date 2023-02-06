@@ -89,10 +89,11 @@
                 :given-name "Ioanna")
   :role (:committee)
   :organisation "Igalia S.L."
-  :address (:country "Spain, Germany"))
+  :address (:country "Germany"))
 
 (define-person (:family-name "Smith"
                 :given-name "Robert")
+  :organisation "HRL Laboratories"
   :role (:committee))
 
 (define-person (:family-name "Engdegård"
