@@ -77,7 +77,8 @@
 (define-person (:family-name "Evenson"
                 :given-name "Mark")
   :role (:committee)
-  :organisation "RavenPack")
+  :organisation "not.org"
+  :address (:country "Austria"))
 
 (define-person (:family-name "Heisig"
                 :given-name "Marco")
