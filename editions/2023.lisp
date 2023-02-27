@@ -204,9 +204,13 @@ with some tourism...")
   :website "https://www.ravenpack.com/"
   :logo "../static/logos/ravenpack.jpg")
 
-#+()(define-sponsor acm
+(define-sponsor sigplan
   :website "http://www.sigplan.org/"
-  :logo "../static/logos/acm.svg")
+  :logo "../static/logos/SIGPLAN.png")
+
+(define-sponsor acm
+  :website "http://www.acm.org/"
+  :logo "../static/logos/ACM.png")
 
 
 #+()(define-text :keynotes
