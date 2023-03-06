@@ -161,6 +161,55 @@
   :organisation "Long Island University"
   :address (:country "USA"))
 
+(define-person (:family-name "Sussman"
+                :given-name "Gerald J.")
+  :organisation "MIT CSAIL"
+  :address (:country "USA")
+  :role (:speaker :keynote)
+  :description "We have made amazing progress in the construction and
+    deployment of systems that do work originally thought to
+    require human-like intelligence.  On the symbolic side we
+    have world-champion Chess-playing and Go-playing systems.
+    We have deductive systems and algebraic manipulation systems
+    that exceed the capabilities of human mathematicians.  We
+    are now observing the rise of connectionist mechanisms that
+    appear to see and hear pretty well, and chatbots that appear
+    to have some impressive linguistic ability.  But there is a
+    serious problem.  The mechanisms that can distinguish
+    pictures of cats from pictures of dogs have no idea what a
+    cat or a dog is.  The chatbots have no idea what they are
+    talking about.  The algebraic systems do not understand
+    anything about the real physical world.  And no deontic
+    logic system has any idea about feelings and morality.
+
+    So what is the problem?  We generally do not know how
+    to combine systems so that a system that knows how to
+    solve problems of class A and another system that knows
+    how to solve problems of class B can be combined to
+    solve not just problems of class A or class B but can
+    solve problems that require both skills that are needed
+    for problems of class A and skills that are needed for
+    problems of class B.
+
+    Perhaps this is partly a problem of plumbing.  We do not
+    have linguistic structures that facilitate discovering and
+    building combinations.  This is a fundamental challenge for
+    the programming-language community.  We need appropriate
+    ideas for abstract plumbing fittings that enable this kind
+    of cooperation among disparate mechanisms.  For example, why
+    is the amazingly powerful tree exploration mechanism that is
+    used for games not also available, in the same system, to a
+    deductive engine that is being applied to a social
+    interaction problem?
+
+    I will attempt to elucidate this problem and perhaps point
+    at avenues of attack that we may work on together.")
+
+(define-person (:family-name "Hermans"
+                :given-name "Felienne ")
+  :organisation "Vrije Universiteit Amsterdam"
+  :address (:country "Nederlands")
+  :role (:speaker :keynote))
 
 
 (define-location "Startup Village"
@@ -179,6 +228,11 @@ the national holiday, a renowned and very colorful event, especially in
 Amsterdam. This is a great opportunity for those who'd wish to combine ELS
 with some tourism...")
   (:p "More information on King's Day <a target=\"_blank\" href=\"https://www.iamsterdam.com/en/see-and-do/whats-on/major-events-and-celebrations/kings-day\">here</a>."))
+
+(define-text :keynotes
+  (:ul
+   (:li (:b "Gerald J. Sussman" "Artificial Intelligence: a Problem of Plumbing?"))
+   (:li (:b "Felienne Hermans" "Gradual, Multi-Lingual, and Teacher-Centric Programming Education"))))
 
 (define-sponsor epita
   :website "http://www.epita.fr/"
