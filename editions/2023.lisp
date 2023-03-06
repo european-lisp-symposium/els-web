@@ -13,9 +13,7 @@
 
 (define-text :announcement
   (:div :class "announcement"
-        "Registration will open soon. Please be patient!")
-  (:div :class "announcement"
-        "First keynote speaker announced: Gerald Jay Sussman, MIT, MA, USA"))
+        "Registration will open soon. Please be patient!"))
 
 #+()(define-text :additional-info
   (:p "There are several ways for you to join ELS online:"
