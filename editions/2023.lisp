@@ -2,7 +2,7 @@
 (define-edition "2023")
 (in-package "2023")
 
-(define-date "Submission deadline" @2023-02-26)
+;;(define-date "Submission deadline" @2023-02-26)
 ;;(define-date "*** Extended deadline ***" @2022-01-30)
 (define-date "Author notification" @2023-03-26)
 (define-date "Final papers" @2023-04-09)
@@ -25,7 +25,7 @@
       #+()(:ul (:li "<b>Via Jitsi</b>: The coffee breaks, lunch breaks, and social gatherings in the evenings take place on Jitsi (a video chat application that runs in any browser).  You can see a list of available Jitsi rooms <a href=\"https://els2023.common-lisp.net/everywhere/\">here</a>.")))
   (:p "The timezone of our schedule is UTC, but the video of the streams will stay online for you to watch later, too. See you online!"))
 
-(define-text :submissions
+#+()(define-text :submissions
 
   (:p "Submission topics include, but are not limited to:")
 
