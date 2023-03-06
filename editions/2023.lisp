@@ -229,11 +229,6 @@ Amsterdam. This is a great opportunity for those who'd wish to combine ELS
 with some tourism...")
   (:p "More information on King's Day <a target=\"_blank\" href=\"https://www.iamsterdam.com/en/see-and-do/whats-on/major-events-and-celebrations/kings-day\">here</a>."))
 
-(define-text :keynotes
-  (:ul
-   (:li (:b "Gerald J. Sussman" "Artificial Intelligence: a Problem of Plumbing?"))
-   (:li (:b "Felienne Hermans" "Gradual, Multi-Lingual, and Teacher-Centric Programming Education"))))
-
 (define-sponsor epita
   :website "http://www.epita.fr/"
   :logo "../static/logos/epita.png")
@@ -267,11 +262,14 @@ with some tourism...")
   :logo "../static/logos/ACM.png")
 
 
-#+()(define-text :keynotes
+(define-text :keynotes
   (:ul
-   (:li (:b "Sam Ritchie" " Lisp as Renaissance Workshop: A Lispy Tour through Mathematical Physics"))
-   (:li (:b "Robert Strandh" " Creating a Common Lisp Implementation"))
-   (:li (:b "Sam Ritchie" " Demo: Building SICMUtils, the Atelier of Abstractions"))))
+   (:li
+    (:b "Artificial Intelligence: a Problem of Plumbing?<br />")
+    (:i  "Gerald J. Sussman, MIT CSAIL, USA"))
+   (:li
+    (:b "Gradual, Multi-Lingual, and Teacher-Centric Programming Education<br />")
+    (:i "Felienne Hermans, Vrije Universiteit Amsterdam, Nederlands"))))
 
 ;;; Programme
 
