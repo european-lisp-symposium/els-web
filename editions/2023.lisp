@@ -6,7 +6,7 @@
 ;;(define-date "*** Extended deadline ***" @2022-01-30)
 (define-date "Author notification" @2023-03-26)
 (define-date "Final papers" @2023-04-09)
-;;(define-date "Early registration deadline" @2020-04-01)
+(define-date "Early registration deadline" @2023-04-09)
 
 (define-date "Conference start" @2023-04-24)
 (define-date "Conference end" @2023-04-25)
@@ -220,13 +220,6 @@
             :country "Nederlands")
   :map T)
 
-(define-text :tourism
-  (:p "Please note! April 27th in the Nederlands is King's Day,
-the national holiday, a renowned and very colorful event, especially in
-Amsterdam. This is a great opportunity for those who'd wish to combine ELS
-with some tourism...")
-  (:p "More information on King's Day <a target=\"_blank\" href=\"https://www.iamsterdam.com/en/see-and-do/whats-on/major-events-and-celebrations/kings-day\">here</a>."))
-
 (define-sponsor epita
   :website "http://www.epita.fr/"
   :logo "../static/logos/epita.png")
@@ -268,6 +261,30 @@ with some tourism...")
    (:li
     (:b "Gradual, Multi-Lingual, and Teacher-Centric Programming Education<br />")
     (:i "Felienne Hermans, Vrije Universiteit Amsterdam, Nederlands"))))
+
+
+(define-text :tourism
+  (:p "Please note! April 27th in the Nederlands is King's Day,
+the national holiday, a renowned and very colorful event, especially in
+Amsterdam. This is a great opportunity for those who'd wish to combine ELS
+with some tourism...")
+  (:p "More information on King's Day <a target=\"_blank\" href=\"https://www.iamsterdam.com/en/see-and-do/whats-on/major-events-and-celebrations/kings-day\">here</a>."))
+
+
+(define-registration (:active)
+  (:kind "Early regular" :price 120 :status :active
+   :description "Full conference package (talks, coffee breaks, banquet).")
+  (:kind "Early student" :price 60 :status :active
+   :description "Same as \"Early regular\", student price (requires student ID copy via e-mail).")
+  (:kind "Regular" :price 160 :status :inactive
+   :description "Full conference package (talks, coffee breaks, note: banquet out).")
+  (:kind "Student" :price 90 :status :inactive
+   :description "Same as \"Regular\", student price (requires student ID copy via e-mail).")
+  (:option "banquet" :status :active
+   :checked t :price 0 :description "Banquet")
+  (:option "banquet-guest" :status :active
+   :price 30 :description "Banquet guest")
+  (:option "certificate" :price 0 :description "Certificate of attendance"))
 
 ;;; Programme
 
