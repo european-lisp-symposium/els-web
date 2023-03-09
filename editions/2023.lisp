@@ -13,7 +13,9 @@
 
 (define-text :announcement
   (:div :class "announcement"
-        "Registration will open soon. Please be patient!"))
+        "Registrations are now open!")
+    (:div :class "announcement"
+        "Keynotes announced!"))
 
 #+()(define-text :additional-info
   (:p "There are several ways for you to join ELS online:"
