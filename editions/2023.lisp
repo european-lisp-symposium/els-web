@@ -123,8 +123,8 @@
 (define-person (:family-name "Levine"
                 :given-name "Nick")
   :role (:committee)
-  :organisation "Ravenbrook Ltd"
-  :address (:country "UK"))
+  :organisation "RavenPack"
+  :address (:country "Spain"))
 
 (define-person (:family-name "Courtès"
                 :given-name "Ludovic")
