@@ -206,9 +206,36 @@
     at avenues of attack that we may work on together.")
 
 (define-person (:family-name "Hermans"
-                :given-name "Felienne ")
+                :given-name "Felienne")
   :organisation "Vrije Universiteit Amsterdam"
   :address (:country "Nederlands")
+  :role (:speaker :keynote)
+  :description
+  "When kids learn to program they often use either a visual language
+like Scratch, or a textual language like Python. While visual
+languages are great for the first steps, children and educators often
+want to move on to textual languages. However, early on, a textual
+language and its error messages can be scary. Hedy aims to bridge this
+gap with a programming language that is gradual, using different
+language levels.
+
+In level 1, there is hardly any syntax at all; printing is done with:
+print hello!
+
+At every level, new syntax and concepts are added, so learners do not
+have to master everything at once. Hedy builds up to a subset of
+Python including conditions, loops, variables, and lists.
+
+To make learning as accessible as possible, Hedy also allows for the
+use of localized keywords, f.e in Spanish: imprimir Hello! Hedy
+(www.hedy.org) was launched in early 2020 and over 5 million Hedy
+progams have been created to date, and has been translated into 46
+languages.")
+
+(define-person (:family-name "Vollmer"
+                :given-name "Michael")
+  :organisation "School of Computing, University of Kent"
+  :address (:country "UK")
   :role (:speaker :keynote))
 
 
@@ -261,7 +288,7 @@
     (:b "Artificial Intelligence: a Problem of Plumbing?<br />")
     (:i  "Gerald J. Sussman, MIT CSAIL, USA"))
    (:li
-    (:b "Gradual, Multi-Lingual, and Teacher-Centric Programming Education<br />")
+    (:b "Hedy: Gradual, Multi-Lingual, and Teacher-Centric Programming Education<br />")
     (:i "Felienne Hermans, Vrije Universiteit Amsterdam, Nederlands"))))
 
 
