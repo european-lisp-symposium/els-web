@@ -238,6 +238,23 @@ languages.")
   :address (:country "UK")
   :role (:speaker :keynote))
 
+(define-person (:family-name "Jongmans"
+                :given-name "Sung-Shik")
+  :organisation "Open Universiteit"
+  :address (:country "Nederlands")
+  :role (:speaker :keynote)
+  :description
+  "To simplify shared-memory concurrent programming, languages have started to
+offer core support for high-level communications primitives, in the form of
+message passing though channels, in addition to lower-level synchronization
+primitives.  Yet, a growing body of evidence suggests that channel-based
+programming abstractions also have their issues.  The Discourje project aims
+to help programmers cope with channels and concurrency bugs in Clojure
+programs, based on dynamic analysis.  The idea is that programmers write not
+only implementations of communication protocols in their Clojure programs,
+but also specifications.  Discourje then offers a run-time verification
+library to ensure that channel actions in implementations are safe relative
+to specifications.")
 
 (define-location "Startup Village"
   :role (:conference)
@@ -289,7 +306,13 @@ languages.")
     (:i  "Gerald J. Sussman, MIT CSAIL, USA"))
    (:li
     (:b "Hedy: Gradual, Multi-Lingual, and Teacher-Centric Programming Education<br />")
-    (:i "Felienne Hermans, Vrije Universiteit Amsterdam, Nederlands"))))
+    (:i "Felienne Hermans, Vrije Universiteit Amsterdam, Nederlands"))
+   (:li
+    (:b "TBA<br />")
+    (:i "Michael Vollmer, University of Kent, UK"))
+   (:li
+    (:b "Run-Time Verification of Communication Protocols in Clojure<br />")
+    (:i "Sung-Shik Jongmans, Open University of the Netherlands, Nederlands"))))
 
 
 (define-text :tourism
