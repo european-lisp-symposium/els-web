@@ -150,8 +150,8 @@
   :organisation "Brigham Young University"
   :address (:country "USA"))
 
-(define-person (:family-name "Bonnaire"
-                :given-name-"Sergeant Ambrose")
+(define-person (:family-name "Bonnaire-Sergeant"
+                :given-name "Ambrose")
   :role (:committee)
   :organisation "Cisco")
 
