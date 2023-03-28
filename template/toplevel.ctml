@@ -31,6 +31,21 @@
           <c:splice lquery="(html (query-text '(= name :scope)))" />
         </section>
       </article>
+      <article id="steering">
+        <h2>Steering</h2>
+        <p>
+          The European Lisp Symposium is run by the following steering
+          committee
+        </p>
+        <ul>
+          <li>Didier Verna (president)</li>
+          <li>Christophe Rhodes (secretary)</li>
+          <li>Marco Antoniotti</li>
+          <li>Antonio Menezes Leitao</li>
+          <li>Irène Durand</li>
+          <li>Nicolas Neuss</li>
+        </ul>
+      </article>
       <article id="conferences">
         <h2>Conferences</h2>
         <p>Select a year to view the corresponding conference.</p>
