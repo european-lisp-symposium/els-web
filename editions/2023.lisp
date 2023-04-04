@@ -299,7 +299,7 @@ to specifications.")
   :logo "../static/logos/ACM.png")
 
 
-(define-text :keynotes
+#+()(define-text :keynotes
   (:ul
    (:li
     (:b "Artificial Intelligence: a Problem of Plumbing?<br />")
@@ -338,9 +338,42 @@ with some tourism...")
    :price 30 :description "Banquet guest")
   (:option "certificate" :price 0 :description "Certificate of attendance"))
 
+
 ;;; Programme
+(define-programme-day @2023-04-24T00:00:00+00:00
+  @09:30:00 (:title "Run-Time Verification of Communication Protocols in
+Clojure"
+             :role (:talk :keynote)
+             :speakers ("Sung-Shik Jongmans")
+             :description "To simplify shared-memory concurrent programming, languages have started to offer core support for high-level communications primitives, in the form of message passing though channels, in addition to lower-level synchronization primitives.  Yet, a growing body of evidence suggests that channel-based programming abstractions also have their issues.
 
+The Discourje project aims to help programmers cope with channels and concurrency bugs in Clojure programs, based on dynamic analysis. The idea is that programmers write not only implementations of communication protocols in their Clojure programs, but also specifications.  Discourje then offers a run-time verification library to ensure that channel actions in implementations are safe relative to specifications.")
+  @15:30:00 (:title "Hedy: Gradual, Multi-Lingual, and Teacher-Centric
+Programming Education"
+             :role (:talk :keynote)
+             :speakers ("Felienne Hermans")
+             :description "When kids learn to program they often use either a visual language like Scratch, or a textual language like Python. While visual languages are great for the first steps, children and educators often want to move on to textual languages. However, early on, a textual language and its error messages can be scary. Hedy aims to bridge this gap with a programming language that is gradual, using different language levels.
 
+In level 1, there is hardly any syntax at all; printing is done with: print hello!
 
+At every level, new syntax and concepts are added, so learners do not have to master everything at once. Hedy builds up to a subset of Python including conditions, loops, variables, and lists.
+
+To make learning as accessible as possible, Hedy also allows for the use of localized keywords, f.e in Spanish: imprimir Hello! Hedy (www.hedy.org) was launched in early 2020 and over 5 million Hedy progams have been created to date, and has been translated into 46 languages."))
+
+(define-programme-day @2023-04-25T00:00:00+00:00
+  @09:30:00 (:title "tba"
+             :role (:talk :keynote)
+             :speakers ("Michael Vollmer")
+             :description "tba")
+  @15:30:00 (:title "Artificial Intelligence: a Problem of Plumbing?"
+             :role (:talk :keynote)
+             :speakers ("Gerald J. Sussman")
+             :description "We have made amazing progress in the construction and deployment of systems that do work originally thought to require human-like intelligence.  On the symbolic side we have world-champion Chess-playing and Go-playing systems. We have deductive systems and algebraic manipulation systems that exceed the capabilities of human mathematicians.  We are now observing the rise of connectionist mechanisms that appear to see and hear pretty well, and chatbots that appear to have some impressive linguistic ability.  But there is a serious problem.  The mechanisms that can distinguish pictures of cats from pictures of dogs have no idea what a cat or a dog is. The chatbots have no idea what they are talking about.  The algebraic systems do not understand anything about the real physical world.  And no deontic logic system has any idea about feelings and morality.
+
+So what is the problem?  We generally do not know how to combine systems so that a system that knows how to solve problems of class A and another system that knows how to solve problems of class B can be combined to solve not just problems of class A or class B but can solve problems that require both skills that are needed for problems of class A and skills that are needed for problems of class B.
+
+Perhaps this is partly a problem of plumbing.  We do not have linguistic structures that facilitate discovering and building combinations.  This is a fundamental challenge for the programming-language community.  We need appropriate ideas for abstract plumbing fittings that enable this kind of cooperation among disparate mechanisms.  For example, why is the amazingly powerful tree exploration mechanism that is used for games not also available, in the same system, to a deductive engine that is being applied to a social interaction problem?
+
+I will attempt to elucidate this problem and perhaps point at avenues of attack that we may work on together."))
 
 #+()(define-proceedings "../static/proceedings/2023.pdf")
