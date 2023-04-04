@@ -236,7 +236,35 @@ languages.")
                 :given-name "Michael")
   :organisation "School of Computing, University of Kent"
   :address (:country "UK")
-  :role (:speaker :keynote))
+  :role (:speaker :keynote)
+  :description
+  "It is common for software running today to use object representations fixed
+by the language runtime system; both the Java and Haskell runtimes dictate
+an object layout, and the compiler must stick to it for all programs. And
+yet when humans optimize a program, one of their primary levers on
+performance is changing data representation. For example, an HPC programmer
+knows how to pack a regular tree into a byte array for more efficient
+access. Unfortunately, this is error-prone, making it an undesirable way to
+achieve performance optimization at the expense of safety and readability.
+
+Furthermore, whenever a program receives data from the network or disk,
+rigid insistence on a particular heap layout causes an impedance mismatch we
+know as deserialization. Data represented in memory has pointers and
+arbitrary, sparse layout, while data on disk is packed contiguously, so data
+must be transformed from one form to another and back.
+
+Programming with serialized data is a technique for unifying the in-memory
+and on-disk representations of data, where the serialized form is used both
+on-disk and in-memory. This technique allows data processing programs to
+skip the deserialization/reserialization steps by operating directly on the
+data in its serialized form. It also represents a principled approach to
+optimizing programs by compacting data representations, which increases
+locality and minimizes indirection.
+
+In this talk, I will present a programming language, LoCal, for programming
+with serialized data. I will also describe Gibbon, an experimental compiler
+that automatically transforms functional programs to operate on
+serialized data.")
 
 (define-person (:family-name "Jongmans"
                 :given-name "Sung-Shik")
@@ -308,7 +336,7 @@ to specifications.")
     (:b "Hedy: Gradual, Multi-Lingual, and Teacher-Centric Programming Education<br />")
     (:i "Felienne Hermans, Vrije Universiteit Amsterdam, Nederlands"))
    (:li
-    (:b "TBA<br />")
+    (:b "A Language-Based Approach to Programming with Serialized Data<br />")
     (:i "Michael Vollmer, University of Kent, UK"))
    (:li
     (:b "Run-Time Verification of Communication Protocols in Clojure<br />")
@@ -361,10 +389,16 @@ At every level, new syntax and concepts are added, so learners do not have to ma
 To make learning as accessible as possible, Hedy also allows for the use of localized keywords, f.e in Spanish: imprimir Hello! Hedy (www.hedy.org) was launched in early 2020 and over 5 million Hedy progams have been created to date, and has been translated into 46 languages."))
 
 (define-programme-day @2023-04-25T00:00:00+02:00
-  @09:30:00 (:title "tba"
+  @09:30:00 (:title "A Language-Based Approach to Programming with Serialized Data"
              :role (:talk :keynote)
              :speakers ("Michael Vollmer")
-             :description "tba")
+             :description "It is common for software running today to use object representations fixed by the language runtime system; both the Java and Haskell runtimes dictate an object layout, and the compiler must stick to it for all programs. And yet when humans optimize a program, one of their primary levers on performance is changing data representation. For example, an HPC programmer knows how to pack a regular tree into a byte array for more efficient access. Unfortunately, this is error-prone, making it an undesirable way to achieve performance optimization at the expense of safety and readability.
+
+Furthermore, whenever a program receives data from the network or disk, rigid insistence on a particular heap layout causes an impedance mismatch we know as deserialization. Data represented in memory has pointers and arbitrary, sparse layout, while data on disk is packed contiguously, so data must be transformed from one form to another and back.
+
+Programming with serialized data is a technique for unifying the in-memory and on-disk representations of data, where the serialized form is used both on-disk and in-memory. This technique allows data processing programs to skip the deserialization/reserialization steps by operating directly on the data in its serialized form. It also represents a principled approach to optimizing programs by compacting data representations, which increases locality and minimizes indirection.
+
+In this talk, I will present a programming language, LoCal, for programming with serialized data. I will also describe Gibbon, an experimental compiler that automatically transforms functional programs to operate on serialized data.")
   @15:30:00 (:title "Artificial Intelligence: a Problem of Plumbing?"
              :role (:talk :keynote)
              :speakers ("Gerald J. Sussman")
