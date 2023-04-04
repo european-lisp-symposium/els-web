@@ -340,7 +340,7 @@ with some tourism...")
 
 
 ;;; Programme
-(define-programme-day @2023-04-24T00:00:00+00:00
+(define-programme-day @2023-04-24T00:00:00+02:00
   @09:30:00 (:title "Run-Time Verification of Communication Protocols in
 Clojure"
              :role (:talk :keynote)
@@ -360,7 +360,7 @@ At every level, new syntax and concepts are added, so learners do not have to ma
 
 To make learning as accessible as possible, Hedy also allows for the use of localized keywords, f.e in Spanish: imprimir Hello! Hedy (www.hedy.org) was launched in early 2020 and over 5 million Hedy progams have been created to date, and has been translated into 46 languages."))
 
-(define-programme-day @2023-04-25T00:00:00+00:00
+(define-programme-day @2023-04-25T00:00:00+02:00
   @09:30:00 (:title "tba"
              :role (:talk :keynote)
              :speakers ("Michael Vollmer")
