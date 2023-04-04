@@ -4,7 +4,7 @@
 
 ;;(define-date "Submission deadline" @2023-02-26)
 ;;(define-date "*** Extended deadline ***" @2022-01-30)
-(define-date "Author notification" @2023-03-26)
+;;(define-date "Author notification" @2023-03-26)
 (define-date "Final papers" @2023-04-09)
 (define-date "Early registration deadline" @2023-04-09)
 
