@@ -13,9 +13,7 @@
 
 (define-text :announcement
   (:div :class "announcement"
-        "Registrations are now open!")
-    (:div :class "announcement"
-        "Keynotes announced!"))
+        "Register now. Early bird discount closing soon!"))
 
 #+()(define-text :additional-info
   (:p "There are several ways for you to join ELS online:"
