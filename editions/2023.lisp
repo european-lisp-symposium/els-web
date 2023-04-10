@@ -5,13 +5,13 @@
 ;;(define-date "Submission deadline" @2023-02-26)
 ;;(define-date "*** Extended deadline ***" @2022-01-30)
 ;;(define-date "Author notification" @2023-03-26)
-(define-date "Final papers" @2023-04-09)
-(define-date "Early registration deadline" @2023-04-09)
+;;(define-date "Final papers" @2023-04-09)
+;;(define-date "Early registration deadline" @2023-04-09)
 
 (define-date "Conference start" @2023-04-24)
 (define-date "Conference end" @2023-04-25)
 
-(define-text :announcement
+#+()(define-text :announcement
   (:div :class "announcement"
         "Register now. Early bird discount closing soon!"))
 
@@ -350,13 +350,13 @@ with some tourism...")
 
 
 (define-registration (:active)
-  (:kind "Early regular" :price 120 :status :active
+  (:kind "Early regular" :price 120 :status :inactive
    :description "Full conference package (talks, coffee breaks, banquet).")
-  (:kind "Early student" :price 60 :status :active
+  (:kind "Early student" :price 60 :status :inactive
    :description "Same as \"Early regular\", student price (requires student ID copy via e-mail).")
-  (:kind "Regular" :price 160 :status :inactive
+  (:kind "Regular" :price 160 :status :active
    :description "Full conference package (talks, coffee breaks, note: banquet out).")
-  (:kind "Student" :price 90 :status :inactive
+  (:kind "Student" :price 90 :status :active
    :description "Same as \"Regular\", student price (requires student ID copy via e-mail).")
   (:option "banquet" :status :active
    :checked t :price 0 :description "Banquet")
