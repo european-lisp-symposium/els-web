@@ -367,14 +367,35 @@ with some tourism...")
 
 ;;; Programme
 (define-programme-day @2023-04-24T00:00:00+02:00
-  @09:30:00 (:title "Run-Time Verification of Communication Protocols in
-Clojure"
+  @09:00:00 (:title "Registration, badges, meet and greet"
+             :role (:organization))
+  @09:30:00 (:title "Welcome message and announcements"
+             :role (:organization))
+  @10:00:00 (:title "Keynote: Run-Time Verification of Communication Protocols in Clojure"
              :role (:talk :keynote)
              :speakers ("Sung-Shik Jongmans")
              :description "To simplify shared-memory concurrent programming, languages have started to offer core support for high-level communications primitives, in the form of message passing though channels, in addition to lower-level synchronization primitives.  Yet, a growing body of evidence suggests that channel-based programming abstractions also have their issues.
 
 The Discourje project aims to help programmers cope with channels and concurrency bugs in Clojure programs, based on dynamic analysis. The idea is that programmers write not only implementations of communication protocols in their Clojure programs, but also specifications.  Discourje then offers a run-time verification library to ensure that channel actions in implementations are safe relative to specifications.")
-  @15:30:00 (:title "Hedy: Gradual, Multi-Lingual, and Teacher-Centric
+  @11:00:00 (:title "Coffee Break"
+             :role (:break))
+  @11:30:00 (:title "Research Paper: A MOP-Based Implementation for Method Combinations"
+             :role (:talk)
+             :speakers ("Didier Verna"))
+  @12:00:00 (:title "Research Paper: A Minimal Run-Time Overhead Metaobject Protocol for Julia"
+             :role (:talk)
+             :speakers ("Marcelo Santos" "Antonio Leitao"))
+  @12:30:00 (:title "Lunch"
+             :role (:break))
+  @14:00:00 (:title "Research Paper: An Elegant and Fast Algorithm for Partitioning Types"
+             :role (:talk)
+             :speakers ("Jim Newton"))
+  @14:30:00 (:title "Demonstration: GRASP: An Extensible Tactile Interface for Editing S-expressions"
+             :role (:demo)
+             :speakers ("Panicz Maciej Godek"))
+  @15:00:00 (:title "Coffee Break"
+             :role (:break))
+  @15:30:00 (:title "Keynote: Hedy: Gradual, Multi-Lingual, and Teacher-Centric
 Programming Education"
              :role (:talk :keynote)
              :speakers ("Felienne Hermans")
@@ -384,10 +405,12 @@ In level 1, there is hardly any syntax at all; printing is done with: print hell
 
 At every level, new syntax and concepts are added, so learners do not have to master everything at once. Hedy builds up to a subset of Python including conditions, loops, variables, and lists.
 
-To make learning as accessible as possible, Hedy also allows for the use of localized keywords, f.e in Spanish: imprimir Hello! Hedy (www.hedy.org) was launched in early 2020 and over 5 million Hedy progams have been created to date, and has been translated into 46 languages."))
+To make learning as accessible as possible, Hedy also allows for the use of localized keywords, f.e in Spanish: imprimir Hello! Hedy (www.hedy.org) was launched in early 2020 and over 5 million Hedy progams have been created to date, and has been translated into 46 languages.")
+  @16:30:00 (:title "Enlightening Lightning Talks"
+             :role (:talk)))
 
 (define-programme-day @2023-04-25T00:00:00+02:00
-  @09:30:00 (:title "A Language-Based Approach to Programming with Serialized Data"
+  @09:30:00 (:title "Keynote: A Language-Based Approach to Programming with Serialized Data"
              :role (:talk :keynote)
              :speakers ("Michael Vollmer")
              :description "It is common for software running today to use object representations fixed by the language runtime system; both the Java and Haskell runtimes dictate an object layout, and the compiler must stick to it for all programs. And yet when humans optimize a program, one of their primary levers on performance is changing data representation. For example, an HPC programmer knows how to pack a regular tree into a byte array for more efficient access. Unfortunately, this is error-prone, making it an undesirable way to achieve performance optimization at the expense of safety and readability.
@@ -397,7 +420,28 @@ Furthermore, whenever a program receives data from the network or disk, rigid in
 Programming with serialized data is a technique for unifying the in-memory and on-disk representations of data, where the serialized form is used both on-disk and in-memory. This technique allows data processing programs to skip the deserialization/reserialization steps by operating directly on the data in its serialized form. It also represents a principled approach to optimizing programs by compacting data representations, which increases locality and minimizes indirection.
 
 In this talk, I will present a programming language, LoCal, for programming with serialized data. I will also describe Gibbon, an experimental compiler that automatically transforms functional programs to operate on serialized data.")
-  @15:30:00 (:title "Artificial Intelligence: a Problem of Plumbing?"
+  @10:30:00 (:title "Coffee Break"
+             :role (:break))
+  @11:00:00 (:title "Demonstration (remote): A stepper for Armed Bear Common Lisp (ABCL)"
+             :role (:demo)
+             :speakers ("Alejandro Zamora Fonseca"))
+  @11:30:00 (:title "Experience Report: Kandria - A Game in Common Lisp"
+             :role (:demo)
+             :speakers ("Nicolas Hafner"))
+  @12:00:00 (:title "Sponsored: SISCOG - 35 years of keeping trains on track"
+             :role (:demo)
+             :speakers ("Fábio Almeida"))
+  @12:30:00 (:title "Lunch"
+             :role (:break))
+  @14:00:00 (:title "Research Paper: Parallel Garbage Collection for SBCL"
+             :role (:talk)
+             :speakers ("Hayley Patton"))
+  @14:30:00 (:title "Research Paper: Design of an Efficient Lisp Bytecode Machine and Compiler"
+             :role (:talk)
+             :speakers ("Alexander Wood" "Charles Zhang" "Christian Schafmeister"))
+  @15:00:00 (:title "Coffee Break"
+             :role (:break))
+  @15:30:00 (:title "Keynote (remote): Artificial Intelligence: a Problem of Plumbing?"
              :role (:talk :keynote)
              :speakers ("Gerald J. Sussman")
              :description "We have made amazing progress in the construction and deployment of systems that do work originally thought to require human-like intelligence.  On the symbolic side we have world-champion Chess-playing and Go-playing systems. We have deductive systems and algebraic manipulation systems that exceed the capabilities of human mathematicians.  We are now observing the rise of connectionist mechanisms that appear to see and hear pretty well, and chatbots that appear to have some impressive linguistic ability.  But there is a serious problem.  The mechanisms that can distinguish pictures of cats from pictures of dogs have no idea what a cat or a dog is. The chatbots have no idea what they are talking about.  The algebraic systems do not understand anything about the real physical world.  And no deontic logic system has any idea about feelings and morality.
@@ -406,6 +450,8 @@ So what is the problem?  We generally do not know how to combine systems so that
 
 Perhaps this is partly a problem of plumbing.  We do not have linguistic structures that facilitate discovering and building combinations.  This is a fundamental challenge for the programming-language community.  We need appropriate ideas for abstract plumbing fittings that enable this kind of cooperation among disparate mechanisms.  For example, why is the amazingly powerful tree exploration mechanism that is used for games not also available, in the same system, to a deductive engine that is being applied to a social interaction problem?
 
-I will attempt to elucidate this problem and perhaps point at avenues of attack that we may work on together."))
+I will attempt to elucidate this problem and perhaps point at avenues of attack that we may work on together.")
+  @16:30:00 (:title "Enlightening Lightning Talks"
+             :role (:talk)))
 
 #+()(define-proceedings "../static/proceedings/2023.pdf")
