@@ -369,7 +369,7 @@ with some tourism...")
 (define-programme-day @2023-04-24T00:00:00+02:00
   @09:00:00 (:title "Registration, badges, meet and greet"
              :role (:organization))
-  @09:30:00 (:title "Welcome message and announcements"
+  @09:45:00 (:title "Welcome message and announcements"
              :role (:organization))
   @10:00:00 (:title "Keynote: Run-Time Verification of Communication Protocols in Clojure"
              :role (:talk :keynote)
@@ -433,7 +433,7 @@ In this talk, I will present a programming language, LoCal, for programming with
              :speakers ("Fábio Almeida"))
   @12:30:00 (:title "Lunch"
              :role (:break))
-  @14:00:00 (:title "Research Paper: Parallel Garbage Collection for SBCL"
+  @14:00:00 (:title "Research Paper (remote): Parallel Garbage Collection for SBCL"
              :role (:talk)
              :speakers ("Hayley Patton"))
   @14:30:00 (:title "Research Paper: Design of an Efficient Lisp Bytecode Machine and Compiler"
