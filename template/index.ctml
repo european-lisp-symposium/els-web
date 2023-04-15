@@ -115,6 +115,13 @@
           </section>
         </c:when>
 
+        <c:when test="(query-text '(= name :reachability))">
+          <section id="reachability">
+            <h4>Reachability</h4>
+            <c:splice lquery="(html (query-text '(= name :reachability)))" />
+          </section>
+        </c:when>
+
         <c:when test="(query-text '(= name :excursion))">
           <section id="excursion">
             <h4>Sunday Excursion</h4>
