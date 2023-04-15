@@ -72,7 +72,7 @@
                 :given-name "Breanndán")
   :role (:local-chair)
   :organization "Machine Learning Programs"
-  :address (:country "Nederlands"))
+  :address (:country "Netherlands"))
 
 (define-person (:family-name "Evenson"
                 :given-name "Mark")
