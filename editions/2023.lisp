@@ -292,6 +292,54 @@ to specifications.")
             :country "Nederlands")
   :map T)
 
+(define-text :reachability
+  (:p "ELS 2023 will take place in "
+      (:a :href "https://startupvillage.nl/"
+          "Startup Village")
+      " which is located in "
+      (:a :href "https://www.amsterdamsciencepark.nl/"
+          "Amsterdam Science Park")
+      ", one of the campuses of the "
+      (:a :href "https://www.uva.nl/" "University of Amsterdam") ".")
+
+  (:p "Amsterdam Science Park has its own "
+      (:a :href "https://9292.nl/en/station-amsterdam-science-park"
+          "railway station")
+      " from where it is 10 minutes walk across the campus to Startup Village.
+You can find information and schedules on the site of "
+      (:a :href "https://www.ns.nl/en" "NS") ", the Dutch national railway.")
+
+  (:p "Startup Village is also served by the number 40 bus. You can alight at bus stop "
+      (:a :href "https://9292.nl/en/amsterdam/bushalte-science-park-oost"
+          "Science Park Terra")
+      " which is right at the entrance to the Village. You may "
+      (:a :href "https://reisproducten.gvb.nl/en/uur-en-dagkaarten"
+          "buy a ticket")
+      " for one hour, one day or multiday. And if you haven't bought a ticket in
+advance, you can even pay incidentally by swiping your bank pass in the tram
+or bus.")
+
+  (:p "Generally speaking, public transport in and around Amsterdam is of high
+quality. Your favourite search engine will usually give you accurate and
+up-to-date information but these sites may also be helpful for planning your
+trips."
+
+      (:lu (:li (:a :href "https://www.gvb.nl/en" "Amsterdam public transport"))
+           (:li (:a :href "https://9292.nl/en"
+                    "Public Transport route finder in the Netherlands"))))
+
+  (:p "One of the best ways to get around Amsterdam is by bike.
+There are many places in the city where you can rent a bike but one that you
+might find particularly convenient is the "
+      (:a :href "https://www.ns.nl/en/door-to-door/ov-fiets" "OV Fiets")
+      " (OV is \"public transport\" and \"fiets\" is the Dutch word for a bike).
+You can pick up a rental bike at most railway stations for €4.45 per day.")
+
+  (:p "If you arrive by car, you can park in "
+      (:a :href "https://www.amsterdamsciencepark.nl/wp-content/uploads/2022/12/Bezoekersplattegrond-Amsterdam-Science-Park_2022.pdf"
+          "Parking lot P7")
+      " which is two minutes walk from Startup Village. Parking costs €4.50 per hour."))
+
 (define-sponsor epita
   :website "http://www.epita.fr/"
   :logo "../static/logos/epita.png")
@@ -340,56 +388,9 @@ to specifications.")
     (:b "Run-Time Verification of Communication Protocols in Clojure<br />")
     (:i "Sung-Shik Jongmans, Open University of the Netherlands, Nederlands"))))
 
-(define-text :reachability
-  (:p "ELS 2023 will take place in "
-    (:a :href "https://startupvillage.nl/"
-        "Startup Village")
-    " which is located in "
-    (:a :href "https://www.amsterdamsciencepark.nl/"
-        "Amsterdam Science Park")
-    ", one of the campuses of the "
-    (:a :href "https://www.uva.nl/" "University of Amsterdam") ".")
-
-(:p "Amsterdam Science Park has its own "
-    (:a :href "https://9292.nl/en/station-amsterdam-science-park"
-        "railway station")
-    " from where it is 10 minutes walk across the campus to Startup Village.
-You can find information and schedules on the site of "
-    (:a :href "https://www.ns.nl/en" "NS") ", the Dutch national railway.")
-
-(:p "Startup Village is also served by the number 40 bus. You can alight at bus stop "
-    (:a :href "https://9292.nl/en/amsterdam/bushalte-science-park-oost"
-        "Science Park Terra")
-    " which is right at the entrance to the Village. You may "
-    (:a :href "https://reisproducten.gvb.nl/en/uur-en-dagkaarten"
-        "buy a ticket")
-    " for one hour, one day or multiday. And if you haven't bought a ticket in
-advance, you can even pay incidentally by swiping your bank pass in the tram
-or bus.")
-
-(:p "Generally speaking, public transport in and around Amsterdam is of high
-quality. Your favourite search engine will usually give you accurate and
-up-to-date information but these sites may also be helpful for planning your
-trips."
-
-    (:lu (:li (:a :href "https://www.gvb.nl/en" "Amsterdam public transport"))
-         (:li (:a :href "https://9292.nl/en"
-                  "Public Transport route finder in the Netherlands"))))
-
-(:p "One of the best ways to get around Amsterdam is by bike.
-There are many places in the city where you can rent a bike but one that you
-might find particularly convenient is the "
-    (:a :href "https://www.ns.nl/en/door-to-door/ov-fiets" "OV Fiets")
-    " ("OV" is \"public transport\" and \"fiets\" is the Dutch word for a bike).
-You can pick up a rental bike at most railway stations for €4.45 per day.")
-
-(:p "If you arrive by car, you can park in "
-    (:a :href "https://www.amsterdamsciencepark.nl/wp-content/uploads/2022/12/Bezoekersplattegrond-Amsterdam-Science-Park_2022.pdf"
-        "Parking lot P7")
-    " which is two minutes walk from Startup Village. Parking costs €4.50 per hour."))
 
 (define-text :tourism
-    (:p "Some events at around the time of the conference may be of interest.")
+  (:p "Some events at around the time of the conference may be of interest.")
   (:p "April 27th in the Nederlands is King's Day,
 the national holiday, a renowned and very colorful event, especially in
 Amsterdam. This is a great opportunity for those who'd wish to combine ELS
@@ -398,12 +399,13 @@ with some tourism...")
       (:a :href "https://www.iamsterdam.com/en/see-and-do/whats-on/major-events-and-celebrations/kings-day"
           "here"))
   (:p (:a :href "https://keukenhof.nl/en/" "The Keukenhof")
-      "describes itself as \"The most beautiful spring garden in the world.\"
+      " describes itself as \"The most beautiful spring garden in the world.\"
 It is currently in bloom.")
   (:p (:a :href "https://www.rijksmuseum.nl" "The Rijksmuseum")
-      "is currently hosting the largest exhibition ever of paintings by"
-      (:a :href "https://www.rijksmuseum.nl/en/whats-on/exhibitions/vermeer" "Vermeer")
-      "However it will be difficult to find tickets."))
+      " is currently hosting the largest exhibition ever of paintings by"
+      (:a :href "https://www.rijksmuseum.nl/en/whats-on/exhibitions/vermeer"
+          " Vermeer")
+      ". However it will be difficult to find tickets."))
 
 (define-registration (:active)
   (:kind "Early regular" :price 120 :status :inactive
