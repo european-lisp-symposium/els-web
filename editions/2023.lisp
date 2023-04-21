@@ -416,9 +416,9 @@ It is currently in bloom.")
    :description "Full conference package (talks, coffee breaks, note: banquet out).")
   (:kind "Student" :price 90 :status :active
    :description "Same as \"Regular\", student price (requires student ID copy via e-mail).")
-  (:option "banquet" :status :active
+  (:option "banquet" :status :inactive
    :checked t :price 0 :description "Banquet")
-  (:option "banquet-guest" :status :active
+  (:option "banquet-guest" :status :inactive
    :price 30 :description "Banquet guest")
   (:option "certificate" :price 0 :description "Certificate of attendance"))
 
