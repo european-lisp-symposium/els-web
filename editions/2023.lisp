@@ -465,7 +465,9 @@ At every level, new syntax and concepts are added, so learners do not have to ma
 
 To make learning as accessible as possible, Hedy also allows for the use of localized keywords, f.e in Spanish: imprimir Hello! Hedy (www.hedy.org) was launched in early 2020 and over 5 million Hedy progams have been created to date, and has been translated into 46 languages.")
   @16:30:00 (:title "Enlightening Lightning Talks"
-             :role (:talk)))
+             :role (:talk))
+  @18:30:00 (:title "Conference dinner (on site)"
+                    :role (:break)))
 
 (define-programme-day @2023-04-25T00:00:00+02:00
   @09:30:00 (:title "Keynote: A Language-Based Approach to Programming with Serialized Data"
