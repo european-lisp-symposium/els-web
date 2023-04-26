@@ -12,8 +12,7 @@
 (define-date "Conference end" @2023-04-25)
 
 (define-text :announcement
-    (:div :class "announcement"
-          "Free online attendance instructions below!"))
+    (:div :class "announcement" "The conference is over!"))
 
 (define-text :additional-info
   (:p "There are several ways for you to join ELS online:"
@@ -407,7 +406,7 @@ It is currently in bloom.")
           " Vermeer")
       ". However it will be difficult to find tickets."))
 
-(define-registration (:active)
+#+()(define-registration (:active)
   (:kind "Early regular" :price 120 :status :inactive
    :description "Full conference package (talks, coffee breaks, banquet).")
   (:kind "Early student" :price 60 :status :inactive
