@@ -37,6 +37,7 @@
           <a href="#proceedings">Proceedings</a>
         </c:when>
         <a href="https://lists.lre.epita.fr/postorius/lists/elsconf.lrde.epita.fr/" rel="external">Mailing List</a>
+        <a href="https://www.youtube.com/@EuropeanLispSymposium/" rel="external">Youtube</a>
       </nav>
     </header>
     <main>
