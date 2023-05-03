@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE dblpsubmission SYSTEM "dblpsubmission.dtd">
+<?xml-stylesheet type="text/xsl" href="dblpsubmission.xsl" ?>
+<dblpsubmission>
+  <proceedings>
+    <key>ELS</key>
+    <title>ELS 2021 - 14th European Lisp Symposium</title>
+    <editor>Marco Heisig</editor>
+    <publisher>EPITA</publisher>
+    <year>2021</year>
+    <isbn>978-2-9557474-5-2</isbn>
+    <issn>2677-3465</issn>
+    <conf>
+      <acronym>ELS</acronym>
+      <number>14</number>
+      <location>Online, streamed</location>
+      <date>May 3-4, 2021</date>
+      <url>https://european-lisp-symposium.org/2021</url>
+    </conf>
+    <toc>
+      <section>Technical Papers</section>
+      <publ>
+	    <author>Michael Wessel</author>
+	    <title>A Tangram Puzzle Solver in Common Lisp</title>
+	    <pages>6-10</pages>
+	    <doi>10.5281/zenodo.4711456</doi>
+      </publ>
+      <publ>
+	    <author>Jim E. Newton</author>
+	    <author>Adrien Pommellet</author>
+	    <title>A Portable, Simple, Embeddable Type System</title>
+	    <pages>11-20</pages>
+	    <doi>10.5281/zenodo.4709777</doi>
+      </publ>
+      <publ>
+	    <author>Eric Timmons</author>
+	    <title>Common Lisp Project Manager</title>
+	    <pages>21-26</pages>
+	    <doi>10.5281/zenodo.4716466</doi>
+      </publ>
+      <publ>
+	    <author>Antoine Hacquard</author>
+	    <author>Didier Verna</author>
+	    <title>A Corpus Processing and Analysis Pipeline for Quickref</title>
+	    <pages>27-35</pages>
+	    <doi>10.5281/zenodo.4714443</doi>
+      </publ>
+      <publ>
+	    <author>Michael Raskin</author>
+	    <title>Lisp in the Middle</title>
+	    <pages>36-44</pages>
+	    <doi>10.5281/zenodo.4724166</doi>
+      </publ>
+      <publ>
+	    <author>Haley Patton</author>
+	    <title>A replicated object system</title>
+	    <pages>46-53</pages>
+	    <doi>10.5281/zenodo.4712699</doi>
+      </publ>
+      <publ>
+	    <author>Eric C. Peterson</author>
+	    <author>Peter J. Karalekas</author>
+	    <title>Aether: Distributed System Emulation in Common Lisp</title>
+	    <pages>54-62</pages>
+	    <doi>10.5281/zenodo.4713971</doi>
+      </publ>
+      <publ>
+	    <author>Marc-André Bélanger</author>
+	    <author>Marc Feeley</author>
+	    <title>A Scheme Foreign Function Interface to JavaScript Based on an Infix Extension</title>
+	    <pages>63-71</pages>
+	    <doi>10.5281/zenodo.4711424</doi>
+      </publ>
+      <publ>
+	    <author>Robert Strandh</author>
+	    <title>Call-Site Optimization for Common Lisp</title>
+	    <pages>72-78</pages>
+	    <doi>10.5281/zenodo.4709958</doi>
+      </publ>
+    </toc>
+  </proceedings>
+</dblpsubmission>
