@@ -486,7 +486,7 @@ In this talk, I will present a programming language, LoCal, for programming with
              :speakers ("Alejandro Zamora Fonseca"))
   @11:30:00 (:title "Experience Report: Kandria - A Game in Common Lisp"
              :role (:demo)
-             :speakers ("Nicolas Hafner"))
+             :speakers ("Yukari Hafner"))
   @12:00:00 (:title "Sponsored: SISCOG - 35 years of keeping trains on track"
              :role (:demo)
              :speakers ("Fábio Almeida"))

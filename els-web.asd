@@ -1,13 +1,8 @@
-#|
-This file is a part of els-web
-Author: Nicolas Hafner <shinmera@tymoon.eu>
-|#
-
 (asdf:defsystem els-web
   :version "3.0.0"
   :license "Artistic"
-  :author "Nicolas Hafner <shinmera@tymoon.eu>"
-  :maintainer "Nicolas Hafner <shinmera@tymoon.eu>"
+  :author "Yukari Hafner <shinmera@tymoon.eu>"
+  :maintainer "Yukari Hafner <shinmera@tymoon.eu>"
   :description "Tools to generate the European Lisp Symposium's website."
   :homepage "https://european-lisp-symposium.github.io/els-web/"
   :bug-tracker "https://github.com/european-lisp-symposium/els-web/issues"

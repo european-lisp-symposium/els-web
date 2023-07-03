@@ -1,8 +1,3 @@
-#|
- This file is a part of els-web
- Author: Nicolas Hafner <shinmera@tymoon.eu>
-|#
-
 (in-package #:els-web)
 
 (defvar *editions* (make-hash-table :test 'equal))

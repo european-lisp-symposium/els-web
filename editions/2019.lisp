@@ -303,7 +303,7 @@ rationale behind them, and offer entirely speculative thoughts about the next
   @10:30:00 (:title "Coffee Break" :role (:break))
 
   @11:00:00 (:title "Shader Pipeline and Effect Encapsulation using CLOS"
-             :speakers ("Nicolas Hafner")
+             :speakers ("Yukari Hafner")
              :role (:talk)
              :website "../static/2019/hafner.pdf")
   @11:45:00 (:title "Hierarchical Task Network Planning in Common Lisp"

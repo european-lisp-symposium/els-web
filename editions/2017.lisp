@@ -326,7 +326,7 @@ The presentation discusses these forces and explores how Clojure's Software Tran
 	     :website "../static/2017/rideau.pdf")
   @15:52:00 (:title "Radiance – a Web Application Environment"
              :role (:talk)
-             :speakers ("Nicolas Hafner")
+             :speakers ("Yukari Hafner")
 	     :website "../static/2017/hafner.pdf")
   @16:15:00 (:title "Teaching Students of Engineering some Insights of the Internet of Things using Racket and the RaspberryPi"
              :role (:talk)
