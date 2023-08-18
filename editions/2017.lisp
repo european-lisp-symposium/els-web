@@ -195,7 +195,7 @@
   :role (:speaker))
 
 (define-person (:family-name "Hafner"
-                :given-name "Nicolas")
+                :given-name "Yukari")
   :role (:speaker))
 
 (define-person (:family-name "Brunner"
