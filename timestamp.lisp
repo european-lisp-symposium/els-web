@@ -1,8 +1,3 @@
-#|
- This file is a part of els-web
- Author: Nicolas Hafner <shinmera@tymoon.eu>
-|#
-
 (in-package #:els-web)
 
 (defvar *unix-epoch-difference* (encode-universal-time 0 0 0 1 1 1970 0))

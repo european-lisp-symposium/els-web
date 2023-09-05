@@ -37,6 +37,7 @@
           <a href="#proceedings">Proceedings</a>
         </c:when>
         <a href="https://lists.lre.epita.fr/postorius/lists/elsconf.lrde.epita.fr/" rel="external">Mailing List</a>
+        <a href="https://www.youtube.com/@EuropeanLispSymposium/" rel="external">Youtube</a>
       </nav>
     </header>
     <main>
@@ -112,6 +113,13 @@
                 </ul>
               </section>
             </c:when>
+          </section>
+        </c:when>
+
+        <c:when test="(query-text '(= name :reachability))">
+          <section id="reachability">
+            <h4>Reachability</h4>
+            <c:splice lquery="(html (query-text '(= name :reachability)))" />
           </section>
         </c:when>
 

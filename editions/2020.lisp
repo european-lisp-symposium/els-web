@@ -97,7 +97,7 @@
                 :given-name "Didier"))
 
 (define-person (:family-name "Hafner"
-                :given-name "Nicolas")
+                :given-name "Yukari")
   :role (:local-chair))
 
 (define-person (:family-name "Dimitriou"

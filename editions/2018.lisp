@@ -250,7 +250,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
   :role (:speaker))
 
 (define-person (:family-name "Hafner"
-        :given-name "Nicolas")
+        :given-name "Yukari")
   :role (:speaker))
 
 (define-person (:family-name "Ferreira"
@@ -425,7 +425,7 @@ In this talk, I'd like to share the success stories of developing a number of in
          :role (:talk))
 
   @12:30:00 (:title "Object-oriented Shader Compositon using CLOS"
-         :speakers ("Nicolas Hafner")
+         :speakers ("Yukari Hafner")
          :website "../static/2018/hafner.pdf"
          :role (:talk))
 
