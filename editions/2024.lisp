@@ -13,7 +13,7 @@
 
 (define-text :announcement
   (:div :class "announcement" "ELS 2024 is being planned!")
-  (:div :class "announcement" "In co-location with SBCL25"))
+  (:div :class "announcement" "Note: SBCL25 is happening on May 2-3"))
 
 #+()(define-text :additional-info
   (:p "There are several ways for you to join ELS online:"

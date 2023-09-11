@@ -513,4 +513,4 @@ I will attempt to elucidate this problem and perhaps point at avenues of attack 
   @16:30:00 (:title "Enlightening Lightning Talks"
              :role (:talk)))
 
-#+()(define-proceedings "../static/proceedings/2023.pdf")
+(define-proceedings "../static/proceedings/2023.pdf")
