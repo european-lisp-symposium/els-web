@@ -1,9 +1,7 @@
 <footer>
   <p>
-    Authored by
-    <c:using value="(query1 :person '(in role :administrator))">
-      <c:splice lquery="(template :person)" />
-    </c:using>
+    Authored by <a href="https://www.didierverna.info">Didier Verna</a>
+    <a href="mailto:www@european-lisp-symposium.org">&lt;www@european-lisp-symposium.org&gt;</a>
   </p>
   <p>
     Last updated on
