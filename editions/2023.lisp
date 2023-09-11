@@ -73,6 +73,23 @@
   :organization "Machine Learning Programs"
   :address (:country "Netherlands"))
 
+(define-person (:family-name "Tugai"
+                :given-name "Georgiy")
+  :role (:virtualization)
+  :organization "Configura"
+  :address (:country "Sweden"))
+
+(define-person (:family-name "Hafner"
+                :given-name "Yukari")
+  :role (:virtualization)
+  :photo "https://en.gravatar.com/userimage/12617850/a50422c48339a730dee468056eab402c.png"
+  :email "shinmera@tymoon.eu"
+  :website "https://shinmera.com"
+  :nickname "Shinmera"
+  :organization "Shirakumo.org"
+  :address (:country "Switzerland"))
+
+
 (define-person (:family-name "Evenson"
                 :given-name "Mark")
   :role (:committee)
