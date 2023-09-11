@@ -68,6 +68,7 @@ Many of these definitions accept arbitrary data fields in the form of a plist. T
   * `:programme-chair` This person is the programme chair.
   * `:local-chair` This person is the local conference chair.
   * `:committee` This person is on the committee.
+  * `:virtualization` This person is on the virtualization team.
   * `:local-organizer` This person is the local organiser.
   * `:speaker` This person is a speaker and has an official talk.
 * `:address` Should be a plist where the following keys are recognised:
