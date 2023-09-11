@@ -36,13 +36,6 @@
   :logo "../static/logos/ita.png")
 
 ;;; People
-(define-person (:family-name "Verna"
-                :given-name "Didier")
-  :role (:administrator)
-  :email "www@european-lisp-symposium.org"
-  :website "http://www.european-lisp-symposium.org"
-  :organization "ELS")
-
 (define-person (:family-name "Padget"
                 :given-name "Julian")
   :role (:programme-chair)

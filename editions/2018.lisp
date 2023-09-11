@@ -107,12 +107,8 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 
 
 ;;; People
-(define-person (:family-name "Verna"
-        :given-name "Didier")
-  :role (:administrator :speaker)
-  :email "www@european-lisp-symposium.org"
-  :website "http://www.european-lisp-symposium.org"
-  :organization "ELS")
+(define-person (:family-name "Verna" :given-name "Didier")
+  :role (:speaker))
 
 (define-person (:family-name "Cooper"
         :given-name "David")

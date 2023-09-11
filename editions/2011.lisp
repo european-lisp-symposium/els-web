@@ -36,13 +36,8 @@
   :logo "../static/logos/tuhh.svg")
 
 ;;; People
-(define-person (:family-name "Verna"
-                :given-name "Didier")
-  :role (:administrator :programme-chair :committee)
-  :email "www@european-lisp-symposium.org"
-  :website "http://www.european-lisp-symposium.org"
-  :organization "EPITA"
-  :address (:country "France"))
+(define-person (:family-name "Verna" :given-name "Didier")
+  :role (:programme-chair :committee))
 
 (define-person (:family-name "Moeller"
                 :given-name "Ralf")

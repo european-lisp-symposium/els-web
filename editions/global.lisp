@@ -4,10 +4,9 @@
 
 (define-person (:family-name "Verna"
                 :given-name "Didier")
-  :role (:administrator)
-  :email "www@european-lisp-symposium.org"
-  :website "http://www.european-lisp-symposium.org"
-  :organization "EPITA"
+  :photo "https://en.gravatar.com/userimage/16766226/bec23e627756f4b902b87f93273aa052.jpeg"
+  :website "https://www.didierverna.info"
+  :organization "EPITA / LRE"
   :address (:country "France"))
 
 (define-person (:family-name "Hafner"

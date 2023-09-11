@@ -101,13 +101,6 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 
 
 ;;; People
-(define-person (:family-name "Verna"
-                :given-name "Didier")
-  :role (:administrator)
-  :email "www@european-lisp-symposium.org"
-  :website "http://www.european-lisp-symposium.org"
-  :organization "ELS")
-
 (define-person (:family-name "Neuss"
         :given-name "Nicolas")
   :role (:programme-chair)
@@ -146,7 +139,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 
 (define-person (:family-name "Heisig"
         :given-name "Marco")
-  :role (:committee)
+  :role (:committee :speaker)
   :organization "FAU Erlangen-Nürnberg"
   :address (:country "Germany"))
 
@@ -181,7 +174,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 
 (define-person (:family-name "Stalla"
         :given-name "Alessio")
-  :role (:committee)
+  :role (:committee :speaker)
   :organization "ManyDesigns Srl"
   :address (:country "Italy"))
 
