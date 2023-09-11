@@ -74,6 +74,17 @@
   :organization "EPITA Research and Development Laboratory"
   :address (:country "France"))
 
+(define-person (:family-name "Herda"
+                :given-name "Michał")
+  :role (:virtualization)
+  :address (:country "Poland"))
+
+(define-person (:family-name "Tugai"
+                :given-name "Georgiy")
+  :role (:virtualization)
+  :organization "Configura"
+  :address (:country "Sweden"))
+
 (define-person (:family-name "Meier"
                 :given-name "Philipp")
   :role (:committee)
