@@ -36,13 +36,8 @@
   :logo "../static/logos/upmc.gif")
 
 ;;; People
-(define-person (:family-name "Verna"
-                :given-name "Didier")
-  :role (:administrator :local-chair)
-  :email "www@european-lisp-symposium.org"
-  :website "http://www.european-lisp-symposium.org"
-  :organization "EPITA Research and Development Laboratory"
-  :address (:country "France"))
+(define-person (:family-name "Verna" :given-name "Didier")
+  :role (:local-chair))
 
 (define-person (:family-name "Pitman"
                 :given-name "Kent")
@@ -324,13 +319,13 @@ All in Lisp, of course.")
   @12:00:00 (:title "Generalizers: New Metaobjects for Generalized Dispatch"
              :role (:talk)
              :speakers ("Christophe Rhodes" "Jan Moringen" "David Lichteblau")
-	     :website "../static/2014/rhodes.pdf")
+         :website "../static/2014/rhodes.pdf")
   @12:30:00 (:title "Lunch"
              :role (:break))
   @14:00:00 (:title "Parallel Programming with Lisp for Performance"
              :role (:talk :keynote)
              :speakers ("Pascal Costanza")
-	     :website "../static/2014/costanza.pdf"
+         :website "../static/2014/costanza.pdf"
              :description "This presentation gives an overview of parallel programming constructs and primitives, and how they can be used efficiently from within Common Lisp. The focus of this talk is on taking advantage of multi-core processors for improving the performance of algorithms. For this reason, the most important techniques for achieving efficiency in general will also be covered. The presentation will be based on examples from high performance and life sciences computing.")
   @15:00:00 (:title "Coffee"
              :role (:break))
@@ -362,14 +357,14 @@ In the machine learning thread, lisp's unparalleled interactive capabilities mee
   @10:30:00 (:title "High performance concurrency in Common Lisp - hybrid transactional memory with STMX"
              :role (:talk)
              :speakers ("Massimiliano Ghilardi")
-	     :website "../static/2014/ghilardi.pdf")
+         :website "../static/2014/ghilardi.pdf")
   @11:00:00 (:title "A functional approach for disruptive event discovery and policy monitoring in mobility scenarios"
              :role (:talk)
              :speakers ("Ignasi Gómez-Sebastià" "Luis Oliva" "Sergio Alvarez-Napagao" "Dario Garcia-Gasulla" "Arturo Tejeda" "Javier Vazquez"))
   @11:30:00 (:title "A Racket-Based Robot to Teach First-Year Computer Science"
              :role (:talk)
              :speakers ("Franco Raimondi" "Giuseppe Primiero" "Kelly Androutsopoulos" "Nikos Gorogiannis" "Martin Loomes" "MIchael Margolis" "Puja Varsani" "Nick Weldin" "Alex Zivanovic")
-	     :website "../static/2014/raimondi.pdf")
+         :website "../static/2014/raimondi.pdf")
   @12:00:00 (:title "Lunch"
              :role (:break))
   @13:30:00 (:title "A Need for Multilingual Names"
@@ -378,12 +373,12 @@ In the machine learning thread, lisp's unparalleled interactive capabilities mee
   @14:00:00 (:title "An Implementation of Python for Racket"
              :role (:talk)
              :speakers ("Pedro Ramos" "António Leitão")
-	     :website "../static/2014/ramos.pdf")
+         :website "../static/2014/ramos.pdf")
   @14:30:00 (:title "Defmacro for C: Lightweight, Ad Hoc Code Generation"
              :role (:talk)
              :speakers ("Kai Selgrad" "Alexander Lier" "Markus Wittmann"
-			"Daniel Lohmann" "Marc Stamminger")
-	     :website "../static/2014/selgrad.pdf")
+            "Daniel Lohmann" "Marc Stamminger")
+         :website "../static/2014/selgrad.pdf")
   @15:00:00 (:title "Coffee"
              :role (:break))
   @15:30:00 (:title "Lisp for Music Technology"

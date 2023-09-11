@@ -32,13 +32,8 @@
   :logo "../static/logos/inria.svg")
 
 ;;; People
-(define-person (:family-name "Verna"
-                :given-name "Didier")
-  :role (:administrator :committee)
-  :email "www@european-lisp-symposium.org"
-  :website "http://www.european-lisp-symposium.org"
-  :organization "Epita"
-  :address (:country "France"))
+(define-person (:family-name "Verna" :given-name "Didier")
+  :role (:committee))
 
 (define-person (:family-name "Costanza"
                 :given-name "Pascal")

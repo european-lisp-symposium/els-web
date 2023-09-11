@@ -68,9 +68,7 @@
 
 
 ;; persons
-
-(define-person (:family-name "Verna"
-                :given-name "Didier")
+(define-person (:family-name "Verna" :given-name "Didier")
   :role (:speaker))
 
 (define-person (:family-name "Heisig"

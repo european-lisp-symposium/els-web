@@ -36,13 +36,8 @@
   :logo "../static/logos/nttdata.png")
 
 ;;; People
-(define-person (:family-name "Verna"
-                :given-name "Didier")
-  :role (:administrator :committee :speaker)
-  :email "www@european-lisp-symposium.org"
-  :website "http://www.european-lisp-symposium.org"
-  :organization "EPITA/LRDE"
-  :address (:country "France"))
+(define-person (:family-name "Verna" :given-name "Didier")
+  :role (:committee :speaker))
 
 (define-person (:family-name "Antoniotti"
                 :given-name "Marco")

@@ -61,12 +61,8 @@
 
 ;; persons
 
-(define-person (:family-name "Verna"
-                :given-name "Didier")
-  :role (:administrator :demo :speaker)
-  :email "www@european-lisp-symposium.org"
-  :website "http://www.european-lisp-symposium.org"
-  :organization "ELS")
+(define-person (:family-name "Verna" :given-name "Didier")
+  :role (:demo :speaker))
 
 (define-person (:family-name "Newton"
                 :given-name "Jim")
@@ -245,7 +241,7 @@ Since 2004 Max has been working as an artist and participated with interactive i
   :description "Bio: My name is Fermin MF, I work as a Common Lisp engineer at RavenPack where my main focus is to maintain and develop new features for the RavenPack API that our clients use to access our data.
   In my spare time, I develop Free Software in gitlab, mainly Emacs packages (like maxima.el) and Common Lisp software (like CEDAR and actor).
   Some of my non-tech interests are chess, history and Chinese martial arts."
-  :roll (:speaker))
+  :role (:speaker))
 
 (define-location "FEUP, Universidade do Porto"
   :role (:conference)

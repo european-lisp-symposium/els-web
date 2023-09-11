@@ -87,15 +87,7 @@
 
   (:p "If you are using the correct style and classification system, your document will contain a section called <code>CCS Concepts</code> and include terms formatted like <code>•Information systems → Web applications</code>. If your document includes a section titled <code>Categories and Subject Descriptors</code> with things in a style like <code>D.2.3 [Software Engineering]: Coding Tools and Techniques</code>, then you have to update to the new 2012 system and templates as linked above. If the CCS section does not show up in the TeX generated PDF at all, make sure that your TeX file includes the <code>\\printccsdesc</code> command below the abstract."))
 
-
-
-
-
 ;; persons
-
-(define-person (:family-name "Verna"
-                :given-name "Didier"))
-
 (define-person (:family-name "Hafner"
                 :given-name "Yukari")
   :role (:local-chair))

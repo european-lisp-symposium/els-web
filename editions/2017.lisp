@@ -41,12 +41,8 @@
   :logo "../static/logos/brunner.png")
 
 ;;; People
-(define-person (:family-name "Verna"
-                :given-name "Didier")
-  :role (:administrator :speaker)
-  :email "www@european-lisp-symposium.org"
-  :website "http://www.european-lisp-symposium.org"
-  :organization "ELS")
+(define-person (:family-name "Verna" :given-name "Didier")
+  :role (:speaker))
 
 (define-person (:family-name "Riva"
                 :given-name "Alberto")
@@ -61,18 +57,18 @@
   :address (:country "Italy"))
 
 (define-person (:family-name "Battyani"
-		:given-name "Marc")
+        :given-name "Marc")
   :organization "Fractal Concept"
   :role (:committee))
 
 (define-person (:family-name "Gallesio"
-		:given-name "Erick")
+        :given-name "Erick")
   :role (:committee)
   :organization "Université de Nice Sophia Antipolis"
   :address (:country "France"))
 
 (define-person (:family-name "Stacy"
-		:given-name "Chris")
+        :given-name "Chris")
   :role (:committee)
   :organization "CS Consulting")
 
@@ -285,12 +281,12 @@
 ;;; Programme
 (define-programme-day @2017-04-03T00:00:00+02:00
   @09:00:00 (:title "Welcome Message"
-	     :role (:organization)
-		    :website "../static/2017/opening.pdf")
+         :role (:organization)
+            :website "../static/2017/opening.pdf")
   @09:30:00 (:title "Identity in a World of Values"
-	     :role (:talk :keynote)
-	     :speakers ("Hans Hübner")
-	     :description "Data persistence can add a great deal of complexity to application software, and making the gap between application and storage has been a constant field of research, experiments and products. In the object oriented programming paradigm, persistence seems to be a natural extension to object behavior, and even though one could argue that many persistent object systems have flaws and leak their abstractions, there is a large body of prior art and research in that area.
+         :role (:talk :keynote)
+         :speakers ("Hans Hübner")
+         :description "Data persistence can add a great deal of complexity to application software, and making the gap between application and storage has been a constant field of research, experiments and products. In the object oriented programming paradigm, persistence seems to be a natural extension to object behavior, and even though one could argue that many persistent object systems have flaws and leak their abstractions, there is a large body of prior art and research in that area.
 
 In the functional programming world, persistence does not find as natural a partnering abstraction, and it is often either conceptionally pushed to the boundaries of the application, or treated in an ad-hoc fashion interleaved with the beauty and conceptional rigor of pure functions.
 
@@ -300,21 +296,21 @@ The presentation discusses these forces and explores how Clojure's Software Tran
   @11:00:00 (:title "Common Lisp UltraSpec - A Project For Modern Common Lisp Documentation"
              :role (:talk)
              :speakers ("Michal Herda")
-	     :website "../static/2017/herda.pdf")
+         :website "../static/2017/herda.pdf")
   @11:30:00 (:title "Loading Multiple Versions of an ASDF System in the Same Lisp Image"
              :role (:talk)
              :speakers ("Vsevolod Domkin")
-	     :website "../static/2017/domkin.pdf")
+         :website "../static/2017/domkin.pdf")
   @12:00:00 (:title "Lunch"
              :role (:break))
   @13:30:00 (:title "A Lisp Way to Type Theory and Formal Proofs"
              :role (:talk)
              :speakers ("Frederic Peschanski")
-	     :website "../static/2017/peschanski.pdf")
+         :website "../static/2017/peschanski.pdf")
   @14:00:00 (:title "Programmatic Manipulation of Common Lisp Type Specifiers"
              :role (:talk)
              :speakers ("Jim Newton" "Didier Verna" "Maximilien Colange")
-	     :website "../static/2017/newton.pdf")
+         :website "../static/2017/newton.pdf")
   @14:30:00 (:title "Type Inference in Cleavir"
              :role (:talk)
              :speakers ("Alexander Wood"))
@@ -323,40 +319,40 @@ The presentation discusses these forces and explores how Clojure's Software Tran
   @15:30:00 (:title "Delivering Common Lisp Applications with ASDF 3.3"
              :role (:talk)
              :speakers ("Robert Goldman" "Elias Pipping" "François-René Rideau")
-	     :website "../static/2017/rideau.pdf")
+         :website "../static/2017/rideau.pdf")
   @15:52:00 (:title "Radiance – a Web Application Environment"
              :role (:talk)
              :speakers ("Yukari Hafner")
-	     :website "../static/2017/hafner.pdf")
+         :website "../static/2017/hafner.pdf")
   @16:15:00 (:title "Teaching Students of Engineering some Insights of the Internet of Things using Racket and the RaspberryPi"
              :role (:talk)
              :speakers ("Daniel Brunner" "Stephan Brunner")
-	     :website "../static/2017/brunner.pdf")
+         :website "../static/2017/brunner.pdf")
   @16:37:00 (:title "Interactive Functional Medical Image Analysis"
              :role (:talk)
              :speakers ("Benjamin Seppke" "Leonie Dreschler-Fischer")
-	     :website "../static/2017/seppke.pdf")
+         :website "../static/2017/seppke.pdf")
   @17:00:00 (:title "Lightning Talks"
              :role (:talk :lightning)
-	     :website "../static/2017/lt1.pdf")
+         :website "../static/2017/lt1.pdf")
   @17:30:00 (:title ""
              :role (:break)))
 
 (define-programme-day @2017-04-04T00:00:00+02:00
   @09:00:00 (:title "How the strengths of Lisp-family languages facilitate building complex and flexible bioinformatics applications"
-	     :role (:talk :keynote)
-	     :speakers ("Bohdan Khomtchouk")
-	     :description "We present a rationale for expanding the presence of the Lisp family of programming languages in bioinformatics and computational biology research. Put simply, Lisp-family languages enable programmers to more quickly write programs that run faster than in other languages. Languages such as Common Lisp, Scheme and Clojure facilitate the creation of powerful and flexible software that is required for complex and rapidly evolving domains like biology. We will point out several important key features that distinguish languages of the Lisp family from other programming languages, and we will explain how these features can aid researchers in becoming more productive and creating better code. We will also show how these features make these languages ideal tools for artificial intelligence and machine learning applications. We will specifically stress the advantages of domain-specific languages (DSLs): languages that are specialized to a particular area, and thus not only facilitate easier research problem formulation, but also aid in the establishment of standards and best programming practices as applied to the specific research field at hand. DSLs are particularly easy to build in Common Lisp, the most comprehensive Lisp dialect, which is commonly referred to as the 'programmable programming language'. We are convinced that Lisp grants programmers unprecedented power to build increasingly sophisticated artificial intelligence systems that may ultimately transform machine learning and artificial intelligence research in bioinformatics and computational biology.")
+         :role (:talk :keynote)
+         :speakers ("Bohdan Khomtchouk")
+         :description "We present a rationale for expanding the presence of the Lisp family of programming languages in bioinformatics and computational biology research. Put simply, Lisp-family languages enable programmers to more quickly write programs that run faster than in other languages. Languages such as Common Lisp, Scheme and Clojure facilitate the creation of powerful and flexible software that is required for complex and rapidly evolving domains like biology. We will point out several important key features that distinguish languages of the Lisp family from other programming languages, and we will explain how these features can aid researchers in becoming more productive and creating better code. We will also show how these features make these languages ideal tools for artificial intelligence and machine learning applications. We will specifically stress the advantages of domain-specific languages (DSLs): languages that are specialized to a particular area, and thus not only facilitate easier research problem formulation, but also aid in the establishment of standards and best programming practices as applied to the specific research field at hand. DSLs are particularly easy to build in Common Lisp, the most comprehensive Lisp dialect, which is commonly referred to as the 'programmable programming language'. We are convinced that Lisp grants programmers unprecedented power to build increasingly sophisticated artificial intelligence systems that may ultimately transform machine learning and artificial intelligence research in bioinformatics and computational biology.")
   @10:00:00 (:title "Parallelizing Femlisp"
              :role (:talk)
              :speakers ("Marco Heisig" "Nicolas Neuss")
-	     :website "../static/2017/neuss.pdf")
+         :website "../static/2017/neuss.pdf")
   @10:30:00 (:title "Coffee"
              :role (:break))
   @11:00:00 (:title "General Game Playing in Common Lisp"
              :role (:talk)
              :speakers ("Steve Losh")
-	     :website "../static/2017/losh.pdf")
+         :website "../static/2017/losh.pdf")
   @12:00:00 (:title "Lunch"
              :role (:break))
   @13:30:00 (:title "Fast, Maintainable, and Portable Sequence Functions"
@@ -365,7 +361,7 @@ The presentation discusses these forces and explores how Clojure's Software Tran
   @14:00:00 (:title "DIY Meta Languages with Common Lisp"
              :role (:talk)
              :speakers ("Alexander Lier" "Kai Selgrad" "Marc Stamminger")
-	     :website "../static/2017/lier.pdf")
+         :website "../static/2017/lier.pdf")
   @14:30:00 (:title "Static Taint Analysis of Event-driven Scheme Programs"
              :role (:talk)
              :speakers ("Jonas De Bleser" "Quentin Stiévenart" "Jens Nicolay" "Coen De Roover"))
@@ -374,20 +370,20 @@ The presentation discusses these forces and explores how Clojure's Software Tran
   @15:30:00 (:title "on the {lambda way}"
              :role (:talk)
              :speakers ("Alain Marty")
-	     :website "http://epsilonwiki.free.fr/lambdaway/?view=brussels_slides")
+         :website "http://epsilonwiki.free.fr/lambdaway/?view=brussels_slides")
   @16:00:00 (:title "Writing a portable code walker in Common Lisp"
              :role (:talk)
              :speakers ("Mikhail Raskin")
-	     :website "../static/2017/raskin.pdf")
+         :website "../static/2017/raskin.pdf")
   @16:30:00 (:title "Removing redundant tests by replicating control paths"
              :role (:talk)
              :speakers ("Irène Durand" "Robert Strandh")
-	     :website "../static/2017/durand.pdf")
+         :website "../static/2017/durand.pdf")
   @17:00:00 (:title "Lightning Talks"
              :role (:talk :lightning)
-	     :website "../static/2017/lt2.pdf")
+         :website "../static/2017/lt2.pdf")
   @17:30:00 (:title "Conference End"
-	     :role (:organization)
-	     :website "../static/2017/closing.pdf"))
+         :role (:organization)
+         :website "../static/2017/closing.pdf"))
 
 (define-proceedings "../static/proceedings/2017.pdf")

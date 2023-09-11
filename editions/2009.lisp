@@ -11,12 +11,8 @@
 (define-date "Conference end" @2009-05-29)
 
 ;;; People
-(define-person (:family-name "Verna"
-                :given-name "Didier")
-  :role (:administrator :committee)
-  :email "www@european-lisp-symposium.org"
-  :website "http://www.european-lisp-symposium.org"
-  :organization "ELS")
+(define-person (:family-name "Verna" :given-name "Didier")
+  :role (:committee))
 
 (define-person (:family-name "Leitão"
                 :given-name "António")
@@ -160,4 +156,3 @@
   :map T)
 
 ;; (define-proceedings "")
-
