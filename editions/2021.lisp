@@ -81,7 +81,7 @@
 
 (define-person (:family-name "Herda"
                 :given-name "Michał")
-  :role (:local-chair)
+  :role (:virtualization)
   :address (:country "Poland"))
 
 (define-person (:family-name "Evenson"
@@ -92,7 +92,7 @@
 
 (define-person (:family-name "Tugai"
                 :given-name "Georgiy")
-  :role (:local-chair)
+  :role (:virtualization)
   :organization "Configura"
   :address (:country "Sweden"))
 
