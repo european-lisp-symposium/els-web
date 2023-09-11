@@ -24,7 +24,7 @@
         <c:when test="(query :date '(= name :final\ papers))">
           <a href="#submissions">Submissions</a>
         </c:when>
-        <c:when test="(or (query :person '(or (in role :programme-chair) (in role :local-chair) (in role :committee))) (query :sponsor))">
+        <c:when test="(or (query :person '(or (in role :programme-chair) (in role :local-chair) (in role :committee) (in role :virtualization))) (query :sponsor))">
           <a href="#organization">Organization</a>
         </c:when>
         <c:when test="(query :location)">
@@ -138,7 +138,7 @@
           </section>
         </c:when>
 
-        <c:when test="(or (query :person '(or (in role :programme-chair) (in role :local-chair) (in role :committee))))">
+        <c:when test="(or (query :person '(or (in role :programme-chair) (in role :local-chair) (in role :committee) (in role :virtualization))))">
           <section id="organization">
             <h3>Organization</h3>
             <c:when test="(query1 :person '(in role :programme-chair))">
@@ -156,6 +156,12 @@
             <c:when test="(query1 :person '(in role :committee))">
               <h4>Committee</h4>
               <ul class="committee-members" iterate="(query :person '(in role :committee) :sort '(:full-name :asc))">
+                <li><c:splice lquery="(template :person)" /></li>
+              </ul>
+            </c:when>
+            <c:when test="(query1 :person '(in role :virtualization))">
+              <h4>Virtualization Team</h4>
+              <ul class="local-chairs" iterate="(query :person '(in role :virtualization) :sort '(:full-name :asc))">
                 <li><c:splice lquery="(template :person)" /></li>
               </ul>
             </c:when>
