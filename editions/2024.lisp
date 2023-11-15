@@ -2,10 +2,10 @@
 (define-edition "2024")
 (in-package "2024")
 
-;;(define-date "Submission deadline" @2024-02-26)
+(define-date "Submission deadline" @2024-02-18)
 ;;(define-date "*** Extended deadline ***" @2023-01-30)
-;;(define-date "Author notification" @2024-03-26)
-;;(define-date "Final papers" @2024-04-09)
+(define-date "Author notification" @2024-03-24)
+(define-date "Final papers" @2024-04-14)
 ;;(define-date "Early registration deadline" @2024-04-09)
 
 (define-date "Conference start" @2024-05-06)
