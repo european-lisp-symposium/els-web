@@ -12,7 +12,7 @@
 (define-date "Conference end" @2024-05-07)
 
 (define-text :announcement
-  (:div :class "announcement" "ELS 2024 is being planned!")
+  (:div :class "announcement" "The submission page is open!")
   (:div :class "announcement" "Note: SBCL25 is happening on May 2-3"))
 
 #+()(define-text :additional-info
@@ -23,7 +23,7 @@
   (:p "The timezone of our schedule is UTC+2. The videos of the streams will
   stay online for two weeks on Twitch, but will also be available on our <a href=\"https://www.youtube.com/@EuropeanLispSymposium\">YouTube channel</a>. See you online!"))
 
-#+()(define-text :submissions
+(define-text :submissions
 
   (:p "Submission topics include, but are not limited to:")
 
@@ -43,6 +43,8 @@
        presentations about topics of special interest.")
        (:li "<b>Demonstrations</b>: Abstracts of up to 4 pages for demonstrations of tools, libraries, and applications.")
        (:li "<b>Experience reports</b>: papers of up to 6 pages describing a Lisp success story and/or analyzing obstacles that have kept it from working in practice."))
+
+  (:p "This year, we suggest an emphasis on best practices, approaches, and technologies for building highly recursive and self-adapting architectures, in particular for AI, ML, tool integration and instruction generation, using dynamic programming languages.")
 
   (:p "You can upload submissions on <a href=\"https://www.easychair.org/conferences/?conf=els2024\">EasyChair</a>.")
 
