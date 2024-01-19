@@ -2,17 +2,17 @@
 (define-edition "2024")
 (in-package "2024")
 
-;;(define-date "Submission deadline" @2024-02-26)
+(define-date "Submission deadline" @2024-02-18)
 ;;(define-date "*** Extended deadline ***" @2023-01-30)
-;;(define-date "Author notification" @2024-03-26)
-;;(define-date "Final papers" @2024-04-09)
+(define-date "Author notification" @2024-03-24)
+(define-date "Final papers" @2024-04-14)
 ;;(define-date "Early registration deadline" @2024-04-09)
 
 (define-date "Conference start" @2024-05-06)
 (define-date "Conference end" @2024-05-07)
 
 (define-text :announcement
-  (:div :class "announcement" "ELS 2024 is being planned!")
+  (:div :class "announcement" "The submission page is open!")
   (:div :class "announcement" "Note: SBCL25 is happening on May 2-3"))
 
 #+()(define-text :additional-info
@@ -23,7 +23,7 @@
   (:p "The timezone of our schedule is UTC+2. The videos of the streams will
   stay online for two weeks on Twitch, but will also be available on our <a href=\"https://www.youtube.com/@EuropeanLispSymposium\">YouTube channel</a>. See you online!"))
 
-#+()(define-text :submissions
+(define-text :submissions
 
   (:p "Submission topics include, but are not limited to:")
 
@@ -44,6 +44,8 @@
        (:li "<b>Demonstrations</b>: Abstracts of up to 4 pages for demonstrations of tools, libraries, and applications.")
        (:li "<b>Experience reports</b>: papers of up to 6 pages describing a Lisp success story and/or analyzing obstacles that have kept it from working in practice."))
 
+  (:p "This year, we suggest an emphasis on best practices, approaches, and technologies for building highly recursive and self-adapting architectures, in particular for AI, ML, tool integration and instruction generation, using dynamic programming languages.")
+
   (:p "You can upload submissions on <a href=\"https://www.easychair.org/conferences/?conf=els2024\">EasyChair</a>.")
 
   (:p "All submissions should be formatted following the ACM SIGS guidelines and include <a href=\"http://www.acm.org/about/class/2012\">ACM Computing Classification System 2012</a> concepts and terms. Appropriate TeX and Word templates can be found on the <a href=\"https://www.acm.org/publications/proceedings-template\">ACM publications page</a>.")
@@ -54,16 +56,38 @@
 
   (:p "If you are using the correct style and classification system, your document will contain a section called <code>CCS Concepts</code> and include terms formatted like <code>•Information systems → Web applications</code>. If your document includes a section titled <code>Categories and Subject Descriptors</code> with things in a style like <code>D.2.3 [Software Engineering]: Coding Tools and Techniques</code>, then you have to update to the new 2012 system and templates as linked above. If the CCS section does not show up in the TeX generated PDF at all, make sure that your TeX file includes the <code>\\printccsdesc</code> command below the abstract."))
 
-#+()(define-person (:family-name ""
-                :given-name "")
+(define-person (:family-name "Attardi"
+                :given-name "Giuseppe")
   :role (:programme-chair)
-  :organization ""
-  :address (:country ""))
+  :organization "University of Pisa"
+  :address (:country "Italy"))
 
 (define-person (:family-name "Marek" :given-name "Philipp")
   :role (:local-chair)
   :organization "BRZ"
   :address (:city "Vienna" :country "Austria"))
+
+(define-person (:family-name "Tugai"
+                :given-name "Georgiy")
+  :role (:virtualization)
+  :organization "Configura"
+  :address (:country "Sweden"))
+
+(define-person (:family-name "Hafner"
+                :given-name "Yukari")
+  :role (:virtualization :speaker)
+  :photo "https://en.gravatar.com/userimage/12617850/a50422c48339a730dee468056eab402c.png"
+  :email "shinmera@tymoon.eu"
+  :website "https://shinmera.com"
+  :nickname "Shinmera"
+  :organization "Shirakumo.org"
+  :address (:country "Switzerland"))
+
+(define-person (:family-name "Herda"
+                :given-name "Michał")
+  :role (:virtualization)
+  :address (:country "Poland"))
+
 
 (define-location "Bundesrechenzentrum"
   :role (:conference)
