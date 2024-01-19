@@ -153,6 +153,12 @@
                 <li><c:splice lquery="(template :person)" /></li>
               </ul>
             </c:when>
+            <c:when test="(query1 :person '(in role :local-chair))">
+              <h4>Administrative Chair</h4>
+              <ul class="local-chairs" iterate="(query :person '(in role :administrative-chair) :sort '(:full-name :asc))">
+                <li><c:splice lquery="(template :person)" /></li>
+              </ul>
+            </c:when>
             <c:when test="(query1 :person '(in role :committee))">
               <h4>Committee</h4>
               <ul class="committee-members" iterate="(query :person '(in role :committee) :sort '(:full-name :asc))">
