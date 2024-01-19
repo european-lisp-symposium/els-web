@@ -89,6 +89,38 @@
   :address (:country "Poland"))
 
 
+(define-person (:given-name "Ambrose" :family-name "Bonnaire-Sergeant")
+  :role (:committee)
+  :organization "Untypable LLC")
+(define-person (:given-name "Frédéric" :family-name " Peschanski")
+  :role (:committee)
+  :organization "UPMC/LIP6")
+(define-person (:given-name "Jay" :family-name " McCarthy")
+  :role (:committee)
+  :organization "UMass Lowell")
+(define-person (:given-name "Jim" :family-name " Newton")
+  :role (:committee)
+  :organization "EPITA Research Lab")
+(define-person (:given-name "Kai" :family-name " Selgrad")
+  :role (:committee)
+  :organization "OTH Regensburg")
+(define-person (:given-name "Mark" :family-name " Evenson")
+  :role (:committee)
+  :organization "not.org")
+(define-person (:given-name "Michael" :family-name " Raskin")
+  :role (:committee)
+  :organization "LaBRI/CNRS UMR 5800, University of Bordeaux")
+(define-person (:given-name "Robert" :family-name " Smith")
+  :role (:committee)
+  :organization "HRL Laboratories LLC")
+(define-person (:given-name "Robert P." :family-name " Goldman")
+  :role (:committee)
+  :organization "SIFT LLC")
+(define-person (:given-name "Stefan" :family-name " Monnier")
+  :role (:committee)
+  :organization "Université de Montréal")
+
+
 (define-location "Bundesrechenzentrum"
   :role (:conference)
   :photo "https://www.brz.gv.at/.imaging/mte/rzm/comboImageHalfSizeSpecialCrop/dam/brz/Bilder/08-Slider/2018/20180104-Kontakt.jpg/jcr:content/20180104-Kontakt.jpg"
