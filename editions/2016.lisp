@@ -15,10 +15,6 @@
   :website "http://www.sigplan.org/"
   :logo "../static/logos/acm.svg")
 
-(define-sponsor epita
-  :website "http://www.epita.fr/"
-  :logo "../static/logos/epita.png")
-
 (define-sponsor lispworks
   :website "http://www.lispworks.com/"
   :logo "../static/logos/lispworks.png")

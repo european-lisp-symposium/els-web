@@ -20,10 +20,6 @@
   :website "http://cl-foundation.org/"
   :logo "../static/logos/cl-foundation.png")
 
-(define-sponsor epita
-  :website "http://www.epita.fr/"
-  :logo "../static/logos/epita.png")
-
 (define-sponsor biotech-ufl
   :website "http://www.biotech.ufl.edu/"
   :logo "../static/logos/ufl.svg")

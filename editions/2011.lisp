@@ -11,10 +11,6 @@
 (define-date "Conference end" @2011-04-01)
 
 ;;; Sponsors
-(define-sponsor epita
-  :website "http://www.epita.fr/"
-  :logo "../static/logos/epita.png")
-
 (define-sponsor lispworks
   :website "http://www.lispworks.com/"
   :logo "../static/logos/lispworks.png")
