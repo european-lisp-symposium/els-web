@@ -352,10 +352,6 @@ You can pick up a rental bike at most railway stations for €4.45 per day.")
           "Parking lot P7")
       " which is two minutes walk from Startup Village. Parking costs €4.50 per hour."))
 
-(define-sponsor epita
-  :website "http://www.epita.fr/"
-  :logo "../static/logos/epita.png")
-
 (define-sponsor diro
   :website "https://diro.umontreal.ca/"
   :logo "../static/2023/diro.png")

@@ -257,10 +257,6 @@ Since 2004 Max has been working as an artist and participated with interactive i
       (:p "Since we are co-locating with &lt;Programming&gt; this year,
 registration must be done through their <a href=\"https://www.last2ticket.com/en/embed/e/4173/s/45625/programming-2022\">system</a>."))
 
-(define-sponsor epita
-  :website "http://www.epita.fr/"
-  :logo "../static/logos/epita.png")
-
 (define-sponsor franz
   :website "http://www.franz.com/"
   :logo "../static/logos/franz.png")

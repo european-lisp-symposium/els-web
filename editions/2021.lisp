@@ -271,9 +271,6 @@
   :website "https://www.ravenpack.com/"
   :logo "../static/logos/ravenpack.jpg")
 
-(define-sponsor epita
-  :website "http://www.epita.fr/"
-  :logo "../static/logos/epita.png")
 
 
 ;;; Programme

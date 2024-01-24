@@ -136,10 +136,6 @@
         (:a :href "https://www.brz.gv.at/en/contact.html" "this page")
         " for some directions."))
 
-(define-sponsor epita
-  :website "http://www.epita.fr/"
-  :logo "../static/logos/epita.png")
-
 #+()(define-sponsor franz
   :website "http://www.franz.com/"
   :logo "../static/logos/franz.png")
