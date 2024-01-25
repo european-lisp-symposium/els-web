@@ -37,7 +37,7 @@
 
 ;;; People
 (define-person (:family-name "Verna" :given-name "Didier")
-  :role (:committee :speaker))
+  :role (:administrative-chair :committee :speaker))
 
 (define-person (:family-name "Durand"
                 :given-name "Irène")

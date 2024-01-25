@@ -12,7 +12,7 @@
 
 ;;; People
 (define-person (:family-name "Verna" :given-name "Didier")
-  :role (:committee))
+  :role (:administrative-chair :committee))
 
 (define-person (:family-name "Leitão"
                 :given-name "António")

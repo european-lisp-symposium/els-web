@@ -32,6 +32,10 @@
   :logo "../static/logos/ita.png")
 
 ;;; People
+(define-person (:family-name "Verna" :given-name "Didier")
+  :website "https://www.lrde.epita.fr/~didier/"
+  :role (:administrative-chair))
+
 (define-person (:family-name "Padget"
                 :given-name "Julian")
   :role (:programme-chair)
