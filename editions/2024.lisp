@@ -234,9 +234,9 @@
   (:kind "Student" :price 90 :status :active
    :description "Same as \"Regular\", student price (requires student ID copy via e-mail).")
   (:option "SBCL25" :status :inactive
-   :checked nil :price 50 :description "Nominal fee for SBCL25, not yet determined") ;; priceless?
+   :checked nil :price 50 :description "Nominal fee for SBCL25") ;; priceless?
   (:option "Weekend activity" :status :inactive
-   :checked nil :price 30 :description "Weekend activity estimation, not including lunch") ;; approximate
+   :checked nil :price 50 :description "Weekend activity estimation, including travel outside Vienna and lunch") ;; approximate
   (:option "banquet" :status :inactive
    :checked t :price 30 :description "Banquet")
   (:option "banquet-guest" :status :inactive
