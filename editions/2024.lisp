@@ -129,22 +129,35 @@
             :post-code "1030"
             :city "Vienna"
             :country "Austria")
-  ;; showing a live google map means transferring personal data (IP addresses!) to the USA,
-  ;; which is being legally challenged, with decisions already given
+  ;; showing a live google map means transferring personal data (IP
+  ;; addresses!) to the USA, which is being legally challenged, with decisions
+  ;; already given
   :map nil)
 
-#+()
 (define-text :reachability
-  (:p "The Location is the BRZ (\"Bundesrechenzentrum\", the \"Federal Computing Center\" of Austria). We'll get to use the Festsaal in the North half (part \"B\") of the building:"
-   (:a :href="https://osm.org/go/0JrJKLv1F--?layers=N&m=" "https://osm.org/go/0JrJKLv1F--?layers=N&m="))
+  (:p "The Location is the BRZ (\"Bundesrechenzentrum\", the \"Federal Computing Center\" of Austria). We'll get to use the <a href=\"https://osm.org/go/0JrJKLv1F--?layers=N&m=\">Festsaal</a> in the North half (part \"B\") of the building.")
+  (:p  "On the " (:a :href "../static/2024/SVP.pdf" "public transport graph")
+       " of Vienna  that's at the crossing of U3 (orange) and U4 (green), \"Landstraße\" (underground) resp. \"Wien Mitte\" (trains).")
+  (:p "Just go up to street level and head through the Mall to the north-east exit (the \"Spar\"-market is the south-west one; you want the one near \"Erste Bank\"), cross the traffic lane when the pedestrian traffic light is green, 15m (~50 feet) to the left is a foot path that brings you to the west building boundary; follow that one until after the middle of the cross. There you are!")
+  (:p "There are " (:b "train lines from/to the airport")
+      "; the special \"CAT\" (\"City Airport Train\") costs some more (about 5x) but takes about the same time, so I recommend to avoid it and use the normal train lines instead.")
+  (:p "These trains go to \"Hauptbahnhof\" (U1, red) or later on \"Meidling\" (U6, brown); or, the other main direction is to \"Landstraße\" (U3, U4).")
+  (:p "If you use day/week/etc. tickets for Vienna you can tell that to the ticket machine (there'll be a button \"I have a ticket for Vienna\"), so you only need to pay for the outside-of-Vienna-half of the ride, that's only €2,00. Coins recommended ;)")
+  (:p "Vienna has good "
+      (:a :href "https://www.wienerlinien.at/fahrpl%C3%A4ne"
+          "public transportation")
+      ". "
+      "Here's "
+      (:a :href "../static/2024/SVP.pdf" :title "Vienna public transport graph, PDF" "a PDF")
+      " showing only the underground and railways -- busses and trams are not included! "
+      "The android app " (:a :href "https://transportr.app/" "Transportr") " (FDroid, Google Play) supports " (:i "ÖBB") " and " (:i "Wiener Linien") ".")
   (:p
-   "On the "
-   (:a :href "SVP.pdf"
-    :title "Vienna public transport graph, PDF"
-    "public transport graph")
-   " of Vienna  that's at the crossing of U3 (orange) and U4 (green), \"Landstraße\" (underground) resp. \"Wien Mitte\" (trains).")
-  (:p
-   "Just go up to street level and head through the Mall to the north-east exit ( the \"Spar\"-market is the south-west one; you want the one near \"Erste Bank\"), cross the traffic lane when the pedestrian traffic light is green, 15m (~50 feet) to the left is a foot path that brings you to the west building boundary; follow that one until after the middle of the cross. There you are!"))
+   "My recommendation is to buy "
+   (:a :href "https://www.wienerlinien.at/zeitkarten" " day tickets and/or a 72-hour and/or 7-day tickets")
+   " (depending on how long you stay); this is much easier and cheaper than paying for every individual ride. You can buy these at the ticket automats at the airport already.")
+  (:p "Please note that there are " (:u "week") " and " (:u "7-day") " tickets -- the \"week tickets\" always start on Monday!")
+  (:p "There's even a 31-days ticket."))
+
 
 (define-sponsor brz
   :website "http://www.brz.gv.at/"
@@ -179,49 +192,29 @@
     (:i  "Author"))))
 
 
-#+()(define-text :tourism
-      (:p "Some events at around the time of the conference may be of interest.")
-      (:p "May 1" (:sup "st") " is a public holiday in Austria, see eg. "
-       (:a :href "https://www.stadt-wien.at/veranstaltungen/1-mai.html"
-        "https://www.stadt-wien.at/veranstaltungen/1-mai.html") ".")
-
-      (:p "Vienna has quite " 
-       (:a :href "https://www.khm.at/en/" "a") " "
-       (:a :href "https://www.technischesmuseum.at/en" "few" :title "Very nice!") " "
-       (:a :href "https://www.nhm-wien.ac.at/en" "museums") 
-       "and other "
-       (:a :href "https://www.drittemanntour.at/en/index.html" "underworldly") " "
-       (:a :href "https://www.hausdermusik.com/en/" "Interesting!")
-       " attractions; here's an "
-       (:a :href "https://events.wien.info/de/?df=2024-04-29&dt=2024-05-08&lt=-1"
-        "event calender")
-       " for the time range around ELS (and SBCL25).")
-      (:p "The tourism portal is "
-       (:a :href "https://www.wien.info/en" "https://www.wien.info/en")
-       ".")
-      )
-
-#+()(define-text :public-transport
-      (:p
-       "Vienna has good " (:a :href "https://www.wienerlinien.at/fahrpl%C3%A4ne" "public transportation") "."
-       "Here's "
-       (:a :href "SVP.pdf" :title "Vienna public transport graph, PDF" "a PDF")
-       "showing only the underground and railways -- busses and trams are not included! "
-       "The android app " (:a :href "https://transportr.app/" "Transportr") " (FDroid, Google Play) supports " (:i "ÖBB") " and " (:i "Wiener Linien") ".")
-      (:p
-       "My recommendation is to buy "
-       (:a :href "https://www.wienerlinien.at/zeitkarten" " day tickets and/or a 72-hour and/or 7-day tickets")
-       " (depending on how long you stay); this is much easier and cheaper than paying for every individual ride. You can buy these at the ticket automats at the airport already.")
-
-      (:p "Please note that there are " (:u "week") " and " (:u "7-day") " tickets -- the \"week tickets\" always start on Monday!")
-      (:p "There's even a 31-days ticket."))     
-
-#+()(define-text :airport-transfer
-      (:p
-       "There are " (:b "train lines from/to the airport") 
-       "; the special \"CAT\" (\"City Airport Train\") costs some more (about 5x) but takes about the same time, so I recommend to avoid it and use the normal train lines instead.")
-       (:p "These trains go to \"Hauptbahnhof\" (U1, red) or later on \"Meidling\" (U6, brown); or, the other main direction is to \"Landstraße\" (U3, U4).")
-      (:p "If you use day/week/etc. tickets for Vienna you can tell that to the ticket machine (there'll be a button \"I have a ticket for Vienna\"), so you only need to pay for the outside-of-Vienna-half of the ride, that's only €2,00. Coins recommended ;)"))
+(define-text :tourism
+  (:p "Some events at around the time of the conference may be of interest.")
+  (:p "May 1" (:sup "st") " is a public holiday in Austria, see eg. "
+      (:a :href "https://www.stadt-wien.at/veranstaltungen/1-mai.html"
+          "https://www.stadt-wien.at/veranstaltungen/1-mai.html") ".")
+  (:p "Vienna has quite "
+      (:a :href "https://www.khm.at/en/" "a") " "
+      (:a :href "https://www.technischesmuseum.at/en" "few") " "
+      (:a :href "https://www.nhm-wien.ac.at/en" "museums")
+      " and other "
+      (:a :href "https://www.drittemanntour.at/en/index.html" "underworldly")
+      " "
+      (:a :href "https://www.hausdermusik.com/en/" "Interesting!")
+      " attractions; here's an "
+      (:a :href "https://events.wien.info/de/?df=2024-04-29&dt=2024-05-08&lt=-1"
+          "event calender")
+      " for the time range around ELS (and SBCL25).")
+  (:p "The tourism portal is "
+      (:a :href "https://www.wien.info/en" "https://www.wien.info/en")
+      ".")
+  (:p "A weekend activity for May 4"
+      (:sup "th") " " (:b "OR") " May 5" (:sup "th")
+      " is being prepared"))
 
 ;; TODO: how to allow SBCL25 registration without ELS? Is that even required?
 #+()(define-registration (:active)
@@ -253,7 +246,7 @@
 ;;; Programme
 #+()(define-programme-day @2024-05-03T00:00:00+02:00
   @08:30:00 (:title "SBCL25: Registration, badges, meet and greet"
-             :role (:organization)))
+             :role (:organization))
   @09:00:00 (:title "Welcome message and announcements"
              :role (:organization))
   @09:15:00 (:title "Keynote and Talks")
@@ -273,11 +266,6 @@
   @17:15:00 (:title "Lightning talks")
              :role (:talk))
 
-
-#+()(define-text :weekend-activity
-      (:p "A weekend activity for May 4" (:sup "th") " " (:b "OR") " May 5" (:sup "th")
-       " is being prepared"
-      )
 
 #+()(define-programme-day @2024-05-06T00:00:00+02:00
   @08:30:00 (:title "Registration, badges, meet and greet"
@@ -337,7 +325,7 @@
              :speakers ())
   @14:30:00 (:title ""
              :role (:talk)
-             :speakers ()
+             :speakers ())
   @15:00:00 (:title "Coffee Break"
              :role (:break))
   @15:30:00 (:title ""
