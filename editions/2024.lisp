@@ -13,7 +13,7 @@
 
 (define-text :announcement
   (:div :class "announcement" "The submission page is open!")
-  (:div :class "announcement" "Note: SBCL25 is happening on May 2-3"))
+  (:div :class "announcement" "Note: SBCL25 is happening on May 2-3 (just before the weekend) in the same location!"))
 
 #+()(define-text :additional-info
   (:p "There are several ways for you to join ELS online:"
@@ -133,12 +133,40 @@
             :post-code "1030"
             :city "Vienna"
             :country "Austria")
-  :map T)
+  ;; showing a live google map means transferring personal data (IP
+  ;; addresses!) to the USA, which is being legally challenged, with decisions
+  ;; already given
+  :map nil)
 
 (define-text :reachability
-    (:p "See "
-        (:a :href "https://www.brz.gv.at/en/contact.html" "this page")
-        " for some directions."))
+  (:p "The Location is the BRZ (\"Bundesrechenzentrum\", the \"Federal Computing Center\" of Austria). We'll get to use the <a href=\"https://osm.org/go/0JrJKLv1F--?layers=N&m=\">Festsaal</a> in the North half (part \"B\") of the building.")
+  (:p  "On the " (:a :href "../static/2024/SVP.pdf" "public transport graph")
+       " of Vienna  that's at the crossing of U3 (orange) and U4 (green), \"Landstraße\" (underground) resp. \"Wien Mitte\" (trains).")
+  (:p "Just go up to street level and head through the Mall to the north-east exit (the \"Spar\"-market is the south-west one; you want the one near \"Erste Bank\"), cross the traffic lane when the pedestrian traffic light is green, 15m (~50 feet) to the left is a foot path that brings you to the west building boundary; follow that one until after the middle of the cross. There you are!")
+  (:p "There are " (:b "train lines from/to the airport")
+      "; the special \"CAT\" (\"City Airport Train\") costs some more (about 5x) but takes about the same time, so I recommend to avoid it and use the normal train lines instead.")
+  (:p "These trains go to \"Hauptbahnhof\" (U1, red) or later on \"Meidling\" (U6, brown); or, the other main direction is to \"Landstraße\" (U3, U4).")
+  (:p "If you use day/week/etc. tickets for Vienna you can tell that to the ticket machine (there'll be a button \"I have a ticket for Vienna\"), so you only need to pay for the outside-of-Vienna-half of the ride, that's only €2,00. Coins recommended ;)")
+  (:p "Vienna has good "
+      (:a :href "https://www.wienerlinien.at/fahrpl%C3%A4ne"
+          "public transportation")
+      ". "
+      "Here's "
+      (:a :href "../static/2024/SVP.pdf" :title "Vienna public transport graph, PDF" "a PDF")
+      " showing only the underground and railways -- busses and trams are not included! "
+      "The android app " (:a :href "https://transportr.app/" "Transportr") " (FDroid, Google Play) supports " (:i "ÖBB") " and " (:i "Wiener Linien") ".")
+  (:p
+   "My recommendation is to buy "
+   (:a :href "https://www.wienerlinien.at/zeitkarten" " day tickets and/or a 72-hour and/or 7-day tickets")
+   " (depending on how long you stay); this is much easier and cheaper than paying for every individual ride. You can buy these at the ticket automats at the airport already.")
+  (:p "Please note that there are " (:u "week") " and " (:u "7-day") " tickets -- the \"week tickets\" always start on Monday!")
+  (:p "There's even a 31-days ticket."))
+
+
+(define-sponsor brz
+  :website "http://www.brz.gv.at/"
+  :logo "../static/logos/brz.png")
+
 
 #+()(define-sponsor franz
   :website "http://www.franz.com/"
@@ -168,8 +196,31 @@
     (:i  "Author"))))
 
 
-#+()(define-text :tourism)
+(define-text :tourism
+  (:p "Some events at around the time of the conference may be of interest.")
+  (:p "May 1" (:sup "st") " is a public holiday in Austria, see eg. "
+      (:a :href "https://www.stadt-wien.at/veranstaltungen/1-mai.html"
+          "https://www.stadt-wien.at/veranstaltungen/1-mai.html") ".")
+  (:p "Vienna has quite "
+      (:a :href "https://www.khm.at/en/" "a") " "
+      (:a :href "https://www.technischesmuseum.at/en" "few") " "
+      (:a :href "https://www.nhm-wien.ac.at/en" "museums")
+      " and other "
+      (:a :href "https://www.drittemanntour.at/en/index.html" "underworldly")
+      " "
+      (:a :href "https://www.hausdermusik.com/en/" "Interesting!")
+      " attractions; here's an "
+      (:a :href "https://events.wien.info/de/?df=2024-04-29&dt=2024-05-08&lt=-1"
+          "event calender")
+      " for the time range around ELS (and SBCL25).")
+  (:p "The tourism portal is "
+      (:a :href "https://www.wien.info/en" "https://www.wien.info/en")
+      ".")
+  (:p "A weekend activity for May 4"
+      (:sup "th") " " (:b "OR") " May 5" (:sup "th")
+      " is being prepared"))
 
+;; TODO: how to allow SBCL25 registration without ELS? Is that even required?
 #+()(define-registration (:active)
   (:kind "Early regular" :price 120 :status :inactive
    :description "Full conference package (talks, coffee breaks, banquet).")
@@ -179,101 +230,112 @@
    :description "Full conference package (talks, coffee breaks, note: banquet out).")
   (:kind "Student" :price 90 :status :active
    :description "Same as \"Regular\", student price (requires student ID copy via e-mail).")
+  (:option "SBCL25" :status :inactive
+   :checked nil :price 50 :description "Nominal fee for SBCL25") ;; priceless?
+  (:option "Weekend activity" :status :inactive
+   :checked nil :price 50 :description "Weekend activity estimation, including travel outside Vienna and lunch") ;; approximate
   (:option "banquet" :status :inactive
-   :checked t :price 0 :description "Banquet")
+   :checked t :price 30 :description "Banquet")
   (:option "banquet-guest" :status :inactive
    :price 30 :description "Banquet guest")
   (:option "certificate" :price 0 :description "Certificate of attendance"))
 
 
 ;;; Programme
-#+()(define-programme-day @2024-05-06T00:00:00+02:00
-  @09:00:00 (:title "Registration, badges, meet and greet"
-             :role (:organization))
-  @09:45:00 (:title "Welcome message and announcements"
-             :role (:organization))
-  @10:00:00 (:title "Keynote: Run-Time Verification of Communication Protocols in Clojure"
-             :role (:talk :keynote)
-             :speakers ("Sung-Shik Jongmans")
-             :description "To simplify shared-memory concurrent programming, languages have started to offer core support for high-level communications primitives, in the form of message passing though channels, in addition to lower-level synchronization primitives.  Yet, a growing body of evidence suggests that channel-based programming abstractions also have their issues.
+#+()(define-programme-day @2024-05-02T00:00:00+02:00
+  @09:00:00 (:title "SBCL25: Registration, badges, meet and greet, hacking and having fun"
+             :description "Drinks, food, power & tables provided"
+             :role (:organization)))
 
-The Discourje project aims to help programmers cope with channels and concurrency bugs in Clojure programs, based on dynamic analysis. The idea is that programmers write not only implementations of communication protocols in their Clojure programs, but also specifications.  Discourje then offers a run-time verification library to ensure that channel actions in implementations are safe relative to specifications.")
-  @11:00:00 (:title "Coffee Break"
+;;; Programme
+#+()(define-programme-day @2024-05-03T00:00:00+02:00
+  @08:30:00 (:title "SBCL25: Registration, badges, meet and greet"
+             :role (:organization))
+  @09:00:00 (:title "Welcome message and announcements"
+             :role (:organization))
+  @09:15:00 (:title "Keynote and Talks")
+             :role (:talk :keynote)
+  @10:30:00 (:title "Coffee Break"
              :role (:break))
-  @11:30:00 (:title "Research Paper: A MOP-Based Implementation for Method Combinations"
-             :role (:talk)
-             :speakers ("Didier Verna"))
-  @12:00:00 (:title "Research Paper: A Minimal Run-Time Overhead Metaobject Protocol for Julia"
-             :role (:talk)
-             :speakers ("Marcelo Santos" "Antonio Leitao"))
+  @10:45:00 (:title "Talks"
+             :role (:talk))
   @12:30:00 (:title "Lunch"
              :role (:break))
-  @14:00:00 (:title "Research Paper: An Elegant and Fast Algorithm for Partitioning Types"
+  @14:00:00 (:title "Talks"
+             :role (:talk))
+  @15:30:00 (:title "Coffee Break"
+             :role (:break))
+  @15:45:00 (:title "Talks")
              :role (:talk)
-             :speakers ("Jim Newton"))
-  @14:30:00 (:title "Demonstration: GRASP: An Extensible Tactile Interface for Editing S-expressions"
+  @17:15:00 (:title "Lightning talks")
+             :role (:talk))
+
+
+#+()(define-programme-day @2024-05-06T00:00:00+02:00
+  @08:30:00 (:title "Registration, badges, meet and greet"
+             :role (:organization))
+  @09:00:00 (:title "Welcome messages and announcements"
+             :role (:organization))
+  @09:30:00 (:title "Keynote"
+             :role (:talk :keynote)
+             :speakers ()
+             :description)
+  @11:00:00 (:title "Coffee Break"
+             :role (:break))
+  @11:30:00 (:title ""
+             :role (:talk)
+             :speakers ())
+  @12:00:00 (:title ""
+             :role (:talk)
+             :speakers ())
+  @12:30:00 (:title "Lunch"
+             :role (:break))
+  @14:00:00 (:title ""
+             :role (:talk)
+             :speakers ())
+  @14:30:00 (:title ""
              :role (:demo)
-             :speakers ("Panicz Maciej Godek"))
+             :speakers ())
   @15:00:00 (:title "Coffee Break"
              :role (:break))
-  @15:30:00 (:title "Keynote: Hedy: Gradual, Multi-Lingual, and Teacher-Centric
-Programming Education"
-             :role (:talk :keynote)
-             :speakers ("Felienne Hermans")
-             :description "When kids learn to program they often use either a visual language like Scratch, or a textual language like Python. While visual languages are great for the first steps, children and educators often want to move on to textual languages. However, early on, a textual language and its error messages can be scary. Hedy aims to bridge this gap with a programming language that is gradual, using different language levels.
-
-In level 1, there is hardly any syntax at all; printing is done with: print hello!
-
-At every level, new syntax and concepts are added, so learners do not have to master everything at once. Hedy builds up to a subset of Python including conditions, loops, variables, and lists.
-
-To make learning as accessible as possible, Hedy also allows for the use of localized keywords, f.e in Spanish: imprimir Hello! Hedy (www.hedy.org) was launched in early 2020 and over 5 million Hedy progams have been created to date, and has been translated into 46 languages.")
+  @15:30:00 (:title ""
+             :role (:talk)
+             :speakers ())
   @16:30:00 (:title "Enlightening Lightning Talks"
              :role (:talk))
   @18:30:00 (:title "Conference dinner (on site)"
                     :role (:break)))
 
 #+()(define-programme-day @2024-05-07T00:00:00+02:00
-  @09:30:00 (:title "Keynote: A Language-Based Approach to Programming with Serialized Data"
+  @09:30:00 (:title "Keynote"
              :role (:talk :keynote)
-             :speakers ("Michael Vollmer")
-             :description "It is common for software running today to use object representations fixed by the language runtime system; both the Java and Haskell runtimes dictate an object layout, and the compiler must stick to it for all programs. And yet when humans optimize a program, one of their primary levers on performance is changing data representation. For example, an HPC programmer knows how to pack a regular tree into a byte array for more efficient access. Unfortunately, this is error-prone, making it an undesirable way to achieve performance optimization at the expense of safety and readability.
-
-Furthermore, whenever a program receives data from the network or disk, rigid insistence on a particular heap layout causes an impedance mismatch we know as deserialization. Data represented in memory has pointers and arbitrary, sparse layout, while data on disk is packed contiguously, so data must be transformed from one form to another and back.
-
-Programming with serialized data is a technique for unifying the in-memory and on-disk representations of data, where the serialized form is used both on-disk and in-memory. This technique allows data processing programs to skip the deserialization/reserialization steps by operating directly on the data in its serialized form. It also represents a principled approach to optimizing programs by compacting data representations, which increases locality and minimizes indirection.
-
-In this talk, I will present a programming language, LoCal, for programming with serialized data. I will also describe Gibbon, an experimental compiler that automatically transforms functional programs to operate on serialized data.")
+             :speakers ()
+             :description "")
   @10:30:00 (:title "Coffee Break"
              :role (:break))
-  @11:00:00 (:title "Demonstration (remote): A stepper for Armed Bear Common Lisp (ABCL)"
+  @11:00:00 (:title ""
              :role (:demo)
-             :speakers ("Alejandro Zamora Fonseca"))
-  @11:30:00 (:title "Experience Report: Kandria - A Game in Common Lisp"
+             :speakers ())
+  @11:30:00 (:title ""
              :role (:demo)
-             :speakers ("Yukari Hafner"))
-  @12:00:00 (:title "Sponsored: SISCOG - 35 years of keeping trains on track"
+             :speakers ())
+  @12:00:00 (:title ""
              :role (:demo)
-             :speakers ("Fábio Almeida"))
+             :speakers ())
   @12:30:00 (:title "Lunch"
              :role (:break))
-  @14:00:00 (:title "Research Paper (remote): Parallel Garbage Collection for SBCL"
+  @14:00:00 (:title ""
              :role (:talk)
-             :speakers ("Hayley Patton"))
-  @14:30:00 (:title "Research Paper: Design of an Efficient Lisp Bytecode Machine and Compiler"
+             :speakers ())
+  @14:30:00 (:title ""
              :role (:talk)
-             :speakers ("Alexander Wood" "Charles Zhang" "Christian Schafmeister"))
+             :speakers ())
   @15:00:00 (:title "Coffee Break"
              :role (:break))
-  @15:30:00 (:title "Keynote (remote): Artificial Intelligence: a Problem of Plumbing?"
+  @15:30:00 (:title ""
              :role (:talk :keynote)
-             :speakers ("Gerald J. Sussman")
-             :description "We have made amazing progress in the construction and deployment of systems that do work originally thought to require human-like intelligence.  On the symbolic side we have world-champion Chess-playing and Go-playing systems. We have deductive systems and algebraic manipulation systems that exceed the capabilities of human mathematicians.  We are now observing the rise of connectionist mechanisms that appear to see and hear pretty well, and chatbots that appear to have some impressive linguistic ability.  But there is a serious problem.  The mechanisms that can distinguish pictures of cats from pictures of dogs have no idea what a cat or a dog is. The chatbots have no idea what they are talking about.  The algebraic systems do not understand anything about the real physical world.  And no deontic logic system has any idea about feelings and morality.
-
-So what is the problem?  We generally do not know how to combine systems so that a system that knows how to solve problems of class A and another system that knows how to solve problems of class B can be combined to solve not just problems of class A or class B but can solve problems that require both skills that are needed for problems of class A and skills that are needed for problems of class B.
-
-Perhaps this is partly a problem of plumbing.  We do not have linguistic structures that facilitate discovering and building combinations.  This is a fundamental challenge for the programming-language community.  We need appropriate ideas for abstract plumbing fittings that enable this kind of cooperation among disparate mechanisms.  For example, why is the amazingly powerful tree exploration mechanism that is used for games not also available, in the same system, to a deductive engine that is being applied to a social interaction problem?
-
-I will attempt to elucidate this problem and perhaps point at avenues of attack that we may work on together.")
+             :speakers ()
+             :description "")
   @16:30:00 (:title "Enlightening Lightning Talks"
              :role (:talk)))
 
