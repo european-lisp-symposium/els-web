@@ -61,7 +61,7 @@
 
 ;;; People
 (define-person (:family-name "Verna" :given-name "Didier")
-  :role (:administrative-chair :committee :speaker))
+  :role (:organizing-chair :committee :speaker))
 
 (define-person (:family-name "Rhodes"
                 :given-name "Christophe")

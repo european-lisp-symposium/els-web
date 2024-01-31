@@ -56,7 +56,7 @@
 
 (define-person (:family-name "Verna" :given-name "Didier")
   :website "https://www.lrde.epita.fr/~didier/"
-  :role (:administrative-chair :speaker))
+  :role (:organizing-chair :speaker))
 
 (define-person (:family-name "Monnier"
                 :given-name "Stefan")

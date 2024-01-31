@@ -99,7 +99,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 ;;; People
 (define-person (:family-name "Verna" :given-name "Didier")
   :website "https://www.lrde.epita.fr/~didier/"
-  :role (:administrative-chair))
+  :role (:organizing-chair))
 
 (define-person (:family-name "Neuss"
         :given-name "Nicolas")

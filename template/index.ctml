@@ -138,7 +138,7 @@
           </section>
         </c:when>
 
-        <c:when test="(or (query :person '(or (in role :programme-chair) (in role :local-chair) (in role :committee) (in role :virtualization))))">
+        <c:when test="(or (query :person '(or (in role :programme-chair) (in role :organizing-chair) (in role :local-chair) (in role :committee) (in role :virtualization))))">
           <section id="organization">
             <h3>Organization</h3>
             <c:when test="(query1 :person '(in role :programme-chair))">
@@ -147,15 +147,15 @@
                 <li><c:splice lquery="(template :person)" /></li>
               </ul>
             </c:when>
-            <c:when test="(query1 :person '(in role :local-chair))">
-              <h4>Local Chair</h4>
-              <ul class="local-chairs" iterate="(query :person '(in role :local-chair) :sort '(:full-name :asc))">
+            <c:when test="(query1 :person '(in role :organizing-chair))">
+              <h4>Organizing Chair</h4>
+              <ul class="organizing-chairs" iterate="(query :person '(in role :organizing-chair) :sort '(:full-name :asc))">
                 <li><c:splice lquery="(template :person)" /></li>
               </ul>
             </c:when>
             <c:when test="(query1 :person '(in role :local-chair))">
-              <h4>Administrative Chair</h4>
-              <ul class="local-chairs" iterate="(query :person '(in role :administrative-chair) :sort '(:full-name :asc))">
+              <h4>Local Chair</h4>
+              <ul class="local-chairs" iterate="(query :person '(in role :local-chair) :sort '(:full-name :asc))">
                 <li><c:splice lquery="(template :person)" /></li>
               </ul>
             </c:when>

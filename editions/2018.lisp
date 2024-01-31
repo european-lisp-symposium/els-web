@@ -104,7 +104,7 @@ like this: <code>\\usepackage[format=sigconf]{acmart}</code>." )
 
 ;;; People
 (define-person (:family-name "Verna" :given-name "Didier")
-  :role (:administrative-chair :speaker))
+  :role (:organizing-chair :speaker))
 
 (define-person (:family-name "Cooper"
         :given-name "David")

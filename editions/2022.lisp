@@ -62,7 +62,7 @@
 ;; persons
 
 (define-person (:family-name "Verna" :given-name "Didier")
-  :role (:administrative-chair :demo :speaker))
+  :role (:organizing-chair :demo :speaker))
 
 (define-person (:family-name "Newton"
                 :given-name "Jim")

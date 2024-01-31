@@ -90,7 +90,7 @@
 ;; persons
 (define-person (:family-name "Verna" :given-name "Didier")
   :website "https://www.lrde.epita.fr/~didier/"
-  :role (:administrative-chair))
+  :role (:organizing-chair))
 
 (define-person (:family-name "Hafner"
                 :given-name "Yukari")
