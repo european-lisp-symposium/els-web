@@ -139,14 +139,14 @@
   :map nil)
 
 (define-text :reachability
-  (:p "The Location is the BRZ (\"Bundesrechenzentrum\", the \"Federal Computing Center\" of Austria). We'll get to use the <a href=\"https://osm.org/go/0JrJKLv1F--?layers=N&m=\">Festsaal</a> in the North half (part \"B\") of the building.")
+  (:p "The Location is the BRZ (\"" (:i "Bundesrechenzentrum") "\", the \"" (:i "Federal Computing Center") "\" of Austria). We'll get to use the Festsaal in the North half (part \"B\") of the building:"
   (:p  "On the " (:a :href "../static/2024/SVP.pdf" "public transport graph")
-       " of Vienna  that's at the crossing of U3 (orange) and U4 (green), \"Landstraße\" (underground) resp. \"Wien Mitte\" (trains).")
-  (:p "Just go up to street level and head through the Mall to the north-east exit (the \"Spar\"-market is the south-west one; you want the one near \"Erste Bank\"), cross the traffic lane when the pedestrian traffic light is green, 15m (~50 feet) to the left is a foot path that brings you to the west building boundary; follow that one until after the middle of the cross. There you are!")
+   " of Vienna  that's at the crossing of U3 (orange) and U4 (green), \"" (:i "Landstraße") "\" (underground) resp. \"" (:i "Wien Mitte") "\" (trains).")
+  (:p "Just go up to street level and head through the Mall to the north-east exit (the \"" (:i "Spar") "\"-market is the south-west one; you want the one near \"" (:i "Erste Bank") "\"), cross the traffic lane when the pedestrian traffic light is green, 15m (~50 feet) to the left is a foot path that brings you to the west building boundary; follow that one until after the middle of the cross. There you are!")
   (:p "There are " (:b "train lines from/to the airport")
-      "; the special \"CAT\" (\"City Airport Train\") costs some more (about 5x) but takes about the same time, so I recommend to avoid it and use the normal train lines instead.")
-  (:p "These trains go to \"Hauptbahnhof\" (U1, red) or later on \"Meidling\" (U6, brown); or, the other main direction is to \"Landstraße\" (U3, U4).")
-  (:p "If you use day/week/etc. tickets for Vienna you can tell that to the ticket machine (there'll be a button \"I have a ticket for Vienna\"), so you only need to pay for the outside-of-Vienna-half of the ride, that's only €2,00. Coins recommended ;)")
+      "; the special \"" (:i "CAT") "\" (\"" (:i "City Airport Train") "\") costs some more (about 5x) but takes about the same time, so I recommend to avoid it and use the normal train lines instead.")
+  (:p "These trains go to \"" (:i "Hauptbahnhof") "\" (U1, red) or later on \"" (:i "Meidling") "\" (U6, brown); or, the other main direction is to \"Landstraße\" (U3, U4).")
+  (:p "If you use day/week/etc. tickets for Vienna you can tell that to the ticket machine (there'll be a button \"" (:i "I have a ticket for Vienna") "\"), so you only need to pay for the outside-of-Vienna-half of the ride, that's only €2,00. Coins recommended ;)")
   (:p "Vienna has good "
       (:a :href "https://www.wienerlinien.at/fahrpl%C3%A4ne"
           "public transportation")
@@ -159,7 +159,7 @@
    "My recommendation is to buy "
    (:a :href "https://www.wienerlinien.at/zeitkarten" " day tickets and/or a 72-hour and/or 7-day tickets")
    " (depending on how long you stay); this is much easier and cheaper than paying for every individual ride. You can buy these at the ticket automats at the airport already.")
-  (:p "Please note that there are " (:u "week") " and " (:u "7-day") " tickets -- the \"week tickets\" always start on Monday!")
+  (:p "Please note that there are " (:u "week") " and " (:u "7-day") " tickets -- the \"" (:i "week tickets") "\" always start on Monday!")
   (:p "There's even a 31-days ticket."))
 
 
@@ -208,7 +208,7 @@
       " and other "
       (:a :href "https://www.drittemanntour.at/en/index.html" "underworldly")
       " "
-      (:a :href "https://www.hausdermusik.com/en/" "Interesting!")
+       (:a :href "https://www.hausdermusik.com/en/" "(interesting!)")
       " attractions; here's an "
       (:a :href "https://events.wien.info/de/?df=2024-04-29&dt=2024-05-08&lt=-1"
           "event calender")
@@ -216,9 +216,20 @@
   (:p "The tourism portal is "
       (:a :href "https://www.wien.info/en" "https://www.wien.info/en")
       ".")
-  (:p "A weekend activity for May 4"
-      (:sup "th") " " (:b "OR") " May 5" (:sup "th")
-      " is being prepared"))
+  (:p "Weekend activity for May 5" (:sup "th")
+      " is being planned:"
+   (:ul
+    (:li "Meeting in Vienna")
+    (:li "Public transport to Hinterbrühl (fare outside Vienna is organized)")
+    (:li "Visiting \"" (:i "Seegrotte") "\", "
+     (:a :href "http://seegrotte.at/en/mystische-erlebnisse-english/"
+      "Europe's largest underground lake"))
+    (:li "Lunch (a few menues organized, including vegetarian)")
+    (:li "Public transport back to Vienna")
+    (:li "Guided tour through the "
+     (:a :href "https://en.wikipedia.org/wiki/Vienna_Observatory"
+      "Vienna Observatory")))))
+
 
 ;; TODO: how to allow SBCL25 registration without ELS? Is that even required?
 #+()(define-registration (:active)
@@ -232,6 +243,7 @@
    :description "Same as \"Regular\", student price (requires student ID copy via e-mail).")
   (:option "SBCL25" :status :inactive
    :checked nil :price 50 :description "Nominal fee for SBCL25") ;; priceless?
+      ;; TODO: t-shirt size and men/women cut
   (:option "Weekend activity" :status :inactive
    :checked nil :price 50 :description "Weekend activity estimation, including travel outside Vienna and lunch") ;; approximate
   (:option "banquet" :status :inactive
