@@ -139,9 +139,9 @@
   :map nil)
 
 (define-text :reachability
-  (:p "The Location is the BRZ (\"" (:i "Bundesrechenzentrum") "\", the \"" (:i "Federal Computing Center") "\" of Austria). We'll get to use the Festsaal in the North half (part \"B\") of the building:"
+  (:p "The Location is the BRZ (\"" (:i "Bundesrechenzentrum") "\", the \"" (:i "Federal Computing Center") "\" of Austria). We'll get to use the Festsaal in the North half (part \"B\") of the building:")
   (:p  "On the " (:a :href "../static/2024/SVP.pdf" "public transport graph")
-   " of Vienna  that's at the crossing of U3 (orange) and U4 (green), \"" (:i "Landstraße") "\" (underground) resp. \"" (:i "Wien Mitte") "\" (trains).")
+       " of Vienna  that's at the crossing of U3 (orange) and U4 (green), \"" (:i "Landstraße") "\" (underground) resp. \"" (:i "Wien Mitte") "\" (trains).")
   (:p "Just go up to street level and head through the Mall to the north-east exit (the \"" (:i "Spar") "\"-market is the south-west one; you want the one near \"" (:i "Erste Bank") "\"), cross the traffic lane when the pedestrian traffic light is green, 15m (~50 feet) to the left is a foot path that brings you to the west building boundary; follow that one until after the middle of the cross. There you are!")
   (:p "There are " (:b "train lines from/to the airport")
       "; the special \"" (:i "CAT") "\" (\"" (:i "City Airport Train") "\") costs some more (about 5x) but takes about the same time, so I recommend to avoid it and use the normal train lines instead.")
