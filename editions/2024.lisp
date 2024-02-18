@@ -2,8 +2,7 @@
 (define-edition "2024")
 (in-package "2024")
 
-(define-date "Submission deadline" @2024-02-18)
-;;(define-date "*** Extended deadline ***" @2023-01-30)
+(define-date "Submission deadline ** EXTENDED ** " @2024-02-25)
 (define-date "Author notification" @2024-03-24)
 (define-date "Final papers" @2024-04-14)
 ;;(define-date "Early registration deadline" @2024-04-09)
@@ -12,7 +11,9 @@
 (define-date "Conference end" @2024-05-07)
 
 (define-text :announcement
-  (:div :class "announcement" "The submission page is open!")
+  (:div :class "announcement" "The submission deadline has been extended by
+  one week!")
+  #+()(:div :class "announcement" "The submission page is open!")
   (:div :class "announcement" "Note: SBCL25 is happening on May 2-3 (just before the weekend) in the same location!"))
 
 #+()(define-text :additional-info
