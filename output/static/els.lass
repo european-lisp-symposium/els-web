@@ -283,13 +283,15 @@
       :margin 0 0 2.5em 0
       :display flex
       :align-items flex-start
+      :flex-wrap wrap
+      :position relative
       (>* :flex-grow 1
           :text-align center)
-      (label :white-space nowrap :position relative)
+      (label :white-space nowrap)
       (.description
        :z-index 5
        :position absolute
-       :margin-top 0.5em
+       :bottom -2.0em
        :left 0 :right 0
        :display none
        :background white
@@ -298,14 +300,6 @@
        :padding 1px 3px 1px 3px
        :user-select none
        :pointer-events none)
-      ("input:checked+label:after"
-       :content ""
-       :z-index 6
-       :position absolute
-       :bottom -0.5em :left 50% :left (calc (- 50% 3px))
-       :border-left 5px solid transparent
-       :border-right 5px solid transparent
-       :border-bottom 7px solid #(main-bg))
       ("input:checked~.description" :display block))
      (.text-container
       :position relative)
