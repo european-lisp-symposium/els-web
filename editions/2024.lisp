@@ -168,6 +168,9 @@
   :website "http://www.brz.gv.at/"
   :logo "../static/logos/brz.png")
 
+(define-sponsor bmf
+  :website "https://www.bmf.gv.at/"
+  :logo "../static/logos/bmf.png")
 
 #+()(define-sponsor franz
   :website "http://www.franz.com/"
