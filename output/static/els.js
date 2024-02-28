@@ -336,6 +336,7 @@ var ELS = function(){
                 email: form.querySelector("#email").value,
                 affiliation: form.querySelector("#affiliation").value,
                 foodRestrictions: form.querySelector("#food-restrictions").value,
+                tshirtSize: form.querySelector("#tshirt-size").value,
                 items: items,
                 price: self.calculatePrice()
             };
