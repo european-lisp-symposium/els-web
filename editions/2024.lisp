@@ -232,26 +232,40 @@
       "Vienna Observatory")))))
 
 
-;; TODO: how to allow SBCL25 registration without ELS? Is that even required?
-#+()(define-registration (:active)
-  (:kind "Early regular" :price 120 :status :inactive
-   :description "Full conference package (talks, coffee breaks, banquet).")
-  (:kind "Early student" :price 60 :status :inactive
-   :description "Same as \"Early regular\", student price (requires student ID copy via e-mail).")
-  (:kind "Regular" :price 160 :status :active
-   :description "Full conference package (talks, coffee breaks, note: banquet out).")
-  (:kind "Student" :price 90 :status :active
-   :description "Same as \"Regular\", student price (requires student ID copy via e-mail).")
-  (:option "SBCL25" :status :inactive
-   :checked nil :price 50 :description "Nominal fee for SBCL25") ;; priceless?
-      ;; TODO: t-shirt size and men/women cut
-  (:option "Weekend activity" :status :inactive
-   :checked nil :price 50 :description "Weekend activity estimation, including travel outside Vienna and lunch") ;; approximate
-  (:option "banquet" :status :inactive
-   :checked t :price 30 :description "Banquet")
-  (:option "banquet-guest" :status :inactive
-   :price 30 :description "Banquet guest")
-  (:option "certificate" :price 0 :description "Certificate of attendance"))
+(define-registration (:active)
+
+  (:kind "ELS+SBCL Early Regular" :price 150 :status :active
+   :description "Full conference package (talks, coffee breaks, banquet, T-Shirt).")
+  (:kind "ELS+SBCL Early Student" :price 70 :status :active
+   :description "Same as \"ELS+SBCL Early Regular\", student price (requires student ID copy via e-mail).")
+  (:kind "ELS (no SBCL) Early Regular" :price 120 :status :active
+   :description "Full conference package (talks, coffee breaks, banquet, T-Shirt).")
+  (:kind "ELS (no SBCL) Early Student" :price 60 :status :active
+   :description "Same as \"ELS (no SBCL) Early Regular\", student price (requires student ID copy via e-mail).")
+  (:kind "SBCL (no ELS) Early Regular" :price 40 :status :active
+   :description "Full conference package (talks, coffee breaks, banquet, T-Shirt).")
+  (:kind "SBCL (no ELS) Early Student" :price 20 :status :active
+   :description "Same as \"SBCL (no ELS) Early Regular\", student price (requires student ID copy via e-mail).")
+
+  ;; #### WARNING: depending on future decisions, maybe remove banquet and
+  ;; tshirt from the descriptions below.
+  (:kind "ELS+SBCL Late Regular" :price 190 :status :inactive
+   :description "Full conference package (talks, coffee breaks, banquet, T-Shirt).")
+  (:kind "ELS+SBCL Late Student" :price 110 :status :inactive
+   :description "Same as \"ELS+SBCL Late Regular\", student price (requires student ID copy via e-mail).")
+  (:kind "ELS (no SBCL) Late Regular" :price 160 :status :inactive
+   :description "Full conference package (talks, coffee breaks, banquet, T-Shirt).")
+  (:kind "ELS (no SBCL) Late Student" :price 90 :status :inactive
+   :description "Same as \"ELS (no SBCL) Late Regular\", student price (requires student ID copy via e-mail).")
+  (:kind "SBCL (no ELS) Late Regular" :price 50 :status :inactive
+   :description "Full conference package (talks, coffee breaks, banquet, T-Shirt).")
+  (:kind "SBCL (no ELS) Late Student" :price 30 :status :inactive
+   :description "Same as \"SBCL (no ELS) Late Regular\", student price (requires student ID copy via e-mail).")
+
+  (:option "banquet-guest" :status :active
+   :price 30 :description "Banquet Guest")
+  (:option "weekend-excursion" :status :active
+   :price 50 :description "Weekend excursion (see the Tourism section below)"))
 
 
 ;;; Programme
