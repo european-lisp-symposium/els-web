@@ -164,6 +164,7 @@
   (:p "There's even a 31-days ticket."))
 
 
+#+()
 (define-sponsor brz
   :website "http://www.brz.gv.at/"
   :logo "../static/logos/brz.png")
