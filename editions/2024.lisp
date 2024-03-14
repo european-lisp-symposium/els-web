@@ -2,7 +2,7 @@
 (define-edition "2024")
 (in-package "2024")
 
-(define-date "Submission deadline ** EXTENDED ** " @2024-02-25)
+#+()(define-date "Submission deadline ** EXTENDED ** " @2024-02-25)
 (define-date "Author notification" @2024-03-24)
 (define-date "Final papers" @2024-04-14)
 ;;(define-date "Early registration deadline" @2024-04-09)
@@ -11,9 +11,6 @@
 (define-date "Conference end" @2024-05-07)
 
 (define-text :announcement
-  (:div :class "announcement" "The submission deadline has been extended by
-  one week!")
-  #+()(:div :class "announcement" "The submission page is open!")
   (:div :class "announcement" "Note: SBCL25 is happening on May 2-3 (just before the weekend) in the same location!"))
 
 #+()(define-text :additional-info
@@ -24,7 +21,7 @@
   (:p "The timezone of our schedule is UTC+2. The videos of the streams will
   stay online for two weeks on Twitch, but will also be available on our <a href=\"https://www.youtube.com/@EuropeanLispSymposium\">YouTube channel</a>. See you online!"))
 
-(define-text :submissions
+#+()(define-text :submissions
 
   (:p "Submission topics include, but are not limited to:")
 
