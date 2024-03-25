@@ -35,7 +35,7 @@
       </div>
       <div class="text-container tshirt-size">
         <input type="text" class="input empty" id="tshirt-size" />
-        <label for="tshirt-size">T-Shirt size (S, M, L, XL, XXL)</label>
+        <label for="tshirt-size">T-Shirt size (S, M, L, XL, XXL) and cut (F or M)</label>
       </div>
     </div>
     <h4>Options</h4>

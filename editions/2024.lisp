@@ -11,7 +11,7 @@
 (define-date "Conference end" @2024-05-07)
 
 (define-text :announcement
-  (:div :class "announcement" "Note: SBCL25 is happening on May 2-3 (just before the weekend) in the same location!"))
+  (:div :class "announcement" "Note: SBCL25 is happening on May 2-3 (just before the weekend) in Vienna, too!"))
 
 #+()(define-text :additional-info
   (:p "There are several ways for you to join ELS online:"
@@ -123,10 +123,10 @@
   :organization "Université de Montréal")
 
 
-(define-location "Universität Wien"
+(define-location "(OR 'Universität-Wien 'FH-Technikum)"
   :role (:conference)
   ;; :photo ; will follow as soon as I know where exactly
-  :website "https://www.univie.ac.at/"
+  ;;:website "https://www.univie.ac.at/"
   :address (:street "-- Details will follow --"
             ;:post-code "1030"
             :city "Vienna"
