@@ -5,12 +5,13 @@
 #+()(define-date "Submission deadline ** EXTENDED ** " @2024-02-25)
 (define-date "Author notification" @2024-03-24)
 (define-date "Final papers" @2024-04-14)
-;;(define-date "Early registration deadline" @2024-04-09)
+(define-date "Early registration deadline" @2024-04-14)
 
 (define-date "Conference start" @2024-05-06)
 (define-date "Conference end" @2024-05-07)
 
 (define-text :announcement
+  (:div :class "announcement" "ELS / SBCL25 Registrations now open!")
   (:div :class "announcement" "Note: SBCL25 is happening on May 2-3 (just before the weekend) in Vienna, too!"))
 
 #+()(define-text :additional-info
