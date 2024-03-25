@@ -13,6 +13,7 @@ Here are your registration details:
     Affiliation: %s
     Food Restrictions: %s
     T-Shirt Size: %s
+    T-Shirt Cut: %s
 
 If you find any error in the details, or would like to cancel your
 registration, please reply to this e-mail and let us know. Be sure

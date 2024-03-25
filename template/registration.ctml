@@ -27,17 +27,27 @@
         <input type="text" class="input empty" id="affiliation" />
         <label for="affiliation">Affiliation</label>
       </div>
-    </div>
-    <div class="supplementary">
       <div class="text-container food-restrictions">
         <input type="text" class="input empty" id="food-restrictions" />
         <label for="food-restrictions">Food restrictions</label>
       </div>
-      <div class="text-container tshirt-size">
-        <input type="text" class="input empty" id="tshirt-size" />
-        <label for="tshirt-size">T-Shirt size (S, M, L, XL, XXL) and cut (F or M)</label>
-      </div>
     </div>
+    <div class="text-container">
+      T-Shirt size:
+      <select id="tshirt-size">
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option selected value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+      <span style="margin-left: 10pt;">T-Shirt cut:</span>
+      <select id="tshirt-cut">
+        <option selected value="M">M</option>
+        <option value="F">F</option>
+      </select>
+    </div>
+
     <h4>Options</h4>
     <div class="options">
       <div iterate="(query :registration-sku '(and (= type :option) (= status :active)))">

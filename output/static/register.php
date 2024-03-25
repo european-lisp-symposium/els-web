@@ -52,11 +52,11 @@ function sendMail($intent){
   if($mailer_ssl != "false"){
     if($mailer_ssl == "self-signed"){
       $mail->SMTPOptions = array(
-        'ssl' => array(
-          'verify_peer' => false,
-          'verify_peer_name' => false,
-          'allow_self_signed' => true
-        )
+	    'ssl' => array(
+	      'verify_peer' => false,
+	      'verify_peer_name' => false,
+	      'allow_self_signed' => true
+	    )
       );
     }
     $mail->SMTPSecure = 'ssl';
@@ -72,14 +72,15 @@ function sendMail($intent){
   $mail->addAddress($mailer_from);
   $mail->Subject = "European Lisp Symposium Registration";
   $mail->Body = sprintf($mailer_body,
-                        ($intent == null? "- (Manual bank transfer)" : $intent->id),
-                        join(", ", $_POST['items']),
-                        $_POST['price'],
-                        $_POST['name'],
-                        $_POST['email'],
-                        $_POST['affiliation'],
-                        $_POST['foodRestrictions'],
-                        $_POST['tshirtSize']);
+				    ($intent == null? "- (Manual bank transfer)" : $intent->id),
+				    join(", ", $_POST['items']),
+				    $_POST['price'],
+				    $_POST['name'],
+				    $_POST['email'],
+				    $_POST['affiliation'],
+				    $_POST['foodRestrictions'],
+				    $_POST['tshirtSize'],
+				    $_POST['tshirtCut']);
   $mail->send();
 }
 
@@ -90,52 +91,53 @@ if($failed == false){
       require_once($stripe."/init.php");
       \Stripe\Stripe::setApiKey($stripe_private_key);
       $intent = \Stripe\PaymentIntent::create([
-        "payment_method" => $_POST['token'],
-        "amount" => intval($_POST['price'])*100,
-        "currency" => "eur",
-        "confirmation_method" => "manual",
-        "confirm" => true,
-        "description" => $_POST['name']." ".$_POST['email'],
-        "receipt_email" => $_POST['email'],
-        "metadata" => array(
-          "name" => $_POST['name'],
-          "email" => $_POST['email'],
-          "affiliation" => $_POST['affiliation'],
-          "food-restrictions" => $_POST['foodRestrictions'],
-          "tshirt-size" => $_POST['tshirtSize'],
-          "items" => join(", ", $_POST['items']),
-        )
+	    "payment_method" => $_POST['token'],
+	    "amount" => intval($_POST['price'])*100,
+	    "currency" => "eur",
+	    "confirmation_method" => "manual",
+	    "confirm" => true,
+	    "description" => $_POST['name']." ".$_POST['email'],
+	    "receipt_email" => $_POST['email'],
+	    "metadata" => array(
+	      "name" => $_POST['name'],
+	      "email" => $_POST['email'],
+	      "affiliation" => $_POST['affiliation'],
+	      "food-restrictions" => $_POST['foodRestrictions'],
+	      "tshirt-size" => $_POST['tshirtSize'],
+	      "tshirt-cut" => $_POST['tshirtCut'],
+	      "items" => join(", ", $_POST['items']),
+	    )
       ]);
 
       if ($intent->status == 'requires_action' &&
-          $intent->next_action->type == 'use_stripe_sdk') {
-        $message = json_encode([
-          'status' => $intent->status,
-          'payment_intent_client_secret' => $intent->client_secret
-        ]);
+	      $intent->next_action->type == 'use_stripe_sdk') {
+	    $message = json_encode([
+	      'status' => $intent->status,
+	      'payment_intent_client_secret' => $intent->client_secret
+	    ]);
       } else if ($intent->status == 'succeeded') {
-        $message = json_encode([
-          'status' => $intent->status
-        ]);
-        sendMail($intent);
+	    $message = json_encode([
+	      'status' => $intent->status
+	    ]);
+	    sendMail($intent);
       } else {
-        $message = json_encode([
-          'status' => $intent->status,
-          'error' => 'Invalid PaymentIntent status'
-        ]);
-        $failed = true;
+	    $message = json_encode([
+	      'status' => $intent->status,
+	      'error' => 'Invalid PaymentIntent status'
+	    ]);
+	    $failed = true;
       }
     } else if($_POST['action'] == "confirm"){
       if($_POST['token'] != "bank"){
-        require_once($stripe."/init.php");
-        \Stripe\Stripe::setApiKey($stripe_private_key);
-        $intent = \Stripe\PaymentIntent::retrieve($_POST['token']);
+	    require_once($stripe."/init.php");
+	    \Stripe\Stripe::setApiKey($stripe_private_key);
+	    $intent = \Stripe\PaymentIntent::retrieve($_POST['token']);
       }
 
       sendMail($intent);
 
       if($intent != null){
-        $intent->confirm();
+	    $intent->confirm();
       }
     }
   } catch(Stripe\Error\Card $e) {

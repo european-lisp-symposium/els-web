@@ -258,10 +258,12 @@
   (:kind "SBCL (no ELS) Late Student" :price 30 :status :inactive
    :description "Same as \"SBCL (no ELS) Late Regular\", student price (requires student ID copy via e-mail).")
 
+  (:option "weekend" :status :active
+   :price 50 :description "Weekend excursion (see the Tourism section below)")
+  (:option "weekend-guest" :status :active
+   :price 50 :description "Weekend excursion guest")
   (:option "banquet-guest" :status :active
-   :price 30 :description "Banquet Guest")
-  (:option "weekend-excursion" :status :active
-   :price 50 :description "Weekend excursion (see the Tourism section below)"))
+   :price 30 :description "Banquet Guest"))
 
 
 ;;; Programme

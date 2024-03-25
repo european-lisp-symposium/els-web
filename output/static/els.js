@@ -28,7 +28,7 @@ var ELS = function(){
     self.decodeEmailElements = function(){
         var elements = document.getElementsByClassName("encoded-email");
         for(var i=0; i<elements.length; i++){
-            self.decodeEmailElement(elements[i]);        
+            self.decodeEmailElement(elements[i]);
         }
         return elements;
     };
@@ -111,7 +111,7 @@ var ELS = function(){
         var revoffset = ((offset[0] == "+")?"-":"+")+offset.substring(1);
         // Translate browser time to normalised UTC time and offset to conference time.
         var utctime = date.toISOString().slice(0, -1);
-        return new Date(Date.parse(utctime+revoffset)+date.getTimezoneOffset()*60000); 
+        return new Date(Date.parse(utctime+revoffset)+date.getTimezoneOffset()*60000);
     };
 
     self.formatDateLocally = function(date){
@@ -126,7 +126,7 @@ var ELS = function(){
 
     self.updateProgrammeEntry = function(element, current){
         current = current || new Date();
-        
+
         var start = self.getElementTime(element);
         var nextSibling = self.getNextSibling(element.parentElement);
         var stop = (nextSibling)
@@ -149,17 +149,17 @@ var ELS = function(){
                 self.addClass(element, "future");
             }
         }
-        
+
         return element;
     };
 
     self.updateProgramme = function(current){
         current = current || new Date();
-        
+
         var setter = document.getElementById("set-time");
         if(document.activeElement !== setter)
             setter.value = self.formatDateLocally(current);
-        
+
         var entries = document.getElementsByClassName("programme-entry");
         for(var i=0; i<entries.length; i++){
             self.updateProgrammeEntry(entries[i], current);
@@ -280,7 +280,7 @@ var ELS = function(){
             input.addEventListener('change', self.calculatePrice);
             testEmpty();
         });
-        
+
         var elementClasses = {
             focus: 'focused',
             empty: 'empty',
@@ -330,13 +330,14 @@ var ELS = function(){
                 self.showFailure("Please enter a name."); return;}
             if(form.querySelector("#email").value == ""){
                 self.showFailure("Please enter an email address."); return;}
-            
+
             var data = {
                 name: form.querySelector("#name").value,
                 email: form.querySelector("#email").value,
                 affiliation: form.querySelector("#affiliation").value,
                 foodRestrictions: form.querySelector("#food-restrictions").value,
                 tshirtSize: form.querySelector("#tshirt-size").value,
+                tshirtCut: form.querySelector("#tshirt-cut").value,
                 items: items,
                 price: self.calculatePrice()
             };
@@ -345,7 +346,7 @@ var ELS = function(){
                 self.log("Payment failed.", e);
                 self.showFailure((e=="")? "Registration failed." : e);
             };
-            
+
             var confirmPayment = function(data){
                 data["action"] = "confirm";
                 self.request(form.getAttribute("action"), data, function(response){
@@ -413,14 +414,14 @@ var ELS = function(){
 
     self.decorateBackground = function(num){
         var rand = function(n){return Math.random()*n;};
-        
+
         var html = document.documentElement;
         var body = document.body;
         var main = document.getElementsByTagName("main")[0];
         var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         var h = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
         var num = num || h/200;
-        
+
         var container = document.createElement("div");
         container.setAttribute("style", "overflow: hidden; position: absolute; left: 0; top: 0; width: 100%; height: 100%; pointer-events: none;");
         body.style.position = "relative";
