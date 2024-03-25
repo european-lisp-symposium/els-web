@@ -123,11 +123,11 @@
   :organization "Université de Montréal")
 
 
-(define-location "(OR 'Universität-Wien 'FH-Technikum)"
+(define-location "SBCL25 at BZR, ELS: stay tuned for updates!"
   :role (:conference)
   ;; :photo ; will follow as soon as I know where exactly
   ;;:website "https://www.univie.ac.at/"
-  :address (:street "-- Details will follow --"
+  :address (;:street ""
             ;:post-code "1030"
             :city "Vienna"
             :country "Austria")
@@ -137,9 +137,10 @@
   :map nil)
 
 (define-text :reachability
-  (:p "The Location is the " (:i "Universität Wien") ".")
-  (:p "More details to follow.")
-)
+  (:p "SBCL25 will be held at BZR (but we're handling the registrations).
+  Please have a look at "
+      (:a :href "https://sbcl.org/sbcl25/" "this page")
+      " for more information. We're still handling some last minute location problems with ELS. We apologize for the inconvenience. Please be patient and stay tuned for updates!"))
 
 
 (define-sponsor bmf
