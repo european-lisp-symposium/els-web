@@ -236,11 +236,11 @@
   (:kind "ELS+SBCL Early Student" :price 70 :status :active
    :description "Same as \"ELS+SBCL Early Regular\", student price (requires student ID copy via e-mail).")
   (:kind "ELS (no SBCL) Early Regular" :price 120 :status :active
-   :description "Full conference package (talks, coffee breaks, banquet, T-Shirt).")
+   :description "ELS conference package (talks, coffee breaks, banquet, T-Shirt).")
   (:kind "ELS (no SBCL) Early Student" :price 60 :status :active
    :description "Same as \"ELS (no SBCL) Early Regular\", student price (requires student ID copy via e-mail).")
   (:kind "SBCL (no ELS) Early Regular" :price 40 :status :active
-   :description "Full conference package (talks, coffee breaks, banquet, T-Shirt).")
+   :description "SBCL workshop package (talks, coffee breaks, T-Shirt).")
   (:kind "SBCL (no ELS) Early Student" :price 20 :status :active
    :description "Same as \"SBCL (no ELS) Early Regular\", student price (requires student ID copy via e-mail).")
 
@@ -251,11 +251,11 @@
   (:kind "ELS+SBCL Late Student" :price 110 :status :inactive
    :description "Same as \"ELS+SBCL Late Regular\", student price (requires student ID copy via e-mail).")
   (:kind "ELS (no SBCL) Late Regular" :price 160 :status :inactive
-   :description "Full conference package (talks, coffee breaks, banquet, T-Shirt).")
+   :description "ELS conference package (talks, coffee breaks, banquet, T-Shirt).")
   (:kind "ELS (no SBCL) Late Student" :price 90 :status :inactive
    :description "Same as \"ELS (no SBCL) Late Regular\", student price (requires student ID copy via e-mail).")
   (:kind "SBCL (no ELS) Late Regular" :price 50 :status :inactive
-   :description "Full conference package (talks, coffee breaks, banquet, T-Shirt).")
+   :description "SBCL workshop package (talks, coffee breaks, T-Shirt).")
   (:kind "SBCL (no ELS) Late Student" :price 30 :status :inactive
    :description "Same as \"SBCL (no ELS) Late Regular\", student price (requires student ID copy via e-mail).")
 
