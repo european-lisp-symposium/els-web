@@ -124,12 +124,13 @@
   :organization "Université de Montréal")
 
 
-(define-location "SBCL25 at BZR, ELS: stay tuned for updates!"
+(define-location "SBCL25 at the BRZ; ELS in the Sky Lounge of University Vienna"
+  ;; TODO: logo upcoming, exact text needed "(in collaboration with the Department for European, International and Comparative Law)"
   :role (:conference)
-  ;; :photo ; will follow as soon as I know where exactly
-  ;;:website "https://www.univie.ac.at/"
-  :address (;:street ""
-            ;:post-code "1030"
+  :photo "https://event.univie.ac.at/fileadmin/_processed_/csm_Aussenansicht_OMP_3_f71b0260cd.jpg"
+  :website "https://event.univie.ac.at/en/venue-management/locations-and-rooms/oskar-morgenstern-platz-1/sky-lounge/"
+  :address (:street "Oskar Morgenstern Platz 1"
+            :post-code "1090"
             :city "Vienna"
             :country "Austria")
   ;; showing a live google map means transferring personal data (IP
@@ -138,10 +139,17 @@
   :map nil)
 
 (define-text :reachability
-  (:p "SBCL25 will be held at BZR (but we're handling the registrations).
-  Please have a look at "
-      (:a :href "https://sbcl.org/sbcl25/" "this page")
-      " for more information. We're still handling some last minute location problems with ELS. We apologize for the inconvenience. Please be patient and stay tuned for updates!"))
+  (:p "ELS will happen in the "
+   (:a :href "https://osm.org/go/0JrJGowI?m=" 
+    "Sky Lounge")
+   " of the University of Vienna; that's only a few minutes walk from the underground line U4, stations \"Rossauer Lände\" or \"Schottenring\".")
+  (:p "SBCL25 will be held at " 
+   (:a :href "https://osm.org/go/0JrJKLvk?m="
+    "the BRZ")
+   " (but we're handling the registrations), also on the U4, near \"Landstraße\". "
+   "Please have a look at "
+   (:a :href "https://sbcl.org/sbcl25/" "this page")
+   " for more information."))
 
 
 (define-sponsor bmf
@@ -279,8 +287,11 @@
              :role (:organization))
   @09:00:00 (:title "Welcome message and announcements"
              :role (:organization))
-  @09:15:00 (:title "Keynote and Talks")
+  @09:15:00 (:title "Keynote and Talks"
+             :role (:talk :keynote))
+  @10:00:00 (:title "Welcome by the Ministry of Finance" ;; Will be updated beginning of April
              :role (:talk :keynote)
+             :speakers ("Markus Triska"))
   @10:30:00 (:title "Coffee Break"
              :role (:break))
   @10:45:00 (:title "Talks"
