@@ -11,6 +11,7 @@
 (define-date "Conference end" @2024-05-07)
 
 (define-text :announcement
+  (:div :class "announcement" "First keynote announced: Bias is a bug; but not as we know it! by Julian Padget")
   (:div :class "announcement" "ELS / SBCL25 Registrations now open!")
   (:div :class "announcement" "Note: SBCL25 is happening on May 2-3 (just before the weekend) in Vienna, too!"))
 
@@ -123,6 +124,33 @@
   :role (:committee)
   :organization "Université de Montréal")
 
+(define-person (:family-name "Padget"
+                :given-name "Julian")
+  :organisation "University of Bath"
+  :address (:country "UK")
+  :role (:speaker :keynote)
+  :description "Algorithmic model construction is now accepted technology.
+                Using some data to train a model is commonplace and machine
+                learning has percolated down to the first-year CS curriculum.
+                Testing such models is quite difficult, because conventional
+                approaches learned from conventional programming provide only
+                limited coverage. Furthermore, metrics offer big picture
+                performance but may disguise edge cases. One significant worry
+                is that such systems exhibit differential treatment of
+                individuals or groups because the algorithm has identified an
+                attribute relationship in the data that does not align with
+                the system's business requirements. This is typically referred
+                to (wrongly!) as a `biased' output. We start by examining the
+                language of bias in algorithmic models and argue
+                that (unwanted) bias is a (latent) bug. However, this bug
+                typically has complex causes, as well as the possibility of
+                morphing over time into bias that does align with the
+                requirements. In consequence, we will continue by exploring
+                how consideration of bias can be incorporated into the system
+                life cycle and put forward some strategies for thinking about
+                bias-related debugging.")
+
+
 
 (define-location "SBCL25 at the BRZ; ELS in the Sky Lounge of University Vienna"
   ;; TODO: logo upcoming, exact text needed "(in collaboration with the Department for European, International and Comparative Law)"
@@ -177,12 +205,44 @@
   :logo "../static/logos/ACM.png")
 
 
-#+()(define-text :keynotes
+(define-text :keynotes
   (:ul
    (:li
-    (:b "Title")
-    (:i  "Author"))))
-
+    (:b "Bias is a bug; but not as we know it!")
+    (:i  " -- Julian Padget")
+    (:p "Algorithmic model construction is now accepted technology.
+         Using some data to train a model is commonplace and machine learning
+         has percolated down to the first-year CS curriculum. Testing such
+         models is quite difficult, because conventional approaches learned
+         from conventional programming provide only limited coverage.
+         Furthermore, metrics offer big picture performance but may disguise
+         edge cases. One significant worry is that such systems exhibit
+         differential treatment of individuals or groups because the algorithm
+         has identified an attribute relationship in the data that does not
+         align with the system's business requirements. This is typically
+         referred to (wrongly!) as a `biased' output. We start by examining
+         the language of bias in algorithmic models and argue that (unwanted)
+         bias is a (latent) bug. However, this bug typically has complex
+         causes, as well as the possibility of morphing over time into bias
+         that does align with the requirements. In consequence, we will
+         continue by exploring how consideration of bias can be incorporated
+         into the system life cycle and put forward some strategies for
+         thinking about bias-related debugging.")
+    (:p (:i (:small "Julian started working with Lisp in the 1980s with stints
+                     at IBM (Lisp/VM) and Utah (Portable Standard Lisp) while
+                     also working on applications in computer algebra - Reduce
+                     and Scratchpad (later called Axiom) - before contributing
+                     to the design of EuLisp and to ISO Lisp standardisation.
+                     In the mid 1990s he began to focus on multiagent systems
+                     and then on the design of normative frameworks to guide
+                     agent decision making. Recent work includes the use of
+                     inductive logic programming for the automated revision of
+                     norms, value engineering in socio-technical systems and
+                     the development of frameworks for agents on HPC and
+                     agents on the web. Cross-disciplinary research includes
+                     power systems engineering, automotive systems, proteomics
+                     and AI regulation, as well as participation in
+                     standardisation at ISO and IEEE."))))))
 
 (define-text :tourism
   (:p (:b "Public transport information")
