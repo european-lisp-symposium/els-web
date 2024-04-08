@@ -168,10 +168,10 @@
 
 (define-text :reachability
   (:p "ELS will happen in the "
-   (:a :href "https://osm.org/go/0JrJGowI?m=" 
+   (:a :href "https://osm.org/go/0JrJGowI?m="
     "Sky Lounge")
    " of the University of Vienna; that's only a few minutes walk from the underground line U4, stations \"Rossauer Lände\" or \"Schottenring\".")
-  (:p "SBCL25 will be held at " 
+  (:p "SBCL25 will be held at "
    (:a :href "https://osm.org/go/0JrJKLvk?m="
     "the BRZ")
    " (but we're handling the registrations), also on the U4, near \"Landstraße\". "
@@ -312,8 +312,6 @@
   (:kind "SBCL (no ELS) Early Student" :price 20 :status :active
    :description "Same as \"SBCL (no ELS) Early Regular\", student price (requires student ID copy via e-mail).")
 
-  ;; #### WARNING: depending on future decisions, maybe remove banquet and
-  ;; tshirt from the descriptions below.
   (:kind "ELS+SBCL Late Regular" :price 190 :status :inactive
    :description "Full conference package (talks, coffee breaks, banquet, T-Shirt).")
   (:kind "ELS+SBCL Late Student" :price 110 :status :inactive

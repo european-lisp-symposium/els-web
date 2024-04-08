@@ -78,9 +78,7 @@ function sendMail($intent){
 				    $_POST['name'],
 				    $_POST['email'],
 				    $_POST['affiliation'],
-				    $_POST['foodRestrictions'],
-				    $_POST['tshirtSize'],
-				    $_POST['tshirtCut']);
+				    $_POST['foodRestrictions']);
   $mail->send();
 }
 
@@ -103,8 +101,6 @@ if($failed == false){
 	      "email" => $_POST['email'],
 	      "affiliation" => $_POST['affiliation'],
 	      "food-restrictions" => $_POST['foodRestrictions'],
-	      "tshirt-size" => $_POST['tshirtSize'],
-	      "tshirt-cut" => $_POST['tshirtCut'],
 	      "items" => join(", ", $_POST['items']),
 	    )
       ]);

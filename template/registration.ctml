@@ -32,21 +32,6 @@
         <label for="food-restrictions">Food restrictions</label>
       </div>
     </div>
-    <div class="text-container">
-      T-Shirt size:
-      <select id="tshirt-size">
-        <option value="S">S</option>
-        <option value="M">M</option>
-        <option selected value="L">L</option>
-        <option value="XL">XL</option>
-        <option value="XXL">XXL</option>
-      </select>
-      <span style="margin-left: 10pt;">T-Shirt cut:</span>
-      <select id="tshirt-cut">
-        <option selected value="M">M</option>
-        <option value="F">F</option>
-      </select>
-    </div>
 
     <h4>Options</h4>
     <div class="options">
