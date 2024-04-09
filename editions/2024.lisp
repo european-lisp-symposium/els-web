@@ -150,6 +150,16 @@
                 life cycle and put forward some strategies for thinking about
                 bias-related debugging.")
 
+(define-person (:family-name "Makrakis"
+                :given-name "Stavros")
+  :organisation "Amazon OpenSearch"
+  :role (:speaker :keynote)
+  :description "Some technologies have grown steadily and undramatically over
+                the years; others have been transient successes, or have been
+                relegated to narrow application areas. How can we benefit from
+                the long-term perspective to understand what might happen with
+                today's most hyped technologies?")
+
 
 
 (define-location "SBCL25 at the BRZ; ELS in the Sky Lounge of University Vienna"
@@ -242,7 +252,21 @@
                      agents on the web. Cross-disciplinary research includes
                      power systems engineering, automotive systems, proteomics
                      and AI regulation, as well as participation in
-                     standardisation at ISO and IEEE."))))))
+                     standardisation at ISO and IEEE."))))
+   (:li
+    (:b "Is the hype cycle real?")
+    (:i " -- Stavros Macrakis")
+    (:p "Some technologies have grown steadily and undramatically over the
+         years; others have been transient successes, or have been relegated
+         to narrow application areas. How can we benefit from the long-term
+         perspective to understand what might happen with today's most hyped
+         technologies?")
+    (:p (:i (:small "Stavros Macrakis learned Lisp in 1969. In the 70s, he was
+                     a member of the Macsyma symbolic algebra group at MIT,
+                     and he now contributes to its open source version,
+                     Maxima. He has spent most of his career as a product
+                     manager, at OSF, Lycos, FAST, GLG, and Google. Now in the
+                     Amazon OpenSearch group, he is responsible for Search."))))))
 
 (define-text :tourism
   (:p (:b "Public transport information")
