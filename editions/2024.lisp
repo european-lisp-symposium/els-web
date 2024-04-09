@@ -11,8 +11,10 @@
 (define-date "Conference end" @2024-05-07)
 
 (define-text :announcement
-  (:div :class "announcement" "First keynote announced: Bias is a bug; but not as we know it! by Julian Padget")
-  (:div :class "announcement" "ELS / SBCL25 Registrations now open!")
+  (:div :class "announcement"
+        "Keynotes announced: Julian Padget and Stavros Macrakis!")
+  (:div :class "announcement"
+        "ELS / SBCL25 early bird registration deadline coming soon!")
   (:div :class "announcement" "Note: SBCL25 is happening on May 2-3 (just before the weekend) in Vienna, too!"))
 
 #+()(define-text :additional-info
