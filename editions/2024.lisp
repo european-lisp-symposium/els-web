@@ -3,8 +3,8 @@
 (in-package "2024")
 
 #+()(define-date "Submission deadline ** EXTENDED ** " @2024-02-25)
-(define-date "Author notification" @2024-03-24)
-(define-date "Final papers" @2024-04-14)
+#+()(define-date "Author notification" @2024-03-24)
+(define-date "Final papers" @2024-04-21)
 (define-date "Early registration deadline" @2024-04-14)
 
 (define-date "Conference start" @2024-05-06)
