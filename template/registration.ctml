@@ -1,6 +1,6 @@
 <article id="registration" eval="(check-secret :stripe-public-key)">
   <h3>Registration</h3>
-  <i>Note: registration is free and not required for online attendance.</i>
+  <i>Note: registration is free and not requested for online attendance.</i>
   <noscript>
     Sorry, JavaScript is required for the registration.
   </noscript>
