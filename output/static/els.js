@@ -462,7 +462,21 @@ var ELS = function(){
         if(document.getElementById("registration")){
             self.initRegistration();
         }
-        self.decorateBackground();
+        if(self.hasClass(document.body, "stream-calendar")) {
+            var setter = document.getElementById("set-time");
+            var update = function(event) {
+                if(window.location.hash) {
+                    setter.value = decodeURIComponent(window.location.hash.slice(1));
+                } else {
+                    setter.value = "";
+                }
+                setter.dispatchEvent(new Event('change'));
+            }
+            window.addEventListener('hashchange', update)
+            update(null);
+        } else {
+            self.decorateBackground();
+        }
         self.log("Done.");
         return self;
     };

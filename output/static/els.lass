@@ -81,6 +81,15 @@
    :background green
    :color white)
 
+  (body.stream-calendar
+   :background (rgba 0 0 0 0)
+   (main :padding 0)
+   (article :margin 0)
+
+   ("#programme"
+    ("#set-time" :display none)
+    (.otherday :display none)))
+
   (body
    :font-family sans-serif
    :font-size 14pt
@@ -480,6 +489,10 @@
     (p :margin 0))))
 
 (:media "(max-width: 800px)"
+
+        (body.stream-calendar
+         ("#programme" :padding 0 20px 0 20px))
+
         (body
          :font-size 12pt
          (main
