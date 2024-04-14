@@ -44,7 +44,7 @@ var ELS = function(){
 
     self.removeClass = function(element){
         for(var i=1; i<arguments.length; i++){
-            element.className = element.className.replace(new RegExp("(?:^|\\s)"+arguments[i]+"(?:\\s|$)"),"");
+            element.className = element.className.replace(new RegExp("\\b"+arguments[i]+"\\b"),"");
         }
         return element;
     };
@@ -58,7 +58,7 @@ var ELS = function(){
 
     self.hasClass = function(element){
         for(var i=1; i<arguments.length; i++){
-            if((' '+element.className+' ').indexOf(' '+arguments[i]+' ') < 0)
+            if(!element.className.match(new RegExp("\\b"+arguments[i]+"\\b")))
                 return false;
         }
         return true;
