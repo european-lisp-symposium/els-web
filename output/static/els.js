@@ -150,6 +150,16 @@ var ELS = function(){
             }
         }
 
+        if(start.toDateString() != current.toDateString()) {
+            if (!self.hasClass(element, "otherday")) {
+                self.addClass(element, "otherday");
+            }
+        } else {
+            if (self.hasClass(element, "otherday")) {
+                self.removeClass(element, "otherday");
+            }
+        }
+
         return element;
     };
 
