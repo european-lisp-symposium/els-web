@@ -40,6 +40,18 @@
                   :year ,edition
                   :current ,(if (g= edition current) T NIL))))
 
+(defun compile-edition-stream-calendar-page (edition &key (if-exists :supersede)
+                                                       (template (template "stream-calendar.ctml")))
+  (let* ((edition (princ-to-string edition))
+         (path (merge-pathnames "stream-calendar.html" (pathname-utils:subdirectory *output-dir* edition))))
+    (when (prepare-path path :if-exists if-exists)
+      (compile-edition-template
+       template
+       path
+       (append (edition edition)
+               (editions-data edition)))
+      path)))
+
 (defun compile-edition-page (edition &key (if-exists :supersede)
                                           (template (template "index.ctml")))
   (let* ((edition (princ-to-string edition))
