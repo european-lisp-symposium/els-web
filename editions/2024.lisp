@@ -12,7 +12,7 @@
 
 (define-text :announcement
   (:div :class "announcement"
-        "Keynotes announced: Julian Padget and Stavros Macrakis!")
+        "Keynotes announced: Julian Padget, Stavros Macrakis, and Markus Triska!")
   (:div :class "announcement"
         "ELS / SBCL25 early bird registration deadline coming soon!")
   (:div :class "announcement" "Note: SBCL25 is happening on May 2-3 (just before the weekend) in Vienna, too!"))
