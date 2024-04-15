@@ -12,9 +12,7 @@
 
 (define-text :announcement
   (:div :class "announcement"
-        "Keynotes announced: Julian Padget, Stavros Macrakis, and Markus Triska!")
-  (:div :class "announcement"
-        "ELS / SBCL25 early bird registration deadline coming soon!")
+        "Full programme announced!")
   (:div :class "announcement" "Note: SBCL25 is happening on May 2-3 (just before the weekend) in Vienna, too!"))
 
 #+()(define-text :additional-info
