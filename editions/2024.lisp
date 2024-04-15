@@ -152,7 +152,7 @@
                 life cycle and put forward some strategies for thinking about
                 bias-related debugging.")
 
-(define-person (:family-name "Makrakis"
+(define-person (:family-name "Macrakis"
                 :given-name "Stavros")
   :organisation "Amazon OpenSearch"
   :role (:speaker :keynote)
@@ -237,7 +237,7 @@
   :logo "../static/logos/ACM.png")
 
 
-(define-text :keynotes
+#+()(define-text :keynotes
   (:ul
    (:li
     (:b "Bias is a bug; but not as we know it!")
@@ -403,104 +403,80 @@
 
 
 ;;; Programme
-#+()(define-programme-day @2024-05-02T00:00:00+02:00
-  @09:00:00 (:title "SBCL25: Registration, badges, meet and greet, hacking and having fun"
-             :description "Drinks, food, power & tables provided"
-             :role (:organization)))
 
-;;; Programme
-#+()(define-programme-day @2024-05-03T00:00:00+02:00
-  @08:30:00 (:title "SBCL25: Registration, badges, meet and greet"
+(define-programme-day @2024-05-06T00:00:00+02:00
+  @08:30:00 (:title "Registration, badges, t-shirts, meet and greet"
              :role (:organization))
-  @09:00:00 (:title "Welcome message and announcements"
+  @09:45:00 (:title "Welcome messages and announcements"
              :role (:organization))
-  @09:15:00 (:title "Keynote and Talks"
-             :role (:talk :keynote))
-  @10:00:00 (:title "Welcome by the Ministry of Finance" ;; Will be updated beginning of April
+  @10:00:00 (:title "Keynote: The Need for Symbolic AI Programming Languages in the Public Sector"
              :role (:talk :keynote)
-             :speakers ("Markus Triska"))
-  @10:30:00 (:title "Coffee Break"
-             :role (:break))
-  @10:45:00 (:title "Talks"
-             :role (:talk))
-  @12:30:00 (:title "Lunch"
-             :role (:break))
-  @14:00:00 (:title "Talks"
-             :role (:talk))
-  @15:30:00 (:title "Coffee Break"
-             :role (:break))
-  @15:45:00 (:title "Talks")
-             :role (:talk)
-  @17:15:00 (:title "Lightning talks")
-             :role (:talk))
-
-
-#+()(define-programme-day @2024-05-06T00:00:00+02:00
-  @08:30:00 (:title "Registration, badges, meet and greet"
-             :role (:organization))
-  @09:00:00 (:title "Welcome messages and announcements"
-             :role (:organization))
-  @09:30:00 (:title "Keynote"
-             :role (:talk :keynote)
-             :speakers ()
-             :description)
+             :speakers ("Markus Triska")
+             :description
+             "Rising expectations in public IT-services lead to increasing implementation complexity at a time where many of the programmers who initially built these services retire. The cost and complexity of building reliable e-government services also depend on the used programming languages. We would greatly benefit from better technologies to create and maintain IT-services that let us flexibly state and reason about laws and regulations on which administrations are based. Our recent experiences in the department V/B/5 of the Austrian Federal Ministry of Finance indicate that symbolic AI programming languages such as Lisp and Prolog are well suited for this purpose. The e-government service Grants4Companies is a recent application of such technologies in the public sector, and is made available to companies via the Austrian Business Service
+              Portal.")
   @11:00:00 (:title "Coffee Break"
              :role (:break))
-  @11:30:00 (:title ""
-             :role (:talk)
-             :speakers ())
-  @12:00:00 (:title ""
-             :role (:talk)
-             :speakers ())
+  @11:30:00 (:title "Keynote: Is the Hype Cycle Real?"
+             :role (:talk :keynote)
+             :speakers ("Stavros Macrakis")
+             :description "Some technologies have grown steadily and undramatically over the years; others have been transient successes, or have been relegated to narrow application areas. How can we benefit from the long-term perspective to understand what might happen with today's most hyped technologies?")
   @12:30:00 (:title "Lunch"
              :role (:break))
-  @14:00:00 (:title ""
+  @14:00:00 (:title "Research Paper: R7RS Large Status and Progress"
              :role (:talk)
-             :speakers ())
-  @14:30:00 (:title ""
-             :role (:demo)
-             :speakers ())
-  @15:00:00 (:title "Coffee Break"
+             :speakers ("Daphne Preston-Kendal"))
+  @14:30:00 (:title "Demonstration: The Medley Interlisp Revival"
+             :role (:talk :demo)
+             :speakers ("Andrew Sengul"))
+  @15:00:00 (:title "Research Paper: Lisp Query Notation—A DSL for Data Processing"
+             :role (:talk)
+             :speakers ("Anders Hoff"))
+  @15:30:00 (:title "Coffee Break"
              :role (:break))
-  @15:30:00 (:title ""
+  @16:00:00 (:title "Research Paper: Grants4Companies: The Common Lisp PoC"
              :role (:talk)
-             :speakers ())
-  @16:30:00 (:title "Enlightening Lightning Talks"
+             :speakers ("Philipp Marek" "Bjoern Lellmann" "Markus Triska"))
+  @16:30:00 (:title "Demonstration: An Introduction to Array Programming in Petalisp"
+             :role (:talk :demo)
+             :speakers ("Marco Heisig"))
+  @17:00:00 (:title "Lightning Talks"
              :role (:talk))
-  @18:30:00 (:title "Conference dinner (on site)"
-                    :role (:break)))
+  @18:30:00 (:title "Conference dinner (on site -- until 20:30)"
+             :role (:break)))
 
-#+()(define-programme-day @2024-05-07T00:00:00+02:00
-  @09:30:00 (:title "Keynote"
+(define-programme-day @2024-05-07T00:00:00+02:00
+  @08:30:00 (:title "Registration, badges, t-shirts, meet and greet"
+             :role (:organization))
+  @09:30:00 (:title "Keynote: Bias is a bug; but not as we know it!"
              :role (:talk :keynote)
-             :speakers ()
-             :description "")
+             :speakers ("Julian Padget")
+             :description "Algorithmic model construction is now accepted technology. Using some data to train a model is commonplace and machine learning has percolated down to the first-year CS curriculum. Testing such models is quite difficult, because conventional approaches learned from conventional programming provide only limited coverage. Furthermore, metrics offer big picture performance but may disguise edge cases. One significant worry is that such systems exhibit differential treatment of individuals or groups because the algorithm has identified an attribute relationship in the data that does not align with the system's business requirements. This is typically referred to (wrongly!) as a `biased' output. We start by examining the language of bias in algorithmic models and argue that (unwanted) bias is a (latent) bug. However, this bug typically has complex causes, as well as the possibility of morphing over time into bias that does align with the requirements. In consequence, we will continue by exploring how consideration of bias can be incorporated into the system life cycle and put forward some strategies for thinking about bias-related debugging.")
   @10:30:00 (:title "Coffee Break"
              :role (:break))
-  @11:00:00 (:title ""
-             :role (:demo)
-             :speakers ())
-  @11:30:00 (:title ""
-             :role (:demo)
-             :speakers ())
-  @12:00:00 (:title ""
-             :role (:demo)
-             :speakers ())
+  @11:00:00 (:title "Research Paper: Adaptive Hashing"
+             :role (:talk)
+             :speakers ("Gábor Melis"))
+  @11:30:00 (:title "Research paper: Period Information Extraction: A DSL Solution to a Domain Problem"
+             :role (:talk)
+             :speakers ("Arthur Evensen"))
+  @12:00:00 (:title "Demonstration: the Quickref Cohort"
+             :role (:talk :demo)
+             :speakers ("Didier Verna"))
   @12:30:00 (:title "Lunch"
              :role (:break))
-  @14:00:00 (:title ""
+  @14:00:00 (:title "Research paper: py4cl2-cffi: Using CPython's C API to Call Python Callables from Common Lisp"
              :role (:talk)
-             :speakers ())
-  @14:30:00 (:title ""
+             :speakers ("Shubhamkar Ayare"))
+  @14:30:00 (:title "Demonstration: Qlot, a Project-Local Library Installer"
+             :role (:talk :demo)
+             :speakers ("Eitaro Fukamachi"))
+  @15:00:00 (:title "Demonstration: Murmel and JMurmel"
              :role (:talk)
-             :speakers ())
-  @15:00:00 (:title "Coffee Break"
+             :speakers ("Robert Mayer" "Thomas Östreicher"))
+  @15:30:00 (:title "Coffee Break"
              :role (:break))
-  @15:30:00 (:title ""
-             :role (:talk :keynote)
-             :speakers ()
-             :description "")
-  @16:30:00 (:title "Enlightening Lightning Talks"
+  @16:00:00 (:title "Lightning Talks"
              :role (:talk)))
 
 #+()(define-proceedings "../static/proceedings/2024.pdf")
