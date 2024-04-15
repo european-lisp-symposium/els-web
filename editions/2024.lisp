@@ -162,6 +162,26 @@
                 the long-term perspective to understand what might happen with
                 today's most hyped technologies?")
 
+(define-person (:family-name "Triska"
+                :given-name "Markus")
+  :organisation "Austrian Federal Ministry of Finances"
+  :role (:speaker :keynote)
+  :description "Rising expectations in public IT-services lead to increasing
+                implementation complexity at a time where many of the
+                programmers who initially built these services retire. The
+                cost and complexity of building reliable e-government services
+                also depend on the used programming languages. We would
+                greatly benefit from better technologies to create and
+                maintain IT-services that let us flexibly state and reason
+                about laws and regulations on which administrations are based.
+                Our recent experiences in the department V/B/5 of the Austrian
+                Federal Ministry of Finance indicate that symbolic AI
+                programming languages such as Lisp and Prolog are well suited
+                for this purpose. The e-government service Grants4Companies is
+                a recent application of such technologies in the public
+                sector, and is made available to companies via the Austrian
+                Business Service Portal.")
+
 
 
 (define-location "SBCL25 at the BRZ; ELS in the Sky Lounge of University Vienna"
@@ -268,7 +288,30 @@
                      and he now contributes to its open source version,
                      Maxima. He has spent most of his career as a product
                      manager, at OSF, Lycos, FAST, GLG, and Google. Now in the
-                     Amazon OpenSearch group, he is responsible for Search."))))))
+                     Amazon OpenSearch group, he is responsible for Search."))))
+   (:li
+    (:b "The Need for Symbolic AI Programming Languages in the Public Sector")
+    (:i " -- Markus Triska")
+    (:p "Rising expectations in public IT-services lead to increasing
+         implementation complexity at a time where many of the programmers who
+         initially built these services retire. The cost and complexity of
+         building reliable e-government services also depend on the used
+         programming languages. We would greatly benefit from better
+         technologies to create and maintain IT-services that let us flexibly
+         state and reason about laws and regulations on which administrations
+         are based. Our recent experiences in the department V/B/5 of the
+         Austrian Federal Ministry of Finance indicate that symbolic AI
+         programming languages such as Lisp and Prolog are well suited for
+         this purpose. The e-government service Grants4Companies is a recent
+         application of such technologies in the public sector, and is made
+         available to companies via the Austrian Business Service Portal.")
+    (:p (:i (:small "Markus Triska is deputy department head of department
+                     V/B/5 (e-Government for businesses) in the Austrian
+                     Federal Ministry of Finance. As a delegate to ISO/IEC
+                     JTC1/SC22/WG17 and ISO/IEC JTC1/SC42, he contributes to
+                     the Prolog ISO standard and to the standardisation of AI
+                     technologies. He has made several contributions to GNU
+                     Emacs and to free Prolog systems."))))))
 
 (define-text :tourism
   (:p (:b "Public transport information")
