@@ -44,7 +44,7 @@ var ELS = function(){
 
     self.removeClass = function(element){
         for(var i=1; i<arguments.length; i++){
-            element.className = element.className.replace(new RegExp("(?:^|\\s)"+arguments[i]+"(?:\\s|$)"),"");
+            element.className = element.className.replace(new RegExp("\\b"+arguments[i]+"\\b"),"");
         }
         return element;
     };
@@ -58,7 +58,7 @@ var ELS = function(){
 
     self.hasClass = function(element){
         for(var i=1; i<arguments.length; i++){
-            if((' '+element.className+' ').indexOf(' '+arguments[i]+' ') < 0)
+            if(!element.className.match(new RegExp("\\b"+arguments[i]+"\\b")))
                 return false;
         }
         return true;
@@ -147,6 +147,16 @@ var ELS = function(){
             if(!self.hasClass(element, "future")){
                 self.removeClass(element, "past", "current");
                 self.addClass(element, "future");
+            }
+        }
+
+        if(start.toDateString() != current.toDateString()) {
+            if (!self.hasClass(element, "otherday")) {
+                self.addClass(element, "otherday");
+            }
+        } else {
+            if (self.hasClass(element, "otherday")) {
+                self.removeClass(element, "otherday");
             }
         }
 
@@ -452,7 +462,21 @@ var ELS = function(){
         if(document.getElementById("registration")){
             self.initRegistration();
         }
-        self.decorateBackground();
+        if(self.hasClass(document.body, "stream-calendar")) {
+            var setter = document.getElementById("set-time");
+            var update = function(event) {
+                if(window.location.hash) {
+                    setter.value = decodeURIComponent(window.location.hash.slice(1));
+                } else {
+                    setter.value = "";
+                }
+                setter.dispatchEvent(new Event('change'));
+            }
+            window.addEventListener('hashchange', update)
+            update(null);
+        } else {
+            self.decorateBackground();
+        }
         self.log("Done.");
         return self;
     };

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8"/>
+    <title>ELS <c:splice lquery="(text (clip:clip (query1 :edition '(= current T)) :year))"/>, <c:splice lquery="(text (clip:clip (clip:clip (query1 :location '(in role :conference)) :address) :city))"/> - European Lisp Symposium</title>
+    <link rel="stylesheet" type="text/css" href="../static/els.css"/>
+    <link rel="icon" href="../static/favicon.png"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="description" content="Homepage for the European Lisp Symposium"/>
+    <meta name="robots" content="index, follow"/>
+    <script type="text/javascript" src="../static/els.js"></script>
+  </head>
+  <body class="stream-calendar">
+    <main>
+      <article id="conference">
+        <c:when test="(query :programme-entry)">
+          <section id="programme">
+            <input type="text" id="set-time" value="" placeholder="2015.4.20 8:30" title="Here you can manually set the time of the programme calendar." />
+            <ol iterate="(query :programme-entry T :sort '(:time :asc))">
+              <li><c:splice lquery="(template :programme-entry)" /></li>
+            </ol>
+          </section>
+        </c:when>
+      </article>
+    </main>
+  </body>
+</html>
