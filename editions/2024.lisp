@@ -182,8 +182,7 @@
 
 
 
-(define-location "SBCL25 at the BRZ; ELS in the Sky Lounge of University Vienna"
-  ;; TODO: logo upcoming, exact text needed "(in collaboration with the Department for European, International and Comparative Law)"
+(define-location "ELS in the Sky Lounge of University Vienna, in collaboration with the Department for European, International and Comparative Law"
   :role (:conference)
   :photo "https://event.univie.ac.at/fileadmin/_processed_/csm_Aussenansicht_OMP_3_f71b0260cd.jpg"
   :website "https://event.univie.ac.at/en/venue-management/locations-and-rooms/oskar-morgenstern-platz-1/sky-lounge/"
