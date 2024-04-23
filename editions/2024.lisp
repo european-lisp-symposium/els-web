@@ -13,6 +13,7 @@
 (define-text :announcement
   (:div :class "announcement"
         "Full programme announced!")
+  #+()
   (:div :class "announcement" "Note: SBCL25 is happening on May 2-3 (just before the weekend) in Vienna, too!"))
 
 #+()(define-text :additional-info
@@ -182,8 +183,9 @@
 
 
 
-(define-location "ELS in the Sky Lounge of University Vienna, in collaboration with the Department for European, International and Comparative Law"
+(define-location "ELS happens in the Sky Lounge, in collaboration with the Centre for Computers and Law of the University of Vienna"
   :role (:conference)
+  ;; TODO: use the logo output/static/2024/csm_Logo_ARI.jpg somehow?
   :photo "https://event.univie.ac.at/fileadmin/_processed_/csm_Aussenansicht_OMP_3_f71b0260cd.jpg"
   :website "https://event.univie.ac.at/en/venue-management/locations-and-rooms/oskar-morgenstern-platz-1/sky-lounge/"
   :address (:street "Oskar Morgenstern Platz 1"
