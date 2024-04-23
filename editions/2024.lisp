@@ -99,7 +99,7 @@
   :organization "Untypable LLC")
 (define-person (:given-name "Frédéric" :family-name " Peschanski")
   :role (:committee)
-  :organization "UPMC/LIP6")
+  :organization "LIP6/Sorbonne Université")
 (define-person (:given-name "Jay" :family-name " McCarthy")
   :role (:committee)
   :organization "UMass Lowell")
