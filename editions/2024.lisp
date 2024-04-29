@@ -427,8 +427,8 @@
   @14:30:00 (:title "Demonstration: The Medley Interlisp Revival"
              :role (:talk :demo)
              :speakers ("Andrew Sengul"))
-  @15:00:00 (:title "Research Paper: Lisp Query Notation—A DSL for Data Processing"
-             :role (:talk)
+  @15:00:00 (:title "Demonstration: Lisp Query Notation—A DSL for Data Processing"
+             :role (:talk :demo)
              :speakers ("Anders Hoff"))
   @15:30:00 (:title "Coffee Break"
              :role (:break))
