@@ -11,10 +11,7 @@
 (define-date "Conference end" @2024-05-07)
 
 (define-text :announcement
-  (:div :class "announcement"
-        "Full programme announced!")
-  #+()
-  (:div :class "announcement" "Note: SBCL25 is happening on May 2-3 (just before the weekend) in Vienna, too!"))
+  #+()(:div :class "announcement" "Full programme announced!"))
 
 #+()(define-text :additional-info
   (:p "There are several ways for you to join ELS online:"
