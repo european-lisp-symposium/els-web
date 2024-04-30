@@ -85,7 +85,7 @@
   :organization "Shirakumo.org"
   :address (:country "Switzerland"))
 
-(define-person (:family-name "Herda"
+#+()(define-person (:family-name "Herda"
                 :given-name "Michał")
   :role (:virtualization)
   :address (:country "Poland"))
