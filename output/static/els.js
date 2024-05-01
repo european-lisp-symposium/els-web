@@ -118,8 +118,8 @@ var ELS = function(){
         var local = self.toLocalDate(date);
         var pad = function(a){return (a<10)? "0"+a : a;};
         return local.getFullYear()
-            +"."+ (local.getMonth()+1)
-            +"."+ local.getDate()
+            +"."+ String((local.getMonth()+1)).padStart (2, '0')
+            +"."+ String(local.getDate()).padStart (2, '0')
             +" "+ local.getHours()
             +":"+ pad(local.getMinutes());
     };
