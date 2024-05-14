@@ -14,7 +14,7 @@
 (define-text :announcement
     (:div :class "announcement" "The conference is over!"))
 
-(define-text :additional-info
+#+()(define-text :additional-info
   (:p "There are several ways for you to join ELS online:"
       (:ul (:li "<b>Via Twitch</b>: You join <a href=\"https://twitch.tv/elsconf\">https://twitch.tv/elsconf</a> and enjoy the show.  If you have a Twitch account, you can also use the text chat to communicate with other participants or the authors.  You can also follow the elsconf user on Twitch to receive a notification when each day's broadcast starts."))
       (:ul (:li "<b>Via IRC</b>: You join the #els2023 channel on <a href=\"https://web.libera.chat/#els2023\">libera.chat</a>.  Messages from this channel are automatically forwarded to the Twitch chat, and vice versa."))
