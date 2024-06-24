@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE dblpsubmission SYSTEM "dblpsubmission.dtd">
+<?xml-stylesheet type="text/xsl" href="dblpsubmission.xsl" ?>
+<dblpsubmission>
+  <proceedings>
+    <key>ELS</key>
+    <title>ELS 2024 - 17th European Lisp Symposium</title>
+    <editor>Giuseppe Attardi</editor>
+    <publisher>EPITA</publisher>
+    <year>2024</year>
+    <isbn>978-2-9557474-8-3</isbn>
+    <issn>2677-3465</issn>
+    <conf>
+      <acronym>ELS</acronym>
+      <number>17</number>
+      <location>Vienna, Austria</location>
+      <date>May 6-7, 2024</date>
+      <url>https://european-lisp-symposium.org/2024</url>
+    </conf>
+    <toc>
+      <section>Technical Papers</section>
+      <publ>
+        <author>Andrew Sengul</author>
+        <title>The Medley Interlisp Revival</title>
+        <pages>3-7</pages>
+        <doi>10.5281/zenodo.11090093</doi>
+      </publ>
+      <publ>
+        <author>Anders Hoff</author>
+        <title>Lisp Query Notation—A DSL for Data Processing</title>
+        <pages>8-11</pages>
+        <doi>10.5281/zenodo.11001584</doi>
+      </publ>
+      <publ>
+        <author>Philipp Marek</author>
+        <author>Björn Lellmann</author>
+        <author>Markus Triska</author>
+        <title>Grants4Companies: The Common Lisp PoC</title>
+        <pages>12-17</pages>
+        <doi>10.5281/zenodo.10992449</doi>
+      </publ>
+      <publ>
+        <author>Marco Heisig</author>
+        <title>An Introduction to Array Programming in Petalisp</title>
+        <pages>18-21</pages>
+        <doi>10.5281/zenodo.11062314</doi>
+      </publ>
+      <publ>
+        <author>Gábor Melis</author>
+        <title>Adaptive Hashing</title>
+        <pages>22-40</pages>
+        <doi>10.5281/zenodo.10991322</doi>
+      </publ>
+      <publ>
+        <author>Arthur Evensen</author>
+        <title>Period Information Extraction: A DSL Solution to a Domain</title>
+        <pages>42-47</pages>
+        <doi>10.5281/zenodo.11008823</doi>
+      </publ>
+      <publ>
+        <author>Didier Verna</author>
+        <title>The Quickref Cohort</title>
+        <pages>48-51</pages>
+        <doi>10.5281/zenodo.10947962</doi>
+      </publ>
+      <publ>
+        <author>Shubhamkar Ayare</author>
+        <title>py4cl2-cffi: Using CPython’s C API to call Python callables from Common Lisp</title>
+        <pages>52-59</pages>
+        <doi>10.5281/zenodo.10997435</doi>
+      </publ>
+      <publ>
+        <author>Eitaro Fukamachi</author>
+        <title>Qlot, a project-local library installer</title>
+        <pages>60-64</pages>
+        <doi>10.5281/zenodo.10949389</doi>
+      </publ>
+      <publ>
+        <author>Robert Mayer</author>
+        <author>Thomas Östreicher</author>
+        <title>Murmel and JMurmel</title>
+        <pages>65-68</pages>
+        <doi>10.5281/zenodo.10997870</doi>
+      </publ>
+    </toc>
+  </proceedings>
+</dblpsubmission>
