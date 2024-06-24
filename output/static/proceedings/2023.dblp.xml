@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE dblpsubmission SYSTEM "dblpsubmission.dtd">
+<?xml-stylesheet type="text/xsl" href="dblpsubmission.xsl" ?>
+<dblpsubmission>
+  <proceedings>
+    <key>ELS</key>
+    <title>ELS 2023 - 16th European Lisp Symposium</title>
+    <editor>Stefan Monnier</editor>
+    <publisher>EPITA</publisher>
+    <year>2023</year>
+    <isbn>978-2-9557474-7-6</isbn>
+    <issn>2677-3465</issn>
+    <conf>
+      <acronym>ELS</acronym>
+      <number>16</number>
+      <location>Amsterdam, Netherlands</location>
+      <date>April 24-25, 2023</date>
+      <url>https://european-lisp-symposium.org/2023</url>
+    </conf>
+    <toc>
+      <section>Technical Papers</section>
+      <publ>
+        <author>Didier Verna</author>
+        <title>A Mop-Based Implementation for Method Combinations</title>
+        <pages>6-15</pages>
+        <doi>10.5281/zenodo.7818680</doi>
+      </publ>
+      <publ>
+        <author>Marcelo Santos</author>
+        <author>António Menezes Leitão</author>
+        <title>A Minimal Run-time Overhead Metaobject Protocol for Julia</title>
+        <pages>16-23</pages>
+        <doi>10.5281/zenodo.7823097</doi>
+      </publ>
+      <publ>
+        <author>Jim E. Newton</author>
+        <title>An Elegant and Fast Algorithm for Partitioning Types</title>
+        <pages>24-32</pages>
+        <doi>10.5281/zenodo.7813576</doi>
+      </publ>
+      <publ>
+        <author>Panicz Maciej Godek</author>
+        <title>GRASP: An Extensible Tactile Interface for Editing S-expressions</title>
+        <pages>33-36</pages>
+        <doi>10.5281/zenodo.7816633</doi>
+      </publ>
+      <publ>
+        <author>Alejandro Zamora Fonseca</author>
+        <title>A stepper for Armed Bear Common Lisp</title>
+        <pages>38-42</pages>
+        <doi>10.5281/zenodo.7815887</doi>
+      </publ>
+      <publ>
+        <author>Nicolas Hafner</author>
+        <title>Kandria: a Game in Common Lisp</title>
+        <pages>43-49</pages>
+        <doi>10.5281/zenodo.7816871</doi>
+      </publ>
+      <publ>
+        <author>Hayley Patton</author>
+        <title>Parallel garbage collection for SBCL</title>
+        <pages>50-57</pages>
+        <doi>10.5281/zenodo.7816398</doi>
+      </publ>
+      <publ>
+        <author>Alex Wood</author>
+        <author>Charles Zhang</author>
+        <author>Christian Schafmeister</author>
+        <title>Design of an Efficient Lisp Bytecode Machine and Compiler</title>
+        <pages>58-65</pages>
+        <doi>10.5281/zenodo.7818216</doi>
+      </publ>
+    </toc>
+  </proceedings>
+</dblpsubmission>
