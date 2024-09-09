@@ -23,7 +23,7 @@
   presentations about topics of special interest.")
        (:li "<b>Demonstrations</b>: abstracts of up to 4 pages for demonstrations of tools, libraries, and applications.")))
 
-(define-text :submission
-  (:p "All submissions should be formatted following the ACM SIGS guidelines and include <a href=\"http://www.acm.org/about/class/2012\">ACM Computing Classification System 2012</a> concepts and terms. Appropriate TeX and Word templates can be found on the <a href=\"https://www.acm.org/publications/proceedings-template\">ACM publications page</a>. LaTeX submissions are strongly encouraged. For LaTeX submissions, please use the article template available <a href=\"https://european-lisp-symposium.org/static/submission/template.tex\">here</a>." )
+(define-text :operation
+  (:p "The European Lisp Symposium is an open access, hybrid, yearly academic conference. Submissions are reviewed in the traditional way. Every year, a Programme Chair is elected by the steering committee, who in turn constitutes a Programme Committee of at least 10 members. Reviews are done in single-blind mode. Each submission is guaranteed to have at least 3 reviews.")
 
-  (:p "Please use the <a href=\"http://dl.acm.org/ccs/ccs.cfm\">ACM Computing Classification System site</a> to generate the CCS codes. In order to add a concept, navigate to it using the boxes, and select \"Assign This CCS Concept\" on the left side. You should select one high relevance concept, and up to four medium or low relevance concepts. Once you are done, simply copy the CCS display into the Word document. If you are using TeX, select \"View CCS TeX Code\" and copy the displayed code into your TeX file. The templates should already include sections with bogus CCS codes, which you can simply replace with your own."))
+  (:p "Copyright is retained by the authors. Full-text access to all papers is freely available. There are no Open Access fees for publication."))

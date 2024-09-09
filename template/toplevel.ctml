@@ -32,9 +32,9 @@
           <h3>Scope</h3>
           <c:splice lquery="(html (query-text '(= name :scope)))" />
         </section>
-        <section id="submission">
-          <h3>Submission</h3>
-          <c:splice lquery="(html (query-text '(= name :submission)))" />
+        <section id="operation">
+          <h3>Operation</h3>
+          <c:splice lquery="(html (query-text '(= name :operation)))" />
         </section>
       </article>
       <article id="steering">
