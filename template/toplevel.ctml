@@ -51,14 +51,6 @@
           <li>Nicolas Neuss</li>
         </ul>
       </article>
-      <article id="conferences">
-        <h2>Conferences</h2>
-        <p>Select a year to view the corresponding conference.</p>
-        <ul class="editions" iterate="(query :edition)">
-          <li><a href="#" lquery='(text year) (attr :href (format NIL "~a/index.html" year))
-                                  (add-class (if current "current" "other"))'>20XX</a></li>
-        </ul>
-      </article>
     </main>
     <c:splice lquery="(template :footer)" />
     <script type="text/javascript" src="static/els.js"></script>
