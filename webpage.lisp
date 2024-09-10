@@ -72,3 +72,12 @@
      (append (edition "toplevel")
              (editions-data (first (editions)))))
     path))
+
+(defun compile-pepms-page (&key (template (template "pepms.ctml")))
+  (let ((path (merge-pathnames "pepms.html" *output-dir*)))
+    (compile-edition-template
+     template
+     path
+     (append (edition "pepms")
+             (editions-data (first (editions)))))
+    path))

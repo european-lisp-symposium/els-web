@@ -18,7 +18,8 @@
 (defun editions ()
   (sort (loop for k being the hash-keys of *editions*
               unless (or (string= k "global")
-                         (string= k "toplevel"))
+                         (string= k "toplevel")
+                         (string= k "pepms"))
               collect k)
         #'string>))
 

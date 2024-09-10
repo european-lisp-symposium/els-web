@@ -20,7 +20,8 @@
                (:file "shorthand")
                (:module "editions"
                 :components ((:file "global")
-                             (:file "frontpage")
+                             (:file "toplevel")
+                             (:file "pepms")
                              (:file "2008")
                              (:file "2009")
                              (:file "2010")

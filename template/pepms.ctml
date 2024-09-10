@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8"/>
+    <title>European Lisp Symposium</title>
+    <link rel="stylesheet" type="text/css" href="static/els.css"/>
+    <link rel="icon" href="../static/favicon.png"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="description" content="Ethics and Malpractice Statement for the European Lisp Symposium"/>
+    <meta name="robots" content="index, follow"/>
+  </head>
+  <body>
+    <header class="toplevel">
+      <h1><a href="./index.html">European Lisp Symposium</a></h1>
+      <nav class="editions" iterate="(query :edition)">
+        <a href="#" lquery='(text year) (attr :href (format NIL "~a/index.html" year))
+                            (add-class (if current "current" "other"))'>20XX</a>
+      </nav>
+      <nav class="main">
+        <a href="#about">About</a>
+        <a href="#conferences">Conferences</a>
+        <a href="https://lists.lre.epita.fr/postorius/lists/elsconf.lrde.epita.fr/" rel="external">Mailing List</a>
+        <a href="https://www.youtube.com/@EuropeanLispSymposium/" rel="external">Youtube</a>
+        <a href="https://zenodo.org/communities/els/" rel="external">Zenodo</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Ethics and Malpractice</h1>
+      <h4>Statement on Publication Ethics and Publication Malpractice</h4>
+      <p>
+        Our publication ethics and publication malpractice statement is based
+        on that of
+        <a href="https://programming-journal.org/purpose/ethics.html">The Art,
+          Science, and Engineering of Programming journal</a>.
+        <article id="pc">
+          <h3>Programme Chair’s Responsibilities</h3>
+          <c:splice lquery="(html (query-text '(= name :pc)))" />
+        </article>
+        <article id="reviewers">
+          <h3>Reviewers’ Responsibilities</h3>
+          <c:splice lquery="(html (query-text '(= name :reviewers)))" />
+        </article>
+        <article id="authors">
+          <h3>Authors’ Responsibilities</h3>
+          <c:splice lquery="(html (query-text '(= name :authors)))" />
+        </article>
+    </main>
+    <c:splice lquery="(template :footer)" />
+    <script type="text/javascript" src="static/els.js"></script>
+  </body>
+</html>

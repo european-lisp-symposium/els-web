@@ -10,6 +10,7 @@
 (defun compile-all-editions (&key (if-exists :supersede)
                                   (template (template "index.ctml")))
   (compile-toplevel-page)
+  (compile-pepms-page)
   (loop for edition in (editions)
         collect (compile-edition edition :if-exists if-exists
                                          :template template)))
