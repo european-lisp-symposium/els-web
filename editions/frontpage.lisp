@@ -24,7 +24,7 @@
        (:li "<b>Demonstrations</b>: abstracts of up to 4 pages for demonstrations of tools, libraries, and applications.")))
 
 (define-text :operation
-  (:p "The European Lisp Symposium is an open access, hybrid, yearly academic conference. Submissions are reviewed in the traditional way. Every year, a Programme Chair is elected by the steering committee, who in turn constitutes a Programme Committee of at least 10 members. Reviews are done in single-blind mode. Each submission is guaranteed to have at least 3 reviews.")
+  (:p "The European Lisp Symposium is an open access, hybrid, yearly academic conference. Submissions are peer-reviewed in the traditional way. Every year, a Programme Chair is elected by the steering committee, who in turn constitutes a Programme Committee of at least 10 members. Reviews are done in single-blind mode. Each submission is guaranteed to have at least 3 reviews.")
 
   (:p "Copyright is retained by the authors. Full-text access to all papers is
 freely available. There are no Open Access fees for publication.")
