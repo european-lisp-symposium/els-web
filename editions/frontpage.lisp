@@ -26,4 +26,7 @@
 (define-text :operation
   (:p "The European Lisp Symposium is an open access, hybrid, yearly academic conference. Submissions are reviewed in the traditional way. Every year, a Programme Chair is elected by the steering committee, who in turn constitutes a Programme Committee of at least 10 members. Reviews are done in single-blind mode. Each submission is guaranteed to have at least 3 reviews.")
 
-  (:p "Copyright is retained by the authors. Full-text access to all papers is freely available. There are no Open Access fees for publication."))
+  (:p "Copyright is retained by the authors. Full-text access to all papers is
+freely available. There are no Open Access fees for publication.")
+
+  (:p "Upon initial reviewing, submissions may be accepted as-is, deemed potentially acceptable, or rejected. Authors of potentially acceptable papers are requested to improve specific aspects of their submission. Authors are given a specific period of time to perform the revisions and re-submit the paper. At that point, the same reviewers assess how well the revision requests have been addressed by the authors, and whether the final paper maintains or improves the level of contribution of the original submission. Revisions that significantly lessen the contribution of the work or that fail to adequately address the reviewers’ original concerns will result in the paper’s rejection."))
