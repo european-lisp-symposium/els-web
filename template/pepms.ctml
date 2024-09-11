@@ -31,7 +31,8 @@
         Our publication ethics and publication malpractice statement is based
         on that of
         <a href="https://programming-journal.org/purpose/ethics.html">The Art,
-          Science, and Engineering of Programming journal</a>.
+          Science, and Engineering of Programming journal</a>, along with the
+        COPE position statement on <a href="https://publicationethics.org/cope-position-statements/ai-author">Authorship and AI tools</a>.
         <article id="pc">
           <h3>Programme Chair’s Responsibilities</h3>
           <c:splice lquery="(html (query-text '(= name :pc)))" />
