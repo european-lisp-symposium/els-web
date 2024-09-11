@@ -36,9 +36,9 @@
         <c:when test="(query :proceedings)">
           <a href="#proceedings">Proceedings</a>
         </c:when>
-        <a href="https://lists.lre.epita.fr/postorius/lists/elsconf.lrde.epita.fr/" rel="external">Mailing List</a>
-        <a href="https://www.youtube.com/@EuropeanLispSymposium/" rel="external">Youtube</a>
-        <a href="https://zenodo.org/communities/els/" rel="external">Zenodo</a>
+        <a target="_blank" href="https://lists.lre.epita.fr/postorius/lists/elsconf.lrde.epita.fr/" rel="external">Mailing List</a>
+        <a target="_blank" href="https://www.youtube.com/@EuropeanLispSymposium/" rel="external">Youtube</a>
+        <a target="_blank" href="https://zenodo.org/communities/els/" rel="external">Zenodo</a>
       </nav>
     </header>
     <main>
