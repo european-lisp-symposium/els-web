@@ -17,7 +17,7 @@
                             (add-class (if current "current" "other"))'>20XX</a>
       </nav>
       <nav class="main">
-        <a href="#about">About</a>
+        <a href="index.html">About</a>
         <a href="pepms.html">PEPMS</a>
         <a target="_blank" href="https://lists.lre.epita.fr/postorius/lists/elsconf.lrde.epita.fr/" rel="external">Mailing List</a>
         <a target="_blank" href="https://www.youtube.com/@EuropeanLispSymposium/" rel="external">Youtube</a>
