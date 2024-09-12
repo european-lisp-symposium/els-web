@@ -81,7 +81,7 @@
 
 (define-location "Swiss Game Hub"
   :role (:conference)
-  :photo "https://event.univie.ac.at/fileadmin/_processed_/csm_Aussenansicht_OMP_3_f71b0260cd.jpg"
+  :photo "https://www.swissgamehub.com/wp-content/uploads/2024/01/werkhalle87S.jpg"
   :website "https://www.swissgamehub.com/"
   :address (:street "Hohlstrasse 176"
             :post-code "8004"
