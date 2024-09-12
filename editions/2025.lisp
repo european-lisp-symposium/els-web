@@ -34,7 +34,7 @@
    (:li "Educational approaches and perspectives")
    (:li "Experience reports and case studies"))
 
-  (:p "We invite submissions in the following forms:")
+  (:p "We invite submissions in the following forms. Proposals must not overlap significantly with the authors’ previously published work in a peer reviewed publication, and must not be under review on another journal or conference.")
 
   (:ul (:li "<b>Papers</b>: Technical papers of up to 8 pages that describe original results or explain known ideas in new and elegant ways.")
        (:li "<b>Experience reports</b>: papers of up to 6 pages describing a Lisp success story and/or analyzing obstacles that have kept it from working in practice.")
