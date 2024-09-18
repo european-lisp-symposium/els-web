@@ -16,17 +16,18 @@
        (:li "educational approaches and perspectives")
        (:li "experience reports and case studies"))
 
-  (:p "We invite submissions in the following forms.")
+  (:p "We invite submissions in the following forms. Proposals must not overlap significantly with the authors’ previously published work in a peer reviewed publication, and must not be under review on another journal or conference.")
   (:ul (:li "<b>Papers</b>: technical papers of up to 8 pages that describe original results or explain known ideas in new and elegant ways.")
        (:li "<b>Experience reports</b>: papers of up to 6 pages describing a Lisp success story and/or analyzing obstacles that have kept it from working in practice.")
        (:li "<b>Tutorials</b>: abstracts of up to 4 pages for in-depth
   presentations about topics of special interest.")
-       (:li "<b>Demonstrations</b>: abstracts of up to 4 pages for demonstrations of tools, libraries, and applications.")))
+       (:li "<b>Demonstrations</b>: abstracts of up to 4 pages for demonstrations of tools, libraries, and applications."))
+
+  (:p "For more information on how to submit a paper, please see the full call for papers specific to the current year."))
 
 (define-text :operation
   (:p "The European Lisp Symposium is an open access, hybrid, yearly academic conference. Submissions are peer-reviewed in the traditional way. Every year, a Programme Chair is elected by the steering committee, who in turn constitutes a Programme Committee of at least 10 members. Reviews are done in single-blind mode. Each submission is guaranteed to have at least 3 reviews.")
 
-  (:p "Copyright is retained by the authors. Full-text access to all papers is
-freely available. There are no Open Access fees for publication.")
+  (:p "Upon initial reviewing, submissions may be accepted as-is, deemed potentially acceptable, or rejected. Authors of potentially acceptable papers are requested to improve specific aspects of their submission. Authors are given a specific period of time to perform the revisions and re-submit the paper. At that point, the same reviewers assess how well the revision requests have been addressed by the authors, and whether the final paper maintains or improves the level of contribution of the original submission. Revisions that significantly lessen the contribution of the work or that fail to adequately address the reviewers’ original concerns will result in the paper’s rejection.")
 
-  (:p "Upon initial reviewing, submissions may be accepted as-is, deemed potentially acceptable, or rejected. Authors of potentially acceptable papers are requested to improve specific aspects of their submission. Authors are given a specific period of time to perform the revisions and re-submit the paper. At that point, the same reviewers assess how well the revision requests have been addressed by the authors, and whether the final paper maintains or improves the level of contribution of the original submission. Revisions that significantly lessen the contribution of the work or that fail to adequately address the reviewers’ original concerns will result in the paper’s rejection."))
+    (:p "Copyright is retained by the authors. There are no Open Access fees for publication. The symposium's proceedings are freely available <a href=\"static/proceedings/\">here</a> and are self-published electronically under ISSN 2677-3465. Individual papers are also freely available on <a href=\"https://zenodo.org/communities/els/\">Zenodo</a>."))

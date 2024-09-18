@@ -41,14 +41,16 @@
         <h2>Steering</h2>
         <p>
           The European Lisp Symposium is run by the following steering
-          committee
+          committee. For any questions, feel free
+          to <a href="mailto:contact@european-lisp-symposium.org">contact
+          us</a>.
         </p>
         <ul>
-          <li>Didier Verna (president)</li>
-          <li>Christophe Rhodes (secretary)</li>
-          <li>Marco Antoniotti</li>
-          <li>Antonio Menezes Leitao</li>
-          <li>Nicolas Neuss</li>
+          <li>Didier Verna, EPITA Research Laboratory, France (president)</li>
+          <li>Christophe Rhodes, Google UK Ltd. (secretary)</li>
+          <li>Marco Antoniotti, University of Milano-Bicocca, Italy</li>
+          <li>Antonio Menezes Leitao, Universidade Técnica de Lisboa, Portugal</li>
+          <li>Nicolas Neuss, FAU Erlangen-Nürnberg, Germany</li>
         </ul>
       </article>
     </main>
