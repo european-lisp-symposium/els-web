@@ -64,7 +64,7 @@
 (define-person (:family-name "Hafner"
                 :given-name "Yukari")
   :role (:local-chair :virtualization)
-  :photo "https://en.gravatar.com/userimage/12617850/a50422c48339a730dee468056eab402c.png"
+  :photo "https://www.gravatar.com/avatar/daa167d57e692a423067fceba30aadf8"
   :email "shinmera@tymoon.eu"
   :website "https://shinmera.com"
   :nickname "Shinmera"
