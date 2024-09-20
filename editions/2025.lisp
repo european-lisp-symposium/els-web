@@ -7,8 +7,8 @@
 #+()(define-date "Final papers" @2024-04-21)
 #+()(define-date "Early registration deadline" @2024-04-14)
 
-(define-date "Conference start" @2025-05-12)
-(define-date "Conference end" @2025-05-13)
+(define-date "Conference start" @2025-05-19)
+(define-date "Conference end" @2025-05-20)
 
 (define-text :announcement
   (:div :class "announcement" "The conference is announced!"))
