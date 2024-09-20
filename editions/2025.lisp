@@ -99,6 +99,10 @@
   :website "https://www.siscog.pt/"
   :logo "../static/logos/siscog.png")
 
+(define-sponsor swissgamehub
+  :website "https://www.swissgamehub.com"
+  :logo "../static/logos/swissgamehub.png")
+
 #+()(define-text :keynotes
   (:ul
    (:li
