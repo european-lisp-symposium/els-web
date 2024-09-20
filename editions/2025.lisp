@@ -58,8 +58,8 @@
 (define-person (:family-name "Rideau Đặng-Vũ Bân"
                 :given-name "François-René")
   :role (:programme-chair)
-  :organization ""
-  :address (:country ""))
+  :organization "MuKn"
+  :address (:country "USA"))
 
 (define-person (:family-name "Hafner"
                 :given-name "Yukari")
