@@ -16,7 +16,7 @@
        (:li "educational approaches and perspectives")
        (:li "experience reports and case studies"))
 
-  (:p "We invite submissions in the following forms. Proposals must not overlap significantly with the authors’ previously published work in a peer reviewed publication, and must not be under review on another journal or conference.")
+  (:p "We invite submissions in the following forms. Papers and experience reports must not overlap significantly with the authors’ previously published work in a peer reviewed publication, and must not be under review on another journal or conference. Also, authors must agree with our <a href=\"https://european-lisp-symposium.org/pepms.html\">publication ethics and malpractice statement</a>.")
   (:ul (:li "<b>Papers</b>: technical papers of up to 8 pages that describe original results or explain known ideas in new and elegant ways.")
        (:li "<b>Experience reports</b>: papers of up to 6 pages describing a Lisp success story and/or analyzing obstacles that have kept it from working in practice.")
        (:li "<b>Tutorials</b>: abstracts of up to 4 pages for in-depth
