@@ -79,6 +79,14 @@
   :address (:country "Sweden"))
 
 
+(define-person (:family-name "Mendhekar"
+                :given-name "Anurag")
+  :organisation "Paper Culture LLC"
+  :address (:country "USA")
+  :role (:speaker :keynote)
+  :description "")
+
+
 
 (define-location "Swiss Game Hub"
   :role (:conference)
@@ -107,10 +115,10 @@
 #+()(define-text :keynotes
   (:ul
    (:li
-    (:b "title")
-    (:i  " -- author")
-    (:p "abstract")
-    (:p (:i (:small "bio"))))))
+    (:b "tba")
+    (:i  " -- Anurag Mendhekar")
+    (:p "tba")
+    (:p (:i (:small "Anurag Mendhekar is the president and co-founder of Paper Culture LLC."))))))
 
 #+()(define-text :tourism )
 
