@@ -87,6 +87,78 @@
   :description "")
 
 
+(define-person (:family-name "Barski"
+                :given-name "Conrad")
+  :role (:committee)
+  :organisation "???"
+  :address (:country "USA"))
+
+(define-person (:family-name "Battyani"
+                :given-name "Marc")
+  :role (:committee)
+  :organisation "???"
+  :address (:country "??"))
+
+(define-person (:family-name "Cooper"
+                :given-name "Dave")
+  :role (:committee)
+  :organisation "Genworks"
+  :address (:country "USA"))
+
+(define-person (:family-name "Culpepper"
+                :given-name "Ryan")
+  :role (:committee)
+  :organisation "University of Massachusetts, Bostom"
+  :address (:country "USA"))
+
+(define-person (:family-name "Fukamachi"
+                :given-name "Eitaro")
+  :role (:committee)
+  :organisation ""
+  :address (:country "Japan"))
+
+(define-person (:family-name "Gray"
+                :given-name "Gavin")
+  :role (:committee)
+  :organisation "Brown University"
+  :address (:country "USA"))
+
+(define-person (:family-name "Hemann"
+                :given-name "Jason")
+  :role (:committee)
+  :organisation "Seton Hall University"
+  :address (:country "USA"))
+
+(define-person (:family-name "Micinski"
+                :given-name "Kristopher")
+  :role (:committee)
+  :organisation "Syracuse University"
+  :address (:country "USA"))
+
+(define-person (:family-name "Morazan"
+                :given-name "Marco")
+  :role (:committee)
+  :organisation "Seton Hall University"
+  :address (:country "USA"))
+
+(define-person (:family-name "Raskin"
+                :given-name "Michael")
+  :role (:committee)
+  :organisation "???"
+  :address (:country "??"))
+
+(define-person (:family-name "Sano"
+                :given-name "Masatoshi")
+  :role (:committee)
+  :organisation "???"
+  :address (:country "Japan"))
+
+(define-person (:family-name "Vyzovitis"
+                :given-name "Dimitris")
+  :role (:committee)
+  :organisation "NuNet ???"
+  :address (:country "Greece"))
+
 
 (define-location "Swiss Game Hub"
   :role (:conference)
