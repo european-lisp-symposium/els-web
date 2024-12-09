@@ -83,7 +83,7 @@
 
 (define-person (:family-name "Mendhekar"
                 :given-name "Anurag")
-  :organisation "Paper Culture LLC"
+  :organization "Paper Culture LLC"
   :address (:country "USA")
   :role (:speaker :keynote)
   :description "")
@@ -97,19 +97,19 @@
 (define-person (:family-name "Battyani"
                 :given-name "Marc")
   :role (:committee)
-  :organisation "Enfabrica"
+  :organization "Enfabrica"
   :address (:country "USA"))
 
 (define-person (:family-name "Cooper"
                 :given-name "Dave")
   :role (:committee)
-  :organisation "Genworks"
+  :organization "Genworks"
   :address (:country "USA"))
 
 (define-person (:family-name "Culpepper"
                 :given-name "Ryan")
   :role (:committee)
-  :organisation "University of Massachusetts, Bostom"
+  :organization "University of Massachusetts, Bostom"
   :address (:country "USA"))
 
 (define-person (:family-name "Fukamachi"
@@ -120,49 +120,49 @@
 (define-person (:family-name "Goldman"
                 :given-name "Robert")
   :role (:committee)
-  :organisation "SIFT"
+  :organization "SIFT"
   :address (:country "USA"))
 
 (define-person (:family-name "Gray"
                 :given-name "Gavin")
   :role (:committee)
-  :organisation "Brown University"
+  :organization "Brown University"
   :address (:country "USA"))
 
 (define-person (:family-name "Hemann"
                 :given-name "Jason")
   :role (:committee)
-  :organisation "Seton Hall University"
+  :organization "Seton Hall University"
   :address (:country "USA"))
 
 (define-person (:family-name "Micinski"
                 :given-name "Kristopher")
   :role (:committee)
-  :organisation "Syracuse University"
+  :organization "Syracuse University"
   :address (:country "USA"))
 
 (define-person (:family-name "Morazan"
                 :given-name "Marco")
   :role (:committee)
-  :organisation "Seton Hall University"
+  :organization "Seton Hall University"
   :address (:country "USA"))
 
 (define-person (:family-name "Raskin"
                 :given-name "Michael")
   :role (:committee)
-  :organisation "LaBRI"
+  :organization "LaBRI"
   :address (:country "France"))
 
 (define-person (:family-name "Sano"
                 :given-name "Masatoshi")
   :role (:committee)
-  :organisation "Nayuta"
+  :organization "Nayuta"
   :address (:country "Japan"))
 
 (define-person (:family-name "Vyzovitis"
                 :given-name "Dimitris")
   :role (:committee)
-  :organisation "Mighty Gerbils")
+  :organization "Mighty Gerbils")
 
 
 (define-location "Swiss Game Hub"
