@@ -2,10 +2,10 @@
 (define-edition "2025")
 (in-package "2025")
 
-(define-date "Submission deadline" @2025-03-02)
-(define-date "Author notification" @2025-03-30)
-(define-date "Final papers" @2025-04-13)
-#+()(define-date "Early registration deadline" @2024-04-14)
+(define-date "Submission deadline" @2025-03-16)
+(define-date "Author notification" @2025-04-13)
+(define-date "Final papers" @2025-04-27)
+#+()(define-date "Early registration deadline" @2024-04-27)
 
 (define-date "Conference start" @2025-05-19)
 (define-date "Conference end" @2025-05-20)
@@ -92,14 +92,13 @@
 (define-person (:family-name "Barski"
                 :given-name "Conrad")
   :role (:committee)
-  :organisation "???"
   :address (:country "USA"))
 
 (define-person (:family-name "Battyani"
                 :given-name "Marc")
   :role (:committee)
-  :organisation "???"
-  :address (:country "??"))
+  :organisation "Enfabrica"
+  :address (:country "USA"))
 
 (define-person (:family-name "Cooper"
                 :given-name "Dave")
@@ -116,8 +115,13 @@
 (define-person (:family-name "Fukamachi"
                 :given-name "Eitaro")
   :role (:committee)
-  :organisation ""
   :address (:country "Japan"))
+
+(define-person (:family-name "Goldman"
+                :given-name "Robert")
+  :role (:committee)
+  :organisation "SIFT"
+  :address (:country "USA"))
 
 (define-person (:family-name "Gray"
                 :given-name "Gavin")
@@ -146,20 +150,19 @@
 (define-person (:family-name "Raskin"
                 :given-name "Michael")
   :role (:committee)
-  :organisation "???"
-  :address (:country "??"))
+  :organisation "LaBRI"
+  :address (:country "France"))
 
 (define-person (:family-name "Sano"
                 :given-name "Masatoshi")
   :role (:committee)
-  :organisation "???"
+  :organisation "Nayuta"
   :address (:country "Japan"))
 
 (define-person (:family-name "Vyzovitis"
                 :given-name "Dimitris")
   :role (:committee)
-  :organisation "NuNet ???"
-  :address (:country "Greece"))
+  :organisation "Mighty Gerbils")
 
 
 (define-location "Swiss Game Hub"
