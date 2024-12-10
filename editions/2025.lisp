@@ -88,6 +88,14 @@
   :role (:speaker :keynote)
   :description "")
 
+(define-person (:family-name "Gutknecht"
+                :given-name "Jürg")
+  :organization ""
+  :address (:country "")
+  :role (:speaker :keynote)
+  :description "")
+
+
 
 (define-person (:family-name "Barski"
                 :given-name "Conrad")
