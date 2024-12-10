@@ -1,6 +1,6 @@
 Dear %4$s
 
-Thank you for registering for the European Lisp Symposium!
+Thank you for your registration to the European Lisp Symposium!
 We look forward to seeing you in person at the conference.
 
 Here are your registration details:
@@ -13,15 +13,15 @@ Here are your registration details:
     Affiliation: %s
     Food Restrictions: %s
 
-If you find any error in the details, or would like to cancel your
-registration, please reply to this e-mail and let us know. Be sure
-to include the Order ID with your message.
+%sIf you are a student, please reply to this e-mail with a scan of
+your currently valid student card so that we can verify it.
 
-If you are a student, please reply to this e-mail with a photo of
-your currently valid student ID card so that we can verify it.
+If you find any error in the details, or would like to cancel your
+registration, please reply to this e-mail and let us know. Be sure to
+include the Order ID with your message.
 
 You will receive your badge and other physical goods at the
-conference. You may also want to subscribe to the ELS mailing list
-(at least for the duration of the conference) in order to stay in touch with
-the community and get updates about this year. See
+conference. You may also want to subscribe to the ELS mailing list (at
+least for the duration of the conference) in order to stay in touch
+with the community and get updates about this year. See
 https://lists.lre.epita.fr/postorius/lists/elsconf.lrde.epita.fr/

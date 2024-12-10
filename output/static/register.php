@@ -70,15 +70,17 @@ function sendMail($intent){
   $mail->setFrom($mailer_from, "ELS Registration");
   $mail->addAddress($_POST['email']);
   $mail->addAddress($mailer_from);
+  if ($intent == null) $mail->addAttachment(__DIR__."/../../IBAN.pdf");
   $mail->Subject = "European Lisp Symposium Registration";
   $mail->Body = sprintf($mailer_body,
-				    ($intent == null? "- (Manual bank transfer)" : $intent->id),
-				    join(", ", $_POST['items']),
-				    $_POST['price'],
-				    $_POST['name'],
-				    $_POST['email'],
-				    $_POST['affiliation'],
-				    $_POST['foodRestrictions']);
+					    ($intent == null? "- (Manual bank transfer)" : $intent->id),
+					    join(", ", $_POST['items']),
+					    $_POST['price'],
+					    $_POST['name'],
+					    $_POST['email'],
+					    $_POST['affiliation'],
+					    $_POST['foodRestrictions'],
+					    ($intent == null? "The banking coordinates for the transfer are attached to this email.\n\n" : ""));
   $mail->send();
 }
 
