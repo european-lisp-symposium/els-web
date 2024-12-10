@@ -177,8 +177,8 @@
   :role (:conference)
   :photo "https://www.swissgamehub.com/wp-content/uploads/2024/01/werkhalle87S.jpg"
   :website "https://www.swissgamehub.com/"
-  :address (:street "Hohlstrasse 176"
-            :post-code "8004"
+  :address (:street "Erika-Mann Strasse 11"
+            :post-code "8050"
             :city " Zürich"
             :country "Switzerland")
   :map t)
