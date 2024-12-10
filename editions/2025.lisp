@@ -207,16 +207,16 @@
 
 #+()(define-text :tourism )
 
-(define-registration (:inactive)
+(define-registration (:active)
 
-  (:kind "ELS Early Regular" :price 120 :status :inactive
+  (:kind "ELS Early Regular" :price 120 :status :active
    :description "ELS conference package (talks, coffee breaks, banquet).")
-  (:kind "ELS Early Student" :price 60 :status :inactive
+  (:kind "ELS Early Student" :price 60 :status :active
    :description "Same as \"ELS Early Regular\", student price (requires student ID copy via e-mail).")
 
-  (:kind "ELS Late Regular" :price 160 :status :active
+  (:kind "ELS Late Regular" :price 160 :status :inactive
    :description "ELS conference package (talks, coffee breaks, banquet).")
-  (:kind "ELS Late Student" :price 90 :status :active
+  (:kind "ELS Late Student" :price 90 :status :inactive
    :description "Same as \"ELS Late Regular\", student price (requires student ID copy via e-mail).")
 
   (:option "weekend" :status :inactive
