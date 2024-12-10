@@ -36,7 +36,7 @@ function sendMail($intent){
   $mailer_tls = secret("mailer-tls");
   $mailer_user = secret("mailer-user");
   $mailer_pass = secret("mailer-pass");
-  $mailer_body = file_get_contents(__DIR__."/../../template/email.txt");
+  $mailer_body = file_get_contents(__DIR__."/email.txt");
   $mailer_from = secret("mailer-from");
 
   require_once($mailer."/src/Exception.php");
