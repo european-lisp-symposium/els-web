@@ -23,7 +23,7 @@
 
 (define-text :submissions
 
-  (:p (:b "This year's special focus: Artificial Intelligence and Meta-Programming beyond macros."))
+  (:p (:b "This year's special focus: Artificial Intelligence, and Meta-Programming beyond macros."))
 
   (:p "Submission topics include, but are not limited to:")
 
