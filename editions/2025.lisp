@@ -180,7 +180,8 @@
   :address (:street "Erika-Mann Strasse 11"
             :post-code "8050"
             :city " Zürich"
-            :country "Switzerland")
+            :country "Switzerland"
+            :extended "(this is the correct address; SGH is moving there in January)")
   :map t)
 
 #+()(define-text :reachability )
