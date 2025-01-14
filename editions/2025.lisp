@@ -90,8 +90,8 @@
 
 (define-person (:family-name "Gutknecht"
                 :given-name "Jürg")
-  :organization ""
-  :address (:country "")
+  :organization "ETH Zürich"
+  :address (:country "Switzerland")
   :role (:speaker :keynote)
   :description "")
 
@@ -177,7 +177,7 @@
   :role (:conference)
   :photo "https://www.swissgamehub.com/wp-content/uploads/2024/01/werkhalle87S.jpg"
   :website "https://www.swissgamehub.com/"
-  :address (:street "Erika-Mann Strasse 11"
+  :Address (:street "Erika-Mann Strasse 11"
             :post-code "8050"
             :city " Zürich"
             :country "Switzerland"
@@ -198,13 +198,17 @@
   :website "https://www.swissgamehub.com"
   :logo "../static/logos/swissgamehub.png")
 
-#+()(define-text :keynotes
-  (:ul
-   (:li
-    (:b "tba")
-    (:i  " -- Anurag Mendhekar")
-    (:p "tba")
-    (:p (:i (:small "Anurag Mendhekar is the president and co-founder of Paper Culture LLC."))))))
+(define-text :keynotes
+    (:ul
+     (:li
+      (:b "Project Oberon: A Late Appraisal.")
+      (:i  " -- Jürg Gutknecht, prof. em. ETH Zürich")
+      (:p "In this talk, we will show how and why a long and successful phase of programming language and system development at ETH Zürich starting with Pascal in the 1970s culminated in project Oberon in the 1990s."))
+     #+()(:li
+      (:b "tba")
+      (:i  " -- Anurag Mendhekar")
+      (:p "tba")
+      (:p (:i (:small "Anurag Mendhekar is the president and co-founder of Paper Culture LLC."))))))
 
 #+()(define-text :tourism )
 
