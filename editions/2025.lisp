@@ -11,7 +11,7 @@
 (define-date "Conference end" @2025-05-20)
 
 (define-text :announcement
-  (:div :class "announcement" "First keynote announced!")
+  (:div :class "announcement" "Second keynote announced!")
   (:div :class "announcement" "Registration is now open!"))
 
 #+()(define-text :additional-info
@@ -82,17 +82,17 @@
   :address (:country "Sweden"))
 
 
-(define-person (:family-name "Mendhekar"
-                :given-name "Anurag")
-  :organization "Paper Culture LLC"
-  :address (:country "USA")
-  :role (:speaker :keynote)
-  :description "")
-
 (define-person (:family-name "Gutknecht"
                 :given-name "Jürg")
   :organization "ETH Zürich"
   :address (:country "Switzerland")
+  :role (:speaker :keynote)
+  :description "")
+
+(define-person (:family-name "Mendhekar"
+                :given-name "Anurag")
+  :organization "Paper Culture LLC"
+  :address (:country "USA")
   :role (:speaker :keynote)
   :description "")
 
@@ -204,11 +204,11 @@
       (:b "Project Oberon: A Late Appraisal.")
       (:i  " -- Jürg Gutknecht, prof. em. ETH Zürich")
       (:p "In this talk, we will show how and why a long and successful phase of programming language and system development at ETH Zürich starting with Pascal in the 1970s culminated in project Oberon in the 1990s."))
-     #+()(:li
-      (:b "tba")
-      (:i  " -- Anurag Mendhekar")
-      (:p "tba")
-      (:p (:i (:small "Anurag Mendhekar is the president and co-founder of Paper Culture LLC."))))))
+     (:li
+      (:b "Is Lisp Still Relevant in the New Age of AI?")
+      (:i  " -- Anurag Mendhekar, Paper Culture LLC")
+      (:p "Lisp owes its existence and popularity to early AI research. At one time, the entire AI world revolved around Lisp, which provided an enormous amount of energy for the language’s development and for pioneering technologies in compiler design, language innovation, and high-performance hardware (such as the Connection Machine). However, in today’s AI landscape, Lisp is nowhere to be found. Instead, languages like Python—many of whose ideas are borrowed from Lisp—have become the mainstream tools for modern AI.")
+      (:p "This raises a key question: What made Lisp so relevant during the first AI revolution but seemingly irrelevant in the second? Is there still a place for Lisp in this new AI era? If so, what should the Lisp community focus on to re-enable its relevance?"))))
 
 #+()(define-text :tourism )
 
