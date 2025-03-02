@@ -11,7 +11,8 @@
 (define-date "Conference end" @2025-05-20)
 
 (define-text :announcement
-  (:div :class "announcement" "Submission deadline extended to March 9!"))
+  (:div :class "announcement" "Submission deadline extended to March 9!")
+  (:div :class "announcement" "3rd invited speaker announced!"))
 
 #+()(define-text :additional-info
   (:p "There are several ways for you to join ELS online:"
@@ -198,16 +199,23 @@
   :logo "../static/logos/swissgamehub.png")
 
 (define-text :keynotes
-    (:ul
-     (:li
-      (:b "Project Oberon: A Late Appraisal.")
-      (:i  " -- Jürg Gutknecht, prof. em. ETH Zürich")
-      (:p "In this talk, we will show how and why a long and successful phase of programming language and system development at ETH Zürich starting with Pascal in the 1970s culminated in project Oberon in the 1990s."))
-     (:li
-      (:b "Is Lisp Still Relevant in the New Age of AI?")
-      (:i  " -- Anurag Mendhekar, Paper Culture LLC")
-      (:p "Lisp owes its existence and popularity to early AI research. At one time, the entire AI world revolved around Lisp, which provided an enormous amount of energy for the language’s development and for pioneering technologies in compiler design, language innovation, and high-performance hardware (such as the Connection Machine). However, in today’s AI landscape, Lisp is nowhere to be found. Instead, languages like Python—many of whose ideas are borrowed from Lisp—have become the mainstream tools for modern AI.")
-      (:p "This raises a key question: What made Lisp so relevant during the first AI revolution but seemingly irrelevant in the second? Is there still a place for Lisp in this new AI era? If so, what should the Lisp community focus on to re-enable its relevance?"))))
+  (:ul
+   (:li
+    (:b "Project Oberon: A Late Appraisal.")
+    (:i  " -- Jürg Gutknecht, prof. em. ETH Zürich")
+    (:p "In this talk, we will show how and why a long and successful phase of programming language and system development at ETH Zürich starting with Pascal in the 1970s culminated in project Oberon in the 1990s."))
+   (:li
+    (:b "Is Lisp Still Relevant in the New Age of AI?")
+    (:i  " -- Anurag Mendhekar, Paper Culture LLC")
+    (:p "Lisp owes its existence and popularity to early AI research. At one time, the entire AI world revolved around Lisp, which provided an enormous amount of energy for the language’s development and for pioneering technologies in compiler design, language innovation, and high-performance hardware (such as the Connection Machine). However, in today’s AI landscape, Lisp is nowhere to be found. Instead, languages like Python—many of whose ideas are borrowed from Lisp—have become the mainstream tools for modern AI.")
+    (:p "This raises a key question: What made Lisp so relevant during the
+    first AI revolution but seemingly irrelevant in the second? Is there still
+    a place for Lisp in this new AI era? If so, what should the Lisp community
+    focus on to re-enable its relevance?"))
+   (:li
+    (:b "Toward safe, flexible, and efficient software in Common Lisp")
+    (:i  " -- Robert Smith")
+    (:p "Common Lisp is renowned for its ability to express safe, flexible, or efficient code. However, these characteristics are often at odds with one another, especially in practical software co-development settings. Coalton is an embedded language within Common Lisp that leverages a Haskell-like type system to prove type safety of a program and performs a variety of type-based optimizations. Coalton also permits new abstractions that are difficult to express in ordinary Common Lisp. We discuss Coalton and its use at two commercial organizations."))))
 
 #+()(define-text :tourism )
 
