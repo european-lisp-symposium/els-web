@@ -11,8 +11,7 @@
 (define-date "Conference end" @2025-05-20)
 
 (define-text :announcement
-  (:div :class "announcement" "Submission deadline extended to March 9!")
-  (:div :class "announcement" "3rd invited speaker announced!"))
+  (:div :class "announcement" "The programme is being put up. Stay tuned for updates!"))
 
 #+()(define-text :additional-info
   (:p "There are several ways for you to join ELS online:"
