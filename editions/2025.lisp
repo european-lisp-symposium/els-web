@@ -183,6 +183,26 @@
             :country "Switzerland")
   :map t)
 
+(define-location "Hotel Sternen Oerlikon"
+  :role (:hotel)
+  :website "https://www.sternenoerlikon.ch/en"
+  :address (:street "Schaffhauserstrasse 335"))
+
+(define-location "Acasa Suites"
+  :role (:hotel)
+  :website "https://acasasuites.com/en/acasa-suites-zurich.html"
+  :address (:street "Binzmühlestrasse 72"))
+
+(define-location "Radisson Hotel & Suites"
+  :role (:hotel)
+  :website "https://www.radissonhotels.com/en-us/hotels/radisson-hotel-and-suites-zurich"
+  :address (:street "Thurgauerstrasse 116"))
+
+(define-location "Courtyard by Marriott"
+  :role (:hotel)
+  :website "https://www.marriott.com/en-us/hotels/zrhcy-courtyard-zurich-north/overview/"
+  :address (:street "Max-Bill Platz 19"))
+
 #+()(define-text :reachability )
 
 #+()(define-sponsor franz
