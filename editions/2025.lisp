@@ -222,7 +222,7 @@
    (:li
     (:b "Project Oberon: A Late Appraisal.")
     (:i  " -- Jürg Gutknecht, prof. em. ETH Zürich")
-    (:p "In this talk, we will show how and why a long and successful phase of programming language and system development at ETH Zürich starting with Pascal in the 1970s culminated in project Oberon in the 1990s."))
+    (:p "After ETH's success with Pascal in the 70s programming languages like Modula-2, Oberon and Lola in the 80s and 90s served the purpose of codesigning pioneering personal workstations such as Lilith and Ceres and were also used in teaching generations of students."))
    (:li
     (:b "Is Lisp Still Relevant in the New Age of AI?")
     (:i  " -- Anurag Mendhekar, Paper Culture LLC")
