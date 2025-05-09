@@ -209,7 +209,7 @@
   :website "http://www.franz.com/"
   :logo "../static/logos/franz.png")
 
-#+()(define-sponsor siscog
+(define-sponsor siscog
   :website "https://www.siscog.pt/"
   :logo "../static/logos/siscog.png")
 
