@@ -175,7 +175,7 @@
 
 (define-location "Swiss Game Hub"
   :role (:conference)
-  :photo "https://www.swissgamehub.com/wp-content/uploads/2024/01/werkhalle87S.jpg"
+  :photo "../static/2025/sgh.jpeg"
   :website "https://www.swissgamehub.com/"
   :Address (:street "Erika-Mann Strasse 11"
             :post-code "8050"
@@ -239,22 +239,21 @@
 #+()(define-text :tourism )
 
 (define-registration (:active)
-
-  (:kind "ELS Early Regular" :price 120 :status :active
+  (:kind "ELS Early Regular" :price 120 :status :inactive
    :description "ELS conference package (talks, coffee breaks, banquet).")
-  (:kind "ELS Early Student" :price 60 :status :active
+  (:kind "ELS Early Student" :price 60 :status :inactive
    :description "Same as \"ELS Early Regular\", student price (requires student ID copy via e-mail).")
 
-  (:kind "ELS Late Regular" :price 160 :status :inactive
-   :description "ELS conference package (talks, coffee breaks, banquet).")
-  (:kind "ELS Late Student" :price 90 :status :inactive
+  (:kind "ELS Late Regular" :price 160 :status :active
+   :description "ELS conference package (talks, coffee breaks).")
+  (:kind "ELS Late Student" :price 90 :status :active
    :description "Same as \"ELS Late Regular\", student price (requires student ID copy via e-mail).")
 
   (:option "weekend" :status :inactive
    :price 50 :description "Weekend excursion (see the Tourism section below)")
   (:option "weekend-guest" :status :inactive
    :price 50 :description "Weekend excursion guest")
-  (:option "banquet-guest" :status :active
+  (:option "banquet-guest" :status :inactive
    :price 30 :description "Banquet Guest"))
 
 
