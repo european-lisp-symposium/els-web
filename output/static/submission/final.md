@@ -18,10 +18,10 @@ for it. These instructions will guide you through the process.
 
 6. The `Basic information` tab will get you your DOI. Do not fill in the
    `Digital Object Identifier` field, but click the `Reserve DOI` button below
-   it. Zenodo will then assign you a DOI. Include this DOI in your paper and
-   recompile it. Then, upload your finished paper in the `Files` tab (this
-   process resolves the circular dependency of the DOI being included in the
-   file it points to).
+   it. Zenodo will then assign you a DOI. Include this DOI in your paper
+   (`\acmDOI{...}` as in the LaTeX template) and recompile it. Then, upload
+   your finished paper in the `Files` tab (this process resolves the circular
+   dependency of the DOI being included in the file it points to).
 
 7. Fill out the remaining items in the `Basic information` tab. The
    `Publication date` is 2025-05-12, the `Title` should be the title of your
