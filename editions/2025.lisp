@@ -297,9 +297,9 @@
 (define-programme-day @2025-05-20T00:00:00+02:00
   @08:30:00 (:title "Registration, badges, meet and greet"
              :role (:organization))
-  @09:15:00 (:title "Announcements"
+  @09:30:00 (:title "Announcements"
              :role (:organization))
-  @09:30:00 (:title "Keynote - Is Lisp Still Relevant in the New Age of AI?"
+  @09:45:00 (:title "Keynote - Is Lisp Still Relevant in the New Age of AI?"
              :role (:talk)
              :speakers ("Anurag Mendhekar, Paper Culture LLC"))
   @10:45:00 (:title "Coffee Break"
