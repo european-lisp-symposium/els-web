@@ -11,7 +11,7 @@
 (define-date "Conference end" @2025-05-20)
 
 (define-text :announcement
-  (:div :class "announcement" "The programme is being put up. Stay tuned for updates!"))
+  (:div :class "announcement" "The programme is here!"))
 
 #+()(define-text :additional-info
   (:p "There are several ways for you to join ELS online:"
@@ -260,25 +260,34 @@
 ;;; Programme
 
 (define-programme-day @2025-05-19T00:00:00+02:00
-  @08:30:00 (:title "Registration, badges, t-shirts, meet and greet"
+  @08:30:00 (:title "Registration, badges, meet and greet"
              :role (:organization))
   @09:45:00 (:title "Welcome messages and announcements"
              :role (:organization))
-  @10:00:00 (:title "Session 1"
-             :role (:talk))
-  @11:00:00 (:title "Coffee Break"
+  @10:00:00 (:title "Keynote - Project Oberon: A Late Appraisal."
+             :role (:talk)
+             :speakers ("Jürg Gutknecht, prof. em. ETH Zürich"))
+  @11:15:00 (:title "Coffee Break"
              :role (:break))
-  @11:30:00 (:title "Session 2"
-             :role (:talk))
+  @11:45:00 (:title "Experience Report - Growing Your Own Lispers"
+             :role (:talk)
+             :speakers ("Michał Herda" "Wojciech Gac"))
   @12:30:00 (:title "Lunch"
              :role (:break))
-  @14:00:00 (:title "Session 3"
-             :role (:talk))
-  @15:30:00 (:title "Coffee Break"
+  @14:00:00 (:title "Keynote - Toward safe, flexible, and efficient software in Common Lisp"
+             :role (:talk)
+             :speakers ("Robert Smith"))
+  @15:15:00 (:title "Coffee Break"
              :role (:break))
-  @16:00:00 (:title "Session 4"
-             :role (:talk))
-  @17:00:00 (:title "Lightning Talks"
+  @15:45:00 (:title "Research Paper - The Lisp in the Cellar (remote)"
+             :role (:talk)
+             :speakers ("Pierre-Evariste Dagand" "Frédéric Peschanski"))
+  @16:30:00 (:title "Research Paper - Programming with Useful Quantifiers"
+             :role (:talk)
+             :speakers ("Jim Newton"))
+  @17:15:00 (:title "Short Break"
+             :role (:break))
+  @17:30:00 (:title "Lightning Talks"
              :role (:talk))
   @19:00:00 (:title "Banquet (Group 1)"
              :role (:break))
@@ -286,21 +295,30 @@
              :role (:break)))
 
 (define-programme-day @2025-05-20T00:00:00+02:00
-  @08:30:00 (:title "Registration, badges, t-shirts, meet and greet"
+  @08:30:00 (:title "Registration, badges, meet and greet"
              :role (:organization))
-  @09:30:00 (:title "Session 1"
-             :role (:talk))
-  @10:30:00 (:title "Coffee Break"
+  @09:15:00 (:title "Announcements"
+             :role (:organization))
+  @09:30:00 (:title "Keynote - Is Lisp Still Relevant in the New Age of AI?"
+             :role (:talk)
+             :speakers ("Anurag Mendhekar, Paper Culture LLC"))
+  @10:45:00 (:title "Coffee Break"
              :role (:break))
-  @11:00:00 (:title "Session 2"
-             :role (:talk))
-  @12:30:00 (:title "Lunch"
+  @11:15:00 (:title "Research Paper - A Brief Perspective on Deep Learning Using Common Lisp"
+             :role (:talk)
+             :speakers ("Martin Atzmueller"))
+  @12:00:00 (:title "Lunch"
              :role (:break))
-  @14:00:00 (:title "Session 3"
-             :role (:talk))
-  @15:30:00 (:title "Coffee Break"
+  @13:30:00 (:title "Research Paper - Scheme-langserver: Treat Scheme Code Editing as the First-Class Concern"
+             :role (:talk)
+             :speakers ("Wang Zheng"))
+  @14:15:00 (:title "Experience Report - Porting the Steel Bank Common Lisp
+  Compiler and Runtime to the Nintendo Switch"
+             :role (:talk)
+             :speakers ("Charles Zhang" "Yukari Hafner"))
+  @15:00:00 (:title "Coffee Break"
              :role (:break))
-  @16:00:00 (:title "Lightning Talks"
+  @15:30:00 (:title "Lightning Talks"
              :role (:talk)))
 
 #+()(define-proceedings "../static/proceedings/2025.pdf")
