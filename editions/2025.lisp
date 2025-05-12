@@ -13,10 +13,10 @@
 (define-text :announcement
   (:div :class "announcement" "The programme is being put up. Stay tuned for updates!"))
 
-#+()(define-text :additional-info
+(define-text :additional-info
   (:p "There are several ways for you to join ELS online:"
       (:ul (:li "<b>Via Twitch</b>: You join <a href=\"https://twitch.tv/elsconf\">https://twitch.tv/elsconf</a> and enjoy the show.  If you have a Twitch account, you can also use the text chat to communicate with other participants or the authors.  You can also follow the elsconf user on Twitch to receive a notification when each day's broadcast starts."))
-      (:ul (:li "<b>Via IRC</b>: You join the #els2025 channel on <a href=\"https://web.libera.chat/#els2025\">libera.chat</a>.  Messages from this channel are automatically forwarded to the Twitch chat, and vice versa."))
+      (:ul (:li "<b>Via IRC</b>: You join the #elsconf channel on <a href=\"https://web.libera.chat/#elsconf\">libera.chat</a>.  Messages from this channel are automatically forwarded to the Twitch chat, and vice versa."))
       (:ul (:li "<b>Via Jitsi</b>: The breaks take place on <a href=\"https://meet.common-lisp.net/els\">Jitsi</a> (a video chat application that runs in any browser).")))
   (:p "The timezone of our schedule is UTC+2. The videos of the streams will
   stay online for two weeks on Twitch, but will also be available on our <a href=\"https://www.youtube.com/@EuropeanLispSymposium\">YouTube channel</a>. See you online!"))
