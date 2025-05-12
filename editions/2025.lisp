@@ -45,7 +45,7 @@
        (:li "<b>Demonstrations</b>: Abstracts of up to 4 pages for demonstrations of tools, libraries, and applications."))
 
   (:p "Submissions should be uploaded to <a
-  href=\"https://www.easychair.org/conferences/?conf=els2025\">EasyChair</a>. Note: to help us with the review process please indicate the type of submission in the title field in the submission form.")
+  href=\"https://www.easychair.org/conferences/?conf=els2025\">EasyChair</a>. VERY IMPORTANT: to help us with the review process please indicate the type of submission in the title field in the submission form.")
 
   (:p "LaTeX submissions are strongly encouraged. Please use the LaTeX article template available <a href=\"https://european-lisp-symposium.org/static/submission/template.tex\">here</a> to format your submission." )
 
