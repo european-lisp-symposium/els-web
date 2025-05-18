@@ -309,13 +309,13 @@
              :speakers ("Martin Atzmueller"))
   @12:00:00 (:title "Lunch"
              :role (:break))
-  @13:30:00 (:title "Research Paper - Scheme-langserver: Treat Scheme Code Editing as the First-Class Concern"
-             :role (:talk)
-             :speakers ("Wang Zheng"))
-  @14:15:00 (:title "Experience Report - Porting the Steel Bank Common Lisp
+  @13:30:00 (:title "Experience Report - Porting the Steel Bank Common Lisp
   Compiler and Runtime to the Nintendo Switch"
              :role (:talk)
              :speakers ("Charles Zhang" "Yukari Hafner"))
+  @14:15:00 (:title "Research Paper - Scheme-langserver: Treat Scheme Code Editing as the First-Class Concern"
+             :role (:talk)
+             :speakers ("Wang Zheng"))
   @15:00:00 (:title "Coffee Break"
              :role (:break))
   @15:30:00 (:title "Lightning Talks"
