@@ -25,6 +25,13 @@
       </nav>
     </header>
     <main>
+      <article id="latest">
+        <h2>Latest Edition</h2>
+        <c:using value="(first (query :edition))">
+          <a href="#" lquery='(text year) (attr :href (format NIL "../~a/index.html" year))
+                   (add-class (if current "current" "other"))'>20XX</a>
+        </c:using>
+      </article>
       <article id="about">
         <h2>About</h2>
         <c:splice lquery="(html (query-text '(= name :about)))" />

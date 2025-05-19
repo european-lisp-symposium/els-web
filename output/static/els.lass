@@ -257,6 +257,15 @@
 
     (a :word-break break-all)
 
+    ("#latest"
+     (>a :display block
+         :margin 0 auto
+         :font-size 2em
+         :width fit-content
+         :padding 0.2em)
+     ((:and >a :hover)
+      :text-decoration underline))
+
     (("#sponsors" ul)
      :margin 0
      :list-style none
