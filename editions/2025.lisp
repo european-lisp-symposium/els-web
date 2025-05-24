@@ -11,9 +11,9 @@
 (define-date "Conference end" @2025-05-20)
 
 (define-text :announcement
-  (:div :class "announcement" "The programme is here!"))
+  (:div :class "announcement" "The conference is over!"))
 
-(define-text :additional-info
+#+()(define-text :additional-info
   (:p "There are several ways for you to join ELS online:"
       (:ul (:li "<b>Via Twitch</b>: You join <a href=\"https://twitch.tv/elsconf\">https://twitch.tv/elsconf</a> and enjoy the show.  If you have a Twitch account, you can also use the text chat to communicate with other participants or the authors.  You can also follow the elsconf user on Twitch to receive a notification when each day's broadcast starts."))
       (:ul (:li "<b>Via IRC</b>: You join the #elsconf channel on <a href=\"https://web.libera.chat/#elsconf\">libera.chat</a>.  Messages from this channel are automatically forwarded to the Twitch chat, and vice versa."))
@@ -21,7 +21,7 @@
   (:p "The timezone of our schedule is UTC+2. The videos of the streams will
   stay online for two weeks on Twitch, but will also be available on our <a href=\"https://www.youtube.com/@EuropeanLispSymposium\">YouTube channel</a>. See you online!"))
 
-(define-text :submissions
+#+()(define-text :submissions
 
   (:p (:b "This year's special focus: Artificial Intelligence, and Meta-Programming beyond macros."))
 
@@ -183,22 +183,22 @@
             :country "Switzerland")
   :map t)
 
-(define-location "Hotel Sternen Oerlikon"
+#+()(define-location "Hotel Sternen Oerlikon"
   :role (:hotel)
   :website "https://www.sternenoerlikon.ch/en"
   :address (:street "Schaffhauserstrasse 335"))
 
-(define-location "Acasa Suites"
+#+()(define-location "Acasa Suites"
   :role (:hotel)
   :website "https://acasasuites.com/en/acasa-suites-zurich.html"
   :address (:street "Binzmühlestrasse 72"))
 
-(define-location "Radisson Hotel & Suites"
+#+()(define-location "Radisson Hotel & Suites"
   :role (:hotel)
   :website "https://www.radissonhotels.com/en-us/hotels/radisson-hotel-and-suites-zurich"
   :address (:street "Thurgauerstrasse 116"))
 
-(define-location "Courtyard by Marriott"
+#+()(define-location "Courtyard by Marriott"
   :role (:hotel)
   :website "https://www.marriott.com/en-us/hotels/zrhcy-courtyard-zurich-north/overview/"
   :address (:street "Max-Bill Platz 19"))
@@ -238,7 +238,7 @@
 
 #+()(define-text :tourism )
 
-(define-registration (:active)
+(define-registration (:inactive)
   (:kind "ELS Early Regular" :price 120 :status :inactive
    :description "ELS conference package (talks, coffee breaks, banquet).")
   (:kind "ELS Early Student" :price 60 :status :inactive
