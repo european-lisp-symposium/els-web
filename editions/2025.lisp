@@ -313,12 +313,19 @@
   Compiler and Runtime to the Nintendo Switch"
              :role (:talk)
              :speakers ("Charles Zhang" "Yukari Hafner"))
-  @14:15:00 (:title "Research Paper - Scheme-langserver: Treat Scheme Code Editing as the First-Class Concern"
+  @14:15:00 (:title "Round Table - Lisp and AI"
              :role (:talk)
-             :speakers ("Wang Zheng"))
-  @15:00:00 (:title "Coffee Break"
+             :speakers ("Anurag Mendhekar"
+                        "Martin Atzmueller"
+                        "Vsevolod Domkin"
+                        "Gábor Melis"
+                        "Dave Cooper"))
+  @15:15:00 (:title "Coffee Break"
              :role (:break))
-  @15:30:00 (:title "Lightning Talks"
-             :role (:talk)))
+  @15:45:00 (:title "Lightning Talks"
+             :role (:talk))
+  @16:45:00 (:title "Hackathon"
+             :role (:talk)
+             :speakers ("Everyone interested")))
 
 #+()(define-proceedings "../static/proceedings/2025.pdf")
