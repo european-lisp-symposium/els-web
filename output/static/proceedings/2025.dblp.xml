@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE dblpsubmission SYSTEM "dblpsubmission.dtd">
+<?xml-stylesheet type="text/xsl" href="dblpsubmission.xsl" ?>
+<dblpsubmission>
+  <proceedings>
+    <key>ELS</key>
+    <title>ELS 2025 - 18th European Lisp Symposium</title>
+    <editor>François René Rideau</editor>
+    <publisher>ELSAA</publisher>
+    <year>2025</year>
+    <isbn>978-2-9557474-9-0</isbn>
+    <issn>2677-3465</issn>
+    <conf>
+      <acronym>ELS</acronym>
+      <number>18</number>
+      <location>Zürich, Switzerland</location>
+      <date>May 19-20, 2025</date>
+      <url>https://european-lisp-symposium.org/2025</url>
+    </conf>
+    <toc>
+      <section>Technical Papers</section>
+      <publ>
+        <author>Michał Herda</author>
+        <author>Wojciech S. Gac</author>
+        <title>Growing Your Own Lispers — An Experience Report</title>
+        <pages>3-8</pages>
+        <doi>10.5281/zenodo.15424521</doi>
+      </publ>
+      <publ>
+        <author>Pierre-Évariste Dagand</author>
+        <author>Frédéric Peschanski</author>
+        <title>The Lisp in the Cellar — Dependent Types that Live Upstairs</title>
+        <pages>9-20</pages>
+        <doi>10.5281/zenodo.15424968</doi>
+      </publ>
+      <publ>
+        <author>Jim E. Newton</author>
+        <title>Programming with Useful Quantifiers</title>
+        <pages>21-29</pages>
+        <doi>10.5281/zenodo.14775258</doi>
+      </publ>
+      <publ>
+        <author>Martin Atzmueller</author>
+        <title>A Brief Perspective on Deep Learning Using Common Lisp</title>
+        <pages>31-37</pages>
+        <doi>10.5281/zenodo.15455278</doi>
+      </publ>
+      <publ>
+        <author>Charles Zhang</author>
+        <author>Yukari Hafner</author>
+        <title>Porting the Steel Bank Common Lisp Compiler and Runtime to the Nintendo Switch NX Platform</title>
+        <pages>38-44</pages>
+        <doi>10.5281/zenodo.15384117</doi>
+      </publ>
+    </toc>
+  </proceedings>
+</dblpsubmission>
