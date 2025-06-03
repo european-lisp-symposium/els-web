@@ -328,4 +328,4 @@
              :role (:talk)
              :speakers ("Everyone interested")))
 
-#+()(define-proceedings "../static/proceedings/2025.pdf")
+(define-proceedings "../static/proceedings/2025.pdf")
