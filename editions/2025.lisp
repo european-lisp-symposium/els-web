@@ -301,7 +301,8 @@
              :role (:organization))
   @09:45:00 (:title "Keynote - Is Lisp Still Relevant in the New Age of AI?"
              :role (:talk)
-             :speakers ("Anurag Mendhekar, Paper Culture LLC"))
+             :speakers ("Anurag Mendhekar, Paper Culture LLC")
+             :website "../static/2025/mendhekar.pdf")
   @10:45:00 (:title "Coffee Break"
              :role (:break))
   @11:15:00 (:title "Research Paper - A Brief Perspective on Deep Learning Using Common Lisp"
