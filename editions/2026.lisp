@@ -2,10 +2,10 @@
 (define-edition "2026")
 (in-package "2026")
 
-#+()(define-date "Submission deadline" @2025-03-09)
-#+()(define-date "Author notification" @2025-03-30)
-#+()(define-date "Final papers" @2025-04-13)
-#+()(define-date "Early registration deadline" @2025-05-04)
+(define-date "Submission deadline" @2026-03-15)
+(define-date "Author notification" @2026-04-12)
+(define-date "Final papers" @2026-04-26)
+(define-date "Early registration deadline" @2026-05-03)
 
 (define-date "Conference start" @2026-05-11)
 (define-date "Conference end" @2026-05-12)
@@ -21,9 +21,9 @@
   (:p "The timezone of our schedule is UTC+2. The videos of the streams will
   stay online for two weeks on Twitch, but will also be available on our <a href=\"https://www.youtube.com/@EuropeanLispSymposium\">YouTube channel</a>. See you online!"))
 
-#+()(define-text :submissions
+(define-text :submissions
 
-  (:p (:b "This year's special focus: Artificial Intelligence, and Meta-Programming beyond macros."))
+  #+()(:p (:b "This year's special focus: Artificial Intelligence, and Meta-Programming beyond macros."))
 
   (:p "Submission topics include, but are not limited to:")
 
@@ -45,7 +45,7 @@
        (:li "<b>Demonstrations</b>: Abstracts of up to 4 pages for demonstrations of tools, libraries, and applications."))
 
   (:p "Submissions should be uploaded to <a
-  href=\"https://www.easychair.org/conferences/?conf=els2025\">EasyChair</a>. VERY IMPORTANT: to help us with the review process please indicate the type of submission in the title field in the submission form.")
+  href=\"https://www.easychair.org/conferences/?conf=els2026\">EasyChair</a>. VERY IMPORTANT: to help us with the review process please indicate the type of submission in the title field in the submission form.")
 
   (:p "LaTeX submissions are strongly encouraged. Please use the LaTeX article template available <a href=\"https://european-lisp-symposium.org/static/submission/template.tex\">here</a> to format your submission." )
 
