@@ -331,8 +331,8 @@
    (:p "There's even a 31-days ticket."))
   (:p (:b "Some events at around the time of the conference may be of interest.")
    (:p "May 1" (:sup "st") " is a public holiday in Austria, see eg. "
-    (:a :href "https://www.stadt-wien.at/veranstaltungen/1-mai.html"
-     "https://www.stadt-wien.at/veranstaltungen/1-mai.html") ".")
+    (:a :href "https://www.ganz-wien.at/veranstaltungen/1-mai.html"
+     "https://www.ganz-wien.at/veranstaltungen/1-mai.html") ".")
    (:p "Vienna has quite "
     (:a :href "https://www.khm.at/en/" "a") " "
     (:a :href "https://www.technischesmuseum.at/en" "few") " "
