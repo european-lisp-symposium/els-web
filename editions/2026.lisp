@@ -64,9 +64,21 @@
   :organization ""
   :address (:country ""))
 
+(define-person (:family-name "Gac"
+                :given-name "Wojciech")
+  :role (:local-chair)
+  :organization "Keepit"
+  :address (:country "Poland"))
+
+(define-person (:family-name "Herda"
+                :given-name "Michał")
+  :role (:local-chair)
+  :organization "Keepit"
+  :address (:country "Poland"))
+
 (define-person (:family-name "Hafner"
                 :given-name "Yukari")
-  :role (:local-chair :virtualization)
+  :role (:virtualization)
   :photo "https://www.gravatar.com/avatar/daa167d57e692a423067fceba30aadf8"
   :email "shinmera@tymoon.eu"
   :website "https://shinmera.com"
@@ -113,9 +125,9 @@
 
 #+()(define-text :reachability)
 
-#+()(define-sponsor siscog
-  :website "https://www.siscog.pt/"
-  :logo "../static/logos/siscog.png")
+(define-sponsor keepit
+  :website "https://www.keepit.com/"
+  :logo "../static/logos/keepit.jpg")
 
 
 #+()(define-text :keynotes
