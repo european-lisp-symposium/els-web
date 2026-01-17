@@ -61,8 +61,8 @@
 (define-person (:family-name "Evenson"
                 :given-name "Mark")
   :role (:programme-chair)
-  :organization ""
-  :address (:country ""))
+  :organization "abcl.org"
+  :address (:country "Austria"))
 
 (define-person (:family-name "Gac"
                 :given-name "Wojciech")
@@ -103,8 +103,55 @@
 
 #+()(define-person (:family-name ""
                 :given-name "")
+      :role (:committee)
+      :address (:country ""))
+
+(define-person (:family-name "Battyani"
+                :given-name "Marc")
   :role (:committee)
-  :address (:country ""))
+  :organization "Enfabrica"
+  :address (:country "USA"))
+
+(define-person (:family-name "Cooper"
+                :given-name "Dave")
+  :role (:committee)
+  :organization "Genworks"
+  :address (:country "USA"))
+
+(define-person (:family-name "David"
+                :given-name "Mark")
+  :role (:committee)
+  :organization "Genworks"
+  :address (:country "USA"))
+
+(define-person (:family-name "Fukamachi"
+                :given-name "Eitaro")
+  :role (:committee)
+  :address (:country "Japan"))
+
+(define-person (:family-name "Goldman"
+                :given-name "Robert")
+  :role (:committee)
+  :organization "SIFT"
+  :address (:country "USA"))
+
+
+(define-person (:family-name "Raskin"
+                :given-name "Michael")
+  :role (:committee)
+  :organization "LaBRI"
+  :address (:country "France"))
+
+(define-person (:family-name "Ruttenberg"
+                :given-name "Alan")
+  :role (:committee)
+  :organization ""
+  :address (:country "USA"))
+
+(define-person (:family-name "Vyzovitis"
+                :given-name "Dimitris")
+  :role (:committee)
+  :organization "Mighty Gerbils")
 
 
 (define-location "Skład Długa"
