@@ -156,7 +156,7 @@
 
 (define-location "Skład Długa"
   :role (:conference)
-  :photo ""
+  :photo "../static/2026/krakow.jpg"
   :website "https://skladkreatywny.pl/"
   :Address (:street "4th floor, Długa 72"
             :post-code "31-146"
