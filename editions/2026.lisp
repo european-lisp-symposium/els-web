@@ -135,6 +135,16 @@
   :organization "SIFT"
   :address (:country "USA"))
 
+(define-person (:family-name "Hemann"
+                :given-name "Jason")
+  :role (:committee)
+  :organization "Seton Hall University")
+
+(define-person (:family-name "Micinski"
+                :given-name "Kristopher")
+  :role (:committee)
+  :organization "Syracuse University"
+  :address (:country "USA"))
 
 (define-person (:family-name "Raskin"
                 :given-name "Michael")
