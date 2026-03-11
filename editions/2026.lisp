@@ -11,7 +11,7 @@
 (define-date "Conference end" @2026-05-12)
 
 (define-text :announcement
-  (:div :class "announcement" "The conference is announced!"))
+  (:div :class "announcement" "First keynote is announced!"))
 
 #+()(define-text :additional-info
   (:p "There are several ways for you to join ELS online:"
@@ -93,8 +93,8 @@
   :address (:country "Sweden"))
 
 
-#+()(define-person (:family-name ""
-                :given-name "")
+(define-person (:family-name "Rideau"
+                :given-name "François-René")
   :organization ""
   :address (:country "")
   :role (:speaker :keynote)
@@ -187,12 +187,32 @@
   :logo "../static/logos/keepit.jpg")
 
 
-#+()(define-text :keynotes
+(define-text :keynotes
   (:ul
    (:li
-    (:b "Title")
-    (:i  " -- Author")
-    (:p "Abstract"))))
+    (:b "Lambda: the Ultimate Paradigm")
+    (:i  " -- François-René Rideau")
+    (:p "From its discovery in 1958, Lisp has been at the forefront of
+innovation in topics as diverse as Artificial Intelligence, Memory Management,
+Object-Oriented Programming, Control Structures, Human Computer
+Interaction—and much more.")
+    (:p "Then, in the 1990s, progress largely stopped in Lisp, to happen in
+other ecosystems. Some Lisp technology was abandoned and forgotten; and while
+there remains a niche community of Lisp hackers who keep producing wonderful
+innovation, it is largely not at the forefront of technological progress
+anymore.")
+    (:p "What happened? What made and makes Lisp such a good platform for
+creation? What advantages does Lisp still have? How can they be further
+amplified? What advantages did it lose? How can the effect be reduced or
+reversed? And what does the recent advent of Artificial Intelligence that can
+write software mean for the future of Lisp?")
+    (:p "Back in the day, Lispers used the slogan “Lambda the Ultimate
+<something>” to boast about how Lisp could get to the very essence of so many
+issues that others barely understood.")
+    (:p "While some Functional Programmers have tried to claim the “Lambda”
+slogan for themselves, I’ll argue why indeed Lisp has the “Lambda Nature” in
+ways that no other programming language does—precisely because Lisp is more
+than a programming language."))))
 
 
 #+()(define-text :tourism )
