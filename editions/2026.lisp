@@ -11,7 +11,8 @@
 (define-date "Conference end" @2026-05-12)
 
 (define-text :announcement
-  (:div :class "announcement" "First keynote is announced!")
+  (:div :class "announcement"
+        "<a href=\"#keynotes\">First keynote is announced!</a>")
   (:div :class "announcement" "Submission deadline extended."))
 
 #+()(define-text :additional-info
