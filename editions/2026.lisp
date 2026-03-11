@@ -96,7 +96,7 @@
 
 (define-person (:family-name "Rideau"
                 :given-name "François-René")
-  :organization ""
+  :organization "Gerbil Scheme"
   :address (:country "")
   :role (:speaker :keynote)
   :description "")
