@@ -24,7 +24,7 @@ for it. These instructions will guide you through the process.
    dependency of the DOI being included in the file it points to).
 
 7. Fill out the remaining items in the `Basic information` tab. The
-   `Publication date` is 2025-05-12, the `Title` should be the title of your
+   `Publication date` is 2026-05-11, the `Title` should be the title of your
    paper, the `Authors` tab should include each author and affiliation (if you
    plan to publish more papers in the future, I also recommend you register an
    ORCID for yourself and put it there), and the `Description` should be the
@@ -52,10 +52,10 @@ for it. These instructions will guide you through the process.
     4. Use the syntax: 2677-3465 (ISSN).
     5. Use the syntax: 2677-3465, without the letters (ISSN).
 
-10. In the `Conference` tab, set the `Conference title` to `The 18th European
-    Lisp Symposium`, the `Acronym` to `ELS`25`, the `Dates` to 12-13 05 2025,
-    the `Place` to 'Zurich', and the website to
-    https://european-lisp-symposium.org/2025.
+10. In the `Conference` tab, set the `Conference title` to `The 19th European
+    Lisp Symposium`, the `Acronym` to `ELS'26`, the `Dates` to 11-12 05 2026,
+    the `Place` to `Kraków`, and the website to
+    `https://european-lisp-symposium.org/2025`.
 
 11. Double-check that all fields have been filled out correctly and click
     `Publish`.
