@@ -2,9 +2,9 @@
 (define-edition "2026")
 (in-package "2026")
 
-(define-date "Submission deadline ***extended***" @2026-03-22)
-(define-date "Author notification" @2026-04-12)
-(define-date "Final papers" @2026-04-26)
+#+()(define-date "Submission deadline ***extended***" @2026-03-22)
+(define-date "Author notification" @2026-04-16)
+(define-date "Final papers" @2026-05-02)
 (define-date "Early registration deadline" @2026-05-03)
 
 (define-date "Conference start" @2026-05-11)
@@ -12,8 +12,7 @@
 
 (define-text :announcement
   (:div :class "announcement"
-        "<a href=\"#keynotes\">First keynote is announced!</a>")
-  (:div :class "announcement" "Submission deadline extended."))
+        "<a href=\"#keynotes\">First keynote is announced!</a>"))
 
 #+()(define-text :additional-info
   (:p "There are several ways for you to join ELS online:"
