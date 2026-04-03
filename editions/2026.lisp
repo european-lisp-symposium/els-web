@@ -219,25 +219,39 @@ ways that no other programming language does—precisely because Lisp is more
 than a programming language."))))
 
 
-#+()(define-text :tourism )
-
-(define-registration (:inactive)
-  (:kind "ELS Early Regular" :price 120 :status :inactive
+(define-registration (:active)
+  (:kind "ELS Early Regular" :price 120 :status :active
    :description "ELS conference package (talks, coffee breaks, banquet).")
-  (:kind "ELS Early Student" :price 60 :status :inactive
+  (:kind "ELS Early Student" :price 60 :status :active
    :description "Same as \"ELS Early Regular\", student price (requires student ID copy via e-mail).")
 
-  (:kind "ELS Late Regular" :price 160 :status :active
+  (:kind "ELS Late Regular" :price 160 :status :inactive
    :description "ELS conference package (talks, coffee breaks).")
-  (:kind "ELS Late Student" :price 90 :status :active
+  (:kind "ELS Late Student" :price 90 :status :inactive
    :description "Same as \"ELS Late Regular\", student price (requires student ID copy via e-mail).")
 
-  (:option "weekend" :status :inactive
-   :price 50 :description "Weekend excursion (see the Tourism section below)")
-  (:option "weekend-guest" :status :inactive
-   :price 50 :description "Weekend excursion guest")
-  (:option "banquet-guest" :status :inactive
+  (:option "weekend" :status :active
+   :price 40 :description "Sunday excursion (see the Tourism section below)")
+  (:option "weekend-guest" :status :active
+   :price 40 :description "Sunday excursion guest")
+  (:option "banquet-guest" :status :active
    :price 30 :description "Banquet Guest"))
+
+(define-text :tourism
+  (:h5 "Sunday May 10: excursion to the Wieliczka Salt Mine")
+  (:img :class "photo" :width "30%" :style "float: left; padding: 10px;" :src "https://upload.wikimedia.org/wikipedia/commons/d/d1/Wieliczka_Salt_Mine_2024-07-08_%2816%29.jpg")
+  (:p "The <a href=\"https://www.wieliczka-saltmine.com/\">Wieliczka Salt
+  Mine</a> is a historic underground site near Kraków and a UNESCO World
+  Heritage Site. The visit includes a guided walk through chambers carved in
+  salt, underground lakes, and historical mining structures dating back
+  several centuries. Join us for an exploration a this unique cultural and
+  historical landmark.")
+  (:p (:i "<strong>WARNING:</strong> group excursions to the mine require
+  a minimum of 25, and up to 40 participants. We thus need to reach at least
+  25 people in order to secure at least one group. We thus urge you to
+  register as soon as possible, and no later than April 19th if you are
+  interested, in order to help us secure the tour. Registrants will be
+  refunded if the excursion cannot be organized.")))
 
 
 ;;; Programme
