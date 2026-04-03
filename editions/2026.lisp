@@ -123,13 +123,17 @@
 (define-person (:family-name "David"
                 :given-name "Mark")
   :role (:committee)
-  :organization "Genworks"
   :address (:country "USA"))
 
 (define-person (:family-name "Fukamachi"
                 :given-name "Eitaro")
   :role (:committee)
   :address (:country "Japan"))
+
+(define-person (:family-name "de Griver"
+                :given-name "Thomas")
+  :role (:committee)
+  :address (:country "France"))
 
 (define-person (:family-name "Goldman"
                 :given-name "Robert")
@@ -164,7 +168,6 @@
                 :given-name "Dimitris")
   :role (:committee)
   :organization "Mighty Gerbils")
-
 
 (define-location "Skład Długa"
   :role (:conference)
