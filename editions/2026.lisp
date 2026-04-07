@@ -12,7 +12,9 @@
 
 (define-text :announcement
   (:div :class "announcement"
-        "<a href=\"#keynotes\">First keynote is announced!</a>"))
+        "Registrations now open!")
+  (:div :class "announcement"
+        "<a href=\"#keynotes\">Keynotes are announced!</a>"))
 
 #+()(define-text :additional-info
   (:p "There are several ways for you to join ELS online:"
@@ -191,9 +193,16 @@
   :website "https://www.keepit.com/"
   :logo "../static/logos/keepit.jpg")
 
+(define-sponsor siscog
+  :website "https://www.siscog.pt/"
+  :logo "../static/logos/siscog.png")
+
 
 (define-text :keynotes
   (:ul
+   (:li
+    (:b "McCLIM and ECL")
+    (:i  " -- Daniel Kochmański"))
    (:li
     (:b "Lambda: the Ultimate Paradigm")
     (:i  " -- François-René Rideau")
