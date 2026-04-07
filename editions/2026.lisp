@@ -12,7 +12,7 @@
 
 (define-text :announcement
   (:div :class "announcement"
-        "Registrations now open!")
+        "<a href=\"#registration\">Registration is now open!</a>")
   (:div :class "announcement"
         "<a href=\"#keynotes\">Keynotes are announced!</a>"))
 
