@@ -129,9 +129,10 @@
   :role (:committee)
   :address (:country "Japan"))
 
-(define-person (:family-name "de Griver"
+(define-person (:family-name "de Grivel"
                 :given-name "Thomas")
   :role (:committee)
+  :organization "kmx.io"
   :address (:country "France"))
 
 (define-person (:family-name "Goldman"
