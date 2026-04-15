@@ -95,12 +95,14 @@
     (7 "Sunday")))
 
 (defun plural-suffix (n)
-  (case (mod n 10)
-    (0 "th")
-    (1 "st")
-    (2 "nd")
-    (3 "rd")
-    (T "th")))
+  (if (member n '(11 12))
+    "th"
+    (case (mod n 10)
+      (0 "th")
+      (1 "st")
+      (2 "nd")
+      (3 "rd")
+      (T "th"))))
 
 (defun date-title (stamp)
   (format NIL "~a ~d~a"
