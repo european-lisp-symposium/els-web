@@ -175,7 +175,7 @@
   :role (:conference)
   :photo "../static/2026/krakow.jpg"
   :website "https://skladkreatywny.pl/"
-  :Address (:street "4th floor, Długa 72"
+  :Address (:street "2nd floor, Długa 72"
             :post-code "31-146"
             :city "Kraków"
             :country "Poland")
