@@ -8,54 +8,36 @@ for it. These instructions will guide you through the process.
 
 2. Click on `New Upload` (should be a big, green button).
 
-3. You should see a form for uploading a new document. Skip the first tab for
-   uploading files, and fill in all the metadata.
+3. You should see a form for uploading a new document. The Zenodo community
+   named "European Lisp Symposium" should be already selected. Otherwise,
+   click `Select Community` and look for it there. Skip the "Files" section
+   for now.
 
-4. In the `Communities` tab, pick `European Lisp Symposium`
-
-5. In the `Upload type` tab, pick `Publication`, and select the `Conference
-   paper` publication type.
-
-6. The `Basic information` tab will get you your DOI. Do not fill in the
-   `Digital Object Identifier` field, but click the `Reserve DOI` button below
-   it. Zenodo will then assign you a DOI. Include this DOI in your paper
+4. The "Basic information" section will get you your DOI. Do not fill in the
+   "Digital Object Identifier" field, but click on `No, I need one` instead.
+   Zenodo will then assign you a DOI. Include this DOI in your paper
    (`\acmDOI{...}` as in the LaTeX template) and recompile it. Then, upload
-   your finished paper in the `Files` tab (this process resolves the circular
-   dependency of the DOI being included in the file it points to).
+   your finished paper in the "Files" section (this process resolves the
+   circular dependency of the DOI being included in the file it points to).
 
-7. Fill out the remaining items in the `Basic information` tab. The
-   `Publication date` is 2026-05-11, the `Title` should be the title of your
-   paper, the `Authors` tab should include each author and affiliation (if you
-   plan to publish more papers in the future, I also recommend you register an
-   ORCID for yourself and put it there), and the `Description` should be the
-   abstract of your paper. The other fields are not so important - if you want
-   you can declare your paper`s language as `eng`, and add your paper`s
-   keywords to the `Keywords` field.
+5. Back to the "Basic information" section. Select `Publication/Conference
+   paper` as the "Resource type, and fill in your paper's title, the date
+   (which should be 2026-05-11) and the authors. If you plan to publish more
+   papers in the future, I also recommend you register an ORCID for yourself
+   and put it there. The `Description` field should be the abstract of your
+   paper. As for the license, I would recommend `Creative Commons Attribution
+   No Derivatives 4.0 International`. You can also set the copyright to
+   yourself.
 
-8. In the `License` tab, select `Open Access`, and pick a license. If you are
-   not sure about which license to pick, select `Creative Commons Attribution
-   No Derivatives 4.0 International`.
+6. Jump to the "Related works" section. Set the `Relation` to "is compiled
+   by", the `Identifier` to "2677-3465", the `Scheme` to "ISSN" and the
+   `Resource type` to "Publication/Conference proceedings".
 
-9. In the `Related/alternative identifiers` tab, you should specify that the
-   paper is part of the ELS proceedings by adding an entry with value ISSN
-   2677-3465 with the property `is compiled/created by this upload`. Leave the
-   resource type as `N/A`. There have been some reports of the zenodo form not
-   accepting the value ISSN 2677-3465. If you see an error such as 'Not a
-   valid persistent identifier. Identifier is required.', there are several
-   things various people have suggested trying.
+7. Jump to the "Conference" section. Set the `Title` to "The 19th European
+    Lisp Symposium", the `Acronym` to "ELS'26", the `Place` to "Krakow,
+    Poland", the `Dates` to "11-12 May 2026", and the `Website` to
+    "https://european-lisp-symposium.org/2026".
 
-    1. Retype ISSN 2677-3465 by hand, don`t copy paste to avoid funny unicode
-       characters.
-    2. Remove the hyphen: ISSN 26773465.
-    3. Try typing the url in the blank:
-      https://portal.issn.org/resource/ISSN/2677-3465#
-    4. Use the syntax: 2677-3465 (ISSN).
-    5. Use the syntax: 2677-3465, without the letters (ISSN).
-
-10. In the `Conference` tab, set the `Conference title` to `The 19th European
-    Lisp Symposium`, the `Acronym` to `ELS'26`, the `Dates` to 11-12 05 2026,
-    the `Place` to `Kraków`, and the website to
-    `https://european-lisp-symposium.org/2025`.
-
-11. Double-check that all fields have been filled out correctly and click
-    `Publish`.
+8. Double-check that all fields have been filled out correctly, possibly add
+   any other information you'd like, and click `Submit for review` at the top
+   of the page.
