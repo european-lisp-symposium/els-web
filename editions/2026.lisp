@@ -201,8 +201,66 @@
 (define-text :keynotes
   (:ul
    (:li
-    (:b "McCLIM and ECL")
-    (:i  " -- Daniel Kochmański"))
+    (:b "McCLIM")
+    (:i  " -- Daniel Kochmański")
+    (:p "McCLIM is a long-standing GUI toolkit in the Common Lisp ecosystem,
+  developed over decades by numerous prominent hackers with periods of both
+  active work and stagnation. This talk reflects on hands-on experience of
+  working on such a large project in the absence of continued maintainership,
+  from modest contributions to sustained development and reconstructing the
+  system's theory.")
+    (:p "Reviving the McCLIM implementation required, besides fixing bugs,
+  gaining incremental insight into its inner workings and how they did fare in
+  light of the specification. This understanding was built through
+  experimentation, regressions, and occasionally premature features. Early
+  efforts focused on stabilizing the X11 backend and core, followed by
+  refactoring and making the TrueType renderer the default and fixing infinite
+  recursion pitfalls in the geometry substrate.")
+    (:p "This groundwork enabled further improvements in the following years.
+  A general refactoring of the X11 backend enabled transparency and highly
+  performant drawing, where the system fully switched to the XRender
+  extension. Refactoring the geometry module made it possible to reimagine the
+  region algebra to be closed over its objects and specified operations
+  (including region difference and unbounded sets).")
+    (:p "More recent developments include work toward thread-safe drawing,
+  improvements in text layout, additional backends (including SDL2), and
+  ongoing changes to rendering and redisplay mechanisms, a new input editing
+  substrate, and expanding the documentation. These efforts culminate in the
+  recent release of McCLIM 0.9.9, codenamed Koladia.")
+    (:p "Looking ahead, the talk outlines a set of near- and longer-term
+  directions. These include continued work on the rendering performance,
+  particularly around the rendering queue and animation support, new event
+  types, as well as a proposed architectural separation between the windowing
+  substrate and the high-level interface system implementing CLIM. The goal of
+  this split is to make low-level parts of the system reusable and to allow
+  different approaches to building user interfaces to share the same
+  foundation. This also avoids imposing CLIM on users who want to explore
+  alternative toolkit designs.")
+    (:p "The presentation also touches on exploratory ideas, such as
+  alternative rendering techniques based on signed distance functions,
+  extending the geometry model toward three-dimensional representations and
+  specifying the audio substrate, as areas for future investigation rather
+  than immediate goals."))
+   (:li
+    (:b "ECL")
+    (:i  " -- Daniel Kochmański")
+    (:p "This talk reports on the ongoing WebAssembly port of Embeddable
+  Common Lisp (ECL), focusing on runtime adaptation, toolchain constraints,
+  and execution models. The project initially targets Emscripten due to its
+  POSIX compatibility, which allows running ECL, including Boehm GC, with
+  minimal modifications.")
+    (:p "I will detail the implementation of runtime subsystems developed
+  during the port, including streams, a bridge between Common Lisp and the
+  JavaScript runtimes, and REPL integration both in-browser and via an
+  external client.")
+    (:p "The second part of the talk evaluates WASI as a cleaner compilation
+  target and discusses the current limitations preventing practical adoption
+  of WasmGC in C-based toolchains. Ongoing refactoring efforts in ECL's
+  dynamic environment and type system will be presented as groundwork for
+  future portability.")
+    (:p "Finally, I will cover cross-compilation support for Common Lisp
+  systems and demonstrate early experiments with graphical and interactive
+  applications running in the browser."))
    (:li
     (:b "Lambda: the Ultimate Paradigm")
     (:i  " -- François-René Rideau")
