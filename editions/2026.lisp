@@ -5,7 +5,7 @@
 #+()(define-date "Submission deadline ***extended***" @2026-03-22)
 #+()(define-date "Author notification" @2026-04-16)
 #+()(define-date "Final papers" @2026-05-02)
-(define-date "Early registration deadline" @2026-05-03)
+#+()(define-date "Early registration deadline" @2026-05-03)
 
 (define-date "Conference start" @2026-05-11)
 (define-date "Conference end" @2026-05-12)
@@ -288,21 +288,21 @@ than a programming language."))))
 
 
 (define-registration (:active)
-  (:kind "ELS Early Regular" :price 120 :status :active
+  (:kind "ELS Early Regular" :price 120 :status :inactive
    :description "ELS conference package (talks, coffee breaks, banquet).")
-  (:kind "ELS Early Student" :price 60 :status :active
+  (:kind "ELS Early Student" :price 60 :status :inactive
    :description "Same as \"ELS Early Regular\", student price (requires student ID copy via e-mail).")
 
-  (:kind "ELS Late Regular" :price 160 :status :inactive
+  (:kind "ELS Late Regular" :price 160 :status :active
    :description "ELS conference package (talks, coffee breaks).")
-  (:kind "ELS Late Student" :price 90 :status :inactive
+  (:kind "ELS Late Student" :price 90 :status :active
    :description "Same as \"ELS Late Regular\", student price (requires student ID copy via e-mail).")
 
   (:option "weekend" :status :active
    :price 40 :description "Sunday excursion (see the Tourism section below)")
   (:option "weekend-guest" :status :active
    :price 40 :description "Sunday excursion guest")
-  (:option "banquet-guest" :status :active
+  (:option "banquet-guest" :status :inactive
    :price 30 :description "Banquet Guest"))
 
 (define-text :tourism
