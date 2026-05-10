@@ -11,12 +11,9 @@
 (define-date "Conference end" @2026-05-12)
 
 (define-text :announcement
-  (:div :class "announcement"
-        "<a href=\"#registration\">Registration is now open!</a>")
-  (:div :class "announcement"
-        "<a href=\"#keynotes\">Keynotes are announced!</a>"))
+  (:div :class "announcement" "The programme is now available!"))
 
-#+()(define-text :additional-info
+(define-text :additional-info
   (:p "There are several ways for you to join ELS online:"
       (:ul (:li "<b>Via Twitch</b>: You join <a href=\"https://twitch.tv/elsconf\">https://twitch.tv/elsconf</a> and enjoy the show.  If you have a Twitch account, you can also use the text chat to communicate with other participants or the authors.  You can also follow the elsconf user on Twitch to receive a notification when each day's broadcast starts."))
       (:ul (:li "<b>Via IRC</b>: You join the #elsconf channel on <a href=\"https://web.libera.chat/#elsconf\">libera.chat</a>.  Messages from this channel are automatically forwarded to the Twitch chat, and vice versa."))
@@ -181,13 +178,26 @@
             :country "Poland")
   :map t)
 
-#+()(define-location ""
-  :role (:hotel)
-  :website ""
-  :address (:street ""))
+(define-text :reachability
+  (:p (:b "ELS Banquet"))
+  (:p "Date & Time: 11.05.2026 18:30")
+  (:p "Location: Aquarius Restaurant, Bulwar Czerwieński 81 (river bank, next
+       to the Wawel castle)")
+  (:p "Cruise Time & Location: 18:50, Statek Sobieski (neighboring ship)")
+  (:p
+   (:ul
+    (:li "The banquet will take place in the boat restaurant Aquarius.")
+    (:li "We begin with a 1-hour cruise on another vessel, Sobieski -
+  18:50-19:50")
+    (:li "The simplest way to get there from the conference venue is by bus:"
+         (:ul
+          (:li "Lines 513, 169, 179, 304, and 503 should be the most
+                convenient")
+          (:li "Begin at bus stop \"Nowy Kleparz\", a short walk from the
+                conference venue")
+          (:li "End at bus stop \"Jubilat\", then a short walk to the river
+                bank"))))))
 
-
-#+()(define-text :reachability)
 
 (define-sponsor keepit
   :website "https://www.keepit.com/"
@@ -287,7 +297,7 @@ ways that no other programming language does—precisely because Lisp is more
 than a programming language."))))
 
 
-(define-registration (:active)
+(define-registration (:inactive)
   (:kind "ELS Early Regular" :price 120 :status :inactive
    :description "ELS conference package (talks, coffee breaks, banquet).")
   (:kind "ELS Early Student" :price 60 :status :inactive
@@ -324,74 +334,88 @@ than a programming language."))))
 
 ;;; Programme
 
-#+()(define-programme-day @2026-05-11T00:00:00+01:00
-  @08:30:00 (:title "Registration, badges, meet and greet"
+(define-programme-day @2026-05-11T00:00:00+01:00
+  @09:00:00 (:title "Registration, badges, meet and greet"
              :role (:organization))
   @09:45:00 (:title "Welcome messages and announcements"
              :role (:organization))
-  @10:00:00 (:title "Keynote - Project Oberon: A Late Appraisal."
+  @10:00:00 (:title "Sponsored Talk - Choosing Lisp: Commercial Use of Lisp at Keepit."
              :role (:talk)
-             :speakers ("Jürg Gutknecht, prof. em. ETH Zürich"))
-  @11:15:00 (:title "Coffee Break"
+             :speakers ("Jakob Østergaard, CTO, Keepit"))
+  @11:00:00 (:title "Coffee Break"
              :role (:break))
-  @11:45:00 (:title "Experience Report - Growing Your Own Lispers"
+  @11:29:00 (:title "Session 1: Efficiency & Complexity"
+             :role (:organization))
+  @11:30:00 (:title "Efficient Range Estimation with NDB Interpreted Code"
              :role (:talk)
-             :speakers ("Michał Herda" "Wojciech Gac"))
+             :speakers ("Max-Gerd Retzlaff"))
+  @12:00:00 (:title "Taming Complexity: Building and Deploying a 270 KLOC Integrated Scientific Application in Common Lisp"
+             :role (:talk)
+             :speakers ("Jérôme E. Onwunalu"))
   @12:30:00 (:title "Lunch"
              :role (:break))
-  @14:00:00 (:title "Keynote - Toward safe, flexible, and efficient software in Common Lisp"
+  @14:00:00 (:title "Keynote - Lambda: the Ultimate Paradigm"
              :role (:talk)
-             :speakers ("Robert Smith"))
-  @15:15:00 (:title "Coffee Break"
+             :speakers ("François-René Rideau"))
+  @15:00:00 (:title "Coffee Break"
              :role (:break))
-  @15:45:00 (:title "Research Paper - The Lisp in the Cellar (remote)"
+  @15:29:00 (:title "Session 2: Language"
+                    :role (:organization))
+  @15:30:00 (:title "A Highly Configurable Common Lisp Reader"
              :role (:talk)
-             :speakers ("Pierre-Evariste Dagand" "Frédéric Peschanski"))
-  @16:30:00 (:title "Research Paper - Programming with Useful Quantifiers"
+             :speakers ("Jan Moringen" "Robert Strandh"))
+  @16:00:00 (:title "Epsilon: A Module System for Lisp"
              :role (:talk)
-             :speakers ("Jim Newton"))
-  @17:15:00 (:title "Short Break"
+             :speakers ("Jesse Bouwman"))
+  @16:30:00 (:title "An Update on the Method Combinations MOP"
+             :role (:talk)
+             :speakers ("Didier Verna"))
+  @17:00:00 (:title "Short Break"
              :role (:break))
-  @17:30:00 (:title "Lightning Talks"
+  @17:15:00 (:title "Lightning Talks"
              :role (:talk))
-  @19:00:00 (:title "Banquet (Group 1)"
-             :role (:break))
-  @20:00:00 (:title "Banquet (Group 2)"
-             :role (:break)))
+  @18:30:00 (:title "Banquet"
+             :role (:dinner)))
 
-#+()(define-programme-day @2026-05-12T00:00:00+01:00
-  @08:30:00 (:title "Registration, badges, meet and greet"
+(define-programme-day @2026-05-12T00:00:00+01:00
+  @09:00:00 (:title "Registration, badges, meet and greet"
              :role (:organization))
-  @09:30:00 (:title "Announcements"
+  @09:45:00 (:title "Announcements"
              :role (:organization))
-  @09:45:00 (:title "Keynote - Is Lisp Still Relevant in the New Age of AI?"
+  @10:00:00 (:title "Keynote - McCLIM"
              :role (:talk)
-             :speakers ("Anurag Mendhekar, Paper Culture LLC")
-             :website "../static/2025/mendhekar.pdf")
-  @10:45:00 (:title "Coffee Break"
+             :speakers ("Daniel Kochmański"))
+  @11:00:00 (:title "Coffee Break"
              :role (:break))
-  @11:15:00 (:title "Research Paper - A Brief Perspective on Deep Learning Using Common Lisp"
+  @11:29:00 (:title "Session 3: Paradigms & Semantics"
+             :role (:organization))
+  @11:30:00 (:title "FOL: Bridging Object-Oriented and Functional Programming via the Metaobject Protocol"
              :role (:talk)
-             :speakers ("Martin Atzmueller"))
-  @12:00:00 (:title "Lunch"
+             :speakers ("Frank Adrian"))
+  @12:00:00 (:title "Ensuring Consistency with OptiX-Semantics: A Use-Case for Low-Effort Code Generation"
+             :role (:talk)
+             :speakers ("Daniel Gößwein" "Michael Hafner" "Kai Selgrad"))
+  @12:30:00 (:title "Lunch"
              :role (:break))
-  @13:30:00 (:title "Experience Report - Porting the Steel Bank Common Lisp
-  Compiler and Runtime to the Nintendo Switch"
+  @14:00:00 (:title "Keynote - ECL"
              :role (:talk)
-             :speakers ("Charles Zhang" "Yukari Hafner"))
-  @14:15:00 (:title "Round Table - Lisp and AI"
-             :role (:talk)
-             :speakers ("Anurag Mendhekar"
-                        "Martin Atzmueller"
-                        "Vsevolod Domkin"
-                        "Gábor Melis"
-                        "Dave Cooper"))
-  @15:15:00 (:title "Coffee Break"
+             :speakers ("Daniel Kochmański"))
+  @15:00:00 (:title "Coffee Break"
              :role (:break))
-  @15:45:00 (:title "Lightning Talks"
-             :role (:talk))
-  @16:45:00 (:title "Hackathon"
+  @15:29:00 (:title "Session 4: Applications"
+             :role (:organization))
+  @15:30:00 (:title "A Hardware Description Language and Simulation Framework in Common Lisp"
              :role (:talk)
-             :speakers ("Everyone interested")))
+             :speakers ("Stefan-Tiberiu Petre"))
+  @16:00:00 (:title "A Lisp Dialect for NDB Interpreted Code"
+             :role (:talk)
+             :speakers ("Max-Gerd Retzlaff"))
+  @16:30:00 (:title "New Deep Learning Receiver Operating Characteristic Formulation Made with Lisp"
+             :role (:talk)
+             :speakers ("Jacob 'Screwlisp' Pouw-Waas"))
+  @17:00:00 (:title "Short Break"
+             :role (:break))
+  @17:15:00 (:title "Lightning Talks"
+             :role (:talk)))
 
 #+()(define-proceedings "../static/proceedings/2026.pdf")
