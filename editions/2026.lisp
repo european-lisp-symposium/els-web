@@ -334,7 +334,7 @@ than a programming language."))))
 
 ;;; Programme
 
-(define-programme-day @2026-05-11T00:00:00+01:00
+(define-programme-day @2026-05-11T00:00:00+02:00
   @09:00:00 (:title "Registration, badges, meet and greet"
              :role (:organization))
   @09:45:00 (:title "Welcome messages and announcements"
@@ -377,7 +377,7 @@ than a programming language."))))
   @18:30:00 (:title "Banquet"
              :role (:dinner)))
 
-(define-programme-day @2026-05-12T00:00:00+01:00
+(define-programme-day @2026-05-12T00:00:00+02:00
   @09:00:00 (:title "Registration, badges, meet and greet"
              :role (:organization))
   @09:45:00 (:title "Announcements"
