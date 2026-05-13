@@ -410,12 +410,12 @@ than a programming language."))))
   @16:00:00 (:title "A Lisp Dialect for NDB Interpreted Code"
              :role (:talk)
              :speakers ("Max-Gerd Retzlaff"))
-  @16:30:00 (:title "New Deep Learning Receiver Operating Characteristic Formulation Made with Lisp"
-             :role (:talk)
-             :speakers ("Jacob 'Screwlisp' Pouw-Waas"))
-  @17:00:00 (:title "Short Break"
+;;  @16:30:00 (:title "New Deep Learning Receiver Operating Characteristic Formulation Made with Lisp"
+;;             :role (:talk)
+;;             :speakers ("Jacob 'Screwlisp' Pouw-Waas"))
+  @16:30:00 (:title "Short Break"
              :role (:break))
-  @17:15:00 (:title "Lightning Talks"
+  @16:45:00 (:title "Lightning Talks"
              :role (:talk)))
 
 #+()(define-proceedings "../static/proceedings/2026.pdf")
