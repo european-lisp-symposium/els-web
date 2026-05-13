@@ -11,9 +11,9 @@
 (define-date "Conference end" @2026-05-12)
 
 (define-text :announcement
-  (:div :class "announcement" "The programme is now available!"))
+  (:div :class "announcement" "The conference is over!"))
 
-(define-text :additional-info
+#+()(define-text :additional-info
   (:p "There are several ways for you to join ELS online:"
       (:ul (:li "<b>Via Twitch</b>: You join <a href=\"https://twitch.tv/elsconf\">https://twitch.tv/elsconf</a> and enjoy the show.  If you have a Twitch account, you can also use the text chat to communicate with other participants or the authors.  You can also follow the elsconf user on Twitch to receive a notification when each day's broadcast starts."))
       (:ul (:li "<b>Via IRC</b>: You join the #elsconf channel on <a href=\"https://web.libera.chat/#elsconf\">libera.chat</a>.  Messages from this channel are automatically forwarded to the Twitch chat, and vice versa."))
@@ -22,9 +22,6 @@
   stay online for two weeks on Twitch, but will also be available on our <a href=\"https://www.youtube.com/@EuropeanLispSymposium\">YouTube channel</a>. See you online!"))
 
 (define-text :submissions
-
-  #+()(:p (:b "This year's special focus: Artificial Intelligence, and Meta-Programming beyond macros."))
-
   (:p "Submission topics include, but are not limited to:")
 
   (:ul
