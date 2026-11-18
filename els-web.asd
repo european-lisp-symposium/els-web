@@ -40,7 +40,8 @@
                              (:file "2023")
                              (:file "2024")
                              (:file "2025")
-                             (:file "2026"))))
+                             (:file "2026")
+                             (:file "2027"))))
   :depends-on (:clip
                :local-time
                :pathname-utils
