@@ -2,9 +2,9 @@
 (define-edition "2027")
 (in-package "2027")
 
-#+()(define-date "Submission deadline ***extended***" @2026-03-22)
-#+()(define-date "Author notification" @2026-04-16)
-#+()(define-date "Final papers" @2026-05-02)
+(define-date "Submission deadline" @2027-03-21)
+(define-date "Author notification" @2027-04-18)
+(define-date "Final papers" @2027-05-02)
 #+()(define-date "Early registration deadline" @2026-05-03)
 
 (define-date "Conference start" @2027-05-24)
@@ -55,11 +55,11 @@
   :website "https://www.didierverna.net/~didier/"
   :role (:organizing-chair))
 
-#+()(define-person (:family-name ""
-                :given-name "")
+(define-person (:family-name "Gac"
+                :given-name "Wojciech")
   :role (:programme-chair)
-  :organization ""
-  :address (:country ""))
+  :organization "Keepit"
+  :address (:country "Poland"))
 
 (define-person (:family-name "Marc"
                 :given-name "Rohrer")
