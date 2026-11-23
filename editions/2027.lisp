@@ -61,10 +61,10 @@
   :organization "Keepit"
   :address (:country "Poland"))
 
-(define-person (:family-name "Marc"
-                :given-name "Rohrer")
+(define-person (:family-name "Rohrer"
+                :given-name "Marc")
   :role (:local-chair)
-  :organization ""
+  :organization "Universitätsklinikum Ulm"
   :address (:country "Germany"))
 
 #+()(define-person (:family-name "Hafner"
