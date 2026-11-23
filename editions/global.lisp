@@ -4,7 +4,7 @@
 
 (define-person (:family-name "Verna"
                 :given-name "Didier")
-  :photo "https://en.gravatar.com/userimage/16766226/bec23e627756f4b902b87f93273aa052.jpeg"
+  :photo "https://gravatar.com/userimage/16766226/8e78417dd7513c983bc34bf3a7246d90.jpeg"
   :website "https://www.didierverna.info"
   :organization "EPITA / LRE"
   :address (:country "France"))
