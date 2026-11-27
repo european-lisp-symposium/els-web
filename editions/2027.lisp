@@ -111,7 +111,7 @@
 (define-text :reachability
   (:p (:b "Reaching the N27 building"))
   (:p "The multimedia room is located in the N27 building. Here is a
-       <a href=\"static/2027/directions.pdf\">PDF</a> document with
+       <a href=\"../static/2027/directions.pdf\">PDF</a> document with
        instructions on how to reach it."))
 
 (define-sponsor uulm
