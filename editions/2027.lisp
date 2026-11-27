@@ -108,26 +108,11 @@
             :country "Germany")
   :map t)
 
-#+()(define-text :reachability
-  (:p (:b "ELS Banquet"))
-  (:p "Date & Time: 11.05.2026 18:30")
-  (:p "Location: Aquarius Restaurant, Bulwar Czerwieński 81 (river bank, next
-       to the Wawel castle)")
-  (:p "Cruise Time & Location: 18:50, Statek Sobieski (neighboring ship)")
-  (:p
-   (:ul
-    (:li "The banquet will take place in the boat restaurant Aquarius.")
-    (:li "We begin with a 1-hour cruise on another vessel, Sobieski -
-  18:50-19:50")
-    (:li "The simplest way to get there from the conference venue is by bus:"
-         (:ul
-          (:li "Lines 513, 169, 179, 304, and 503 should be the most
-                convenient")
-          (:li "Begin at bus stop \"Nowy Kleparz\", a short walk from the
-                conference venue")
-          (:li "End at bus stop \"Jubilat\", then a short walk to the river
-                bank"))))))
-
+(define-text :reachability
+  (:p (:b "Reaching the N27 building"))
+  (:p "The multimedia room is located in the N27 building. Here is a
+       <a href=\"static/2027/directions.pdf\">PDF</a> document with
+       instructions on how to reach it."))
 
 (define-sponsor uulm
   :website "https://www.uni-ulm.de/"
